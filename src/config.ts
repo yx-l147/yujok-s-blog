@@ -17,12 +17,12 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/wallhaven-gwqq83.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/1251398972_p0.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: false, //占示图片作者信息 Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, //占示图片作者信息 Display the credit text of the banner image
+			text: "by 若干爪", // Credit text to be displayed
+			url: "https://www.pixiv.net/artworks/138075280", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
