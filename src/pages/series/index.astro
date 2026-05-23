@@ -1,0 +1,11 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getSeriesList } from "@utils/content-utils";
+
+const items = await getSeriesList();
+---
+
+<MainGridLayout title="系列" description="按连续主题组织文章。">
+    <TaxonomyPage kind="series" title="系列" description="系列保存一条思想的连续推进：不是单篇闪光，而是一段长期追问。" items={items} />
+</MainGridLayout>

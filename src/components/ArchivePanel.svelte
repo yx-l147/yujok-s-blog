@@ -1,25 +1,24 @@
 <script lang="ts">
 import { onMount } from "svelte";
-
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { getPostUrlBySlug } from "../utils/url-utils";
 
-export let tags: string[];
-export let categories: string[];
+export let tags: string[] = [];
+export let categories: string[] = [];
 export let sortedPosts: Post[] = [];
 
-const params = new URLSearchParams(window.location.search);
-tags = params.has("tag") ? params.getAll("tag") : [];
-categories = params.has("category") ? params.getAll("category") : [];
-const uncategorized = params.get("uncategorized");
+let uncategorized: string | null = null;
 
 interface Post {
+	id: string;
 	slug: string;
 	data: {
 		title: string;
 		tags: string[];
-		category?: string;
+		category?: string | null;
+		series?: string | null;
+		column?: string | null;
 		published: Date;
 	};
 }
@@ -32,8 +31,9 @@ interface Group {
 let groups: Group[] = [];
 
 function formatDate(date: Date) {
-	const month = (date.getMonth() + 1).toString().padStart(2, "0");
-	const day = date.getDate().toString().padStart(2, "0");
+	const parsed = new Date(date);
+	const month = (parsed.getMonth() + 1).toString().padStart(2, "0");
+	const day = parsed.getDate().toString().padStart(2, "0");
 	return `${month}-${day}`;
 }
 
@@ -41,7 +41,33 @@ function formatTag(tagList: string[]) {
 	return tagList.map((t) => `#${t}`).join(" ");
 }
 
-onMount(async () => {
+function buildGroups(posts: Post[]) {
+	const grouped = posts.reduce(
+		(acc, post) => {
+			const year = new Date(post.data.published).getFullYear();
+			if (!acc[year]) {
+				acc[year] = [];
+			}
+			acc[year].push(post);
+			return acc;
+		},
+		{} as Record<number, Post[]>,
+	);
+
+	groups = Object.keys(grouped)
+		.map((yearStr) => ({
+			year: Number.parseInt(yearStr, 10),
+			posts: grouped[Number.parseInt(yearStr, 10)],
+		}))
+		.sort((a, b) => b.year - a.year);
+}
+
+onMount(() => {
+	const params = new URLSearchParams(window.location.search);
+	tags = params.has("tag") ? params.getAll("tag") : tags;
+	categories = params.has("category") ? params.getAll("category") : categories;
+	uncategorized = params.get("uncategorized");
+
 	let filteredPosts: Post[] = sortedPosts;
 
 	if (tags.length > 0) {
@@ -62,30 +88,18 @@ onMount(async () => {
 		filteredPosts = filteredPosts.filter((post) => !post.data.category);
 	}
 
-	const grouped = filteredPosts.reduce(
-		(acc, post) => {
-			const year = post.data.published.getFullYear();
-			if (!acc[year]) {
-				acc[year] = [];
-			}
-			acc[year].push(post);
-			return acc;
-		},
-		{} as Record<number, Post[]>,
-	);
-
-	const groupedPostsArray = Object.keys(grouped).map((yearStr) => ({
-		year: Number.parseInt(yearStr, 10),
-		posts: grouped[Number.parseInt(yearStr, 10)],
-	}));
-
-	groupedPostsArray.sort((a, b) => b.year - a.year);
-
-	groups = groupedPostsArray;
+	buildGroups(filteredPosts);
 });
 </script>
 
-<div class="card-base px-8 py-6">
+<div class="card-base glass-panel px-6 md:px-8 py-6">
+    {#if groups.length === 0}
+        <div class="py-10 text-center">
+            <div class="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--primary)] mb-3">Archive</div>
+            <div class="text-2xl font-bold text-90 mb-3">归档暂时是空的。</div>
+            <p class="text-50 leading-7">这里会按年份沉淀所有文章。空白不是失败，只是第一行还没写下。</p>
+        </div>
+    {/if}
     {#each groups as group}
         <div>
             <div class="flex flex-row w-full items-center h-[3.75rem]">
@@ -105,17 +119,15 @@ onMount(async () => {
 
             {#each group.posts as post}
                 <a
-                        href={getPostUrlBySlug(post.slug)}
+                        href={getPostUrlBySlug(post.slug || post.id)}
                         aria-label={post.data.title}
                         class="group btn-plain !block h-10 w-full rounded-lg hover:text-[initial]"
                 >
                     <div class="flex flex-row justify-start items-center h-full">
-                        <!-- date -->
                         <div class="w-[15%] md:w-[10%] transition text-sm text-right text-50">
                             {formatDate(post.data.published)}
                         </div>
 
-                        <!-- dot and line -->
                         <div class="w-[15%] md:w-[10%] relative dash-line h-full flex items-center">
                             <div
                                     class="transition-all mx-auto w-1 h-1 rounded group-hover:h-5
@@ -127,7 +139,6 @@ onMount(async () => {
                             ></div>
                         </div>
 
-                        <!-- post title -->
                         <div
                                 class="w-[70%] md:max-w-[65%] md:w-[65%] text-left font-bold
                      group-hover:translate-x-1 transition-all group-hover:text-[var(--primary)]
@@ -136,7 +147,6 @@ onMount(async () => {
                             {post.data.title}
                         </div>
 
-                        <!-- tag list -->
                         <div
                                 class="hidden md:block md:w-[15%] text-left text-sm transition
                      whitespace-nowrap overflow-ellipsis overflow-hidden text-30"

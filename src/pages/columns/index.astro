@@ -1,0 +1,11 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getColumnList } from "@utils/content-utils";
+
+const items = await getColumnList();
+---
+
+<MainGridLayout title="专栏" description="按写作栏目组织文章。">
+    <TaxonomyPage kind="columns" title="专栏" description="专栏是一种更稳定的写作姿态：让相近的关切有一个固定入口。" items={items} />
+</MainGridLayout>

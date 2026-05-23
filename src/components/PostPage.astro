@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { getPostCover, getPostReadingStats } from "@utils/content-utils";
 import { getPostUrlBySlug } from "@utils/url-utils";
 import PostCard from "./PostCard.astro";
 
@@ -7,22 +8,41 @@ const { page } = Astro.props;
 
 let delay = 0;
 const interval = 50;
+const hasPosts = page.data.length > 0;
+const postCards = await Promise.all(
+	page.data.map(async (entry: CollectionEntry<"posts">) => {
+		const stats = await getPostReadingStats(entry);
+		return {
+			entry,
+			stats,
+			delay: delay++ * interval,
+		};
+	}),
+);
 ---
+
 <div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
-    {page.data.map((entry: CollectionEntry<"posts">) => (
-        <PostCard
-                entry={entry}
-                title={entry.data.title}
-                tags={entry.data.tags}
-                category={entry.data.category}
-                published={entry.data.published}
-                updated={entry.data.updated}
-                url={getPostUrlBySlug(entry.slug)}
-                image={entry.data.image}
-                description={entry.data.description}
-                draft={entry.data.draft}
-                class:list="onload-animation"
-                style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
-        ></PostCard>
+    {!hasPosts && <div class="card-base glass-panel px-8 py-10 text-center">
+        <div class="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--primary)] mb-3">No posts yet</div>
+        <div class="text-2xl font-bold text-90 mb-3">这里还没有文章。</div>
+        <p class="text-50 max-w-xl mx-auto leading-7">等第一篇文字落下，这里会成为它们的索引。现在先让页面保持安静、清楚、可阅读。</p>
+    </div>}
+    {postCards.map(({ entry, stats, delay }) => (
+            <PostCard
+                    entry={entry}
+                    title={entry.data.title}
+                    tags={entry.data.tags}
+                    category={entry.data.category}
+                    published={entry.data.published}
+                    updated={entry.data.updated}
+                    url={getPostUrlBySlug(entry.id)}
+                    image={getPostCover(entry.data)}
+                    description={entry.data.description || stats.excerpt}
+                    draft={entry.data.draft}
+                    words={stats.words}
+                    minutes={stats.minutes}
+                    class:list="onload-animation"
+                    style={`animation-delay: calc(var(--content-delay) + ${delay}ms);`}
+            />
     ))}
 </div>

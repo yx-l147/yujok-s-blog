@@ -17,8 +17,8 @@ export function getPostUrlBySlug(slug: string): string {
 }
 
 export function getTagUrl(tag: string): string {
-	if (!tag) return url("/archive/");
-	return url(`/archive/?tag=${encodeURIComponent(tag.trim())}`);
+	if (!tag) return url("/tags/");
+	return url(`/tags/${encodeURIComponent(tag.trim())}/`);
 }
 
 export function getCategoryUrl(category: string | null): string {
@@ -27,8 +27,18 @@ export function getCategoryUrl(category: string | null): string {
 		category.trim() === "" ||
 		category.trim().toLowerCase() === i18n(I18nKey.uncategorized).toLowerCase()
 	)
-		return url("/archive/?uncategorized=true");
-	return url(`/archive/?category=${encodeURIComponent(category.trim())}`);
+		return url("/categories/uncategorized/");
+	return url(`/categories/${encodeURIComponent(category.trim())}/`);
+}
+
+export function getSeriesUrl(series: string | null): string {
+	if (!series || series.trim() === "") return url("/series/");
+	return url(`/series/${encodeURIComponent(series.trim())}/`);
+}
+
+export function getColumnUrl(column: string | null): string {
+	if (!column || column.trim() === "") return url("/columns/");
+	return url(`/columns/${encodeURIComponent(column.trim())}/`);
 }
 
 export function getDir(path: string): string {

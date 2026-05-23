@@ -1,9 +1,9 @@
 ---
 import { Icon } from "astro-icon/components";
-import { navBarConfig, siteConfig } from "../config";
+import { navBarConfig, profileConfig, siteConfig } from "../config";
 import { LinkPresets } from "../constants/link-presets";
 import { LinkPreset, type NavBarLink } from "../types/config";
-import { url } from "../utils/url-utils";
+import { pathsEqual, url } from "../utils/url-utils";
 import LightDarkSwitch from "./LightDarkSwitch.svelte";
 import Search from "./Search.svelte";
 import DisplaySettings from "./widget/DisplaySettings.svelte";
@@ -11,7 +11,7 @@ import NavMenuPanel from "./widget/NavMenuPanel.astro";
 
 const className = Astro.props.class;
 
-let links: NavBarLink[] = navBarConfig.links.map(
+const links: NavBarLink[] = navBarConfig.links.map(
 	(item: NavBarLink | LinkPreset): NavBarLink => {
 		if (typeof item === "number") {
 			return LinkPresets[item];
@@ -19,45 +19,53 @@ let links: NavBarLink[] = navBarConfig.links.map(
 		return item;
 	},
 );
+
+const isActive = (link: NavBarLink) => {
+	if (link.external) return false;
+	return pathsEqual(Astro.url.pathname, url(link.url));
+};
 ---
+
 <div id="navbar" class="z-50 onload-animation">
-    <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation -->
     <div class:list={[
         className,
-        "card-base !overflow-visible max-w-[var(--page-width)] h-[4.5rem] !rounded-t-none mx-auto flex items-center justify-between px-4"]}>
-        <a href={url('/')} class="btn-plain scale-animation rounded-lg h-[3.25rem] px-5 font-bold active:scale-95">
+        "glass-panel nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between px-3 md:px-4"]}>
+        <a href={url("/")} class="btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-bold active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
                 <Icon name="material-symbols:home-outline-rounded" class="text-[1.75rem] mb-1 mr-2" />
-                {siteConfig.title}
+                <span class="hidden sm:inline">{siteConfig.title}</span>
+                <span class="sm:hidden">{profileConfig?.name || "Blog"}</span>
             </div>
         </a>
-        <div class="hidden md:flex">
-            {links.map((l) => {
-                return <a aria-label={l.name} href={l.external ? l.url : url(l.url)} target={l.external ? "_blank" : null}
-                          class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95"
+        <nav class="hidden md:flex" aria-label="Primary navigation">
+            {links.map((l) => (
+                <a aria-label={l.name} href={l.external ? l.url : url(l.url)} target={l.external ? "_blank" : undefined}
+                    class:list={[
+                        "nav-link btn-plain scale-animation rounded-xl h-11 font-bold px-4 active:scale-95",
+                        {"nav-link-active": isActive(l)}
+                    ]}
                 >
                     <div class="flex items-center">
                         {l.name}
-                        {l.external && <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.875rem] transition -translate-y-[1px] ml-1 text-black/[0.2] dark:text-white/[0.2]"></Icon>}
+                        {l.external && <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.75rem] transition -translate-y-[1px] ml-1 text-black/[0.2] dark:text-white/[0.2]" />}
                     </div>
-                </a>;
-            })}
-        </div>
+                </a>
+            ))}
+        </nav>
         <div class="flex">
-            <!--<SearchPanel client:load>-->
-            <Search client:only="svelte"></Search>
+            <Search client:only="svelte" />
             {!siteConfig.themeColor.fixed && (
                     <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch">
-                        <Icon name="material-symbols:palette-outline" class="text-[1.25rem]"></Icon>
+                        <Icon name="material-symbols:palette-outline" class="text-[1.25rem]" />
                     </button>
             )}
-            <LightDarkSwitch client:only="svelte"></LightDarkSwitch>
+            <LightDarkSwitch client:only="svelte" />
             <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 md:!hidden" id="nav-menu-switch">
-                <Icon name="material-symbols:menu-rounded" class="text-[1.25rem]"></Icon>
+                <Icon name="material-symbols:menu-rounded" class="text-[1.25rem]" />
             </button>
         </div>
-        <NavMenuPanel links={links}></NavMenuPanel>
-        <DisplaySettings client:only="svelte"></DisplaySettings>
+        <NavMenuPanel links={links} />
+        <DisplaySettings client:only="svelte" />
     </div>
 </div>
 
@@ -121,7 +129,6 @@ async function loadPagefind() {
         window.pagefind = pagefind;
 
         document.dispatchEvent(new CustomEvent('pagefindready'));
-        console.log('Pagefind loaded and initialized successfully, event dispatched.');
     } catch (error) {
         console.error('Failed to load Pagefind:', error);
         window.pagefind = {
@@ -129,7 +136,6 @@ async function loadPagefind() {
             options: () => Promise.resolve(),
         };
         document.dispatchEvent(new CustomEvent('pagefindloaderror'));
-        console.log('Pagefind load error, event dispatched.');
     }
 }
 

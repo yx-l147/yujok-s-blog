@@ -11,6 +11,8 @@
     "astro": "astro",
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
+    "lint:ci": "biome ci ./src",
+    "ci": "pnpm check && pnpm build && pnpm lint:ci",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
     "preinstall": "npx only-allow pnpm"

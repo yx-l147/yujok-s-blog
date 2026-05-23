@@ -15,4 +15,20 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.archive),
 		url: "/archive/",
 	},
+	[LinkPreset.Categories]: {
+		name: "分类",
+		url: "/categories/",
+	},
+	[LinkPreset.Tags]: {
+		name: "标签",
+		url: "/tags/",
+	},
+	[LinkPreset.Series]: {
+		name: "系列",
+		url: "/series/",
+	},
+	[LinkPreset.Columns]: {
+		name: "专栏",
+		url: "/columns/",
+	},
 };

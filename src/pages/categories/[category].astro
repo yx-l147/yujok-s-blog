@@ -1,0 +1,25 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getCategoryList, getSortedPostsList } from "@utils/content-utils";
+
+export async function getStaticPaths() {
+	const categories = await getCategoryList();
+	return categories.map((category) => ({
+		params: { category: encodeURIComponent(category.name) },
+		props: { categoryName: category.name },
+	}));
+}
+
+const { categoryName } = Astro.props;
+const posts = (await getSortedPostsList()).filter((post) => {
+	if (categoryName === i18n(I18nKey.uncategorized)) return !post.data.category;
+	return post.data.category === categoryName;
+});
+---
+
+<MainGridLayout title={categoryName} description={`分类：${categoryName}`}>
+    <TaxonomyPage kind="categories" title="分类" activeName={categoryName} description={`这里收拢所有属于「${categoryName}」的文章。`} posts={posts} />
+</MainGridLayout>

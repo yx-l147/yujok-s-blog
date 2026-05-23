@@ -1,0 +1,22 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getSeriesList, getSortedPostsList } from "@utils/content-utils";
+
+export async function getStaticPaths() {
+	const seriesList = await getSeriesList();
+	return seriesList.map((series) => ({
+		params: { series: encodeURIComponent(series.name) },
+		props: { seriesName: series.name },
+	}));
+}
+
+const { seriesName } = Astro.props;
+const posts = (await getSortedPostsList()).filter(
+	(post) => post.data.series === seriesName,
+);
+---
+
+<MainGridLayout title={seriesName} description={`系列：${seriesName}`}>
+    <TaxonomyPage kind="series" title="系列" activeName={seriesName} description={`所有属于「${seriesName}」的文章。`} posts={posts} />
+</MainGridLayout>

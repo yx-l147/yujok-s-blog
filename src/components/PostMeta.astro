@@ -3,7 +3,12 @@ import { Icon } from "astro-icon/components";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { formatDateToYYYYMMDD } from "../utils/date-utils";
-import { getCategoryUrl, getTagUrl } from "../utils/url-utils";
+import {
+	getCategoryUrl,
+	getColumnUrl,
+	getSeriesUrl,
+	getTagUrl,
+} from "../utils/url-utils";
 
 interface Props {
 	class: string;
@@ -11,6 +16,8 @@ interface Props {
 	updated?: Date;
 	tags: string[];
 	category: string | null;
+	series?: string | null;
+	column?: string | null;
 	hideTagsForMobile?: boolean;
 	hideUpdateDate?: boolean;
 }
@@ -19,6 +26,8 @@ const {
 	updated,
 	tags,
 	category,
+	series = null,
+	column = null,
 	hideTagsForMobile = false,
 	hideUpdateDate = false,
 } = Astro.props;
@@ -26,53 +35,65 @@ const className = Astro.props.class;
 ---
 
 <div class:list={["flex flex-wrap text-neutral-500 dark:text-neutral-400 items-center gap-4 gap-x-4 gap-y-2", className]}>
-    <!-- publish date -->
     <div class="flex items-center">
-        <div class="meta-icon"
-        >
-            <Icon name="material-symbols:calendar-today-outline-rounded" class="text-xl"></Icon>
+        <div class="meta-icon">
+            <Icon name="material-symbols:calendar-today-outline-rounded" class="text-xl" />
         </div>
         <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(published)}</span>
     </div>
 
-    <!-- update date -->
     {!hideUpdateDate && updated && updated.getTime() !== published.getTime() && (
         <div class="flex items-center">
-            <div class="meta-icon"
-            >
-                <Icon name="material-symbols:edit-calendar-outline-rounded" class="text-xl"></Icon>
+            <div class="meta-icon">
+                <Icon name="material-symbols:edit-calendar-outline-rounded" class="text-xl" />
             </div>
             <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(updated)}</span>
         </div>
     )}
 
-    <!-- categories -->
     <div class="flex items-center">
-        <div class="meta-icon"
-        >
-            <Icon name="material-symbols:book-2-outline-rounded" class="text-xl"></Icon>
+        <div class="meta-icon">
+            <Icon name="material-symbols:book-2-outline-rounded" class="text-xl" />
         </div>
         <div class="flex flex-row flex-nowrap items-center">
             <a href={getCategoryUrl(category)} aria-label={`View all posts in the ${category} category`}
-               class="link-lg transition text-50 text-sm font-medium
-                            hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+               class="link-lg transition text-50 text-sm font-medium hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                 {category || i18n(I18nKey.uncategorized)}
             </a>
         </div>
     </div>
 
-    <!-- tags -->
+    {series && (
+        <div class="flex items-center">
+            <div class="meta-icon">
+                <Icon name="material-symbols:view-list-rounded" class="text-xl" />
+            </div>
+            <a href={getSeriesUrl(series)} class="link-lg transition text-50 text-sm font-medium hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                {series}
+            </a>
+        </div>
+    )}
+
+    {column && (
+        <div class="flex items-center">
+            <div class="meta-icon">
+                <Icon name="material-symbols:wysiwyg-rounded" class="text-xl" />
+            </div>
+            <a href={getColumnUrl(column)} class="link-lg transition text-50 text-sm font-medium hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                {column}
+            </a>
+        </div>
+    )}
+
     <div class:list={["items-center", {"flex": !hideTagsForMobile, "hidden md:flex": hideTagsForMobile}]}>
-        <div class="meta-icon"
-        >
-            <Icon name="material-symbols:tag-rounded" class="text-xl"></Icon>
+        <div class="meta-icon">
+            <Icon name="material-symbols:tag-rounded" class="text-xl" />
         </div>
         <div class="flex flex-row flex-nowrap items-center">
             {(tags && tags.length > 0) && tags.map((tag, i) => (
                 <div class:list={[{"hidden": i == 0}, "mx-1.5 text-[var(--meta-divider)] text-sm"]}>/</div>
                 <a href={getTagUrl(tag)} aria-label={`View all posts with the ${tag.trim()} tag`}
-                   class="link-lg transition text-50 text-sm font-medium
-                                hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                   class="link-lg transition text-50 text-sm font-medium hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
                     {tag.trim()}
                 </a>
             ))}

@@ -1,0 +1,16 @@
+---
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { url } from "@utils/url-utils";
+---
+
+<MainGridLayout title="404" description="页面不存在">
+    <section class="card-base glass-panel px-8 py-12 text-center">
+        <div class="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--primary)] mb-4">404</div>
+        <h1 class="text-3xl md:text-4xl font-bold text-90 mb-4">这页不在这里。</h1>
+        <p class="text-50 leading-7 max-w-xl mx-auto mb-8">有些路会断在半途。返回首页，或者从归档重新进入。</p>
+        <div class="flex flex-wrap justify-center gap-3">
+            <a class="btn-regular rounded-xl px-5 h-11 font-bold" href={url("/")}>回到首页</a>
+            <a class="btn-plain rounded-xl px-5 h-11 font-bold" href={url("/archive/")}>查看归档</a>
+        </div>
+    </section>
+</MainGridLayout>

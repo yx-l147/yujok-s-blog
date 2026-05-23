@@ -48,6 +48,10 @@ export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
 	About = 2,
+	Categories = 3,
+	Tags = 4,
+	Series = 5,
+	Columns = 6,
 }
 
 export type NavBarLink = {
@@ -84,13 +88,17 @@ export type LIGHT_DARK_MODE =
 
 export type BlogPostData = {
 	body: string;
+	id: string;
 	title: string;
 	published: Date;
 	description: string;
 	tags: string[];
 	draft?: boolean;
 	image?: string;
+	cover?: string;
 	category?: string;
+	series?: string;
+	column?: string;
 	prevTitle?: string;
 	prevSlug?: string;
 	nextTitle?: string;

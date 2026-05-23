@@ -1,0 +1,11 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getTagList } from "@utils/content-utils";
+
+const items = await getTagList();
+---
+
+<MainGridLayout title="标签" description="按关键词定位文章。">
+    <TaxonomyPage kind="tags" title="标签" description="标签是思想的路标：它们不替你总结文章，只帮你更快抵达相近的问题。" items={items} />
+</MainGridLayout>

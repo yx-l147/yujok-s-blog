@@ -1,0 +1,11 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getCategoryList } from "@utils/content-utils";
+
+const items = await getCategoryList();
+---
+
+<MainGridLayout title="分类" description="按主题整理文章。">
+    <TaxonomyPage kind="categories" title="分类" description="把文章按主题放回它们所属的精神房间，方便你从问题而不是时间进入阅读。" items={items} />
+</MainGridLayout>

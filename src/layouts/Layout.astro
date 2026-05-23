@@ -56,6 +56,12 @@ if (title) {
 
 const favicons: Favicon[] =
 	siteConfig.favicon.length > 0 ? siteConfig.favicon : defaultFavicons;
+const canonicalUrl = Astro.site
+	? new URL(Astro.url.pathname, Astro.site).toString()
+	: Astro.url.toString();
+const ogImage = Astro.site
+	? new URL(url("/favicon/favicon-light-192.png"), Astro.site).toString()
+	: url("/favicon/favicon-light-192.png");
 
 // const siteLang = siteConfig.lang.replace('_', '-')
 if (!lang) {
@@ -83,11 +89,14 @@ const bannerOffset =
 		<meta charset="UTF-8" />
 		<meta name="description" content={description || pageTitle}>
 		<meta name="author" content={profileConfig.name}>
+		<meta name="theme-color" content={`oklch(0.7 0.14 ${configHue})`}>
+		<link rel="canonical" href={canonicalUrl}>
 
 		<meta property="og:site_name" content={siteConfig.title}>
-		<meta property="og:url" content={Astro.url}>
+		<meta property="og:url" content={canonicalUrl}>
 		<meta property="og:title" content={pageTitle}>
 		<meta property="og:description" content={description || pageTitle}>
+		<meta property="og:image" content={ogImage}>
 		{setOGTypeArticle ? (
         <meta property="og:type" content="article" />
         ) : (
@@ -95,9 +104,10 @@ const bannerOffset =
         )}
 
 		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content={Astro.url}>
+		<meta property="twitter:url" content={canonicalUrl}>
 		<meta name="twitter:title" content={pageTitle}>
 		<meta name="twitter:description" content={description || pageTitle}>
+		<meta name="twitter:image" content={ogImage}>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
@@ -151,6 +161,7 @@ const bannerOffset =
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
 	>
+		<div id="reading-progress" aria-hidden="true"></div>
 		<ConfigCarrier></ConfigCarrier>
 		<slot />
 
@@ -188,8 +199,12 @@ const bannerOffset =
 	.enable-banner.is-home #sidebar-sticky {
 		@apply top-[calc(1rem_-_var(--banner-height-extend))]
 	}
-	.navbar-hidden {
-		@apply opacity-0 -translate-y-16
+.navbar-hidden {
+	@apply opacity-0 -translate-y-16
+	}
+	#reading-progress {
+		@apply fixed top-0 left-0 right-0 z-[60] h-[2px] origin-left scale-x-0;
+		background: linear-gradient(90deg, var(--primary), color-mix(in oklch, var(--primary) 55%, white));
 	}
 }
 </style>
@@ -501,6 +516,19 @@ window.onresize = () => {
 	offset = offset - offset % 4;
 	document.documentElement.style.setProperty('--banner-height-extend', `${offset}px`);
 }
+
+function updateReadingProgress() {
+	const progress = document.getElementById("reading-progress");
+	if (!progress) return;
+	const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	const ratio = scrollHeight > 0 ? Math.min(1, Math.max(0, scrollTop / scrollHeight)) : 0;
+	progress.style.transform = `scaleX(${ratio})`;
+}
+
+document.addEventListener("scroll", updateReadingProgress, { passive: true });
+window.addEventListener("resize", updateReadingProgress);
+updateReadingProgress();
 
 </script>
 

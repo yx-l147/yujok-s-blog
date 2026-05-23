@@ -14,17 +14,27 @@ interface Props {
 const { id, name, isCollapsed, collapsedHeight, style } = Astro.props;
 const className = Astro.props.class;
 ---
-<widget-layout data-id={id} data-is-collapsed={String(isCollapsed)} class={"pb-4 card-base " + className} style={style}>
-    <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2
-        before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
-        before:absolute before:left-[-16px] before:top-[5.5px]">{name}</div>
-    <div id={id} class:list={["collapse-wrapper px-4 overflow-hidden", {"collapsed": isCollapsed}]}>
-        <slot></slot>
+
+<widget-layout data-id={id} data-is-collapsed={String(isCollapsed)} class={`glass-panel card-base pb-4 ${className || ""}`} style={style}>
+    <div class="flex items-center justify-between gap-3 px-4 pt-4 pb-3">
+        <div class="font-semibold transition text-[0.95rem] text-90 relative pl-4
+            before:w-1 before:h-4 before:rounded-full before:bg-[var(--primary)]
+            before:absolute before:left-0 before:top-[0.2rem]">
+            {name}
+        </div>
+        {isCollapsed && (
+            <button class="btn-plain rounded-lg w-8 h-8" aria-label={i18n(I18nKey.more)}>
+                <Icon name="material-symbols:expand-more-rounded" class="text-[1.25rem]" />
+            </button>
+        )}
     </div>
-    {isCollapsed && <div class="expand-btn px-4 -mb-2">
+    <div id={id} class:list={["collapse-wrapper px-4 overflow-hidden", {"collapsed": isCollapsed}]}>
+        <slot />
+    </div>
+    {isCollapsed && <div class="expand-btn px-4 -mb-2 pt-3">
         <button class="btn-plain rounded-lg w-full h-9">
-            <div class="text-[var(--primary)] flex items-center justify-center gap-2 -translate-x-2">
-                <Icon name="material-symbols:more-horiz" class="text-[1.75rem]"></Icon> {i18n(I18nKey.more)}
+            <div class="text-[var(--primary)] flex items-center justify-center gap-2">
+                <Icon name="material-symbols:more-horiz" class="text-[1.5rem]" /> {i18n(I18nKey.more)}
             </div>
         </button>
     </div>}
@@ -41,16 +51,21 @@ const className = Astro.props.class;
         constructor() {
             super();
 
-            if (this.dataset.isCollapsed !== "true")
+            if (this.dataset.isCollapsed !== "true") {
                 return;
+            }
 
             const id = this.dataset.id;
             const btn = this.querySelector('.expand-btn');
-            const wrapper = this.querySelector(`#${id}`)
-            btn!.addEventListener('click', () => {
-                wrapper!.classList.remove('collapsed');
-                btn!.classList.add('hidden');
-            })
+            const wrapper = this.querySelector(`#${id}`);
+            const headerBtn = this.querySelector("button[aria-label]");
+            const expand = () => {
+                wrapper?.classList.remove("collapsed");
+                btn?.classList.add("hidden");
+                headerBtn?.classList.add("hidden");
+            };
+            btn?.addEventListener('click', expand);
+            headerBtn?.addEventListener('click', expand);
         }
     }
 

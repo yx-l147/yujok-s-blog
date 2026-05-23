@@ -1,0 +1,22 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getColumnList, getSortedPostsList } from "@utils/content-utils";
+
+export async function getStaticPaths() {
+	const columns = await getColumnList();
+	return columns.map((column) => ({
+		params: { column: encodeURIComponent(column.name) },
+		props: { columnName: column.name },
+	}));
+}
+
+const { columnName } = Astro.props;
+const posts = (await getSortedPostsList()).filter(
+	(post) => post.data.column === columnName,
+);
+---
+
+<MainGridLayout title={columnName} description={`专栏：${columnName}`}>
+    <TaxonomyPage kind="columns" title="专栏" activeName={columnName} description={`所有收录在「${columnName}」专栏下的文章。`} posts={posts} />
+</MainGridLayout>

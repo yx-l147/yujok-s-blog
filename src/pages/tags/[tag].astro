@@ -1,0 +1,22 @@
+---
+import TaxonomyPage from "@components/TaxonomyPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getSortedPostsList, getTagList } from "@utils/content-utils";
+
+export async function getStaticPaths() {
+	const tags = await getTagList();
+	return tags.map((tag) => ({
+		params: { tag: encodeURIComponent(tag.name) },
+		props: { tagName: tag.name },
+	}));
+}
+
+const { tagName } = Astro.props;
+const posts = (await getSortedPostsList()).filter((post) =>
+	post.data.tags?.includes(tagName),
+);
+---
+
+<MainGridLayout title={tagName} description={`标签：${tagName}`}>
+    <TaxonomyPage kind="tags" title="标签" activeName={tagName} description={`所有带有「${tagName}」标签的文章。`} posts={posts} />
+</MainGridLayout>
