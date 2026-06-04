@@ -20,8 +20,10 @@ pnpm-debug.log*
 .env.production
 .env.local
 
-# 隐私数据：微信读书拉取结果（含书名/笔记/账号画像，禁止提交）
-src/data/weread/
+# 隐私数据：微信读书拉取中间产物（含账号画像，禁止提交）
+# 例外：shelf.json 为书架展示数据，本就公开渲染在博客上，允许提交（私密书已源头过滤）
+src/data/weread/*
+!src/data/weread/shelf.json
 src/data/private/
 public/private-assets/
 
