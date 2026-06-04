@@ -1,0 +1,37 @@
+---
+/**
+ * SVG filter 定义：液态玻璃折射 + God Rays
+ * 用法：在 Layout 全局引一次，子组件用 filter: url(#sk-liquid-glass)
+ */
+---
+
+<svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true">
+  <defs>
+    <!-- ===== 液态玻璃：feTurbulence + feDisplacementMap ===== -->
+    <filter id="sk-liquid-glass" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="5" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <!-- ===== God Rays 神之光 ===== -->
+    <filter id="sk-god-rays" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur" />
+      <feSpecularLighting in="blur" surfaceScale="3" specularConstant=".75"
+                          specularExponent="20" lighting-color="#cfe4ff" result="spec">
+        <feDistantLight azimuth="135" elevation="55" />
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceGraphic" operator="in" result="lit" />
+      <feMerge>
+        <feMergeNode in="SourceGraphic" />
+        <feMergeNode in="lit" />
+      </feMerge>
+    </filter>
+
+    <!-- ===== 月相 SVG 渐变 ===== -->
+    <radialGradient id="sk-moon-grad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fff9e6" />
+      <stop offset="60%" stop-color="#e8d8a8" />
+      <stop offset="100%" stop-color="#a89868" />
+    </radialGradient>
+  </defs>
+</svg>

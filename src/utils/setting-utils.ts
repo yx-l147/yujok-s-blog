@@ -59,3 +59,13 @@ export function setTheme(theme: LIGHT_DARK_MODE): void {
 export function getStoredTheme(): LIGHT_DARK_MODE {
 	return (localStorage.getItem("theme") as LIGHT_DARK_MODE) || DEFAULT_THEME;
 }
+
+export function getRightSidebarOpen(): boolean {
+	const stored = localStorage.getItem("right-sidebar-open");
+	return stored === null ? true : stored === "true";
+}
+
+export function setRightSidebarOpen(open: boolean): void {
+	localStorage.setItem("right-sidebar-open", String(open));
+	document.documentElement.classList.toggle("right-sidebar-collapsed", !open);
+}

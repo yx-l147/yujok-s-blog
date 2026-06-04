@@ -35,7 +35,29 @@ export type SiteConfig = {
 		depth: 1 | 2 | 3;
 	};
 
+	rightSidebar: {
+		enable: boolean;
+		siteStats: {
+			enable: boolean;
+			since: string;
+		};
+		calendar: {
+			enable: boolean;
+		};
+		musicPlayer: {
+			enable: boolean;
+			tracks: MusicTrack[];
+		};
+	};
+
 	favicon: Favicon[];
+};
+
+export type MusicTrack = {
+	title: string;
+	artist: string;
+	src: string;
+	cover?: string;
 };
 
 export type Favicon = {

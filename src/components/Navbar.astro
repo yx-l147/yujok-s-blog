@@ -60,6 +60,11 @@ const isActive = (link: NavBarLink) => {
                     </button>
             )}
             <LightDarkSwitch client:only="svelte" />
+            {siteConfig.rightSidebar.enable && (
+                <button aria-label="Toggle Right Sidebar" class="hidden xl:inline-flex btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="right-sidebar-switch">
+                    <Icon name="material-symbols:right-panel-open-outline-rounded" class="text-[1.25rem]" />
+                </button>
+            )}
             <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 lg:!hidden" id="nav-menu-switch">
                 <Icon name="material-symbols:menu-rounded" class="text-[1.25rem]" />
             </button>
@@ -105,6 +110,16 @@ function loadButtonScript() {
             if (menuPanel) {
                 menuPanel.classList.toggle("float-panel-closed");
             }
+        };
+    }
+
+    let rsBtn = document.getElementById("right-sidebar-switch");
+    if (rsBtn) {
+        rsBtn.onclick = function () {
+            const root = document.documentElement;
+            const willCollapse = !root.classList.contains("right-sidebar-collapsed");
+            root.classList.toggle("right-sidebar-collapsed", willCollapse);
+            localStorage.setItem("right-sidebar-open", String(!willCollapse));
         };
     }
 }

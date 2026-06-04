@@ -1,0 +1,240 @@
+---
+import type { BookItem } from "@/types/weread";
+import MoonProgress from "./MoonProgress.astro";
+
+interface Props {
+  book: BookItem;
+  delay?: number;
+}
+const { book, delay = 0 } = Astro.props;
+
+const STATUS_LABEL: Record<BookItem["status"], string> = {
+  reading: "在读",
+  finished: "已读",
+  wishlist: "想读",
+  abandoned: "弃读",
+};
+
+const STATUS_COLOR: Record<BookItem["status"], string> = {
+  reading: "var(--sk-comet)",
+  finished: "var(--sk-river)",
+  wishlist: "var(--sk-sakura)",
+  abandoned: "var(--sk-violet)",
+};
+
+const hours = Math.round(book.readingTime / 3600);
+---
+
+<article
+  class="book-card sk-glass sk-aurora sk-rise"
+  data-delay={Math.min(delay, 8)}
+  style={`--card-accent:${STATUS_COLOR[book.status]}`}
+>
+  <!-- 封面层 -->
+  <div class="book-cover">
+    <img src={book.cover} alt={book.title} loading="lazy" />
+    <div class="cover-gradient"></div>
+
+    <!-- 顶部：白色大字书名（致敬锦辉） -->
+    <div class="cover-title-block">
+      <h3 class="cover-title sk-han">{book.title}</h3>
+      <div class="cover-status">
+        <span class="status-dot" style={`background:${STATUS_COLOR[book.status]}`}></span>
+        <span>{STATUS_LABEL[book.status]}</span>
+      </div>
+    </div>
+
+    <!-- 右上角评分 -->
+    {book.myRating != null && book.myRating > 0 && (
+      <div class="cover-rating">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18 22l-6-3.6L6 22l1.5-7.3L2 10l7.1-1.1z"/>
+        </svg>
+        <span>{book.myRating.toFixed(1)}</span>
+      </div>
+    )}
+  </div>
+
+  <!-- 玻璃底部条 -->
+  <div class="book-foot">
+    <div class="foot-meta">
+      <div class="foot-author">{book.author}</div>
+      {book.currentChapter && (
+        <div class="foot-chapter">📖 {book.currentChapter}</div>
+      )}
+    </div>
+
+    <div class="foot-stats">
+      {book.status === "reading" || book.status === "abandoned" ? (
+        <MoonProgress progress={book.progress} size={28} />
+      ) : book.status === "finished" ? (
+        <div class="foot-stat">
+          <span class="stat-num sk-display">{hours}</span>
+          <span class="stat-label">小时</span>
+        </div>
+      ) : (
+        <div class="foot-stat">
+          <span class="stat-label">期待中</span>
+        </div>
+      )}
+      {(book.noteCount ?? 0) > 0 && (
+        <div class="foot-stat">
+          <span class="stat-num sk-display">{book.noteCount}</span>
+          <span class="stat-label">笔记</span>
+        </div>
+      )}
+    </div>
+  </div>
+</article>
+
+<style>
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform .5s var(--sk-ease-out), box-shadow .5s var(--sk-ease-out);
+    cursor: pointer;
+    --card-accent: var(--sk-river);
+  }
+  .book-card:hover {
+    transform: translateY(-6px) scale(1.012);
+    box-shadow:
+      0 30px 60px rgba(20, 40, 80, 0.32),
+      0 8px 20px color-mix(in srgb, var(--card-accent) 30%, transparent),
+      inset 0 1px 0 var(--sk-glass-hi);
+  }
+
+  .book-cover {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: var(--sk-r-card) var(--sk-r-card) 0 0;
+  }
+  .book-cover img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform .8s var(--sk-ease-out);
+  }
+  .book-card:hover .book-cover img {
+    transform: scale(1.06);
+  }
+
+  .cover-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(10,20,40,0.55) 0%, transparent 35%, transparent 70%, rgba(10,20,40,0.7) 100%);
+    pointer-events: none;
+  }
+
+  .cover-title-block {
+    position: absolute;
+    top: 1rem;
+    left: 1.1rem;
+    right: 1.1rem;
+    color: white;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.55);
+    z-index: 2;
+  }
+  .cover-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cover-status {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    margin-top: .55rem;
+    padding: .2rem .6rem;
+    border-radius: 999px;
+    background: rgba(10,20,40,0.5);
+    backdrop-filter: blur(6px);
+    font-size: .72rem;
+    font-weight: 500;
+  }
+  .status-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px currentColor;
+  }
+  .cover-status span:last-child {
+    color: rgba(255,255,255,0.92);
+  }
+
+  .cover-rating {
+    position: absolute;
+    top: .9rem;
+    right: .9rem;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .25rem .55rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--sk-sunset), var(--sk-sakura));
+    color: white;
+    font-size: .78rem;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(255,107,74,0.35);
+  }
+
+  .book-foot {
+    padding: .9rem 1.1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    background: linear-gradient(180deg,
+      color-mix(in srgb, var(--card-accent) 5%, transparent),
+      transparent);
+  }
+
+  .foot-author {
+    font-size: .82rem;
+    color: color-mix(in srgb, var(--sk-moon) 75%, transparent);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .foot-chapter {
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--card-accent) 80%, var(--sk-moon));
+    margin-top: .2rem;
+  }
+
+  .foot-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: .6rem;
+    border-top: 1px dashed color-mix(in srgb, var(--sk-moon) 18%, transparent);
+  }
+  .foot-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
+  }
+  .stat-num {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--sk-moon);
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-size: .65rem;
+    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: .15rem;
+  }
+</style>

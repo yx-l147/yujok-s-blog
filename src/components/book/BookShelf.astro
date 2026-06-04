@@ -1,0 +1,163 @@
+---
+import type { BookItem } from "@/types/weread";
+import BookCard from "./BookCard.astro";
+
+interface Props {
+  books: BookItem[];
+}
+const { books } = Astro.props;
+
+const tabs = [
+  { id: "reading", label: "在读" },
+  { id: "finished", label: "已读" },
+  { id: "wishlist", label: "想读" },
+  { id: "abandoned", label: "弃读" },
+  { id: "all", label: "全部" },
+] as const;
+
+const counts: Record<string, number> = { all: books.length };
+for (const b of books) counts[b.status] = (counts[b.status] ?? 0) + 1;
+
+// 排序：在读优先按最近阅读，已读按完成时间倒序，其他按状态
+const sorted = [...books].sort((a, b) => {
+  const ta = a.lastReadTime || a.finishTime || a.startTime || "";
+  const tb = b.lastReadTime || b.finishTime || b.startTime || "";
+  return tb.localeCompare(ta);
+});
+
+const defaultTab = (counts.reading ?? 0) > 0 ? "reading" : "all";
+---
+
+<section class="shelf-section">
+  <div class="shelf-head sk-rise" data-delay="3">
+    <h3 class="shelf-title sk-han">
+      <span class="shelf-eyebrow sk-script">collections</span>
+      我 · 的 · 书 · 架
+    </h3>
+    <div class="shelf-tabs" role="tablist">
+      {tabs.map(t => (
+        <button
+          type="button"
+          role="tab"
+          class:list={["sk-chip shelf-tab", { "sk-chip-active": t.id === defaultTab }]}
+          data-tab={t.id}
+          aria-selected={t.id === defaultTab}
+        >
+          <span>{t.label}</span>
+          <span class="tab-count">{counts[t.id] ?? 0}</span>
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <div class="shelf-grid sk-rise" data-delay="4">
+    {sorted.map((book, i) => (
+      <div class="shelf-cell" data-status={book.status}>
+        <BookCard book={book} delay={Math.min(i + 1, 8)} />
+      </div>
+    ))}
+  </div>
+
+  <div class="shelf-empty">
+    <p class="sk-han">这一格还是空的呢～</p>
+  </div>
+</section>
+
+<style>
+  .shelf-section {
+    margin: 2rem 0 2.5rem;
+  }
+  .shelf-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+  }
+  .shelf-title {
+    font-size: 1.55rem;
+    color: var(--sk-moon);
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+  }
+  .shelf-eyebrow {
+    font-size: 1.4rem;
+    color: var(--sk-comet);
+    line-height: 1;
+  }
+
+  .shelf-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+  }
+  .tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    padding: 0 .4rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, currentColor 18%, transparent);
+    font-size: .72rem;
+    font-weight: 600;
+    margin-left: .3rem;
+  }
+
+  .shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.4rem;
+  }
+  @media (max-width: 520px) {
+    .shelf-grid { grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+  }
+
+  .shelf-empty {
+    display: none;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+    font-size: 1.05rem;
+  }
+  .shelf-section.is-empty .shelf-grid { display: none; }
+  .shelf-section.is-empty .shelf-empty { display: block; }
+</style>
+
+<script>
+  function bindShelfTabs() {
+    const sections = document.querySelectorAll<HTMLElement>(".shelf-section");
+    for (const section of sections) {
+      if (section.dataset.tabsBound) continue;
+      section.dataset.tabsBound = "1";
+
+      const tabs = section.querySelectorAll<HTMLButtonElement>(".shelf-tab");
+      const cells = section.querySelectorAll<HTMLElement>(".shelf-cell");
+
+      const apply = (id: string) => {
+        let visibleCount = 0;
+        for (const cell of cells) {
+          const show = id === "all" || cell.dataset.status === id;
+          cell.style.display = show ? "" : "none";
+          if (show) visibleCount++;
+        }
+        section.classList.toggle("is-empty", visibleCount === 0);
+        for (const t of tabs) {
+          const on = t.dataset.tab === id;
+          t.classList.toggle("sk-chip-active", on);
+          t.setAttribute("aria-selected", on ? "true" : "false");
+        }
+      };
+
+      for (const t of tabs) {
+        t.addEventListener("click", () => apply(t.dataset.tab || "all"));
+      }
+    }
+  }
+  bindShelfTabs();
+  document.addEventListener("swup:page:view", bindShelfTabs);
+</script>

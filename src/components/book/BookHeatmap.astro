@@ -1,0 +1,147 @@
+---
+import type { ReadingStats } from "@/types/weread";
+
+interface Props {
+  stats: ReadingStats;
+}
+const { stats } = Astro.props;
+
+// 按周分组
+const weeks: typeof stats.heatmap[] = [];
+let currentWeek: typeof stats.heatmap = [];
+const firstDate = new Date(stats.heatmap[0].date);
+const firstDow = firstDate.getDay(); // 0 周日
+for (let i = 0; i < firstDow; i++) currentWeek.push({ date: "", minutes: -1 });
+
+for (const d of stats.heatmap) {
+  currentWeek.push(d);
+  if (currentWeek.length === 7) {
+    weeks.push(currentWeek);
+    currentWeek = [];
+  }
+}
+if (currentWeek.length > 0) weeks.push(currentWeek);
+
+const dayLabels = ["日", "一", "二", "三", "四", "五", "六"];
+
+function intensity(m: number): { bg: string; glow: string } {
+  if (m < 0) return { bg: "transparent", glow: "0" };
+  if (m === 0) return { bg: "color-mix(in srgb, var(--sk-moon) 8%, transparent)", glow: "0" };
+  const k = Math.min(1, m / 60);
+  return {
+    bg: `color-mix(in srgb, var(--sk-river) ${20 + k * 70}%, transparent)`,
+    glow: `${k * 12}px`,
+  };
+}
+---
+
+<section class="heatmap-card sk-glass sk-rise" data-delay="5">
+  <div class="heatmap-head">
+    <div>
+      <h3 class="heatmap-title sk-han">阅读星河</h3>
+      <p class="heatmap-sub">最近 365 天的每一颗星 · 越亮读得越久</p>
+    </div>
+    <div class="heatmap-legend">
+      <span class="legend-label">少</span>
+      {[0, 0.25, 0.5, 0.75, 1].map(k => (
+        <span class="legend-dot" style={`background:color-mix(in srgb, var(--sk-river) ${20 + k * 70}%, transparent); box-shadow:0 0 ${k * 8}px color-mix(in srgb, var(--sk-river) 60%, transparent);`}></span>
+      ))}
+      <span class="legend-label">多</span>
+    </div>
+  </div>
+
+  <div class="heatmap-scroll">
+    <div class="heatmap-grid">
+      <div class="day-col">
+        {dayLabels.map((d, i) => (
+          <div class="day-label" style={i % 2 === 1 ? "" : "visibility:hidden"}>{d}</div>
+        ))}
+      </div>
+      {weeks.map((week) => (
+        <div class="week-col">
+          {week.map(d => {
+            const ity = intensity(d.minutes);
+            return (
+              <div
+                class="day-cell"
+                style={`background:${ity.bg}; box-shadow:${ity.glow === '0' ? 'none' : `0 0 ${ity.glow} color-mix(in srgb, var(--sk-river) 70%, transparent)`}`}
+                title={d.minutes < 0 ? "" : `${d.date} · ${d.minutes} 分钟`}
+              ></div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .heatmap-card {
+    padding: 1.6rem 1.8rem 1.4rem;
+    margin: 1.5rem 0;
+  }
+  .heatmap-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .heatmap-title {
+    font-size: 1.4rem;
+    color: var(--sk-moon);
+    margin: 0;
+    font-weight: 600;
+  }
+  .heatmap-sub {
+    font-size: .82rem;
+    color: color-mix(in srgb, var(--sk-moon) 60%, transparent);
+    margin: .3rem 0 0;
+  }
+  .heatmap-legend {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
+  .legend-label {
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+  }
+  .legend-dot {
+    width: 11px; height: 11px;
+    border-radius: 3px;
+  }
+
+  .heatmap-scroll {
+    overflow-x: auto;
+    padding-bottom: .35rem;
+  }
+  .heatmap-grid {
+    display: flex;
+    gap: 3px;
+    min-width: 760px;
+  }
+  .day-col, .week-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .day-label {
+    font-size: .65rem;
+    width: 24px;
+    height: 11px;
+    line-height: 11px;
+    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
+  }
+  .day-cell {
+    width: 11px; height: 11px;
+    border-radius: 3px;
+    transition: transform .25s var(--sk-ease-out);
+    cursor: pointer;
+  }
+  .day-cell:hover {
+    transform: scale(1.6);
+    z-index: 2;
+  }
+</style>

@@ -1,0 +1,186 @@
+---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
+import { siteConfig } from "../../config";
+import {
+	getCategoryList,
+	getPostReadingStats,
+	getSortedPostsList,
+	getTagList,
+} from "../../utils/content-utils";
+
+const [posts, categories, tags] = await Promise.all([
+	getSortedPostsList(),
+	getCategoryList(),
+	getTagList(),
+]);
+
+const fullPosts = await getCollection("posts", ({ data }) => {
+	return import.meta.env.PROD ? data.draft !== true : true;
+});
+let totalWords = 0;
+for (const post of fullPosts) {
+	const stats = await getPostReadingStats(post);
+	totalWords += stats.words;
+}
+
+// build-time only values (constants) — these don't need live updates
+const counts = {
+	posts: posts.length,
+	categories: categories.length,
+	tags: tags.length,
+	totalWords,
+};
+
+// timestamps for live values (computed client-side so they update daily)
+const sinceTimestamp = new Date(
+	siteConfig.rightSidebar.siteStats.since,
+).getTime();
+const lastActiveTimestamp =
+	posts.length > 0 ? new Date(posts[0].data.published).getTime() : null;
+---
+
+<div class="rs-stats">
+    <!-- 1. 文章 -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:article-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>文章</span>
+        </span>
+        <span class="rs-stat-value" data-count-target={counts.posts}>
+            <span class="num">0</span>
+        </span>
+    </div>
+
+    <!-- 2. 分类 -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:folder-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>分类</span>
+        </span>
+        <span class="rs-stat-value" data-count-target={counts.categories}>
+            <span class="num">0</span>
+        </span>
+    </div>
+
+    <!-- 3. 标签 -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:label-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>标签</span>
+        </span>
+        <span class="rs-stat-value" data-count-target={counts.tags}>
+            <span class="num">0</span>
+        </span>
+    </div>
+
+    <!-- 4. 总字数 -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:edit-document-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>总字数</span>
+        </span>
+        <span class="rs-stat-value" data-count-target={counts.totalWords}>
+            <span class="num">0</span>
+        </span>
+    </div>
+
+    <!-- 5. 运行天数 — 客户端从 sinceTimestamp 实时算 -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:bolt-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>运行天数</span>
+        </span>
+        <span class="rs-stat-value" data-live-since={sinceTimestamp}>
+            <span class="num">0</span>
+            <span class="unit">天</span>
+        </span>
+    </div>
+
+    <!-- 6. 最后活动 — 客户端实时算 "X 天前" -->
+    <div class="rs-stat-row">
+        <span class="rs-stat-label">
+            <Icon name="material-symbols:schedule-outline" class="rs-stat-icon text-[1.05rem]" />
+            <span>最后活动</span>
+        </span>
+        {lastActiveTimestamp === null ? (
+            <span class="rs-stat-value">—</span>
+        ) : (
+            <span class="rs-stat-value" data-live-last={lastActiveTimestamp}>
+                <span class="num">0</span>
+                <span class="unit">天前</span>
+            </span>
+        )}
+    </div>
+</div>
+
+<script>
+    const MS_PER_DAY = 86_400_000;
+
+    function formatNumber(n: number): string {
+        return n.toLocaleString("en-US");
+    }
+
+    function countUp(el: HTMLElement, target: number, durationMs = 1200) {
+        const numEl = el.querySelector(".num") as HTMLElement | null;
+        if (!numEl) return;
+        const start = performance.now();
+        const ease = (t: number) => 1 - (1 - t) ** 4; // easeOutQuart
+
+        function frame(now: number) {
+            if (!numEl) return;
+            const t = Math.min(1, (now - start) / durationMs);
+            const v = Math.round(target * ease(t));
+            numEl.textContent = formatNumber(v);
+            if (t < 1) requestAnimationFrame(frame);
+            else numEl.textContent = formatNumber(target);
+        }
+        requestAnimationFrame(frame);
+    }
+
+    function resolveTarget(el: HTMLElement): number | null {
+        // case 1: static count
+        const direct = el.dataset.countTarget;
+        if (direct !== undefined) return Number(direct);
+
+        // case 2: live "days since X"
+        const sinceTs = el.dataset.liveSince;
+        if (sinceTs !== undefined) {
+            const days = Math.floor((Date.now() - Number(sinceTs)) / MS_PER_DAY);
+            return Math.max(1, days);
+        }
+
+        // case 3: live "days since last post"
+        const lastTs = el.dataset.liveLast;
+        if (lastTs !== undefined) {
+            const days = Math.floor((Date.now() - Number(lastTs)) / MS_PER_DAY);
+            return Math.max(0, days);
+        }
+
+        return null;
+    }
+
+    function initStats(root: ParentNode = document) {
+        const targets = root.querySelectorAll<HTMLElement>(
+            "[data-count-target], [data-live-since], [data-live-last]",
+        );
+        if (!targets.length) return;
+
+        const io = new IntersectionObserver(
+            (entries) => {
+                for (const e of entries) {
+                    if (!e.isIntersecting) continue;
+                    const el = e.target as HTMLElement;
+                    const target = resolveTarget(el);
+                    if (target !== null) countUp(el, target);
+                    io.unobserve(el);
+                }
+            },
+            { threshold: 0.2 },
+        );
+        for (const el of targets) io.observe(el);
+    }
+
+    initStats();
+    document.addEventListener("swup:page:view", () => initStats());
+</script>

@@ -1,0 +1,208 @@
+/**
+ * 新海誠氛围 · 美学 Token
+ * Shinkai-inspired aesthetic tokens for /book and global accents.
+ */
+
+:root {
+    /* ===== 色板（亮色） ===== */
+    --sk-deep: #dde8f5;              /* 黎明蓝（亮色背景） */
+    --sk-tide: #c4d4e8;              /* 浅潮蓝 */
+    --sk-moon: #1a2a4a;              /* 月白对比文字 */
+    --sk-river: #5db4ff;             /* 银河蓝 */
+    --sk-violet: #7c5fb3;            /* 星河紫 */
+    --sk-sunset: #ff6b4a;            /* 夕阳橙 */
+    --sk-comet: #48d3e0;             /* 彗星青 */
+    --sk-sakura: #f0a8c0;            /* 樱粉 */
+    --sk-gold: #b58a3a;              /* 苔金（装饰线） */
+
+    /* ===== 玻璃 ===== */
+    --sk-glass-bg: color-mix(in srgb, white 62%, transparent);
+    --sk-glass-border: color-mix(in srgb, var(--sk-river) 35%, transparent);
+    --sk-glass-hi: rgba(255, 255, 255, 0.55);     /* 上沿高光 */
+    --sk-glass-shadow: 0 12px 40px rgba(20, 40, 80, 0.18),
+                      0 2px 6px rgba(20, 40, 80, 0.08),
+                      inset 0 1px 0 var(--sk-glass-hi);
+
+    /* ===== 字体（不引入新文件，复用现有 + Web 字体） ===== */
+    --sk-font-display: "Cormorant Garamond", "LXGW WenKai Lite", "霞鹜文楷", "Noto Serif SC", Georgia, serif;
+    --sk-font-han: "LXGW WenKai Lite", "霞鹜文楷", "Noto Serif SC", "Source Han Serif SC", serif;
+    --sk-font-script: "Italianno", "LXGW WenKai Lite", cursive;
+
+    /* ===== 圆角 / 间距 ===== */
+    --sk-r-card: 28px;
+    --sk-r-pill: 999px;
+    --sk-r-btn: 16px;
+
+    /* ===== 动效 ===== */
+    --sk-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --sk-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+:root.dark {
+    --sk-deep: #0a1428;
+    --sk-tide: #1a2a4a;
+    --sk-moon: #e8f1ff;
+    --sk-river: #5db4ff;
+    --sk-violet: #9d7ec4;
+    --sk-sunset: #ff8a6e;
+    --sk-comet: #5be0ed;
+    --sk-sakura: #f0c8d8;
+    --sk-gold: #d4a957;
+
+    --sk-glass-bg: color-mix(in srgb, #1a2a4a 55%, transparent);
+    --sk-glass-border: color-mix(in srgb, var(--sk-river) 28%, transparent);
+    --sk-glass-hi: rgba(220, 235, 255, 0.18);
+    --sk-glass-shadow: 0 18px 50px rgba(0, 0, 0, 0.55),
+                      0 2px 8px rgba(0, 0, 0, 0.4),
+                      inset 0 1px 0 var(--sk-glass-hi);
+}
+
+/* ============================================================ */
+/* 液態硝子 .sk-glass                                            */
+/* ============================================================ */
+.sk-glass {
+    position: relative;
+    background: var(--sk-glass-bg);
+    border: 1px solid var(--sk-glass-border);
+    border-radius: var(--sk-r-card);
+    backdrop-filter: blur(28px) saturate(140%);
+    -webkit-backdrop-filter: blur(28px) saturate(140%);
+    box-shadow: var(--sk-glass-shadow);
+    overflow: hidden;
+    isolation: isolate;
+}
+.sk-glass::before {
+    /* 上沿高光带 */
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 50%;
+    background: linear-gradient(180deg,
+        color-mix(in srgb, white 18%, transparent),
+        transparent 70%);
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 0;
+}
+.sk-glass > * { position: relative; z-index: 1; }
+
+/* ============================================================ */
+/* Aurora 鼠标光斑（继承现有 aurora）                            */
+/* ============================================================ */
+.sk-aurora {
+    position: relative;
+}
+.sk-aurora::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        radial-gradient(380px circle at var(--sk-mx, 50%) var(--sk-my, 50%),
+            color-mix(in srgb, var(--sk-river) 22%, transparent),
+            transparent 60%),
+        radial-gradient(220px circle at var(--sk-mx, 50%) var(--sk-my, 50%),
+            color-mix(in srgb, var(--sk-violet) 18%, transparent),
+            transparent 70%);
+    opacity: 0;
+    transition: opacity .4s var(--sk-ease-out);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 2;
+}
+.sk-aurora:hover::after { opacity: 1; }
+
+/* ============================================================ */
+/* MagazineHero 杂志巨字                                         */
+/* ============================================================ */
+.sk-display {
+    font-family: var(--sk-font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+}
+.sk-han {
+    font-family: var(--sk-font-han);
+}
+.sk-script {
+    font-family: var(--sk-font-script);
+    font-weight: 400;
+}
+
+/* 苔金装饰横线 */
+.sk-rule {
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent,
+        color-mix(in srgb, var(--sk-gold) 70%, transparent) 30%,
+        color-mix(in srgb, var(--sk-gold) 70%, transparent) 70%,
+        transparent);
+}
+
+/* ============================================================ */
+/* 发光描边按钮 / 标签                                            */
+/* ============================================================ */
+.sk-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .35rem .8rem;
+    border-radius: var(--sk-r-pill);
+    font-size: .82rem;
+    font-weight: 500;
+    background: color-mix(in srgb, var(--sk-river) 12%, transparent);
+    color: var(--sk-moon);
+    border: 1px solid color-mix(in srgb, var(--sk-river) 30%, transparent);
+    transition: all .3s var(--sk-ease-out);
+}
+.sk-chip:hover {
+    background: color-mix(in srgb, var(--sk-river) 22%, transparent);
+    transform: translateY(-1px);
+}
+.sk-chip.sk-chip-active {
+    background: linear-gradient(135deg,
+        color-mix(in srgb, var(--sk-river) 45%, transparent),
+        color-mix(in srgb, var(--sk-violet) 35%, transparent));
+    color: white;
+    box-shadow: 0 4px 18px color-mix(in srgb, var(--sk-river) 40%, transparent);
+}
+
+/* ============================================================ */
+/* 浮入动画 stagger                                              */
+/* ============================================================ */
+@keyframes sk-rise {
+    from { opacity: 0; transform: translateY(28px) scale(0.985); filter: blur(6px); }
+    to   { opacity: 1; transform: none; filter: none; }
+}
+.sk-rise {
+    animation: sk-rise .9s var(--sk-ease-out) both;
+}
+.sk-rise[data-delay="1"]  { animation-delay: 0.08s; }
+.sk-rise[data-delay="2"]  { animation-delay: 0.16s; }
+.sk-rise[data-delay="3"]  { animation-delay: 0.24s; }
+.sk-rise[data-delay="4"]  { animation-delay: 0.32s; }
+.sk-rise[data-delay="5"]  { animation-delay: 0.40s; }
+.sk-rise[data-delay="6"]  { animation-delay: 0.48s; }
+.sk-rise[data-delay="7"]  { animation-delay: 0.56s; }
+.sk-rise[data-delay="8"]  { animation-delay: 0.64s; }
+
+/* 镜头光斑（lens flare） */
+@keyframes sk-flicker {
+    0%, 100% { opacity: .8; transform: scale(1); }
+    50%      { opacity: 1; transform: scale(1.05); }
+}
+.sk-lens-dot {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(2px);
+    mix-blend-mode: screen;
+    animation: sk-flicker 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* 减弱动效 */
+@media (prefers-reduced-motion: reduce) {
+    .sk-rise { animation: none; }
+    .sk-lens-dot { animation: none; }
+    .sk-glass { backdrop-filter: blur(20px); }
+}

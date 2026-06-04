@@ -15,7 +15,21 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env.*
+!.env.example
 .env.production
+.env.local
+
+# 隐私数据：微信读书拉取结果（含书名/笔记/账号画像，禁止提交）
+src/data/weread/
+src/data/private/
+public/private-assets/
+
+# 调研/截图临时文件
+/tmp/
+jh-*.jpg
+jh-*.png
+*.tmp.json
 
 # macOS-specific files
 .DS_Store

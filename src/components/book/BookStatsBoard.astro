@@ -1,0 +1,127 @@
+---
+import type { ReadingStats } from "@/types/weread";
+
+interface Props {
+  stats: ReadingStats;
+  notesCount: number;
+  readingCount: number;
+}
+const { stats, notesCount, readingCount } = Astro.props;
+
+const items = [
+  { label: "本年读完", value: stats.finishedCount, suffix: "本", color: "var(--sk-river)" },
+  { label: "阅读时长", value: Math.round(stats.totalReadingTime / 3600), suffix: "小时", color: "var(--sk-comet)" },
+  { label: "笔记划线", value: notesCount, suffix: "条", color: "var(--sk-sunset)" },
+  { label: "当前在读", value: readingCount, suffix: "本", color: "var(--sk-violet)" },
+];
+---
+
+<section class="stats-board">
+  {items.map((item, i) => (
+    <div class="stat-card sk-glass sk-aurora sk-rise" data-delay={i+1} style={`--stat-accent:${item.color}`}>
+      <div class="stat-num-block">
+        <span class="stat-num sk-display" data-count={item.value}>0</span>
+        <span class="stat-suffix">{item.suffix}</span>
+      </div>
+      <div class="stat-rule sk-rule"></div>
+      <div class="stat-label">{item.label}</div>
+      <div class="stat-glow" aria-hidden="true"></div>
+    </div>
+  ))}
+</section>
+
+<style>
+  .stats-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  @media (max-width: 720px) {
+    .stats-board { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .stat-card {
+    position: relative;
+    padding: 1.6rem 1.4rem 1.4rem;
+    transition: transform .4s var(--sk-ease-out);
+    --stat-accent: var(--sk-river);
+  }
+  .stat-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .stat-num-block {
+    display: flex;
+    align-items: baseline;
+    gap: .35rem;
+    color: var(--sk-moon);
+  }
+  .stat-num {
+    font-size: clamp(2.6rem, 4.5vw, 3.4rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--stat-accent), color-mix(in srgb, var(--stat-accent) 50%, var(--sk-moon)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 24px color-mix(in srgb, var(--stat-accent) 35%, transparent);
+  }
+  .stat-suffix {
+    font-size: .95rem;
+    font-family: var(--sk-font-han);
+    color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+  }
+
+  .stat-rule {
+    margin: .85rem 0 .7rem;
+    width: 30%;
+  }
+  .stat-label {
+    font-family: var(--sk-font-han);
+    font-size: .92rem;
+    color: color-mix(in srgb, var(--sk-moon) 78%, transparent);
+    letter-spacing: 0.04em;
+  }
+
+  .stat-glow {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--stat-accent) 35%, transparent), transparent 70%);
+    filter: blur(10px);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    opacity: .8;
+  }
+</style>
+
+<script>
+  // 数字 count-up
+  const observe = () => {
+    const els = document.querySelectorAll<HTMLElement>(".stat-num[data-count]");
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target as HTMLElement;
+        const target = +(el.dataset.count ?? "0");
+        const dur = 1200;
+        const start = performance.now();
+        const step = (t: number) => {
+          const k = Math.min(1, (t - start) / dur);
+          const eased = 1 - (1 - k) ** 3;
+          el.textContent = Math.round(target * eased).toLocaleString();
+          if (k < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.4 });
+    for (const el of els) io.observe(el);
+  };
+  observe();
+  document.addEventListener("swup:page:view", observe);
+</script>

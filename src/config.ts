@@ -29,6 +29,35 @@ export const siteConfig: SiteConfig = {
 		enable: true,
 		depth: 2,
 	},
+	rightSidebar: {
+		enable: true,
+		siteStats: {
+			enable: true,
+			// 建站日（YYYY-MM-DD）。运行天数 = 今天 - since，浏览器实时算
+			since: "2026-02-16",
+		},
+		calendar: {
+			enable: true,
+		},
+		musicPlayer: {
+			enable: true,
+			// 在 tracks 里添加歌曲就能用，示例：
+			// tracks: [
+			//   {
+			//     title:  "Avid",
+			//     artist: "SawanoHiroyuki[nZk]:mizuki",
+			//     src:    "/audio/avid.mp3",            // 放 public/audio/ 下，或填公网音频 URL
+			//     cover:  "/images/avid-cover.jpg",     // 同理，本地放 public/images/ 或外链
+			//   },
+			//   {
+			//     title:  "リテラチュア",
+			//     artist: "上田麗奈",
+			//     src:    "https://example.com/lit.mp3",
+			//   },
+			// ],
+			tracks: [],
+		},
+	},
 	favicon: [],
 };
 
@@ -39,6 +68,10 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Tags,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		{
+			name: "书架",
+			url: "/book/",
+		},
 		{
 			name: "Bangumi",
 			url: "/bangumi/",

@@ -2,6 +2,7 @@
 import BackToTop from "@components/control/BackToTop.astro";
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar.astro";
+import RightSideBar from "@components/widget/RightSideBar.astro";
 import SideBar from "@components/widget/SideBar.astro";
 import type { MarkdownHeading } from "astro";
 import { Icon } from "astro-icon/components";
@@ -62,7 +63,7 @@ const mainPanelTop = siteConfig.banner.enable
 <div class="absolute w-full z-30 pointer-events-none" style={`top: ${mainPanelTop}`}>
     <!-- The pointer-events-none here prevent blocking the click event of the TOC -->
     <div class="relative max-w-[var(--page-width)] mx-auto pointer-events-auto">
-        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[17.5rem_auto] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto]
+        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[17.5rem_auto] xl:grid-cols-[17.5rem_minmax(0,1fr)_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto]
     mx-auto gap-4 px-0 md:px-4"
         >
             <!-- Banner image credit -->
@@ -79,20 +80,24 @@ const mainPanelTop = siteConfig.banner.enable
             </a>}
 
 
-            <SideBar class="mb-4 row-start-2 row-end-3 col-span-2 lg:row-start-1 lg:row-end-2 lg:col-span-1 lg:max-w-[17.5rem] onload-animation" headings={headings}></SideBar>
+            <SideBar class="mb-4 row-start-2 row-end-3 col-span-2 xl:col-span-1 lg:row-start-1 lg:row-end-2 lg:col-span-1 lg:max-w-[17.5rem] onload-animation" headings={headings}></SideBar>
 
-            <main id="swup-container" class="transition-swup-fade col-span-2 lg:col-span-1 overflow-hidden">
+            <main id="swup-container" class="transition-swup-fade col-span-2 lg:col-span-1 xl:col-span-1 overflow-hidden">
                 <div id="content-wrapper" class="onload-animation">
                     <!-- the overflow-hidden here prevent long text break the layout-->
                     <!-- make id different from windows.swup global property -->
                     <slot></slot>
-                    <div class="footer col-span-2 onload-animation hidden lg:block">
+                    <div class="footer col-span-2 xl:col-span-3 onload-animation hidden lg:block">
                         <Footer></Footer>
                     </div>
                 </div>
             </main>
 
-            <div class="footer col-span-2 onload-animation block lg:hidden">
+            {siteConfig.rightSidebar.enable && (
+                <RightSideBar class="hidden xl:block mb-4 xl:row-start-1 xl:row-end-2 xl:col-start-3 xl:col-end-4 xl:max-w-[17.5rem] onload-animation" />
+            )}
+
+            <div class="footer col-span-2 xl:col-span-3 onload-animation block lg:hidden">
                 <Footer></Footer>
             </div>
         </div>
@@ -100,5 +105,33 @@ const mainPanelTop = siteConfig.banner.enable
         <BackToTop></BackToTop>
     </div>
 </div>
+
+<style is:global>
+    /* footer should expand to match the new grid when right sidebar collapses */
+    :root.right-sidebar-collapsed #main-grid > .footer {
+        @apply xl:col-span-2;
+    }
+</style>
+
+<script>
+    // Pointer-tracked aurora highlight for liquid-glass widgets
+    function bindAurora() {
+        const cards = document.querySelectorAll("#right-sidebar widget-layout");
+        for (const card of cards) {
+            if ((card as HTMLElement).dataset.auroraBound) continue;
+            (card as HTMLElement).dataset.auroraBound = "1";
+            card.addEventListener("pointermove", (e) => {
+                const ev = e as PointerEvent;
+                const r = (card as HTMLElement).getBoundingClientRect();
+                const mx = ((ev.clientX - r.left) / r.width) * 100;
+                const my = ((ev.clientY - r.top) / r.height) * 100;
+                (card as HTMLElement).style.setProperty("--rs-mx", `${mx}%`);
+                (card as HTMLElement).style.setProperty("--rs-my", `${my}%`);
+            });
+        }
+    }
+    bindAurora();
+    document.addEventListener("swup:page:view", () => bindAurora());
+</script>
 
 </Layout>
