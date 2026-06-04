@@ -4,27 +4,20 @@ import BookHero from "@/components/book/BookHero.astro";
 import BookShelf from "@/components/book/BookShelf.astro";
 import BookStatsBoard from "@/components/book/BookStatsBoard.astro";
 import NoteWall from "@/components/book/NoteWall.astro";
-import LensFlare from "@/components/effects/LensFlare.svelte";
 import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
 import { shelfData } from "@/data/shelf";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
-const readingCount = shelfData.books.filter(b => b.status === "reading").length;
 const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString("zh-CN");
 ---
 
 <MainGridLayout title="书架 | yujok" description="在文字的海里打捞自己 — yujok 的微信读书书架">
   <LiquidGlassDefs />
-  <LensFlare client:only="svelte" />
 
   <div class="book-page">
-    <BookHero profile={shelfData.profile} />
+    <BookHero profile={shelfData.profile} stats={shelfData.stats} />
 
-    <BookStatsBoard
-      stats={shelfData.stats}
-      notesCount={shelfData.stats.noteCount}
-      readingCount={readingCount}
-    />
+    <BookStatsBoard stats={shelfData.stats} />
 
     <BookHeatmap stats={shelfData.stats} />
 
@@ -32,15 +25,16 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString("zh-CN")
 
     <NoteWall notes={shelfData.notes} limit={6} />
 
-    <footer class="book-footnote sk-rise" data-delay="7">
-      <div class="sk-rule" style="width: 60%; margin: 0 auto 1rem;"></div>
-      <p>
-        本页数据来自微信读书 · 最后更新 {updatedLocal}
-        {shelfData.isMock && <span class="mock-tag">· 当前为示例数据</span>}
+    <footer class="book-foot sk-rise" data-delay="7">
+      <div class="sk-rule" style="width: 40%; margin: 0 auto 1.2rem;"></div>
+      <p class="foot-meta">
+        数据来自微信读书 · 更新于 {updatedLocal}
+        {shelfData.profile.secretCount > 0 && (
+          <span class="foot-private">· {shelfData.profile.secretCount} 本私密书未公开</span>
+        )}
+        {shelfData.isMock && <span class="foot-mock">· 示例数据</span>}
       </p>
-      <p class="footnote-quote sk-script">
-        "We read to know we are not alone." — C.S. Lewis
-      </p>
+      <p class="foot-quote sk-script">We read to know we are not alone.</p>
     </footer>
   </div>
 </MainGridLayout>
@@ -49,25 +43,24 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString("zh-CN")
   .book-page {
     display: flex;
     flex-direction: column;
-    gap: 0;
     position: relative;
   }
 
-  .book-footnote {
+  .book-foot {
     text-align: center;
     margin: 3rem 0 1rem;
+  }
+  .foot-meta {
     color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
-    font-size: .85rem;
+    font-size: .82rem;
+    margin: 0;
   }
-  .mock-tag {
-    color: var(--sk-sunset);
-    font-weight: 600;
-    margin-left: .35rem;
-  }
-  .footnote-quote {
+  .foot-private { color: color-mix(in srgb, var(--sk-violet) 80%, var(--sk-moon)); }
+  .foot-mock { color: var(--sk-sunset); font-weight: 600; }
+  .foot-quote {
     margin-top: 1rem;
-    font-size: 1.3rem;
-    color: color-mix(in srgb, var(--sk-violet) 80%, transparent);
-    text-shadow: 0 0 12px color-mix(in srgb, var(--sk-violet) 40%, transparent);
+    font-size: 1.5rem;
+    color: color-mix(in srgb, var(--sk-comet) 85%, var(--sk-moon));
+    text-shadow: 0 0 16px color-mix(in srgb, var(--sk-comet) 30%, transparent);
   }
 </style>

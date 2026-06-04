@@ -3,125 +3,153 @@ import type { ReadingStats } from "@/types/weread";
 
 interface Props {
   stats: ReadingStats;
-  notesCount: number;
-  readingCount: number;
 }
-const { stats, notesCount, readingCount } = Astro.props;
+const { stats } = Astro.props;
 
-const items = [
-  { label: "本年读完", value: stats.finishedCount, suffix: "本", color: "var(--sk-river)" },
-  { label: "阅读时长", value: Math.round(stats.totalReadingTime / 3600), suffix: "小时", color: "var(--sk-comet)" },
-  { label: "笔记划线", value: notesCount, suffix: "条", color: "var(--sk-sunset)" },
-  { label: "当前在读", value: readingCount, suffix: "本", color: "var(--sk-violet)" },
-];
+const fmtHours = (sec: number) => {
+  const h = Math.round(sec / 3600);
+  return h > 0 ? `${h}h` : `${Math.round(sec / 60)}m`;
+};
+
+// 偏好分类：算占比（用于条形）
+const maxCatTime = Math.max(...stats.preferCategory.map(c => c.time), 1);
+const catColors = ["var(--sk-river)", "var(--sk-violet)", "var(--sk-comet)", "var(--sk-sakura)", "var(--sk-gold)", "var(--sk-sunset)"];
 ---
 
-<section class="stats-board">
-  {items.map((item, i) => (
-    <div class="stat-card sk-glass sk-aurora sk-rise" data-delay={i+1} style={`--stat-accent:${item.color}`}>
-      <div class="stat-num-block">
-        <span class="stat-num sk-display" data-count={item.value}>0</span>
-        <span class="stat-suffix">{item.suffix}</span>
-      </div>
-      <div class="stat-rule sk-rule"></div>
-      <div class="stat-label">{item.label}</div>
-      <div class="stat-glow" aria-hidden="true"></div>
+<section class="taste sk-rise" data-delay="4">
+  <!-- 偏好分类 -->
+  <div class="taste-card sk-glass">
+    <div class="taste-head">
+      <h3 class="taste-title sk-han">读得最多的领域</h3>
+      {stats.preferCategoryWord && <span class="taste-word">{stats.preferCategoryWord}</span>}
     </div>
-  ))}
+    <div class="cat-list">
+      {stats.preferCategory.slice(0, 5).map((c, i) => (
+        <div class="cat-row">
+          <span class="cat-name sk-han">{c.title}</span>
+          <div class="cat-bar">
+            <span class="cat-bar-fill" style={`width:${Math.max(8, (c.time / maxCatTime) * 100)}%; background:${catColors[i % catColors.length]}`}></span>
+          </div>
+          <span class="cat-meta">{c.count}本 · {fmtHours(c.time)}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- 偏好作者 -->
+  <div class="taste-card sk-glass">
+    <div class="taste-head">
+      <h3 class="taste-title sk-han">钟爱的作者</h3>
+      {stats.preferTimeWord && <span class="taste-word">{stats.preferTimeWord}</span>}
+    </div>
+    <ul class="author-list">
+      {stats.preferAuthor.slice(0, 5).map((a, i) => (
+        <li class="author-row">
+          <span class="author-rank sk-display">{String(i + 1).padStart(2, "0")}</span>
+          <span class="author-name sk-han">{a.name}</span>
+          <span class="author-meta">{a.count}本 · {a.readTime}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
 </section>
 
 <style>
-  .stats-board {
+  .taste {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-    margin: 1.5rem 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+    margin: 1.3rem 0;
   }
   @media (max-width: 720px) {
-    .stats-board { grid-template-columns: repeat(2, 1fr); }
+    .taste { grid-template-columns: 1fr; }
   }
 
-  .stat-card {
-    position: relative;
-    padding: 1.6rem 1.4rem 1.4rem;
-    transition: transform .4s var(--sk-ease-out);
-    --stat-accent: var(--sk-river);
-  }
-  .stat-card:hover {
-    transform: translateY(-4px);
-  }
-
-  .stat-num-block {
+  .taste-card { padding: 1.5rem 1.6rem; }
+  .taste-head {
     display: flex;
     align-items: baseline;
-    gap: .35rem;
+    justify-content: space-between;
+    gap: .6rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .taste-title {
+    font-size: 1.12rem;
+    font-weight: 600;
     color: var(--sk-moon);
+    margin: 0;
   }
-  .stat-num {
-    font-size: clamp(2.6rem, 4.5vw, 3.4rem);
+  .taste-word {
+    font-size: .74rem;
+    color: var(--sk-comet);
+    padding: .12rem .55rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--sk-comet) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-comet) 28%, transparent);
+    white-space: nowrap;
+  }
+
+  /* 分类条形 */
+  .cat-list { display: flex; flex-direction: column; gap: .85rem; }
+  .cat-row {
+    display: grid;
+    grid-template-columns: 4.5em 1fr auto;
+    align-items: center;
+    gap: .7rem;
+  }
+  .cat-name {
+    font-size: .85rem;
+    color: color-mix(in srgb, var(--sk-moon) 82%, transparent);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cat-bar {
+    height: 7px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--sk-moon) 10%, transparent);
+    overflow: hidden;
+  }
+  .cat-bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    transform-origin: left;
+    animation: bar-grow 1s var(--sk-ease-out) both;
+    box-shadow: 0 0 10px color-mix(in srgb, currentColor 40%, transparent);
+  }
+  @keyframes bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .cat-meta {
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    font-family: var(--sk-font-display);
+    white-space: nowrap;
+  }
+
+  /* 作者榜 */
+  .author-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .7rem; }
+  .author-row {
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+  }
+  .author-rank {
+    font-size: 1rem;
+    color: color-mix(in srgb, var(--sk-gold) 75%, transparent);
+    font-weight: 600;
+    min-width: 1.8em;
+  }
+  .author-name {
+    font-size: .9rem;
+    color: var(--sk-moon);
     font-weight: 500;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    background: linear-gradient(135deg, var(--stat-accent), color-mix(in srgb, var(--stat-accent) 50%, var(--sk-moon)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 24px color-mix(in srgb, var(--stat-accent) 35%, transparent);
   }
-  .stat-suffix {
-    font-size: .95rem;
-    font-family: var(--sk-font-han);
-    color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
-  }
-
-  .stat-rule {
-    margin: .85rem 0 .7rem;
-    width: 30%;
-  }
-  .stat-label {
-    font-family: var(--sk-font-han);
-    font-size: .92rem;
-    color: color-mix(in srgb, var(--sk-moon) 78%, transparent);
-    letter-spacing: 0.04em;
-  }
-
-  .stat-glow {
-    position: absolute;
-    bottom: -30px;
-    right: -30px;
-    width: 110px; height: 110px;
-    border-radius: 50%;
-    background: radial-gradient(circle, color-mix(in srgb, var(--stat-accent) 35%, transparent), transparent 70%);
-    filter: blur(10px);
-    pointer-events: none;
-    mix-blend-mode: screen;
-    opacity: .8;
+  .author-meta {
+    margin-left: auto;
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    font-family: var(--sk-font-display);
+    white-space: nowrap;
   }
 </style>
-
-<script>
-  // 数字 count-up
-  const observe = () => {
-    const els = document.querySelectorAll<HTMLElement>(".stat-num[data-count]");
-    const io = new IntersectionObserver((entries) => {
-      for (const e of entries) {
-        if (!e.isIntersecting) continue;
-        const el = e.target as HTMLElement;
-        const target = +(el.dataset.count ?? "0");
-        const dur = 1200;
-        const start = performance.now();
-        const step = (t: number) => {
-          const k = Math.min(1, (t - start) / dur);
-          const eased = 1 - (1 - k) ** 3;
-          el.textContent = Math.round(target * eased).toLocaleString();
-          if (k < 1) requestAnimationFrame(step);
-        };
-        requestAnimationFrame(step);
-        io.unobserve(el);
-      }
-    }, { threshold: 0.4 });
-    for (const el of els) io.observe(el);
-  };
-  observe();
-  document.addEventListener("swup:page:view", observe);
-</script>

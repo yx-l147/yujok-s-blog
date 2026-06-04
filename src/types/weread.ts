@@ -1,18 +1,19 @@
 /**
  * 微信读书数据类型定义
  *
- * 数据来源：weread CLI（手动 `pnpm fetch-weread`）
- * 实际数据存放在 src/data/weread/（已 gitignore，不会进仓库）
+ * 数据来源：weread skill（手动 `pnpm fetch-weread`）
+ * 实际数据存放在 src/data/weread/shelf.json（已 gitignore，不会进仓库）
+ *
+ * 隐私：secret=1 的私密书籍在拉取脚本源头即被过滤，类型中不存在该字段。
  */
 
-/** 阅读状态 */
+/** 阅读状态（由 progress + finishReading 派生） */
 export type BookShelfStatus =
-	| "reading" // 在读
+	| "reading" // 在读（progress>0 且未读完）
 	| "finished" // 已读完
-	| "wishlist" // 想读
-	| "abandoned"; // 弃读
+	| "wishlist"; // 想读 / 未开始（progress=0）
 
-/** 单本书 */
+/** 单本书（来自 shelf.json，已含派生 status） */
 export interface BookItem {
 	/** 微信读书书籍 ID */
 	bookId: string;
@@ -20,38 +21,42 @@ export interface BookItem {
 	title: string;
 	/** 作者 */
 	author: string;
-	/** 出版社（可选） */
-	publisher?: string;
-	/** 译者（可选） */
-	translator?: string;
 	/** 封面图 URL */
 	cover: string;
-	/** 简介 */
-	intro?: string;
-	/** 分类标签 */
+	/** 原始分类串（如 "文学-古代诗词"） */
 	category?: string;
-	/** 阅读状态 */
-	status: BookShelfStatus;
+	/** 出版社（精选书才有） */
+	publisher?: string;
+	/** 译者（精选书才有） */
+	translator?: string;
+	/** 简介（精选书才有） */
+	intro?: string;
+	/** 微信读书评分（10 分制，0 表示评分不足/未补全） */
+	publicRating?: number;
+	/** 评分人数 */
+	ratingCount?: number;
+	/** 出版时间 */
+	publishTime?: string;
+	/** 是否读完 */
+	finishReading: number;
 	/** 阅读进度 0-100 */
 	progress: number;
-	/** 累计阅读时长（秒） */
-	readingTime: number;
-	/** 我的评分 0-5（半星精度 0.5） */
-	myRating?: number;
-	/** 豆瓣/读书评分 */
-	publicRating?: number;
-	/** 开始阅读时间（ISO） */
-	startTime?: string;
-	/** 结束阅读时间（ISO，已读完才有） */
-	finishTime?: string;
-	/** 最后阅读时间（ISO） */
-	lastReadTime?: string;
-	/** 笔记/划线条数 */
+	/** 累计阅读时长（秒，仅 Top10 长读书有） */
+	readTime?: number;
+	/** 笔记（想法）条数 */
 	noteCount?: number;
-	/** 我的评论/读后感 */
-	review?: string;
-	/** 当前章节名（在读才有） */
-	currentChapter?: string;
+	/** 书评条数 */
+	reviewCount?: number;
+	/** 划线条数 */
+	bookmarkCount?: number;
+	/** 微信读书赋予的标签（如 "笔记最多" "单日阅读最久"） */
+	tags?: string[];
+	/** 最后阅读时间（Unix 秒） */
+	readUpdateTime?: number;
+	/** 加入书架时间（Unix 秒） */
+	updateTime?: number;
+	/** 派生：阅读状态 */
+	status: BookShelfStatus;
 }
 
 /** 单条笔记/划线 */
@@ -62,40 +67,67 @@ export interface BookNote {
 	chapter?: string;
 	/** 划线原文 */
 	text: string;
-	/** 我的批注 */
-	comment?: string;
 	/** 创建时间（ISO） */
 	createTime: string;
 }
 
-/** 年度阅读统计 */
+/** 偏好分类 */
+export interface PreferCategory {
+	title: string;
+	count: number;
+	/** 阅读时长（秒） */
+	time: number;
+}
+
+/** 偏好作者 */
+export interface PreferAuthor {
+	name: string;
+	count: number;
+	/** 已格式化的阅读时长（如 "11小时"） */
+	readTime: string;
+}
+
+/** 阅读统计 */
 export interface ReadingStats {
-	/** 统计年份 */
-	year: number;
-	/** 全年阅读总时长（秒） */
-	totalReadingTime: number;
-	/** 全年读完本数 */
-	finishedCount: number;
-	/** 全年开始读的本数 */
-	startedCount: number;
-	/** 全年笔记条数 */
+	/** 累计阅读总时长（秒） */
+	totalReadTime: number;
+	/** 累计阅读天数 */
+	readDays: number;
+	/** 读过本数 */
+	readBooks: number;
+	/** 读完本数 */
+	finishedBooks: number;
+	/** 笔记总条数 */
 	noteCount: number;
-	/** 365 天热力图：[{date: 'YYYY-MM-DD', minutes: N}] */
-	heatmap: Array<{ date: string; minutes: number }>;
+	/** 偏好时段文案（如 "偏好白天阅读"） */
+	preferTimeWord?: string;
+	/** 偏好分类文案（如 "偏好阅读文学"） */
+	preferCategoryWord?: string;
+	/** 偏好分类 Top */
+	preferCategory: PreferCategory[];
+	/** 偏好作者 Top */
+	preferAuthor: PreferAuthor[];
+	/** 注册时间（Unix 秒） */
+	registTime?: number;
+	/** 按日热力图：[{date:'YYYY-MM-DD', seconds:N}] */
+	heatmap: Array<{ date: string; seconds: number }>;
+}
+
+/** 最爱的书 */
+export interface FavBook {
+	title: string;
+	author: string;
+	cover: string;
 }
 
 /** 用户阅读概况 */
 export interface ReadingProfile {
-	username: string;
-	avatar?: string;
-	/** 累计阅读时长（秒） */
-	totalReadingTime: number;
-	/** 累计读完本数 */
-	totalFinished: number;
-	/** 当前连续阅读天数 */
-	streak: number;
-	/** 注册天数 */
-	memberDays: number;
+	/** 公开书架总本数 */
+	totalBooks: number;
+	/** 私密书数量（仅作统计提示，不展示书目） */
+	secretCount: number;
+	/** 最爱的书 */
+	favBook?: FavBook | null;
 }
 
 /** 顶层书架数据（页面使用） */
@@ -106,6 +138,6 @@ export interface BookShelfData {
 	profile: ReadingProfile;
 	/** 数据生成时间（ISO） */
 	generatedAt: string;
-	/** 是否为 mock 数据（未配置 weread CLI 时的展示数据） */
+	/** 是否为 mock 数据 */
 	isMock: boolean;
 }

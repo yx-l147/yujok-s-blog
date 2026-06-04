@@ -1,6 +1,5 @@
 ---
 import type { BookItem } from "@/types/weread";
-import MoonProgress from "./MoonProgress.astro";
 
 interface Props {
   book: BookItem;
@@ -8,233 +7,235 @@ interface Props {
 }
 const { book, delay = 0 } = Astro.props;
 
-const STATUS_LABEL: Record<BookItem["status"], string> = {
-  reading: "在读",
-  finished: "已读",
-  wishlist: "想读",
-  abandoned: "弃读",
+const STATUS_META: Record<BookItem["status"], { label: string; color: string }> = {
+  reading: { label: "在读", color: "var(--sk-comet)" },
+  finished: { label: "读完", color: "var(--sk-river)" },
+  wishlist: { label: "想读", color: "var(--sk-sakura)" },
 };
+const meta = STATUS_META[book.status];
 
-const STATUS_COLOR: Record<BookItem["status"], string> = {
-  reading: "var(--sk-comet)",
-  finished: "var(--sk-river)",
-  wishlist: "var(--sk-sakura)",
-  abandoned: "var(--sk-violet)",
-};
-
-const hours = Math.round(book.readingTime / 3600);
+const hours = book.readTime ? Math.round(book.readTime / 3600) : 0;
+const noteTotal = (book.noteCount ?? 0) + (book.bookmarkCount ?? 0);
+// 微信读书标签里挑一个最有代表性的
+const highlight = book.tags?.[0];
 ---
 
-<article
-  class="book-card sk-glass sk-aurora sk-rise"
+<a
+  href={`/book/${book.bookId}/`}
+  class="bk sk-rise"
   data-delay={Math.min(delay, 8)}
-  style={`--card-accent:${STATUS_COLOR[book.status]}`}
+  style={`--bk-accent:${meta.color}`}
 >
-  <!-- 封面层 -->
-  <div class="book-cover">
-    <img src={book.cover} alt={book.title} loading="lazy" />
-    <div class="cover-gradient"></div>
+  <div class="bk-cover">
+    <img src={book.cover} alt={book.title} loading="lazy" decoding="async" />
+    <div class="bk-cover-sheen" aria-hidden="true"></div>
 
-    <!-- 顶部：白色大字书名（致敬锦辉） -->
-    <div class="cover-title-block">
-      <h3 class="cover-title sk-han">{book.title}</h3>
-      <div class="cover-status">
-        <span class="status-dot" style={`background:${STATUS_COLOR[book.status]}`}></span>
-        <span>{STATUS_LABEL[book.status]}</span>
-      </div>
-    </div>
+    <!-- 状态角标 -->
+    <span class="bk-badge" style={`--badge:${meta.color}`}>{meta.label}</span>
 
-    <!-- 右上角评分 -->
-    {book.myRating != null && book.myRating > 0 && (
-      <div class="cover-rating">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18 22l-6-3.6L6 22l1.5-7.3L2 10l7.1-1.1z"/>
-        </svg>
-        <span>{book.myRating.toFixed(1)}</span>
+    <!-- 在读：底部进度条 -->
+    {book.status === "reading" && book.progress > 0 && (
+      <div class="bk-progress" title={`已读 ${book.progress}%`}>
+        <span class="bk-progress-fill" style={`width:${book.progress}%`}></span>
       </div>
     )}
+
+    <!-- 微信读书特殊标签（如"笔记最多"） -->
+    {highlight && <span class="bk-tag">✦ {highlight}</span>}
   </div>
 
-  <!-- 玻璃底部条 -->
-  <div class="book-foot">
-    <div class="foot-meta">
-      <div class="foot-author">{book.author}</div>
-      {book.currentChapter && (
-        <div class="foot-chapter">📖 {book.currentChapter}</div>
-      )}
-    </div>
+  <div class="bk-info">
+    <h3 class="bk-title sk-han" title={book.title}>{book.title}</h3>
+    <p class="bk-author">{book.author}</p>
 
-    <div class="foot-stats">
-      {book.status === "reading" || book.status === "abandoned" ? (
-        <MoonProgress progress={book.progress} size={28} />
-      ) : book.status === "finished" ? (
-        <div class="foot-stat">
-          <span class="stat-num sk-display">{hours}</span>
-          <span class="stat-label">小时</span>
-        </div>
+    <div class="bk-foot">
+      {book.publicRating && book.publicRating > 0 ? (
+        <span class="bk-rating" title={`微信读书评分 ${book.publicRating}`}>
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true">
+            <path d="M12 2l2.9 6.9L22 10l-5.5 4.7L18 22l-6-3.6L6 22l1.5-7.3L2 10l7.1-1.1z"/>
+          </svg>
+          {book.publicRating.toFixed(1)}
+        </span>
       ) : (
-        <div class="foot-stat">
-          <span class="stat-label">期待中</span>
-        </div>
+        <span class="bk-rating bk-rating-empty">—</span>
       )}
-      {(book.noteCount ?? 0) > 0 && (
-        <div class="foot-stat">
-          <span class="stat-num sk-display">{book.noteCount}</span>
-          <span class="stat-label">笔记</span>
-        </div>
-      )}
+
+      <span class="bk-foot-right">
+        {book.status === "finished" && hours > 0 && (
+          <span class="bk-metric">{hours}<i>h</i></span>
+        )}
+        {book.status === "reading" && (
+          <span class="bk-metric">{book.progress}<i>%</i></span>
+        )}
+        {noteTotal > 0 && (
+          <span class="bk-metric bk-metric-note" title={`${book.noteCount ?? 0} 笔记 · ${book.bookmarkCount ?? 0} 划线`}>
+            {noteTotal}<i>记</i>
+          </span>
+        )}
+      </span>
     </div>
   </div>
-</article>
+</a>
 
 <style>
-  .book-card {
+  .bk {
+    --bk-accent: var(--sk-river);
     display: flex;
     flex-direction: column;
-    position: relative;
-    transition: transform .5s var(--sk-ease-out), box-shadow .5s var(--sk-ease-out);
     cursor: pointer;
-    --card-accent: var(--sk-river);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform .55s var(--sk-ease-out),
+      filter .55s var(--sk-ease-out);
   }
-  .book-card:hover {
-    transform: translateY(-6px) scale(1.012);
-    box-shadow:
-      0 30px 60px rgba(20, 40, 80, 0.32),
-      0 8px 20px color-mix(in srgb, var(--card-accent) 30%, transparent),
-      inset 0 1px 0 var(--sk-glass-hi);
-  }
+  .bk:hover { transform: translateY(-8px); }
 
-  .book-cover {
+  /* ── 封面：绝对主角 ── */
+  .bk-cover {
     position: relative;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 4.35;
+    border-radius: 12px;
     overflow: hidden;
-    border-radius: var(--sk-r-card) var(--sk-r-card) 0 0;
+    background: color-mix(in srgb, var(--sk-tide) 50%, transparent);
+    box-shadow:
+      0 8px 22px rgba(20, 40, 80, 0.18),
+      0 2px 6px rgba(20, 40, 80, 0.1);
+    transition: box-shadow .55s var(--sk-ease-out);
   }
-  .book-cover img {
-    width: 100%; height: 100%;
+  .bk:hover .bk-cover {
+    box-shadow:
+      0 26px 50px rgba(20, 40, 80, 0.3),
+      0 8px 18px color-mix(in srgb, var(--bk-accent) 28%, transparent);
+  }
+  .bk-cover img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform .8s var(--sk-ease-out);
   }
-  .book-card:hover .book-cover img {
-    transform: scale(1.06);
-  }
+  .bk:hover .bk-cover img { transform: scale(1.05); }
 
-  .cover-gradient {
+  /* 斜向高光扫过 */
+  .bk-cover-sheen {
     position: absolute;
     inset: 0;
-    background:
-      linear-gradient(180deg, rgba(10,20,40,0.55) 0%, transparent 35%, transparent 70%, rgba(10,20,40,0.7) 100%);
+    background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,.22) 50%, transparent 60%);
+    transform: translateX(-120%);
+    transition: transform .9s var(--sk-ease-out);
     pointer-events: none;
   }
+  .bk:hover .bk-cover-sheen { transform: translateX(120%); }
 
-  .cover-title-block {
+  .bk-badge {
     position: absolute;
-    top: 1rem;
-    left: 1.1rem;
-    right: 1.1rem;
-    color: white;
-    text-shadow: 0 2px 14px rgba(0,0,0,0.55);
-    z-index: 2;
-  }
-  .cover-title {
-    font-size: 1.45rem;
-    line-height: 1.25;
+    top: .55rem;
+    left: .55rem;
+    padding: .12rem .5rem;
+    border-radius: 999px;
+    font-size: .68rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    color: #fff;
+    background: color-mix(in srgb, var(--badge) 88%, #000);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--badge) 45%, transparent);
+    backdrop-filter: blur(4px);
+    letter-spacing: .03em;
+  }
+
+  .bk-tag {
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    right: .5rem;
+    padding: .2rem .45rem;
+    border-radius: 7px;
+    font-size: .66rem;
+    font-weight: 500;
+    color: #fff;
+    background: color-mix(in srgb, var(--sk-gold) 78%, rgba(0,0,0,.5));
+    backdrop-filter: blur(6px);
+    text-align: center;
+    letter-spacing: .04em;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  }
+
+  .bk-progress {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: rgba(0,0,0,.28);
+  }
+  .bk-progress-fill {
+    display: block;
+    height: 100%;
+    background: var(--bk-accent);
+    box-shadow: 0 0 10px var(--bk-accent);
+  }
+
+  /* ── 信息区：极简，封面之下 ── */
+  .bk-info {
+    padding: .7rem .15rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+  }
+  .bk-title {
+    font-size: .92rem;
+    font-weight: 600;
+    color: var(--sk-moon);
+    line-height: 1.35;
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .cover-status {
-    display: inline-flex;
-    align-items: center;
-    gap: .35rem;
-    margin-top: .55rem;
-    padding: .2rem .6rem;
-    border-radius: 999px;
-    background: rgba(10,20,40,0.5);
-    backdrop-filter: blur(6px);
-    font-size: .72rem;
-    font-weight: 500;
-  }
-  .status-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    box-shadow: 0 0 8px currentColor;
-  }
-  .cover-status span:last-child {
-    color: rgba(255,255,255,0.92);
-  }
-
-  .cover-rating {
-    position: absolute;
-    top: .9rem;
-    right: .9rem;
-    z-index: 3;
-    display: inline-flex;
-    align-items: center;
-    gap: .25rem;
-    padding: .25rem .55rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--sk-sunset), var(--sk-sakura));
-    color: white;
-    font-size: .78rem;
-    font-weight: 700;
-    box-shadow: 0 4px 14px rgba(255,107,74,0.35);
-  }
-
-  .book-foot {
-    padding: .9rem 1.1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
-    background: linear-gradient(180deg,
-      color-mix(in srgb, var(--card-accent) 5%, transparent),
-      transparent);
-  }
-
-  .foot-author {
-    font-size: .82rem;
-    color: color-mix(in srgb, var(--sk-moon) 75%, transparent);
-    line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  .bk-author {
+    font-size: .76rem;
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
+    margin: 0;
+    white-space: nowrap;
     overflow: hidden;
-  }
-  .foot-chapter {
-    font-size: .72rem;
-    color: color-mix(in srgb, var(--card-accent) 80%, var(--sk-moon));
-    margin-top: .2rem;
+    text-overflow: ellipsis;
   }
 
-  .foot-stats {
+  .bk-foot {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    padding-top: .6rem;
-    border-top: 1px dashed color-mix(in srgb, var(--sk-moon) 18%, transparent);
+    margin-top: .35rem;
   }
-  .foot-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    line-height: 1;
-  }
-  .stat-num {
-    font-size: 1.4rem;
+  .bk-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: .78rem;
     font-weight: 600;
-    color: var(--sk-moon);
-    letter-spacing: -0.02em;
+    color: var(--sk-gold);
+    font-family: var(--sk-font-display);
   }
-  .stat-label {
-    font-size: .65rem;
-    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: .15rem;
+  .bk-rating svg { opacity: .9; }
+  .bk-rating-empty { color: color-mix(in srgb, var(--sk-moon) 30%, transparent); }
+
+  .bk-foot-right {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .55rem;
   }
+  .bk-metric {
+    font-size: .82rem;
+    font-weight: 600;
+    color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
+    font-family: var(--sk-font-display);
+  }
+  .bk-metric i {
+    font-size: .62rem;
+    font-style: normal;
+    font-family: var(--sk-font-han);
+    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
+    margin-left: .05rem;
+  }
+  .bk-metric-note { color: color-mix(in srgb, var(--bk-accent) 80%, var(--sk-moon)); }
+  .bk-metric-note i { color: color-mix(in srgb, var(--bk-accent) 55%, transparent); }
 </style>
+

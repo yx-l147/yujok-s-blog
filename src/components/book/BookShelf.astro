@@ -1,5 +1,6 @@
 ---
 import type { BookItem } from "@/types/weread";
+import { topCategories } from "@/data/shelf";
 import BookCard from "./BookCard.astro";
 
 interface Props {
@@ -7,157 +8,334 @@ interface Props {
 }
 const { books } = Astro.props;
 
-const tabs = [
-  { id: "reading", label: "在读" },
-  { id: "finished", label: "已读" },
-  { id: "wishlist", label: "想读" },
-  { id: "abandoned", label: "弃读" },
-  { id: "all", label: "全部" },
-] as const;
-
+// ── 状态统计 ──
 const counts: Record<string, number> = { all: books.length };
 for (const b of books) counts[b.status] = (counts[b.status] ?? 0) + 1;
 
-// 排序：在读优先按最近阅读，已读按完成时间倒序，其他按状态
-const sorted = [...books].sort((a, b) => {
-  const ta = a.lastReadTime || a.finishTime || a.startTime || "";
-  const tb = b.lastReadTime || b.finishTime || b.startTime || "";
-  return tb.localeCompare(ta);
-});
+// ── 精选：在读 + 读完 + 高评分想读，按价值排序 ──
+function score(b: BookItem) {
+  let s = 0;
+  if (b.status === "reading") s += 5000 + b.progress * 10;
+  if (b.status === "finished") s += 4000;
+  s += (b.noteCount ?? 0) + (b.bookmarkCount ?? 0);
+  s += (b.publicRating ?? 0) * 20;
+  s += (b.readUpdateTime ?? 0) / 1e9;
+  return s;
+}
+const featured = [...books]
+  .filter((b) => b.status !== "wishlist" || (b.publicRating ?? 0) >= 8.5)
+  .sort((a, b) => score(b) - score(a))
+  .slice(0, 24);
 
-const defaultTab = (counts.reading ?? 0) > 0 ? "reading" : "all";
+// ── 全部书籍按最近阅读排序 ──
+const allSorted = [...books].sort(
+  (a, b) => (b.readUpdateTime ?? 0) - (a.readUpdateTime ?? 0),
+);
+
+// ── Tab 定义 ──
+const tabs = [
+  { id: "featured", label: "精选", count: featured.length },
+  { id: "reading", label: "在读", count: counts.reading ?? 0 },
+  { id: "finished", label: "读完", count: counts.finished ?? 0 },
+  { id: "wishlist", label: "想读", count: counts.wishlist ?? 0 },
+  { id: "all", label: "全部", count: counts.all ?? 0 },
+] as const;
+
+// ── 分类标签（顶级分类，≥5 本） ──
+const cats = topCategories(books, 5);
 ---
 
-<section class="shelf-section">
-  <div class="shelf-head sk-rise" data-delay="3">
-    <h3 class="shelf-title sk-han">
-      <span class="shelf-eyebrow sk-script">collections</span>
-      我 · 的 · 书 · 架
-    </h3>
-    <div class="shelf-tabs" role="tablist">
-      {tabs.map(t => (
+<section class="shelf" data-shelf>
+  <!-- ══════ 头部 ══════ -->
+  <header class="shelf-head sk-rise" data-delay="2">
+    <div class="shelf-titles">
+      <p class="shelf-eyebrow sk-script">the shelf</p>
+      <h2 class="shelf-title sk-han">书架</h2>
+    </div>
+  </header>
+
+  <!-- ══════ 筛选栏 ══════ -->
+  <div class="shelf-filters sk-rise" data-delay="2">
+    <!-- 状态 Tab -->
+    <div class="filter-row" role="tablist" aria-label="阅读状态">
+      {tabs.map((t) => (
         <button
           type="button"
           role="tab"
-          class:list={["sk-chip shelf-tab", { "sk-chip-active": t.id === defaultTab }]}
-          data-tab={t.id}
-          aria-selected={t.id === defaultTab}
+          class:list={["filter-pill filter-pill--status", { "is-active": t.id === "featured" }]}
+          data-filter="status"
+          data-value={t.id}
+          aria-selected={t.id === "featured"}
         >
-          <span>{t.label}</span>
-          <span class="tab-count">{counts[t.id] ?? 0}</span>
+          {t.label}<span class="pill-n">{t.count}</span>
+        </button>
+      ))}
+    </div>
+
+    <!-- 分类 Tag（精选模式下隐藏） -->
+    <div class="filter-row filter-row--cats" role="tablist" aria-label="书籍分类">
+      <button
+        type="button"
+        role="tab"
+        class="filter-pill filter-pill--cat is-active"
+        data-filter="cat"
+        data-value="all"
+        aria-selected="true"
+      >
+        全部<span class="pill-n">{books.length}</span>
+      </button>
+      {cats.map((c) => (
+        <button
+          type="button"
+          role="tab"
+          class="filter-pill filter-pill--cat"
+          data-filter="cat"
+          data-value={c.name}
+        >
+          {c.name}<span class="pill-n">{c.count}</span>
         </button>
       ))}
     </div>
   </div>
 
-  <div class="shelf-grid sk-rise" data-delay="4">
-    {sorted.map((book, i) => (
-      <div class="shelf-cell" data-status={book.status}>
-        <BookCard book={book} delay={Math.min(i + 1, 8)} />
+  <!-- ══════ 精选视图 ══════ -->
+  <div class="shelf-grid sk-rise" data-delay="3" data-view="featured">
+    {featured.map((book, i) => (
+      <BookCard book={book} delay={Math.min(i + 1, 8)} />
+    ))}
+  </div>
+
+  <!-- ══════ 全部/筛选视图 ══════ -->
+  <div class="shelf-grid is-hidden" data-view="all">
+    {allSorted.map((book, i) => (
+      <div
+        class="shelf-cell"
+        data-status={book.status}
+        data-cat={(book.category || "未分类").split("-")[0]}
+      >
+        <BookCard book={book} delay={Math.min((i % 8) + 1, 8)} />
       </div>
     ))}
   </div>
 
-  <div class="shelf-empty">
-    <p class="sk-han">这一格还是空的呢～</p>
+  <!-- ══════ 空状态 ══════ -->
+  <div class="shelf-empty is-hidden">
+    <p class="sk-han">这一格还空着</p>
+    <p class="shelf-empty-sub">换个筛选条件试试喵～</p>
   </div>
 </section>
 
 <style>
-  .shelf-section {
-    margin: 2rem 0 2.5rem;
-  }
+  .shelf { margin: 3.5rem 0 1rem; }
+
+  /* ── 头部 ── */
   .shelf-head {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1.4rem;
+    gap: 1rem 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .shelf-titles { display: flex; align-items: baseline; gap: .8rem; }
+  .shelf-eyebrow {
+    font-size: 1.5rem;
+    color: color-mix(in srgb, var(--sk-comet) 85%, transparent);
+    line-height: 1;
+    margin: 0;
   }
   .shelf-title {
-    font-size: 1.55rem;
+    font-size: 1.7rem;
+    font-weight: 700;
     color: var(--sk-moon);
     margin: 0;
     line-height: 1;
+    letter-spacing: .08em;
+  }
+
+  /* ── 筛选栏 ── */
+  .shelf-filters {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .65rem;
+    margin-bottom: 1.6rem;
   }
-  .shelf-eyebrow {
-    font-size: 1.4rem;
-    color: var(--sk-comet);
-    line-height: 1;
-  }
-
-  .shelf-tabs {
+  .filter-row {
     display: flex;
     flex-wrap: wrap;
-    gap: .55rem;
+    gap: .4rem;
   }
-  .tab-count {
+  .filter-row--cats {
+    transition: opacity .35s var(--sk-ease-out);
+  }
+  .filter-row--cats.is-dimmed {
+    opacity: .35;
+    pointer-events: none;
+  }
+
+  /* ── 筛选按钮 ── */
+  .filter-pill {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-width: 22px;
-    padding: 0 .4rem;
+    gap: .35rem;
+    padding: .4rem .85rem;
     border-radius: 999px;
-    background: color-mix(in srgb, currentColor 18%, transparent);
-    font-size: .72rem;
-    font-weight: 600;
-    margin-left: .3rem;
+    font-size: .82rem;
+    font-weight: 500;
+    color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+    background: transparent;
+    border: 1px solid color-mix(in srgb, var(--sk-moon) 16%, transparent);
+    cursor: pointer;
+    transition: all .3s var(--sk-ease-out);
+    font-family: var(--sk-font-han);
+    white-space: nowrap;
+  }
+  .filter-pill:hover {
+    color: var(--sk-moon);
+    border-color: color-mix(in srgb, var(--sk-river) 45%, transparent);
+  }
+  .filter-pill.is-active {
+    color: #fff;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--sk-river) 60%, transparent),
+      color-mix(in srgb, var(--sk-violet) 45%, transparent)
+    );
+    border-color: transparent;
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--sk-river) 35%, transparent);
   }
 
+  /* 分类按钮更小巧 */
+  .filter-pill--cat {
+    font-size: .76rem;
+    padding: .3rem .7rem;
+    font-weight: 400;
+  }
+  .filter-pill--cat.is-active {
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--sk-comet) 55%, transparent),
+      color-mix(in srgb, var(--sk-river) 40%, transparent)
+    );
+  }
+
+  .pill-n {
+    font-size: .68rem;
+    opacity: .75;
+    font-family: var(--sk-font-display);
+    font-weight: 600;
+  }
+
+  /* ── 网格 ── */
   .shelf-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 1.4rem;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.6rem 1.3rem;
   }
-  @media (max-width: 520px) {
-    .shelf-grid { grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+  @media (min-width: 768px) {
+    .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
+  }
+  @media (max-width: 480px) {
+    .shelf-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem .8rem;
+    }
   }
 
+  /* ── 可见性控制 ── */
+  .is-hidden { display: none !important; }
+
+  /* ── 空状态 ── */
   .shelf-empty {
-    display: none;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
-    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
     font-size: 1.05rem;
   }
-  .shelf-section.is-empty .shelf-grid { display: none; }
-  .shelf-section.is-empty .shelf-empty { display: block; }
+  .shelf-empty-sub {
+    font-size: .82rem;
+    color: color-mix(in srgb, var(--sk-moon) 40%, transparent);
+    margin: .4rem 0 0;
+  }
 </style>
 
 <script>
-  function bindShelfTabs() {
-    const sections = document.querySelectorAll<HTMLElement>(".shelf-section");
-    for (const section of sections) {
-      if (section.dataset.tabsBound) continue;
-      section.dataset.tabsBound = "1";
+  function bindShelf() {
+    for (const shelf of document.querySelectorAll<HTMLElement>("[data-shelf]")) {
+      if (shelf.dataset.jsBound !== undefined) continue;
+      shelf.dataset.jsBound = "1";
 
-      const tabs = section.querySelectorAll<HTMLButtonElement>(".shelf-tab");
-      const cells = section.querySelectorAll<HTMLElement>(".shelf-cell");
+      const statusBtns = shelf.querySelectorAll<HTMLButtonElement>("[data-filter=status]");
+      const catBtns = shelf.querySelectorAll<HTMLButtonElement>("[data-filter=cat]");
+      const featuredView = shelf.querySelector<HTMLElement>('[data-view="featured"]')!;
+      const allView = shelf.querySelector<HTMLElement>('[data-view="all"]')!;
+      const empty = shelf.querySelector<HTMLElement>(".shelf-empty")!;
+      const catRow = shelf.querySelector<HTMLElement>(".filter-row--cats")!;
+      const cells = allView.querySelectorAll<HTMLElement>(".shelf-cell");
 
-      const apply = (id: string) => {
-        let visibleCount = 0;
+      let activeStatus = "featured";
+      let activeCat = "all";
+
+      const apply = () => {
+        // 更新状态按钮
+        for (const b of statusBtns) {
+          const on = b.dataset.value === activeStatus;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-selected", String(on));
+        }
+        // 更新分类按钮
+        for (const b of catBtns) {
+          const on = b.dataset.value === activeCat;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-selected", String(on));
+        }
+
+        // 精选模式：隐藏分类行 + 只显示精选网格
+        if (activeStatus === "featured") {
+          catRow.classList.add("is-dimmed");
+          featuredView.classList.remove("is-hidden");
+          allView.classList.add("is-hidden");
+          empty.classList.add("is-hidden");
+          return;
+        }
+
+        // 列表模式：显示分类行 + 按条件筛选
+        catRow.classList.remove("is-dimmed");
+        featuredView.classList.add("is-hidden");
+        allView.classList.remove("is-hidden");
+
+        let visible = 0;
         for (const cell of cells) {
-          const show = id === "all" || cell.dataset.status === id;
-          cell.style.display = show ? "" : "none";
-          if (show) visibleCount++;
+          const statusMatch =
+            activeStatus === "all" || cell.dataset.status === activeStatus;
+          const catMatch =
+            activeCat === "all" || cell.dataset.cat === activeCat;
+          const show = statusMatch && catMatch;
+          cell.classList.toggle("is-hidden", !show);
+          if (show) visible++;
         }
-        section.classList.toggle("is-empty", visibleCount === 0);
-        for (const t of tabs) {
-          const on = t.dataset.tab === id;
-          t.classList.toggle("sk-chip-active", on);
-          t.setAttribute("aria-selected", on ? "true" : "false");
-        }
+
+        empty.classList.toggle("is-hidden", visible > 0);
       };
 
-      for (const t of tabs) {
-        t.addEventListener("click", () => apply(t.dataset.tab || "all"));
+      // 状态按钮点击
+      for (const b of statusBtns) {
+        b.addEventListener("click", () => {
+          activeStatus = b.dataset.value || "featured";
+          apply();
+        });
+      }
+
+      // 分类按钮点击
+      for (const b of catBtns) {
+        b.addEventListener("click", () => {
+          activeCat = b.dataset.value || "all";
+          apply();
+        });
       }
     }
   }
-  bindShelfTabs();
-  document.addEventListener("swup:page:view", bindShelfTabs);
+
+  bindShelf();
+  document.addEventListener("swup:page:view", bindShelf);
 </script>

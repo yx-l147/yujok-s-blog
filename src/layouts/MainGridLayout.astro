@@ -61,10 +61,8 @@ const mainPanelTop = siteConfig.banner.enable
 
 <!-- Main content -->
 <div class="absolute w-full z-30 pointer-events-none" style={`top: ${mainPanelTop}`}>
-    <!-- The pointer-events-none here prevent blocking the click event of the TOC -->
     <div class="relative max-w-[var(--page-width)] mx-auto pointer-events-auto">
-        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[17.5rem_auto] xl:grid-cols-[17.5rem_minmax(0,1fr)_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto]
-    mx-auto gap-4 px-0 md:px-4"
+        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[17.5rem_auto] xl:grid-cols-[17.5rem_minmax(0,1fr)_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto] mx-auto gap-4 px-0 md:px-4"
         >
             <!-- Banner image credit -->
             {hasBannerCredit && <a href={siteConfig.banner.credit.url} id="banner-credit" target="_blank" rel="noopener" aria-label="Visit image source"
@@ -79,13 +77,13 @@ const mainPanelTop = siteConfig.banner.enable
                 </Icon>
             </a>}
 
-
             <SideBar class="mb-4 row-start-2 row-end-3 col-span-2 xl:col-span-1 lg:row-start-1 lg:row-end-2 lg:col-span-1 lg:max-w-[17.5rem] onload-animation" headings={headings}></SideBar>
+
+            <!-- Swup needs #toc container on every page -->
+            <div id="toc" style="display:none"></div>
 
             <main id="swup-container" class="transition-swup-fade col-span-2 lg:col-span-1 xl:col-span-1 overflow-hidden">
                 <div id="content-wrapper" class="onload-animation">
-                    <!-- the overflow-hidden here prevent long text break the layout-->
-                    <!-- make id different from windows.swup global property -->
                     <slot></slot>
                     <div class="footer col-span-2 xl:col-span-3 onload-animation hidden lg:block">
                         <Footer></Footer>
@@ -107,14 +105,20 @@ const mainPanelTop = siteConfig.banner.enable
 </div>
 
 <style is:global>
-    /* footer should expand to match the new grid when right sidebar collapses */
     :root.right-sidebar-collapsed #main-grid > .footer {
         @apply xl:col-span-2;
+    }
+
+    /* 书架页全宽布局 */
+    #main-grid.book-fullwidth {
+        grid-template-columns: 1fr !important;
+    }
+    #main-grid.book-fullwidth > :not(#swup-container):not(#toc):not(.footer):not(#banner-credit) {
+        display: none !important;
     }
 </style>
 
 <script>
-    // Pointer-tracked aurora highlight for liquid-glass widgets
     function bindAurora() {
         const cards = document.querySelectorAll("#right-sidebar widget-layout");
         for (const card of cards) {
@@ -132,6 +136,21 @@ const mainPanelTop = siteConfig.banner.enable
     }
     bindAurora();
     document.addEventListener("swup:page:view", () => bindAurora());
+
+    // 书架全宽同步：基于 URL 而非 DOM marker，完全独立于 Swup 容器内容
+    function syncBookFullWidth() {
+        const grid = document.querySelector("#main-grid") as HTMLElement | null;
+        if (!grid) return;
+        const isBookPage = window.location.pathname.startsWith("/book");
+        if (isBookPage) {
+            grid.classList.add("book-fullwidth");
+        } else {
+            grid.classList.remove("book-fullwidth");
+        }
+    }
+    syncBookFullWidth();
+    document.addEventListener("swup:content:replace", syncBookFullWidth);
+    document.addEventListener("swup:page:view", syncBookFullWidth);
 </script>
 
 </Layout>

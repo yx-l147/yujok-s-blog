@@ -6,34 +6,50 @@ interface Props {
   limit?: number;
 }
 const { notes, limit = 6 } = Astro.props;
-const items = notes.slice(0, limit);
+
+// 按书去重，每本最多 1 条，保证多样性
+const seen = new Set<string>();
+const items: BookNote[] = [];
+for (const n of notes) {
+  if (seen.has(n.bookId)) continue;
+  if (n.text.length < 8) continue;
+  seen.add(n.bookId);
+  items.push(n);
+  if (items.length >= limit) break;
+}
+// 不够则放开去重补齐
+if (items.length < limit) {
+  for (const n of notes) {
+    if (items.includes(n) || n.text.length < 8) continue;
+    items.push(n);
+    if (items.length >= limit) break;
+  }
+}
 ---
 
 {items.length > 0 && (
-  <section class="note-wall sk-rise" data-delay="6">
-    <div class="note-head">
-      <h3 class="note-title sk-han">
-        <span class="note-eyebrow sk-script">marginalia</span>
-        摘 · 抄 · 与 · 划 · 痕
-      </h3>
-      <p class="note-sub">每一句被点亮的字，都是夜空里漂浮的星屑</p>
-    </div>
+  <section class="notes sk-rise" data-delay="6">
+    <header class="notes-head">
+      <p class="notes-eyebrow sk-script">marginalia</p>
+      <h2 class="notes-title sk-han">划过的句子</h2>
+      <p class="notes-sub">那些被指尖留住的字句</p>
+    </header>
 
-    <div class="note-grid">
+    <div class="notes-grid">
       {items.map((n, i) => (
-        <article class="note-card sk-glass sk-aurora sk-rise" data-delay={Math.min(i+1, 8)}>
-          <div class="note-quote">
-            <span class="quote-mark" aria-hidden="true">「</span>
-            <p class="note-text sk-han">{n.text}</p>
-            <span class="quote-mark quote-end" aria-hidden="true">」</span>
-          </div>
-          {n.comment && (
-            <p class="note-comment">— {n.comment}</p>
-          )}
-          <div class="note-meta">
-            <span class="meta-book">《{n.bookTitle}》</span>
-            {n.chapter && <span class="meta-chapter">· {n.chapter}</span>}
-            <time class="meta-time">{new Date(n.createTime).toLocaleDateString("zh-CN", { month: "short", day: "numeric" })}</time>
+        <article class="note sk-glass sk-rise" data-delay={Math.min(i + 1, 8)}>
+          <span class="note-quote-mark" aria-hidden="true">"</span>
+          <p class="note-text sk-han">{n.text}</p>
+          <div class="note-foot">
+            {n.bookCover && (
+              <span class="note-cover">
+                <img src={n.bookCover} alt={n.bookTitle} loading="lazy" />
+              </span>
+            )}
+            <div class="note-src">
+              <span class="note-book">《{n.bookTitle}》</span>
+              {n.chapter && <span class="note-chapter">{n.chapter}</span>}
+            </div>
           </div>
         </article>
       ))}
@@ -42,91 +58,90 @@ const items = notes.slice(0, limit);
 )}
 
 <style>
-  .note-wall {
-    margin: 2rem 0 2.5rem;
-  }
-  .note-head {
-    margin-bottom: 1.5rem;
-  }
-  .note-title {
-    font-size: 1.55rem;
-    color: var(--sk-moon);
+  .notes { margin: 3.5rem 0 2.5rem; }
+  .notes-head { margin-bottom: 1.8rem; }
+  .notes-eyebrow {
+    font-size: 1.5rem;
+    color: var(--sk-sakura);
     margin: 0;
     line-height: 1;
-    display: flex;
-    flex-direction: column;
-    gap: .2rem;
   }
-  .note-eyebrow {
-    font-size: 1.4rem;
-    color: var(--sk-sakura);
-    line-height: 1;
+  .notes-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--sk-moon);
+    margin: .1rem 0 0;
+    letter-spacing: .04em;
   }
-  .note-sub {
-    font-size: .85rem;
-    color: color-mix(in srgb, var(--sk-moon) 60%, transparent);
+  .notes-sub {
+    font-size: .82rem;
+    color: color-mix(in srgb, var(--sk-moon) 56%, transparent);
     margin: .4rem 0 0;
   }
 
-  .note-grid {
-    columns: 2 320px;
-    column-gap: 1.4rem;
+  .notes-grid {
+    columns: 2 340px;
+    column-gap: 1.3rem;
   }
-  .note-card {
+  .note {
     break-inside: avoid;
-    margin-bottom: 1.4rem;
-    padding: 1.5rem 1.6rem 1.2rem;
+    margin-bottom: 1.3rem;
+    padding: 1.5rem 1.6rem 1.3rem;
+    position: relative;
     transition: transform .4s var(--sk-ease-out);
   }
-  .note-card:hover {
-    transform: translateY(-3px);
-  }
+  .note:hover { transform: translateY(-3px); }
 
-  .note-quote {
-    position: relative;
-  }
-  .quote-mark {
-    font-family: var(--sk-font-han);
-    color: color-mix(in srgb, var(--sk-comet) 70%, transparent);
-    font-size: 1.4rem;
+  .note-quote-mark {
+    position: absolute;
+    top: .3rem;
+    left: 1rem;
+    font-family: var(--sk-font-display);
+    font-size: 3.2rem;
     line-height: 1;
-  }
-  .quote-end {
-    float: right;
-    margin-top: -.5rem;
+    color: color-mix(in srgb, var(--sk-comet) 28%, transparent);
+    pointer-events: none;
   }
   .note-text {
-    font-size: 1.02rem;
-    line-height: 1.7;
-    color: var(--sk-moon);
-    margin: .2rem 0;
-    text-indent: 0;
-  }
-  .note-comment {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: color-mix(in srgb, var(--sk-moon) 92%, transparent);
     margin: .8rem 0 0;
-    color: color-mix(in srgb, var(--sk-sunset) 75%, var(--sk-moon));
-    font-size: .9rem;
-    font-style: italic;
-    padding-left: 1rem;
-    border-left: 2px solid color-mix(in srgb, var(--sk-sunset) 60%, transparent);
+    z-index: 1;
   }
-  .note-meta {
+
+  .note-foot {
     display: flex;
     align-items: center;
-    gap: .5rem;
-    margin-top: 1.1rem;
-    padding-top: .8rem;
-    border-top: 1px dashed color-mix(in srgb, var(--sk-moon) 18%, transparent);
-    font-size: .76rem;
-    color: color-mix(in srgb, var(--sk-moon) 60%, transparent);
-    flex-wrap: wrap;
+    gap: .65rem;
+    margin-top: 1.2rem;
+    padding-top: .9rem;
+    border-top: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
   }
-  .meta-book {
-    color: var(--sk-river);
+  .note-cover {
+    width: 30px;
+    aspect-ratio: 3/4.2;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(20,40,80,.25);
+  }
+  .note-cover img { width: 100%; height: 100%; object-fit: cover; }
+  .note-src { display: flex; flex-direction: column; gap: .1rem; min-width: 0; }
+  .note-book {
+    font-size: .82rem;
     font-weight: 600;
+    color: var(--sk-river);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .meta-time {
-    margin-left: auto;
-    font-family: var(--sk-font-display);
+  .note-chapter {
+    font-size: .7rem;
+    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>

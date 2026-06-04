@@ -1,0 +1,30 @@
+---
+import BookDetail from "@/components/book/BookDetail.astro";
+import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
+import { getBookById, getNotesForBook, shelfData } from "@/data/shelf";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import type { BookItem, BookNote } from "@/types/weread";
+
+export function getStaticPaths() {
+  return shelfData.books.map((b) => ({
+    params: { id: b.bookId },
+  }));
+}
+
+const { id } = Astro.params;
+const book: BookItem | undefined = getBookById(shelfData.books, id);
+const notes: BookNote[] = id ? getNotesForBook(shelfData.notes, id) : [];
+
+// 404 回退 — 书不存在
+if (!book) {
+  return Astro.redirect("/book/");
+}
+---
+
+<MainGridLayout
+  title={`${book.title} | yujok`}
+  description={`${book.author} · ${book.intro?.slice(0, 120) ?? ""}`}
+>
+  <LiquidGlassDefs />
+  <BookDetail book={book} notes={notes} allBooks={shelfData.books} />
+</MainGridLayout>

@@ -1,183 +1,236 @@
 ---
-import StarRiver from "@/components/effects/StarRiver.svelte";
-import type { ReadingProfile } from "@/types/weread";
+import type { ReadingProfile, ReadingStats } from "@/types/weread";
 
 interface Props {
   profile: ReadingProfile;
+  stats: ReadingStats;
   subtitle?: string;
 }
-const { profile, subtitle = "在文字的海里打捞自己" } = Astro.props;
+const { profile, stats, subtitle = "在文字的海里打捞自己" } = Astro.props;
 
-const totalHours = Math.round(profile.totalReadingTime / 3600);
+const totalHours = Math.round(stats.totalReadTime / 3600);
+const years = stats.registTime
+  ? Math.max(1, Math.round((Date.now() / 1000 - stats.registTime) / 86400 / 365 * 10) / 10)
+  : null;
+
+const summary = [
+  { num: profile.totalBooks, label: "本书在架" },
+  { num: totalHours, label: "小时阅读" },
+  { num: stats.readDays, label: "天有记录" },
+  { num: stats.noteCount, label: "条笔记" },
+];
 ---
 
-<section class="book-hero sk-glass sk-rise" data-delay="0">
-  <!-- 流动银河层 -->
-  <div class="hero-bg">
-    <StarRiver client:only="svelte" density={260} speed={0.22} meteors={true} />
-    <div class="hero-gradient"></div>
+<section class="hero sk-glass sk-rise" data-delay="0">
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="hero-body">
+    <div class="hero-main">
+      <p class="hero-eyebrow sk-script">my reading life</p>
+      <h1 class="hero-title sk-han">我 的 书 架</h1>
+      <p class="hero-sub">「{subtitle}」</p>
+
+      {years && (
+        <p class="hero-note">
+          自 {new Date((stats.registTime ?? 0) * 1000).getFullYear()} 年起 · 已读过 {stats.readBooks} 本 · 读完 {stats.finishedBooks} 本
+        </p>
+      )}
+    </div>
+
+    {profile.favBook && (
+      <a
+        class="hero-fav"
+        href={`https://weread.qq.com/`}
+        title={`最爱的书：${profile.favBook.title}`}
+      >
+        <span class="fav-tag sk-script">my favourite</span>
+        <div class="fav-cover">
+          <img src={profile.favBook.cover} alt={profile.favBook.title} loading="lazy" />
+        </div>
+        <div class="fav-meta">
+          <p class="fav-title sk-han">{profile.favBook.title}</p>
+          <p class="fav-author">{profile.favBook.author}</p>
+        </div>
+      </a>
+    )}
   </div>
 
-  <div class="hero-content">
-    <!-- 左：竖排日文巨字 -->
-    <div class="hero-left">
-      <div class="vertical-jp" aria-hidden="true">
-        <span>書</span>
-        <span>棚</span>
+  <div class="hero-stats">
+    {summary.map((s) => (
+      <div class="hs" data-count={s.num}>
+        <span class="hs-num sk-display">0</span>
+        <span class="hs-label">{s.label}</span>
       </div>
-    </div>
-
-    <!-- 中：标题 -->
-    <div class="hero-mid">
-      <div class="sk-rule" style="width:64px; margin-bottom:1.2rem;"></div>
-      <p class="hero-eyebrow sk-script">bibliotheca</p>
-      <h1 class="hero-title sk-display">My&nbsp;Bookshelf</h1>
-      <h2 class="hero-han sk-han">书&nbsp;　&nbsp;架</h2>
-      <p class="hero-sub">「{subtitle}」</p>
-    </div>
-
-    <!-- 右：数字摘要 -->
-    <div class="hero-right">
-      <div class="hero-mini">
-        <div class="mini-num sk-display">{profile.totalFinished}</div>
-        <div class="mini-label">累计读完</div>
-      </div>
-      <div class="hero-mini">
-        <div class="mini-num sk-display">{totalHours}</div>
-        <div class="mini-label">阅读小时</div>
-      </div>
-      <div class="hero-mini">
-        <div class="mini-num sk-display">{profile.streak}</div>
-        <div class="mini-label">连续天数</div>
-      </div>
-    </div>
+    ))}
   </div>
 </section>
 
 <style>
-  .book-hero {
+  .hero {
     position: relative;
-    min-height: 360px;
-    padding: 3rem 2.5rem 3rem;
+    padding: 2.6rem 2.4rem 1.8rem;
     overflow: hidden;
   }
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .hero-gradient {
+  .hero-glow {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(70% 80% at 30% 20%, color-mix(in srgb, var(--sk-violet) 22%, transparent), transparent 70%),
-      radial-gradient(50% 60% at 80% 80%, color-mix(in srgb, var(--sk-sunset) 18%, transparent), transparent 70%),
-      linear-gradient(135deg, color-mix(in srgb, var(--sk-tide) 60%, transparent), transparent 60%);
+      radial-gradient(60% 70% at 18% 10%, color-mix(in srgb, var(--sk-violet) 24%, transparent), transparent 70%),
+      radial-gradient(50% 60% at 90% 90%, color-mix(in srgb, var(--sk-comet) 16%, transparent), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
   }
 
-  .hero-content {
+  .hero-body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-eyebrow {
+    font-size: 1.5rem;
+    color: var(--sk-comet);
+    margin: 0 0 .1rem;
+    text-shadow: 0 0 18px color-mix(in srgb, var(--sk-comet) 45%, transparent);
+  }
+  .hero-title {
+    font-size: clamp(2rem, 4.5vw, 3.1rem);
+    font-weight: 700;
+    color: var(--sk-moon);
+    margin: 0;
+    letter-spacing: .12em;
+    line-height: 1.05;
+  }
+  .hero-sub {
+    margin: .9rem 0 0;
+    font-family: var(--sk-font-han);
+    font-size: 1.02rem;
+    color: color-mix(in srgb, var(--sk-moon) 68%, transparent);
+    letter-spacing: .03em;
+  }
+  .hero-note {
+    margin: .5rem 0 0;
+    font-size: .82rem;
+    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    letter-spacing: .02em;
+  }
+
+  /* 最爱的书 */
+  .hero-fav {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    padding: .8rem 1rem .8rem .8rem;
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--sk-moon) 6%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-gold) 30%, transparent);
+    position: relative;
+    transition: transform .4s var(--sk-ease-out), box-shadow .4s var(--sk-ease-out);
+    text-decoration: none;
+  }
+  .hero-fav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(20,40,80,.2);
+  }
+  .fav-tag {
+    position: absolute;
+    top: -.7rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: var(--sk-gold);
+    background: var(--sk-glass-bg);
+    padding: 0 .4rem;
+  }
+  .fav-cover {
+    width: 52px;
+    aspect-ratio: 3/4.2;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(20,40,80,.28);
+  }
+  .fav-cover img { width: 100%; height: 100%; object-fit: cover; }
+  .fav-title {
+    font-size: .92rem;
+    font-weight: 600;
+    color: var(--sk-moon);
+    margin: 0;
+    max-width: 150px;
+  }
+  .fav-author {
+    font-size: .74rem;
+    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+    margin: .15rem 0 0;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 数字摘要 */
+  .hero-stats {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 2.5rem;
-    align-items: center;
-  }
-
-  /* 左：竖排 */
-  .vertical-jp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .8rem;
-    font-family: var(--sk-font-han);
-    font-size: 4.5rem;
-    font-weight: 600;
-    color: color-mix(in srgb, var(--sk-river) 55%, var(--sk-moon));
-    line-height: 1;
-    letter-spacing: -.05em;
-    text-shadow: 0 4px 30px color-mix(in srgb, var(--sk-river) 40%, transparent);
-  }
-
-  /* 中 */
-  .hero-eyebrow {
-    font-size: 1.6rem;
-    color: var(--sk-comet);
-    margin: 0 0 .2rem;
-    letter-spacing: 0.04em;
-    text-shadow: 0 0 18px color-mix(in srgb, var(--sk-comet) 50%, transparent);
-  }
-  .hero-title {
-    font-size: clamp(2.5rem, 5.5vw, 4.6rem);
-    color: var(--sk-moon);
-    margin: 0;
-    font-weight: 500;
-    line-height: 0.95;
-  }
-  .hero-han {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
-    color: color-mix(in srgb, var(--sk-moon) 80%, transparent);
-    margin: .4rem 0 0;
-    font-weight: 500;
-    letter-spacing: 0.5em;
-  }
-  .hero-sub {
-    margin: 1.2rem 0 0;
-    color: color-mix(in srgb, var(--sk-moon) 65%, transparent);
-    font-family: var(--sk-font-han);
-    font-size: 1rem;
-    letter-spacing: 0.04em;
-  }
-
-  /* 右 */
-  .hero-right {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    text-align: right;
-    min-width: 140px;
+    margin-top: 1.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
   }
-  .hero-mini {
+  .hs {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: .35rem .85rem;
-    border-right: 2px solid color-mix(in srgb, var(--sk-gold) 60%, transparent);
+    gap: .2rem;
   }
-  .mini-num {
-    font-size: 2.4rem;
-    font-weight: 500;
+  .hs-num {
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    font-weight: 600;
     color: var(--sk-moon);
     line-height: 1;
-    letter-spacing: -0.02em;
   }
-  .mini-label {
-    font-size: .72rem;
-    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-top: .25rem;
+  .hs-label {
+    font-size: .76rem;
+    font-family: var(--sk-font-han);
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
+    letter-spacing: .04em;
   }
 
-  @media (max-width: 900px) {
-    .hero-content {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    .vertical-jp {
-      flex-direction: row;
-      font-size: 3rem;
-    }
-    .hero-right {
-      flex-direction: row;
-      text-align: left;
-    }
-    .hero-mini {
-      align-items: flex-start;
-      border-right: none;
-      border-left: 2px solid color-mix(in srgb, var(--sk-gold) 60%, transparent);
-      padding: .2rem .85rem;
-    }
+  @media (max-width: 640px) {
+    .hero { padding: 2rem 1.4rem 1.5rem; }
+    .hero-fav { width: 100%; }
+    .fav-title, .fav-author { max-width: none; }
+    .hero-stats { gap: .8rem; }
   }
 </style>
+
+<script>
+  function countUp() {
+    const els = document.querySelectorAll<HTMLElement>(".hs[data-count] .hs-num");
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const wrap = e.target.closest<HTMLElement>(".hs")!;
+        const target = +(wrap.dataset.count ?? "0");
+        const numEl = e.target as HTMLElement;
+        const dur = 1300;
+        const start = performance.now();
+        const step = (t: number) => {
+          const k = Math.min(1, (t - start) / dur);
+          const eased = 1 - (1 - k) ** 3;
+          numEl.textContent = Math.round(target * eased).toLocaleString();
+          if (k < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        io.unobserve(e.target);
+      }
+    }, { threshold: 0.5 });
+    for (const el of els) io.observe(el);
+  }
+  countUp();
+  document.addEventListener("swup:page:view", countUp);
+</script>
