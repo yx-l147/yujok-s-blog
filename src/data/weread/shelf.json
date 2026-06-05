@@ -1,6 +1,70 @@
 {
 	"books": [
 		{
+			"bookId": "33820335",
+			"title": "喧哗与骚动（人文社外国文学名著经典·网格本）",
+			"author": "威廉·福克纳",
+			"cover": "https://cdn.weread.qq.com/weread/cover/87/YueWen_33820335/t6_YueWen_33820335.jpg",
+			"category": "精品小说-社会小说",
+			"finishReading": 0,
+			"readUpdateTime": 1780650831,
+			"updateTime": 1779091263,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300140977",
+			"title": "苇间风",
+			"author": "[爱尔兰]威廉·叶芝",
+			"cover": "https://cdn.weread.qq.com/weread/cover/44/cpplatform_rbv6wvtpmdrdevmzb4ednx/t6_cpplatform_rbv6wvtpmdrdevmzb4ednx1744691525.jpg",
+			"category": "文学-现代诗歌",
+			"finishReading": 0,
+			"readUpdateTime": 1780650750,
+			"updateTime": 1760178346,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "33642051",
+			"title": "贺麟全集：精神现象学（上、下卷）",
+			"author": "黑格尔",
+			"cover": "https://cdn.weread.qq.com/weread/cover/84/yuewen_33642051/t6_yuewen_336420511678961523.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1780631674,
+			"updateTime": 1738837758,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300152949",
+			"title": "置身于苦难与阳光之间",
+			"author": "[法]阿尔贝·加缪",
+			"cover": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_9bbcen4lyr5fcv85zwgtu8/t6_cpplatform_9bbcen4lyr5fcv85zwgtu81752566173.jpg",
+			"category": "文学-散文杂著",
+			"finishReading": 0,
+			"readUpdateTime": 1780588980,
+			"updateTime": 1771898756,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300146507",
 			"title": "强化学习的数学原理（英文版）",
 			"author": "赵世钰",
@@ -153,7 +217,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1410,
+			"ratingCount": 1411,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -175,7 +239,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1818,
+			"ratingCount": 1820,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -373,7 +437,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1928,
+			"ratingCount": 1930,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -443,7 +507,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12055,
+			"ratingCount": 12059,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -481,7 +545,7 @@
 			"publisher": "九州出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 1159,
+			"ratingCount": 1160,
 			"publishTime": "2014-06-01 00:00:00"
 		},
 		{
@@ -551,7 +615,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1276,
+			"ratingCount": 1280,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -659,7 +723,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 214,
+			"ratingCount": 215,
 			"publishTime": "2012-05-01 00:00:00"
 		},
 		{
@@ -937,7 +1001,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80051,
+			"ratingCount": 80066,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -975,7 +1039,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4533,
+			"ratingCount": 4538,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1055,7 +1119,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/19/YueWen_23791393/t6_YueWen_23791393.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1774843177,
+			"readUpdateTime": 1780651047,
 			"updateTime": 1705066118,
 			"progress": 0,
 			"noteCount": 0,
@@ -1236,7 +1300,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 400,
+			"ratingCount": 402,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1386,7 +1450,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 8,
-			"ratingCount": 9376,
+			"ratingCount": 9384,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1440,7 +1504,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1363,
+			"ratingCount": 1365,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -1494,7 +1558,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 41785,
+			"ratingCount": 41824,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -1538,7 +1602,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7163,
+			"ratingCount": 7169,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -1613,7 +1677,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.2,
+			"publicRating": 8.1,
 			"ratingCount": 24,
 			"publishTime": "2026-01-21 00:00:00"
 		},
@@ -1754,7 +1818,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6167,
+			"ratingCount": 6169,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -1764,7 +1828,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/970/923970/t6_923970.jpg",
 			"category": "艺术-理论",
 			"finishReading": 0,
-			"readUpdateTime": 1778895629,
+			"readUpdateTime": 1780569779,
 			"updateTime": 1760168224,
 			"progress": 0,
 			"noteCount": 0,
@@ -1840,7 +1904,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16896,
+			"ratingCount": 16897,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -2081,7 +2145,7 @@
 			"category": "文学-经典作品",
 			"finishReading": 0,
 			"readUpdateTime": 1778467782,
-			"updateTime": 1780478344,
+			"updateTime": 1780571239,
 			"progress": 75,
 			"noteCount": 8,
 			"reviewCount": 0,
@@ -2092,7 +2156,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.9,
-			"ratingCount": 2252,
+			"ratingCount": 2253,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -2190,7 +2254,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1389,
+			"ratingCount": 1392,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -2244,7 +2308,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 788,
+			"ratingCount": 789,
 			"publishTime": "2026-03-17 00:00:00"
 		},
 		{
@@ -2266,7 +2330,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1132,
+			"ratingCount": 1135,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2280,6 +2344,22 @@
 			"updateTime": 1716283912,
 			"progress": 0,
 			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300025104",
+			"title": "二十首情诗和一首绝望的歌",
+			"author": "巴勃罗•聂鲁达",
+			"cover": "https://cdn.weread.qq.com/weread/cover/22/cpPlatform_2CiSnCXEyZQEpAqyKeyKDT/t6_cpPlatform_2CiSnCXEyZQEpAqyKeyKDT.jpg",
+			"category": "文学-现代诗歌",
+			"finishReading": 0,
+			"readUpdateTime": 1780629808,
+			"updateTime": 1760178508,
+			"progress": 0,
+			"noteCount": 1,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
@@ -2460,7 +2540,7 @@
 			"publisher": "山东文艺出版社",
 			"translator": "黄菡",
 			"publicRating": 9.5,
-			"ratingCount": 1371,
+			"ratingCount": 1374,
 			"publishTime": "2025-10-01 00:00:00"
 		},
 		{
@@ -2510,6 +2590,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1749984215,
 			"updateTime": 1760169255,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300161084",
+			"title": "加缪情书集：全2册（完整集结首次出版！）",
+			"author": "[法]阿尔贝·加缪  [西]玛丽亚·卡萨雷斯",
+			"cover": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_6bfrscerekw9xcxjt4ynfu/t6_cpplatform_6bfrscerekw9xcxjt4ynfu1756867293.jpg",
+			"category": "文学-散文杂著",
+			"finishReading": 0,
+			"readUpdateTime": 1780589548,
+			"updateTime": 1776759282,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -2798,7 +2894,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6801,
+			"ratingCount": 6799,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -2808,7 +2904,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/77/cpplatform_n2fsmg7bc2bnzhmkfxqq6q/t6_cpplatform_n2fsmg7bc2bnzhmkfxqq6q1686541831.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1760584405,
+			"readUpdateTime": 1780631500,
 			"updateTime": 1723792295,
 			"progress": 27,
 			"noteCount": 23,
@@ -2820,7 +2916,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6499,
+			"ratingCount": 6505,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -2988,7 +3084,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2570,
+			"ratingCount": 2571,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -3224,7 +3320,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3224,
+			"ratingCount": 3229,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -3250,7 +3346,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/35/YueWen_23736455/t6_YueWen_23736455.jpg",
 			"category": "文学-外国文学",
 			"finishReading": 0,
-			"readUpdateTime": 1775531488,
+			"readUpdateTime": 1780650927,
 			"updateTime": 1716283911,
 			"progress": 0,
 			"noteCount": 0,
@@ -3412,7 +3508,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11287,
+			"ratingCount": 11300,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -3514,7 +3610,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1097,
+			"ratingCount": 1098,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -3600,19 +3696,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_sbfdf2jn9wphd5xut4msee/t6_cpplatform_sbfdf2jn9wphd5xut4msee1752043043.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1780508045,
+			"readUpdateTime": 1780661884,
 			"updateTime": 1752043982,
-			"progress": 21,
-			"noteCount": 49,
-			"reviewCount": 0,
-			"bookmarkCount": 0,
+			"progress": 38,
+			"noteCount": 83,
+			"reviewCount": 1,
+			"bookmarkCount": 3,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《我身上有个不可战胜的夏天》是加缪的一部散文集。创作跨度近20年（1935-1953），是加缪从青年到思想成熟期的文学实验场。\r\n本书精选了加缪的14篇散文，在这些篇章中，加缪以阿尔及尔贫民窟的生存图景为解剖样本，将死亡、贫困与阳光、海洋并置，揭示了存在的荒诞性本质：生命的璀璨与腐朽永远相互寄生，正如北非土地上永不褪色的蓝天永远笼罩着人类的苦难。\r\n\r\n同时，加缪通过对提帕萨、杰米拉等地的颂歌，展现了自身思辨的独特性，不同于萨特咖啡馆里的哲学思辨，加缪的哲学诞生于烈日炙烤的废墟、咸涩的海风与无花果树的芬芳之中。他在这里确立了对\"世界之不可理喻的美\"的绝对忠诚——不是通过理性认知，而是用整个身体去感受岩石的温度、浪花的节奏，在感官的狂喜中达成与宇宙的短暂和解。\r\n\r\n这部作品最深刻的价值，在于它展现了存在主义最本真的形态：不是书斋里的概念游戏，而是赤脚踏过滚烫沙砾时的痛感与快感。在这部作品里，加缪也确立了自己终生的写作母题——用对阳光的贪婪吮吸反抗永恒的黑暗，在直面荒诞中拥抱生命的热烈。\r\n\r\n这种思想后来在《西西弗神话》中升华为\"应当想象西西弗是幸福的\"的著名论断，但其根源正是本书中那个在贫民窟阳台上凝望大海的穷青年对生命既清醒又沉醉的双重凝视。",
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2879,
+			"ratingCount": 2880,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3666,7 +3762,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 166655,
+			"ratingCount": 166689,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3710,7 +3806,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23099,
+			"ratingCount": 23104,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -3748,7 +3844,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 29814,
+			"ratingCount": 29842,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -3824,7 +3920,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 551,
+			"ratingCount": 550,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -4022,7 +4118,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4698,
+			"ratingCount": 4702,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -4194,7 +4290,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75597,
+			"ratingCount": 75630,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -4291,7 +4387,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_39cbtw3eckvzhbqmqp3yji/t6_cpplatform_39cbtw3eckvzhbqmqp3yji1759135887.jpg",
 			"chapter": "第13章 量子逻辑，改变对自然界的认知",
 			"text": "我们可以推导出布雷默曼极限（Bremermann's limit）。它表明，在物质宇宙的某个封闭体系中，每单位质量的物质可以提供的计算速度是有限的，即每千克物质最多提供约1.36×1050比特/秒的计算速度。但整个地球的物质总量是有限的，大约是6×1024千克。因此，即使用上整个地球的物质总量，计算的速度也无法超过1075比特/秒。这种“天花板”级的计算能力，依靠的正是经典计算的密码学保证通信安全原则。",
-			"createTime": "2026-05-06T15:21:00"
+			"createTime": "2026-05-06T07:21:00"
 		},
 		{
 			"bookId": "3300167610",
@@ -4299,7 +4395,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_39cbtw3eckvzhbqmqp3yji/t6_cpplatform_39cbtw3eckvzhbqmqp3yji1759135887.jpg",
 			"chapter": "第7章 古典理性的灾难，数学的三次危机",
 			"text": "忒修斯之船：希腊英雄忒修斯在特洛伊战争结束之后乘船回到了自己的祖国。他死后，这艘船被作为文物保存了下来。船上的木板每腐烂一块，人们就会用新木板更换掉坏的。多年以后，船上所有的木板都被更换过了。那么，此时这艘船还能叫忒修斯之船吗？如果它不再叫忒修斯之船，从什么时候开始它不再是忒修斯之船？类似地，你在一生中，每日新陈代谢，身上的原子不断被替换，那明日之你还是今日之你吗？如何定义哪个才是你呢？",
-			"createTime": "2026-05-05T17:32:25"
+			"createTime": "2026-05-05T09:32:25"
 		},
 		{
 			"bookId": "3300167610",
@@ -4307,7 +4403,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_39cbtw3eckvzhbqmqp3yji/t6_cpplatform_39cbtw3eckvzhbqmqp3yji1759135887.jpg",
 			"chapter": "第13章 量子逻辑，改变对自然界的认知",
 			"text": "量子行走算法。量子随机行走（又叫量子随机漫步）是一种利用量子力学性质产生随机过程的数学统计模型，分为离散量子随机行走和连续量子随机行走，前者使用一枚量子硬币与漫步者共同演化，后者无须使用随机硬币，而是透过马尔可夫矩阵来演化。和经典的随机行走相比，由于量子纠缠的非局域性和量子叠加态的相位干涉，量子随机行走能以更高的速度探索目标空间。",
-			"createTime": "2026-05-06T15:18:19"
+			"createTime": "2026-05-06T07:18:19"
 		},
 		{
 			"bookId": "3300065326",
@@ -4315,7 +4411,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_omudsapjxhswl1qc65hyyg/t6_cpplatform_omudsapjxhswl1qc65hyyg1690356229.jpg",
 			"chapter": "（一）权威主义",
 			"text": "我们发现有三种施虐倾向，它们或多或少地纠缠在一起。一是让别人依赖自己，以绝对无限的权力统治他们，以便让他们仅仅成为自己手中的工具，像“陶工手中的泥土”；二是不但有以这种绝对方式统治别人的冲动，而且还要剥削、利用、偷窃、蚕食别人，把别人吸净榨干，不但包括物质，而且还包括情感与智慧之类的精神方面；第三种施虐倾向是希望使别人受磨难，或看别人受磨难。磨难也可能是肉体上的，但多数是精神上的折磨。其目的是主动伤害、羞辱他们，让他们难堪，要看他们狼狈不堪的窘相。",
-			"createTime": "2025-08-15T08:32:22"
+			"createTime": "2025-08-15T00:32:22"
 		},
 		{
 			"bookId": "3300065326",
@@ -4323,7 +4419,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_omudsapjxhswl1qc65hyyg/t6_cpplatform_omudsapjxhswl1qc65hyyg1690356229.jpg",
 			"chapter": "第三章 宗教改革时代的自由",
 			"text": "虽然社会是这样构造的，也给人安全感，但它束缚了人。它是一种有别于后来的权威主义和压迫的束缚。中世纪并未剥夺个人的自由，因为“个人”尚不存在；人仍借始发纽带与世界相连。唯一使他认识到自己是个“个人”的途径便是他的社会角色（即其天然角色）。他也未视其他人为“个人”。到城里来的农民是陌生人，甚至城里不同社会群体之间的成员，也都彼此视对方为陌生人。个人自我意识、他人意识及世界意识尚未得到充分发展，尚未意识到三者是独立的实体。",
-			"createTime": "2025-07-30T18:22:46"
+			"createTime": "2025-07-30T10:22:46"
 		},
 		{
 			"bookId": "3300065326",
@@ -4331,7 +4427,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_omudsapjxhswl1qc65hyyg/t6_cpplatform_omudsapjxhswl1qc65hyyg1690356229.jpg",
 			"chapter": "第六章 纳粹主义心理学",
 			"text": "重要的是数百万小资产阶级，按照常规发展渠道，他们根本没机会发财致富，也没机会获得权力。而一旦成为纳粹官僚机器的成员，他们就可以强迫上层阶级与之共享财富和声誉。其他非纳粹分子也可以从犹太人和政敌那里抢得饭碗。至于其他人，他们虽未得到更多的面包，但观看到了“热闹的演出”，得到了情感上的满足，这些施虐奇观和优于其他人类的感觉至少能暂时弥补他们在经济和文化上的贫穷。",
-			"createTime": "2025-08-17T10:27:21"
+			"createTime": "2025-08-17T02:27:21"
 		},
 		{
 			"bookId": "40223839",
@@ -4339,7 +4435,7 @@
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/839/40223839/t6_40223839.jpg",
 			"chapter": "第2节 控制曝光三要素及互易律",
 			"text": "感光度提高造成的画质下降主要表现为4个现象。先出现的是“锐度下降”和“细节损失”，这时的画质还不算糟糕。随后出现的就是“噪点增加”，大家对于高感光度画质差的主要印象就是噪点的大量增加，其实到这个时候，画质依然在可接受的范围。最后出现的就是“色彩偏移”，",
-			"createTime": "2026-05-05T15:03:51"
+			"createTime": "2026-05-05T07:03:51"
 		},
 		{
 			"bookId": "40223839",
@@ -4347,7 +4443,7 @@
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/839/40223839/t6_40223839.jpg",
 			"chapter": "延伸学习 问题与提高",
 			"text": "其实星轨往往不是拍一张照片完成的。比如这张照片，我拍摄了近2个小时。每张照片曝光30秒，间隔1秒再拍摄一张。这时候一定要使用M挡，白平衡也要手动设定，关闭长时间曝光降噪功能。得到120张照片（也可以更多）后，通过后期堆栈功能，将其合成在一起。",
-			"createTime": "2026-05-05T16:24:31"
+			"createTime": "2026-05-05T08:24:31"
 		},
 		{
 			"bookId": "40223839",
@@ -4355,7 +4451,7 @@
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/839/40223839/t6_40223839.jpg",
 			"chapter": "第4节 正确的曝光",
 			"text": "不过HDR不是一个严格意义上的拍摄技巧，是靠软件实现的。原理很简单：一个场景，拍摄几张曝光情况不同的照片，把亮的、暗的部分都照顾到，都拍出细节；然后将这些照片合成为一张，亮部就用亮部细节保留得好的那张，暗部就用暗部细节保留得好的那张。",
-			"createTime": "2026-05-05T15:54:14"
+			"createTime": "2026-05-05T07:54:14"
 		},
 		{
 			"bookId": "3300151384",
@@ -4363,7 +4459,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_bxripgsmchfc2hwuxk5wsg/t6_cpplatform_bxripgsmchfc2hwuxk5wsg1751535923.jpg",
 			"chapter": "第三部分 思考者与庸众",
 			"text": "正因为如此，我们完全有理由从一个人的著述中分辨出他究竟是思想家，还是书籍哲学家。前者的思想真切、直接、原始，言语中透出独立的风格和自发的力量；而后者则只是复述别人的话，承袭他人的观念，所写之物就像重复别人已盖过的印章，印迹既模糊，又缺乏力度。他们的文体不过是由传统套语与流行语拼接而成，犹如一个不能铸造自己货币的国家，只能依赖他国流通的货币那样，毫无主权与独立性。",
-			"createTime": "2025-07-26T11:54:32"
+			"createTime": "2025-07-26T03:54:32"
 		},
 		{
 			"bookId": "3300151384",
@@ -4371,7 +4467,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_bxripgsmchfc2hwuxk5wsg/t6_cpplatform_bxripgsmchfc2hwuxk5wsg1751535923.jpg",
 			"chapter": "第十章 读书与书籍",
 			"text": "我们读书时必须牢牢记住一个原则：绝不滥读。这个原则是有方法的——凡是当前受大众热烈欢迎的书，无论小说、诗歌、宗教或政治作品，一律谨慎以对。那些热销、频繁再版的书，大多是为讨好庸众而作，自然也最易被庸众接受。与其把时间浪费在这种作品上，不如把精力投入那些历经考验、久负盛名的大家名著中，因为只有这些作品，才真正“开卷有益”。",
-			"createTime": "2025-07-26T12:08:09"
+			"createTime": "2025-07-26T04:08:09"
 		},
 		{
 			"bookId": "3300151384",
@@ -4379,7 +4475,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_bxripgsmchfc2hwuxk5wsg/t6_cpplatform_bxripgsmchfc2hwuxk5wsg1751535923.jpg",
 			"chapter": "第十章 读书与书籍",
 			"text": "正因如此，阅读过度或终日沉迷书本的人，尽管表面上像是在滋养精神，实则会逐渐失去独立思维的能力。这就像老骑马的人失去步行的本领。许多学者便是这样，因沉迷书本而变得迟钝。凡是只要有一点空闲就看书的人，比起单纯的手工劳动者更容易精神麻木。因为做手工之时，思想尚可自由驰骋；而读书时，我们的心灵则不断被他人思想压迫，弹性随之消失。",
-			"createTime": "2025-07-26T12:02:23"
+			"createTime": "2025-07-26T04:02:23"
 		},
 		{
 			"bookId": "3300060202",
@@ -4387,7 +4483,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_aftwrezfyfjnrtaahokipe/t6_cpplatform_aftwrezfyfjnrtaahokipe1685436175.jpg",
 			"chapter": "第二章 视角",
 			"text": "。Roberts提出决策并不是由个体决定的，而是由个体在劳动力市场上所面临的“机会结构”(opportunity structure)决定的，而机会结构是由工业组织、政策和社会阶层等因素共同塑造的[插图]",
-			"createTime": "2025-07-13T16:10:45"
+			"createTime": "2025-07-13T08:10:45"
 		},
 		{
 			"bookId": "3300060202",
@@ -4395,7 +4491,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_aftwrezfyfjnrtaahokipe/t6_cpplatform_aftwrezfyfjnrtaahokipe1685436175.jpg",
 			"chapter": "第四章 努力",
 			"text": "即使中途经历挫折与诱惑，心无旁骛、持之以恒地向自己真正的目标迈进，勇敢地对自己的选择负责，是“目标掌控者”认同的道德价值观，也常常是他们与“跟着感觉走，走到哪算哪”的“直觉依赖者”划立象征边界的标记。",
-			"createTime": "2025-07-15T16:22:09"
+			"createTime": "2025-07-15T08:22:09"
 		},
 		{
 			"bookId": "3300060202",
@@ -4403,7 +4499,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_aftwrezfyfjnrtaahokipe/t6_cpplatform_aftwrezfyfjnrtaahokipe1685436175.jpg",
 			"chapter": "第三章 家境",
 			"text": "由于他们的“文化工具箱”中可供用来理解大学里的事物、组织行动策略的知识和信息过于匮乏[插图][插图]，他们作出的决定和采取的行动要么随意盲目，要么缺少精打细算，以至于与“读书改变命运”的想象南辕北辙。",
-			"createTime": "2025-07-14T07:31:38"
+			"createTime": "2025-07-13T23:31:38"
 		},
 		{
 			"bookId": "3300093582",
@@ -4411,7 +4507,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/59/cpplatform_bllgdhdlypuvm3z9nb3szt/t6_cpplatform_bllgdhdlypuvm3z9nb3szt1721801759.jpg",
 			"chapter": "人民网：钟书峰谈目前我国翻译行业的现状及价值",
 			"text": "没有高译酬，又如何吸引好译者？现在图书市场，罕见以翻译为职业的译者。两者互为因果，加上其他因素，导致图书翻译质量低下。或许唯有先做大出版业，翻译者的收入才能有本质提高。",
-			"createTime": "2026-05-14T15:42:55"
+			"createTime": "2026-05-14T07:42:55"
 		},
 		{
 			"bookId": "3300093582",
@@ -4419,7 +4515,7 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/59/cpplatform_bllgdhdlypuvm3z9nb3szt/t6_cpplatform_bllgdhdlypuvm3z9nb3szt1721801759.jpg",
 			"chapter": "第308首 风在怒吼",
 			"text": "今天，阴阴沉沉。愁云下的光线，仿佛受责罚的孩子，苍白的脸颊挂着道道泪痕。风在怒吼，仿佛那受伤世界在嚎叫。但我知道，我正走在与友人相会的旅途上。[插图]",
-			"createTime": "2026-05-14T10:50:33"
+			"createTime": "2026-05-14T02:50:33"
 		},
 		{
 			"bookId": "3300093582",
@@ -4427,22 +4523,22 @@
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/59/cpplatform_bllgdhdlypuvm3z9nb3szt/t6_cpplatform_bllgdhdlypuvm3z9nb3szt1721801759.jpg",
 			"chapter": "第321首 高处不胜寒",
 			"text": "我攀上盛名之巅，发现高处不胜寒，荒芜光秃，竟然无处栖身。我的向导，趁着光明未逝，带我进入静谧山谷。在那里，人生硕果，将升华为金色智慧。[插图]",
-			"createTime": "2026-05-14T14:56:15"
+			"createTime": "2026-05-14T06:56:15"
 		}
 	],
 	"stats": {
-		"totalReadTime": 627975,
-		"readDays": 246,
+		"totalReadTime": 631646,
+		"readDays": 247,
 		"readBooks": 117,
 		"finishedBooks": 18,
-		"noteCount": 5538,
+		"noteCount": 5577,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 46,
-				"time": 201866
+				"time": 205273
 			},
 			{
 				"title": "心理",
@@ -4474,7 +4570,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 4,
-				"readTime": "11小时"
+				"readTime": "11小时42分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -4505,1193 +4601,1197 @@
 		"registTime": 1657349563,
 		"heatmap": [
 			{
-				"date": "2025-06-05",
+				"date": "2025-06-04",
 				"seconds": 22
 			},
 			{
-				"date": "2025-06-11",
+				"date": "2025-06-10",
 				"seconds": 318
 			},
 			{
-				"date": "2025-06-12",
+				"date": "2025-06-11",
 				"seconds": 239
 			},
 			{
-				"date": "2025-06-13",
+				"date": "2025-06-12",
 				"seconds": 1607
 			},
 			{
-				"date": "2025-06-14",
+				"date": "2025-06-13",
 				"seconds": 1190
 			},
 			{
-				"date": "2025-06-15",
+				"date": "2025-06-14",
 				"seconds": 234
 			},
 			{
-				"date": "2025-06-16",
+				"date": "2025-06-15",
 				"seconds": 2958
 			},
 			{
-				"date": "2025-06-17",
+				"date": "2025-06-16",
 				"seconds": 10
 			},
 			{
-				"date": "2025-06-18",
+				"date": "2025-06-17",
 				"seconds": 353
 			},
 			{
-				"date": "2025-06-19",
+				"date": "2025-06-18",
 				"seconds": 14
+			},
+			{
+				"date": "2025-06-20",
+				"seconds": 25
 			},
 			{
 				"date": "2025-06-21",
-				"seconds": 25
-			},
-			{
-				"date": "2025-06-22",
 				"seconds": 8
 			},
 			{
-				"date": "2025-06-24",
+				"date": "2025-06-23",
 				"seconds": 628
 			},
 			{
-				"date": "2025-06-27",
+				"date": "2025-06-26",
 				"seconds": 3
 			},
 			{
-				"date": "2025-06-28",
+				"date": "2025-06-27",
 				"seconds": 39
 			},
 			{
-				"date": "2025-06-29",
+				"date": "2025-06-28",
 				"seconds": 22
 			},
 			{
-				"date": "2025-06-30",
+				"date": "2025-06-29",
 				"seconds": 2036
 			},
 			{
-				"date": "2025-07-01",
+				"date": "2025-06-30",
 				"seconds": 2678
 			},
 			{
-				"date": "2025-07-02",
+				"date": "2025-07-01",
 				"seconds": 1002
 			},
 			{
-				"date": "2025-07-03",
+				"date": "2025-07-02",
 				"seconds": 33
 			},
 			{
-				"date": "2025-07-04",
+				"date": "2025-07-03",
 				"seconds": 364
 			},
 			{
-				"date": "2025-07-05",
+				"date": "2025-07-04",
 				"seconds": 1
 			},
 			{
-				"date": "2025-07-06",
+				"date": "2025-07-05",
 				"seconds": 303
 			},
 			{
-				"date": "2025-07-07",
+				"date": "2025-07-06",
 				"seconds": 630
 			},
 			{
-				"date": "2025-07-08",
+				"date": "2025-07-07",
 				"seconds": 705
 			},
 			{
-				"date": "2025-07-09",
+				"date": "2025-07-08",
 				"seconds": 33
+			},
+			{
+				"date": "2025-07-09",
+				"seconds": 3
 			},
 			{
 				"date": "2025-07-10",
-				"seconds": 3
-			},
-			{
-				"date": "2025-07-11",
 				"seconds": 2141
 			},
 			{
-				"date": "2025-07-12",
+				"date": "2025-07-11",
 				"seconds": 2814
 			},
 			{
-				"date": "2025-07-13",
+				"date": "2025-07-12",
 				"seconds": 5905
 			},
 			{
-				"date": "2025-07-14",
+				"date": "2025-07-13",
 				"seconds": 5590
 			},
 			{
-				"date": "2025-07-15",
+				"date": "2025-07-14",
 				"seconds": 5087
 			},
 			{
-				"date": "2025-07-16",
+				"date": "2025-07-15",
 				"seconds": 6709
 			},
 			{
-				"date": "2025-07-17",
+				"date": "2025-07-16",
 				"seconds": 1218
 			},
 			{
-				"date": "2025-07-18",
+				"date": "2025-07-17",
 				"seconds": 1311
 			},
 			{
-				"date": "2025-07-19",
+				"date": "2025-07-18",
 				"seconds": 2307
 			},
 			{
-				"date": "2025-07-20",
+				"date": "2025-07-19",
 				"seconds": 4715
 			},
 			{
-				"date": "2025-07-21",
+				"date": "2025-07-20",
 				"seconds": 6243
 			},
 			{
-				"date": "2025-07-22",
+				"date": "2025-07-21",
 				"seconds": 4947
 			},
 			{
-				"date": "2025-07-23",
+				"date": "2025-07-22",
 				"seconds": 4592
 			},
 			{
-				"date": "2025-07-24",
+				"date": "2025-07-23",
 				"seconds": 4043
 			},
 			{
-				"date": "2025-07-25",
+				"date": "2025-07-24",
 				"seconds": 3482
 			},
 			{
-				"date": "2025-07-26",
+				"date": "2025-07-25",
 				"seconds": 3652
 			},
 			{
-				"date": "2025-07-27",
+				"date": "2025-07-26",
 				"seconds": 718
 			},
 			{
-				"date": "2025-07-28",
+				"date": "2025-07-27",
 				"seconds": 3295
 			},
 			{
-				"date": "2025-07-29",
+				"date": "2025-07-28",
 				"seconds": 3372
 			},
 			{
-				"date": "2025-07-30",
+				"date": "2025-07-29",
 				"seconds": 6178
 			},
 			{
-				"date": "2025-07-31",
+				"date": "2025-07-30",
 				"seconds": 4113
 			},
 			{
-				"date": "2025-08-01",
+				"date": "2025-07-31",
 				"seconds": 738
 			},
 			{
-				"date": "2025-08-02",
+				"date": "2025-08-01",
 				"seconds": 1120
 			},
 			{
-				"date": "2025-08-03",
+				"date": "2025-08-02",
 				"seconds": 93
 			},
 			{
-				"date": "2025-08-04",
+				"date": "2025-08-03",
 				"seconds": 1891
 			},
 			{
-				"date": "2025-08-05",
+				"date": "2025-08-04",
 				"seconds": 6
 			},
 			{
-				"date": "2025-08-06",
+				"date": "2025-08-05",
 				"seconds": 2513
 			},
 			{
-				"date": "2025-08-07",
+				"date": "2025-08-06",
 				"seconds": 2478
 			},
 			{
-				"date": "2025-08-08",
+				"date": "2025-08-07",
 				"seconds": 2032
 			},
 			{
-				"date": "2025-08-09",
+				"date": "2025-08-08",
 				"seconds": 1386
 			},
 			{
-				"date": "2025-08-10",
+				"date": "2025-08-09",
 				"seconds": 1030
 			},
 			{
-				"date": "2025-08-11",
+				"date": "2025-08-10",
 				"seconds": 134
 			},
 			{
-				"date": "2025-08-12",
+				"date": "2025-08-11",
 				"seconds": 214
 			},
 			{
-				"date": "2025-08-13",
+				"date": "2025-08-12",
 				"seconds": 67
 			},
 			{
-				"date": "2025-08-14",
+				"date": "2025-08-13",
 				"seconds": 505
 			},
 			{
-				"date": "2025-08-15",
+				"date": "2025-08-14",
 				"seconds": 4387
 			},
 			{
-				"date": "2025-08-16",
+				"date": "2025-08-15",
 				"seconds": 6426
 			},
 			{
-				"date": "2025-08-17",
+				"date": "2025-08-16",
 				"seconds": 7125
 			},
 			{
-				"date": "2025-08-18",
+				"date": "2025-08-17",
 				"seconds": 8022
 			},
 			{
-				"date": "2025-08-19",
+				"date": "2025-08-18",
 				"seconds": 112
 			},
 			{
-				"date": "2025-08-20",
+				"date": "2025-08-19",
 				"seconds": 336
 			},
 			{
-				"date": "2025-08-21",
+				"date": "2025-08-20",
 				"seconds": 193
 			},
 			{
-				"date": "2025-08-22",
+				"date": "2025-08-21",
 				"seconds": 1203
 			},
 			{
-				"date": "2025-08-23",
+				"date": "2025-08-22",
 				"seconds": 1978
 			},
 			{
-				"date": "2025-08-24",
+				"date": "2025-08-23",
 				"seconds": 2172
 			},
 			{
-				"date": "2025-08-25",
+				"date": "2025-08-24",
 				"seconds": 1852
 			},
 			{
-				"date": "2025-08-26",
+				"date": "2025-08-25",
 				"seconds": 3140
 			},
 			{
-				"date": "2025-08-27",
+				"date": "2025-08-26",
 				"seconds": 8
 			},
 			{
-				"date": "2025-08-28",
+				"date": "2025-08-27",
 				"seconds": 355
 			},
 			{
-				"date": "2025-08-29",
+				"date": "2025-08-28",
 				"seconds": 8
 			},
 			{
-				"date": "2025-08-31",
+				"date": "2025-08-30",
 				"seconds": 68
 			},
 			{
-				"date": "2025-09-01",
+				"date": "2025-08-31",
 				"seconds": 12
 			},
 			{
-				"date": "2025-09-04",
+				"date": "2025-09-03",
 				"seconds": 479
 			},
 			{
-				"date": "2025-09-05",
+				"date": "2025-09-04",
 				"seconds": 43
 			},
 			{
-				"date": "2025-09-06",
+				"date": "2025-09-05",
 				"seconds": 5283
 			},
 			{
-				"date": "2025-09-07",
+				"date": "2025-09-06",
 				"seconds": 3155
 			},
 			{
-				"date": "2025-09-08",
+				"date": "2025-09-07",
 				"seconds": 6091
 			},
 			{
-				"date": "2025-09-09",
+				"date": "2025-09-08",
 				"seconds": 622
 			},
 			{
-				"date": "2025-09-10",
+				"date": "2025-09-09",
 				"seconds": 396
 			},
 			{
-				"date": "2025-09-11",
+				"date": "2025-09-10",
 				"seconds": 248
 			},
 			{
-				"date": "2025-09-12",
+				"date": "2025-09-11",
 				"seconds": 41
 			},
 			{
-				"date": "2025-09-13",
+				"date": "2025-09-12",
 				"seconds": 1200
 			},
 			{
-				"date": "2025-09-14",
+				"date": "2025-09-13",
 				"seconds": 622
 			},
 			{
-				"date": "2025-09-15",
+				"date": "2025-09-14",
 				"seconds": 2634
 			},
 			{
-				"date": "2025-09-16",
+				"date": "2025-09-15",
 				"seconds": 445
 			},
 			{
-				"date": "2025-09-17",
+				"date": "2025-09-16",
 				"seconds": 436
 			},
 			{
-				"date": "2025-09-18",
+				"date": "2025-09-17",
 				"seconds": 5305
 			},
 			{
-				"date": "2025-09-19",
+				"date": "2025-09-18",
 				"seconds": 732
 			},
 			{
-				"date": "2025-09-20",
+				"date": "2025-09-19",
 				"seconds": 4540
 			},
 			{
-				"date": "2025-09-21",
+				"date": "2025-09-20",
 				"seconds": 913
 			},
 			{
-				"date": "2025-09-22",
+				"date": "2025-09-21",
 				"seconds": 589
 			},
 			{
-				"date": "2025-09-24",
+				"date": "2025-09-23",
 				"seconds": 3316
 			},
 			{
-				"date": "2025-09-25",
+				"date": "2025-09-24",
 				"seconds": 501
 			},
 			{
-				"date": "2025-09-26",
+				"date": "2025-09-25",
 				"seconds": 5693
 			},
 			{
-				"date": "2025-09-27",
+				"date": "2025-09-26",
 				"seconds": 427
 			},
 			{
-				"date": "2025-09-28",
+				"date": "2025-09-27",
 				"seconds": 2176
 			},
 			{
-				"date": "2025-09-29",
+				"date": "2025-09-28",
 				"seconds": 2370
 			},
 			{
-				"date": "2025-09-30",
+				"date": "2025-09-29",
 				"seconds": 5825
 			},
 			{
-				"date": "2025-10-01",
+				"date": "2025-09-30",
 				"seconds": 1070
 			},
 			{
-				"date": "2025-10-04",
+				"date": "2025-10-03",
 				"seconds": 880
 			},
 			{
-				"date": "2025-10-05",
+				"date": "2025-10-04",
 				"seconds": 3103
 			},
 			{
-				"date": "2025-10-06",
+				"date": "2025-10-05",
 				"seconds": 625
 			},
 			{
-				"date": "2025-10-07",
+				"date": "2025-10-06",
 				"seconds": 5053
 			},
 			{
-				"date": "2025-10-08",
+				"date": "2025-10-07",
 				"seconds": 1507
 			},
 			{
-				"date": "2025-10-09",
+				"date": "2025-10-08",
 				"seconds": 4234
 			},
 			{
-				"date": "2025-10-10",
+				"date": "2025-10-09",
 				"seconds": 4349
 			},
 			{
-				"date": "2025-10-11",
+				"date": "2025-10-10",
 				"seconds": 2204
 			},
 			{
-				"date": "2025-10-13",
+				"date": "2025-10-12",
 				"seconds": 9
 			},
 			{
-				"date": "2025-10-14",
+				"date": "2025-10-13",
 				"seconds": 300
 			},
 			{
-				"date": "2025-10-15",
+				"date": "2025-10-14",
 				"seconds": 2393
 			},
 			{
-				"date": "2025-10-16",
+				"date": "2025-10-15",
 				"seconds": 5216
 			},
 			{
-				"date": "2025-10-17",
+				"date": "2025-10-16",
 				"seconds": 2191
 			},
 			{
-				"date": "2025-10-18",
+				"date": "2025-10-17",
 				"seconds": 166
 			},
 			{
-				"date": "2025-10-20",
+				"date": "2025-10-19",
 				"seconds": 165
 			},
 			{
-				"date": "2025-10-21",
+				"date": "2025-10-20",
 				"seconds": 1820
 			},
 			{
-				"date": "2025-10-22",
+				"date": "2025-10-21",
 				"seconds": 11253
 			},
 			{
-				"date": "2025-10-23",
+				"date": "2025-10-22",
 				"seconds": 2543
 			},
 			{
-				"date": "2025-10-24",
+				"date": "2025-10-23",
 				"seconds": 307
 			},
 			{
-				"date": "2025-10-25",
+				"date": "2025-10-24",
 				"seconds": 882
 			},
 			{
-				"date": "2025-10-26",
+				"date": "2025-10-25",
 				"seconds": 12
 			},
 			{
-				"date": "2025-10-27",
+				"date": "2025-10-26",
 				"seconds": 165
 			},
 			{
-				"date": "2025-10-29",
+				"date": "2025-10-28",
 				"seconds": 2129
 			},
 			{
-				"date": "2025-10-30",
+				"date": "2025-10-29",
 				"seconds": 2068
 			},
 			{
-				"date": "2025-10-31",
+				"date": "2025-10-30",
 				"seconds": 5
 			},
 			{
-				"date": "2025-11-02",
+				"date": "2025-11-01",
 				"seconds": 46
 			},
 			{
-				"date": "2025-11-03",
+				"date": "2025-11-02",
 				"seconds": 973
 			},
 			{
-				"date": "2025-11-04",
+				"date": "2025-11-03",
 				"seconds": 2207
 			},
 			{
-				"date": "2025-11-05",
+				"date": "2025-11-04",
 				"seconds": 4
 			},
 			{
-				"date": "2025-11-06",
+				"date": "2025-11-05",
 				"seconds": 3318
 			},
 			{
-				"date": "2025-11-08",
+				"date": "2025-11-07",
 				"seconds": 6
 			},
 			{
-				"date": "2025-11-11",
+				"date": "2025-11-10",
 				"seconds": 2497
 			},
 			{
-				"date": "2025-11-12",
+				"date": "2025-11-11",
 				"seconds": 9891
 			},
 			{
-				"date": "2025-11-13",
+				"date": "2025-11-12",
 				"seconds": 4180
 			},
 			{
-				"date": "2025-11-14",
+				"date": "2025-11-13",
 				"seconds": 50
 			},
 			{
-				"date": "2025-11-15",
+				"date": "2025-11-14",
 				"seconds": 23
 			},
 			{
-				"date": "2025-11-18",
+				"date": "2025-11-17",
 				"seconds": 684
 			},
 			{
-				"date": "2025-11-19",
+				"date": "2025-11-18",
 				"seconds": 2701
 			},
 			{
-				"date": "2025-11-20",
+				"date": "2025-11-19",
 				"seconds": 71
 			},
 			{
-				"date": "2025-11-21",
+				"date": "2025-11-20",
 				"seconds": 2429
 			},
 			{
-				"date": "2025-11-23",
+				"date": "2025-11-22",
 				"seconds": 1213
 			},
 			{
-				"date": "2025-11-26",
+				"date": "2025-11-25",
 				"seconds": 790
 			},
 			{
-				"date": "2025-11-27",
+				"date": "2025-11-26",
 				"seconds": 2
 			},
 			{
-				"date": "2025-11-28",
+				"date": "2025-11-27",
 				"seconds": 32
 			},
 			{
-				"date": "2025-11-30",
+				"date": "2025-11-29",
 				"seconds": 33
 			},
 			{
-				"date": "2025-12-01",
+				"date": "2025-11-30",
 				"seconds": 889
 			},
 			{
-				"date": "2025-12-02",
+				"date": "2025-12-01",
 				"seconds": 2659
 			},
 			{
-				"date": "2025-12-03",
+				"date": "2025-12-02",
 				"seconds": 10276
 			},
 			{
-				"date": "2025-12-05",
+				"date": "2025-12-04",
 				"seconds": 621
 			},
 			{
-				"date": "2025-12-06",
+				"date": "2025-12-05",
 				"seconds": 52
 			},
 			{
-				"date": "2025-12-08",
+				"date": "2025-12-07",
 				"seconds": 2916
 			},
 			{
-				"date": "2025-12-09",
+				"date": "2025-12-08",
 				"seconds": 14
 			},
 			{
-				"date": "2025-12-10",
+				"date": "2025-12-09",
 				"seconds": 1941
 			},
 			{
-				"date": "2025-12-12",
+				"date": "2025-12-11",
 				"seconds": 218
 			},
 			{
-				"date": "2025-12-13",
+				"date": "2025-12-12",
 				"seconds": 5
 			},
 			{
-				"date": "2025-12-15",
+				"date": "2025-12-14",
 				"seconds": 3109
 			},
 			{
-				"date": "2025-12-16",
+				"date": "2025-12-15",
 				"seconds": 688
 			},
 			{
-				"date": "2025-12-17",
+				"date": "2025-12-16",
 				"seconds": 572
 			},
 			{
-				"date": "2025-12-18",
+				"date": "2025-12-17",
 				"seconds": 3
 			},
 			{
-				"date": "2025-12-19",
+				"date": "2025-12-18",
 				"seconds": 306
 			},
 			{
-				"date": "2025-12-20",
+				"date": "2025-12-19",
 				"seconds": 4
 			},
 			{
-				"date": "2025-12-21",
+				"date": "2025-12-20",
 				"seconds": 14
 			},
 			{
-				"date": "2025-12-22",
+				"date": "2025-12-21",
 				"seconds": 168
 			},
 			{
-				"date": "2025-12-24",
+				"date": "2025-12-23",
 				"seconds": 2490
 			},
 			{
-				"date": "2025-12-25",
+				"date": "2025-12-24",
 				"seconds": 291
 			},
 			{
-				"date": "2025-12-26",
+				"date": "2025-12-25",
 				"seconds": 1592
 			},
 			{
-				"date": "2025-12-27",
+				"date": "2025-12-26",
 				"seconds": 3582
 			},
 			{
-				"date": "2025-12-30",
+				"date": "2025-12-29",
 				"seconds": 11
 			},
 			{
-				"date": "2025-12-31",
+				"date": "2025-12-30",
 				"seconds": 502
 			},
 			{
-				"date": "2026-01-02",
+				"date": "2026-01-01",
 				"seconds": 326
 			},
 			{
-				"date": "2026-01-05",
+				"date": "2026-01-04",
 				"seconds": 13
 			},
 			{
-				"date": "2026-01-07",
+				"date": "2026-01-06",
 				"seconds": 25
 			},
 			{
-				"date": "2026-01-08",
+				"date": "2026-01-07",
 				"seconds": 2025
 			},
 			{
-				"date": "2026-01-09",
+				"date": "2026-01-08",
 				"seconds": 240
 			},
 			{
-				"date": "2026-01-10",
+				"date": "2026-01-09",
 				"seconds": 2
 			},
 			{
-				"date": "2026-01-12",
+				"date": "2026-01-11",
 				"seconds": 67
 			},
 			{
-				"date": "2026-01-13",
+				"date": "2026-01-12",
 				"seconds": 203
 			},
 			{
-				"date": "2026-01-14",
+				"date": "2026-01-13",
 				"seconds": 398
 			},
 			{
-				"date": "2026-01-15",
+				"date": "2026-01-14",
 				"seconds": 2
 			},
 			{
-				"date": "2026-01-16",
+				"date": "2026-01-15",
 				"seconds": 534
 			},
 			{
-				"date": "2026-01-18",
+				"date": "2026-01-17",
 				"seconds": 1368
 			},
 			{
-				"date": "2026-01-20",
+				"date": "2026-01-19",
 				"seconds": 2
 			},
 			{
-				"date": "2026-01-21",
+				"date": "2026-01-20",
 				"seconds": 240
 			},
 			{
-				"date": "2026-01-23",
+				"date": "2026-01-22",
 				"seconds": 10863
 			},
 			{
-				"date": "2026-01-24",
+				"date": "2026-01-23",
 				"seconds": 255
 			},
 			{
-				"date": "2026-01-25",
+				"date": "2026-01-24",
 				"seconds": 482
 			},
 			{
-				"date": "2026-01-26",
+				"date": "2026-01-25",
 				"seconds": 119
 			},
 			{
-				"date": "2026-01-30",
+				"date": "2026-01-29",
 				"seconds": 11
 			},
 			{
-				"date": "2026-01-31",
+				"date": "2026-01-30",
 				"seconds": 21
 			},
 			{
-				"date": "2026-02-03",
+				"date": "2026-02-02",
 				"seconds": 700
 			},
 			{
-				"date": "2026-02-04",
+				"date": "2026-02-03",
 				"seconds": 2310
 			},
 			{
-				"date": "2026-02-05",
+				"date": "2026-02-04",
 				"seconds": 353
 			},
 			{
-				"date": "2026-02-06",
+				"date": "2026-02-05",
 				"seconds": 3199
 			},
 			{
-				"date": "2026-02-07",
+				"date": "2026-02-06",
 				"seconds": 5
 			},
 			{
-				"date": "2026-02-12",
+				"date": "2026-02-11",
 				"seconds": 995
 			},
 			{
-				"date": "2026-02-16",
+				"date": "2026-02-15",
 				"seconds": 69
 			},
 			{
-				"date": "2026-02-17",
+				"date": "2026-02-16",
 				"seconds": 4021
 			},
 			{
-				"date": "2026-02-18",
+				"date": "2026-02-17",
 				"seconds": 302
 			},
 			{
-				"date": "2026-02-20",
+				"date": "2026-02-19",
 				"seconds": 19
 			},
 			{
-				"date": "2026-02-21",
+				"date": "2026-02-20",
 				"seconds": 1806
 			},
 			{
-				"date": "2026-02-22",
+				"date": "2026-02-21",
 				"seconds": 1156
 			},
 			{
-				"date": "2026-02-23",
+				"date": "2026-02-22",
 				"seconds": 121
 			},
 			{
-				"date": "2026-02-24",
+				"date": "2026-02-23",
 				"seconds": 522
 			},
 			{
-				"date": "2026-02-26",
+				"date": "2026-02-25",
 				"seconds": 2
 			},
 			{
-				"date": "2026-02-27",
+				"date": "2026-02-26",
 				"seconds": 35
 			},
 			{
-				"date": "2026-03-02",
+				"date": "2026-03-01",
 				"seconds": 129
 			},
 			{
-				"date": "2026-03-03",
+				"date": "2026-03-02",
 				"seconds": 266
 			},
 			{
-				"date": "2026-03-06",
+				"date": "2026-03-05",
 				"seconds": 31
 			},
 			{
-				"date": "2026-03-07",
+				"date": "2026-03-06",
 				"seconds": 1512
 			},
 			{
-				"date": "2026-03-11",
+				"date": "2026-03-10",
 				"seconds": 2044
 			},
 			{
-				"date": "2026-03-12",
+				"date": "2026-03-11",
 				"seconds": 5
 			},
 			{
-				"date": "2026-03-13",
+				"date": "2026-03-12",
 				"seconds": 4101
 			},
 			{
-				"date": "2026-03-16",
+				"date": "2026-03-15",
 				"seconds": 1294
 			},
 			{
-				"date": "2026-03-17",
+				"date": "2026-03-16",
 				"seconds": 95
 			},
 			{
-				"date": "2026-03-18",
+				"date": "2026-03-17",
 				"seconds": 373
 			},
 			{
-				"date": "2026-03-20",
+				"date": "2026-03-19",
 				"seconds": 137
 			},
 			{
-				"date": "2026-03-23",
+				"date": "2026-03-22",
 				"seconds": 1966
 			},
 			{
-				"date": "2026-03-24",
+				"date": "2026-03-23",
 				"seconds": 4941
 			},
 			{
-				"date": "2026-03-25",
+				"date": "2026-03-24",
 				"seconds": 3797
 			},
 			{
-				"date": "2026-03-26",
+				"date": "2026-03-25",
 				"seconds": 1725
 			},
 			{
-				"date": "2026-03-27",
+				"date": "2026-03-26",
 				"seconds": 7224
 			},
 			{
-				"date": "2026-03-28",
+				"date": "2026-03-27",
 				"seconds": 2205
 			},
 			{
-				"date": "2026-03-29",
+				"date": "2026-03-28",
 				"seconds": 1222
 			},
 			{
-				"date": "2026-03-30",
+				"date": "2026-03-29",
 				"seconds": 4434
 			},
 			{
-				"date": "2026-03-31",
+				"date": "2026-03-30",
 				"seconds": 9115
 			},
 			{
-				"date": "2026-04-01",
+				"date": "2026-03-31",
 				"seconds": 2617
 			},
 			{
-				"date": "2026-04-02",
+				"date": "2026-04-01",
 				"seconds": 1909
 			},
 			{
-				"date": "2026-04-03",
+				"date": "2026-04-02",
 				"seconds": 3249
 			},
 			{
-				"date": "2026-04-04",
+				"date": "2026-04-03",
 				"seconds": 306
 			},
 			{
-				"date": "2026-04-05",
+				"date": "2026-04-04",
 				"seconds": 284
 			},
 			{
-				"date": "2026-04-06",
+				"date": "2026-04-05",
 				"seconds": 5873
 			},
 			{
-				"date": "2026-04-07",
+				"date": "2026-04-06",
 				"seconds": 1997
 			},
 			{
-				"date": "2026-04-08",
+				"date": "2026-04-07",
 				"seconds": 3477
 			},
 			{
-				"date": "2026-04-09",
+				"date": "2026-04-08",
 				"seconds": 534
 			},
 			{
-				"date": "2026-04-10",
+				"date": "2026-04-09",
 				"seconds": 2555
 			},
 			{
-				"date": "2026-04-11",
+				"date": "2026-04-10",
 				"seconds": 1765
 			},
 			{
-				"date": "2026-04-12",
+				"date": "2026-04-11",
 				"seconds": 1313
 			},
 			{
-				"date": "2026-04-13",
+				"date": "2026-04-12",
 				"seconds": 5615
 			},
 			{
-				"date": "2026-04-14",
+				"date": "2026-04-13",
 				"seconds": 5166
 			},
 			{
-				"date": "2026-04-15",
+				"date": "2026-04-14",
 				"seconds": 6602
 			},
 			{
-				"date": "2026-04-16",
+				"date": "2026-04-15",
 				"seconds": 178
 			},
 			{
-				"date": "2026-04-17",
+				"date": "2026-04-16",
 				"seconds": 6318
 			},
 			{
-				"date": "2026-04-18",
+				"date": "2026-04-17",
 				"seconds": 431
 			},
 			{
-				"date": "2026-04-19",
+				"date": "2026-04-18",
 				"seconds": 5936
 			},
 			{
-				"date": "2026-04-20",
+				"date": "2026-04-19",
 				"seconds": 1454
 			},
 			{
-				"date": "2026-04-21",
+				"date": "2026-04-20",
 				"seconds": 8954
 			},
 			{
-				"date": "2026-04-22",
+				"date": "2026-04-21",
 				"seconds": 7030
 			},
 			{
-				"date": "2026-04-23",
+				"date": "2026-04-22",
 				"seconds": 4366
 			},
 			{
-				"date": "2026-04-24",
+				"date": "2026-04-23",
 				"seconds": 6415
 			},
 			{
-				"date": "2026-04-25",
+				"date": "2026-04-24",
 				"seconds": 16
 			},
 			{
-				"date": "2026-04-26",
+				"date": "2026-04-25",
 				"seconds": 2938
 			},
 			{
-				"date": "2026-04-27",
+				"date": "2026-04-26",
 				"seconds": 6041
 			},
 			{
-				"date": "2026-04-28",
+				"date": "2026-04-27",
 				"seconds": 4618
 			},
 			{
-				"date": "2026-04-29",
+				"date": "2026-04-28",
 				"seconds": 8026
 			},
 			{
-				"date": "2026-04-30",
+				"date": "2026-04-29",
 				"seconds": 1638
 			},
 			{
-				"date": "2026-05-01",
+				"date": "2026-04-30",
 				"seconds": 2330
 			},
 			{
-				"date": "2026-05-02",
+				"date": "2026-05-01",
 				"seconds": 12
 			},
 			{
-				"date": "2026-05-03",
+				"date": "2026-05-02",
 				"seconds": 13778
 			},
 			{
-				"date": "2026-05-04",
+				"date": "2026-05-03",
 				"seconds": 2148
 			},
 			{
-				"date": "2026-05-05",
+				"date": "2026-05-04",
 				"seconds": 14263
 			},
 			{
-				"date": "2026-05-06",
+				"date": "2026-05-05",
 				"seconds": 8986
 			},
 			{
-				"date": "2026-05-07",
+				"date": "2026-05-06",
 				"seconds": 1211
 			},
 			{
-				"date": "2026-05-08",
+				"date": "2026-05-07",
 				"seconds": 7993
 			},
 			{
-				"date": "2026-05-09",
+				"date": "2026-05-08",
 				"seconds": 6560
 			},
 			{
-				"date": "2026-05-10",
+				"date": "2026-05-09",
 				"seconds": 741
 			},
 			{
-				"date": "2026-05-11",
+				"date": "2026-05-10",
 				"seconds": 3590
 			},
 			{
-				"date": "2026-05-12",
+				"date": "2026-05-11",
 				"seconds": 1470
 			},
 			{
-				"date": "2026-05-13",
+				"date": "2026-05-12",
 				"seconds": 4588
 			},
 			{
-				"date": "2026-05-14",
+				"date": "2026-05-13",
 				"seconds": 5842
 			},
 			{
-				"date": "2026-05-15",
+				"date": "2026-05-14",
 				"seconds": 3786
 			},
 			{
-				"date": "2026-05-16",
+				"date": "2026-05-15",
 				"seconds": 2966
 			},
 			{
-				"date": "2026-05-17",
+				"date": "2026-05-16",
 				"seconds": 2720
 			},
 			{
-				"date": "2026-05-18",
+				"date": "2026-05-17",
 				"seconds": 1710
 			},
 			{
-				"date": "2026-05-19",
+				"date": "2026-05-18",
 				"seconds": 895
 			},
 			{
-				"date": "2026-05-20",
+				"date": "2026-05-19",
 				"seconds": 3191
 			},
 			{
-				"date": "2026-05-21",
+				"date": "2026-05-20",
 				"seconds": 227
 			},
 			{
-				"date": "2026-05-22",
+				"date": "2026-05-21",
 				"seconds": 6308
 			},
 			{
-				"date": "2026-05-23",
+				"date": "2026-05-22",
 				"seconds": 688
 			},
 			{
-				"date": "2026-05-24",
+				"date": "2026-05-23",
 				"seconds": 3620
 			},
 			{
-				"date": "2026-05-25",
+				"date": "2026-05-24",
 				"seconds": 803
 			},
 			{
-				"date": "2026-05-26",
+				"date": "2026-05-25",
 				"seconds": 4244
 			},
 			{
-				"date": "2026-05-27",
+				"date": "2026-05-26",
 				"seconds": 2598
 			},
 			{
-				"date": "2026-05-28",
+				"date": "2026-05-27",
 				"seconds": 2956
 			},
 			{
-				"date": "2026-05-29",
+				"date": "2026-05-28",
 				"seconds": 1444
 			},
 			{
-				"date": "2026-05-30",
+				"date": "2026-05-29",
 				"seconds": 448
 			},
 			{
-				"date": "2026-05-31",
+				"date": "2026-05-30",
 				"seconds": 1168
 			},
 			{
-				"date": "2026-06-01",
+				"date": "2026-05-31",
 				"seconds": 438
 			},
 			{
-				"date": "2026-06-02",
+				"date": "2026-06-01",
 				"seconds": 1183
 			},
 			{
-				"date": "2026-06-03",
+				"date": "2026-06-02",
 				"seconds": 3476
 			},
 			{
+				"date": "2026-06-03",
+				"seconds": 10
+			},
+			{
 				"date": "2026-06-04",
-				"seconds": 1
+				"seconds": 3662
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 245,
+		"totalBooks": 251,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -5699,6 +5799,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-04T08:34:44.691Z",
+	"generatedAt": "2026-06-05T14:26:43.545Z",
 	"isMock": false
 }
