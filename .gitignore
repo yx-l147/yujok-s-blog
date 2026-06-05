@@ -36,6 +36,9 @@ jh-*.png
 # macOS-specific files
 .DS_Store
 
+# Python bytecode（CI 运行 weread_cli 时可能生成）
+__pycache__/
+
 .vercel
 
 package-lock.json

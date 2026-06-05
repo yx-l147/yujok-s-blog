@@ -11,7 +11,8 @@
  *
  * 隐私铁律：
  *   - secret=1 的私密书籍在源头就被过滤，绝不写入任何输出文件
- *   - 输出仅写到 src/data/weread/shelf.json（已 gitignore，不进仓库）
+ *   - 输出仅写到 src/data/weread/shelf.json（其余中间产物已 gitignore）
+ *   - shelf.json 允许入库（私密书已源头过滤，展示数据本身公开）
  *   - 不触碰 git，不上报任何外部服务
  *   - API Key 只在子进程内传递，不落盘
  */
@@ -325,7 +326,7 @@ async function main() {
 	);
 	console.log(`   输出     : ${OUT_FILE}`);
 	console.log(
-		"\n🔒 私密书籍未写入任何文件；shelf.json 已 gitignore，不会进仓库。",
+		"\n🔒 私密书籍未写入任何文件；shelf.json 含公开书架数据，允许入库。",
 	);
 }
 
