@@ -27,10 +27,15 @@ const related = allBooks
   .filter((b) => b.bookId !== book.bookId && (b.category || "").startsWith(topCat))
   .sort((a, b) => (b.publicRating ?? 0) - (a.publicRating ?? 0))
   .slice(0, 4);
+const wereadUrl = `https://weread.qq.com/web/search/books?keyword=${encodeURIComponent(
+  `${book.title} ${book.author}`.trim(),
+)}`;
+const visibleNotes = notes.slice(0, 2);
+const hiddenNotes = notes.slice(2);
 ---
 
 <article class="detail">
-  <!-- ══════ 左栏：封面 ══════ -->
+  <!-- 左栏：封面 -->
   <aside class="detail-side">
     <div class="detail-cover">
       <img
@@ -67,7 +72,7 @@ const related = allBooks
 
     <!-- 外链 -->
     <a
-      href={`https://weread.qq.com/web/bookDetail/${book.bookId}`}
+      href={wereadUrl}
       class="detail-weread-btn"
       target="_blank"
       rel="noopener noreferrer"
@@ -81,7 +86,7 @@ const related = allBooks
     </a>
   </aside>
 
-  <!-- ══════ 右栏：信息 ══════ -->
+  <!-- 右栏：信息 -->
   <div class="detail-main">
     <!-- 面包屑 -->
     <nav class="detail-breadcrumb">
@@ -155,7 +160,7 @@ const related = allBooks
 
     <!-- 简介 -->
     {book.intro && (
-      <section class="detail-section">
+      <section class="detail-section detail-section--intro">
         <h2 class="section-title sk-han">简介</h2>
         <div class="detail-intro">
           {book.intro.split("\n").map((p) =>
@@ -166,28 +171,49 @@ const related = allBooks
     )}
 
     <!-- 我的笔记 -->
-    {notes.length > 0 && (
-      <section class="detail-section">
+    <section class="detail-section detail-section--notes" data-notes-section>
+      <div class="notes-head">
         <h2 class="section-title sk-han">
           我的笔记
           <span class="section-count">{notes.length}</span>
         </h2>
+        {hiddenNotes.length > 0 && (
+          <button type="button" class="notes-toggle" data-notes-toggle aria-expanded="false">
+            查看全部
+          </button>
+        )}
+      </div>
+
+      {notes.length > 0 ? (
         <div class="notes-list">
-          {notes.map((n) => (
+          {visibleNotes.map((n) => (
             <blockquote class="note-item">
               <p class="note-text sk-han">{n.text}</p>
               {n.chapter && (
-                <footer class="note-chapter">— {n.chapter}</footer>
+                <footer class="note-chapter">- {n.chapter}</footer>
+              )}
+            </blockquote>
+          ))}
+          {hiddenNotes.map((n) => (
+            <blockquote class="note-item is-note-extra">
+              <p class="note-text sk-han">{n.text}</p>
+              {n.chapter && (
+                <footer class="note-chapter">- {n.chapter}</footer>
               )}
             </blockquote>
           ))}
         </div>
-      </section>
-    )}
+      ) : (
+        <div class="notes-empty">
+          <p class="notes-empty-title sk-han">暂无公开笔记</p>
+          <p>如果微信读书里后来新增了划线或想法，重新同步数据后这里会自动出现。</p>
+        </div>
+      )}
+    </section>
 
     <!-- 相关书籍 -->
     {related.length > 0 && (
-      <section class="detail-section">
+      <section class="detail-section detail-section--related">
         <h2 class="section-title sk-han">同类书籍</h2>
         <div class="related-grid">
           {related.map((b) => (
@@ -207,21 +233,22 @@ const related = allBooks
 <style>
   .detail {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 2.5rem;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4rem);
     align-items: start;
-    max-width: 900px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 1.5rem 0 3rem;
   }
 
-  /* ── 左栏 ── */
+  /* 左栏 */
   .detail-side {
-    position: sticky;
-    top: 5rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    grid-column: 1;
+    grid-row: 1 / span 3;
   }
 
   .detail-cover {
@@ -301,16 +328,15 @@ const related = allBooks
     background: color-mix(in srgb, var(--sk-river) 8%, transparent);
   }
 
-  /* ── 右栏 ── */
+  /* 右栏 */
   .detail-main {
     min-width: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+    display: contents;
   }
 
   .detail-breadcrumb {
     margin-bottom: -.5rem;
+    grid-column: 2;
   }
   .detail-breadcrumb a {
     font-size: .82rem;
@@ -320,7 +346,12 @@ const related = allBooks
   }
   .detail-breadcrumb a:hover { color: var(--sk-comet); }
 
-  .detail-header { display: flex; flex-direction: column; gap: .5rem; }
+  .detail-header {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    grid-column: 2;
+  }
 
   .detail-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
@@ -386,6 +417,7 @@ const related = allBooks
     border-radius: 14px;
     background: color-mix(in srgb, var(--sk-moon) 5%, transparent);
     border: 1px solid color-mix(in srgb, var(--sk-moon) 10%, transparent);
+    grid-column: 2;
   }
   .dstat {
     display: flex;
@@ -406,7 +438,16 @@ const related = allBooks
   }
 
   /* 简介 */
-  .detail-section { display: flex; flex-direction: column; gap: .8rem; }
+  .detail-section {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+  .detail-section--intro,
+  .detail-section--notes,
+  .detail-section--related {
+    grid-column: 1 / -1;
+  }
   .section-title {
     font-size: 1.05rem;
     font-weight: 600;
@@ -423,10 +464,47 @@ const related = allBooks
     color: color-mix(in srgb, var(--sk-moon) 48%, transparent);
   }
 
+  .detail-section--notes {
+    margin-top: .6rem;
+    padding: 1.1rem;
+    border-radius: 14px;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--sk-river) 10%, transparent),
+      color-mix(in srgb, var(--sk-moon) 4%, transparent)
+    );
+    border: 1px solid color-mix(in srgb, var(--sk-river) 18%, transparent);
+  }
+  .notes-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 .2rem .45rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--sk-moon) 10%, transparent);
+  }
+  .notes-toggle {
+    flex: 0 0 auto;
+    border: 1px solid color-mix(in srgb, var(--sk-river) 24%, transparent);
+    border-radius: 999px;
+    padding: .32rem .72rem;
+    font-size: .74rem;
+    color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
+    background: color-mix(in srgb, var(--sk-night) 62%, transparent);
+    cursor: pointer;
+    transition: color .25s, border-color .25s, background .25s;
+  }
+  .notes-toggle:hover {
+    color: var(--sk-moon);
+    border-color: color-mix(in srgb, var(--sk-comet) 50%, transparent);
+    background: color-mix(in srgb, var(--sk-river) 12%, var(--sk-night));
+  }
+
   .detail-intro {
     font-size: .9rem;
     line-height: 1.78;
     color: color-mix(in srgb, var(--sk-moon) 78%, transparent);
+    max-width: 68ch;
   }
   .detail-intro p {
     margin: 0 0 .8rem;
@@ -434,23 +512,36 @@ const related = allBooks
   }
   .detail-intro p:last-child { margin-bottom: 0; }
 
+  @media (min-width: 960px) {
+    .detail-intro {
+      columns: 2 24rem;
+      column-gap: 2rem;
+      column-rule: 1px solid color-mix(in srgb, var(--sk-moon) 10%, transparent);
+      max-width: none;
+    }
+    .detail-intro p {
+      break-inside: avoid;
+    }
+  }
+
   /* 笔记列表 */
   .notes-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
     gap: .9rem;
   }
   .note-item {
     margin: 0;
-    padding: 1.1rem 1.3rem;
-    border-left: 3px solid color-mix(in srgb, var(--sk-comet) 40%, transparent);
-    border-radius: 0 10px 10px 0;
-    background: color-mix(in srgb, var(--sk-moon) 4%, transparent);
-    transition: border-color .3s, background .3s;
+    padding: 1rem 1.1rem;
+    border-left: 2px solid color-mix(in srgb, var(--sk-comet) 38%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--sk-night) 58%, transparent);
+    transition: border-color .3s, background .3s, transform .3s var(--sk-ease-out);
   }
   .note-item:hover {
     border-left-color: var(--sk-comet);
-    background: color-mix(in srgb, var(--sk-moon) 7%, transparent);
+    background: color-mix(in srgb, var(--sk-river) 10%, var(--sk-night));
+    transform: translateY(-2px);
   }
   .note-text {
     font-size: .92rem;
@@ -463,27 +554,53 @@ const related = allBooks
     color: color-mix(in srgb, var(--sk-moon) 48%, transparent);
     margin-top: .5rem;
   }
+  .is-note-extra {
+    display: none;
+  }
+  .detail-section--notes.is-expanded .is-note-extra {
+    display: block;
+  }
+  .notes-empty {
+    padding: .9rem 1rem;
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--sk-night) 52%, transparent);
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
+    font-size: .84rem;
+    line-height: 1.6;
+  }
+  .notes-empty p {
+    margin: 0;
+  }
+  .notes-empty-title {
+    color: color-mix(in srgb, var(--sk-moon) 82%, transparent);
+    font-size: .94rem;
+    font-weight: 600;
+    margin-bottom: .25rem !important;
+  }
 
   /* 同类书籍 */
+  .detail-section--related {
+    max-width: 760px;
+  }
   .related-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: .8rem;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 116px));
+    gap: .7rem;
   }
   .related-card {
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    gap: .35rem;
     text-decoration: none;
     transition: transform .3s var(--sk-ease-out);
   }
   .related-card:hover { transform: translateY(-4px); }
   .related-cover {
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
     aspect-ratio: 3 / 4.2;
     background: color-mix(in srgb, var(--sk-tide) 50%, transparent);
-    box-shadow: 0 4px 12px rgba(20, 40, 80, 0.15);
+    box-shadow: 0 3px 10px rgba(20, 40, 80, 0.14);
   }
   .related-cover img {
     width: 100%;
@@ -491,7 +608,7 @@ const related = allBooks
     object-fit: cover;
   }
   .related-title {
-    font-size: .72rem;
+    font-size: .68rem;
     color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -500,7 +617,7 @@ const related = allBooks
     line-height: 1.35;
   }
 
-  /* ── 响应式 ── */
+  /* 响应式 */
   @media (max-width: 700px) {
     .detail {
       grid-template-columns: 1fr;
@@ -508,13 +625,62 @@ const related = allBooks
     }
     .detail-side {
       position: static;
+      grid-column: 1;
+      grid-row: auto;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
       gap: 1rem;
     }
+    .detail-breadcrumb,
+    .detail-header,
+    .detail-stats,
+    .detail-section--intro,
+    .detail-section--notes,
+    .detail-section--related {
+      grid-column: 1;
+    }
     .detail-cover { max-width: 140px; }
     .detail-weread-btn { width: 100%; justify-content: center; }
-    .related-grid { grid-template-columns: repeat(4, 1fr); }
+    .related-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: .55rem;
+    }
   }
 </style>
+
+<script>
+  function bindBookBack() {
+    const link = document.querySelector<HTMLAnchorElement>('.detail-breadcrumb a[href="/book/"]');
+    if (!link || link.dataset.boundBookBack) return;
+    link.dataset.boundBookBack = "1";
+    link.addEventListener("click", (event) => {
+      const state = sessionStorage.getItem("book-shelf-state");
+      if (!state) return;
+      event.preventDefault();
+      window.location.href = `${link.href}#restore-shelf`;
+    });
+  }
+
+  function bindNotesToggle() {
+    const sections = document.querySelectorAll<HTMLElement>("[data-notes-section]");
+    for (const section of sections) {
+      if (section.dataset.notesBound) continue;
+      section.dataset.notesBound = "1";
+
+      const toggle = section.querySelector<HTMLButtonElement>("[data-notes-toggle]");
+      if (!toggle) continue;
+
+      toggle.addEventListener("click", () => {
+        const expanded = section.classList.toggle("is-expanded");
+        toggle.setAttribute("aria-expanded", String(expanded));
+        toggle.textContent = expanded ? "收起" : "查看全部";
+      });
+    }
+  }
+
+  bindBookBack();
+  bindNotesToggle();
+  document.addEventListener("swup:page:view", bindBookBack);
+  document.addEventListener("swup:page:view", bindNotesToggle);
+</script>

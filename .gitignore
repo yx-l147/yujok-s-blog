@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# Claude Code session data（含 .env.local 等敏感信息）
+.claude/
+
 # generated types
 .astro/
 

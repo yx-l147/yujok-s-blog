@@ -275,6 +275,16 @@ const cats = topCategories(books, 5);
 
       let activeStatus = "featured";
       let activeCat = "all";
+      const saveState = () => {
+        sessionStorage.setItem(
+          "book-shelf-state",
+          JSON.stringify({
+            activeStatus,
+            activeCat,
+            scrollY: window.scrollY,
+          }),
+        );
+      };
 
       const apply = () => {
         // 更新状态按钮
@@ -296,6 +306,7 @@ const cats = topCategories(books, 5);
           featuredView.classList.remove("is-hidden");
           allView.classList.add("is-hidden");
           empty.classList.add("is-hidden");
+          saveState();
           return;
         }
 
@@ -316,6 +327,7 @@ const cats = topCategories(books, 5);
         }
 
         empty.classList.toggle("is-hidden", visible > 0);
+        saveState();
       };
 
       // 状态按钮点击
@@ -333,6 +345,33 @@ const cats = topCategories(books, 5);
           apply();
         });
       }
+
+      shelf.addEventListener("click", () => {
+        saveState();
+      });
+
+      const restore = () => {
+        if (window.location.hash !== "#restore-shelf") return;
+        const raw = sessionStorage.getItem("book-shelf-state");
+        if (!raw) return;
+        try {
+          const state = JSON.parse(raw) as {
+            activeStatus?: string;
+            activeCat?: string;
+            scrollY?: number;
+          };
+          activeStatus = state.activeStatus || activeStatus;
+          activeCat = state.activeCat || activeCat;
+          apply();
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: state.scrollY ?? 0, behavior: "auto" });
+          });
+        } catch {
+          sessionStorage.removeItem("book-shelf-state");
+        }
+      };
+
+      restore();
     }
   }
 

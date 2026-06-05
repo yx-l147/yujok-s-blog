@@ -17,6 +17,7 @@ type SearchIndexItem = {
 	tags: string[];
 	series?: string | null;
 	column?: string | null;
+	cover?: string | null;
 	published: string;
 };
 
@@ -29,17 +30,7 @@ let localIndex: SearchIndexItem[] = [];
 let isSearching = false;
 let pagefindLoaded = false;
 let initialized = false;
-
-const fakeResult: SearchResult[] = [
-	{
-		url: url("/"),
-		meta: {
-			title: "Search preview",
-		},
-		excerpt:
-			"Build the site to enable Pagefind full-text search. Summary search works in development.",
-	},
-];
+let searchVersion = 0;
 
 const togglePanel = () => {
 	const panel = document.getElementById("search-panel");
@@ -56,6 +47,14 @@ const setPanelVisibility = (show: boolean, isDesktop: boolean): void => {
 		panel.classList.add("float-panel-closed");
 	}
 };
+
+function clearSearch(isDesktop: boolean) {
+	searchVersion++;
+	setPanelVisibility(false, isDesktop);
+	result = [];
+	indexResult = [];
+	isSearching = false;
+}
 
 function activeKeyword() {
 	return keywordDesktop || keywordMobile;
@@ -84,10 +83,11 @@ function localSearch(keyword: string) {
 }
 
 const search = async (keyword: string, isDesktop: boolean): Promise<void> => {
-	if (!keyword) {
-		setPanelVisibility(false, isDesktop);
-		result = [];
-		indexResult = [];
+	const version = ++searchVersion;
+	const query = keyword.trim();
+
+	if (!query) {
+		clearSearch(isDesktop);
 		return;
 	}
 
@@ -97,33 +97,42 @@ const search = async (keyword: string, isDesktop: boolean): Promise<void> => {
 
 	try {
 		if (mode === "summary") {
-			indexResult = localSearch(keyword);
+			const nextIndexResult = localSearch(query);
+			if (version !== searchVersion) return;
+			indexResult = nextIndexResult;
 			result = [];
-			setPanelVisibility(indexResult.length > 0, isDesktop);
+			setPanelVisibility(true, isDesktop);
 			return;
 		}
 
 		let searchResults: SearchResult[] = [];
 
 		if (import.meta.env.PROD && pagefindLoaded && window.pagefind) {
-			const response = await window.pagefind.search(keyword);
+			const response = await window.pagefind.search(query);
 			searchResults = await Promise.all(
 				response.results.map((item) => item.data()),
 			);
-		} else if (import.meta.env.DEV) {
-			searchResults = fakeResult;
+		} else {
+			const nextIndexResult = localSearch(query);
+			if (version !== searchVersion) return;
+			indexResult = nextIndexResult;
+			result = [];
+			setPanelVisibility(true, isDesktop);
+			return;
 		}
 
+		if (version !== searchVersion) return;
 		result = searchResults;
 		indexResult = [];
-		setPanelVisibility(result.length > 0, isDesktop);
+		setPanelVisibility(true, isDesktop);
 	} catch (error) {
+		if (version !== searchVersion) return;
 		console.error("Search error:", error);
 		result = [];
 		indexResult = [];
-		setPanelVisibility(false, isDesktop);
+		setPanelVisibility(true, isDesktop);
 	} finally {
-		isSearching = false;
+		if (version === searchVersion) isSearching = false;
 	}
 };
 
@@ -143,9 +152,8 @@ function switchMode(nextMode: SearchMode) {
 }
 
 onMount(() => {
-	loadLocalIndex();
-
-	const initializeSearch = () => {
+	const initializeSearch = async () => {
+		await loadLocalIndex();
 		initialized = true;
 		pagefindLoaded =
 			typeof window !== "undefined" &&
@@ -171,15 +179,23 @@ onMount(() => {
 	}
 });
 
-$: if (initialized && keywordDesktop) {
+$: if (initialized) {
 	(async () => {
-		await search(keywordDesktop, true);
+		if (keywordDesktop.trim()) {
+			await search(keywordDesktop, true);
+		} else if (!keywordMobile.trim()) {
+			clearSearch(true);
+		}
 	})();
 }
 
-$: if (initialized && keywordMobile) {
+$: if (initialized) {
 	(async () => {
-		await search(keywordMobile, false);
+		if (keywordMobile.trim()) {
+			await search(keywordMobile, false);
+		} else if (!keywordDesktop.trim()) {
+			clearSearch(false);
+		}
 	})();
 }
 </script>
