@@ -1,0 +1,19 @@
+---
+import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
+import ScheduleViewer from "@/components/schedule/ScheduleViewer.svelte";
+import { scheduleTerm } from "@/data/schedule";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+---
+
+<MainGridLayout title="课程表 | yujok" description="yujok 的 2025-2026-2 教务门户课程表">
+	<LiquidGlassDefs />
+	<div class="schedule-shell">
+		<ScheduleViewer term={scheduleTerm} client:load />
+	</div>
+</MainGridLayout>
+
+<style>
+	.schedule-shell {
+		position: relative;
+	}
+</style>

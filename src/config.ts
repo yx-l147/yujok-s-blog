@@ -73,6 +73,10 @@ export const navBarConfig: NavBarConfig = {
 			url: "/book/",
 		},
 		{
+			name: "课程表",
+			url: "/schedule/",
+		},
+		{
 			name: "Bangumi",
 			url: "/bangumi/",
 		},
