@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "846501",
+			"title": "牛津通识读本：科学哲学（中文版）",
+			"author": "萨米尔·奥卡沙",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/501/846501/t6_846501.jpg",
+			"category": "哲学宗教-哲学读物",
+			"finishReading": 0,
+			"readUpdateTime": 1780890130,
+			"updateTime": 1760176281,
+			"progress": 6,
+			"noteCount": 1,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "33820335",
 			"title": "喧哗与骚动（人文社外国文学名著经典·网格本）",
 			"author": "威廉·福克纳",
@@ -217,7 +233,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1413,
+			"ratingCount": 1414,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -239,7 +255,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1821,
+			"ratingCount": 1822,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -437,7 +453,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1936,
+			"ratingCount": 1938,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -615,7 +631,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1282,
+			"ratingCount": 1285,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -967,6 +983,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300205536",
+			"title": "康州美国佬大闹亚瑟王朝",
+			"author": "[美]马克·吐温",
+			"cover": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_tzekvzdczhzkza6ltcd6du/t6_cpplatform_tzekvzdczhzkza6ltcd6du1778811394.jpg",
+			"category": "文学-外国文学",
+			"finishReading": 0,
+			"readUpdateTime": 1780898842,
+			"updateTime": 1779072827,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "22651317",
 			"title": "深度学习",
 			"author": "伊恩·古德费洛 约书亚·本吉奥",
@@ -1001,7 +1033,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80095,
+			"ratingCount": 80114,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -1039,7 +1071,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4540,
+			"ratingCount": 4546,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1119,7 +1151,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/19/YueWen_23791393/t6_YueWen_23791393.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1780651047,
+			"readUpdateTime": 1780849106,
 			"updateTime": 1705066118,
 			"progress": 0,
 			"noteCount": 0,
@@ -1300,7 +1332,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 403,
+			"ratingCount": 405,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1449,8 +1481,8 @@
 			"intro": "全书包含两个部分。《克林索尔的最后夏天》是黑塞创作于1919年的中篇小说。彼时一战刚刚结束，世界尚未从混乱中恢复，千万士兵、战俘和民众，从多年僵化统一的顺服中，回归既向往又恐惧的自由。有些年轻人在童年时被战争拖走，现在“回归”了，却必须面对一个完全陌生的现实世界。而对于黑塞这样的“老人”，那些曾被高度认同的世界观已成了可笑荒唐的明日黄花。一切都变得可疑，令人不安惶恐。在这样一个夏天，一个告别的夏天，充满力量与光芒、诱惑与魅力，弥漫南方阳光与葡萄酒香气的日子，画家克林索尔化身李太白，与他的好友杜甫、路易、亚美尼亚占星师，一同漫游，饮酒，辩论。最终在夏末，用尽生命所有的燃料，完成了最终的画作。第二部分《漫游》是黑塞创作的散文和诗歌集。",
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
-			"publicRating": 7.9,
-			"ratingCount": 9393,
+			"publicRating": 8,
+			"ratingCount": 9399,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1504,7 +1536,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1367,
+			"ratingCount": 1370,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -1558,7 +1590,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 41871,
+			"ratingCount": 41907,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -1602,7 +1634,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7172,
+			"ratingCount": 7174,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -1656,7 +1688,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 9,
-			"ratingCount": 2749,
+			"ratingCount": 2750,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -1904,7 +1936,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16902,
+			"ratingCount": 16901,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -1958,7 +1990,7 @@
 			"publisher": "上海古籍出版社",
 			"translator": "",
 			"publicRating": 9.3,
-			"ratingCount": 172,
+			"ratingCount": 173,
 			"publishTime": "2018-07-01 00:00:00"
 		},
 		{
@@ -2156,7 +2188,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.9,
-			"ratingCount": 2256,
+			"ratingCount": 2258,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -2254,7 +2286,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1395,
+			"ratingCount": 1396,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -2330,7 +2362,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1136,
+			"ratingCount": 1137,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2540,7 +2572,7 @@
 			"publisher": "山东文艺出版社",
 			"translator": "黄菡",
 			"publicRating": 9.5,
-			"ratingCount": 1376,
+			"ratingCount": 1378,
 			"publishTime": "2025-10-01 00:00:00"
 		},
 		{
@@ -2664,7 +2696,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 549,
+			"ratingCount": 550,
 			"publishTime": "2026-04-07 00:00:00"
 		},
 		{
@@ -2894,7 +2926,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6799,
+			"ratingCount": 6798,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -2916,7 +2948,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6512,
+			"ratingCount": 6520,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -3084,7 +3116,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2573,
+			"ratingCount": 2577,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -3234,7 +3266,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 639,
+			"ratingCount": 640,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -3320,7 +3352,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3232,
+			"ratingCount": 3235,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -3422,7 +3454,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4285,
+			"ratingCount": 4286,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -3508,7 +3540,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11316,
+			"ratingCount": 11331,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -3550,8 +3582,24 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/90/cpplatform_qyqrjck6lg2kbjp73ybtyx/t6_cpplatform_qyqrjck6lg2kbjp73ybtyx1737512662.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1775521056,
+			"readUpdateTime": 1780899086,
 			"updateTime": 1760170031,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300016646",
+			"title": "可能性的艺术：比较政治学30讲",
+			"author": "刘瑜",
+			"cover": "https://cdn.weread.qq.com/weread/cover/46/3300016646/t6_3300016646.jpg",
+			"category": "政治军事-政治",
+			"finishReading": 0,
+			"readUpdateTime": 1780890172,
+			"updateTime": 1762247494,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -3696,10 +3744,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_sbfdf2jn9wphd5xut4msee/t6_cpplatform_sbfdf2jn9wphd5xut4msee1752043043.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1780827963,
+			"readUpdateTime": 1780904807,
 			"updateTime": 1752043982,
-			"progress": 38,
-			"noteCount": 84,
+			"progress": 45,
+			"noteCount": 89,
 			"reviewCount": 1,
 			"bookmarkCount": 3,
 			"readTime": 0,
@@ -3708,7 +3756,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2889,
+			"ratingCount": 2898,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3762,7 +3810,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 166764,
+			"ratingCount": 166822,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3806,7 +3854,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23107,
+			"ratingCount": 23109,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -3844,7 +3892,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 29880,
+			"ratingCount": 29893,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -3920,7 +3968,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 550,
+			"ratingCount": 551,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -4118,7 +4166,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4708,
+			"ratingCount": 4711,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -4290,7 +4338,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75679,
+			"ratingCount": 75697,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -4527,28 +4575,28 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 632471,
-		"readDays": 249,
+		"totalReadTime": 633801,
+		"readDays": 250,
 		"readBooks": 118,
 		"finishedBooks": 18,
-		"noteCount": 5579,
+		"noteCount": 5585,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 46,
-				"time": 208756
+				"time": 208903
 			},
 			{
 				"title": "心理",
 				"count": 12,
-				"time": 121866
+				"time": 122331
 			},
 			{
 				"title": "哲学宗教",
 				"count": 15,
-				"time": 74567
+				"time": 74714
 			},
 			{
 				"title": "社会小说",
@@ -4570,7 +4618,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 4,
-				"readTime": "12小时40分钟"
+				"readTime": "12小时43分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -5795,11 +5843,15 @@
 			{
 				"date": "2026-06-06",
 				"seconds": 759
+			},
+			{
+				"date": "2026-06-07",
+				"seconds": 1330
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 251,
+		"totalBooks": 254,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -5807,6 +5859,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-07T10:37:59.123Z",
+	"generatedAt": "2026-06-08T12:44:18.738Z",
 	"isMock": false
 }
