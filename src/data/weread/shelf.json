@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "42849765",
+			"title": "我将宇宙随身携带：佩索阿诗集",
+			"author": "费尔南多·佩索阿",
+			"cover": "https://cdn.weread.qq.com/weread/cover/3/YueWen_42849765/t6_YueWen_42849765.jpg",
+			"category": "文学-现代诗歌",
+			"finishReading": 0,
+			"readUpdateTime": 1780977124,
+			"updateTime": 1668614522,
+			"progress": 3,
+			"noteCount": 1,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "846501",
 			"title": "牛津通识读本：科学哲学（中文版）",
 			"author": "萨米尔·奥卡沙",
@@ -158,7 +174,7 @@
 			"category": "哲学宗教-哲学著作",
 			"finishReading": 0,
 			"readUpdateTime": 1779417680,
-			"updateTime": 1779868247,
+			"updateTime": 1780986736,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -233,7 +249,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1414,
+			"ratingCount": 1415,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -255,7 +271,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1822,
+			"ratingCount": 1823,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -453,7 +469,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1938,
+			"ratingCount": 1940,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -561,7 +577,7 @@
 			"publisher": "九州出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 1160,
+			"ratingCount": 1161,
 			"publishTime": "2014-06-01 00:00:00"
 		},
 		{
@@ -631,7 +647,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1285,
+			"ratingCount": 1286,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -1033,7 +1049,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80114,
+			"ratingCount": 80132,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -1071,7 +1087,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4546,
+			"ratingCount": 4554,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1332,7 +1348,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 405,
+			"ratingCount": 406,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1482,7 +1498,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 8,
-			"ratingCount": 9399,
+			"ratingCount": 9407,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1536,7 +1552,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1370,
+			"ratingCount": 1372,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -1590,7 +1606,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 41907,
+			"ratingCount": 41933,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -1600,10 +1616,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1780812023,
+			"readUpdateTime": 1780977614,
 			"updateTime": 1711526258,
-			"progress": 7,
-			"noteCount": 31,
+			"progress": 8,
+			"noteCount": 32,
 			"reviewCount": 1,
 			"bookmarkCount": 1,
 			"readTime": 0,
@@ -1634,7 +1650,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7174,
+			"ratingCount": 7177,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -1688,7 +1704,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 9,
-			"ratingCount": 2750,
+			"ratingCount": 2752,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -1850,7 +1866,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6171,
+			"ratingCount": 6172,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -1936,7 +1952,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16901,
+			"ratingCount": 16903,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -2187,8 +2203,8 @@
 			"intro": "这是一场在炽烈夏日里绽放的生命狂欢！\n德国文学巨匠黑塞用魔幻笔触勾勒出画家克林索尔生命中最后的燃烧岁月。\n当死亡阴影悄然逼近，这位艺术家在意大利艳阳下狂饮作画，用镉黄与朱红涂抹出超越生死的绚烂。\n黑塞将东方哲思注入欧洲灵魂，邀你共赴这场色彩、美酒与诗歌交织的哲思盛宴。\n在酩酊的星空下，见证一个天才如何用调色板对抗虚无，在盛夏光年里完成对生命最壮美的谢幕。\n本书精心收录黑塞四部深邃短篇与一部诗歌散文集，内容丰度远超常规版本。\n文前6页精美插画，并独家复刻黑塞本人创作的原版手绘插图，带领你步入作家亲手描绘的斑斓心灵秘境，全方位沉浸于黑塞的艺术世界，开启夏日灵魂之旅！",
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
-			"publicRating": 7.9,
-			"ratingCount": 2258,
+			"publicRating": 7.8,
+			"ratingCount": 2259,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -2264,7 +2280,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9930,
+			"ratingCount": 9934,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -2286,7 +2302,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1396,
+			"ratingCount": 1397,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -2340,7 +2356,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 792,
+			"ratingCount": 793,
 			"publishTime": "2026-03-17 00:00:00"
 		},
 		{
@@ -2362,7 +2378,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1137,
+			"ratingCount": 1138,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2534,7 +2550,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.2,
-			"ratingCount": 287,
+			"ratingCount": 289,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -2572,7 +2588,7 @@
 			"publisher": "山东文艺出版社",
 			"translator": "黄菡",
 			"publicRating": 9.5,
-			"ratingCount": 1378,
+			"ratingCount": 1380,
 			"publishTime": "2025-10-01 00:00:00"
 		},
 		{
@@ -2696,7 +2712,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 550,
+			"ratingCount": 552,
 			"publishTime": "2026-04-07 00:00:00"
 		},
 		{
@@ -2936,7 +2952,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/77/cpplatform_n2fsmg7bc2bnzhmkfxqq6q/t6_cpplatform_n2fsmg7bc2bnzhmkfxqq6q1686541831.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1780631500,
+			"readUpdateTime": 1780972755,
 			"updateTime": 1723792295,
 			"progress": 27,
 			"noteCount": 23,
@@ -2948,7 +2964,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6520,
+			"ratingCount": 6522,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -2986,7 +3002,7 @@
 			"publisher": "天津教育出版社 天津古籍出版社",
 			"translator": "琳中展羽",
 			"publicRating": 7.2,
-			"ratingCount": 2386,
+			"ratingCount": 2388,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -3200,6 +3216,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "38153663",
+			"title": "我们赖以生存的意义",
+			"author": "本杰明·伯根",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/663/38153663/t6_38153663.jpg",
+			"category": "文学-语言文字",
+			"finishReading": 0,
+			"readUpdateTime": 1780981431,
+			"updateTime": 1765188148,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300019336",
 			"title": "制造消费者：消费主义全球史",
 			"author": "安东尼·加卢佐",
@@ -3266,7 +3298,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 640,
+			"ratingCount": 642,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -3352,7 +3384,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3235,
+			"ratingCount": 3239,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -3540,7 +3572,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11331,
+			"ratingCount": 11342,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -3658,7 +3690,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1100,
+			"ratingCount": 1104,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -3744,19 +3776,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_sbfdf2jn9wphd5xut4msee/t6_cpplatform_sbfdf2jn9wphd5xut4msee1752043043.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1780904807,
+			"readUpdateTime": 1780977018,
 			"updateTime": 1752043982,
-			"progress": 45,
-			"noteCount": 89,
-			"reviewCount": 1,
-			"bookmarkCount": 3,
+			"progress": 73,
+			"noteCount": 126,
+			"reviewCount": 2,
+			"bookmarkCount": 4,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《我身上有个不可战胜的夏天》是加缪的一部散文集。创作跨度近20年（1935-1953），是加缪从青年到思想成熟期的文学实验场。\r\n本书精选了加缪的14篇散文，在这些篇章中，加缪以阿尔及尔贫民窟的生存图景为解剖样本，将死亡、贫困与阳光、海洋并置，揭示了存在的荒诞性本质：生命的璀璨与腐朽永远相互寄生，正如北非土地上永不褪色的蓝天永远笼罩着人类的苦难。\r\n\r\n同时，加缪通过对提帕萨、杰米拉等地的颂歌，展现了自身思辨的独特性，不同于萨特咖啡馆里的哲学思辨，加缪的哲学诞生于烈日炙烤的废墟、咸涩的海风与无花果树的芬芳之中。他在这里确立了对\"世界之不可理喻的美\"的绝对忠诚——不是通过理性认知，而是用整个身体去感受岩石的温度、浪花的节奏，在感官的狂喜中达成与宇宙的短暂和解。\r\n\r\n这部作品最深刻的价值，在于它展现了存在主义最本真的形态：不是书斋里的概念游戏，而是赤脚踏过滚烫沙砾时的痛感与快感。在这部作品里，加缪也确立了自己终生的写作母题——用对阳光的贪婪吮吸反抗永恒的黑暗，在直面荒诞中拥抱生命的热烈。\r\n\r\n这种思想后来在《西西弗神话》中升华为\"应当想象西西弗是幸福的\"的著名论断，但其根源正是本书中那个在贫民窟阳台上凝望大海的穷青年对生命既清醒又沉醉的双重凝视。",
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2898,
+			"ratingCount": 2899,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3810,7 +3842,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 166822,
+			"ratingCount": 166860,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3832,7 +3864,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 472,
+			"ratingCount": 473,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -3854,7 +3886,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23109,
+			"ratingCount": 23116,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -3866,6 +3898,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1779859015,
 			"updateTime": 1776758682,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300145956",
+			"title": "牛奶可乐经济学（全新升级版）",
+			"author": "[美]罗伯特·弗兰克",
+			"cover": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_dgvuqh8utagxjabpn9jr46/t6_cpplatform_dgvuqh8utagxjabpn9jr461748317418.jpg",
+			"category": "经济理财-商业",
+			"finishReading": 0,
+			"readUpdateTime": 1780981457,
+			"updateTime": 1769154715,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -3892,7 +3940,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 29893,
+			"ratingCount": 29923,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -3914,7 +3962,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2297,
+			"ratingCount": 2298,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -4166,7 +4214,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4711,
+			"ratingCount": 4717,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -4338,7 +4386,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75697,
+			"ratingCount": 75733,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -4575,18 +4623,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 633801,
-		"readDays": 250,
+		"totalReadTime": 638296,
+		"readDays": 251,
 		"readBooks": 118,
 		"finishedBooks": 18,
-		"noteCount": 5585,
+		"noteCount": 5626,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 46,
-				"time": 208903
+				"time": 210115
 			},
 			{
 				"title": "心理",
@@ -4618,7 +4666,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 4,
-				"readTime": "12小时43分钟"
+				"readTime": "13小时3分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -5846,12 +5894,16 @@
 			},
 			{
 				"date": "2026-06-07",
-				"seconds": 1330
+				"seconds": 1343
+			},
+			{
+				"date": "2026-06-08",
+				"seconds": 4482
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 254,
+		"totalBooks": 257,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -5859,6 +5911,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-08T12:44:18.738Z",
+	"generatedAt": "2026-06-09T11:33:03.198Z",
 	"isMock": false
 }
