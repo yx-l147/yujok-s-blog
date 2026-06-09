@@ -2,22 +2,26 @@
 import type { ReadingProfile, ReadingStats } from "@/types/weread";
 
 interface Props {
-  profile: ReadingProfile;
-  stats: ReadingStats;
-  subtitle?: string;
+	profile: ReadingProfile;
+	stats: ReadingStats;
+	subtitle?: string;
 }
 const { profile, stats, subtitle = "在文字的海里打捞自己" } = Astro.props;
 
 const totalHours = Math.round(stats.totalReadTime / 3600);
 const years = stats.registTime
-  ? Math.max(1, Math.round((Date.now() / 1000 - stats.registTime) / 86400 / 365 * 10) / 10)
-  : null;
+	? Math.max(
+			1,
+			Math.round(((Date.now() / 1000 - stats.registTime) / 86400 / 365) * 10) /
+				10,
+		)
+	: null;
 
 const summary = [
-  { num: profile.totalBooks, label: "本书在架" },
-  { num: totalHours, label: "小时阅读" },
-  { num: stats.readDays, label: "天有记录" },
-  { num: stats.noteCount, label: "条笔记" },
+	{ num: profile.totalBooks, label: "本书在架" },
+	{ num: totalHours, label: "小时阅读" },
+	{ num: stats.readDays, label: "天有记录" },
+	{ num: stats.noteCount, label: "条笔记" },
 ];
 ---
 
@@ -204,7 +208,16 @@ const summary = [
     .hero { padding: 2rem 1.4rem 1.5rem; }
     .hero-fav { width: 100%; }
     .fav-title, .fav-author { max-width: none; }
-    .hero-stats { gap: .8rem; }
+    .hero-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .95rem 1rem;
+    }
+    .hs { min-width: 0; }
+    .hs-num { font-size: clamp(1.45rem, 8vw, 1.9rem); }
+    .hs-label {
+      font-size: .72rem;
+      white-space: nowrap;
+    }
   }
 </style>
 

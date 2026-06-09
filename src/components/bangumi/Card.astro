@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import type { UserSubjectCollection } from "@/types/bangumi";
 
 interface Props {
@@ -9,20 +10,20 @@ const { item } = Astro.props;
 
 const subject_base_url = "https://bgm.tv/subject/";
 
-const getStatusColor = (type: number) => {
+const getStatusClass = (type: number) => {
 	switch (type) {
 		case 1:
-			return "bg-blue-500";
+			return "status-wish";
 		case 2:
-			return "bg-green-500";
+			return "status-collect";
 		case 3:
-			return "bg-yellow-500";
+			return "status-doing";
 		case 4:
-			return "bg-orange-500";
+			return "status-hold";
 		case 5:
-			return "bg-red-500";
+			return "status-dropped";
 		default:
-			return "bg-gray-500";
+			return "status-unknown";
 	}
 };
 
@@ -48,7 +49,7 @@ const getStatusText = (type: number) => {
   href={`${subject_base_url}${item.subject.id}`}
   target="_blank"
   rel="noopener noreferrer nofollow"
-  class="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-200 hover:scale-105 block">
+  class="bangumi-card group relative block overflow-hidden rounded-[var(--radius-medium)] transition-all duration-300 active:scale-[0.98]">
   <div class="aspect-[2/3] relative overflow-hidden" >
     {item.subject?.images?.medium ? (
       <img
@@ -58,18 +59,16 @@ const getStatusText = (type: number) => {
         loading="lazy"
       />
     ) : (
-      <div class="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-        <div class="text-gray-400 text-4xl">📖</div>
+      <div class="w-full h-full flex items-center justify-center bg-[var(--btn-plain-bg-hover)]">
+        <Icon name="material-symbols:image-not-supported-outline-rounded" class="text-4xl text-50" />
       </div>
     )}
-    <!-- Status badge -->
-    <div class={`absolute top-2 left-2 px-2 py-1 rounded-full text-xs text-white font-medium ${getStatusColor(item.type)}`}>
+    <div class={`bangumi-card__badge ${getStatusClass(item.type)}`}>
       {getStatusText(item.type)}
     </div>
   </div>
 
-  <!-- Info overlay on hover -->
-  <div class="absolute inset-x-0 bottom-0 bg-black/80 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-200">
+  <div class="bangumi-card__overlay">
     <h3 class="font-bold text-sm mb-1 line-clamp-2">
       {item.subject.name_cn || item.subject.name}
     </h3>
@@ -77,14 +76,14 @@ const getStatusText = (type: number) => {
       <div class="flex items-center justify-between mb-2">
         {item.subject.score && (
           <div class="flex items-center gap-1">
-            <div class="text-yellow-400">⭐</div>
+            <Icon name="material-symbols:star-rounded" class="text-[var(--accent-warm)]" />
             <span class="text-sm">{item.subject.score}</span>
           </div>
         )}
         {item.comment && (
           <div class="relative group/comment">
-            <div class="text-sm text-gray-300 cursor-help">💬</div>
-            <div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover/comment:opacity-100 transition-opacity duration-150 w-32 sm:w-44 xl:w-52 z-10 pointer-events-none">
+            <Icon name="material-symbols:chat-bubble-outline-rounded" class="text-lg text-white/70 cursor-help" />
+            <div class="absolute bottom-full right-0 mb-2 px-3 py-2 bg-black/85 text-white text-xs rounded-lg opacity-0 group-hover/comment:opacity-100 transition-opacity duration-150 w-32 sm:w-44 xl:w-52 z-10 pointer-events-none">
               {item.comment}
             </div>
           </div>
@@ -93,3 +92,52 @@ const getStatusText = (type: number) => {
     )}
   </div>
 </a>
+
+<style>
+  .bangumi-card {
+    background: color-mix(in srgb, var(--card-bg-solid) 70%, transparent);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 12px 30px rgba(20, 35, 70, 0.10);
+  }
+  .bangumi-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--primary) 36%, var(--glass-border));
+    box-shadow: 0 18px 42px rgba(20, 35, 70, 0.18);
+  }
+  .bangumi-card img {
+    transition: transform 420ms var(--motion-standard), filter 420ms var(--motion-standard);
+  }
+  .bangumi-card:hover img {
+    transform: scale(1.045);
+    filter: saturate(1.05);
+  }
+  .bangumi-card__badge {
+    position: absolute;
+    top: .65rem;
+    left: .65rem;
+    border-radius: 999px;
+    padding: .25rem .6rem;
+    color: white;
+    font-size: .72rem;
+    font-weight: 800;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+  }
+  .status-wish { background: color-mix(in srgb, var(--accent-cyan) 78%, var(--primary)); }
+  .status-collect { background: color-mix(in srgb, var(--primary) 84%, #21b68f); }
+  .status-doing { background: color-mix(in srgb, var(--accent-warm) 84%, var(--primary)); }
+  .status-hold { background: color-mix(in srgb, var(--accent-pink) 74%, var(--accent-warm)); }
+  .status-dropped,
+  .status-unknown { background: color-mix(in srgb, #7b7f91 80%, var(--primary)); }
+  .bangumi-card__overlay {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(0deg, rgba(8, 10, 18, .88), rgba(8, 10, 18, .45), transparent);
+    transform: translateY(calc(100% - 3.7rem));
+    transition: transform 280ms var(--motion-standard);
+  }
+  .bangumi-card:hover .bangumi-card__overlay {
+    transform: translateY(0);
+  }
+</style>

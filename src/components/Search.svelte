@@ -201,13 +201,13 @@ $: if (initialized) {
 </script>
 
 <div id="search-bar" class="hidden lg:flex transition-all items-center h-11 mr-2 rounded-xl
-      bg-black/[0.04] hover:bg-black/[0.06] focus-within:bg-black/[0.06]
-      dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10
+      bg-white/45 hover:bg-white/65 focus-within:bg-white/75 border border-white/50
+      dark:bg-white/5 dark:hover:bg-white/10 dark:focus-within:bg-white/10 dark:border-white/10
 ">
     <Icon icon="material-symbols:search" class="absolute text-[1.25rem] pointer-events-none ml-3 transition my-auto text-black/30 dark:text-white/30"></Icon>
     <input placeholder="{i18n(I18nKey.search)}" bind:value={keywordDesktop} on:focus={() => search(keywordDesktop, true)}
            class="transition-all pl-10 text-sm bg-transparent outline-0
-         h-full w-40 active:w-64 focus:w-64 text-black/50 dark:text-white/50"
+         h-full w-40 active:w-64 focus:w-64 text-black/55 dark:text-white/60"
     >
 </div>
 

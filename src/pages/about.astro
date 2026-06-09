@@ -15,11 +15,14 @@ if (!aboutPost) {
 const { Content } = await render(aboutPost);
 ---
 <MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
-        </div>
+    <div class="page-shell glass-panel">
+        <header class="page-shell__head">
+            <p class="page-shell__eyebrow">profile</p>
+            <h1 class="page-shell__title">About</h1>
+            <p class="page-shell__desc">一些关于 yujok、本站和正在发生的事情。</p>
+        </header>
+        <Markdown class="mt-2">
+            <Content />
+        </Markdown>
     </div>
 </MainGridLayout>

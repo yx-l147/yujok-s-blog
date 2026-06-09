@@ -21,11 +21,11 @@ const postCards = await Promise.all(
 );
 ---
 
-<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
-    {!hasPosts && <div class="card-base glass-panel px-8 py-10 text-center">
-        <div class="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--primary)] mb-3">No posts yet</div>
-        <div class="text-2xl font-bold text-90 mb-3">这里还没有文章。</div>
-        <p class="text-50 max-w-xl mx-auto leading-7">等第一篇文字落下，这里会成为它们的索引。现在先让页面保持安静、清楚、可阅读。</p>
+<div class="post-list transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+    {!hasPosts && <div class="empty-post-state glass-panel">
+        <div class="empty-post-state__label">No posts yet</div>
+        <div class="empty-post-state__title">这里还没有文章。</div>
+        <p>等第一篇文字落下，这里会成为它们的索引。现在先让页面保持安静、清楚、可阅读。</p>
     </div>}
     {postCards.map(({ entry, stats, delay }) => (
             <PostCard

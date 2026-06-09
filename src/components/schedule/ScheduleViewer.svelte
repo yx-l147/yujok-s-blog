@@ -1,200 +1,215 @@
 <script lang="ts">
-	import Icon from "@iconify/svelte";
-	import { onMount } from "svelte";
-	import type { ScheduleCourse, SchedulePeriod, ScheduleTerm, WeekDay } from "../../data/schedule";
+import Icon from "@iconify/svelte";
+import { onMount } from "svelte";
+import type {
+	ScheduleCourse,
+	SchedulePeriod,
+	ScheduleTerm,
+	WeekDay,
+} from "../../data/schedule";
 
-	export let term: ScheduleTerm;
+export let term: ScheduleTerm;
 
-	type ViewMode = "today" | "week" | "overview";
-	type CourseStatus = "current" | "next" | "done" | "idle";
-	type CourseGroup = {
-		key: string;
-		title: string;
-		teacher?: string;
-		locations: string[];
-		weeks: number[];
-		totalPeriods: number;
-		colorKey: string;
-	};
+type ViewMode = "today" | "week" | "overview";
+type CourseStatus = "current" | "next" | "done" | "idle";
+type CourseGroup = {
+	key: string;
+	title: string;
+	teacher?: string;
+	locations: string[];
+	weeks: number[];
+	totalPeriods: number;
+	colorKey: string;
+};
 
-	const dayNames = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
-	const dayShortNames = ["一", "二", "三", "四", "五", "六", "日"];
-	const pairSlots = [
-		{ start: 1, end: 2 },
-		{ start: 3, end: 4 },
-		{ start: 5, end: 6 },
-		{ start: 7, end: 8 },
-		{ start: 9, end: 10 },
-		{ start: 11, end: 12 },
-	];
+const dayNames = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+const dayShortNames = ["一", "二", "三", "四", "五", "六", "日"];
+const pairSlots = [
+	{ start: 1, end: 2 },
+	{ start: 3, end: 4 },
+	{ start: 5, end: 6 },
+	{ start: 7, end: 8 },
+	{ start: 9, end: 10 },
+	{ start: 11, end: 12 },
+];
 
-	let view: ViewMode = "today";
-	let now = new Date();
-	let selectedWeek = getWeekForDate(now);
+let view: ViewMode = "today";
+let now = new Date();
+let selectedWeek = getWeekForDate(now);
 
-	onMount(() => {
+onMount(() => {
+	now = new Date();
+	selectedWeek = getWeekForDate(now);
+	const timer = window.setInterval(() => {
 		now = new Date();
-		selectedWeek = getWeekForDate(now);
-		const timer = window.setInterval(() => {
-			now = new Date();
-		}, 60_000);
-		return () => window.clearInterval(timer);
+	}, 60_000);
+	return () => window.clearInterval(timer);
+});
+
+function parseDate(date: string) {
+	const [year, month, day] = date.split("-").map(Number);
+	return new Date(year, month - 1, day);
+}
+
+function endOfDate(date: string) {
+	const value = parseDate(date);
+	value.setHours(23, 59, 59, 999);
+	return value;
+}
+
+function getWeekForDate(date: Date) {
+	const matched = term.weeks.find((week) => {
+		return date >= parseDate(week.start) && date <= endOfDate(week.end);
 	});
+	if (matched) return matched.week;
 
-	function parseDate(date: string) {
-		const [year, month, day] = date.split("-").map(Number);
-		return new Date(year, month - 1, day);
-	}
+	const first = term.weeks[0];
+	const last = term.weeks[term.weeks.length - 1];
+	if (date < parseDate(first.start)) return first.week;
+	return last.week;
+}
 
-	function endOfDate(date: string) {
-		const value = parseDate(date);
-		value.setHours(23, 59, 59, 999);
-		return value;
-	}
+function isDateInConfiguredRange(date: Date) {
+	const first = term.weeks[0];
+	const last = term.weeks[term.weeks.length - 1];
+	return date >= parseDate(first.start) && date <= endOfDate(last.end);
+}
 
-	function getWeekForDate(date: Date) {
-		const matched = term.weeks.find((week) => {
-			return date >= parseDate(week.start) && date <= endOfDate(week.end);
-		});
-		if (matched) return matched.week;
+function getDay(date: Date): WeekDay {
+	const day = date.getDay();
+	return (day === 0 ? 7 : day) as WeekDay;
+}
 
-		const first = term.weeks[0];
-		const last = term.weeks[term.weeks.length - 1];
-		if (date < parseDate(first.start)) return first.week;
-		return last.week;
-	}
-
-	function isDateInConfiguredRange(date: Date) {
-		const first = term.weeks[0];
-		const last = term.weeks[term.weeks.length - 1];
-		return date >= parseDate(first.start) && date <= endOfDate(last.end);
-	}
-
-	function getDay(date: Date): WeekDay {
-		const day = date.getDay();
-		return (day === 0 ? 7 : day) as WeekDay;
-	}
-
-	function period(index: number): SchedulePeriod {
-		return (
-			term.periods.find((item) => item.index === index) ?? {
-				index,
-				label: `第${index}节`,
-				start: "--:--",
-				end: "--:--",
-			}
-		);
-	}
-
-	function periodRange(course: ScheduleCourse) {
-		return `${period(course.periodStart).start}-${period(course.periodEnd).end}`;
-	}
-
-	function minuteOf(time: string) {
-		const [hour, minute] = time.split(":").map(Number);
-		return hour * 60 + minute;
-	}
-
-	function currentMinute() {
-		return now.getHours() * 60 + now.getMinutes();
-	}
-
-	function courseStart(course: ScheduleCourse) {
-		return minuteOf(period(course.periodStart).start);
-	}
-
-	function courseEnd(course: ScheduleCourse) {
-		return minuteOf(period(course.periodEnd).end);
-	}
-
-	function coursesForWeek(week: number) {
-		return term.courses
-			.filter((course) => course.weeks.includes(week))
-			.sort((a, b) => a.day - b.day || a.periodStart - b.periodStart);
-	}
-
-	function coursesForDay(week: number, day: WeekDay) {
-		return coursesForWeek(week)
-			.filter((course) => course.day === day)
-			.sort((a, b) => a.periodStart - b.periodStart);
-	}
-
-	function statusFor(course: ScheduleCourse): CourseStatus {
-		const currentWeek = getWeekForDate(now);
-		if (selectedWeek !== currentWeek || course.day !== getDay(now)) return "idle";
-
-		const minute = currentMinute();
-		if (minute >= courseStart(course) && minute <= courseEnd(course)) return "current";
-		if (minute < courseStart(course)) {
-			const firstUpcoming = todayCourses.find((item) => currentMinute() < courseStart(item));
-			return firstUpcoming?.id === course.id ? "next" : "idle";
+function period(index: number): SchedulePeriod {
+	return (
+		term.periods.find((item) => item.index === index) ?? {
+			index,
+			label: `第${index}节`,
+			start: "--:--",
+			end: "--:--",
 		}
-		return "done";
-	}
-
-	function courseAt(courses: ScheduleCourse[], day: WeekDay, periodStart: number) {
-		return courses.find(
-			(course) => course.day === day && course.periodStart === periodStart,
-		);
-	}
-
-	function setWeek(week: number) {
-		selectedWeek = Math.min(term.endWeek, Math.max(term.startWeek, week));
-	}
-
-	function weekLabel(week: number) {
-		const meta = term.weeks.find((item) => item.week === week);
-		if (!meta) return `第 ${week} 周`;
-		return `${meta.start.replace("2026-", "")} - ${meta.end.replace("2026-", "")}`;
-	}
-
-	function formatWeekList(weeks: number[]) {
-		const sorted = [...new Set(weeks)].sort((a, b) => a - b);
-		return sorted.map((week) => `第${week}周`).join(" / ");
-	}
-
-	function summarizeCourses(courses: ScheduleCourse[]): CourseGroup[] {
-		const groups = new Map<string, CourseGroup>();
-		for (const course of courses) {
-			const key = `${course.title}-${course.teacher ?? ""}`;
-			const existing =
-				groups.get(key) ??
-				({
-					key,
-					title: course.title,
-					teacher: course.teacher,
-					locations: [],
-					weeks: [],
-					totalPeriods: 0,
-					colorKey: course.colorKey,
-				} satisfies CourseGroup);
-
-			existing.locations = [...new Set([...existing.locations, course.location])];
-			existing.weeks = [...new Set([...existing.weeks, ...course.weeks])].sort(
-				(a, b) => a - b,
-			);
-			existing.totalPeriods +=
-				(course.periodEnd - course.periodStart + 1) * course.weeks.length;
-			groups.set(key, existing);
-		}
-		return [...groups.values()].sort((a, b) => b.totalPeriods - a.totalPeriods);
-	}
-
-	$: currentWeek = getWeekForDate(now);
-	$: currentDay = getDay(now);
-	$: weekMeta = term.weeks.find((item) => item.week === selectedWeek);
-	$: weekCourses = coursesForWeek(selectedWeek);
-	$: todayCourses = coursesForDay(selectedWeek, currentDay);
-	$: visibleTodayCourses = todayCourses.length ? todayCourses : [];
-	$: nextCourse = todayCourses.find((course) => currentMinute() <= courseEnd(course));
-	$: totalConfiguredCourses = term.courses.reduce(
-		(count, course) => count + course.weeks.length,
-		0,
 	);
-	$: termProgress =
-		(Math.min(term.totalWeeks, Math.max(1, selectedWeek)) / term.totalWeeks) * 100;
-	$: outOfConfiguredRange = !isDateInConfiguredRange(now);
-	$: overviewGroups = summarizeCourses(term.courses);
+}
+
+function periodRange(course: ScheduleCourse) {
+	return `${period(course.periodStart).start}-${period(course.periodEnd).end}`;
+}
+
+function minuteOf(time: string) {
+	const [hour, minute] = time.split(":").map(Number);
+	return hour * 60 + minute;
+}
+
+function currentMinute() {
+	return now.getHours() * 60 + now.getMinutes();
+}
+
+function courseStart(course: ScheduleCourse) {
+	return minuteOf(period(course.periodStart).start);
+}
+
+function courseEnd(course: ScheduleCourse) {
+	return minuteOf(period(course.periodEnd).end);
+}
+
+function coursesForWeek(week: number) {
+	return term.courses
+		.filter((course) => course.weeks.includes(week))
+		.sort((a, b) => a.day - b.day || a.periodStart - b.periodStart);
+}
+
+function coursesForDay(week: number, day: WeekDay) {
+	return coursesForWeek(week)
+		.filter((course) => course.day === day)
+		.sort((a, b) => a.periodStart - b.periodStart);
+}
+
+function statusFor(course: ScheduleCourse): CourseStatus {
+	const currentWeek = getWeekForDate(now);
+	if (selectedWeek !== currentWeek || course.day !== getDay(now)) return "idle";
+
+	const minute = currentMinute();
+	if (minute >= courseStart(course) && minute <= courseEnd(course))
+		return "current";
+	if (minute < courseStart(course)) {
+		const firstUpcoming = todayCourses.find(
+			(item) => currentMinute() < courseStart(item),
+		);
+		return firstUpcoming?.id === course.id ? "next" : "idle";
+	}
+	return "done";
+}
+
+function courseAt(
+	courses: ScheduleCourse[],
+	day: WeekDay,
+	periodStart: number,
+) {
+	return courses.find(
+		(course) => course.day === day && course.periodStart === periodStart,
+	);
+}
+
+function setWeek(week: number) {
+	selectedWeek = Math.min(term.endWeek, Math.max(term.startWeek, week));
+}
+
+function weekLabel(week: number) {
+	const meta = term.weeks.find((item) => item.week === week);
+	if (!meta) return `第 ${week} 周`;
+	return `${meta.start.replace("2026-", "")} - ${meta.end.replace("2026-", "")}`;
+}
+
+function formatWeekList(weeks: number[]) {
+	const sorted = [...new Set(weeks)].sort((a, b) => a - b);
+	return sorted.map((week) => `第${week}周`).join(" / ");
+}
+
+function summarizeCourses(courses: ScheduleCourse[]): CourseGroup[] {
+	const groups = new Map<string, CourseGroup>();
+	for (const course of courses) {
+		const key = `${course.title}-${course.teacher ?? ""}`;
+		const existing =
+			groups.get(key) ??
+			({
+				key,
+				title: course.title,
+				teacher: course.teacher,
+				locations: [],
+				weeks: [],
+				totalPeriods: 0,
+				colorKey: course.colorKey,
+			} satisfies CourseGroup);
+
+		existing.locations = [...new Set([...existing.locations, course.location])];
+		existing.weeks = [...new Set([...existing.weeks, ...course.weeks])].sort(
+			(a, b) => a - b,
+		);
+		existing.totalPeriods +=
+			(course.periodEnd - course.periodStart + 1) * course.weeks.length;
+		groups.set(key, existing);
+	}
+	return [...groups.values()].sort((a, b) => b.totalPeriods - a.totalPeriods);
+}
+
+$: currentWeek = getWeekForDate(now);
+$: currentDay = getDay(now);
+$: weekMeta = term.weeks.find((item) => item.week === selectedWeek);
+$: weekCourses = coursesForWeek(selectedWeek);
+$: todayCourses = coursesForDay(selectedWeek, currentDay);
+$: visibleTodayCourses = todayCourses.length ? todayCourses : [];
+$: nextCourse = todayCourses.find(
+	(course) => currentMinute() <= courseEnd(course),
+);
+$: totalConfiguredCourses = term.courses.reduce(
+	(count, course) => count + course.weeks.length,
+	0,
+);
+$: termProgress =
+	(Math.min(term.totalWeeks, Math.max(1, selectedWeek)) / term.totalWeeks) *
+	100;
+$: outOfConfiguredRange = !isDateInConfiguredRange(now);
+$: overviewGroups = summarizeCourses(term.courses);
 </script>
 
 <section class="schedule-page">
@@ -1158,14 +1173,21 @@
 		.hero-stats {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 			gap: 0.55rem;
+			width: 100%;
 		}
 
 		.stat {
+			min-width: 0;
 			padding: 0.75rem;
 		}
 
 		.stat span {
 			font-size: 1.55rem;
+		}
+
+		.stat p {
+			font-size: 0.72rem;
+			white-space: nowrap;
 		}
 
 		.segmented {

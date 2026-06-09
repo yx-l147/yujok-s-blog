@@ -1,0 +1,109 @@
+---
+import { Icon } from "astro-icon/components";
+import { profileConfig, siteConfig } from "../config";
+import {
+	getCategoryList,
+	getSortedPostsList,
+	getTagList,
+} from "../utils/content-utils";
+import { url } from "../utils/url-utils";
+import ImageWrapper from "./misc/ImageWrapper.astro";
+
+const [posts, categories, tags] = await Promise.all([
+	getSortedPostsList(),
+	getCategoryList(),
+	getTagList(),
+]);
+
+const latestPost = posts[0];
+const featureLinks = [
+	{
+		name: "书架",
+		kicker: "Reading",
+		description: "在文字的海里打捞自己",
+		url: "/book/",
+		icon: "material-symbols:menu-book-outline-rounded",
+	},
+	{
+		name: "Bangumi",
+		kicker: "Archive",
+		description: "动画与游戏的私人口味索引",
+		url: "/bangumi/",
+		icon: "material-symbols:animated-images-outline-rounded",
+	},
+	{
+		name: "课程表",
+		kicker: "Schedule",
+		description: "把混乱的一周折成清楚的格子",
+		url: "/schedule/",
+		icon: "material-symbols:calendar-month-outline-rounded",
+	},
+];
+
+const metrics = [
+	{ value: posts.length, label: "文章" },
+	{ value: categories.length, label: "分类" },
+	{ value: tags.length, label: "标签" },
+];
+---
+
+<section class="home-hero glass-panel onload-animation">
+	<div class="home-hero__wash" aria-hidden="true"></div>
+	<div class="home-hero__content">
+		<div class="home-hero__copy">
+			<p class="home-hero__eyebrow">personal notebook</p>
+			<h1>{profileConfig.name}</h1>
+			<p class="home-hero__subtitle">{siteConfig.subtitle}</p>
+			<p class="home-hero__note">
+				{latestPost
+					? `最近更新：${latestPost.data.title}`
+					: "文章还在路上，先把阅读、番剧、课程和灵感都安放在这里。"}
+			</p>
+
+			<div class="home-hero__actions" aria-label="站点主要入口">
+				{featureLinks.map((item) => (
+					<a class="home-feature-link" href={url(item.url)} aria-label={item.name}>
+						<Icon name={item.icon} class="home-feature-link__icon" />
+						<span>
+							<strong>{item.name}</strong>
+							<em>{item.kicker}</em>
+						</span>
+						<Icon name="material-symbols:arrow-forward-rounded" class="home-feature-link__arrow" />
+					</a>
+				))}
+			</div>
+		</div>
+
+		<div class="home-hero__profile">
+			<a class="home-hero__avatar" href={url("/about/")} aria-label="查看关于页面">
+				<ImageWrapper src={profileConfig.avatar || ""} alt={`${profileConfig.name} avatar`} class="h-full w-full" />
+			</a>
+			<div class="home-hero__profile-copy">
+				<p>About</p>
+				<strong>{profileConfig.bio}</strong>
+			</div>
+			<div class="home-hero__socials" aria-label="社交链接">
+				{profileConfig.links.map((item) => (
+					<a rel="me" href={item.url} target="_blank" aria-label={item.name}>
+						<Icon name={item.icon} />
+					</a>
+				))}
+			</div>
+		</div>
+	</div>
+
+	<div class="home-hero__footer" aria-label="站点概览">
+		<div class="home-hero__metrics">
+			{metrics.map((item) => (
+				<div>
+					<strong>{item.value}</strong>
+					<span>{item.label}</span>
+				</div>
+			))}
+		</div>
+		<a class="home-hero__archive" href={url("/archive/")}>
+			<span>进入归档</span>
+			<Icon name="material-symbols:arrow-outward-rounded" />
+		</a>
+	</div>
+</section>

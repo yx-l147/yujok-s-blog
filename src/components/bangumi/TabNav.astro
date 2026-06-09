@@ -13,15 +13,15 @@ interface Props {
 const { tabs, activeTab } = Astro.props;
 ---
 
-<div class="border-b border-gray-200 dark:border-gray-700 mb-3">
-  <nav class="flex space-x-8" aria-label="Tabs">
+<div class="bangumi-tabs mb-5">
+  <nav class="flex flex-wrap gap-2" aria-label="Tabs">
     {tabs.map((tab) => (
       <button
         class:list={[
-          "whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200",
+          "bangumi-tab whitespace-nowrap rounded-full px-4 py-2 font-bold text-sm transition-all duration-200",
           {
-            "border-[var(--primary)] text-[var(--primary)]": tab.id === activeTab,
-            "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300": tab.id !== activeTab
+            "tab-active": tab.id === activeTab,
+            "tab-idle": tab.id !== activeTab
           }
         ]}
         data-tab={tab.id}
@@ -29,7 +29,7 @@ const { tabs, activeTab } = Astro.props;
       >
         {tab.name}
         {tab.count !== undefined && (
-          <span class="ml-2 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 py-0.5 px-2 rounded-full text-xs">
+          <span class="ml-2 rounded-full px-2 py-0.5 text-xs tab-count">
             {tab.count}
           </span>
         )}
@@ -37,6 +37,33 @@ const { tabs, activeTab } = Astro.props;
     ))}
   </nav>
 </div>
+
+<style>
+  .bangumi-tabs {
+    border-bottom: 1px solid var(--line-divider);
+    padding-bottom: .9rem;
+  }
+  .bangumi-tab {
+    border: 1px solid transparent;
+  }
+  .tab-active {
+    color: white;
+    background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--accent-cyan) 46%, var(--primary)));
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--primary) 22%, transparent);
+  }
+  .tab-idle {
+    color: var(--text-muted);
+    background: color-mix(in srgb, var(--card-bg-solid) 58%, transparent);
+    border-color: var(--glass-border);
+  }
+  .tab-idle:hover {
+    color: var(--primary);
+    background: var(--btn-plain-bg-hover);
+  }
+  .tab-count {
+    background: color-mix(in srgb, white 28%, transparent);
+  }
+</style>
 
 <script>
   function initTabNavigation() {
@@ -50,12 +77,12 @@ const { tabs, activeTab } = Astro.props;
 
         // Update active tab
         tabButtons.forEach(btn => {
-          btn.classList.remove('border-[var(--primary)]', 'text-[var(--primary)]');
-          btn.classList.add('border-transparent', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'dark:text-gray-400', 'dark:hover:text-gray-300');
+          btn.classList.remove('tab-active');
+          btn.classList.add('tab-idle');
         });
 
-        currentButton.classList.remove('border-transparent', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'dark:text-gray-400', 'dark:hover:text-gray-300');
-        currentButton.classList.add('border-[var(--primary)]', 'text-[var(--primary)]');
+        currentButton.classList.remove('tab-idle');
+        currentButton.classList.add('tab-active');
 
         // Show/hide sections
         sections.forEach(section => {

@@ -30,22 +30,22 @@ const isActive = (link: NavBarLink) => {
     <div class:list={[
         className,
         "glass-panel nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between px-3 md:px-4"]}>
-        <a href={url("/")} class="btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-bold active:scale-95">
+        <a href={url("/")} class="btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-black active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
                 <Icon name="material-symbols:home-outline-rounded" class="text-[1.75rem] mb-1 mr-2" />
                 <span class="hidden sm:inline">{siteConfig.title}</span>
                 <span class="sm:hidden">{profileConfig?.name || "Blog"}</span>
             </div>
         </a>
-        <nav class="hidden lg:flex" aria-label="Primary navigation">
+        <nav class="hidden min-w-0 shrink-0 flex-nowrap items-center gap-1 lg:flex" aria-label="Primary navigation">
             {links.map((l) => (
                 <a aria-label={l.name} href={l.external ? l.url : url(l.url)} target={l.external ? "_blank" : undefined}
                     class:list={[
-                        "nav-link btn-plain scale-animation rounded-xl h-11 font-bold px-4 active:scale-95",
+                        "nav-link btn-plain scale-animation rounded-xl h-11 shrink-0 whitespace-nowrap font-bold px-3 xl:px-4 active:scale-95",
                         {"nav-link-active": isActive(l)}
                     ]}
                 >
-                    <div class="flex items-center">
+                    <div class="flex items-center whitespace-nowrap">
                         {l.name}
                         {l.external && <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.75rem] transition -translate-y-[1px] ml-1 text-black/[0.2] dark:text-white/[0.2]" />}
                     </div>
