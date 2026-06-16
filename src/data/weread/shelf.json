@@ -1,13 +1,29 @@
 {
 	"books": [
 		{
+			"bookId": "3300195023",
+			"title": "心理学与文学（荣格作品集）",
+			"author": "[瑞士]卡尔·古斯塔夫·荣格",
+			"cover": "https://cdn.weread.qq.com/weread/cover/83/cpplatform_bn8syukcdesegg7fje5abv/t6_cpplatform_bn8syukcdesegg7fje5abv1770625089.jpg",
+			"category": "文学-文学鉴赏",
+			"finishReading": 0,
+			"readUpdateTime": 1781545113,
+			"updateTime": 1770626042,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "25424211",
 			"title": "单向度的人：发达工业社会意识形态研究（睿文馆）",
 			"author": "赫伯特·马尔库塞",
 			"cover": "https://cdn.weread.qq.com/weread/cover/47/YueWen_25424211/t6_YueWen_25424211.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1781529871,
+			"readUpdateTime": 1781547089,
 			"updateTime": 1703130813,
 			"progress": 0,
 			"noteCount": 0,
@@ -23,8 +39,24 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_vxc2ntfnmv3ioqu19gsy6f/t6_cpplatform_vxc2ntfnmv3ioqu19gsy6f1755484808.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1781529800,
+			"readUpdateTime": 1781611908,
 			"updateTime": 1755485762,
+			"progress": 8,
+			"noteCount": 5,
+			"reviewCount": 0,
+			"bookmarkCount": 1,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300108679",
+			"title": "亲密关系（第8版）",
+			"author": "[美]罗兰·米勒",
+			"cover": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
+			"category": "心理-亲密关系",
+			"finishReading": 0,
+			"readUpdateTime": 1781575640,
+			"updateTime": 1768294169,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -201,19 +233,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1781508198,
+			"readUpdateTime": 1781546265,
 			"updateTime": 1765788388,
 			"progress": 43,
-			"noteCount": 116,
+			"noteCount": 119,
 			"reviewCount": 9,
-			"bookmarkCount": 7,
-			"readTime": 23997,
+			"bookmarkCount": 9,
+			"readTime": 24365,
 			"tags": [],
 			"intro": "存在主义治疗并非一个独立的治疗流派，而是每一个心理治疗师在其临床工作和个人生活中都可能会采用到的一种精神取向，或者说是生活哲学。存在主义治疗所基于的假设是：我们是自由的，并且要为自己的选择及行动负责任。 长期以来，存在主义治疗被广泛地应用在世界各地的临床实践工作中，但它缺乏一致性的结构、对其原则的分析以及对其有效性的评估。欧文•亚隆教授自1970年以来就已经在团体治疗的理论和实践中实施了存在主义的原则，并在大量的理论研究和临床实践中逐渐为存在主义心理治疗构建出一个较为系统的框架。 在本书中，亚隆教授从临床经验、实证性研究、哲学文献以及其他大量资料出发，围绕着四个“生命的终极关怀”——死亡、自由、存在的孤独和无意义——逐一进行深入探讨，阐述每一个存在性关怀的意义，并论述治疗师应该如何通过对它们的理解来进行有效的临床工作。心理治疗的根本问题与人类存在的核心问题在这里相遇，不仅为那些存在主义取向的心理治疗师提供了一部经典的教科书，同时也为所有流派的治疗师以及所有思考过人生意义的人提供了一个对生命和存在进行反思的空间。",
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2583,
+			"ratingCount": 2584,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -251,7 +283,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6539,
+			"ratingCount": 6542,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -273,7 +305,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6800,
+			"ratingCount": 6801,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -413,6 +445,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1778930291,
 			"updateTime": 1708525710,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300081407",
+			"title": "系统之美（全新升级版）",
+			"author": "德内拉·梅多斯",
+			"cover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_4ssdshesskpsd8jw6hleyw/t6_cpplatform_4ssdshesskpsd8jw6hleyw1702455686.jpg",
+			"category": "经济理财-管理",
+			"finishReading": 0,
+			"readUpdateTime": 1781546283,
+			"updateTime": 1769411982,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -719,7 +767,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1408,
+			"ratingCount": 1409,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -729,7 +777,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/865/36557865/t6_36557865.jpg",
 			"category": "心理-社会心理学",
 			"finishReading": 1,
-			"readUpdateTime": 1779039588,
+			"readUpdateTime": 1781541539,
 			"updateTime": 1746787096,
 			"progress": 99,
 			"noteCount": 114,
@@ -741,7 +789,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9948,
+			"ratingCount": 9951,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -817,7 +865,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2263,
+			"ratingCount": 2264,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -914,13 +962,7 @@
 			"reviewCount": 1,
 			"bookmarkCount": 0,
 			"readTime": 0,
-			"tags": [],
-			"intro": "诺贝尔文学奖得主罗素的随笔合集，共14篇文章,内容包括工作、教育、社会、文明、如何获得幸福等，融合了哲学与心理学，经济学，科学和历史等观点。\n罗素在百年前精准地预见了现代社会的“内卷”问题：科技越发展，人们反而陷入了更加激烈的竞争和更长的工时。本书大胆挑战了“核心工作论”：工作即美德的信念正在现代世界中制造大量危害，而通往幸福与繁荣之路在于有组织地减少工作。工作的道德是奴隶的道德，现代世界不需要奴隶。\n每天工作只4小时，一切都会好起来！真正的闲散并非游手好闲，而是从工作的重压下解放出来，将努力的方向从“谋生”转向“生活本身”，去追求那些真正定义文明和幸福的事——艺术、爱、知识、休闲和对世界的探索。",
-			"publisher": "山东文艺出版社",
-			"translator": "黄菡",
-			"publicRating": 9.5,
-			"ratingCount": 1395,
-			"publishTime": "2025-10-01 00:00:00"
+			"tags": []
 		},
 		{
 			"bookId": "40958946",
@@ -941,7 +983,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.8,
-			"ratingCount": 838,
+			"ratingCount": 839,
 			"publishTime": "2021-11-01 00:00:00"
 		},
 		{
@@ -952,7 +994,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1776063592,
-			"updateTime": 1769154704,
+			"updateTime": 1781605433,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1113,7 +1155,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16914,
+			"ratingCount": 16916,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -1199,7 +1241,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6175,
+			"ratingCount": 6176,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -1221,7 +1263,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 555,
+			"ratingCount": 556,
 			"publishTime": "2026-04-07 00:00:00"
 		},
 		{
@@ -1344,7 +1386,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.1,
+			"publicRating": 8.4,
 			"ratingCount": 24,
 			"publishTime": "2026-01-21 00:00:00"
 		},
@@ -1367,7 +1409,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 9,
-			"ratingCount": 2756,
+			"ratingCount": 2759,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -1510,7 +1552,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 415,
+			"ratingCount": 417,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1810,7 +1852,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 644,
+			"ratingCount": 645,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -2024,7 +2066,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1117,
+			"ratingCount": 1120,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -2076,6 +2118,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300207045",
+			"title": "个体化社会",
+			"author": "[英]齐格蒙特·鲍曼",
+			"cover": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_9hv3db59t6bqfismuz176m/t6_cpplatform_9hv3db59t6bqfismuz176m1779700220.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1781546310,
+			"updateTime": 1779709153,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "26211919",
 			"title": "普林斯顿微积分读本（修订版）",
 			"author": "阿德里安·班纳",
@@ -2110,7 +2168,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11424,
+			"ratingCount": 11431,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -2164,7 +2222,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9433,
+			"ratingCount": 9437,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -2282,7 +2340,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3263,
+			"ratingCount": 3267,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -2352,7 +2410,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4740,
+			"ratingCount": 4743,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -2486,7 +2544,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30036,
+			"ratingCount": 30055,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -2508,7 +2566,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2305,
+			"ratingCount": 2306,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -2594,7 +2652,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4290,
+			"ratingCount": 4291,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -2631,8 +2689,8 @@
 			"intro": "《政府论》，洛克政治哲学代表作。上篇集中驳斥君权神授说和王位世袭论，实质上是驳斥专制独裁说和权力世袭论。下篇以社会契约为支点，阐述天赋人权和民赋公权学说，得出结论：人民享有主权，可以采取一切手段，推翻无法保障国民生命、自由、安全和财产的政府。它出色完成了为英国“光荣革命”提供思想武器和进行辩护的任务，对伏尔泰、孟德斯鸠和卢梭等欧洲启蒙思想家以及汉密尔顿、麦迪逊和杰斐逊等“美国之父”具有重要影响，对美国独立战争和法国大革命具有推动作用。马克思、恩格斯的著作，汲取了其合理内容。我国人民当家作主的思想、理论和实践，体现了其精神。",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.5,
-			"ratingCount": 603,
+			"publicRating": 9.4,
+			"ratingCount": 604,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -2766,7 +2824,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 551,
+			"ratingCount": 552,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -2890,7 +2948,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75893,
+			"ratingCount": 75908,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -2976,7 +3034,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23137,
+			"ratingCount": 23143,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -3042,7 +3100,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167051,
+			"ratingCount": 167076,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3064,7 +3122,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2925,
+			"ratingCount": 2929,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3112,12 +3170,12 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
 			"category": "文学-古代诗词",
 			"finishReading": 0,
-			"readUpdateTime": 1781509984,
+			"readUpdateTime": 1781594095,
 			"updateTime": 1746516833,
 			"progress": 88,
-			"noteCount": 91,
+			"noteCount": 96,
 			"reviewCount": 0,
-			"bookmarkCount": 43,
+			"bookmarkCount": 44,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《李太白诗集》从李白现存的近千首诗作中，以思想性与艺术性为准，精选三百余首，辅以必要的注释，并撷取历代名家点评。李白的诗歌内容广博，想象奇绝而又不事雕琢，将中国古典诗歌推向了最高峰，影响了后世一代代中外优秀文人。",
@@ -3232,7 +3290,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4580,
+			"ratingCount": 4586,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -3270,7 +3328,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80212,
+			"ratingCount": 80225,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -3733,15 +3791,21 @@
 			"author": "[古希腊]柏拉图",
 			"cover": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_owz9yhd2swecegnsqbqp3t/t6_cpplatform_owz9yhd2swecegnsqbqp3t1756867829.jpg",
 			"category": "哲学宗教-西方哲学",
-			"finishReading": 0,
-			"readUpdateTime": 1779618171,
+			"finishReading": 1,
+			"readUpdateTime": 1781596222,
 			"updateTime": 1768209669,
-			"progress": 0,
-			"noteCount": 1,
-			"reviewCount": 0,
-			"bookmarkCount": 0,
+			"progress": 99,
+			"noteCount": 30,
+			"reviewCount": 1,
+			"bookmarkCount": 6,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "《会饮篇》是柏拉图最精彩、最耐读的对话之一，故事发生在一场古希腊名流的豪华宴会上。诗人阿伽松刚赢得戏剧大奖，宾客们兴致正浓，决定依次为“爱神”献上一段赞美。于是，不同性格与身份的人轮番登场——有人讲述人类原本圆满、因挑战神而被劈成两半，从此终生寻找另一半的动人神话；有人用医学和音乐的比喻说明爱如何维系人与世界的和谐；有人强调爱应当指向灵魂与美德，而非肉体的欲望。\n高潮来自苏格拉底，他转述女祭司狄奥提玛的教诲，把爱揭示为对“永恒之善”的追求，描绘出一条从肉体之美、灵魂之美、制度与学问之美，直至“绝对之美”的攀登之路，气势恢宏。就在哲思正浓时，醉醺醺的阿尔西比亚德闯入，把话题转向苏格拉底本人——一个外貌粗陋、言辞朴素，却蕴藏着令人无法抗拒的智慧与力量的人。\n《会饮篇》融合了哲学、神话、幽默与人情，不仅探讨“爱”的多重含义，也展现了古希腊思想的魅力，让人仿佛身临其境，置身一场机锋与智慧交织的盛宴。",
+			"publisher": "",
+			"translator": "程德",
+			"publicRating": 8.7,
+			"ratingCount": 388,
+			"publishTime": "2025-09-01 00:00:00"
 		},
 		{
 			"bookId": "3300160633",
@@ -3928,7 +3992,7 @@
 			"publisher": "九州出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 1162,
+			"ratingCount": 1163,
 			"publishTime": "2014-06-01 00:00:00"
 		},
 		{
@@ -3966,7 +4030,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12074,
+			"ratingCount": 12078,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -4272,7 +4336,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1954,
+			"ratingCount": 1959,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -4405,8 +4469,8 @@
 			"intro": "西方哲学史  每个爱思考的灵魂都能在哲学里找到自己的宇宙",
 			"publisher": "北方文艺出版社",
 			"translator": "",
-			"publicRating": 7.8,
-			"ratingCount": 168,
+			"publicRating": 7.9,
+			"ratingCount": 169,
 			"publishTime": "2024-03-01 00:00:00"
 		},
 		{
@@ -4476,7 +4540,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1307,
+			"ratingCount": 1310,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -4562,7 +4626,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42067,
+			"ratingCount": 42093,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -4751,28 +4815,28 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 645349,
-		"readDays": 254,
-		"readBooks": 118,
-		"finishedBooks": 18,
-		"noteCount": 5685,
+		"totalReadTime": 649773,
+		"readDays": 255,
+		"readBooks": 120,
+		"finishedBooks": 19,
+		"noteCount": 5738,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 46,
-				"time": 215830
+				"time": 217037
 			},
 			{
 				"title": "心理",
 				"count": 12,
-				"time": 126414
+				"time": 126782
 			},
 			{
 				"title": "哲学宗教",
-				"count": 15,
-				"time": 74864
+				"count": 16,
+				"time": 74960
 			},
 			{
 				"title": "社会小说",
@@ -4794,7 +4858,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 4,
-				"readTime": "14小时29分钟"
+				"readTime": "14小时38分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -6046,12 +6110,16 @@
 			},
 			{
 				"date": "2026-06-14",
-				"seconds": 1450
+				"seconds": 1557
+			},
+			{
+				"date": "2026-06-15",
+				"seconds": 4317
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 265,
+		"totalBooks": 269,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -6059,6 +6127,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-15T14:36:46.557Z",
+	"generatedAt": "2026-06-16T13:06:00.955Z",
 	"isMock": false
 }
