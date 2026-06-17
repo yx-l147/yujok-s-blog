@@ -1,6 +1,70 @@
 {
 	"books": [
 		{
+			"bookId": "26712574",
+			"title": "第一推动丛书·综合系列（升级版套装共8册）",
+			"author": "梅拉妮·米歇尔 约翰·E.梅菲尔德 罗杰·彭罗斯 马丁·戴维斯 约翰·查尔顿·波金霍尔 约翰·布洛克曼 S.钱德拉塞卡 麦克斯·布罗克曼",
+			"cover": "https://cdn.weread.qq.com/weread/cover/14/YueWen_26712574/t6_YueWen_26712574.jpg",
+			"category": "科学技术-自然科学",
+			"finishReading": 0,
+			"readUpdateTime": 1781679968,
+			"updateTime": 1760176137,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "842282",
+			"title": "小逻辑",
+			"author": "黑格尔著",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/282/842282/t6_842282.jpg",
+			"category": "哲学宗教-逻辑学",
+			"finishReading": 0,
+			"readUpdateTime": 1781624440,
+			"updateTime": 1738837758,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300077173",
+			"title": "苏格拉底的申辩(第3版)",
+			"author": "[古希腊]柏拉图",
+			"cover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_wao9wvnxmb6vquaumyuejc/t6_cpplatform_wao9wvnxmb6vquaumyuejc1699431654.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1781624286,
+			"updateTime": 1741071924,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "846536",
+			"title": "牛津通识读本：黑格尔（中文版）",
+			"author": "[澳]彼得·辛格",
+			"cover": "https://cdn.weread.qq.com/weread/cover/38/YueWen_846536/t6_YueWen_846536.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1781624130,
+			"updateTime": 1760175949,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300195023",
 			"title": "心理学与文学（荣格作品集）",
 			"author": "[瑞士]卡尔·古斯塔夫·荣格",
@@ -39,14 +103,20 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_vxc2ntfnmv3ioqu19gsy6f/t6_cpplatform_vxc2ntfnmv3ioqu19gsy6f1755484808.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1781611908,
+			"readUpdateTime": 1781692511,
 			"updateTime": 1755485762,
-			"progress": 8,
-			"noteCount": 5,
+			"progress": 17,
+			"noteCount": 13,
 			"reviewCount": 0,
-			"bookmarkCount": 1,
+			"bookmarkCount": 5,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "美国式消费社会的逻辑自二战以后稳步扩大，如今已经覆盖全世界。无需他人的介入或是麻烦的社交，消费者的需求就可以非常简便地获得满足。在此意义上，我们的社会正朝着科耶夫所说的“动物化”的道路迈进。\r\n日本自20世纪50至70年代经历了经济高度发展期，以及美国亚文化的“国产化”，从中诞生的“御宅族系文化”如今获得了超越国界的支持。御宅族系文化的特征呼应着1970年代至今的后现代潮流，也包含着现代化与后现代化所引发的人性扭曲，大叙事凋零后人们如何想象世界、如何进行文化生产与消费等诸多与当下密切相关的议题。\r\n日本新一代思想家、争议性奇才东浩纪的成名之作《动物化的后现代》，初版于2001年，如今已成为当代文化研究的根基性经典，书中原创性地运用“数据库消费”“萌要素”“动物的时代”等概念，精辟地分析了御宅族系文化影响下的日本社会和日本思想，并从中理出御宅族系文化的形成与未来的可能性。我们可以从中了解御宅族对于动漫甚至当代文化造成了怎样的影响，这些被误解的族群，其行为模式是文化的脉络之一，也正在改变人类的整个历史文化。",
+			"publisher": "上海人民出版社",
+			"translator": "褚炫初",
+			"publicRating": 7.7,
+			"ratingCount": 151,
+			"publishTime": "2024-09-01 00:00:00"
 		},
 		{
 			"bookId": "3300108679",
@@ -135,7 +205,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/18/cpplatform_39vpq1ljpem97tfh6uduhe/t6_cpplatform_39vpq1ljpem97tfh6uduhe1685947305.jpg",
 			"category": "科学技术-自然科学",
 			"finishReading": 0,
-			"readUpdateTime": 1777975500,
+			"readUpdateTime": 1781681239,
 			"updateTime": 1760179400,
 			"progress": 12,
 			"noteCount": 3,
@@ -201,7 +271,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "张卜天",
 			"publicRating": 8.7,
-			"ratingCount": 238,
+			"ratingCount": 239,
 			"publishTime": "2021-01-01 00:00:00"
 		},
 		{
@@ -223,7 +293,7 @@
 			"publisher": "天津教育出版社 天津古籍出版社",
 			"translator": "琳中展羽",
 			"publicRating": 7.2,
-			"ratingCount": 2391,
+			"ratingCount": 2392,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -245,7 +315,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2584,
+			"ratingCount": 2586,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -283,7 +353,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6542,
+			"ratingCount": 6545,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -691,7 +761,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1147,
+			"ratingCount": 1150,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -715,6 +785,22 @@
 			"publicRating": 9.4,
 			"ratingCount": 797,
 			"publishTime": "2026-03-17 00:00:00"
+		},
+		{
+			"bookId": "3300206118",
+			"title": "历史哲学",
+			"author": "[德]黑格尔",
+			"cover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_crbiq8dpvhkwtcjdmm51qd/t6_cpplatform_crbiq8dpvhkwtcjdmm51qd1779164351.jpg",
+			"category": "历史-历史文化",
+			"finishReading": 0,
+			"readUpdateTime": 1781624191,
+			"updateTime": 1779176049,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "34615965",
@@ -767,7 +853,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1409,
+			"ratingCount": 1410,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -789,7 +875,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9951,
+			"ratingCount": 9953,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -865,7 +951,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2264,
+			"ratingCount": 2265,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -1155,7 +1241,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16916,
+			"ratingCount": 16920,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -1241,7 +1327,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6176,
+			"ratingCount": 6178,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -1409,7 +1495,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 9,
-			"ratingCount": 2759,
+			"ratingCount": 2760,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -1552,7 +1638,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 417,
+			"ratingCount": 418,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1627,7 +1713,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1776049182,
-			"updateTime": 1777346555,
+			"updateTime": 1781696036,
 			"progress": 3,
 			"noteCount": 2,
 			"reviewCount": 0,
@@ -1660,6 +1746,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1777274237,
 			"updateTime": 1760176590,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300071520",
+			"title": "身份与暴力——命运的幻象（诺贝尔经济学奖获得者丛书）",
+			"author": "阿马蒂亚·森",
+			"cover": "https://cdn.weread.qq.com/weread/cover/33/cpplatform_iyf8yekbuvmexygmhykonz/t6_cpplatform_iyf8yekbuvmexygmhykonz1695178453.jpg",
+			"category": "政治军事-政治",
+			"finishReading": 0,
+			"readUpdateTime": 1781624770,
+			"updateTime": 1760175204,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1852,7 +1954,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 645,
+			"ratingCount": 646,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -2066,7 +2168,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1120,
+			"ratingCount": 1123,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -2168,7 +2270,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11431,
+			"ratingCount": 11440,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -2222,7 +2324,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9437,
+			"ratingCount": 9439,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -2340,7 +2442,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3267,
+			"ratingCount": 3269,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -2410,7 +2512,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4743,
+			"ratingCount": 4746,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -2544,7 +2646,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30055,
+			"ratingCount": 30073,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -2566,7 +2668,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2306,
+			"ratingCount": 2308,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -2819,13 +2921,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 8,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《唐诗鉴赏辞典》是国内文艺类鉴赏辞典的发轫之作。它首创的融文学赏析和工具书于一体的编写体例，已成为中国文学鉴赏辞典的固有模式。\r\n《唐诗鉴赏辞典》共收唐代190多位诗人诗作1100余篇，全书约230万字。由萧涤非、程千帆、马茂元、周汝昌、周振甫、霍松林等古典文学专家撰写赏析文章。所收唐诗作品面广，各种艺术流派的诗篇兼收并蓄，较全面地展现了唐诗绚丽多彩的艺术风姿。\r\n另配有唐代诗人年表、唐诗书目、诗体诗律等多种附录。",
-			"publisher": "上海辞书出版社",
-			"translator": "",
-			"publicRating": 9.1,
-			"ratingCount": 552,
-			"publishTime": "2013-08-01 00:00:00"
+			"tags": []
 		},
 		{
 			"bookId": "23523848",
@@ -2948,7 +3044,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75908,
+			"ratingCount": 75942,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -3100,7 +3196,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167076,
+			"ratingCount": 167116,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3290,7 +3386,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4586,
+			"ratingCount": 4594,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -3328,7 +3424,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80225,
+			"ratingCount": 80235,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -3916,10 +4012,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/84/yuewen_33642051/t6_yuewen_336420511678961523.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1780631674,
+			"readUpdateTime": 1781679284,
 			"updateTime": 1738837758,
-			"progress": 0,
-			"noteCount": 0,
+			"progress": 1,
+			"noteCount": 3,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
@@ -4030,7 +4126,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12078,
+			"ratingCount": 12080,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -4068,7 +4164,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1826,
+			"ratingCount": 1825,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -4090,7 +4186,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1416,
+			"ratingCount": 1418,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -4134,6 +4230,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1781323413,
 			"updateTime": 1708526029,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "934901",
+			"title": "宇宙的轮回（第一推动丛书·宇宙系列）",
+			"author": "罗杰·彭罗斯",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/901/934901/t6_934901.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1781679864,
+			"updateTime": 1760175843,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4336,7 +4448,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1959,
+			"ratingCount": 1965,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -4550,7 +4662,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/94/YueWen_934899/t6_YueWen_934899.jpg",
 			"category": "科学技术-科学科普",
 			"finishReading": 0,
-			"readUpdateTime": 1778052363,
+			"readUpdateTime": 1781679934,
 			"updateTime": 1760175840,
 			"progress": 0,
 			"noteCount": 0,
@@ -4626,7 +4738,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42093,
+			"ratingCount": 42111,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -4815,28 +4927,28 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 649773,
-		"readDays": 255,
-		"readBooks": 120,
+		"totalReadTime": 651418,
+		"readDays": 256,
+		"readBooks": 121,
 		"finishedBooks": 19,
-		"noteCount": 5738,
+		"noteCount": 5753,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 46,
-				"time": 217037
+				"time": 217229
 			},
 			{
 				"title": "心理",
-				"count": 12,
-				"time": 126782
+				"count": 11,
+				"time": 118050
 			},
 			{
 				"title": "哲学宗教",
-				"count": 16,
-				"time": 74960
+				"count": 17,
+				"time": 78420
 			},
 			{
 				"title": "社会小说",
@@ -4863,7 +4975,7 @@
 			{
 				"name": "艾里希·弗洛姆",
 				"count": 3,
-				"readTime": "16小时11分钟"
+				"readTime": "16小时13分钟"
 			},
 			{
 				"name": "赫尔曼·黑塞",
@@ -6114,12 +6226,16 @@
 			},
 			{
 				"date": "2026-06-15",
-				"seconds": 4317
+				"seconds": 4459
+			},
+			{
+				"date": "2026-06-16",
+				"seconds": 1503
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 269,
+		"totalBooks": 276,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -6127,6 +6243,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-16T13:06:00.955Z",
+	"generatedAt": "2026-06-17T12:32:25.991Z",
 	"isMock": false
 }
