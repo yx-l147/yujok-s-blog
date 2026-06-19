@@ -1,13 +1,29 @@
 {
 	"books": [
 		{
+			"bookId": "41128959",
+			"title": "纯粹理性批判（注释本）",
+			"author": "康德",
+			"cover": "https://cdn.weread.qq.com/weread/cover/39/yuewen_41128959/t6_yuewen_411289591693896600.jpg",
+			"category": "哲学宗教-哲学著作",
+			"finishReading": 0,
+			"readUpdateTime": 1781871322,
+			"updateTime": 1693896603,
+			"progress": 3,
+			"noteCount": 16,
+			"reviewCount": 0,
+			"bookmarkCount": 5,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "27054465",
 			"title": "罗宾斯《管理学》（第13版）【教材精讲＋考研真题解析】讲义与视频课程【32小时高清视频】",
 			"author": "圣才电子书",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/465/27054465/t6_27054465.jpg",
 			"category": "教育学习-考试",
 			"finishReading": 0,
-			"readUpdateTime": 1781782819,
+			"readUpdateTime": 1781819690,
 			"updateTime": 1623408418,
 			"progress": 0,
 			"noteCount": 0,
@@ -23,7 +39,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_jsnnbp9ffxw1qszwqgwrwk/t6_cpplatform_jsnnbp9ffxw1qszwqgwrwk1776160717.jpg",
 			"category": "心理-心理学应用",
 			"finishReading": 0,
-			"readUpdateTime": 1781781508,
+			"readUpdateTime": 1781828500,
 			"updateTime": 1776164621,
 			"progress": 0,
 			"noteCount": 0,
@@ -175,7 +191,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75958,
+			"ratingCount": 75973,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -228,7 +244,7 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8,
+			"publicRating": 8.2,
 			"ratingCount": 25,
 			"publishTime": "2025-08-01 00:00:00"
 		},
@@ -465,7 +481,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4290,
+			"ratingCount": 4289,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -551,7 +567,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2308,
+			"ratingCount": 2309,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -573,7 +589,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30090,
+			"ratingCount": 30109,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -675,8 +691,24 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4747,
+			"ratingCount": 4748,
 			"publishTime": "2018-01-01 00:00:00"
+		},
+		{
+			"bookId": "3300189343",
+			"title": "混沌：用不确定的数学掲示宇宙运行规律",
+			"author": "[英]伊恩·斯图尔特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/36/cpplatform_bfaw15hcdhpyp2zxsmxgmc/t6_cpplatform_bfaw15hcdhpyp2zxsmxgmc1766977655.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1781868161,
+			"updateTime": 1766978642,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "3300081421",
@@ -777,7 +809,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3274,
+			"ratingCount": 3277,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -847,7 +879,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11452,
+			"ratingCount": 11464,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -949,7 +981,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1124,
+			"ratingCount": 1125,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -1358,7 +1390,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 419,
+			"ratingCount": 420,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1628,7 +1660,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9444,
+			"ratingCount": 9445,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1784,7 +1816,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4599,
+			"ratingCount": 4603,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1822,7 +1854,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80241,
+			"ratingCount": 80254,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -2138,7 +2170,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 390,
+			"ratingCount": 392,
 			"publishTime": "2025-09-01 00:00:00"
 		},
 		{
@@ -2272,7 +2304,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1968,
+			"ratingCount": 1969,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -2358,7 +2390,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12081,
+			"ratingCount": 12084,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -2412,7 +2444,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2936,
+			"ratingCount": 2939,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2670,7 +2702,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1380,
+			"ratingCount": 1382,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -2788,7 +2820,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42132,
+			"ratingCount": 42147,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -2880,7 +2912,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1311,
+			"ratingCount": 1313,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -3061,8 +3093,8 @@
 			"intro": "西方哲学史  每个爱思考的灵魂都能在哲学里找到自己的宇宙",
 			"publisher": "北方文艺出版社",
 			"translator": "",
-			"publicRating": 7.9,
-			"ratingCount": 169,
+			"publicRating": 7.8,
+			"ratingCount": 170,
 			"publishTime": "2024-03-01 00:00:00"
 		},
 		{
@@ -3330,7 +3362,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1418,
+			"ratingCount": 1419,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -3412,7 +3444,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167148,
+			"ratingCount": 167169,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3434,7 +3466,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7195,
+			"ratingCount": 7197,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -3778,7 +3810,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2266,
+			"ratingCount": 2267,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -3864,7 +3896,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1411,
+			"ratingCount": 1413,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -3928,6 +3960,22 @@
 			"publishTime": "2026-04-07 00:00:00"
 		},
 		{
+			"bookId": "26392183",
+			"title": "康德三大批判合集（注释版）",
+			"author": "康德",
+			"cover": "https://cdn.weread.qq.com/weread/cover/96/yuewen_26392183/t6_yuewen_263921831724826980.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1781828604,
+			"updateTime": 1724826980,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300026591",
 			"title": "德米安：彷徨少年时（黑塞精选集）",
 			"author": "赫尔曼•黑塞",
@@ -3946,7 +3994,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6178,
+			"ratingCount": 6179,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -4264,7 +4312,7 @@
 			"publisher": "天津教育出版社 天津古籍出版社",
 			"translator": "琳中展羽",
 			"publicRating": 7.2,
-			"ratingCount": 2392,
+			"ratingCount": 2393,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -4286,7 +4334,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1151,
+			"ratingCount": 1155,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -4544,7 +4592,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6549,
+			"ratingCount": 6548,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -4566,7 +4614,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6802,
+			"ratingCount": 6803,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -4818,7 +4866,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 647,
+			"ratingCount": 649,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -4856,7 +4904,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 9,
-			"ratingCount": 2765,
+			"ratingCount": 2768,
 			"publishTime": "2018-11-01 00:00:00"
 		}
 	],
@@ -5007,11 +5055,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 651733,
-		"readDays": 257,
-		"readBooks": 121,
+		"totalReadTime": 654422,
+		"readDays": 258,
+		"readBooks": 122,
 		"finishedBooks": 19,
-		"noteCount": 5762,
+		"noteCount": 5783,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -5022,13 +5070,13 @@
 			},
 			{
 				"title": "心理",
-				"count": 12,
-				"time": 126933
+				"count": 11,
+				"time": 124095
 			},
 			{
 				"title": "哲学宗教",
-				"count": 17,
-				"time": 78985
+				"count": 18,
+				"time": 79046
 			},
 			{
 				"title": "社会小说",
@@ -6315,11 +6363,15 @@
 			{
 				"date": "2026-06-17",
 				"seconds": 222
+			},
+			{
+				"date": "2026-06-18",
+				"seconds": 2689
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 281,
+		"totalBooks": 284,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -6327,6 +6379,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-18T11:59:31.208Z",
+	"generatedAt": "2026-06-19T12:19:46.574Z",
 	"isMock": false
 }
