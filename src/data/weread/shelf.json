@@ -7,14 +7,20 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/39/yuewen_41128959/t6_yuewen_411289591693896600.jpg",
 			"category": "哲学宗教-哲学著作",
 			"finishReading": 0,
-			"readUpdateTime": 1781871322,
+			"readUpdateTime": 1781922120,
 			"updateTime": 1693896603,
-			"progress": 3,
-			"noteCount": 16,
+			"progress": 5,
+			"noteCount": 19,
 			"reviewCount": 0,
-			"bookmarkCount": 5,
+			"bookmarkCount": 6,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "本书为《纯粹理性批判》的单行本，与已出版的全集的不同之处：第一、增加了科学院版编者的两版导言和注释；第二，增加了译者对内容和概念译法等的注释；第三，订正了全集中部分误译、漏译。因此，对读者来说，其内容更完善了，也更适用了。",
+			"publisher": "中国人民大学出版社",
+			"translator": "李秋零",
+			"publicRating": 8.5,
+			"ratingCount": 316,
+			"publishTime": "2011-07-31 00:00:00"
 		},
 		{
 			"bookId": "27054465",
@@ -83,7 +89,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23143,
+			"ratingCount": 23144,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -191,7 +197,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 75973,
+			"ratingCount": 75998,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -443,7 +449,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 604,
+			"ratingCount": 605,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -481,7 +487,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4289,
+			"ratingCount": 4290,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -567,7 +573,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2309,
+			"ratingCount": 2311,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -589,7 +595,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30109,
+			"ratingCount": 30126,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -691,7 +697,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4748,
+			"ratingCount": 4750,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -809,7 +815,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3277,
+			"ratingCount": 3282,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -879,7 +885,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11464,
+			"ratingCount": 11471,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -981,7 +987,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1125,
+			"ratingCount": 1126,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -1390,7 +1396,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 420,
+			"ratingCount": 421,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1514,7 +1520,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.2,
-			"ratingCount": 293,
+			"ratingCount": 295,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -1660,7 +1666,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9445,
+			"ratingCount": 9451,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1816,7 +1822,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4603,
+			"ratingCount": 4604,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1854,7 +1860,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80254,
+			"ratingCount": 80268,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -2170,7 +2176,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 392,
+			"ratingCount": 394,
 			"publishTime": "2025-09-01 00:00:00"
 		},
 		{
@@ -2304,7 +2310,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1969,
+			"ratingCount": 1971,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -2444,7 +2450,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2939,
+			"ratingCount": 2945,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2702,7 +2708,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1382,
+			"ratingCount": 1383,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -2820,7 +2826,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42147,
+			"ratingCount": 42170,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -2912,7 +2918,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1313,
+			"ratingCount": 1316,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -3444,7 +3450,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167169,
+			"ratingCount": 167201,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3466,7 +3472,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7197,
+			"ratingCount": 7202,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -3896,7 +3902,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1413,
+			"ratingCount": 1414,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -3918,7 +3924,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9954,
+			"ratingCount": 9955,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -3956,7 +3962,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 556,
+			"ratingCount": 557,
 			"publishTime": "2026-04-07 00:00:00"
 		},
 		{
@@ -4237,13 +4243,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
-			"tags": [],
-			"intro": "这本书对物理图象的阐述清晰明确，生动有趣，通俗易懂。每当有不懂的问题，就来查阅这套《费曼物理学讲义》，只要能找到相应的章节，就一定能弄明白！\r\n费曼博士获得诺贝尔奖是由于成功地解决了量子电动力学理论问题，他也创立了说是液氦中起流动性现象的数学理论。此后，他和盖尔曼（M.Gell-Mann）在B衰变等弱相互作用领域内做出了奠基性的工作。在以后的几年里，他在夸克理论的发展中起了关键性的作用，提出了他的高能质子碰撞过程的部分子模型。",
-			"publisher": "上海科学技术出版社",
-			"translator": "李洪芳 王子辅 钟万蘅 潘笃武 杨文超 郑永令 等",
-			"publicRating": 9.2,
-			"ratingCount": 352,
-			"publishTime": "2020-03-01 00:00:00"
+			"tags": []
 		},
 		{
 			"bookId": "29189282",
@@ -4474,7 +4474,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16921,
+			"ratingCount": 16923,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -4636,7 +4636,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2588,
+			"ratingCount": 2589,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -4866,7 +4866,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 649,
+			"ratingCount": 650,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -4903,8 +4903,8 @@
 			"intro": "《逃避自由》是美国社会心理学家和哲学家、法兰克福学派重要成员艾里希·弗洛姆的著名作品，书中探讨了极权主义的社会心理根源，被誉为精神分析运用在社会学的不朽名著。\r\n\r\n弗洛姆认为，要战胜极权主义势力，必须首先弄清楚极权主义者竭力逃避自由的原因。他在书中探索了历史进程中“人性”和“自由”概念不定变化的关系，深入地解释了形成现代社会的力量，透彻地分析极权主义机制滋生的原因，热烈地谈论自由的价值、社会的塑造、民主政治的真义，以及个体发自内心的爱。他努力教导人如何自由而不致孤独、自爱而不自私、理智判断而不找合理化借口、拥有信仰而不迷信于神学。",
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
-			"publicRating": 9,
-			"ratingCount": 2768,
+			"publicRating": 8.9,
+			"ratingCount": 2769,
 			"publishTime": "2018-11-01 00:00:00"
 		}
 	],
@@ -5055,11 +5055,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 654422,
+		"totalReadTime": 654980,
 		"readDays": 258,
 		"readBooks": 122,
 		"finishedBooks": 19,
-		"noteCount": 5783,
+		"noteCount": 5787,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -5070,13 +5070,13 @@
 			},
 			{
 				"title": "心理",
-				"count": 11,
-				"time": 124095
+				"count": 12,
+				"time": 126933
 			},
 			{
 				"title": "哲学宗教",
 				"count": 18,
-				"time": 79046
+				"time": 82232
 			},
 			{
 				"title": "社会小说",
@@ -6366,7 +6366,11 @@
 			},
 			{
 				"date": "2026-06-18",
-				"seconds": 2689
+				"seconds": 3238
+			},
+			{
+				"date": "2026-06-19",
+				"seconds": 9
 			}
 		]
 	},
@@ -6379,6 +6383,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-19T12:19:46.574Z",
+	"generatedAt": "2026-06-20T10:42:42.363Z",
 	"isMock": false
 }
