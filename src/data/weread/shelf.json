@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "912825",
+			"title": "沉默的大多数",
+			"author": "王小波",
+			"cover": "https://cdn.weread.qq.com/weread/cover/85/yuewen_912825/t6_yuewen_9128251776069077.jpg",
+			"category": "文学-散文杂著",
+			"finishReading": 0,
+			"readUpdateTime": 1782134811,
+			"updateTime": 1776069078,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 1,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300067705",
 			"title": "凝视深渊： 悬案、侧写和我对破译犯罪心理的探索",
 			"author": "安·沃尔伯特·伯吉斯 史蒂文·马修·康斯坦丁",
@@ -10,9 +26,9 @@
 			"readUpdateTime": 1782039101,
 			"updateTime": 1719567699,
 			"progress": 6,
-			"noteCount": 11,
+			"noteCount": 10,
 			"reviewCount": 1,
-			"bookmarkCount": 3,
+			"bookmarkCount": 4,
 			"readTime": 0,
 			"tags": []
 		},
@@ -23,19 +39,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/39/yuewen_41128959/t6_yuewen_411289591693896600.jpg",
 			"category": "哲学宗教-哲学著作",
 			"finishReading": 0,
-			"readUpdateTime": 1782038916,
+			"readUpdateTime": 1782064213,
 			"updateTime": 1693896603,
-			"progress": 5,
-			"noteCount": 21,
+			"progress": 7,
+			"noteCount": 23,
 			"reviewCount": 0,
-			"bookmarkCount": 6,
+			"bookmarkCount": 7,
 			"readTime": 0,
 			"tags": [],
 			"intro": "本书为《纯粹理性批判》的单行本，与已出版的全集的不同之处：第一、增加了科学院版编者的两版导言和注释；第二，增加了译者对内容和概念译法等的注释；第三，订正了全集中部分误译、漏译。因此，对读者来说，其内容更完善了，也更适用了。",
 			"publisher": "中国人民大学出版社",
 			"translator": "李秋零",
 			"publicRating": 8.5,
-			"ratingCount": 316,
+			"ratingCount": 317,
 			"publishTime": "2011-07-31 00:00:00"
 		},
 		{
@@ -61,7 +77,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_jsnnbp9ffxw1qszwqgwrwk/t6_cpplatform_jsnnbp9ffxw1qszwqgwrwk1776160717.jpg",
 			"category": "心理-心理学应用",
 			"finishReading": 0,
-			"readUpdateTime": 1781977939,
+			"readUpdateTime": 1782135135,
 			"updateTime": 1776164621,
 			"progress": 0,
 			"noteCount": 3,
@@ -105,7 +121,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23148,
+			"ratingCount": 23150,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -127,7 +143,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 477,
+			"ratingCount": 479,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -213,7 +229,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 76023,
+			"ratingCount": 76047,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -589,7 +605,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2311,
+			"ratingCount": 2312,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -611,7 +627,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30144,
+			"ratingCount": 30165,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -701,10 +717,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_4uj5m42uyaeybjyxenesic/t6_cpplatform_4uj5m42uyaeybjyxenesic1695806902.jpg",
 			"category": "个人成长-励志成长",
 			"finishReading": 0,
-			"readUpdateTime": 1781073865,
+			"readUpdateTime": 1782135829,
 			"updateTime": 1710240751,
 			"progress": 68,
-			"noteCount": 201,
+			"noteCount": 202,
 			"reviewCount": 5,
 			"bookmarkCount": 37,
 			"readTime": 0,
@@ -713,7 +729,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4751,
+			"ratingCount": 4754,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -831,7 +847,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3283,
+			"ratingCount": 3284,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -901,7 +917,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11494,
+			"ratingCount": 11517,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -1003,7 +1019,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1128,
+			"ratingCount": 1130,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -1302,7 +1318,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1776049182,
-			"updateTime": 1781696036,
+			"updateTime": 1782124195,
 			"progress": 3,
 			"noteCount": 2,
 			"reviewCount": 0,
@@ -1412,7 +1428,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 421,
+			"ratingCount": 420,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -1518,6 +1534,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300198310",
+			"title": "数学觉醒：学会更清晰地思考",
+			"author": "[法]戴维·贝西",
+			"cover": "https://cdn.weread.qq.com/weread/cover/78/cpplatform_w9dbcslensnfpwn7jdupam/t6_cpplatform_w9dbcslensnfpwn7jdupam1773398615.jpg",
+			"category": "科学技术-自然科学",
+			"finishReading": 0,
+			"readUpdateTime": 1782046980,
+			"updateTime": 1773655709,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300144307",
 			"title": "从零构建大模型",
 			"author": "[美]塞巴斯蒂安·拉施卡",
@@ -1535,8 +1567,8 @@
 			"intro": "本书是关于如何从零开始构建大模型的指南，由畅销书作家塞巴斯蒂安·拉施卡撰写，通过清晰的文字、图表和实例，逐步指导读者创建自己的大模型。在本书中，读者将学习如何规划和编写大模型的各个组成部分、为大模型训练准备适当的数据集、进行通用语料库的预训练，以及定制特定任务的微调。此外，本书还将探讨如何利用人工反馈确保大模型遵循指令，以及如何将预训练权重加载到大模型中。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
-			"publicRating": 9.2,
-			"ratingCount": 295,
+			"publicRating": 9.1,
+			"ratingCount": 296,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -1682,7 +1714,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9452,
+			"ratingCount": 9457,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1838,7 +1870,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4614,
+			"ratingCount": 4620,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1876,7 +1908,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80285,
+			"ratingCount": 80298,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -2326,7 +2358,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1977,
+			"ratingCount": 1979,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -2412,7 +2444,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12085,
+			"ratingCount": 12086,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -2466,7 +2498,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2954,
+			"ratingCount": 2959,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2562,10 +2594,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/48/YueWen_837932/t6_YueWen_837932.jpg",
 			"category": "个人成长-励志成长",
 			"finishReading": 0,
-			"readUpdateTime": 1782040106,
+			"readUpdateTime": 1782046818,
 			"updateTime": 1708526029,
 			"progress": 1,
-			"noteCount": 3,
+			"noteCount": 5,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
@@ -2724,7 +2756,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1385,
+			"ratingCount": 1387,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -2842,7 +2874,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42200,
+			"ratingCount": 42228,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -2934,7 +2966,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1335,
+			"ratingCount": 1361,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -3350,7 +3382,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/94/cpPlatform_ahzgQiJDz6zjjZe8CoNMh3/t6_cpPlatform_ahzgQiJDz6zjjZe8CoNMh3.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1778229016,
+			"readUpdateTime": 1782135856,
 			"updateTime": 1760169657,
 			"progress": 59,
 			"noteCount": 129,
@@ -3362,7 +3394,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1826,
+			"ratingCount": 1828,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3384,7 +3416,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1420,
+			"ratingCount": 1422,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -3466,7 +3498,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167222,
+			"ratingCount": 167246,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3488,7 +3520,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7204,
+			"ratingCount": 7210,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -3660,7 +3692,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.8,
-			"ratingCount": 839,
+			"ratingCount": 841,
 			"publishTime": "2021-11-01 00:00:00"
 		},
 		{
@@ -3832,7 +3864,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2268,
+			"ratingCount": 2271,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -3918,7 +3950,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1415,
+			"ratingCount": 1416,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -3940,7 +3972,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9957,
+			"ratingCount": 9958,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -4016,7 +4048,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6182,
+			"ratingCount": 6184,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -4108,7 +4140,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 797,
+			"ratingCount": 796,
 			"publishTime": "2026-03-17 00:00:00"
 		},
 		{
@@ -4242,7 +4274,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "张卜天",
 			"publicRating": 8.7,
-			"ratingCount": 239,
+			"ratingCount": 240,
 			"publishTime": "2021-01-01 00:00:00"
 		},
 		{
@@ -4350,7 +4382,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1158,
+			"ratingCount": 1159,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -4490,7 +4522,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16926,
+			"ratingCount": 16931,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -4608,7 +4640,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6551,
+			"ratingCount": 6555,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -4640,13 +4672,13 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1781546265,
+			"readUpdateTime": 1782135616,
 			"updateTime": 1765788388,
 			"progress": 43,
 			"noteCount": 119,
 			"reviewCount": 9,
 			"bookmarkCount": 9,
-			"readTime": 24365,
+			"readTime": 24418,
 			"tags": [],
 			"intro": "存在主义治疗并非一个独立的治疗流派，而是每一个心理治疗师在其临床工作和个人生活中都可能会采用到的一种精神取向，或者说是生活哲学。存在主义治疗所基于的假设是：我们是自由的，并且要为自己的选择及行动负责任。 长期以来，存在主义治疗被广泛地应用在世界各地的临床实践工作中，但它缺乏一致性的结构、对其原则的分析以及对其有效性的评估。欧文•亚隆教授自1970年以来就已经在团体治疗的理论和实践中实施了存在主义的原则，并在大量的理论研究和临床实践中逐渐为存在主义心理治疗构建出一个较为系统的框架。 在本书中，亚隆教授从临床经验、实证性研究、哲学文献以及其他大量资料出发，围绕着四个“生命的终极关怀”——死亡、自由、存在的孤独和无意义——逐一进行深入探讨，阐述每一个存在性关怀的意义，并论述治疗师应该如何通过对它们的理解来进行有效的临床工作。心理治疗的根本问题与人类存在的核心问题在这里相遇，不仅为那些存在主义取向的心理治疗师提供了一部经典的教科书，同时也为所有流派的治疗师以及所有思考过人生意义的人提供了一个对生命和存在进行反思的空间。",
 			"publisher": "商务印书馆",
@@ -4663,7 +4695,7 @@
 			"category": "文学-纪实文学",
 			"finishReading": 0,
 			"readUpdateTime": 1781514638,
-			"updateTime": 1780571607,
+			"updateTime": 1782115213,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4920,7 +4952,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2770,
+			"ratingCount": 2771,
 			"publishTime": "2018-11-01 00:00:00"
 		}
 	],
@@ -5071,11 +5103,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 658583,
-		"readDays": 259,
-		"readBooks": 125,
+		"totalReadTime": 659209,
+		"readDays": 260,
+		"readBooks": 126,
 		"finishedBooks": 19,
-		"noteCount": 5820,
+		"noteCount": 5827,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -5087,12 +5119,12 @@
 			{
 				"title": "心理",
 				"count": 13,
-				"time": 126974
+				"time": 128024
 			},
 			{
 				"title": "哲学宗教",
 				"count": 18,
-				"time": 82241
+				"time": 82436
 			},
 			{
 				"title": "社会小说",
@@ -5106,8 +5138,8 @@
 			},
 			{
 				"title": "个人成长",
-				"count": 3,
-				"time": 44795
+				"count": 4,
+				"time": 45202
 			}
 		],
 		"preferAuthor": [
@@ -6390,12 +6422,16 @@
 			},
 			{
 				"date": "2026-06-20",
-				"seconds": 3603
+				"seconds": 3962
+			},
+			{
+				"date": "2026-06-21",
+				"seconds": 267
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 285,
+		"totalBooks": 287,
 		"secretCount": 22,
 		"favBook": {
 			"title": "西西弗神话",
@@ -6403,6 +6439,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-21T11:26:29.421Z",
+	"generatedAt": "2026-06-22T13:46:16.389Z",
 	"isMock": false
 }
