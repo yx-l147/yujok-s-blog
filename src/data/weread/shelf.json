@@ -1,18 +1,50 @@
 {
 	"books": [
 		{
+			"bookId": "931934",
+			"title": "比天空更宽广（第一推动丛书·生命系列）",
+			"author": "杰拉尔德·M.埃德尔曼",
+			"cover": "https://cdn.weread.qq.com/weread/cover/91/YueWen_931934/t6_YueWen_931934.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1782184356,
+			"updateTime": 1760175822,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "25926872",
+			"title": "非理性的人（译文经典）",
+			"author": "威廉·巴雷特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/17/YueWen_25926872/t6_YueWen_25926872.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1782152620,
+			"updateTime": 1703130816,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "912825",
 			"title": "沉默的大多数",
 			"author": "王小波",
 			"cover": "https://cdn.weread.qq.com/weread/cover/85/yuewen_912825/t6_yuewen_9128251776069077.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1782134811,
+			"readUpdateTime": 1782214294,
 			"updateTime": 1776069078,
-			"progress": 0,
-			"noteCount": 0,
+			"progress": 5,
+			"noteCount": 8,
 			"reviewCount": 0,
-			"bookmarkCount": 1,
+			"bookmarkCount": 4,
 			"readTime": 0,
 			"tags": []
 		},
@@ -51,7 +83,7 @@
 			"publisher": "中国人民大学出版社",
 			"translator": "李秋零",
 			"publicRating": 8.5,
-			"ratingCount": 317,
+			"ratingCount": 318,
 			"publishTime": "2011-07-31 00:00:00"
 		},
 		{
@@ -121,7 +153,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23150,
+			"ratingCount": 23152,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -143,7 +175,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 479,
+			"ratingCount": 481,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -229,7 +261,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 76047,
+			"ratingCount": 76064,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -282,7 +314,7 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8.2,
+			"publicRating": 8.4,
 			"ratingCount": 25,
 			"publishTime": "2025-08-01 00:00:00"
 		},
@@ -481,7 +513,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 605,
+			"ratingCount": 607,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -605,7 +637,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2312,
+			"ratingCount": 2313,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -627,7 +659,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30165,
+			"ratingCount": 30179,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -669,7 +701,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_9or8xxursihietfgt9khnj/t6_cpplatform_9or8xxursihietfgt9khnj1695711809.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1776062877,
+			"readUpdateTime": 1782211917,
 			"updateTime": 1739861718,
 			"progress": 0,
 			"noteCount": 0,
@@ -729,7 +761,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4754,
+			"ratingCount": 4755,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -847,7 +879,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3284,
+			"ratingCount": 3285,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -917,7 +949,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11517,
+			"ratingCount": 11536,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -1019,7 +1051,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1130,
+			"ratingCount": 1134,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -1568,7 +1600,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.1,
-			"ratingCount": 296,
+			"ratingCount": 298,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -1714,7 +1746,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9457,
+			"ratingCount": 9460,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -1870,7 +1902,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4620,
+			"ratingCount": 4621,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1908,7 +1940,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80298,
+			"ratingCount": 80306,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -2212,19 +2244,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_owz9yhd2swecegnsqbqp3t/t6_cpplatform_owz9yhd2swecegnsqbqp3t1756867829.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 1,
-			"readUpdateTime": 1781596222,
+			"readUpdateTime": 1782147881,
 			"updateTime": 1768209669,
 			"progress": 99,
-			"noteCount": 30,
+			"noteCount": 32,
 			"reviewCount": 1,
-			"bookmarkCount": 6,
+			"bookmarkCount": 7,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《会饮篇》是柏拉图最精彩、最耐读的对话之一，故事发生在一场古希腊名流的豪华宴会上。诗人阿伽松刚赢得戏剧大奖，宾客们兴致正浓，决定依次为“爱神”献上一段赞美。于是，不同性格与身份的人轮番登场——有人讲述人类原本圆满、因挑战神而被劈成两半，从此终生寻找另一半的动人神话；有人用医学和音乐的比喻说明爱如何维系人与世界的和谐；有人强调爱应当指向灵魂与美德，而非肉体的欲望。\n高潮来自苏格拉底，他转述女祭司狄奥提玛的教诲，把爱揭示为对“永恒之善”的追求，描绘出一条从肉体之美、灵魂之美、制度与学问之美，直至“绝对之美”的攀登之路，气势恢宏。就在哲思正浓时，醉醺醺的阿尔西比亚德闯入，把话题转向苏格拉底本人——一个外貌粗陋、言辞朴素，却蕴藏着令人无法抗拒的智慧与力量的人。\n《会饮篇》融合了哲学、神话、幽默与人情，不仅探讨“爱”的多重含义，也展现了古希腊思想的魅力，让人仿佛身临其境，置身一场机锋与智慧交织的盛宴。",
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 395,
+			"ratingCount": 396,
 			"publishTime": "2025-09-01 00:00:00"
 		},
 		{
@@ -2358,7 +2390,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1979,
+			"ratingCount": 1980,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -2498,7 +2530,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2959,
+			"ratingCount": 2961,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -2874,7 +2906,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42228,
+			"ratingCount": 42252,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -2966,7 +2998,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1361,
+			"ratingCount": 1393,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -3382,7 +3414,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/94/cpPlatform_ahzgQiJDz6zjjZe8CoNMh3/t6_cpPlatform_ahzgQiJDz6zjjZe8CoNMh3.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1782135856,
+			"readUpdateTime": 1782138255,
 			"updateTime": 1760169657,
 			"progress": 59,
 			"noteCount": 129,
@@ -3394,7 +3426,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1828,
+			"ratingCount": 1829,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3416,7 +3448,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1422,
+			"ratingCount": 1423,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -3498,7 +3530,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167246,
+			"ratingCount": 167277,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -3520,7 +3552,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7210,
+			"ratingCount": 7213,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -3950,7 +3982,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1416,
+			"ratingCount": 1417,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -3972,7 +4004,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9958,
+			"ratingCount": 9961,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -4048,7 +4080,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6184,
+			"ratingCount": 6185,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -4382,7 +4414,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1159,
+			"ratingCount": 1160,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -4522,7 +4554,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16931,
+			"ratingCount": 16930,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -4640,7 +4672,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6555,
+			"ratingCount": 6557,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -4662,7 +4694,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6803,
+			"ratingCount": 6805,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -4684,7 +4716,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2590,
+			"ratingCount": 2592,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -4914,7 +4946,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 651,
+			"ratingCount": 654,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -5103,28 +5135,28 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 659209,
-		"readDays": 260,
-		"readBooks": 126,
+		"totalReadTime": 661244,
+		"readDays": 261,
+		"readBooks": 129,
 		"finishedBooks": 19,
-		"noteCount": 5827,
+		"noteCount": 5882,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
-				"count": 46,
-				"time": 217229
+				"count": 47,
+				"time": 217340
 			},
 			{
 				"title": "心理",
 				"count": 13,
-				"time": 128024
+				"time": 128062
 			},
 			{
 				"title": "哲学宗教",
-				"count": 18,
-				"time": 82436
+				"count": 19,
+				"time": 83157
 			},
 			{
 				"title": "社会小说",
@@ -5139,7 +5171,7 @@
 			{
 				"title": "个人成长",
 				"count": 4,
-				"time": 45202
+				"time": 45252
 			}
 		],
 		"preferAuthor": [
@@ -6426,19 +6458,23 @@
 			},
 			{
 				"date": "2026-06-21",
-				"seconds": 267
+				"seconds": 688
+			},
+			{
+				"date": "2026-06-22",
+				"seconds": 1614
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 287,
-		"secretCount": 22,
+		"totalBooks": 289,
+		"secretCount": 23,
 		"favBook": {
 			"title": "西西弗神话",
 			"author": "[法]阿尔贝·加缪",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-22T13:46:16.389Z",
+	"generatedAt": "2026-06-23T11:33:17.061Z",
 	"isMock": false
 }
