@@ -115,7 +115,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1422,
+			"ratingCount": 1424,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -153,7 +153,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "傅季重,纪树立,周昌忠,蒋弋为",
 			"publicRating": 8.5,
-			"ratingCount": 298,
+			"ratingCount": 300,
 			"publishTime": "2015-02-01 00:00:00"
 		},
 		{
@@ -175,7 +175,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42330,
+			"ratingCount": 42353,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -403,6 +403,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300003470",
+			"title": "金阁寺",
+			"author": "三岛由纪夫",
+			"cover": "https://cdn.weread.qq.com/weread/cover/5/cpPlatform_3300003470/t6_cpPlatform_3300003470.jpg",
+			"category": "精品小说-社会小说",
+			"finishReading": 0,
+			"readUpdateTime": 1782490619,
+			"updateTime": 1670226126,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "33707832",
 			"title": "第三帝国三部曲（理想国译丛 038-040）",
 			"author": "理查德·J.埃文斯",
@@ -507,7 +523,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2975,
+			"ratingCount": 2981,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -599,7 +615,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12091,
+			"ratingCount": 12092,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -669,7 +685,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1983,
+			"ratingCount": 1987,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -787,7 +803,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 403,
+			"ratingCount": 404,
 			"publishTime": "2025-09-01 00:00:00"
 		},
 		{
@@ -1071,7 +1087,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80333,
+			"ratingCount": 80344,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -1081,10 +1097,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/67/YueWen_43148276/t6_YueWen_43148276.jpg",
 			"category": "精品小说-社会小说",
 			"finishReading": 0,
-			"readUpdateTime": 1777482389,
+			"readUpdateTime": 1782490575,
 			"updateTime": 1668615049,
 			"progress": 0,
-			"noteCount": 0,
+			"noteCount": 1,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
@@ -1109,7 +1125,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4635,
+			"ratingCount": 4638,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1351,7 +1367,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 8.7,
-			"ratingCount": 118,
+			"ratingCount": 119,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -1529,7 +1545,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23159,
+			"ratingCount": 23165,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -1631,7 +1647,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4292,
+			"ratingCount": 4293,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -1701,7 +1717,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 608,
+			"ratingCount": 609,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1787,7 +1803,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 76156,
+			"ratingCount": 76173,
 			"publishTime": "2017-01-01 00:00:00"
 		},
 		{
@@ -1905,7 +1921,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7219,
+			"ratingCount": 7222,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -2233,7 +2249,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1418,
+			"ratingCount": 1422,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -2255,7 +2271,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9965,
+			"ratingCount": 9967,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -2579,7 +2595,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6563,
+			"ratingCount": 6565,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -2853,7 +2869,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167363,
+			"ratingCount": 167383,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -2923,7 +2939,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2777,
+			"ratingCount": 2778,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -2961,7 +2977,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1166,
+			"ratingCount": 1167,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3015,7 +3031,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2315,
+			"ratingCount": 2316,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -3069,7 +3085,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30232,
+			"ratingCount": 30247,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -3155,7 +3171,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16938,
+			"ratingCount": 16943,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -3387,7 +3403,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6189,
+			"ratingCount": 6190,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3505,7 +3521,7 @@
 			"publisher": "天津教育出版社 天津古籍出版社",
 			"translator": "琳中展羽",
 			"publicRating": 7.2,
-			"ratingCount": 2393,
+			"ratingCount": 2394,
 			"publishTime": "2020-01-01 00:00:00"
 		},
 		{
@@ -3641,7 +3657,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1829,
+			"ratingCount": 1830,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3839,7 +3855,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9473,
+			"ratingCount": 9478,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -4410,7 +4426,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1140,
+			"ratingCount": 1142,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -4496,7 +4512,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11594,
+			"ratingCount": 11606,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -4518,7 +4534,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3289,
+			"ratingCount": 3290,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -4620,7 +4636,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4763,
+			"ratingCount": 4766,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -4689,7 +4705,7 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8.4,
+			"publicRating": 8.2,
 			"ratingCount": 25,
 			"publishTime": "2025-08-01 00:00:00"
 		},
@@ -5004,7 +5020,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/85/yuewen_912825/t6_yuewen_9128251776069077.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1782406048,
+			"readUpdateTime": 1782490452,
 			"updateTime": 1776069078,
 			"progress": 45,
 			"noteCount": 136,
@@ -5016,7 +5032,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15312,
+			"ratingCount": 15313,
 			"publishTime": "2017-04-01 00:00:00"
 		},
 		{
@@ -5183,18 +5199,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 668524,
-		"readDays": 263,
+		"totalReadTime": 668787,
+		"readDays": 264,
 		"readBooks": 129,
 		"finishedBooks": 19,
-		"noteCount": 6026,
+		"noteCount": 6028,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 47,
-				"time": 224601
+				"time": 224635
 			},
 			{
 				"title": "心理",
@@ -5204,7 +5220,7 @@
 			{
 				"title": "哲学宗教",
 				"count": 19,
-				"time": 83181
+				"time": 83224
 			},
 			{
 				"title": "社会小说",
@@ -5214,7 +5230,7 @@
 			{
 				"title": "教育学习",
 				"count": 4,
-				"time": 55379
+				"time": 55382
 			},
 			{
 				"title": "个人成长",
@@ -6523,18 +6539,22 @@
 			{
 				"date": "2026-06-25",
 				"seconds": 133
+			},
+			{
+				"date": "2026-06-26",
+				"seconds": 263
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 292,
-		"secretCount": 23,
+		"totalBooks": 293,
+		"secretCount": 24,
 		"favBook": {
 			"title": "西西弗神话",
 			"author": "[法]阿尔贝·加缪",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-26T11:15:48.426Z",
+	"generatedAt": "2026-06-27T10:24:57.749Z",
 	"isMock": false
 }
