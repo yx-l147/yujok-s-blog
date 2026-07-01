@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "24987083",
+			"title": "爱欲之死",
+			"author": "韩炳哲",
+			"cover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1782885137,
+			"updateTime": 1724329124,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "30153134",
 			"title": "第三帝国三部曲：第三帝国的到来（理想国译丛038）",
 			"author": "理查德·J.埃文斯",
@@ -104,7 +120,7 @@
 			"category": "教育学习-外语",
 			"finishReading": 1,
 			"readUpdateTime": 1782404878,
-			"updateTime": 1780387090,
+			"updateTime": 1782898797,
 			"progress": 100,
 			"noteCount": 52,
 			"reviewCount": 1,
@@ -115,7 +131,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1426,
+			"ratingCount": 1428,
 			"publishTime": "2026-06-02 00:00:00"
 		},
 		{
@@ -175,7 +191,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 42438,
+			"ratingCount": 42462,
 			"publishTime": "2022-05-01 00:00:00"
 		},
 		{
@@ -523,7 +539,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.2,
-			"ratingCount": 2999,
+			"ratingCount": 3004,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -615,7 +631,7 @@
 			"publisher": "浙江人民出版社",
 			"translator": "魏薇,龙志勇",
 			"publicRating": 7.1,
-			"ratingCount": 12097,
+			"ratingCount": 12101,
 			"publishTime": "2014-11-01 00:00:00"
 		},
 		{
@@ -685,7 +701,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 1990,
+			"ratingCount": 1993,
 			"publishTime": "2024-12-26 00:00:00"
 		},
 		{
@@ -743,7 +759,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/523/30784523/t6_30784523.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1776235943,
+			"readUpdateTime": 1782873001,
 			"updateTime": 1760174735,
 			"progress": 0,
 			"noteCount": 0,
@@ -1087,7 +1103,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80385,
+			"ratingCount": 80396,
 			"publishTime": "2011-04-01 00:00:00"
 		},
 		{
@@ -1125,7 +1141,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4658,
+			"ratingCount": 4660,
 			"publishTime": "2024-04-01 00:00:00"
 		},
 		{
@@ -1191,6 +1207,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1780650750,
 			"updateTime": 1760178346,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300061809",
+			"title": "动机与人格（马斯洛心理学经典译丛）",
+			"author": "[美]亚伯拉罕·H.马斯洛",
+			"cover": "https://cdn.weread.qq.com/weread/cover/42/cpplatform_m5n56dxhatrxyjh43kmbyd/t6_cpplatform_m5n56dxhatrxyjh43kmbyd1686647928.jpg",
+			"category": "心理-心理学研究",
+			"finishReading": 0,
+			"readUpdateTime": 1782885775,
+			"updateTime": 1760168780,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1312,7 +1344,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.1,
+			"publicRating": 8.3,
 			"ratingCount": 25,
 			"publishTime": "2026-01-21 00:00:00"
 		},
@@ -1523,7 +1555,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 487,
+			"ratingCount": 488,
 			"publishTime": "2025-04-01 00:00:00"
 		},
 		{
@@ -1545,7 +1577,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23169,
+			"ratingCount": 23171,
 			"publishTime": "2015-05-01 00:00:00"
 		},
 		{
@@ -1647,7 +1679,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4298,
+			"ratingCount": 4299,
 			"publishTime": "2021-06-01 00:00:00"
 		},
 		{
@@ -1803,8 +1835,24 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 76253,
+			"ratingCount": 76269,
 			"publishTime": "2017-01-01 00:00:00"
+		},
+		{
+			"bookId": "25731052",
+			"title": "他者的消失",
+			"author": "韩炳哲",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/52/25731052/t6_25731052.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1782885150,
+			"updateTime": 1724163779,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "3300151174",
@@ -1921,7 +1969,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7227,
+			"ratingCount": 7230,
 			"publishTime": "2009-06-01 00:00:00"
 		},
 		{
@@ -1985,6 +2033,22 @@
 			"noteCount": 4,
 			"reviewCount": 0,
 			"bookmarkCount": 2,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "30654038",
+			"title": "认知行为疗法入门",
+			"author": "郭召良",
+			"cover": "https://cdn.weread.qq.com/weread/cover/97/YueWen_30654038/t6_YueWen_30654038.jpg",
+			"category": "心理-认知与行为",
+			"finishReading": 0,
+			"readUpdateTime": 1782872866,
+			"updateTime": 1778831614,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
 			"readTime": 0,
 			"tags": []
 		},
@@ -2249,7 +2313,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1425,
+			"ratingCount": 1427,
 			"publishTime": "2025-01-09 00:00:00"
 		},
 		{
@@ -2271,7 +2335,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 9969,
+			"ratingCount": 9968,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -2453,6 +2517,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "25731054",
+			"title": "倦怠社会",
+			"author": "韩炳哲",
+			"cover": "https://cdn.weread.qq.com/weread/cover/61/YueWen_25731054/t6_YueWen_25731054.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1782885123,
+			"updateTime": 1708525653,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300062293",
 			"title": "我们（反乌托邦三部曲）",
 			"author": "叶甫盖尼•扎米亚京",
@@ -2535,7 +2615,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1392,
+			"ratingCount": 1394,
 			"publishTime": "2025-06-10 00:00:00"
 		},
 		{
@@ -2573,7 +2653,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6811,
+			"ratingCount": 6813,
 			"publishTime": "2023-01-30 00:00:00"
 		},
 		{
@@ -2595,7 +2675,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6573,
+			"ratingCount": 6577,
 			"publishTime": "2013-07-01 00:00:00"
 		},
 		{
@@ -2729,7 +2809,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.4,
-			"ratingCount": 658,
+			"ratingCount": 660,
 			"publishTime": "2025-05-01 00:00:00"
 		},
 		{
@@ -2739,19 +2819,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1782789974,
+			"readUpdateTime": 1782818529,
 			"updateTime": 1765788388,
 			"progress": 43,
 			"noteCount": 124,
 			"reviewCount": 9,
-			"bookmarkCount": 10,
-			"readTime": 24545,
+			"bookmarkCount": 11,
+			"readTime": 24551,
 			"tags": [],
 			"intro": "存在主义治疗并非一个独立的治疗流派，而是每一个心理治疗师在其临床工作和个人生活中都可能会采用到的一种精神取向，或者说是生活哲学。存在主义治疗所基于的假设是：我们是自由的，并且要为自己的选择及行动负责任。 长期以来，存在主义治疗被广泛地应用在世界各地的临床实践工作中，但它缺乏一致性的结构、对其原则的分析以及对其有效性的评估。欧文•亚隆教授自1970年以来就已经在团体治疗的理论和实践中实施了存在主义的原则，并在大量的理论研究和临床实践中逐渐为存在主义心理治疗构建出一个较为系统的框架。 在本书中，亚隆教授从临床经验、实证性研究、哲学文献以及其他大量资料出发，围绕着四个“生命的终极关怀”——死亡、自由、存在的孤独和无意义——逐一进行深入探讨，阐述每一个存在性关怀的意义，并论述治疗师应该如何通过对它们的理解来进行有效的临床工作。心理治疗的根本问题与人类存在的核心问题在这里相遇，不仅为那些存在主义取向的心理治疗师提供了一部经典的教科书，同时也为所有流派的治疗师以及所有思考过人生意义的人提供了一个对生命和存在进行反思的空间。",
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2600,
+			"ratingCount": 2604,
 			"publishTime": "2015-06-01 00:00:00"
 		},
 		{
@@ -2869,7 +2949,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 167504,
+			"ratingCount": 167543,
 			"publishTime": "2017-05-01 00:00:00"
 		},
 		{
@@ -2927,19 +3007,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_omudsapjxhswl1qc65hyyg/t6_cpplatform_omudsapjxhswl1qc65hyyg1690356229.jpg",
 			"category": "心理-社会心理学",
 			"finishReading": 1,
-			"readUpdateTime": 1776404042,
+			"readUpdateTime": 1782819176,
 			"updateTime": 1724163779,
 			"progress": 99,
 			"noteCount": 401,
 			"reviewCount": 1,
 			"bookmarkCount": 9,
-			"readTime": 39900,
+			"readTime": 40002,
 			"tags": [],
 			"intro": "《逃避自由》是美国社会心理学家和哲学家、法兰克福学派重要成员艾里希·弗洛姆的著名作品，书中探讨了极权主义的社会心理根源，被誉为精神分析运用在社会学的不朽名著。\r\n\r\n弗洛姆认为，要战胜极权主义势力，必须首先弄清楚极权主义者竭力逃避自由的原因。他在书中探索了历史进程中“人性”和“自由”概念不定变化的关系，深入地解释了形成现代社会的力量，透彻地分析极权主义机制滋生的原因，热烈地谈论自由的价值、社会的塑造、民主政治的真义，以及个体发自内心的爱。他努力教导人如何自由而不致孤独、自爱而不自私、理智判断而不找合理化借口、拥有信仰而不迷信于神学。",
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2784,
+			"ratingCount": 2785,
 			"publishTime": "2018-11-01 00:00:00"
 		},
 		{
@@ -2977,7 +3057,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1172,
+			"ratingCount": 1174,
 			"publishTime": "2025-07-01 00:00:00"
 		},
 		{
@@ -3085,7 +3165,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 30295,
+			"ratingCount": 30317,
 			"publishTime": "2013-08-01 00:00:00"
 		},
 		{
@@ -3171,7 +3251,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 16950,
+			"ratingCount": 16951,
 			"publishTime": "2013-10-01 00:00:00"
 		},
 		{
@@ -3273,7 +3353,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2280,
+			"ratingCount": 2281,
 			"publishTime": "2025-06-19 00:00:00"
 		},
 		{
@@ -3327,8 +3407,24 @@
 			"publisher": "天津人民出版社",
 			"translator": "张卜天",
 			"publicRating": 8.7,
-			"ratingCount": 240,
+			"ratingCount": 241,
 			"publishTime": "2021-01-01 00:00:00"
+		},
+		{
+			"bookId": "26923037",
+			"title": "后现代论（第2版）",
+			"author": "[法]高宣扬",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/37/26923037/t6_26923037.jpg",
+			"category": "哲学宗教-哲学著作",
+			"finishReading": 0,
+			"readUpdateTime": 1782885873,
+			"updateTime": 1760174694,
+			"progress": 0,
+			"noteCount": 1,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "3300060686",
@@ -3369,10 +3465,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_vxc2ntfnmv3ioqu19gsy6f/t6_cpplatform_vxc2ntfnmv3ioqu19gsy6f1755484808.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1782039124,
+			"readUpdateTime": 1782900389,
 			"updateTime": 1755485762,
 			"progress": 17,
-			"noteCount": 13,
+			"noteCount": 17,
 			"reviewCount": 0,
 			"bookmarkCount": 5,
 			"readTime": 0,
@@ -3403,7 +3499,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6192,
+			"ratingCount": 6193,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3635,7 +3731,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1426,
+			"ratingCount": 1427,
 			"publishTime": "2014-04-01 00:00:00"
 		},
 		{
@@ -3657,7 +3753,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1833,
+			"ratingCount": 1835,
 			"publishTime": "2022-08-01 00:00:00"
 		},
 		{
@@ -3855,7 +3951,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9484,
+			"ratingCount": 9490,
 			"publishTime": "2018-12-01 00:00:00"
 		},
 		{
@@ -4052,7 +4148,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 426,
+			"ratingCount": 428,
 			"publishTime": "2025-09-11 00:00:00"
 		},
 		{
@@ -4088,6 +4184,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "34627725",
+			"title": "第二座山",
+			"author": "戴维·布鲁克斯",
+			"cover": "https://cdn.weread.qq.com/weread/cover/0/YueWen_34627725/t6_YueWen_34627725.jpg",
+			"category": "心理-认知与行为",
+			"finishReading": 0,
+			"readUpdateTime": 1782885266,
+			"updateTime": 1708525921,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300168226",
 			"title": "荣格自传：回忆、梦与思考",
 			"author": "[瑞士]卡尔·古斯塔夫·荣格",
@@ -4110,7 +4222,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/850/41231850/t6_41231850.jpg",
 			"category": "科学技术-自然科学",
 			"finishReading": 0,
-			"readUpdateTime": 1781743815,
+			"readUpdateTime": 1782885447,
 			"updateTime": 1760169974,
 			"progress": 0,
 			"noteCount": 0,
@@ -4296,6 +4408,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "33642027",
+			"title": "福柯的生死爱欲",
+			"author": "詹姆斯·E.米勒",
+			"cover": "https://cdn.weread.qq.com/weread/cover/25/YueWen_33642027/t6_YueWen_33642027.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1782885368,
+			"updateTime": 1738837758,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300151162",
 			"title": "星期二，突然想说点爱、思念",
 			"author": "[法]阿尔贝·加缪",
@@ -4426,7 +4554,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.4,
-			"ratingCount": 1143,
+			"ratingCount": 1148,
 			"publishTime": "2026-04-10 00:00:00"
 		},
 		{
@@ -4512,7 +4640,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 7.7,
-			"ratingCount": 11658,
+			"ratingCount": 11674,
 			"publishTime": "2025-08-28 00:00:00"
 		},
 		{
@@ -4534,7 +4662,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3298,
+			"ratingCount": 3299,
 			"publishTime": "2021-02-01 00:00:00"
 		},
 		{
@@ -4636,7 +4764,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4768,
+			"ratingCount": 4769,
 			"publishTime": "2018-01-01 00:00:00"
 		},
 		{
@@ -4705,7 +4833,7 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8.4,
+			"publicRating": 8.7,
 			"ratingCount": 25,
 			"publishTime": "2025-08-01 00:00:00"
 		},
@@ -5032,7 +5160,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15317,
+			"ratingCount": 15319,
 			"publishTime": "2017-04-01 00:00:00"
 		},
 		{
@@ -5199,11 +5327,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 669235,
-		"readDays": 267,
-		"readBooks": 130,
+		"totalReadTime": 671973,
+		"readDays": 268,
+		"readBooks": 131,
 		"finishedBooks": 19,
-		"noteCount": 6037,
+		"noteCount": 6066,
 		"preferTimeWord": "偏好白天阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -5215,7 +5343,7 @@
 			{
 				"title": "心理",
 				"count": 13,
-				"time": 128189
+				"time": 128297
 			},
 			{
 				"title": "哲学宗教",
@@ -5247,7 +5375,7 @@
 			{
 				"name": "艾里希·弗洛姆",
 				"count": 3,
-				"readTime": "16小时13分钟"
+				"readTime": "16小时15分钟"
 			},
 			{
 				"name": "赫尔曼·黑塞",
@@ -5272,74 +5400,6 @@
 		],
 		"registTime": 1657349563,
 		"heatmap": [
-			{
-				"date": "2025-06-04",
-				"seconds": 22
-			},
-			{
-				"date": "2025-06-10",
-				"seconds": 318
-			},
-			{
-				"date": "2025-06-11",
-				"seconds": 239
-			},
-			{
-				"date": "2025-06-12",
-				"seconds": 1607
-			},
-			{
-				"date": "2025-06-13",
-				"seconds": 1190
-			},
-			{
-				"date": "2025-06-14",
-				"seconds": 234
-			},
-			{
-				"date": "2025-06-15",
-				"seconds": 2958
-			},
-			{
-				"date": "2025-06-16",
-				"seconds": 10
-			},
-			{
-				"date": "2025-06-17",
-				"seconds": 353
-			},
-			{
-				"date": "2025-06-18",
-				"seconds": 14
-			},
-			{
-				"date": "2025-06-20",
-				"seconds": 25
-			},
-			{
-				"date": "2025-06-21",
-				"seconds": 8
-			},
-			{
-				"date": "2025-06-23",
-				"seconds": 628
-			},
-			{
-				"date": "2025-06-26",
-				"seconds": 3
-			},
-			{
-				"date": "2025-06-27",
-				"seconds": 39
-			},
-			{
-				"date": "2025-06-28",
-				"seconds": 22
-			},
-			{
-				"date": "2025-06-29",
-				"seconds": 2036
-			},
 			{
 				"date": "2025-06-30",
 				"seconds": 2678
@@ -6554,19 +6614,23 @@
 			},
 			{
 				"date": "2026-06-29",
-				"seconds": 120
+				"seconds": 228
+			},
+			{
+				"date": "2026-06-30",
+				"seconds": 2630
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 293,
-		"secretCount": 24,
+		"totalBooks": 301,
+		"secretCount": 25,
 		"favBook": {
 			"title": "西西弗神话",
 			"author": "[法]阿尔贝·加缪",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-06-30T11:22:56.571Z",
+	"generatedAt": "2026-07-01T11:34:18.999Z",
 	"isMock": false
 }
