@@ -1,37 +1,47 @@
 ---
-import type { BookItem, BookNote } from "@/types/weread";
 import { shortCategory } from "@/data/shelf";
+import type { BookItem, BookNote } from "@/types/weread";
 
 interface Props {
-  book: BookItem;
-  notes: BookNote[];
-  allBooks: BookItem[];
+	book: BookItem;
+	notes: BookNote[];
+	allBooks: BookItem[];
 }
 
 const { book, notes, allBooks } = Astro.props;
 
 const statusLabel: Record<string, string> = {
-  reading: "在读",
-  finished: "读完",
-  wishlist: "想读",
+	reading: "在读",
+	finished: "读完",
+	wishlist: "想读",
 };
 
 const hours = book.readTime ? Math.round(book.readTime / 3600) : 0;
 const publishYear = book.publishTime
-  ? new Date(book.publishTime).getFullYear()
-  : null;
+	? new Date(book.publishTime).getFullYear()
+	: null;
 
 // 同分类相关书籍
 const topCat = (book.category || "").split("-")[0];
 const related = allBooks
-  .filter((b) => b.bookId !== book.bookId && (b.category || "").startsWith(topCat))
-  .sort((a, b) => (b.publicRating ?? 0) - (a.publicRating ?? 0))
-  .slice(0, 4);
+	.filter(
+		(b) => b.bookId !== book.bookId && (b.category || "").startsWith(topCat),
+	)
+	.sort((a, b) => (b.publicRating ?? 0) - (a.publicRating ?? 0))
+	.slice(0, 4);
 const wereadUrl = `https://weread.qq.com/web/search/books?keyword=${encodeURIComponent(
-  `${book.title} ${book.author}`.trim(),
+	`${book.title} ${book.author}`.trim(),
 )}`;
 const visibleNotes = notes.slice(0, 2);
 const hiddenNotes = notes.slice(2);
+const localReview = book.localReview;
+const localReviewLabel = localReview
+	? {
+			recommend: "推荐",
+			neutral: "中庸",
+			avoid: "不行",
+		}[localReview.verdict]
+	: null;
 ---
 
 <article class="detail">
@@ -167,6 +177,28 @@ const hiddenNotes = notes.slice(2);
             p.trim() ? <p>{p.trim()}</p> : null
           )}
         </div>
+      </section>
+    )}
+
+    {localReview && (
+      <section class="detail-section detail-section--local-review">
+        <div class="local-review-head">
+          <h2 class="section-title sk-han">我的书评</h2>
+          <div class="local-review-meta">
+            <span>{localReviewLabel}</span>
+            {localReview.draft && <span>草稿</span>}
+            {localReview.rating !== undefined && <span>{localReview.rating}/10</span>}
+          </div>
+        </div>
+        <p class="local-review-summary sk-han">{localReview.summary}</p>
+        {localReview.topics.length > 0 && (
+          <div class="local-review-topics">
+            {localReview.topics.map((topic) => <span>{topic}</span>)}
+          </div>
+        )}
+        <a class="local-review-link" href={`/book/reviews/${localReview.slug}/`}>
+          阅读完整书评
+        </a>
       </section>
     )}
 
@@ -444,6 +476,7 @@ const hiddenNotes = notes.slice(2);
     gap: .8rem;
   }
   .detail-section--intro,
+  .detail-section--local-review,
   .detail-section--notes,
   .detail-section--related {
     grid-column: 1 / -1;
@@ -511,6 +544,59 @@ const hiddenNotes = notes.slice(2);
     text-indent: 2em;
   }
   .detail-intro p:last-child { margin-bottom: 0; }
+
+  .detail-section--local-review {
+    margin-top: .4rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--sk-gold) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-gold) 18%, transparent);
+  }
+  .local-review-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .local-review-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+  }
+  .local-review-meta span,
+  .local-review-topics span {
+    padding: .16rem .55rem;
+    border-radius: 999px;
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
+    background: color-mix(in srgb, var(--sk-moon) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
+  }
+  .local-review-summary {
+    margin: .85rem 0 0;
+    max-width: 70ch;
+    font-size: .95rem;
+    line-height: 1.8;
+    color: color-mix(in srgb, var(--sk-moon) 86%, transparent);
+  }
+  .local-review-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-top: .8rem;
+  }
+  .local-review-link {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 1rem;
+    color: color-mix(in srgb, var(--sk-gold) 90%, var(--sk-moon));
+    text-decoration: none;
+    font-size: .84rem;
+    font-weight: 600;
+  }
+  .local-review-link:hover {
+    color: var(--sk-gold);
+  }
 
   @media (min-width: 960px) {
     .detail-intro {
@@ -636,6 +722,7 @@ const hiddenNotes = notes.slice(2);
     .detail-header,
     .detail-stats,
     .detail-section--intro,
+    .detail-section--local-review,
     .detail-section--notes,
     .detail-section--related {
       grid-column: 1;

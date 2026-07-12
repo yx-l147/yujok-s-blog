@@ -13,30 +13,22 @@ interface Props {
 const className = Astro.props.class;
 const cfg = siteConfig.rightSidebar;
 
-const now = new Date();
-const calendarTitle = `${now.getFullYear()}年 ${now.getMonth() + 1}月`;
-
 let postDates: string[] = [];
 if (cfg.calendar.enable) {
 	const posts = await getSortedPostsList();
-	postDates = posts.map((p) => {
-		const d = new Date(p.data.published);
-		const m = (d.getMonth() + 1).toString().padStart(2, "0");
-		const day = d.getDate().toString().padStart(2, "0");
-		return `${d.getFullYear()}-${m}-${day}`;
-	});
+	postDates = posts.map((p) => p.data.published.toISOString().substring(0, 10));
 }
 ---
 
 <aside id="right-sidebar" class:list={[className, "w-full"]}>
-    <div id="right-sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky">
+    <div id="right-sidebar-sticky" class="flex flex-col w-full gap-4 top-22 sticky">
         {cfg.siteStats.enable && (
             <WidgetLayout name="站点统计" id="site-stats" class="onload-animation" style="animation-delay: 100ms">
                 <SiteStats />
             </WidgetLayout>
         )}
         {cfg.calendar.enable && (
-            <WidgetLayout name={calendarTitle} id="calendar-widget" class="onload-animation" style="animation-delay: 150ms">
+            <WidgetLayout name="日历" id="calendar-widget" class="onload-animation" style="animation-delay: 150ms">
                 <Calendar client:only="svelte" postDates={postDates} />
             </WidgetLayout>
         )}

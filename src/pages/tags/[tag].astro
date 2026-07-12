@@ -6,7 +6,7 @@ import { getSortedPostsList, getTagList } from "@utils/content-utils";
 export async function getStaticPaths() {
 	const tags = await getTagList();
 	return tags.map((tag) => ({
-		params: { tag: encodeURIComponent(tag.name) },
+		params: { tag: tag.name },
 		props: { tagName: tag.name },
 	}));
 }

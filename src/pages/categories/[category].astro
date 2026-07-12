@@ -7,8 +7,12 @@ import { getCategoryList, getSortedPostsList } from "@utils/content-utils";
 
 export async function getStaticPaths() {
 	const categories = await getCategoryList();
+	const uncategorized = i18n(I18nKey.uncategorized);
 	return categories.map((category) => ({
-		params: { category: encodeURIComponent(category.name) },
+		params: {
+			category:
+				category.name === uncategorized ? "uncategorized" : category.name,
+		},
 		props: { categoryName: category.name },
 	}));
 }

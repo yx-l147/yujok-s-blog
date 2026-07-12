@@ -13,23 +13,23 @@ interface Props {
 const { tabs, activeTab } = Astro.props;
 ---
 
-<div class="bangumi-tabs mb-5">
-  <nav class="flex flex-wrap gap-2" aria-label="Tabs">
+<div class="liquid-tabbar mb-4" data-bangumi-tabs>
+  <nav class="liquid-tabs" aria-label="Tabs">
     {tabs.map((tab) => (
       <button
         class:list={[
-          "bangumi-tab whitespace-nowrap rounded-full px-4 py-2 font-bold text-sm transition-all duration-200",
+          "liquid-tab",
           {
-            "tab-active": tab.id === activeTab,
-            "tab-idle": tab.id !== activeTab
+            "liquid-tab-active": tab.id === activeTab
           }
         ]}
         data-tab={tab.id}
+        aria-selected={tab.id === activeTab}
         type="button"
       >
-        {tab.name}
+        <span>{tab.name}</span>
         {tab.count !== undefined && (
-          <span class="ml-2 rounded-full px-2 py-0.5 text-xs tab-count">
+          <span class="liquid-tab-count">
             {tab.count}
           </span>
         )}
@@ -38,62 +38,32 @@ const { tabs, activeTab } = Astro.props;
   </nav>
 </div>
 
-<style>
-  .bangumi-tabs {
-    border-bottom: 1px solid var(--line-divider);
-    padding-bottom: .9rem;
-  }
-  .bangumi-tab {
-    border: 1px solid transparent;
-  }
-  .tab-active {
-    color: white;
-    background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--accent-cyan) 46%, var(--primary)));
-    box-shadow: 0 10px 24px color-mix(in srgb, var(--primary) 22%, transparent);
-  }
-  .tab-idle {
-    color: var(--text-muted);
-    background: color-mix(in srgb, var(--card-bg-solid) 58%, transparent);
-    border-color: var(--glass-border);
-  }
-  .tab-idle:hover {
-    color: var(--primary);
-    background: var(--btn-plain-bg-hover);
-  }
-  .tab-count {
-    background: color-mix(in srgb, white 28%, transparent);
-  }
-</style>
-
 <script>
   function initTabNavigation() {
-    const tabButtons = document.querySelectorAll('[data-tab]');
-    const sections = document.querySelectorAll('[data-section]');
+    const tabbar = document.querySelector('[data-bangumi-tabs]') as HTMLElement | null;
+    if (!tabbar || tabbar.dataset.bound === 'true') return;
+    tabbar.dataset.bound = 'true';
 
-    tabButtons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        const currentButton = event.currentTarget as HTMLButtonElement;
-        const targetTab = currentButton.dataset.tab;
+    const tabButtons = Array.from(tabbar.querySelectorAll('[data-tab]'));
+    const sections = Array.from(document.querySelectorAll('[data-bangumi-section]'));
 
-        // Update active tab
-        tabButtons.forEach(btn => {
-          btn.classList.remove('tab-active');
-          btn.classList.add('tab-idle');
-        });
+    tabbar.addEventListener('click', (event) => {
+      const currentButton = (event.target as Element).closest('[data-tab]') as HTMLButtonElement | null;
+      if (!currentButton) return;
 
-        currentButton.classList.remove('tab-idle');
-        currentButton.classList.add('tab-active');
+      const targetTab = currentButton.dataset.tab;
+      if (!targetTab || currentButton.classList.contains('liquid-tab-active')) return;
 
-        // Show/hide sections
-        sections.forEach(section => {
-          const htmlSection = section as HTMLElement;
-          if (htmlSection.dataset.section === targetTab) {
-            htmlSection.classList.remove('hidden');
-          } else {
-            htmlSection.classList.add('hidden');
-          }
-        });
-      });
+      for (const btn of tabButtons) {
+        const isActive = btn === currentButton;
+        btn.classList.toggle('liquid-tab-active', isActive);
+        btn.setAttribute('aria-selected', String(isActive));
+      }
+
+      for (const section of sections) {
+        const htmlSection = section as HTMLElement;
+        htmlSection.classList.toggle('hidden', htmlSection.dataset.bangumiSection !== targetTab);
+      }
     });
   }
 

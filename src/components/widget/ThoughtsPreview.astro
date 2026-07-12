@@ -1,0 +1,121 @@
+---
+import { getCollection } from "astro:content";
+import { url } from "../../utils/url-utils";
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+
+const allThoughts = await getCollection("thoughts", ({ data }) => {
+	return import.meta.env.PROD ? data.draft !== true : true;
+});
+
+const thoughts = allThoughts
+	.sort(
+		(a, b) =>
+			new Date(b.data.published).getTime() -
+			new Date(a.data.published).getTime(),
+	)
+	.slice(0, 4);
+
+function formatDate(d: Date) {
+	const month = d.getMonth() + 1;
+	const day = d.getDate();
+	return `${month}/${day}`;
+}
+
+async function getExcerpt(thought: any) {
+	const { remarkPluginFrontmatter } = await import("astro:content").then((m) =>
+		m.render(thought),
+	);
+	const excerpt = String(remarkPluginFrontmatter.excerpt || "");
+	return excerpt.length > 60
+		? excerpt.slice(0, 60) + "…"
+		: excerpt || thought.data.title;
+}
+---
+
+{thoughts.length > 0 && (
+    <div class:list={["thoughts-preview", className]} style={style}>
+        <ul class="thoughts-preview__list">
+            {await Promise.all(thoughts.map(async (thought) => {
+                const excerpt = await getExcerpt(thought);
+                return (
+                    <li class="thoughts-preview__item">
+                        <a href={url(`/thoughts/${thought.id}/`)} class="thoughts-preview__link">
+                            <span class="thoughts-preview__date">{formatDate(thought.data.published)}</span>
+                            <span class="thoughts-preview__text">{excerpt}</span>
+                        </a>
+                    </li>
+                );
+            }))}
+        </ul>
+        <a href={url("/thoughts/")} class="thoughts-preview__more">
+            查看更多 →
+        </a>
+    </div>
+)}
+
+<style>
+    .thoughts-preview__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+    .thoughts-preview__item {
+        border-radius: 0.5rem;
+        transition: background-color 200ms ease;
+    }
+    .thoughts-preview__item:hover {
+        background: var(--btn-plain-bg-hover);
+    }
+    .thoughts-preview__link {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+        padding: 0.4rem 0.25rem;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+    .thoughts-preview__date {
+        flex-shrink: 0;
+        font-size: 0.7rem;
+        font-variant-numeric: tabular-nums;
+        color: var(--text-muted);
+        opacity: 0.6;
+        min-width: 2.2rem;
+    }
+    .thoughts-preview__text {
+        font-size: 0.82rem;
+        color: var(--text-strong);
+        opacity: 0.8;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+        min-width: 0;
+    }
+    .thoughts-preview__item:hover .thoughts-preview__text {
+        color: var(--primary);
+        opacity: 1;
+    }
+    .thoughts-preview__more {
+        display: block;
+        margin-top: 0.6rem;
+        padding: 0.35rem 0.25rem;
+        font-size: 0.78rem;
+        font-weight: 500;
+        color: var(--primary);
+        text-decoration: none;
+        text-align: center;
+        border-radius: 0.5rem;
+        transition: background-color 200ms ease;
+        opacity: 0.8;
+    }
+    .thoughts-preview__more:hover {
+        background: var(--btn-plain-bg-hover);
+        opacity: 1;
+    }
+</style>

@@ -1,44 +1,46 @@
 ---
-import type { BookItem } from "@/types/weread";
 import { topCategories } from "@/data/shelf";
+import type { BookItem } from "@/types/weread";
 import BookCard from "./BookCard.astro";
 
 interface Props {
-  books: BookItem[];
+	books: BookItem[];
 }
 const { books } = Astro.props;
 
 // ── 状态统计 ──
 const counts: Record<string, number> = { all: books.length };
 for (const b of books) counts[b.status] = (counts[b.status] ?? 0) + 1;
+const reviewedCount = books.filter((b) => b.localReview).length;
 
 // ── 精选：在读 + 读完 + 高评分想读，按价值排序 ──
 function score(b: BookItem) {
-  let s = 0;
-  if (b.status === "reading") s += 5000 + b.progress * 10;
-  if (b.status === "finished") s += 4000;
-  s += (b.noteCount ?? 0) + (b.bookmarkCount ?? 0);
-  s += (b.publicRating ?? 0) * 20;
-  s += (b.readUpdateTime ?? 0) / 1e9;
-  return s;
+	let s = 0;
+	if (b.status === "reading") s += 5000 + b.progress * 10;
+	if (b.status === "finished") s += 4000;
+	s += (b.noteCount ?? 0) + (b.bookmarkCount ?? 0);
+	s += (b.publicRating ?? 0) * 20;
+	s += (b.readUpdateTime ?? 0) / 1e9;
+	return s;
 }
 const featured = [...books]
-  .filter((b) => b.status !== "wishlist" || (b.publicRating ?? 0) >= 8.5)
-  .sort((a, b) => score(b) - score(a))
-  .slice(0, 24);
+	.filter((b) => b.status !== "wishlist" || (b.publicRating ?? 0) >= 8.5)
+	.sort((a, b) => score(b) - score(a))
+	.slice(0, 24);
 
 // ── 全部书籍按最近阅读排序 ──
 const allSorted = [...books].sort(
-  (a, b) => (b.readUpdateTime ?? 0) - (a.readUpdateTime ?? 0),
+	(a, b) => (b.readUpdateTime ?? 0) - (a.readUpdateTime ?? 0),
 );
 
 // ── Tab 定义 ──
 const tabs = [
-  { id: "featured", label: "精选", count: featured.length },
-  { id: "reading", label: "在读", count: counts.reading ?? 0 },
-  { id: "finished", label: "读完", count: counts.finished ?? 0 },
-  { id: "wishlist", label: "想读", count: counts.wishlist ?? 0 },
-  { id: "all", label: "全部", count: counts.all ?? 0 },
+	{ id: "featured", label: "精选", count: featured.length },
+	{ id: "reviewed", label: "有书评", count: reviewedCount },
+	{ id: "reading", label: "在读", count: counts.reading ?? 0 },
+	{ id: "finished", label: "读完", count: counts.finished ?? 0 },
+	{ id: "wishlist", label: "想读", count: counts.wishlist ?? 0 },
+	{ id: "all", label: "全部", count: counts.all ?? 0 },
 ] as const;
 
 // ── 分类标签（顶级分类，≥5 本） ──
@@ -112,6 +114,7 @@ const cats = topCategories(books, 5);
         class="shelf-cell"
         data-status={book.status}
         data-cat={(book.category || "未分类").split("-")[0]}
+        data-reviewed={book.localReview ? "true" : "false"}
       >
         <BookCard book={book} delay={Math.min((i % 8) + 1, 8)} />
       </div>
@@ -229,16 +232,16 @@ const cats = topCategories(books, 5);
   /* ── 网格 ── */
   .shelf-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
     gap: 1.6rem 1.3rem;
   }
   @media (min-width: 768px) {
-    .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
+    .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
   }
   @media (max-width: 480px) {
     .shelf-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.1rem .8rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem 1rem;
     }
   }
 
@@ -318,7 +321,10 @@ const cats = topCategories(books, 5);
         let visible = 0;
         for (const cell of cells) {
           const statusMatch =
-            activeStatus === "all" || cell.dataset.status === activeStatus;
+            activeStatus === "all" ||
+            (activeStatus === "reviewed"
+              ? cell.dataset.reviewed === "true"
+              : cell.dataset.status === activeStatus);
           const catMatch =
             activeCat === "all" || cell.dataset.cat === activeCat;
           const show = statusMatch && catMatch;

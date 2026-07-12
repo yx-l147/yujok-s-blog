@@ -5,13 +5,16 @@ import BookShelf from "@/components/book/BookShelf.astro";
 import BookStatsBoard from "@/components/book/BookStatsBoard.astro";
 import NoteWall from "@/components/book/NoteWall.astro";
 import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
-import { shelfData } from "@/data/shelf";
+import { getEnrichedShelfData } from "@/data/shelf";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
-const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString("zh-CN");
+const shelfData = await getEnrichedShelfData();
+const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString(
+	"zh-CN",
+);
 ---
 
-<MainGridLayout title="书架 | yujok" description="在文字的海里打捞自己 — yujok 的微信读书书架">
+<MainGridLayout title="书架 | yujok" description="在文字的海里打捞自己 — yujok 的微信读书书架" fullWidth disableBanner>
   <LiquidGlassDefs />
 
   <div class="book-page">

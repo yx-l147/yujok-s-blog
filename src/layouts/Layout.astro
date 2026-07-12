@@ -12,6 +12,7 @@ import "../styles/right-sidebar.css";
 import "../styles/shinkai.css";
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
+import StarBackground from "@components/StarBackground.astro";
 import { profileConfig, siteConfig } from "@/config";
 import {
 	AUTO_MODE,
@@ -38,6 +39,7 @@ interface Props {
 	ogImage?: string;
 	ogImageAlt?: string;
 	twitterCard?: "summary" | "summary_large_image";
+	disableBanner?: boolean;
 }
 
 let {
@@ -50,6 +52,7 @@ let {
 	ogImage,
 	ogImageAlt,
 	twitterCard = "summary_large_image",
+	disableBanner = false,
 } = Astro.props;
 
 // apply a class to the body element to decide the height of the banner, only used for initial page load
@@ -67,7 +70,7 @@ if (!banner || typeof banner !== "string" || banner.trim() === "") {
 // TODO don't use post cover as banner for now
 banner = siteConfig.banner.src;
 
-const enableBanner = siteConfig.banner.enable;
+const enableBanner = siteConfig.banner.enable && !disableBanner;
 
 let pageTitle: string;
 if (title) {
@@ -200,6 +203,13 @@ const bannerOffset =
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
 	>
+		<StarBackground />
+		<script is:inline>
+			document.body.style.setProperty("--ambient-x", "18%");
+			document.body.style.setProperty("--ambient-y", "14%");
+			document.body.style.setProperty("--ambient-shift", "0%");
+			document.documentElement.style.setProperty("--scroll-hue-shift", "0");
+		</script>
 		<div id="reading-progress" aria-hidden="true"></div>
 		<ConfigCarrier></ConfigCarrier>
 		<slot />
@@ -565,9 +575,41 @@ function updateReadingProgress() {
 	progress.style.transform = `scaleX(${ratio})`;
 }
 
+let ambientFrame = 0;
+function updateAmbientBackground() {
+	if (ambientFrame) return;
+	ambientFrame = window.requestAnimationFrame(() => {
+		ambientFrame = 0;
+	const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	const phase = scrollTop / Math.max(window.innerHeight, 1);
+	const wave = Math.sin(phase * 0.85);
+	const drift = Math.cos(phase * 0.55);
+	document.body.style.setProperty("--ambient-x", `${22 + wave * 8}%`);
+	document.body.style.setProperty("--ambient-y", `${18 + drift * 7}%`);
+	document.body.style.setProperty("--ambient-shift", `${wave * 8}%`);
+	document.documentElement.style.setProperty("--scroll-hue-shift", `${wave * 10}`);
+	});
+}
+
+function resetAmbientBackground() {
+	if (ambientFrame) {
+		window.cancelAnimationFrame(ambientFrame);
+		ambientFrame = 0;
+	}
+	document.body.style.setProperty("--ambient-x", "18%");
+	document.body.style.setProperty("--ambient-y", "14%");
+	document.body.style.setProperty("--ambient-shift", "0%");
+	document.documentElement.style.setProperty("--scroll-hue-shift", "0");
+}
+
 document.addEventListener("scroll", updateReadingProgress, { passive: true });
+document.addEventListener("scroll", updateAmbientBackground, { passive: true });
 window.addEventListener("resize", updateReadingProgress);
+window.addEventListener("resize", updateAmbientBackground);
+document.addEventListener("swup:visit:start", resetAmbientBackground);
+document.addEventListener("swup:page:view", updateAmbientBackground);
 updateReadingProgress();
+updateAmbientBackground();
 
 </script>
 

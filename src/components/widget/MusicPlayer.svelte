@@ -22,7 +22,9 @@ $: progressPct = duration ? Math.min(100, (position / duration) * 100) : 0;
 function formatTime(s: number) {
 	if (!Number.isFinite(s) || s < 0) return "0:00";
 	const m = Math.floor(s / 60);
-	const sec = Math.floor(s % 60).toString().padStart(2, "0");
+	const sec = Math.floor(s % 60)
+		.toString()
+		.padStart(2, "0");
 	return `${m}:${sec}`;
 }
 

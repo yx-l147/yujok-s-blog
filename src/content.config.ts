@@ -31,12 +31,59 @@ const specCollection = defineCollection({
 	schema: z.object({}),
 });
 
+const thoughtsCollection = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/thoughts" }),
+	schema: z.object({
+		title: z.string(),
+		published: z.date(),
+		draft: z.boolean().optional().default(false),
+		series: z.string().optional().default("偶得"),
+		tags: z.array(z.string()).optional().default([]),
+		pinned: z.boolean().optional().default(false),
+	}),
+});
+
+const bookReviewsCollection = defineCollection({
+	loader: glob({
+		pattern: "**/*.{md,mdx}",
+		base: "./src/content/book-reviews",
+	}),
+	schema: z.object({
+		title: z.string(),
+		bookId: z.string(),
+		published: z.date(),
+		updated: z.date().optional(),
+		draft: z.boolean().optional().default(false),
+		summary: z.string().optional().default(""),
+		verdict: z
+			.enum(["recommend", "neutral", "avoid"])
+			.optional()
+			.default("neutral"),
+		rating: z.number().min(0).max(10).optional(),
+		topics: z.array(z.string()).optional().default([]),
+		quotes: z
+			.array(
+				z.object({
+					text: z.string(),
+					chapter: z.string().optional().default(""),
+				}),
+			)
+			.optional()
+			.default([]),
+		relatedPosts: z.array(z.string()).optional().default([]),
+	}),
+});
+
 type Collections = {
 	posts: typeof postsCollection;
 	spec: typeof specCollection;
+	thoughts: typeof thoughtsCollection;
+	"book-reviews": typeof bookReviewsCollection;
 };
 
 export const collections: Collections = {
 	posts: postsCollection,
 	spec: specCollection,
+	thoughts: thoughtsCollection,
+	"book-reviews": bookReviewsCollection,
 };

@@ -24,7 +24,8 @@ const MOCK_BOOKS: BookItem[] = [
 		translator: "范晔",
 		publisher: "南海出版公司",
 		cover: COVER("百年孤独"),
-		intro: "多年以后，奥雷里亚诺·布恩迪亚上校将会回想起，父亲带他去见识冰块的那个遥远的下午。",
+		intro:
+			"多年以后，奥雷里亚诺·布恩迪亚上校将会回想起，父亲带他去见识冰块的那个遥远的下午。",
 		category: "外国文学-经典名著",
 		finishReading: 1,
 		progress: 100,

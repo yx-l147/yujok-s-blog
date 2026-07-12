@@ -1,8 +1,8 @@
 ---
 interface Props {
-  progress: number; // 0-100
-  size?: number;
-  title?: string;
+	progress: number; // 0-100
+	size?: number;
+	title?: string;
 }
 const { progress, size = 40, title } = Astro.props;
 const p = Math.max(0, Math.min(100, progress));
@@ -11,7 +11,10 @@ const p = Math.max(0, Math.min(100, progress));
 // 0%=新月（全黑），50%=半月，100%=满月
 const phase = p / 100;
 const ellipseRx = (1 - Math.abs(0.5 - phase) * 2) * (size / 2);
-const ellipseCx = phase < 0.5 ? size / 2 + (size / 4) * (1 - phase * 2) : size / 2 - (size / 4) * (phase * 2 - 1);
+const ellipseCx =
+	phase < 0.5
+		? size / 2 + (size / 4) * (1 - phase * 2)
+		: size / 2 - (size / 4) * (phase * 2 - 1);
 const isWaxing = phase < 0.5;
 ---
 <div class="inline-flex items-center gap-2" title={title ?? `阅读进度 ${p}%`}>

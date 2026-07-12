@@ -6,7 +6,7 @@ import { getSeriesList, getSortedPostsList } from "@utils/content-utils";
 export async function getStaticPaths() {
 	const seriesList = await getSeriesList();
 	return seriesList.map((series) => ({
-		params: { series: encodeURIComponent(series.name) },
+		params: { series: series.name },
 		props: { seriesName: series.name },
 	}));
 }

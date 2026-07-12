@@ -29,11 +29,9 @@
         opacity   320ms ease-out,
         filter    420ms ease-out;
     transform-origin: top right;
-    will-change: transform, opacity, filter;
 }
 
 #right-sidebar-sticky {
-    top: 5.5rem;
     gap: 1rem;
 }
 
@@ -375,58 +373,61 @@
 }
 .rs-cal-cell-pad { visibility: hidden; }
 
-/* post day — colored disc with a soft breathing glow */
+/* post day — small marker, so it does not compete with today */
 .rs-cal-cell-post {
-    background: var(--primary);
-    color: #fff;
     font-weight: 600;
-    box-shadow: 0 2px 8px -3px color-mix(in srgb, var(--primary) 55%, transparent);
-    animation:
-        rs-cell-in 420ms var(--rs-spring) backwards,
-        rs-post-pulse 3s ease-in-out infinite;
-    animation-delay: calc(var(--i, 0) * 9ms), 0s;
+    color: var(--text-strong);
 }
-.rs-cal-cell-post:hover {
+.rs-cal-cell-post::before {
+    content: "";
+    position: absolute;
+    bottom: 0.18rem;
+    left: 50%;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 999px;
     background: var(--primary);
-    color: #fff;
-    transform: scale(1.22);
-    animation-play-state: running, paused;
-    box-shadow: 0 6px 16px -3px color-mix(in srgb, var(--primary) 75%, transparent);
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--primary) 55%, transparent);
 }
-@keyframes rs-post-pulse {
-    0%, 100% {
-        box-shadow:
-            0 2px 8px -3px color-mix(in srgb, var(--primary) 55%, transparent),
-            0 0 0 0   color-mix(in srgb, var(--primary) 0%, transparent);
-    }
-    50% {
-        box-shadow:
-            0 2px 10px -3px color-mix(in srgb, var(--primary) 70%, transparent),
-            0 0 0 5px color-mix(in srgb, var(--primary) 0%, transparent);
-    }
+.rs-cal-cell-post:not(.rs-cal-cell-today):hover {
+    color: var(--primary);
+}
+.rs-cal-cell-post:not(.rs-cal-cell-today):hover::before {
+    transform: translateX(-50%) scale(1.35);
 }
 
-/* today — animated ring */
+/* today — single filled disc */
 .rs-cal-cell-today {
-    color: var(--primary);
+    background: var(--primary);
+    color: #fff;
     font-weight: 700;
+    box-shadow:
+        0 6px 16px -5px color-mix(in srgb, var(--primary) 70%, transparent),
+        0 0 0 1px color-mix(in srgb, #fff 42%, transparent);
+}
+.rs-cal-cell-today:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: scale(1.2);
+}
+.rs-cal-cell-today.rs-cal-cell-post::before {
+    background: #fff;
+    opacity: 0.92;
+    box-shadow: none;
 }
 .rs-cal-cell-today::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -0.25rem;
     border-radius: inherit;
-    border: 1.5px solid color-mix(in srgb, var(--primary) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--primary) 55%, transparent);
     animation: rs-today-pulse 2.6s ease-in-out infinite;
     pointer-events: none;
 }
 @keyframes rs-today-pulse {
     0%, 100% { transform: scale(1);    opacity: 1; }
-    50%      { transform: scale(1.12); opacity: 0.4; }
-}
-.rs-cal-cell-today.rs-cal-cell-post {
-    color: #fff;
-    box-shadow: inset 0 0 0 1.5px #fff;
+    50%      { transform: scale(1.1); opacity: 0.35; }
 }
 
 /* ============================================================

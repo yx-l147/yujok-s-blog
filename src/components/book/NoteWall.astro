@@ -2,8 +2,8 @@
 import type { BookNote } from "@/types/weread";
 
 interface Props {
-  notes: BookNote[];
-  limit?: number;
+	notes: BookNote[];
+	limit?: number;
 }
 const { notes, limit = 6 } = Astro.props;
 
@@ -11,19 +11,19 @@ const { notes, limit = 6 } = Astro.props;
 const seen = new Set<string>();
 const items: BookNote[] = [];
 for (const n of notes) {
-  if (seen.has(n.bookId)) continue;
-  if (n.text.length < 8) continue;
-  seen.add(n.bookId);
-  items.push(n);
-  if (items.length >= limit) break;
+	if (seen.has(n.bookId)) continue;
+	if (n.text.length < 8) continue;
+	seen.add(n.bookId);
+	items.push(n);
+	if (items.length >= limit) break;
 }
 // 不够则放开去重补齐
 if (items.length < limit) {
-  for (const n of notes) {
-    if (items.includes(n) || n.text.length < 8) continue;
-    items.push(n);
-    if (items.length >= limit) break;
-  }
+	for (const n of notes) {
+		if (items.includes(n) || n.text.length < 8) continue;
+		items.push(n);
+		if (items.length >= limit) break;
+	}
 }
 ---
 

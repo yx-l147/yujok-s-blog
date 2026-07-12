@@ -25,18 +25,31 @@ const featureLinks = [
 		icon: "material-symbols:menu-book-outline-rounded",
 	},
 	{
+		name: "偶得",
+		kicker: "Notes",
+		description: "短句、碎片和临时亮起的想法",
+		url: "/thoughts/",
+		icon: "material-symbols:wysiwyg-rounded",
+	},
+];
+const githubUrl =
+	profileConfig.links.find((item) => item.name.toLowerCase() === "github")
+		?.url || "https://github.com/yx-l147";
+const moreLinks = [
+	{
 		name: "Bangumi",
-		kicker: "Archive",
-		description: "动画与游戏的私人口味索引",
 		url: "/bangumi/",
-		icon: "material-symbols:animated-images-outline-rounded",
+		external: false,
 	},
 	{
 		name: "课程表",
-		kicker: "Schedule",
-		description: "把混乱的一周折成清楚的格子",
 		url: "/schedule/",
-		icon: "material-symbols:calendar-month-outline-rounded",
+		external: false,
+	},
+	{
+		name: "GitHub",
+		url: githubUrl,
+		external: true,
 	},
 ];
 
@@ -71,6 +84,27 @@ const metrics = [
 						<Icon name="material-symbols:arrow-forward-rounded" class="home-feature-link__arrow" />
 					</a>
 				))}
+				<div class="home-more-module">
+					<div class="home-more-module__head">
+						<Icon name="material-symbols:view-list-rounded" class="home-feature-link__icon" />
+						<span>
+							<strong>更多</strong>
+							<em>Bangumi / GitHub / 课程表</em>
+						</span>
+					</div>
+					<div class="home-more-module__links" aria-label="更多入口">
+						{moreLinks.map((item) => (
+							<a
+								href={item.external ? item.url : url(item.url)}
+								target={item.external ? "_blank" : undefined}
+								rel={item.external ? "noopener" : undefined}
+							>
+								{item.name}
+								{item.external && <Icon name="fa6-solid:arrow-up-right-from-square" />}
+							</a>
+						))}
+					</div>
+				</div>
 			</div>
 		</div>
 

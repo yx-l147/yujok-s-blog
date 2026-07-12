@@ -7,17 +7,24 @@ let reduced = false;
 
 onMount(() => {
 	if (typeof window === "undefined") return;
-	reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+	reduced =
+		window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 	if (reduced) return;
 
-	let x = window.innerWidth / 2, y = window.innerHeight / 2;
-	let tx = x, ty = y;
+	let x = window.innerWidth / 2,
+		y = window.innerHeight / 2;
+	let tx = x,
+		ty = y;
 	let visible = false;
 	let hideTimer = 0;
 
 	const onMove = (e: PointerEvent) => {
-		tx = e.clientX; ty = e.clientY;
-		if (!visible) { host.style.opacity = "1"; visible = true; }
+		tx = e.clientX;
+		ty = e.clientY;
+		if (!visible) {
+			host.style.opacity = "1";
+			visible = true;
+		}
 		window.clearTimeout(hideTimer);
 		hideTimer = window.setTimeout(() => {
 			host.style.opacity = "0";

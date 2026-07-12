@@ -13,6 +13,25 @@ export type BookShelfStatus =
 	| "finished" // 已读完
 	| "wishlist"; // 想读 / 未开始（progress=0）
 
+export type BookReviewVerdict = "recommend" | "neutral" | "avoid";
+
+export interface LocalBookReview {
+	slug: string;
+	title: string;
+	published: Date;
+	updated?: Date;
+	draft?: boolean;
+	summary: string;
+	verdict: BookReviewVerdict;
+	rating?: number;
+	topics: string[];
+	quotes: Array<{
+		text: string;
+		chapter?: string;
+	}>;
+	relatedPosts: string[];
+}
+
 /** 单本书（来自 shelf.json，已含派生 status） */
 export interface BookItem {
 	/** 微信读书书籍 ID */
@@ -57,6 +76,8 @@ export interface BookItem {
 	updateTime?: number;
 	/** 派生：阅读状态 */
 	status: BookShelfStatus;
+	/** 本地维护的个人书评与策展信息 */
+	localReview?: LocalBookReview;
 }
 
 /** 单条笔记/划线 */

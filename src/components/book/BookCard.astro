@@ -2,15 +2,18 @@
 import type { BookItem } from "@/types/weread";
 
 interface Props {
-  book: BookItem;
-  delay?: number;
+	book: BookItem;
+	delay?: number;
 }
 const { book, delay = 0 } = Astro.props;
 
-const STATUS_META: Record<BookItem["status"], { label: string; color: string }> = {
-  reading: { label: "在读", color: "var(--sk-comet)" },
-  finished: { label: "读完", color: "var(--sk-river)" },
-  wishlist: { label: "想读", color: "var(--sk-sakura)" },
+const STATUS_META: Record<
+	BookItem["status"],
+	{ label: string; color: string }
+> = {
+	reading: { label: "在读", color: "var(--sk-comet)" },
+	finished: { label: "读完", color: "var(--sk-river)" },
+	wishlist: { label: "想读", color: "var(--sk-sakura)" },
 };
 const meta = STATUS_META[book.status];
 
@@ -18,6 +21,14 @@ const hours = book.readTime ? Math.round(book.readTime / 3600) : 0;
 const noteTotal = (book.noteCount ?? 0) + (book.bookmarkCount ?? 0);
 // 微信读书标签里挑一个最有代表性的
 const highlight = book.tags?.[0];
+const review = book.localReview;
+const verdictLabel = review
+	? {
+			recommend: "推荐",
+			neutral: "中庸",
+			avoid: "不行",
+		}[review.verdict]
+	: null;
 ---
 
 <a
@@ -42,11 +53,15 @@ const highlight = book.tags?.[0];
 
     <!-- 微信读书特殊标签（如"笔记最多"） -->
     {highlight && <span class="bk-tag">✦ {highlight}</span>}
+
+    {review && <span class="bk-review-badge">{verdictLabel}</span>}
+    {review?.draft && <span class="bk-draft-badge">草稿</span>}
   </div>
 
   <div class="bk-info">
     <h3 class="bk-title sk-han" title={book.title}>{book.title}</h3>
     <p class="bk-author">{book.author}</p>
+    {review?.summary && <p class="bk-review sk-han">{review.summary}</p>}
 
     <div class="bk-foot">
       {book.publicRating && book.publicRating > 0 ? (
@@ -70,6 +85,11 @@ const highlight = book.tags?.[0];
         {noteTotal > 0 && (
           <span class="bk-metric bk-metric-note" title={`${book.noteCount ?? 0} 笔记 · ${book.bookmarkCount ?? 0} 划线`}>
             {noteTotal}<i>记</i>
+          </span>
+        )}
+        {review && (
+          <span class="bk-metric bk-metric-review" title="本地书评">
+            评
           </span>
         )}
       </span>
@@ -159,6 +179,32 @@ const highlight = book.tags?.[0];
     text-shadow: 0 1px 3px rgba(0,0,0,.4);
   }
 
+  .bk-review-badge {
+    position: absolute;
+    top: .55rem;
+    right: .55rem;
+    padding: .12rem .5rem;
+    border-radius: 999px;
+    font-size: .68rem;
+    font-weight: 600;
+    color: var(--sk-night);
+    background: color-mix(in srgb, var(--sk-gold) 86%, #fff);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--sk-gold) 45%, transparent);
+  }
+
+  .bk-draft-badge {
+    position: absolute;
+    top: 2rem;
+    right: .55rem;
+    padding: .12rem .5rem;
+    border-radius: 999px;
+    font-size: .68rem;
+    font-weight: 600;
+    color: #fff;
+    background: color-mix(in srgb, var(--sk-comet) 76%, #000);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--sk-comet) 42%, transparent);
+  }
+
   .bk-progress {
     position: absolute;
     bottom: 0; left: 0; right: 0;
@@ -180,7 +226,7 @@ const highlight = book.tags?.[0];
     gap: .15rem;
   }
   .bk-title {
-    font-size: .92rem;
+    font-size: .95rem;
     font-weight: 600;
     color: var(--sk-moon);
     line-height: 1.35;
@@ -191,12 +237,23 @@ const highlight = book.tags?.[0];
     overflow: hidden;
   }
   .bk-author {
-    font-size: .76rem;
+    font-size: .8rem;
     color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .bk-review {
+    margin: .3rem 0 0;
+    font-size: .76rem;
+    line-height: 1.55;
+    color: color-mix(in srgb, var(--sk-moon) 68%, transparent);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .bk-foot {
@@ -237,5 +294,8 @@ const highlight = book.tags?.[0];
   }
   .bk-metric-note { color: color-mix(in srgb, var(--bk-accent) 80%, var(--sk-moon)); }
   .bk-metric-note i { color: color-mix(in srgb, var(--bk-accent) 55%, transparent); }
+  .bk-metric-review {
+    color: color-mix(in srgb, var(--sk-gold) 88%, var(--sk-moon));
+  }
 </style>
 

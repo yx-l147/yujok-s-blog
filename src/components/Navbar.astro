@@ -19,26 +19,39 @@ const links: NavBarLink[] = navBarConfig.links.map(
 		return item;
 	},
 );
+const pinnedLinkUrls = new Set([
+	"/",
+	"/categories/",
+	"/tags/",
+	"/archive/",
+	"/book/",
+	"/schedule/",
+	"/about/",
+	"/thoughts/",
+]);
+const primaryLinks = links.filter((link) => pinnedLinkUrls.has(link.url));
+const moreLinks = links.filter((link) => !pinnedLinkUrls.has(link.url));
 
 const isActive = (link: NavBarLink) => {
 	if (link.external) return false;
 	return pathsEqual(Astro.url.pathname, url(link.url));
 };
+const isMoreActive = moreLinks.some((link) => isActive(link));
 ---
 
 <div id="navbar" class="z-50 onload-animation">
     <div class:list={[
         className,
-        "glass-panel nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between px-3 md:px-4"]}>
-        <a href={url("/")} class="btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-black active:scale-95">
+        "glass-panel nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between gap-2 rounded-b-[1.35rem] md:rounded-[1.35rem] px-3 md:px-4"]}>
+        <a href={url("/")} class="nav-brand btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-black active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
                 <Icon name="material-symbols:home-outline-rounded" class="text-[1.75rem] mb-1 mr-2" />
                 <span class="hidden sm:inline">{siteConfig.title}</span>
                 <span class="sm:hidden">{profileConfig?.name || "Blog"}</span>
             </div>
         </a>
-        <nav class="hidden min-w-0 shrink-0 flex-nowrap items-center gap-1 lg:flex" aria-label="Primary navigation">
-            {links.map((l) => (
+        <nav class="nav-rail hidden min-w-0 flex-nowrap items-center gap-1 lg:flex" aria-label="Primary navigation">
+            {primaryLinks.map((l) => (
                 <a aria-label={l.name} href={l.external ? l.url : url(l.url)} target={l.external ? "_blank" : undefined}
                     class:list={[
                         "nav-link btn-plain scale-animation rounded-xl h-11 shrink-0 whitespace-nowrap font-bold px-3 xl:px-4 active:scale-95",
@@ -52,7 +65,34 @@ const isActive = (link: NavBarLink) => {
                 </a>
             ))}
         </nav>
-        <div class="flex">
+        {moreLinks.length > 0 && (
+            <details class:list={["nav-more hidden lg:block", { "nav-more-active": isMoreActive }]}>
+                <summary class:list={[
+                    "nav-link nav-more-trigger btn-plain scale-animation rounded-xl h-11 shrink-0 whitespace-nowrap font-bold px-3 xl:px-4 active:scale-95",
+                    { "nav-link-active": isMoreActive },
+                ]}>
+                    <span>更多</span>
+                    <Icon name="material-symbols:expand-more-rounded" class="nav-more-chevron text-[1.15rem]" />
+                </summary>
+                <div class="nav-more-panel">
+                    {moreLinks.map((l) => (
+                        <a
+                            aria-label={l.name}
+                            href={l.external ? l.url : url(l.url)}
+                            target={l.external ? "_blank" : undefined}
+                            rel={l.external ? "noopener" : undefined}
+                            class:list={["nav-more-item", { "nav-more-item-active": isActive(l) }]}
+                        >
+                            <span>{l.name}</span>
+                            {l.external
+                                ? <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.72rem]" />
+                                : <Icon name="material-symbols:chevron-right-rounded" class="text-[1.1rem]" />}
+                        </a>
+                    ))}
+                </div>
+            </details>
+        )}
+        <div class="nav-actions flex items-center">
             <Search client:only="svelte" />
             {!siteConfig.themeColor.fixed && (
                     <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch">
@@ -125,6 +165,81 @@ function loadButtonScript() {
 }
 
 loadButtonScript();
+
+// Fix: update nav-link-active after Swup client-side navigation
+function updateNavActive() {
+    const navLinks = document.querySelectorAll("nav .nav-link");
+    const currentPath = window.location.pathname.replace(/^\/|\/$/g, "").toLowerCase();
+    navLinks.forEach((link) => {
+        const href = (link as HTMLAnchorElement).getAttribute("href") || "";
+        const linkPath = href.replace(/^\/|\/$/g, "").toLowerCase();
+        if (linkPath === currentPath) {
+            link.classList.add("nav-link-active");
+        } else {
+            link.classList.remove("nav-link-active");
+        }
+    });
+
+    const more = document.querySelector(".nav-more");
+    if (more) {
+        const hasActiveChild = Array.from(more.querySelectorAll(".nav-more-item")).some((link) => {
+            const href = (link as HTMLAnchorElement).getAttribute("href") || "";
+            const linkPath = href.replace(/^\/|\/$/g, "").toLowerCase();
+            return linkPath === currentPath;
+        });
+        more.classList.toggle("nav-more-active", hasActiveChild);
+        more.querySelector(".nav-more-trigger")?.classList.toggle("nav-link-active", hasActiveChild);
+    }
+}
+if (window?.swup?.hooks) {
+    window.swup.hooks.on("page:view", updateNavActive);
+} else {
+    document.addEventListener("swup:enable", () => {
+        window.swup.hooks.on("page:view", updateNavActive);
+    });
+}
+
+function bindNavActiveFeedback() {
+    const nav = document.querySelector(".nav-rail");
+    if (!nav || (nav as HTMLElement).dataset.activeFeedbackBound) return;
+
+    (nav as HTMLElement).dataset.activeFeedbackBound = "true";
+    nav.addEventListener("click", (event) => {
+        if (!(event instanceof MouseEvent) || event.defaultPrevented || event.button !== 0) return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+        const link = (event.target as Element).closest(".nav-link");
+        if (!(link instanceof HTMLAnchorElement)) return;
+        if (link.target === "_blank" || link.classList.contains("nav-link-active")) return;
+
+        for (const item of nav.querySelectorAll(".nav-link")) {
+            item.classList.toggle("nav-link-active", item === link);
+        }
+    });
+}
+
+bindNavActiveFeedback();
+document.addEventListener("astro:page-load", bindNavActiveFeedback);
+
+function bindNavMore() {
+    const more = document.querySelector(".nav-more") as HTMLDetailsElement | null;
+    if (!more || more.dataset.bound) return;
+    more.dataset.bound = "true";
+
+    more.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            more.open = false;
+        });
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!more.open || more.contains(event.target as Node)) return;
+        more.open = false;
+    });
+}
+
+bindNavMore();
+document.addEventListener("astro:page-load", bindNavMore);
 </script>
 
 {import.meta.env.PROD && <script is:inline define:vars={{scriptUrl: url('/pagefind/pagefind.js')}}>

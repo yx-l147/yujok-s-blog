@@ -6,7 +6,7 @@ import { getColumnList, getSortedPostsList } from "@utils/content-utils";
 export async function getStaticPaths() {
 	const columns = await getColumnList();
 	return columns.map((column) => ({
-		params: { column: encodeURIComponent(column.name) },
+		params: { column: column.name },
 		props: { columnName: column.name },
 	}));
 }

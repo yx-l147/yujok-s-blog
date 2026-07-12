@@ -4,6 +4,7 @@ import { siteConfig } from "../../config";
 import Categories from "./Categories.astro";
 import Profile from "./Profile.astro";
 import Tag from "./Tags.astro";
+import ThoughtsPreview from "./ThoughtsPreview.astro";
 import TOC from "./TOC.astro";
 import WidgetLayout from "./WidgetLayout.astro";
 
@@ -21,7 +22,7 @@ const showToc = siteConfig.toc.enable && headings.length > 0;
     <div class="flex flex-col w-full gap-4 mb-4">
         <Profile />
     </div>
-    <div id="sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky">
+    <div id="sidebar-sticky" class="flex flex-col w-full gap-4 top-4 sticky">
         {showToc && (
             <WidgetLayout name="目录" id="toc-panel" class="onload-animation" style="animation-delay: 125ms">
                 <div id="toc-wrapper" class="transition">
@@ -36,5 +37,8 @@ const showToc = siteConfig.toc.enable && headings.length > 0;
         {!showToc && <div id="toc" class="hidden"></div>}
         <Categories class="onload-animation" style="animation-delay: 150ms" />
         <Tag class="onload-animation" style="animation-delay: 200ms" />
+        <WidgetLayout name="偶得速览" id="thoughts-preview" class="onload-animation" style="animation-delay: 250ms">
+            <ThoughtsPreview />
+        </WidgetLayout>
     </div>
 </aside>

@@ -15,7 +15,7 @@ const { id, name, isCollapsed, collapsedHeight, style } = Astro.props;
 const className = Astro.props.class;
 ---
 
-<widget-layout data-id={id} data-is-collapsed={String(isCollapsed)} class={`widget-surface glass-panel card-base pb-4 ${className || ""}`} style={style}>
+<widget-layout data-id={id} data-is-collapsed={String(isCollapsed)} class={`glass-panel card-base pb-4 ${className || ""}`} style={style}>
     <div class="flex items-center justify-between gap-3 px-4 pt-4 pb-3">
         <div class="font-semibold transition text-[0.95rem] text-90 relative pl-4
             before:w-1 before:h-4 before:rounded-full before:bg-[var(--primary)]

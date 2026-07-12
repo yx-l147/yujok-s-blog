@@ -26,6 +26,8 @@ interface Props {
 	ogImageAlt?: string;
 	twitterCard?: "summary" | "summary_large_image";
 	headings?: MarkdownHeading[];
+	fullWidth?: boolean;
+	disableBanner?: boolean;
 }
 
 const {
@@ -39,14 +41,17 @@ const {
 	ogImageAlt,
 	twitterCard,
 	headings = [],
+	fullWidth = false,
+	disableBanner = false,
 } = Astro.props;
 const hasBannerCredit =
 	siteConfig.banner.enable && siteConfig.banner.credit.enable;
 const hasBannerLink = !!siteConfig.banner.credit.url;
 
-const mainPanelTop = siteConfig.banner.enable
-	? `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)`
-	: "5.5rem";
+const mainPanelTop =
+	siteConfig.banner.enable && !disableBanner
+		? `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)`
+		: "5.5rem";
 ---
 
 <Layout
@@ -59,18 +64,19 @@ const mainPanelTop = siteConfig.banner.enable
     ogImage={ogImage}
     ogImageAlt={ogImageAlt}
     twitterCard={twitterCard}
+    disableBanner={disableBanner}
 >
 
 <!-- Navbar -->
 <slot slot="head" name="head"></slot>
-<div id="top-row" class="z-50 pointer-events-none relative transition-all duration-700 max-w-[var(--page-width)] px-0 md:px-4 mx-auto" class:list={[""]}>
-    <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-all">
+<div id="top-row" class="z-50 pointer-events-none relative max-w-[var(--page-width)] px-0 md:px-4 mx-auto" class:list={[""]}>
+    <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-[opacity,transform] duration-300">
         <Navbar></Navbar>
     </div>
 </div>
 
 <!-- Banner -->
-{siteConfig.banner.enable && <div id="banner-wrapper" class={`absolute z-10 w-full transition duration-700 overflow-hidden`} style={`top: -${BANNER_HEIGHT_EXTEND}vh`}>
+{siteConfig.banner.enable && <div id="banner-wrapper" class={`absolute z-10 w-full transition duration-700 overflow-hidden`} style={`top: -${BANNER_HEIGHT_EXTEND}vh`} hidden={disableBanner}>
     <ImageWrapper id="banner" alt="Banner image of the blog" class:list={["object-cover h-full transition duration-700 opacity-0 scale-105"]}
                   src={siteConfig.banner.src} position={siteConfig.banner.position}
     >
@@ -78,12 +84,15 @@ const mainPanelTop = siteConfig.banner.enable
 </div>}
 
 <!-- Main content -->
-<div class="absolute w-full z-30 pointer-events-none" style={`top: ${mainPanelTop}`}>
+<div id="main-shell" class="absolute w-full z-30 pointer-events-none" style={`top: ${mainPanelTop}`}>
     <div class="relative max-w-[var(--page-width)] mx-auto pointer-events-auto">
-        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[17.5rem_auto] xl:grid-cols-[17.5rem_minmax(0,1fr)_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto] mx-auto gap-4 px-0 md:px-4"
+        <div id="main-grid" class:list={[
+            "w-full left-0 right-0 grid grid-cols-[17.5rem_auto] xl:grid-cols-[17.5rem_minmax(0,1fr)_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto] mx-auto gap-4 px-0 md:px-4",
+            { "content-fullwidth": fullWidth },
+        ]}
         >
             <!-- Banner image credit -->
-            {hasBannerCredit && <a href={siteConfig.banner.credit.url} id="banner-credit" target="_blank" rel="noopener" aria-label="Visit image source"
+            {hasBannerCredit && <a href={siteConfig.banner.credit.url} id="banner-credit" target="_blank" rel="noopener" aria-label="Visit image source" hidden={disableBanner}
                                    class:list={["group onload-animation transition-all absolute flex justify-center items-center rounded-full " +
                                    "px-3 right-4 -top-[3.25rem] bg-black/60 hover:bg-black/70 h-9", {"hover:pr-9 active:bg-black/80": hasBannerLink}]}
             >
@@ -102,6 +111,11 @@ const mainPanelTop = siteConfig.banner.enable
 
             <main id="swup-container" class="transition-swup-fade col-span-2 lg:col-span-1 xl:col-span-1 overflow-hidden">
                 <div id="content-wrapper" class="onload-animation">
+                    <div
+                        data-layout-full-width={fullWidth ? "true" : "false"}
+                        data-layout-disable-banner={disableBanner ? "true" : "false"}
+                        hidden
+                    ></div>
                     <slot></slot>
                     <div class="footer col-span-2 xl:col-span-3 onload-animation hidden lg:block">
                         <Footer></Footer>
@@ -137,6 +151,33 @@ const mainPanelTop = siteConfig.banner.enable
 </style>
 
 <script>
+    function syncPersistentLayoutShell() {
+        const grid = document.querySelector("#main-grid") as HTMLElement | null;
+        const marker = document.querySelector("[data-layout-full-width]") as HTMLElement | null;
+        const bannerMarker = document.querySelector("[data-layout-disable-banner]") as HTMLElement | null;
+        const isFullWidthPage = marker?.dataset.layoutFullWidth === "true";
+        const isBannerDisabled = bannerMarker?.dataset.layoutDisableBanner === "true";
+        const bannerWrapper = document.getElementById("banner-wrapper");
+        const bannerCredit = document.getElementById("banner-credit");
+
+        if (grid) {
+            grid.classList.toggle("content-fullwidth", !!isFullWidthPage);
+        }
+
+        const shouldShowBanner = !isBannerDisabled && !!bannerWrapper;
+        document.body.classList.toggle("enable-banner", shouldShowBanner);
+
+        if (bannerWrapper) {
+            bannerWrapper.hidden = !shouldShowBanner;
+            bannerWrapper.setAttribute("aria-hidden", String(!shouldShowBanner));
+        }
+
+        if (bannerCredit) {
+            bannerCredit.hidden = !shouldShowBanner;
+            bannerCredit.setAttribute("aria-hidden", String(!shouldShowBanner));
+        }
+    }
+
     function bindAurora() {
         const cards = document.querySelectorAll("#right-sidebar widget-layout");
         for (const card of cards) {
@@ -156,20 +197,57 @@ const mainPanelTop = siteConfig.banner.enable
     document.addEventListener("swup:page:view", () => bindAurora());
 
     function syncContentFullWidth() {
-        const grid = document.querySelector("#main-grid") as HTMLElement | null;
-        if (!grid) return;
-        const isFullWidthPage =
-            window.location.pathname.startsWith("/book") ||
-            window.location.pathname.startsWith("/schedule");
-        if (isFullWidthPage) {
-            grid.classList.add("content-fullwidth");
-        } else {
-            grid.classList.remove("content-fullwidth");
-        }
+        syncPersistentLayoutShell();
     }
     syncContentFullWidth();
     document.addEventListener("swup:content:replace", syncContentFullWidth);
     document.addEventListener("swup:page:view", syncContentFullWidth);
+
+    const THOUGHTS_DETAIL_CLASS = "thoughts-detail-active";
+    const THOUGHTS_NAV_PORTAL = "data-thoughts-nav-portal";
+    const desktopThoughtsNavQuery = "(min-width: 901px)";
+
+    function removePortaledThoughtNavs(except?: Element | null) {
+        for (const nav of document.querySelectorAll(`[${THOUGHTS_NAV_PORTAL}="true"]`)) {
+            if (nav !== except) nav.remove();
+        }
+    }
+
+    function syncThoughtsDetailNav() {
+        const page = document.querySelector(".sa-page");
+        const slot = page?.querySelector(".sa-nav-slot");
+        const slotNav = slot?.querySelector(".sa-nav");
+        const portaledNav = document.querySelector(`.sa-nav[${THOUGHTS_NAV_PORTAL}="true"]`);
+        const nav = slotNav || portaledNav;
+
+        document.documentElement.classList.toggle(THOUGHTS_DETAIL_CLASS, !!page);
+
+        if (!page || !slot || !nav) {
+            removePortaledThoughtNavs();
+            return;
+        }
+
+        const shouldPortal = window.matchMedia(desktopThoughtsNavQuery).matches;
+        if (shouldPortal) {
+            removePortaledThoughtNavs(nav);
+            nav.setAttribute(THOUGHTS_NAV_PORTAL, "true");
+            document.body.append(nav);
+        } else {
+            nav.removeAttribute(THOUGHTS_NAV_PORTAL);
+            slot.append(nav);
+            removePortaledThoughtNavs(nav);
+        }
+    }
+
+    syncThoughtsDetailNav();
+    window.addEventListener("resize", syncThoughtsDetailNav, { passive: true });
+    document.addEventListener("swup:content:replace", syncThoughtsDetailNav);
+    document.addEventListener("swup:page:view", syncThoughtsDetailNav);
+    document.addEventListener("astro:page-load", syncThoughtsDetailNav);
+    document.addEventListener("swup:visit:start", () => {
+        document.documentElement.classList.remove(THOUGHTS_DETAIL_CLASS);
+        removePortaledThoughtNavs();
+    });
 </script>
 
 </Layout>

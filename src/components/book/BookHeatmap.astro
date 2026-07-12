@@ -2,7 +2,7 @@
 import type { ReadingStats } from "@/types/weread";
 
 interface Props {
-  stats: ReadingStats;
+	stats: ReadingStats;
 }
 const { stats } = Astro.props;
 
@@ -27,34 +27,37 @@ let lastMonth = -1;
 const cursor = new Date(start);
 let col = 0;
 while (cursor <= end) {
-  const iso = `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, "0")}-${String(cursor.getDate()).padStart(2, "0")}`;
-  const future = cursor > end;
-  week.push({ date: iso, minutes: future ? -1 : (byDate.get(iso) ?? 0) });
+	const iso = `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, "0")}-${String(cursor.getDate()).padStart(2, "0")}`;
+	const future = cursor > end;
+	week.push({ date: iso, minutes: future ? -1 : (byDate.get(iso) ?? 0) });
 
-  if (cursor.getDay() === 0 && cursor.getMonth() !== lastMonth) {
-    monthMarks.push({ col, label: `${cursor.getMonth() + 1}月` });
-    lastMonth = cursor.getMonth();
-  }
+	if (cursor.getDay() === 0 && cursor.getMonth() !== lastMonth) {
+		monthMarks.push({ col, label: `${cursor.getMonth() + 1}月` });
+		lastMonth = cursor.getMonth();
+	}
 
-  if (week.length === 7) {
-    weeks.push(week);
-    week = [];
-    col++;
-  }
-  cursor.setDate(cursor.getDate() + 1);
+	if (week.length === 7) {
+		weeks.push(week);
+		week = [];
+		col++;
+	}
+	cursor.setDate(cursor.getDate() + 1);
 }
-if (week.length) { while (week.length < 7) week.push({ date: "", minutes: -1 }); weeks.push(week); }
+if (week.length) {
+	while (week.length < 7) week.push({ date: "", minutes: -1 });
+	weeks.push(week);
+}
 
-const activeDays = stats.heatmap.filter(d => d.seconds > 0).length;
+const activeDays = stats.heatmap.filter((d) => d.seconds > 0).length;
 const dayLabels = ["", "一", "", "三", "", "五", ""];
 
 function level(m: number): number {
-  if (m < 0) return -1;       // 占位
-  if (m === 0) return 0;
-  if (m < 15) return 1;
-  if (m < 40) return 2;
-  if (m < 80) return 3;
-  return 4;
+	if (m < 0) return -1; // 占位
+	if (m === 0) return 0;
+	if (m < 15) return 1;
+	if (m < 40) return 2;
+	if (m < 80) return 3;
+	return 4;
 }
 ---
 

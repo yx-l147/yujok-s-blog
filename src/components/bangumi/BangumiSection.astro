@@ -44,7 +44,10 @@ const filters = [
 const defaultFilter = "all"; // 默认显示全部，用户可以通过筛选器选择
 ---
 
-<div class:list={["bangumi-section", { "hidden": !isActive }]} data-section={sectionId}>
+<div
+  class:list={["bangumi-section", { "hidden": !isActive }]}
+  data-bangumi-section={sectionId}
+>
   {items.length > 0 ? (
     <>
       <FilterControls

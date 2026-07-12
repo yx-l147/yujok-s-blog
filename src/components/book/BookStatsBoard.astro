@@ -2,18 +2,25 @@
 import type { ReadingStats } from "@/types/weread";
 
 interface Props {
-  stats: ReadingStats;
+	stats: ReadingStats;
 }
 const { stats } = Astro.props;
 
 const fmtHours = (sec: number) => {
-  const h = Math.round(sec / 3600);
-  return h > 0 ? `${h}h` : `${Math.round(sec / 60)}m`;
+	const h = Math.round(sec / 3600);
+	return h > 0 ? `${h}h` : `${Math.round(sec / 60)}m`;
 };
 
 // 偏好分类：算占比（用于条形）
-const maxCatTime = Math.max(...stats.preferCategory.map(c => c.time), 1);
-const catColors = ["var(--sk-river)", "var(--sk-violet)", "var(--sk-comet)", "var(--sk-sakura)", "var(--sk-gold)", "var(--sk-sunset)"];
+const maxCatTime = Math.max(...stats.preferCategory.map((c) => c.time), 1);
+const catColors = [
+	"var(--sk-river)",
+	"var(--sk-violet)",
+	"var(--sk-comet)",
+	"var(--sk-sakura)",
+	"var(--sk-gold)",
+	"var(--sk-sunset)",
+];
 ---
 
 <section class="taste sk-rise" data-delay="4">

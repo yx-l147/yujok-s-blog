@@ -35,6 +35,10 @@ public/private-assets/
 jh-*.jpg
 jh-*.png
 *.tmp.json
+# 会话期间生成的调试截图/日志（如 .tmp-*.png、.tmp-devserver.*.log）
+.tmp-*
+# 开发服务器等运行日志
+*.log
 
 # macOS-specific files
 .DS_Store

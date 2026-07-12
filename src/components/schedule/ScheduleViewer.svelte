@@ -1173,21 +1173,14 @@ $: overviewGroups = summarizeCourses(term.courses);
 		.hero-stats {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 			gap: 0.55rem;
-			width: 100%;
 		}
 
 		.stat {
-			min-width: 0;
 			padding: 0.75rem;
 		}
 
 		.stat span {
 			font-size: 1.55rem;
-		}
-
-		.stat p {
-			font-size: 0.72rem;
-			white-space: nowrap;
 		}
 
 		.segmented {

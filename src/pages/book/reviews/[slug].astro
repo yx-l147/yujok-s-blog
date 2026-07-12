@@ -1,0 +1,183 @@
+---
+import { getCollection, render } from "astro:content";
+import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
+import { getBookById, getEnrichedShelfData } from "@/data/shelf";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+export async function getStaticPaths() {
+	const reviews = await getCollection("book-reviews", ({ data }) =>
+		import.meta.env.PROD ? !data.draft : true,
+	);
+	return reviews.map((review) => ({
+		params: { slug: review.id },
+		props: { review },
+	}));
+}
+
+const { review } = Astro.props;
+const { Content } = await render(review);
+const shelfData = await getEnrichedShelfData();
+const book = getBookById(shelfData.books, review.data.bookId);
+const title = `${review.data.title} | 书评`;
+const description =
+	review.data.summary ||
+	(book ? `${book.title} - ${book.author}` : "本地维护的个人书评");
+const verdictLabel = {
+	recommend: "推荐",
+	neutral: "中庸",
+	avoid: "不行",
+}[review.data.verdict];
+---
+
+<MainGridLayout
+	title={title}
+	description={description}
+	ogType="article"
+	ogImage={book?.cover}
+	ogImageAlt={book ? `Cover of ${book.title}` : undefined}
+	twitterCard="summary_large_image"
+	fullWidth
+	disableBanner
+>
+	<LiquidGlassDefs />
+
+	<article class="review-page sk-glass">
+		<nav class="review-breadcrumb">
+			<a href="/book/">返回书架</a>
+			{book && <a href={`/book/${book.bookId}/`}>返回《{book.title}》</a>}
+		</nav>
+
+		<header class="review-head">
+			{book && (
+				<div class="review-cover">
+					<img src={book.cover} alt={book.title} loading="eager" decoding="async" />
+				</div>
+			)}
+
+			<div class="review-meta">
+				<p class="review-kicker">本地书评</p>
+				<h1 class="review-title sk-han">{review.data.title}</h1>
+				{book && <p class="review-book">《{book.title}》 · {book.author}</p>}
+				<div class="review-chips">
+					<span>{verdictLabel}</span>
+					{review.data.rating !== undefined && <span>{review.data.rating}/10</span>}
+					<time datetime={review.data.published.toISOString()}>
+						{review.data.published.toLocaleDateString("zh-CN")}
+					</time>
+				</div>
+				{review.data.summary && <p class="review-summary sk-han">{review.data.summary}</p>}
+			</div>
+		</header>
+
+		<div class="review-content prose prose-invert max-w-none">
+			<Content />
+		</div>
+	</article>
+</MainGridLayout>
+
+<style>
+	.review-page {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: clamp(1.4rem, 4vw, 2.4rem);
+	}
+
+	.review-breadcrumb {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .8rem;
+		margin-bottom: 1.8rem;
+		font-size: .82rem;
+	}
+
+	.review-breadcrumb a {
+		color: color-mix(in srgb, var(--sk-comet) 86%, transparent);
+		text-decoration: none;
+	}
+
+	.review-breadcrumb a:hover {
+		color: var(--sk-comet);
+	}
+
+	.review-head {
+		display: grid;
+		grid-template-columns: minmax(120px, 160px) minmax(0, 1fr);
+		gap: clamp(1.2rem, 4vw, 2rem);
+		align-items: start;
+		margin-bottom: 2.2rem;
+	}
+
+	.review-cover {
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 14px 36px rgba(20, 40, 80, .24);
+	}
+
+	.review-cover img {
+		width: 100%;
+		display: block;
+		aspect-ratio: 3 / 4.35;
+		object-fit: cover;
+	}
+
+	.review-kicker {
+		margin: 0 0 .4rem;
+		font-size: .78rem;
+		color: color-mix(in srgb, var(--sk-comet) 82%, transparent);
+	}
+
+	.review-title {
+		margin: 0;
+		font-size: clamp(1.7rem, 5vw, 2.5rem);
+		line-height: 1.2;
+		color: var(--sk-moon);
+	}
+
+	.review-book {
+		margin: .55rem 0 0;
+		color: color-mix(in srgb, var(--sk-moon) 66%, transparent);
+	}
+
+	.review-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .45rem;
+		margin-top: .9rem;
+	}
+
+	.review-chips span,
+	.review-chips time {
+		padding: .18rem .6rem;
+		border-radius: 999px;
+		font-size: .74rem;
+		color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
+		background: color-mix(in srgb, var(--sk-moon) 8%, transparent);
+		border: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
+	}
+
+	.review-summary {
+		margin: 1.1rem 0 0;
+		max-width: 58ch;
+		color: color-mix(in srgb, var(--sk-moon) 84%, transparent);
+		line-height: 1.8;
+	}
+
+	.review-content {
+		color: color-mix(in srgb, var(--sk-moon) 88%, transparent);
+		line-height: 1.9;
+	}
+
+	.review-content :global(p) {
+		margin: 1em 0;
+	}
+
+	@media (max-width: 640px) {
+		.review-head {
+			grid-template-columns: 1fr;
+		}
+
+		.review-cover {
+			width: 132px;
+		}
+	}
+</style>

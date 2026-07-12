@@ -1,4 +1,11 @@
-import type { BookItem, BookNote, BookShelfData, BookShelfStatus } from "@/types/weread";
+import { getCollection } from "astro:content";
+import type {
+	BookItem,
+	BookNote,
+	BookShelfData,
+	BookShelfStatus,
+	LocalBookReview,
+} from "@/types/weread";
 import { mockShelfData } from "./mock-shelf";
 
 /**
@@ -23,7 +30,10 @@ const realKey = Object.keys(realShelfModules)[0];
 const realRaw = realKey ? realShelfModules[realKey].default : null;
 
 /** 由 progress + finishReading 派生阅读状态 */
-function deriveStatus(b: { finishReading: number; progress: number }): BookShelfStatus {
+function deriveStatus(b: {
+	finishReading: number;
+	progress: number;
+}): BookShelfStatus {
 	if (b.finishReading === 1) return "finished";
 	if (b.progress > 0) return "reading";
 	return "wishlist";
@@ -58,13 +68,17 @@ export function subCategories(books: BookItem[], top: string): string[] {
 	for (const b of books) {
 		if (!b.category) continue;
 		const parts = b.category.split("-");
-		if (parts[0] === top && parts.length > 1) subs.add(parts.slice(1).join("-"));
+		if (parts[0] === top && parts.length > 1)
+			subs.add(parts.slice(1).join("-"));
 	}
 	return [...subs].sort();
 }
 
 /** 按 bookId 查找书籍 */
-export function getBookById(books: BookItem[], id: string): BookItem | undefined {
+export function getBookById(
+	books: BookItem[],
+	id: string,
+): BookItem | undefined {
 	return books.find((b) => b.bookId === id);
 }
 
@@ -85,3 +99,60 @@ function normalize(data: BookShelfData): BookShelfData {
 export const shelfData: BookShelfData = realRaw
 	? normalize(realRaw)
 	: normalize(mockShelfData);
+
+export async function getLocalBookReviews(): Promise<
+	Map<string, LocalBookReview>
+> {
+	const entries = await getCollection("book-reviews", ({ data }) =>
+		import.meta.env.PROD ? !data.draft : true,
+	);
+	const reviews = new Map<string, LocalBookReview>();
+
+	for (const entry of entries) {
+		const current = reviews.get(entry.data.bookId);
+		const review: LocalBookReview = {
+			slug: entry.id,
+			title: entry.data.title,
+			published: entry.data.published,
+			updated: entry.data.updated,
+			summary: entry.data.summary,
+			verdict: entry.data.verdict,
+			rating: entry.data.rating,
+			draft: entry.data.draft,
+			topics: entry.data.topics,
+			quotes: entry.data.quotes,
+			relatedPosts: entry.data.relatedPosts,
+		};
+
+		if (!current || review.published > current.published) {
+			reviews.set(entry.data.bookId, review);
+		}
+	}
+
+	return reviews;
+}
+
+export async function getEnrichedShelfData(): Promise<BookShelfData> {
+	const reviews = await getLocalBookReviews();
+	const books = shelfData.books.map((book) => {
+		const localReview = reviews.get(book.bookId);
+		return localReview ? { ...book, localReview } : book;
+	});
+	const bookMap = new Map(books.map((book) => [book.bookId, book]));
+	const localNotes: BookNote[] = [...reviews.entries()].flatMap(
+		([bookId, review]) => {
+			const book = bookMap.get(bookId);
+			if (!book) return [];
+			return review.quotes.map((quote, index) => ({
+				bookId,
+				bookTitle: book.title,
+				bookCover: book.cover,
+				chapter: quote.chapter || "本地精选",
+				text: quote.text,
+				createTime: new Date(review.published.getTime() + index).toISOString(),
+			}));
+		},
+	);
+
+	return { ...shelfData, books, notes: [...localNotes, ...shelfData.notes] };
+}

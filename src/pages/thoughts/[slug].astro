@@ -1,0 +1,403 @@
+---
+import { getCollection, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import ThoughtsLayout from "@layouts/ThoughtsLayout.astro";
+import { url } from "@utils/url-utils";
+
+export async function getStaticPaths() {
+	const thoughts = await getCollection("thoughts");
+	const sorted = thoughts.sort(
+		(a, b) =>
+			new Date(a.data.published).getTime() -
+			new Date(b.data.published).getTime(),
+	);
+
+	return sorted.map((thought, index) => ({
+		params: { slug: thought.id },
+		props: {
+			thought,
+			index,
+			total: sorted.length,
+			prev: index > 0 ? sorted[index - 1] : null,
+			next: index < sorted.length - 1 ? sorted[index + 1] : null,
+			all: sorted,
+		},
+	}));
+}
+
+const { thought, index, total, prev, next, all } = Astro.props;
+const { Content } = await render(thought);
+
+const d = thought.data.published;
+const dateStr = `${d.getFullYear()} · ${String(d.getMonth() + 1).padStart(2, "0")} · ${String(d.getDate()).padStart(2, "0")}`;
+const num = String(index + 1).padStart(2, "0");
+---
+
+<ThoughtsLayout title={thought.data.title} description={thought.data.title}>
+    <div class="sa-page">
+        <article class="sa">
+            <div class="sa-series">
+                SERENDIPITY · №<span class="sa-num">{num}</span> OF {total}
+            </div>
+
+            <time class="sa-date">{dateStr}</time>
+
+            <nav class="sa-dots" aria-label="偶得序列">
+                {all.map((t: any, i: number) => (
+                    <a href={url(`/thoughts/${t.id}/`)}
+                       class:list={["sa-dot", { "sa-dot--active": i === index }]}
+                       aria-label={`第 ${i + 1} 则`}
+                       aria-current={i === index ? "page" : undefined}
+                    />
+                ))}
+            </nav>
+
+            <h1 class="sa-title">{thought.data.title}</h1>
+
+            <div class="sa-body">
+                <Markdown class="sa-markdown">
+                    <Content />
+                </Markdown>
+            </div>
+
+            {thought.data.tags.length > 0 && (
+                <div class="sa-tags">
+                    {thought.data.tags.map((tag: string) => <span>#{tag}</span>)}
+                </div>
+            )}
+        </article>
+
+        <div class="sa-nav-slot">
+            <nav class="sa-nav" aria-label="偶得前后导航">
+                {prev ? (
+                    <a href={url(`/thoughts/${prev.id}/`)} class="sa-nav-link" rel="prev">
+                        <span class="sa-nav-arrow">&larr;</span>
+                        <span class="sa-nav-label">前一则</span>
+                        <span class="sa-nav-dot">·</span>
+                        <span class="sa-nav-title">{prev.data.title}</span>
+                    </a>
+                ) : <span class="sa-nav-placeholder" />}
+
+                {next ? (
+                    <a href={url(`/thoughts/${next.id}/`)} class="sa-nav-link sa-nav-link--next" rel="next">
+                        <span class="sa-nav-dot">·</span>
+                        <span class="sa-nav-title">{next.data.title}</span>
+                        <span class="sa-nav-label">后一则</span>
+                        <span class="sa-nav-arrow">&rarr;</span>
+                    </a>
+                ) : <span class="sa-nav-placeholder" />}
+            </nav>
+        </div>
+    </div>
+</ThoughtsLayout>
+
+<style is:global>
+    .sa-page {
+        --sa-edge-offset: clamp(1rem, 2.5vw, 2.25rem);
+        background: transparent;
+    }
+
+    .sa {
+        --sa-accent: var(--thoughts-accent, oklch(0.67 0.22 24));
+        --sa-muted: color-mix(in srgb, var(--text-muted) 78%, transparent);
+        width: min(100%, 46rem);
+        min-height: calc(100vh - 5.5rem);
+        margin: 0 auto;
+        padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1rem, 4vw, 1.5rem) 2rem;
+        background: transparent;
+    }
+
+    html.thoughts-detail-active #swup-container,
+    body:has(.sa) #swup-container {
+        overflow: visible;
+    }
+
+    html.thoughts-detail-active #content-wrapper.onload-animation,
+    html.thoughts-detail-active .sa.onload-animation,
+    body:has(.sa) #content-wrapper.onload-animation,
+    body:has(.sa) .sa.onload-animation {
+        animation: sa-fade-in 240ms var(--motion-standard) forwards;
+        transform: none;
+    }
+
+    @keyframes sa-fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .sa-series {
+        color: var(--sa-accent);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        text-align: center;
+        margin-bottom: 0.7rem;
+        opacity: 0.78;
+    }
+
+    .sa-num {
+        font-variant-numeric: tabular-nums;
+    }
+
+    .sa-date {
+        display: block;
+        text-align: center;
+        font-size: 0.86rem;
+        color: var(--sa-muted);
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.08em;
+        margin-bottom: 1.1rem;
+    }
+
+    .sa-dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.42rem;
+        margin-bottom: clamp(2.25rem, 5vw, 3.75rem);
+    }
+
+    .sa-dot {
+        width: 0.45rem;
+        height: 0.45rem;
+        border-radius: 50%;
+        background: transparent;
+        border: 1.5px solid color-mix(in srgb, var(--text-muted) 40%, transparent);
+        transition: all 220ms ease;
+        text-decoration: none;
+    }
+
+    .sa-dot:hover {
+        border-color: var(--text-muted);
+        transform: scale(1.3);
+    }
+
+    .sa-dot--active {
+        width: 0.45rem;
+        border-radius: 50%;
+        background: var(--sa-accent);
+        border-color: var(--sa-accent);
+    }
+
+    .sa-title {
+        max-width: 12em;
+        margin: 0 auto clamp(2.2rem, 5vw, 3.4rem);
+        color: var(--text-strong);
+        font-family: var(--sk-font-display);
+        font-size: clamp(2.25rem, 7vw, 4.2rem);
+        font-weight: 600;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0;
+        text-wrap: balance;
+    }
+
+    .sa-body {
+        margin-bottom: clamp(2.4rem, 5vw, 3.5rem);
+    }
+
+    .sa-body .custom-md {
+        font-family: var(--sk-font-han);
+    }
+
+    .sa-body .custom-md p,
+    .sa-body .custom-md li {
+        color: color-mix(in srgb, var(--text-strong) 92%, transparent);
+        font-size: clamp(1.02rem, 1.5vw, 1.1rem);
+        line-height: 2;
+        text-wrap: pretty;
+    }
+
+    .sa-body .custom-md p {
+        margin: 1.25rem 0;
+    }
+
+    .sa-body .custom-md strong {
+        color: var(--text-strong);
+        font-weight: 800;
+    }
+
+    .sa-body .custom-md blockquote {
+        margin: 2rem 0;
+        padding: 0.15rem 0 0.15rem 1.35rem;
+        border-left: 2px solid var(--sa-accent);
+        color: var(--text-strong);
+    }
+
+    .sa-body .custom-md blockquote::before {
+        display: none;
+    }
+
+    .sa-body .custom-md blockquote p {
+        margin: 0.6rem 0;
+        color: color-mix(in srgb, var(--text-strong) 88%, transparent);
+        font-style: normal;
+    }
+
+    .sa-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-top: 1.4rem;
+        border-top: 1px solid var(--line-divider);
+        margin-bottom: 2.2rem;
+    }
+
+    .sa-tags span {
+        color: color-mix(in srgb, var(--sa-accent) 72%, var(--text-muted));
+        font-size: 0.86rem;
+        line-height: 1.5;
+    }
+
+    .sa-nav {
+        --sa-edge-offset: clamp(1rem, 2.5vw, 2.25rem);
+        --sa-accent: var(--thoughts-accent, oklch(0.67 0.22 24));
+        position: relative;
+        display: block;
+    }
+
+    .sa-nav-slot {
+        display: contents;
+    }
+
+    .sa-nav-link {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        max-height: min(42vh, 23rem);
+        max-width: 3rem;
+        text-decoration: none;
+        font-size: 0.82rem;
+        color: color-mix(in srgb, var(--text-strong) 70%, transparent);
+        opacity: 0.72;
+        transition: opacity 250ms ease, color 250ms ease;
+        writing-mode: vertical-rl;
+        padding: 1rem 0.45rem;
+        z-index: 40;
+    }
+
+    .sa-nav-link:hover {
+        opacity: 1;
+        color: var(--sa-accent);
+    }
+
+    .sa-nav-link:focus-visible {
+        outline: 2px solid color-mix(in srgb, var(--sa-accent) 60%, transparent);
+        outline-offset: 0.25rem;
+        border-radius: 999px;
+    }
+
+    .sa-nav-link:not(.sa-nav-link--next) {
+        left: var(--sa-edge-offset);
+    }
+
+    .sa-nav-link--next {
+        right: var(--sa-edge-offset);
+        writing-mode: vertical-lr;
+    }
+    .sa-nav-arrow {
+        font-size: 1.1rem;
+        writing-mode: horizontal-tb;
+    }
+
+    .sa-nav-label {
+        font-weight: 500;
+        letter-spacing: 0.08em;
+    }
+
+    .sa-nav-dot {
+        opacity: 0.3;
+        writing-mode: horizontal-tb;
+    }
+
+    .sa-nav-title {
+        font-weight: 400;
+        opacity: 0.7;
+        max-height: 10em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .sa-nav-placeholder {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        .sa-nav-slot {
+            display: block;
+            width: min(100%, 46rem);
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 4vw, 1.5rem) 2rem;
+        }
+
+        .sa-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--line-divider);
+            position: relative;
+        }
+
+        .sa-nav-link {
+            position: static;
+            transform: none;
+            writing-mode: horizontal-tb;
+            max-width: none;
+            max-height: none;
+            padding: 0.5rem 0;
+            opacity: 1;
+            font-size: 0.85rem;
+        }
+
+        .sa-nav-link--next {
+            margin-left: auto;
+            writing-mode: horizontal-tb;
+            transform: none;
+            right: auto;
+        }
+
+        .sa-nav-link:not(.sa-nav-link--next) {
+            left: auto;
+        }
+
+        .sa-nav-arrow {
+            writing-mode: horizontal-tb;
+        }
+
+        .sa-nav-placeholder {
+            display: block;
+            flex: 1;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .sa {
+            min-height: auto;
+            padding-top: 2.6rem;
+        }
+
+        .sa-title {
+            max-width: 100%;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .sa-dot,
+        .sa-nav-link {
+            transition: none;
+        }
+
+        .sa-dot:hover {
+            transform: none;
+        }
+    }
+</style>

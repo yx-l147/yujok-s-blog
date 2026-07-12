@@ -7,11 +7,7 @@ interface Props {
 	meteors?: boolean; // 是否包含流星
 }
 
-let {
-	density = 220,
-	speed = 0.18,
-	meteors = true,
-}: Props = $props();
+let { density = 220, speed = 0.18, meteors = true }: Props = $props();
 
 let canvas: HTMLCanvasElement;
 let raf = 0;
@@ -20,29 +16,44 @@ let visible = true;
 let reduced = false;
 
 interface Star {
-	x: number; y: number; z: number;
-	r: number; tw: number; ph: number; hue: number;
+	x: number;
+	y: number;
+	z: number;
+	r: number;
+	tw: number;
+	ph: number;
+	hue: number;
 }
 interface Meteor {
-	x: number; y: number; vx: number; vy: number; life: number; max: number;
+	x: number;
+	y: number;
+	vx: number;
+	vy: number;
+	life: number;
+	max: number;
 }
 
 onMount(() => {
 	if (typeof window === "undefined") return;
-	reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+	reduced =
+		window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 
 	const ctx = canvas.getContext("2d", { alpha: true })!;
 	const dpr = Math.min(window.devicePixelRatio || 1, 2);
-	let w = 0, h = 0;
+	let w = 0,
+		h = 0;
 	let stars: Star[] = [];
 	let mts: Meteor[] = [];
 	let lastT = 0;
-	let mouseX = 0.5, mouseY = 0.5;
+	let mouseX = 0.5,
+		mouseY = 0.5;
 
 	const resize = () => {
 		const rect = canvas.getBoundingClientRect();
-		w = rect.width; h = rect.height;
-		canvas.width = w * dpr; canvas.height = h * dpr;
+		w = rect.width;
+		h = rect.height;
+		canvas.width = w * dpr;
+		canvas.height = h * dpr;
 		ctx.scale(dpr, dpr);
 		stars = Array.from({ length: density }, () => ({
 			x: Math.random() * w,
@@ -51,11 +62,12 @@ onMount(() => {
 			r: Math.random() * 1.3 + 0.2,
 			tw: Math.random() * 0.8 + 0.4,
 			ph: Math.random() * Math.PI * 2,
-			hue: Math.random() < 0.18
-				? 200 + Math.random() * 70 // 紫蓝
-				: Math.random() < 0.5
-					? 0 // 暖色（少量夕阳）
-					: 220, // 主银河蓝
+			hue:
+				Math.random() < 0.18
+					? 200 + Math.random() * 70 // 紫蓝
+					: Math.random() < 0.5
+						? 0 // 暖色（少量夕阳）
+						: 220, // 主银河蓝
 		}));
 	};
 	resize();
@@ -73,7 +85,7 @@ onMount(() => {
 			x: w * (0.5 + Math.random() * 0.5),
 			y: h * Math.random() * 0.4,
 			vx: -(180 + Math.random() * 120),
-			vy: (140 + Math.random() * 80),
+			vy: 140 + Math.random() * 80,
 			life: 0,
 			max: 1.6 + Math.random() * 0.6,
 		});
@@ -83,7 +95,10 @@ onMount(() => {
 	const tick = (t: number) => {
 		const dt = Math.min((t - lastT) / 1000, 0.05);
 		lastT = t;
-		if (!visible) { raf = requestAnimationFrame(tick); return; }
+		if (!visible) {
+			raf = requestAnimationFrame(tick);
+			return;
+		}
 
 		ctx.clearRect(0, 0, w, h);
 
@@ -131,12 +146,20 @@ onMount(() => {
 				m.x += m.vx * dt;
 				m.y += m.vy * dt;
 				const k = 1 - m.life / m.max;
-				if (k <= 0 || m.x < -100 || m.y > h + 100) { mts.splice(i, 1); continue; }
+				if (k <= 0 || m.x < -100 || m.y > h + 100) {
+					mts.splice(i, 1);
+					continue;
+				}
 				const tailLen = 140;
-				const grad = ctx.createLinearGradient(m.x, m.y, m.x + tailLen, m.y - tailLen * 0.7);
+				const grad = ctx.createLinearGradient(
+					m.x,
+					m.y,
+					m.x + tailLen,
+					m.y - tailLen * 0.7,
+				);
 				grad.addColorStop(0, `hsla(190, 100%, 85%, ${k})`);
 				grad.addColorStop(0.5, `hsla(210, 100%, 75%, ${k * 0.4})`);
-				grad.addColorStop(1, `hsla(220, 100%, 70%, 0)`);
+				grad.addColorStop(1, "hsla(220, 100%, 70%, 0)");
 				ctx.strokeStyle = grad;
 				ctx.lineWidth = 1.6;
 				ctx.beginPath();
@@ -154,8 +177,10 @@ onMount(() => {
 	};
 
 	observer = new IntersectionObserver(
-		(entries) => { visible = entries[0]?.isIntersecting ?? true; },
-		{ threshold: 0 }
+		(entries) => {
+			visible = entries[0]?.isIntersecting ?? true;
+		},
+		{ threshold: 0 },
 	);
 	observer.observe(canvas);
 	raf = requestAnimationFrame(tick);

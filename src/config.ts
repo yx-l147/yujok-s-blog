@@ -9,15 +9,15 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "yujok Blog",
-	subtitle: "在庸常里保留一点不被驯服的清醒",
+	subtitle: "雪花飘散",
 	lang: "zh_CN",
 	themeColor: {
 		hue: 220,
 		fixed: false,
 	},
 	banner: {
-		enable: true,
-		src: "assets/images/1251398972_p0.jpg",
+		enable: false,
+		src: "assets/images/head.jpg",
 		position: "center",
 		credit: {
 			enable: true,
@@ -67,7 +67,6 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Categories,
 		LinkPreset.Tags,
 		LinkPreset.Archive,
-		LinkPreset.About,
 		{
 			name: "书架",
 			url: "/book/",
@@ -75,6 +74,11 @@ export const navBarConfig: NavBarConfig = {
 		{
 			name: "课程表",
 			url: "/schedule/",
+		},
+		LinkPreset.About,
+		{
+			name: "偶得",
+			url: "/thoughts/",
 		},
 		{
 			name: "Bangumi",
@@ -89,7 +93,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/137882041_p0.jpg",
+	avatar: "assets/images/head.jpg",
 	name: "yujok",
 	bio: "自由之风永远吹拂",
 	links: [

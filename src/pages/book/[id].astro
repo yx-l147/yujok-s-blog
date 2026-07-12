@@ -1,82 +1,111 @@
 ---
 import BookDetail from "@/components/book/BookDetail.astro";
 import LiquidGlassDefs from "@/components/effects/LiquidGlassDefs.astro";
-import { getBookById, getNotesForBook, shelfData } from "@/data/shelf";
+import {
+	getBookById,
+	getEnrichedShelfData,
+	getNotesForBook,
+} from "@/data/shelf";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import type { BookItem, BookNote } from "@/types/weread";
 
-export function getStaticPaths() {
-  return shelfData.books.map((b) => ({
-    params: { id: b.bookId },
-  }));
+export async function getStaticPaths() {
+	const shelfData = await getEnrichedShelfData();
+	return shelfData.books.map((b) => ({
+		params: { id: b.bookId },
+	}));
 }
 
+const shelfData = await getEnrichedShelfData();
 const { id } = Astro.params;
 const book: BookItem | undefined = getBookById(shelfData.books, id);
 const notes: BookNote[] = id ? getNotesForBook(shelfData.notes, id) : [];
 
 if (!book) {
-  return Astro.redirect("/book/");
+	return Astro.redirect("/book/");
 }
 
 const pageUrl = Astro.site
-  ? new URL(Astro.url.pathname, Astro.site).toString()
-  : Astro.url.toString();
+	? new URL(Astro.url.pathname, Astro.site).toString()
+	: Astro.url.toString();
 const cleanIntro = book.intro?.replace(/\s+/g, " ").trim() ?? "";
-const description = [book.author, cleanIntro.slice(0, 120)]
-  .filter(Boolean)
-  .join(" - ");
+const localSummary =
+	book.localReview?.summary?.replace(/\s+/g, " ").trim() ?? "";
+const description = [book.author, (localSummary || cleanIntro).slice(0, 120)]
+	.filter(Boolean)
+	.join(" - ");
 const wereadSearchUrl = `https://weread.qq.com/web/search/books?keyword=${encodeURIComponent(
-  `${book.title} ${book.author}`.trim(),
+	`${book.title} ${book.author}`.trim(),
 )}`;
 const publishedYear = book.publishTime
-  ? new Date(book.publishTime).getFullYear()
-  : undefined;
+	? new Date(book.publishTime).getFullYear()
+	: undefined;
 const dropEmpty = (value: unknown): unknown => {
-  if (Array.isArray(value)) {
-    return value.map(dropEmpty).filter((item) => item !== undefined);
-  }
-  if (value && typeof value === "object") {
-    return Object.fromEntries(
-      Object.entries(value)
-        .map(([key, item]) => [key, dropEmpty(item)])
-        .filter(([, item]) => item !== undefined && item !== ""),
-    );
-  }
-  return value === undefined || value === "" ? undefined : value;
+	if (Array.isArray(value)) {
+		return value.map(dropEmpty).filter((item) => item !== undefined);
+	}
+	if (value && typeof value === "object") {
+		return Object.fromEntries(
+			Object.entries(value)
+				.map(([key, item]) => [key, dropEmpty(item)])
+				.filter(([, item]) => item !== undefined && item !== ""),
+		);
+	}
+	return value === undefined || value === "" ? undefined : value;
 };
 const jsonLd = dropEmpty({
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "@id": pageUrl,
-  name: book.title,
-  headline: book.title,
-  author: book.author
-    ? book.author
-        .split(/[\u3001,\uFF0C\/]/)
-        .map((name) => ({ "@type": "Person", name: name.trim() }))
-    : undefined,
-  translator: book.translator
-    ? { "@type": "Person", name: book.translator }
-    : undefined,
-  publisher: book.publisher
-    ? { "@type": "Organization", name: book.publisher }
-    : undefined,
-  datePublished: book.publishTime || (publishedYear ? String(publishedYear) : undefined),
-  description: cleanIntro || `${book.title} by ${book.author}`,
-  image: book.cover,
-  url: pageUrl,
-  sameAs: wereadSearchUrl,
-  genre: book.category,
-  aggregateRating:
-    book.publicRating && book.publicRating > 0
-      ? {
-          "@type": "AggregateRating",
-          ratingValue: book.publicRating,
-          bestRating: 10,
-          ratingCount: book.ratingCount,
-        }
-      : undefined,
+	"@context": "https://schema.org",
+	"@type": "Book",
+	"@id": pageUrl,
+	name: book.title,
+	headline: book.title,
+	author: book.author
+		? book.author
+				.split(/[\u3001,\uFF0C/]/)
+				.map((name) => ({ "@type": "Person", name: name.trim() }))
+		: undefined,
+	translator: book.translator
+		? { "@type": "Person", name: book.translator }
+		: undefined,
+	publisher: book.publisher
+		? { "@type": "Organization", name: book.publisher }
+		: undefined,
+	datePublished:
+		book.publishTime || (publishedYear ? String(publishedYear) : undefined),
+	description: cleanIntro || `${book.title} by ${book.author}`,
+	image: book.cover,
+	url: pageUrl,
+	sameAs: wereadSearchUrl,
+	genre: book.category,
+	aggregateRating:
+		book.publicRating && book.publicRating > 0
+			? {
+					"@type": "AggregateRating",
+					ratingValue: book.publicRating,
+					bestRating: 10,
+					ratingCount: book.ratingCount,
+				}
+			: undefined,
+	review: book.localReview
+		? {
+				"@type": "Review",
+				name: book.localReview.title,
+				reviewBody: book.localReview.summary,
+				datePublished: book.localReview.published.toISOString(),
+				author: {
+					"@type": "Person",
+					name: "yujok",
+				},
+				reviewRating:
+					book.localReview.rating !== undefined
+						? {
+								"@type": "Rating",
+								ratingValue: book.localReview.rating,
+								bestRating: 10,
+							}
+						: undefined,
+			}
+		: undefined,
 });
 ---
 
@@ -87,6 +116,8 @@ const jsonLd = dropEmpty({
   ogImage={book.cover}
   ogImageAlt={`Cover of ${book.title}`}
   twitterCard="summary_large_image"
+  fullWidth
+  disableBanner
 >
   <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <LiquidGlassDefs />
