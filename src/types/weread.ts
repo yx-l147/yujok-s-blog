@@ -30,6 +30,7 @@ export interface LocalBookReview {
 		chapter?: string;
 	}>;
 	relatedPosts: string[];
+	doubanId?: string;
 }
 
 /** 单本书（来自 shelf.json，已含派生 status） */
@@ -48,7 +49,7 @@ export interface BookItem {
 	publisher?: string;
 	/** 译者（精选书才有） */
 	translator?: string;
-	/** 简介（精选书才有） */
+	/** 简介 */
 	intro?: string;
 	/** 微信读书评分（10 分制，0 表示评分不足/未补全） */
 	publicRating?: number;
@@ -56,6 +57,14 @@ export interface BookItem {
 	ratingCount?: number;
 	/** 出版时间 */
 	publishTime?: string;
+	/** ISBN 号 */
+	isbn?: string;
+	/** 微信读书官方直达链接 */
+	deepLink?: string;
+	/** 豆瓣条目 ID */
+	doubanId?: string;
+	/** 豆瓣条目直达链接 */
+	doubanUrl?: string;
 	/** 是否读完 */
 	finishReading: number;
 	/** 阅读进度 0-100 */

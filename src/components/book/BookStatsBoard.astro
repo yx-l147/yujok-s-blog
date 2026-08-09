@@ -14,12 +14,11 @@ const fmtHours = (sec: number) => {
 // 偏好分类：算占比（用于条形）
 const maxCatTime = Math.max(...stats.preferCategory.map((c) => c.time), 1);
 const catColors = [
-	"var(--sk-river)",
-	"var(--sk-violet)",
-	"var(--sk-comet)",
-	"var(--sk-sakura)",
-	"var(--sk-gold)",
-	"var(--sk-sunset)",
+	"linear-gradient(90deg, var(--sk-river), var(--sk-comet))",
+	"linear-gradient(90deg, var(--sk-violet), var(--sk-river))",
+	"linear-gradient(90deg, var(--sk-comet), var(--sk-sakura))",
+	"linear-gradient(90deg, var(--sk-sakura), var(--sk-gold))",
+	"linear-gradient(90deg, var(--sk-gold), var(--sk-sunset))",
 ];
 ---
 
@@ -27,7 +26,10 @@ const catColors = [
   <!-- 偏好分类 -->
   <div class="taste-card sk-glass">
     <div class="taste-head">
-      <h3 class="taste-title sk-han">读得最多的领域</h3>
+      <div class="title-wrap">
+        <span class="icon-dot"></span>
+        <h3 class="taste-title sk-han">读得最多的领域</h3>
+      </div>
       {stats.preferCategoryWord && <span class="taste-word">{stats.preferCategoryWord}</span>}
     </div>
     <div class="cat-list">
@@ -35,7 +37,10 @@ const catColors = [
         <div class="cat-row">
           <span class="cat-name sk-han">{c.title}</span>
           <div class="cat-bar">
-            <span class="cat-bar-fill" style={`width:${Math.max(8, (c.time / maxCatTime) * 100)}%; background:${catColors[i % catColors.length]}`}></span>
+            <span
+              class="cat-bar-fill"
+              style={`width:${Math.max(8, (c.time / maxCatTime) * 100)}%; background:${catColors[i % catColors.length]}`}
+            ></span>
           </div>
           <span class="cat-meta">{c.count}本 · {fmtHours(c.time)}</span>
         </div>
@@ -46,7 +51,10 @@ const catColors = [
   <!-- 偏好作者 -->
   <div class="taste-card sk-glass">
     <div class="taste-head">
-      <h3 class="taste-title sk-han">钟爱的作者</h3>
+      <div class="title-wrap">
+        <span class="icon-dot icon-dot--gold"></span>
+        <h3 class="taste-title sk-han">钟爱的作者</h3>
+      </div>
       {stats.preferTimeWord && <span class="taste-word">{stats.preferTimeWord}</span>}
     </div>
     <ul class="author-list">
@@ -65,98 +73,154 @@ const catColors = [
   .taste {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.3rem;
-    margin: 1.3rem 0;
+    gap: 1.4rem;
+    margin: 1.4rem 0;
   }
   @media (max-width: 720px) {
     .taste { grid-template-columns: 1fr; }
   }
 
-  .taste-card { padding: 1.5rem 1.6rem; }
+  .taste-card {
+    padding: 1.6rem 1.8rem;
+    border-radius: 24px;
+    background: var(--bk-mat-thick-bg);
+    backdrop-filter: var(--bk-mat-thick-blur);
+    -webkit-backdrop-filter: var(--bk-mat-thick-blur);
+    border: 1px solid var(--bk-mat-thick-border);
+    box-shadow: var(--bk-mat-thick-shadow), var(--bk-mat-thick-highlight);
+  }
   .taste-head {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     gap: .6rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
     flex-wrap: wrap;
   }
+  .title-wrap {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+  }
+  .icon-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--sk-river);
+    box-shadow: 0 0 10px var(--sk-river);
+  }
+  .icon-dot--gold {
+    background: var(--sk-gold);
+    box-shadow: 0 0 10px var(--sk-gold);
+  }
   .taste-title {
-    font-size: 1.12rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--sk-moon);
     margin: 0;
+    letter-spacing: var(--bk-tracking-title);
+    line-height: var(--bk-leading-title);
   }
   .taste-word {
-    font-size: .74rem;
+    font-size: .76rem;
     color: var(--sk-comet);
-    padding: .12rem .55rem;
+    padding: .2rem .65rem;
     border-radius: 999px;
     background: color-mix(in srgb, var(--sk-comet) 14%, transparent);
     border: 1px solid color-mix(in srgb, var(--sk-comet) 28%, transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: var(--bk-tracking-caption);
   }
 
   /* 分类条形 */
-  .cat-list { display: flex; flex-direction: column; gap: .85rem; }
+  .cat-list { display: flex; flex-direction: column; gap: .9rem; }
   .cat-row {
     display: grid;
-    grid-template-columns: 4.5em 1fr auto;
+    grid-template-columns: 4.8em 1fr auto;
     align-items: center;
-    gap: .7rem;
+    gap: .8rem;
   }
   .cat-name {
-    font-size: .85rem;
-    color: color-mix(in srgb, var(--sk-moon) 82%, transparent);
+    font-size: .88rem;
+    color: color-mix(in srgb, var(--sk-moon) 88%, transparent);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
+    letter-spacing: var(--bk-tracking-caption);
   }
   .cat-bar {
-    height: 7px;
+    height: 8px;
     border-radius: 999px;
     background: color-mix(in srgb, var(--sk-moon) 10%, transparent);
     overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   }
   .cat-bar-fill {
     display: block;
     height: 100%;
     border-radius: 999px;
     transform-origin: left;
-    animation: bar-grow 1s var(--sk-ease-out) both;
-    box-shadow: 0 0 10px color-mix(in srgb, currentColor 40%, transparent);
+    animation: bar-grow .9s var(--bk-ease-out-soft) both;
+    box-shadow:
+      0 0 12px color-mix(in srgb, var(--sk-river) 40%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.25);
   }
+  .cat-row:nth-child(2) .cat-bar-fill { animation-delay: .08s; }
+  .cat-row:nth-child(3) .cat-bar-fill { animation-delay: .16s; }
+  .cat-row:nth-child(4) .cat-bar-fill { animation-delay: .24s; }
+  .cat-row:nth-child(5) .cat-bar-fill { animation-delay: .32s; }
   @keyframes bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
   .cat-meta {
-    font-size: .72rem;
-    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    font-size: .74rem;
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
     font-family: var(--sk-font-display);
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
+    letter-spacing: var(--bk-tracking-caption);
   }
 
   /* 作者榜 */
-  .author-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .7rem; }
+  .author-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .6rem; }
   .author-row {
     display: flex;
-    align-items: baseline;
-    gap: .7rem;
+    align-items: center;
+    gap: .8rem;
+    padding: .4rem .6rem;
+    border-radius: 12px;
+    transition:
+      background .25s var(--bk-ease-out-soft),
+      transform var(--bk-press-duration) ease-out;
+  }
+  .author-row:hover {
+    background: var(--bk-mat-thin-bg);
+  }
+  .author-row:active {
+    transform: scale(0.985);
   }
   .author-rank {
-    font-size: 1rem;
-    color: color-mix(in srgb, var(--sk-gold) 75%, transparent);
-    font-weight: 600;
+    font-size: 1.05rem;
+    color: color-mix(in srgb, var(--sk-gold) 88%, transparent);
+    font-weight: 700;
     min-width: 1.8em;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: var(--bk-tracking-title);
   }
   .author-name {
-    font-size: .9rem;
+    font-size: .92rem;
     color: var(--sk-moon);
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: var(--bk-tracking-caption);
   }
   .author-meta {
     margin-left: auto;
-    font-size: .72rem;
-    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    font-size: .74rem;
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
     font-family: var(--sk-font-display);
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
+    letter-spacing: var(--bk-tracking-caption);
   }
 </style>

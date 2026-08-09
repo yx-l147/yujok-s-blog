@@ -71,6 +71,7 @@ const bookReviewsCollection = defineCollection({
 			.optional()
 			.default([]),
 		relatedPosts: z.array(z.string()).optional().default([]),
+		doubanId: z.string().optional(),
 	}),
 });
 

@@ -1,0 +1,243 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "yujok Blog" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Primary navigation" [ref=e10]:
+      - link "主页" [ref=e11] [cursor=pointer]:
+        - /url: /
+      - link "归档" [ref=e15] [cursor=pointer]:
+        - /url: /archive/
+      - link "书架" [ref=e19] [cursor=pointer]:
+        - /url: /book/
+      - link "课程表" [ref=e23] [cursor=pointer]:
+        - /url: /schedule/
+      - link "关于" [ref=e27] [cursor=pointer]:
+        - /url: /about/
+      - link "偶得" [ref=e31] [cursor=pointer]:
+        - /url: /thoughts/
+    - group [ref=e35]:
+      - generic "更多" [ref=e36] [cursor=pointer]
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - button "Search Panel" [ref=e44] [cursor=pointer]
+        - generic:
+          - generic:
+            - button "标题/摘要"
+            - button "全文"
+          - generic:
+            - textbox "Search"
+      - button "Display Settings" [ref=e45] [cursor=pointer]
+      - menu [ref=e49]:
+        - menuitem "Light/Dark Mode" [ref=e50] [cursor=pointer]
+        - generic:
+          - generic:
+            - button "亮色"
+            - button "暗色"
+            - button "跟随系统"
+      - button "Toggle Right Sidebar" [ref=e51] [cursor=pointer]
+    - generic:
+      - link "主页":
+        - /url: /
+      - link "分类":
+        - /url: /categories/
+      - link "标签":
+        - /url: /tags/
+      - link "归档":
+        - /url: /archive/
+      - link "书架":
+        - /url: /book/
+      - link "课程表":
+        - /url: /schedule/
+      - link "关于":
+        - /url: /about/
+      - link "偶得":
+        - /url: /thoughts/
+      - link "Bangumi":
+        - /url: /bangumi/
+      - link "GitHub":
+        - /url: https://github.com/yx-l147
+    - generic [ref=e54]:
+      - generic:
+        - generic:
+          - generic:
+            - text: 主题色
+            - button "Reset to Default"
+          - generic: "220"
+        - generic:
+          - slider "主题色": "220"
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - complementary [ref=e57]:
+        - generic [ref=e59]:
+          - link "Go to About Page" [ref=e60] [cursor=pointer]:
+            - /url: /about/
+            - img "Profile Image of the Author" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: yujok
+            - generic [ref=e66]: 自由之风永远吹拂
+            - generic [ref=e67]:
+              - link "Twitter" [ref=e68] [cursor=pointer]:
+                - /url: https://x.com/yxl147
+              - link "Steam" [ref=e71] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561199175076036/
+              - link "GitHub" [ref=e74] [cursor=pointer]:
+                - /url: https://github.com/yx-l147
+              - link "Tiktok" [ref=e77] [cursor=pointer]:
+                - /url: https://www.douyin.com/user/self?from_tab_name=main&showTab=post
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: 分类
+            - link "View all posts in the 未分类 category" [ref=e85] [cursor=pointer]:
+              - /url: /categories/uncategorized/
+              - button "未分类 1" [ref=e86]:
+                - generic [ref=e87]:
+                  - generic [ref=e88]: 未分类
+                  - generic [ref=e89]: "1"
+          - generic [ref=e90]: 标签
+          - generic [ref=e93]:
+            - generic [ref=e94]: 偶得速览
+            - generic [ref=e97]:
+              - list [ref=e98]:
+                - listitem [ref=e99]:
+                  - link "6/1 最近在写一个比较复杂的项目时突然意识到：写代码和写文章的过程惊人地相似。" [ref=e100] [cursor=pointer]:
+                    - /url: /thoughts/coding-and-writing/
+                    - generic [ref=e101]: 6/1
+                    - generic [ref=e102]: 最近在写一个比较复杂的项目时突然意识到：写代码和写文章的过程惊人地相似。
+                - listitem [ref=e103]:
+                  - link "5/20 最近在重新思考阅读的意义。" [ref=e104] [cursor=pointer]:
+                    - /url: /thoughts/reading-thoughts/
+                    - generic [ref=e105]: 5/20
+                    - generic [ref=e106]: 最近在重新思考阅读的意义。
+              - link "查看更多 →" [ref=e107] [cursor=pointer]:
+                - /url: /thoughts/
+      - main [ref=e108]:
+        - generic [ref=e109]:
+          - article [ref=e111]:
+            - generic [ref=e112]:
+              - link "test" [ref=e113] [cursor=pointer]:
+                - /url: /posts/test/
+              - generic [ref=e116]:
+                - generic [ref=e117]: 2026-06-20
+                - link "View all posts in the category" [ref=e127] [cursor=pointer]:
+                  - /url: /categories/uncategorized/
+                  - text: 未分类
+                - generic [ref=e128]: 无标签
+              - generic [ref=e134]: 这是一篇测试文章，测试系统有无问题，之前写到一些算法题解文章被我删除了。
+          - generic [ref=e135]:
+            - link:
+              - /url: ""
+            - generic [ref=e136]: "1"
+            - link:
+              - /url: ""
+          - generic [ref=e141]:
+            - text: © 2026 yujok.
+            - link "RSS" [ref=e142] [cursor=pointer]:
+              - /url: /rss.xml
+            - text: /
+            - link "Sitemap" [ref=e143] [cursor=pointer]:
+              - /url: /sitemap-index.xml
+            - text: Powered by
+            - link "Astro" [ref=e144] [cursor=pointer]:
+              - /url: https://astro.build
+            - text: /
+            - link "Fuwari" [ref=e145] [cursor=pointer]:
+              - /url: https://github.com/saicaca/fuwari
+      - complementary [ref=e146]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: 站点统计
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]: 文章
+                - generic [ref=e158]: "0"
+              - generic [ref=e159]:
+                - generic [ref=e160]: 分类
+                - generic [ref=e164]: "0"
+              - generic [ref=e165]:
+                - generic [ref=e166]: 标签
+                - generic [ref=e170]: "0"
+              - generic [ref=e171]:
+                - generic [ref=e172]: 总字数
+                - generic [ref=e176]: "0"
+              - generic [ref=e177]:
+                - generic [ref=e178]: 运行天数
+                - generic [ref=e182]: 0 天
+              - generic [ref=e183]:
+                - generic [ref=e184]: 最后活动
+                - generic [ref=e188]: 0 天前
+          - generic [ref=e189]:
+            - generic [ref=e190]: 日历
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - button "回到本月" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e196]: 8月
+                  - generic [ref=e197]: 2026年
+                - button: 回到今天
+                - generic [ref=e198]:
+                  - button "上一个月" [ref=e199] [cursor=pointer]
+                  - button "下一个月" [ref=e202] [cursor=pointer]
+              - generic [ref=e205]:
+                - generic [ref=e206]: 一
+                - generic [ref=e207]: 二
+                - generic [ref=e208]: 三
+                - generic [ref=e209]: 四
+                - generic [ref=e210]: 五
+                - generic [ref=e211]: 六
+                - generic [ref=e212]: 日
+              - generic [ref=e213]:
+                - button "前往 2026年7月27日" [ref=e214] [cursor=pointer]: "27"
+                - button "前往 2026年7月28日" [ref=e215] [cursor=pointer]: "28"
+                - button "前往 2026年7月29日" [ref=e216] [cursor=pointer]: "29"
+                - button "前往 2026年7月30日" [ref=e217] [cursor=pointer]: "30"
+                - button "前往 2026年7月31日" [ref=e218] [cursor=pointer]: "31"
+                - generic [ref=e219]: "1"
+                - generic [ref=e220]: "2"
+                - generic [ref=e221]: "3"
+                - generic [ref=e222]: "4"
+                - generic [ref=e223]: "5"
+                - generic [ref=e224]: "6"
+                - generic [ref=e225]: "7"
+                - generic [ref=e226]: "8"
+                - generic [ref=e227]: "9"
+                - generic [ref=e228]: "10"
+                - generic [ref=e229]: "11"
+                - generic [ref=e230]: "12"
+                - generic [ref=e231]: "13"
+                - generic [ref=e232]: "14"
+                - generic [ref=e233]: "15"
+                - generic [ref=e234]: "16"
+                - generic [ref=e235]: "17"
+                - generic [ref=e236]: "18"
+                - generic [ref=e237]: "19"
+                - generic [ref=e238]: "20"
+                - generic [ref=e239]: "21"
+                - generic [ref=e240]: "22"
+                - generic [ref=e241]: "23"
+                - generic [ref=e242]: "24"
+                - generic [ref=e243]: "25"
+                - generic [ref=e244]: "26"
+                - generic [ref=e245]: "27"
+                - generic [ref=e246]: "28"
+                - generic [ref=e247]: "29"
+                - generic [ref=e248]: "30"
+                - generic [ref=e249]: "31"
+                - button "前往 2026年9月1日" [ref=e250] [cursor=pointer]: "1"
+                - button "前往 2026年9月2日" [ref=e251] [cursor=pointer]: "2"
+                - button "前往 2026年9月3日" [ref=e252] [cursor=pointer]: "3"
+                - button "前往 2026年9月4日" [ref=e253] [cursor=pointer]: "4"
+                - button "前往 2026年9月5日" [ref=e254] [cursor=pointer]: "5"
+                - button "前往 2026年9月6日" [ref=e255] [cursor=pointer]: "6"
+          - generic [ref=e256]:
+            - generic [ref=e257]: 音乐播放器
+            - generic [ref=e261]:
+              - generic [ref=e262]: ♪
+              - generic [ref=e263]: 暂未配置歌单
+              - generic [ref=e264]:
+                - text: 在
+                - code [ref=e265]: src/config.ts
+                - text: 的
+                - code [ref=e266]: musicPlayer.tracks
+                - text: 添加歌曲
+    - generic:
+      - generic:
+        - button "Back to Top"

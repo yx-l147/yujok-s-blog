@@ -122,6 +122,7 @@ export async function getLocalBookReviews(): Promise<
 			topics: entry.data.topics,
 			quotes: entry.data.quotes,
 			relatedPosts: entry.data.relatedPosts,
+			doubanId: entry.data.doubanId,
 		};
 
 		if (!current || review.published > current.published) {
@@ -143,16 +144,18 @@ export async function getEnrichedShelfData(): Promise<BookShelfData> {
 		([bookId, review]) => {
 			const book = bookMap.get(bookId);
 			if (!book) return [];
-			return review.quotes.map((quote, index) => ({
-				bookId,
-				bookTitle: book.title,
-				bookCover: book.cover,
-				chapter: quote.chapter || "本地精选",
-				text: quote.text,
-				createTime: new Date(review.published.getTime() + index).toISOString(),
-			}));
+			return review.quotes
+				.filter((quote) => quote.text && !quote.text.includes("TODO"))
+				.map((quote, index) => ({
+					bookId,
+					bookTitle: book.title,
+					bookCover: book.cover,
+					chapter: quote.chapter || "本地精选",
+					text: quote.text,
+					createTime: new Date(review.published.getTime() + index).toISOString(),
+				}));
 		},
 	);
 
-	return { ...shelfData, books, notes: [...localNotes, ...shelfData.notes] };
+	return { ...shelfData, books, notes: [...shelfData.notes, ...localNotes] };
 }

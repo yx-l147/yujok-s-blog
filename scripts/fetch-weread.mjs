@@ -196,14 +196,16 @@ for e in to_enrich:
         "publicRating": round(rating / 100, 1) if rating else 0,
         "ratingCount": info.get("newRatingCount", 0),
         "publishTime": info.get("publishTime") or "",
+        "isbn": info.get("isbn") or "",
+        "deepLink": info.get("deepLink") or "",
     }
     time.sleep(0.05)
 
 for e in enriched:
     e.update(info_map.get(e["bookId"], {}))
 
-# ---- 精选笔记：从高笔记公开书取真实划线 ----
-note_src = [e for e in to_enrich if e["bookmarkCount"] > 0][:6]
+# ---- 划线与笔记：从所有公开书抽取全部完整划线 ----
+note_src = [e for e in enriched if e.get("bookmarkCount", 0) > 0]
 notes = []
 for e in note_src:
     bid = e["bookId"]
@@ -211,10 +213,11 @@ for e in note_src:
     if not bm:
         continue
     chapters = {c["chapterUid"]: c.get("title", "") for c in bm.get("chapters", [])}
-    marks = sorted(bm.get("updated", []) or [], key=lambda m: len(m.get("markText", "")), reverse=True)[:3]
-    for m in marks:
+    raw_marks = bm.get("updated", []) or []
+    sorted_marks = sorted(raw_marks, key=lambda m: m.get("createTime", 0), reverse=True)
+    for m in sorted_marks:
         txt = (m.get("markText") or "").strip()
-        if len(txt) < 8:
+        if not txt or len(txt) < 2:
             continue
         notes.append({
             "bookId": bid,
@@ -224,7 +227,7 @@ for e in note_src:
             "text": txt,
             "createTime": datetime.datetime.fromtimestamp(m.get("createTime", 0)).isoformat() if m.get("createTime") else "",
         })
-    time.sleep(0.05)
+    time.sleep(0.03)
 
 # ---- 偏好分类 / 作者 ----
 prefer_category = [

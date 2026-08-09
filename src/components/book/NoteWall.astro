@@ -3,145 +3,1035 @@ import type { BookNote } from "@/types/weread";
 
 interface Props {
 	notes: BookNote[];
-	limit?: number;
 }
-const { notes, limit = 6 } = Astro.props;
+const { notes } = Astro.props;
 
-// 按书去重，每本最多 1 条，保证多样性
-const seen = new Set<string>();
-const items: BookNote[] = [];
-for (const n of notes) {
-	if (seen.has(n.bookId)) continue;
-	if (n.text.length < 8) continue;
-	seen.add(n.bookId);
-	items.push(n);
-	if (items.length >= limit) break;
-}
-// 不够则放开去重补齐
-if (items.length < limit) {
-	for (const n of notes) {
-		if (items.includes(n) || n.text.length < 8) continue;
-		items.push(n);
-		if (items.length >= limit) break;
+// 清理文本中的 [插图]、图片 Markdown / HTML 标签
+const cleanQuoteText = (text: string) => {
+	return text
+		.replace(/\[插图\]/g, "")
+		.replace(/!\[.*?\]\(.*?\)/g, "")
+		.replace(/<img[^>]*>/gi, "")
+		.replace(/https?:\/\/[^\s]+?\.(png|jpg|jpeg|gif|webp)/gi, "")
+		.trim();
+};
+
+// 过滤掉占位划线与超短行
+const validNotes = notes
+	.map((n) => ({ ...n, text: cleanQuoteText(n.text) }))
+	.filter((n) => n.text && !n.text.includes("TODO") && n.text.length >= 6);
+
+// 3 行 x 3 列 = 9 卡片单页容量
+const PAGE_SIZE = 9;
+
+// 洗牌算法
+const shuffleArray = <T,>(arr: T[]): T[] => {
+	const a = [...arr];
+	for (let i = a.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[a[i], a[j]] = [a[j], a[i]];
 	}
-}
+	return a;
+};
+
+// 构建单页尽可能来自不同书本的高多度数据池 (Maximal Book Diversity Sampling)
+const buildDiverseBookPool = (all: typeof validNotes) => {
+	const bookMap = new Map<string, typeof validNotes>();
+	all.forEach((n) => {
+		if (!bookMap.has(n.bookId)) bookMap.set(n.bookId, []);
+		bookMap.get(n.bookId)!.push(n);
+	});
+
+	// 对每本书内的划线进行随机打乱
+	for (const [bid, list] of bookMap.entries()) {
+		bookMap.set(bid, shuffleArray(list));
+	}
+
+	const pool: typeof validNotes = [];
+	while (bookMap.size > 0) {
+		const usedInBatch = new Set<string>();
+		const bKeys = shuffleArray(Array.from(bookMap.keys()));
+
+		// 第一轮：优先从不同书本中各取 1 条划线
+		for (const bKey of bKeys) {
+			if (usedInBatch.size >= PAGE_SIZE) break;
+			const list = bookMap.get(bKey);
+			if (list && list.length > 0) {
+				pool.push(list.pop()!);
+				usedInBatch.add(bKey);
+				if (list.length === 0) bookMap.delete(bKey);
+			}
+		}
+
+		// 若独立书本不够 9 本，则从已有书本中补齐
+		if (usedInBatch.size < PAGE_SIZE && bookMap.size > 0) {
+			const remainingKeys = Array.from(bookMap.keys());
+			for (const bKey of remainingKeys) {
+				if (pool.length % PAGE_SIZE === 0) break;
+				const list = bookMap.get(bKey);
+				if (list && list.length > 0) {
+					pool.push(list.pop()!);
+					if (list.length === 0) bookMap.delete(bKey);
+				}
+			}
+		}
+	}
+	return pool;
+};
+
+const diverseValidNotes = buildDiverseBookPool(validNotes);
+const totalPages = Math.ceil(diverseValidNotes.length / PAGE_SIZE);
+const initialItems = diverseValidNotes.slice(0, PAGE_SIZE);
+
+// 预设 9 张卡片手作大错落倾角与上下平移（打造极富艺术感与错落感的排版）
+const ROTATIONS = [-3.5, 2.8, -2.2, 3.6, -1.6, 2.9, -3.8, 1.8, -2.6];
+const OFFSETS_Y = [0, 8, -6, 12, -4, 6, -10, 4, -8];
+
+// 传给前端的全量数据 JSON
+const safeAllNotes = diverseValidNotes.map((n) => ({
+	bid: n.bookId,
+	title: n.bookTitle,
+	cover: n.bookCover || "",
+	chap: n.chapter || "",
+	text: n.text,
+}));
 ---
 
-{items.length > 0 && (
-  <section class="notes sk-rise" data-delay="6">
-    <header class="notes-head">
-      <p class="notes-eyebrow sk-script">marginalia</p>
-      <h2 class="notes-title sk-han">划过的句子</h2>
-      <p class="notes-sub">那些被指尖留住的字句</p>
+{validNotes.length > 0 && (
+  <section class="notes-editorial sk-rise" data-notes-wall data-delay="6">
+    <header class="editorial-head">
+      <div class="head-left">
+        <div class="title-wrap">
+          <span class="pulse-dot"></span>
+          <p class="notes-eyebrow sk-script">marginalia</p>
+        </div>
+        <h2 class="editorial-title sk-han">划过的句子</h2>
+        <p class="editorial-sub">
+          指尖留存的灵感文本（共收录 <strong class="hl-count">{validNotes.length.toLocaleString()}</strong> 条划线 · 单页9本不同书 · 手作参差错落排版）
+        </p>
+      </div>
+
+      <div class="head-right">
+        <!-- 自动播放 / 手动切换按钮 -->
+        <button type="button" class="btn-autoplay-toggle" data-notes-autoplay title="切换自动轮播与手动模式">
+          <svg class="icon-play" viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="display:none;">
+            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+          </svg>
+          <span data-notes-ap-text>自动轮播</span>
+        </button>
+
+        <!-- 搜索框 -->
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            class="search-input"
+            placeholder={`搜索 ${validNotes.length.toLocaleString()} 条金句...`}
+            data-notes-search
+          />
+        </div>
+
+        <!-- 换一刷 -->
+        <button type="button" class="btn-shuffle" data-notes-shuffle title="随机刷新 9 条不同书本灵感金句">
+          <svg class="icon-refresh" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+          <span>换一刷</span>
+        </button>
+      </div>
     </header>
 
-    <div class="notes-grid">
-      {items.map((n, i) => (
-        <article class="note sk-glass sk-rise" data-delay={Math.min(i + 1, 8)}>
-          <span class="note-quote-mark" aria-hidden="true">"</span>
-          <p class="note-text sk-han">{n.text}</p>
-          <div class="note-foot">
-            {n.bookCover && (
-              <span class="note-cover">
-                <img src={n.bookCover} alt={n.bookTitle} loading="lazy" />
-              </span>
-            )}
-            <div class="note-src">
-              <span class="note-book">《{n.bookTitle}》</span>
-              {n.chapter && <span class="note-chapter">{n.chapter}</span>}
+    <!-- 均等 3 列 (3行共9卡片) + 大参差错落手作摆放 -->
+    <div class="editorial-grid" data-notes-grid>
+      {initialItems.map((n, i) => {
+        const rot = ROTATIONS[i % ROTATIONS.length];
+        const offY = OFFSETS_Y[i % OFFSETS_Y.length];
+        const animClass = i % 3 === 0 ? "q-card-bloom" : i % 3 === 1 ? "q-card-float-down" : "q-card-float-up";
+        return (
+          <article
+            class={`q-card ${animClass}`}
+            style={`--card-i:${i}; --rot:${rot}deg; --off-y:${offY}px; transform: rotate(${rot}deg) translateY(${offY}px);`}
+          >
+            <span class="q-mark" aria-hidden="true">“</span>
+            <p class="q-text sk-han">{n.text}</p>
+            <div class="q-foot">
+              <div class="q-src">
+                {n.bookCover && (
+                  <img src={n.bookCover} alt={n.bookTitle} class="q-mini-cover" loading="lazy" />
+                )}
+                <div class="q-meta">
+                  <a href={`/book/${n.bookId}/`} class="q-book">《{n.bookTitle}》</a>
+                  {n.chapter && <span class="q-chap">· {n.chapter}</span>}
+                </div>
+              </div>
+              <button type="button" class="q-copy" data-copy-text={n.text} title="复制划线金句">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
             </div>
-          </div>
-        </article>
-      ))}
+          </article>
+        );
+      })}
     </div>
+
+    <!-- 底部：支持输入数字跳转与手动翻页的页码指示器控件 -->
+    <div class="editorial-foot">
+      <!-- 苹果 VisionOS 页码指示胶囊 -->
+      <div class="page-nav-pill">
+        <button type="button" class="btn-page-step" data-notes-prev title="上一页" disabled>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="page-input-wrap">
+          <span class="p-label">第</span>
+          <input
+            type="number"
+            class="page-num-input"
+            data-notes-page-input
+            min="1"
+            max={totalPages}
+            value="1"
+            title="输入页码按 Enter 快捷跳转"
+          />
+          <span class="p-label">/ {totalPages.toLocaleString()} 页</span>
+        </div>
+
+        <button type="button" class="btn-page-step" data-notes-next title="下一页">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Toast 提示 -->
+    <div class="toast-tip" data-notes-toast aria-hidden="true">
+      ✨ 金句已复制到剪贴板
+    </div>
+
+    <!-- JSON 挂载 -->
+    <script is:inline type="application/json" id="weread-all-notes-data" set:html={JSON.stringify(safeAllNotes)}></script>
   </section>
 )}
 
 <style>
-  .notes { margin: 3.5rem 0 2.5rem; }
-  .notes-head { margin-bottom: 1.8rem; }
+  .notes-editorial {
+    margin: 3.2rem 0 2.2rem;
+    position: relative;
+  }
+
+  .editorial-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+  }
+  .head-left { display: flex; flex-direction: column; }
+  .title-wrap { display: flex; align-items: center; gap: .4rem; }
+  .pulse-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--sk-sakura); box-shadow: 0 0 8px var(--sk-sakura);
+  }
   .notes-eyebrow {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--sk-sakura);
     margin: 0;
     line-height: 1;
+    letter-spacing: var(--bk-tracking-caption);
   }
-  .notes-title {
+  .editorial-title {
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--sk-moon);
-    margin: .1rem 0 0;
-    letter-spacing: .04em;
+    margin: .15rem 0 0;
+    letter-spacing: var(--bk-tracking-title);
+    line-height: var(--bk-leading-title);
   }
-  .notes-sub {
+  .editorial-sub {
     font-size: .82rem;
-    color: color-mix(in srgb, var(--sk-moon) 56%, transparent);
-    margin: .4rem 0 0;
+    color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+    margin: .3rem 0 0;
+    letter-spacing: var(--bk-tracking-caption);
   }
+  .hl-count { color: var(--sk-comet); font-weight: 600; font-variant-numeric: tabular-nums; }
 
-  .notes-grid {
-    columns: 2 340px;
-    column-gap: 1.3rem;
-  }
-  .note {
-    break-inside: avoid;
-    margin-bottom: 1.3rem;
-    padding: 1.5rem 1.6rem 1.3rem;
-    position: relative;
-    transition: transform .4s var(--sk-ease-out);
-  }
-  .note:hover { transform: translateY(-3px); }
-
-  .note-quote-mark {
+  .head-right { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+  .search-box { position: relative; display: flex; align-items: center; }
+  .search-box svg {
     position: absolute;
-    top: .3rem;
-    left: 1rem;
-    font-family: var(--sk-font-display);
-    font-size: 3.2rem;
-    line-height: 1;
-    color: color-mix(in srgb, var(--sk-comet) 28%, transparent);
+    left: .75rem;
+    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
     pointer-events: none;
   }
-  .note-text {
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.75;
-    color: color-mix(in srgb, var(--sk-moon) 92%, transparent);
-    margin: .8rem 0 0;
-    z-index: 1;
+  .search-input {
+    padding: .4rem .75rem .4rem 2rem;
+    border-radius: 999px;
+    font-size: .8rem;
+    color: var(--sk-moon);
+    background: var(--bk-mat-thin-bg);
+    border: 1px solid var(--bk-mat-thin-border);
+    outline: none;
+    width: 160px;
+    font-family: var(--sk-font-han);
+    letter-spacing: var(--bk-tracking-caption);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    transition:
+      width .35s var(--bk-spring),
+      background .25s var(--bk-ease-out-soft),
+      border-color .25s var(--bk-ease-out-soft),
+      box-shadow .25s var(--bk-ease-out-soft);
+  }
+  .search-input:focus {
+    width: 200px;
+    background: var(--bk-mat-thin-bg-hover);
+    border-color: color-mix(in srgb, var(--sk-comet) 60%, transparent);
+    box-shadow:
+      0 0 12px color-mix(in srgb, var(--sk-comet) 25%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.10);
+  }
+  .search-input::placeholder {
+    color: color-mix(in srgb, var(--sk-moon) 45%, transparent);
   }
 
-  .note-foot {
+  .btn-autoplay-toggle,
+  .btn-shuffle {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .4rem .95rem;
+    border-radius: 999px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--sk-moon);
+    background: var(--bk-mat-thin-bg);
+    border: 1px solid var(--bk-mat-thin-border);
+    cursor: pointer;
+    font-family: var(--sk-font-han);
+    letter-spacing: var(--bk-tracking-caption);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    transition:
+      background .25s var(--bk-ease-out-soft),
+      border-color .25s var(--bk-ease-out-soft),
+      box-shadow .25s var(--bk-ease-out-soft),
+      transform var(--bk-press-duration) ease-out;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn-autoplay-toggle:hover {
+    background: color-mix(in srgb, var(--sk-sakura) 20%, transparent);
+    border-color: color-mix(in srgb, var(--sk-sakura) 50%, transparent);
+  }
+  .btn-autoplay-toggle:active,
+  .btn-shuffle:active {
+    transform: scale(var(--bk-press-scale));
+  }
+  .btn-autoplay-toggle.is-active {
+    background: color-mix(in srgb, var(--sk-sakura) 32%, transparent);
+    border-color: var(--sk-sakura);
+    color: #fff;
+    box-shadow:
+      0 0 12px color-mix(in srgb, var(--sk-sakura) 40%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  }
+
+  .btn-shuffle:hover {
+    background: color-mix(in srgb, var(--sk-river) 20%, transparent);
+    border-color: color-mix(in srgb, var(--sk-river) 50%, transparent);
+  }
+  .icon-refresh { transition: transform .5s var(--bk-spring); }
+  .btn-shuffle:active .icon-refresh { transform: rotate(180deg); }
+
+  /* 均等 3 列网格布局 (3行共9张卡片) */
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    transition:
+      transform .45s var(--bk-spring),
+      opacity .35s var(--bk-ease-out-soft),
+      filter .45s var(--bk-ease-out-soft);
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 900px) {
+    .editorial-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 580px) {
+    .editorial-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 全局基础样式：富有手作艺术感的错落倾斜与上下微位移
+     材质：薄玻璃，与 Hero/Stats 的厚玻璃形成层级（HIG Materials §12）*/
+  .notes-editorial :global(.q-card) {
+    position: relative;
+    padding: 1.15rem 1.3rem 1rem;
+    border-radius: 18px;
+    background: var(--bk-mat-thick-bg);
+    border: 1px solid var(--bk-mat-thick-border);
+    box-shadow: var(--bk-mat-thick-shadow), var(--bk-mat-thick-highlight);
+    backdrop-filter: var(--bk-mat-thick-blur);
+    -webkit-backdrop-filter: var(--bk-mat-thick-blur);
+    transition:
+      transform .45s var(--bk-spring),
+      background .3s var(--bk-ease-out-soft),
+      border-color .3s var(--bk-ease-out-soft),
+      box-shadow .45s var(--bk-spring),
+      opacity .35s var(--bk-ease-out-soft),
+      filter .45s var(--bk-ease-out-soft);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform-origin: center center;
+    min-height: 140px;
+    will-change: transform;
+  }
+
+  /* 悬浮扶正与空间悬浮提拉 */
+  .notes-editorial :global(.q-card:hover) {
+    transform: rotate(0deg) translateY(-6px) scale(1.025);
+    border-color: color-mix(in srgb, var(--sk-comet) 55%, transparent);
+    box-shadow:
+      0 24px 50px rgba(0, 0, 0, 0.45),
+      0 0 24px color-mix(in srgb, var(--sk-comet) 20%, transparent),
+      var(--bk-mat-thick-highlight);
+    z-index: 10;
+  }
+
+  .notes-editorial :global(.q-mark) {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    line-height: .6;
+    color: var(--sk-gold);
+    margin-bottom: .4rem;
+    pointer-events: none;
+    display: block;
+  }
+
+  .notes-editorial :global(.q-text) {
+    font-size: .88rem;
+    line-height: var(--bk-leading-body);
+    color: var(--sk-moon);
+    margin: 0;
+    letter-spacing: var(--bk-tracking-body);
+  }
+
+  .notes-editorial :global(.q-foot) {
     display: flex;
     align-items: center;
-    gap: .65rem;
-    margin-top: 1.2rem;
-    padding-top: .9rem;
-    border-top: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
+    justify-content: space-between;
+    gap: .5rem;
+    margin-top: 1rem;
+    padding-top: .7rem;
+    border-top: 1px solid color-mix(in srgb, var(--sk-moon) 10%, transparent);
   }
-  .note-cover {
-    width: 30px;
-    aspect-ratio: 3/4.2;
-    border-radius: 4px;
-    overflow: hidden;
+  .notes-editorial :global(.q-src) {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .notes-editorial :global(.q-mini-cover) {
+    width: 22px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
     flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(20,40,80,.25);
   }
-  .note-cover img { width: 100%; height: 100%; object-fit: cover; }
-  .note-src { display: flex; flex-direction: column; gap: .1rem; min-width: 0; }
-  .note-book {
-    font-size: .82rem;
+
+  .notes-editorial :global(.q-meta) {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .notes-editorial :global(.q-book) {
+    font-size: .8rem;
     font-weight: 600;
     color: var(--sk-river);
+    text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: var(--bk-tracking-caption);
+    transition: color .25s var(--bk-ease-out-soft);
   }
-  .note-chapter {
-    font-size: .7rem;
-    color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
+  .notes-editorial :global(.q-book:hover) {
+    color: var(--sk-comet);
+    text-decoration: underline;
+  }
+  .notes-editorial :global(.q-chap) {
+    font-size: .71rem;
+    color: color-mix(in srgb, var(--sk-moon) 65%, transparent);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: var(--bk-tracking-caption);
+  }
+  .notes-editorial :global(.q-copy) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+    cursor: pointer;
+    transition:
+      color .25s var(--bk-ease-out-soft),
+      background .25s var(--bk-ease-out-soft),
+      transform var(--bk-press-duration) ease-out;
+    margin-left: auto;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .notes-editorial :global(.q-copy:hover) {
+    color: var(--sk-river);
+    background: color-mix(in srgb, var(--sk-river) 18%, transparent);
+  }
+  .notes-editorial :global(.q-copy:active) {
+    transform: scale(0.88);
+  }
+
+  /* 进入动效：bloom + float，可打断（WWDC18 §3）
+     三段动画分别覆盖 - bloom / float-down / float-up */
+  .notes-editorial :global(.q-card-bloom) {
+    animation: apple-bloom .55s var(--bk-spring) both;
+    animation-delay: calc(var(--card-i, 0) * 0.04s);
+  }
+  .notes-editorial :global(.q-card-float-down) {
+    animation: apple-float-down .55s var(--bk-spring) both;
+    animation-delay: calc(var(--card-i, 0) * 0.04s);
+  }
+  .notes-editorial :global(.q-card-float-up) {
+    animation: apple-float-up .55s var(--bk-spring) both;
+    animation-delay: calc(var(--card-i, 0) * 0.04s);
+  }
+
+  @keyframes apple-bloom {
+    0% {
+      opacity: 0;
+      transform: scale(0.9) rotate(var(--rot, 0deg)) translateY(var(--off-y, 0px));
+      filter: blur(12px);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1.025) rotate(var(--rot, 0deg)) translateY(var(--off-y, 0px));
+      filter: blur(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(var(--rot, 0deg)) translateY(var(--off-y, 0px));
+      filter: blur(0);
+    }
+  }
+
+  @keyframes apple-float-down {
+    0% {
+      opacity: 0;
+      transform: translateY(calc(var(--off-y, 0px) - 22px)) scale(0.95) rotate(var(--rot, 0deg));
+      filter: blur(10px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(calc(var(--off-y, 0px) + 2px)) scale(1.01) rotate(var(--rot, 0deg));
+      filter: blur(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(var(--off-y, 0px)) scale(1) rotate(var(--rot, 0deg));
+      filter: blur(0);
+    }
+  }
+
+  @keyframes apple-float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(calc(var(--off-y, 0px) + 22px)) scale(0.95) rotate(var(--rot, 0deg));
+      filter: blur(10px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(calc(var(--off-y, 0px) - 2px)) scale(1.01) rotate(var(--rot, 0deg));
+      filter: blur(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(var(--off-y, 0px)) scale(1) rotate(var(--rot, 0deg));
+      filter: blur(0);
+    }
+  }
+
+  /* 底部加载与页码指示器 */
+  .editorial-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+  }
+
+  /* 页码指示胶囊 — 厚材质浮层 */
+  .page-nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    padding: .45rem 1.1rem;
+    border-radius: 999px;
+    background: var(--bk-mat-thick-bg);
+    border: 1px solid var(--bk-mat-thick-border);
+    backdrop-filter: var(--bk-mat-thick-blur);
+    -webkit-backdrop-filter: var(--bk-mat-thick-blur);
+    box-shadow: var(--bk-mat-thick-shadow), var(--bk-mat-thick-highlight);
+    z-index: 5;
+  }
+  .btn-page-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bk-mat-thin-bg);
+    border: 1px solid var(--bk-mat-thin-border);
+    color: var(--sk-moon);
+    cursor: pointer;
+    transition:
+      background .25s var(--bk-ease-out-soft),
+      color .25s var(--bk-ease-out-soft),
+      transform var(--bk-press-duration) ease-out,
+      opacity .25s var(--bk-ease-out-soft);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn-page-step:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--sk-river) 30%, transparent);
+    color: var(--sk-comet);
+  }
+  .btn-page-step:active:not(:disabled) {
+    transform: scale(0.9);
+  }
+  .btn-page-step:disabled {
+    opacity: .3;
+    cursor: not-allowed;
+  }
+
+  /* 数字跳转输入框 */
+  .page-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--sk-moon);
+    font-family: var(--sk-font-han);
+    letter-spacing: var(--bk-tracking-caption);
+  }
+  .page-num-input {
+    width: 48px;
+    padding: .15rem .3rem;
+    border-radius: 6px;
+    border: 1px solid var(--bk-mat-thin-border);
+    background: color-mix(in srgb, var(--sk-moon) 4%, transparent);
+    color: var(--sk-comet);
+    font-weight: 700;
+    font-size: .85rem;
+    text-align: center;
+    outline: none;
+    font-family: var(--sk-font-display);
+    font-variant-numeric: tabular-nums;
+    transition:
+      border-color .25s var(--bk-ease-out-soft),
+      box-shadow .25s var(--bk-ease-out-soft),
+      background .25s var(--bk-ease-out-soft);
+    -moz-appearance: textfield;
+  }
+  .page-num-input::-webkit-inner-spin-button,
+  .page-num-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .page-num-input:focus {
+    border-color: var(--sk-comet);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--sk-comet) 40%, transparent);
+    background: color-mix(in srgb, var(--sk-moon) 8%, transparent);
+  }
+
+  /* Toast */
+  .toast-tip {
+    position: fixed; bottom: 2rem; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+    padding: .55rem 1.3rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, #000 88%, var(--sk-river));
+    color: #fff;
+    font-size: .82rem;
+    font-weight: 500;
+    font-family: var(--sk-font-han);
+    letter-spacing: var(--bk-tracking-caption);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    transition:
+      opacity .3s var(--bk-ease-out-soft),
+      transform .45s var(--bk-spring);
+    z-index: 999;
+  }
+  .toast-tip.is-show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 </style>
+
+<script>
+  interface NoteRaw {
+    bid: string;
+    title: string;
+    cover: string;
+    chap: string;
+    text: string;
+  }
+
+  function initEditorialNotes() {
+    const wall = document.querySelector<HTMLElement>("[data-notes-wall]");
+    if (!wall || wall.dataset.appBound) return;
+    wall.dataset.appBound = "1";
+
+    const scriptEl = document.getElementById("weread-all-notes-data");
+    if (!scriptEl) return;
+
+    let allNotes: NoteRaw[] = [];
+    try {
+      allNotes = JSON.parse(scriptEl.textContent || "[]");
+    } catch {
+      return;
+    }
+    if (allNotes.length === 0) return;
+
+    const PAGE_SIZE = 9;
+    const ROTATIONS = [-3.5, 2.8, -2.2, 3.6, -1.6, 2.9, -3.8, 1.8, -2.6];
+    const OFFSETS_Y = [0, 8, -6, 12, -4, 6, -10, 4, -8];
+
+    const shuffleArray = <T,>(arr: T[]): T[] => {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    };
+
+    // 尽量保证单页 9 张卡片来自 9 本不同的书 (Maximal Book Diversity Sampling)
+    const buildDiverseBookPool = (all: NoteRaw[]) => {
+      const bookMap = new Map<string, NoteRaw[]>();
+      all.forEach((n) => {
+        if (!bookMap.has(n.bid)) bookMap.set(n.bid, []);
+        bookMap.get(n.bid)!.push(n);
+      });
+
+      for (const [bid, list] of bookMap.entries()) {
+        bookMap.set(bid, shuffleArray(list));
+      }
+
+      const pool: NoteRaw[] = [];
+      while (bookMap.size > 0) {
+        const usedInBatch = new Set<string>();
+        const bKeys = shuffleArray(Array.from(bookMap.keys()));
+
+        for (const bKey of bKeys) {
+          if (usedInBatch.size >= PAGE_SIZE) break;
+          const list = bookMap.get(bKey);
+          if (list && list.length > 0) {
+            pool.push(list.pop()!);
+            usedInBatch.add(bKey);
+            if (list.length === 0) bookMap.delete(bKey);
+          }
+        }
+
+        if (usedInBatch.size < PAGE_SIZE && bookMap.size > 0) {
+          const remainingKeys = Array.from(bookMap.keys());
+          for (const bKey of remainingKeys) {
+            if (pool.length % PAGE_SIZE === 0) break;
+            const list = bookMap.get(bKey);
+            if (list && list.length > 0) {
+              pool.push(list.pop()!);
+              if (list.length === 0) bookMap.delete(bKey);
+            }
+          }
+        }
+      }
+      return pool;
+    };
+
+    const grid = wall.querySelector<HTMLElement>("[data-notes-grid]")!;
+    const searchInput = wall.querySelector<HTMLInputElement>("[data-notes-search]")!;
+    const shuffleBtn = wall.querySelector<HTMLButtonElement>("[data-notes-shuffle]")!;
+    const btnAutoPlay = wall.querySelector<HTMLButtonElement>("[data-notes-autoplay]")!;
+    const apText = wall.querySelector<HTMLElement>("[data-notes-ap-text]")!;
+    const iconPlay = btnAutoPlay?.querySelector<SVGElement>(".icon-play");
+    const iconPause = btnAutoPlay?.querySelector<SVGElement>(".icon-pause");
+    const pageInput = wall.querySelector<HTMLInputElement>("[data-notes-page-input]")!;
+    const btnPrev = wall.querySelector<HTMLButtonElement>("[data-notes-prev]")!;
+    const btnNext = wall.querySelector<HTMLButtonElement>("[data-notes-next]")!;
+    const toast = wall.querySelector<HTMLElement>("[data-notes-toast]")!;
+
+    let shuffledPool = buildDiverseBookPool(allNotes);
+    let currentPage = 1;
+    const totalPages = Math.ceil(shuffledPool.length / PAGE_SIZE);
+    let isSearching = false;
+    let isFlipping = false;
+    let autoPlayTimer: number | null = null;
+    let isAutoPlaying = false;
+
+    let autoSlotIdx = 0;
+    let autoQuoteIdx = PAGE_SIZE;
+
+    const createCardHtml = (n: NoteRaw, idx: number) => {
+      const rot = ROTATIONS[idx % ROTATIONS.length];
+      const offY = OFFSETS_Y[idx % OFFSETS_Y.length];
+      const animClass = idx % 3 === 0 ? "q-card-bloom" : idx % 3 === 1 ? "q-card-float-down" : "q-card-float-up";
+      const chapHtml = n.chap ? `<span class="q-chap">· ${n.chap}</span>` : "";
+      const coverHtml = n.cover ? `<img src="${n.cover}" class="q-mini-cover" alt="${n.title}" loading="lazy" />` : "";
+      return `
+        <article class="q-card ${animClass}" style="--card-i: ${idx % PAGE_SIZE}; --rot: ${rot}deg; --off-y: ${offY}px; transform: rotate(${rot}deg) translateY(${offY}px);">
+          <span class="q-mark" aria-hidden="true">“</span>
+          <p class="q-text sk-han">${n.text}</p>
+          <div class="q-foot">
+            <div class="q-src">
+              ${coverHtml}
+              <div class="q-meta">
+                <a href="/book/${n.bid}/" class="q-book">《${n.title}》</a>
+                ${chapHtml}
+              </div>
+            </div>
+            <button type="button" class="q-copy" data-copy-text="${n.text.replace(/"/g, '&quot;')}" title="复制划线金句">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+      `;
+    };
+
+    // 更新页码指示器状态
+    const updatePagePill = () => {
+      if (pageInput) {
+        pageInput.value = String(currentPage);
+      }
+      if (btnPrev) btnPrev.disabled = currentPage <= 1;
+      if (btnNext) btnNext.disabled = currentPage >= totalPages;
+    };
+
+    // 整页整体翻页
+    const goToPage = (targetPage: number, direction: 'next' | 'prev' | 'shuffle' | 'jump' = 'next') => {
+      if (isFlipping || isSearching) return;
+      if (targetPage < 1 || targetPage > totalPages) return;
+
+      isFlipping = true;
+      currentPage = targetPage;
+      updatePagePill();
+
+      const startIdx = (currentPage - 1) * PAGE_SIZE;
+      const pageBatch = shuffledPool.slice(startIdx, startIdx + PAGE_SIZE);
+
+      grid.style.transform = direction === 'prev' ? "scale(0.96) translateY(14px)" : "scale(0.96) translateY(-14px)";
+      grid.style.filter = "blur(10px)";
+      grid.style.opacity = "0";
+
+      setTimeout(() => {
+        grid.innerHTML = pageBatch.map((n, i) => createCardHtml(n, i)).join("");
+
+        grid.style.transform = "none";
+        grid.style.filter = "none";
+        grid.style.opacity = "1";
+
+        bindCopyButtons();
+
+        setTimeout(() => {
+          isFlipping = false;
+        }, 450);
+      }, 180);
+    };
+
+    // 自动轮播【连绵不绝无缝流动刷新】
+    const stepContinuousCascade = () => {
+      if (isSearching) return;
+
+      const slotIdx = autoSlotIdx % PAGE_SIZE;
+      const quoteIdx = autoQuoteIdx % shuffledPool.length;
+
+      currentPage = Math.floor(autoQuoteIdx / PAGE_SIZE) + 1;
+      if (currentPage > totalPages) {
+        currentPage = 1;
+        autoQuoteIdx = 0;
+      }
+      updatePagePill();
+
+      const cardElements = Array.from(grid.querySelectorAll<HTMLElement>(".q-card"));
+      const card = cardElements[slotIdx];
+      const nextNote = shuffledPool[quoteIdx];
+
+      if (card && nextNote) {
+        card.style.transition = "transform .3s var(--bk-ease-out-soft), opacity .3s, filter .3s";
+        card.style.transform = `rotate(var(--rot, 0deg)) translateY(var(--off-y, 0px)) scale(0.92)`;
+        card.style.filter = "blur(10px)";
+        card.style.opacity = "0";
+
+        setTimeout(() => {
+          const tempContainer = document.createElement("div");
+          tempContainer.innerHTML = createCardHtml(nextNote, slotIdx);
+          const newCard = tempContainer.firstElementChild as HTMLElement;
+          if (newCard && card.parentNode) {
+            card.parentNode.replaceChild(newCard, card);
+            bindCopyButtons();
+          }
+        }, 300);
+      }
+
+      autoSlotIdx++;
+      autoQuoteIdx++;
+    };
+
+    // 自动轮播切换逻辑
+    const toggleAutoPlay = () => {
+      isAutoPlaying = !isAutoPlaying;
+      if (isAutoPlaying) {
+        if (apText) apText.textContent = "暂停轮播";
+        if (iconPlay) iconPlay.style.display = "none";
+        if (iconPause) iconPause.style.display = "inline-block";
+        btnAutoPlay.classList.add("is-active");
+
+        autoSlotIdx = 0;
+        autoQuoteIdx = PAGE_SIZE;
+        stepContinuousCascade();
+
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
+        autoPlayTimer = window.setInterval(() => {
+          stepContinuousCascade();
+        }, 1200);
+      } else {
+        if (apText) apText.textContent = "自动轮播";
+        if (iconPlay) iconPlay.style.display = "inline-block";
+        if (iconPause) iconPause.style.display = "none";
+        btnAutoPlay.classList.remove("is-active");
+        if (autoPlayTimer) {
+          clearInterval(autoPlayTimer);
+          autoPlayTimer = null;
+        }
+      }
+    };
+
+    if (btnAutoPlay) btnAutoPlay.addEventListener("click", toggleAutoPlay);
+
+    // 输入框回车与失焦数字跳转事件
+    if (pageInput) {
+      pageInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const target = parseInt(pageInput.value, 10);
+          if (!isNaN(target)) {
+            const clamped = Math.max(1, Math.min(totalPages, target));
+            goToPage(clamped, 'jump');
+            pageInput.blur();
+          }
+        }
+      });
+      pageInput.addEventListener("blur", () => {
+        const target = parseInt(pageInput.value, 10);
+        if (!isNaN(target)) {
+          const clamped = Math.max(1, Math.min(totalPages, target));
+          if (clamped !== currentPage) {
+            goToPage(clamped, 'jump');
+          }
+        } else {
+          pageInput.value = String(currentPage);
+        }
+      });
+    }
+
+    // 上一页 / 下一页 按钮事件
+    if (btnPrev) btnPrev.addEventListener("click", () => goToPage(currentPage - 1, 'prev'));
+    if (btnNext) btnNext.addEventListener("click", () => goToPage(currentPage + 1, 'next'));
+
+    // 换一刷
+    shuffleBtn.addEventListener("click", () => {
+      if (searchInput) searchInput.value = "";
+      isSearching = false;
+      shuffledPool = buildDiverseBookPool(allNotes);
+      goToPage(1, 'shuffle');
+    });
+
+    // 实时搜索
+    let searchTimer: number | undefined;
+    searchInput.addEventListener("input", () => {
+      clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => {
+        const kw = searchInput.value.trim().toLowerCase();
+        if (!kw) {
+          isSearching = false;
+          shuffledPool = buildDiverseBookPool(allNotes);
+          currentPage = 1;
+          updatePagePill();
+          grid.innerHTML = shuffledPool.slice(0, PAGE_SIZE).map((n, i) => createCardHtml(n, i)).join("");
+        } else {
+          isSearching = true;
+          const searchResults = allNotes.filter(
+            (n) =>
+              n.text.toLowerCase().includes(kw) ||
+              n.title.toLowerCase().includes(kw) ||
+              n.chap.toLowerCase().includes(kw),
+          );
+          grid.innerHTML = searchResults.map((n, i) => createCardHtml(n, i)).join("");
+          if (btnPrev) btnPrev.disabled = true;
+          if (btnNext) btnNext.disabled = true;
+        }
+        bindCopyButtons();
+      }, 200);
+    });
+
+    function bindCopyButtons() {
+      for (const btn of grid.querySelectorAll<HTMLButtonElement>("[data-copy-text]")) {
+        if (btn.dataset.copyBound) continue;
+        btn.dataset.copyBound = "1";
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const txt = btn.dataset.copyText || "";
+          navigator.clipboard.writeText(txt).then(() => {
+            showToast();
+          });
+        });
+      }
+    }
+
+    function showToast() {
+      if (!toast) return;
+      toast.classList.add("is-show");
+      setTimeout(() => toast.classList.remove("is-show"), 2200);
+    }
+
+    updatePagePill();
+    bindCopyButtons();
+  }
+
+  initEditorialNotes();
+  document.addEventListener("swup:page:view", initEditorialNotes);
+</script>

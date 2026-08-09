@@ -31,9 +31,12 @@ while (cursor <= end) {
 	const future = cursor > end;
 	week.push({ date: iso, minutes: future ? -1 : (byDate.get(iso) ?? 0) });
 
-	if (cursor.getDay() === 0 && cursor.getMonth() !== lastMonth) {
-		monthMarks.push({ col, label: `${cursor.getMonth() + 1}月` });
-		lastMonth = cursor.getMonth();
+	if (cursor.getMonth() !== lastMonth) {
+		const lastMark = monthMarks[monthMarks.length - 1];
+		if (!lastMark || col - lastMark.col >= 3) {
+			monthMarks.push({ col, label: `${cursor.getMonth() + 1}月` });
+			lastMonth = cursor.getMonth();
+		}
 	}
 
 	if (week.length === 7) {
@@ -78,7 +81,7 @@ function level(m: number): number {
     <div class="heat-inner">
       <div class="heat-months">
         {monthMarks.map(m => (
-          <span class="heat-month" style={`grid-column:${m.col + 2}`}>{m.label}</span>
+          <span class="heat-month" style={`left:${m.col * 15}px`}>{m.label}</span>
         ))}
       </div>
       <div class="heat-body">
@@ -106,7 +109,16 @@ function level(m: number): number {
 </section>
 
 <style>
-  .heat { padding: 1.6rem 1.8rem 1.5rem; margin: 1.3rem 0; }
+  .heat {
+    padding: 1.6rem 1.8rem 1.5rem;
+    margin: 1.3rem 0;
+    border-radius: 24px;
+    background: var(--bk-mat-thick-bg);
+    backdrop-filter: var(--bk-mat-thick-blur);
+    -webkit-backdrop-filter: var(--bk-mat-thick-blur);
+    border: 1px solid var(--bk-mat-thick-border);
+    box-shadow: var(--bk-mat-thick-shadow), var(--bk-mat-thick-highlight);
+  }
   .heat-head {
     display: flex;
     align-items: flex-end;
@@ -115,29 +127,45 @@ function level(m: number): number {
     margin-bottom: 1.3rem;
     flex-wrap: wrap;
   }
-  .heat-title { font-size: 1.12rem; font-weight: 600; color: var(--sk-moon); margin: 0; }
+  .heat-title {
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--sk-moon);
+    margin: 0;
+    letter-spacing: var(--bk-tracking-title);
+    line-height: var(--bk-leading-title);
+  }
   .heat-sub {
     font-size: .8rem;
-    color: color-mix(in srgb, var(--sk-moon) 56%, transparent);
+    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
     margin: .3rem 0 0;
+    letter-spacing: var(--bk-tracking-caption);
+    font-variant-numeric: tabular-nums;
   }
   .heat-legend { display: flex; align-items: center; gap: .3rem; }
-  .lg-label { font-size: .72rem; color: color-mix(in srgb, var(--sk-moon) 50%, transparent); }
+  .lg-label {
+    font-size: .72rem;
+    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
+    letter-spacing: var(--bk-tracking-caption);
+  }
   .lg-dot { width: 11px; height: 11px; border-radius: 3px; }
 
   .heat-scroll { overflow-x: auto; padding-bottom: .4rem; }
-  .heat-inner { min-width: 720px; }
+  .heat-inner { width: max-content; min-width: min(100%, 720px); }
 
   .heat-months {
-    display: grid;
-    grid-template-columns: 18px repeat(53, 1fr);
-    margin-bottom: .3rem;
+    position: relative;
+    height: 1.2rem;
     margin-left: 22px;
+    margin-bottom: .2rem;
   }
   .heat-month {
+    position: absolute;
+    top: 0;
     font-size: .68rem;
-    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
-    grid-row: 1;
+    color: color-mix(in srgb, var(--sk-moon) 54%, transparent);
+    white-space: nowrap;
+    letter-spacing: var(--bk-tracking-caption);
   }
 
   .heat-body { display: flex; gap: 4px; }
@@ -158,15 +186,25 @@ function level(m: number): number {
   .heat-cell {
     width: 12px; height: 12px;
     border-radius: 3px;
-    transition: transform .2s var(--sk-ease-out);
+    transition:
+      transform .25s var(--bk-spring),
+      box-shadow .25s var(--bk-ease-out-soft);
+    will-change: transform;
   }
-  .heat-cell:hover { transform: scale(1.5); z-index: 2; }
+  .heat-cell:hover {
+    transform: scale(1.5);
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
   .heat-cell.is-empty { background: transparent; }
 
   .lv0, .heat-cell.lv0 { background: color-mix(in srgb, var(--sk-moon) 9%, transparent); }
   .lv1, .heat-cell.lv1 { background: color-mix(in srgb, var(--sk-river) 30%, transparent); }
   .lv2, .heat-cell.lv2 { background: color-mix(in srgb, var(--sk-river) 52%, transparent); }
-  .lv3, .heat-cell.lv3 { background: color-mix(in srgb, var(--sk-river) 74%, transparent); box-shadow: 0 0 5px color-mix(in srgb, var(--sk-river) 45%, transparent); }
+  .lv3, .heat-cell.lv3 {
+    background: color-mix(in srgb, var(--sk-river) 74%, transparent);
+    box-shadow: 0 0 5px color-mix(in srgb, var(--sk-river) 45%, transparent);
+  }
   .lv4, .heat-cell.lv4 {
     background: color-mix(in srgb, var(--sk-comet) 92%, var(--sk-river));
     box-shadow: 0 0 9px color-mix(in srgb, var(--sk-comet) 60%, transparent);

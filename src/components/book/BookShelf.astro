@@ -56,45 +56,47 @@ const cats = topCategories(books, 5);
     </div>
   </header>
 
-  <!-- ══════ 筛选栏 ══════ -->
+  <!-- ══════ 筛选栏（Apple Segmented Control + Sliding Thumb） ══════ -->
   <div class="shelf-filters sk-rise" data-delay="2">
     <!-- 状态 Tab -->
-    <div class="filter-row" role="tablist" aria-label="阅读状态">
+    <div class="seg seg--status" role="tablist" aria-label="阅读状态">
+      <span class="seg-thumb" aria-hidden="true"></span>
       {tabs.map((t) => (
         <button
           type="button"
           role="tab"
-          class:list={["filter-pill filter-pill--status", { "is-active": t.id === "featured" }]}
+          class:list={["seg-btn seg-btn--status", { "is-active": t.id === "featured" }]}
           data-filter="status"
           data-value={t.id}
           aria-selected={t.id === "featured"}
         >
-          {t.label}<span class="pill-n">{t.count}</span>
+          <span class="seg-label">{t.label}</span><span class="seg-n">{t.count}</span>
         </button>
       ))}
     </div>
 
     <!-- 分类 Tag（精选模式下隐藏） -->
-    <div class="filter-row filter-row--cats" role="tablist" aria-label="书籍分类">
+    <div class="seg seg--cats" role="tablist" aria-label="书籍分类">
+      <span class="seg-thumb" aria-hidden="true"></span>
       <button
         type="button"
         role="tab"
-        class="filter-pill filter-pill--cat is-active"
+        class="seg-btn seg-btn--cat is-active"
         data-filter="cat"
         data-value="all"
         aria-selected="true"
       >
-        全部<span class="pill-n">{books.length}</span>
+        <span class="seg-label">全部</span><span class="seg-n">{books.length}</span>
       </button>
       {cats.map((c) => (
         <button
           type="button"
           role="tab"
-          class="filter-pill filter-pill--cat"
+          class="seg-btn seg-btn--cat"
           data-filter="cat"
           data-value={c.name}
         >
-          {c.name}<span class="pill-n">{c.count}</span>
+          <span class="seg-label">{c.name}</span><span class="seg-n">{c.count}</span>
         </button>
       ))}
     </div>
@@ -138,7 +140,7 @@ const cats = topCategories(books, 5);
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
   .shelf-titles { display: flex; align-items: baseline; gap: .8rem; }
   .shelf-eyebrow {
@@ -146,102 +148,155 @@ const cats = topCategories(books, 5);
     color: color-mix(in srgb, var(--sk-comet) 85%, transparent);
     line-height: 1;
     margin: 0;
+    letter-spacing: var(--bk-tracking-caption);
   }
   .shelf-title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--sk-moon);
     margin: 0;
-    line-height: 1;
-    letter-spacing: .08em;
+    line-height: var(--bk-leading-title);
+    letter-spacing: var(--bk-tracking-title);
   }
 
-  /* ── 筛选栏 ── */
+  /* ── Apple Segmented Control（HIG：分段控件，滑动 thumb 指示选中） ── */
   .shelf-filters {
     display: flex;
     flex-direction: column;
-    gap: .65rem;
-    margin-bottom: 1.6rem;
+    gap: .8rem;
+    margin-bottom: 1.8rem;
   }
-  .filter-row {
+  .seg {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    gap: .4rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 2px;
+    padding: 3px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--sk-moon) 6%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-moon) 10%, transparent);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    max-width: 100%;
+    width: fit-content;
   }
-  .filter-row--cats {
-    transition: opacity .35s var(--sk-ease-out);
+  .seg::-webkit-scrollbar { display: none; }
+  .seg--cats {
+    transition: opacity .35s var(--bk-ease-out-soft);
   }
-  .filter-row--cats.is-dimmed {
-    opacity: .35;
+  .seg--cats.is-dimmed {
+    opacity: .32;
     pointer-events: none;
   }
 
-  /* ── 筛选按钮 ── */
-  .filter-pill {
+  /* 滑动指示器 — 从当前 transform 出发，从不瞬移（WWDC18 §3 可中断）
+     初次渲染先禁用 transition，等 is-ready 后再启用，避免从 (0,0) 飞入 */
+  .seg-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-radius: 999px;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--sk-river) 70%, transparent),
+      color-mix(in srgb, var(--sk-violet) 55%, transparent)
+    );
+    box-shadow:
+      0 4px 18px color-mix(in srgb, var(--sk-river) 40%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.22);
+    transform: translateX(0);
+    opacity: 0;
+    transition: none;
+    pointer-events: none;
+    will-change: transform, width;
+    z-index: 0;
+  }
+  .seg.is-ready .seg-thumb {
+    transition:
+      transform .42s var(--bk-spring),
+      width .42s var(--bk-spring),
+      opacity .25s var(--bk-ease-out-soft);
+  }
+  .seg--cats .seg-thumb {
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--sk-comet) 62%, transparent),
+      color-mix(in srgb, var(--sk-river) 50%, transparent)
+    );
+    box-shadow:
+      0 4px 18px color-mix(in srgb, var(--sk-comet) 35%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  }
+
+  .seg-btn {
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     align-items: center;
-    gap: .35rem;
-    padding: .4rem .85rem;
+    flex-shrink: 0;
+    gap: .4rem;
+    padding: .45rem 1rem;
     border-radius: 999px;
-    font-size: .82rem;
+    font-size: .84rem;
     font-weight: 500;
-    color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+    color: color-mix(in srgb, var(--sk-moon) 72%, transparent);
     background: transparent;
-    border: 1px solid color-mix(in srgb, var(--sk-moon) 16%, transparent);
+    border: none;
     cursor: pointer;
-    transition: all .3s var(--sk-ease-out);
     font-family: var(--sk-font-han);
     white-space: nowrap;
+    letter-spacing: var(--bk-tracking-caption);
+    transition:
+      color .25s var(--bk-ease-out-soft),
+      transform var(--bk-press-duration) ease-out;
+    -webkit-tap-highlight-color: transparent;
   }
-  .filter-pill:hover {
-    color: var(--sk-moon);
-    border-color: color-mix(in srgb, var(--sk-river) 45%, transparent);
-  }
-  .filter-pill.is-active {
+  .seg-btn:hover { color: var(--sk-moon); }
+  .seg-btn:active { transform: scale(var(--bk-press-scale)); }
+  .seg-btn.is-active {
     color: #fff;
-    background: linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--sk-river) 60%, transparent),
-      color-mix(in srgb, var(--sk-violet) 45%, transparent)
-    );
-    border-color: transparent;
-    box-shadow: 0 4px 16px color-mix(in srgb, var(--sk-river) 35%, transparent);
+    font-weight: 600;
   }
 
-  /* 分类按钮更小巧 */
-  .filter-pill--cat {
-    font-size: .76rem;
-    padding: .3rem .7rem;
+  .seg-btn--cat {
+    font-size: .78rem;
+    padding: .35rem .8rem;
     font-weight: 400;
   }
-  .filter-pill--cat.is-active {
-    background: linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--sk-comet) 55%, transparent),
-      color-mix(in srgb, var(--sk-river) 40%, transparent)
-    );
-  }
+  .seg-btn--cat.is-active { font-weight: 600; }
 
-  .pill-n {
-    font-size: .68rem;
-    opacity: .75;
+  .seg-n {
+    font-size: .7rem;
+    opacity: .85;
     font-family: var(--sk-font-display);
     font-weight: 600;
+    padding: 0 .35rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.18);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
   }
 
   /* ── 网格 ── */
   .shelf-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-    gap: 1.6rem 1.3rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.8rem 1.4rem;
   }
   @media (min-width: 768px) {
-    .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+    .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); }
   }
   @media (max-width: 480px) {
     .shelf-grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem 1rem;
+      gap: 1.3rem 1.0rem;
     }
   }
 
@@ -259,6 +314,7 @@ const cats = topCategories(books, 5);
     font-size: .82rem;
     color: color-mix(in srgb, var(--sk-moon) 40%, transparent);
     margin: .4rem 0 0;
+    letter-spacing: var(--bk-tracking-caption);
   }
 </style>
 
@@ -268,13 +324,54 @@ const cats = topCategories(books, 5);
       if (shelf.dataset.jsBound !== undefined) continue;
       shelf.dataset.jsBound = "1";
 
+      const statusSeg = shelf.querySelector<HTMLElement>(".seg--status")!;
+      const catSeg = shelf.querySelector<HTMLElement>(".seg--cats")!;
       const statusBtns = shelf.querySelectorAll<HTMLButtonElement>("[data-filter=status]");
       const catBtns = shelf.querySelectorAll<HTMLButtonElement>("[data-filter=cat]");
       const featuredView = shelf.querySelector<HTMLElement>('[data-view="featured"]')!;
       const allView = shelf.querySelector<HTMLElement>('[data-view="all"]')!;
       const empty = shelf.querySelector<HTMLElement>(".shelf-empty")!;
-      const catRow = shelf.querySelector<HTMLElement>(".filter-row--cats")!;
       const cells = allView.querySelectorAll<HTMLElement>(".shelf-cell");
+
+      // 滑动指示器：把 thumb 对齐到当前 active 按钮的位置/宽度
+      const layoutThumb = (seg: HTMLElement) => {
+        const thumb = seg.querySelector<HTMLElement>(".seg-thumb");
+        const active = seg.querySelector<HTMLElement>(".seg-btn.is-active");
+        if (!thumb || !active) return;
+        const segRect = seg.getBoundingClientRect();
+        const btnRect = active.getBoundingClientRect();
+        thumb.style.width = `${btnRect.width}px`;
+        thumb.style.height = `${btnRect.height}px`;
+        thumb.style.top = `${btnRect.top - segRect.top}px`;
+        thumb.style.transform = `translateX(${active.offsetLeft}px)`;
+        thumb.style.opacity = "1";
+      };
+
+      const layoutAll = () => {
+        layoutThumb(statusSeg);
+        if (!catSeg.classList.contains("is-dimmed")) layoutThumb(catSeg);
+      };
+
+      // 初次布局：同步测量（点击时布局已是最终态，后台标签页 rAF 会被节流，不能依赖）
+      layoutAll();
+      // 等首帧后再允许过渡，避免初次 transform 从 0 飞入（rAF 节流时用 fonts.ready 兜底）
+      const markReady = () => {
+        statusSeg.classList.add("is-ready");
+        catSeg.classList.add("is-ready");
+      };
+      if (document.visibilityState === "visible") {
+        requestAnimationFrame(markReady);
+      } else {
+        // 后台标签页：rAF 被节流，直接标记（此时尚无动画可看，无视觉跳变）
+        markReady();
+      }
+      if (document.fonts?.ready) {
+        document.fonts.ready.then(() => layoutAll()).catch(() => {});
+      }
+      window.addEventListener("resize", layoutAll, { passive: true });
+      // 分类行横向滚动时，thumb 跟随滚动位置
+      catSeg.addEventListener("scroll", () => layoutThumb(catSeg), { passive: true });
+      statusSeg.addEventListener("scroll", () => layoutThumb(statusSeg), { passive: true });
 
       let activeStatus = "featured";
       let activeCat = "all";
@@ -305,16 +402,17 @@ const cats = topCategories(books, 5);
 
         // 精选模式：隐藏分类行 + 只显示精选网格
         if (activeStatus === "featured") {
-          catRow.classList.add("is-dimmed");
+          catSeg.classList.add("is-dimmed");
           featuredView.classList.remove("is-hidden");
           allView.classList.add("is-hidden");
           empty.classList.add("is-hidden");
+          layoutThumb(statusSeg);
           saveState();
           return;
         }
 
         // 列表模式：显示分类行 + 按条件筛选
-        catRow.classList.remove("is-dimmed");
+        catSeg.classList.remove("is-dimmed");
         featuredView.classList.add("is-hidden");
         allView.classList.remove("is-hidden");
 
@@ -333,6 +431,8 @@ const cats = topCategories(books, 5);
         }
 
         empty.classList.toggle("is-hidden", visible > 0);
+        // 同步测量：classList.toggle 后布局立即稳定，无需等 rAF（后台标签页 rAF 会被节流）
+        layoutAll();
         saveState();
       };
 

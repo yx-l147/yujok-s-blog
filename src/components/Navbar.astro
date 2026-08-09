@@ -21,8 +21,6 @@ const links: NavBarLink[] = navBarConfig.links.map(
 );
 const pinnedLinkUrls = new Set([
 	"/",
-	"/categories/",
-	"/tags/",
 	"/archive/",
 	"/book/",
 	"/schedule/",
@@ -37,12 +35,27 @@ const isActive = (link: NavBarLink) => {
 	return pathsEqual(Astro.url.pathname, url(link.url));
 };
 const isMoreActive = moreLinks.some((link) => isActive(link));
+
+const navIcon = (link: NavBarLink) => {
+	const icons: Record<string, string> = {
+		"/": "material-symbols:home-rounded",
+		"/archive/": "material-symbols:history-rounded",
+		"/book/": "material-symbols:menu-book-rounded",
+		"/schedule/": "material-symbols:calendar-month-rounded",
+		"/thoughts/": "material-symbols:lightbulb-rounded",
+		"/about/": "material-symbols:sentiment-satisfied-rounded",
+		"/categories/": "material-symbols:folder-rounded",
+		"/tags/": "material-symbols:tag-rounded",
+		"/bangumi/": "material-symbols:live-tv-rounded",
+	};
+	return icons[link.url] || "material-symbols:arrow-outward-rounded";
+};
 ---
 
 <div id="navbar" class="z-50 onload-animation">
     <div class:list={[
         className,
-        "glass-panel nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between gap-2 rounded-b-[1.35rem] md:rounded-[1.35rem] px-3 md:px-4"]}>
+        "nav-shell max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between gap-2 px-3 md:px-4"]}>
         <a href={url("/")} class="nav-brand btn-plain scale-animation rounded-xl h-[3.25rem] px-3 md:px-5 font-black active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
                 <Icon name="material-symbols:home-outline-rounded" class="text-[1.75rem] mb-1 mr-2" />
@@ -58,7 +71,8 @@ const isMoreActive = moreLinks.some((link) => isActive(link));
                         {"nav-link-active": isActive(l)}
                     ]}
                 >
-                    <div class="flex items-center whitespace-nowrap">
+                    <div class="flex items-center gap-1.5 whitespace-nowrap">
+                        <Icon name={navIcon(l)} class="nav-link-icon" />
                         {l.name}
                         {l.external && <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.75rem] transition -translate-y-[1px] ml-1 text-black/[0.2] dark:text-white/[0.2]" />}
                     </div>
@@ -71,6 +85,7 @@ const isMoreActive = moreLinks.some((link) => isActive(link));
                     "nav-link nav-more-trigger btn-plain scale-animation rounded-xl h-11 shrink-0 whitespace-nowrap font-bold px-3 xl:px-4 active:scale-95",
                     { "nav-link-active": isMoreActive },
                 ]}>
+                    <Icon name="material-symbols:more-horiz" class="nav-link-icon" />
                     <span>更多</span>
                     <Icon name="material-symbols:expand-more-rounded" class="nav-more-chevron text-[1.15rem]" />
                 </summary>

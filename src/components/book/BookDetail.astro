@@ -1,6 +1,7 @@
 ---
 import { shortCategory } from "@/data/shelf";
 import type { BookItem, BookNote } from "@/types/weread";
+import { getDoubanUrl, getWeReadUrl } from "@/utils/weread";
 
 interface Props {
 	book: BookItem;
@@ -29,11 +30,12 @@ const related = allBooks
 	)
 	.sort((a, b) => (b.publicRating ?? 0) - (a.publicRating ?? 0))
 	.slice(0, 4);
-const wereadUrl = `https://weread.qq.com/web/search/books?keyword=${encodeURIComponent(
-	`${book.title} ${book.author}`.trim(),
-)}`;
-const visibleNotes = notes.slice(0, 2);
-const hiddenNotes = notes.slice(2);
+
+const wereadUrl = getWeReadUrl(book);
+const doubanUrl = getDoubanUrl(book);
+const validNotes = notes.filter((n) => n.text && !n.text.includes("TODO"));
+const visibleNotes = validNotes.slice(0, 3);
+const hiddenNotes = validNotes.slice(3);
 const localReview = book.localReview;
 const localReviewLabel = localReview
 	? {
@@ -81,19 +83,34 @@ const localReviewLabel = localReview
     )}
 
     <!-- 外链 -->
-    <a
-      href={wereadUrl}
-      class="detail-weread-btn"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-        <polyline points="15 3 21 3 21 9"/>
-        <line x1="10" y1="14" x2="21" y2="3"/>
-      </svg>
-      在微信读书中打开
-    </a>
+    <div class="detail-actions">
+      <a
+        href={wereadUrl}
+        class="detail-ext-btn detail-weread-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        在微信读书中打开
+      </a>
+      <a
+        href={doubanUrl}
+        class="detail-ext-btn detail-douban-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        在豆瓣中打开
+      </a>
+    </div>
   </aside>
 
   <!-- 右栏：信息 -->
@@ -202,43 +219,52 @@ const localReviewLabel = localReview
       </section>
     )}
 
-    <!-- 我的笔记 -->
+    <!-- 本书划线与笔记 -->
     <section class="detail-section detail-section--notes" data-notes-section>
       <div class="notes-head">
         <h2 class="section-title sk-han">
-          我的笔记
-          <span class="section-count">{notes.length}</span>
+          本书划线与笔记
+          <span class="section-count">{validNotes.length}</span>
         </h2>
         {hiddenNotes.length > 0 && (
-          <button type="button" class="notes-toggle" data-notes-toggle aria-expanded="false">
-            查看全部
+          <button type="button" class="notes-toggle" data-notes-toggle data-total-count={validNotes.length} aria-expanded="false">
+            <span class="notes-toggle-text">查看全部 ({validNotes.length} 条)</span>
+            <svg class="notes-toggle-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </button>
         )}
       </div>
 
-      {notes.length > 0 ? (
+      {validNotes.length > 0 ? (
         <div class="notes-list">
           {visibleNotes.map((n) => (
-            <blockquote class="note-item">
-              <p class="note-text sk-han">{n.text}</p>
+            <blockquote class="note-item sk-glass">
+              <span class="note-accent-bar" aria-hidden="true"></span>
+              <p class="note-text sk-han">“{n.text}”</p>
               {n.chapter && (
-                <footer class="note-chapter">- {n.chapter}</footer>
+                <footer class="note-chapter">
+                  <span class="chapter-tag">{n.chapter}</span>
+                </footer>
               )}
             </blockquote>
           ))}
-          {hiddenNotes.map((n) => (
-            <blockquote class="note-item is-note-extra">
-              <p class="note-text sk-han">{n.text}</p>
+          {hiddenNotes.map((n, i) => (
+            <blockquote class="note-item is-note-extra sk-glass" style={`--extra-i:${i}`}>
+              <span class="note-accent-bar" aria-hidden="true"></span>
+              <p class="note-text sk-han">“{n.text}”</p>
               {n.chapter && (
-                <footer class="note-chapter">- {n.chapter}</footer>
+                <footer class="note-chapter">
+                  <span class="chapter-tag">{n.chapter}</span>
+                </footer>
               )}
             </blockquote>
           ))}
         </div>
       ) : (
-        <div class="notes-empty">
-          <p class="notes-empty-title sk-han">暂无公开笔记</p>
-          <p>如果微信读书里后来新增了划线或想法，重新同步数据后这里会自动出现。</p>
+        <div class="notes-empty sk-glass">
+          <p class="notes-empty-title sk-han">暂无划线记录</p>
+          <p>如果在微信读书中阅读并添加了划线，重新同步数据后这里会自动显示。</p>
         </div>
       )}
     </section>
@@ -341,7 +367,13 @@ const localReviewLabel = localReview
     color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
   }
 
-  .detail-weread-btn {
+  .detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  .detail-ext-btn {
     display: inline-flex;
     align-items: center;
     gap: .4rem;
@@ -358,6 +390,11 @@ const localReviewLabel = localReview
     color: var(--sk-moon);
     border-color: color-mix(in srgb, var(--sk-river) 45%, transparent);
     background: color-mix(in srgb, var(--sk-river) 8%, transparent);
+  }
+  .detail-douban-btn:hover {
+    color: var(--sk-moon);
+    border-color: color-mix(in srgb, #2e963d 50%, transparent);
+    background: color-mix(in srgb, #2e963d 12%, transparent);
   }
 
   /* 右栏 */
@@ -610,58 +647,121 @@ const localReviewLabel = localReview
     }
   }
 
-  /* 笔记列表 */
+  /* ── 本书划线与笔记 (Apple Design) ── */
+  .notes-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+  .notes-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .4rem .9rem;
+    border-radius: 999px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--sk-moon);
+    background: color-mix(in srgb, var(--sk-moon) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-moon) 16%, transparent);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: all .3s var(--sk-ease-out);
+    font-family: var(--sk-font-han);
+  }
+  .notes-toggle:hover {
+    background: color-mix(in srgb, var(--sk-river) 20%, transparent);
+    border-color: color-mix(in srgb, var(--sk-river) 40%, transparent);
+    transform: translateY(-1px);
+  }
+  .notes-toggle-icon {
+    transition: transform .35s var(--sk-ease-out);
+  }
+  .detail-section--notes.is-expanded .notes-toggle-icon {
+    transform: rotate(180deg);
+  }
+
   .notes-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
-    gap: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .note-item {
+    position: relative;
     margin: 0;
-    padding: 1rem 1.1rem;
-    border-left: 2px solid color-mix(in srgb, var(--sk-comet) 38%, transparent);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--sk-night) 58%, transparent);
-    transition: border-color .3s, background .3s, transform .3s var(--sk-ease-out);
+    padding: 1.4rem 1.6rem 1.3rem 1.8rem;
+    border-radius: 18px;
+    background: color-mix(in srgb, var(--sk-glass-bg) 85%, transparent);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.16);
+    transition: transform .4s var(--sk-ease-out), box-shadow .4s var(--sk-ease-out), border-color .3s;
+    overflow: hidden;
   }
   .note-item:hover {
-    border-left-color: var(--sk-comet);
-    background: color-mix(in srgb, var(--sk-river) 10%, var(--sk-night));
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.005);
+    border-color: color-mix(in srgb, var(--sk-river) 35%, transparent);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  }
+  .note-accent-bar {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--sk-river), var(--sk-violet));
+    border-radius: 4px 0 0 4px;
   }
   .note-text {
-    font-size: .92rem;
-    line-height: 1.75;
-    color: color-mix(in srgb, var(--sk-moon) 88%, transparent);
+    font-size: .98rem;
+    line-height: 1.8;
+    color: color-mix(in srgb, var(--sk-moon) 94%, transparent);
     margin: 0;
+    letter-spacing: .02em;
   }
   .note-chapter {
-    font-size: .74rem;
-    color: color-mix(in srgb, var(--sk-moon) 48%, transparent);
-    margin-top: .5rem;
+    display: flex;
+    margin-top: .85rem;
   }
+  .chapter-tag {
+    font-size: .74rem;
+    color: var(--sk-comet);
+    padding: .15rem .6rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--sk-comet) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-comet) 25%, transparent);
+    font-weight: 500;
+  }
+
   .is-note-extra {
     display: none;
   }
   .detail-section--notes.is-expanded .is-note-extra {
     display: block;
+    animation: note-slide-in .45s var(--sk-ease-out) both;
+    animation-delay: calc(var(--extra-i, 0) * 0.05s);
   }
+  @keyframes note-slide-in {
+    from { opacity: 0; transform: translateY(16px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
   .notes-empty {
-    padding: .9rem 1rem;
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--sk-night) 52%, transparent);
-    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
-    font-size: .84rem;
+    padding: 1.6rem 1.8rem;
+    border-radius: 18px;
+    background: color-mix(in srgb, var(--sk-glass-bg) 80%, transparent);
+    backdrop-filter: blur(20px);
+    border: 1px dashed color-mix(in srgb, var(--sk-moon) 20%, transparent);
+    color: color-mix(in srgb, var(--sk-moon) 60%, transparent);
+    font-size: .88rem;
     line-height: 1.6;
   }
-  .notes-empty p {
-    margin: 0;
-  }
+  .notes-empty p { margin: 0; }
   .notes-empty-title {
-    color: color-mix(in srgb, var(--sk-moon) 82%, transparent);
-    font-size: .94rem;
+    color: color-mix(in srgb, var(--sk-moon) 88%, transparent);
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: .25rem !important;
+    margin-bottom: .3rem !important;
   }
 
   /* 同类书籍 */
@@ -728,7 +828,8 @@ const localReviewLabel = localReview
       grid-column: 1;
     }
     .detail-cover { max-width: 140px; }
-    .detail-weread-btn { width: 100%; justify-content: center; }
+    .detail-actions { width: 100%; }
+    .detail-ext-btn { width: 100%; justify-content: center; }
     .related-grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: .55rem;
@@ -761,7 +862,8 @@ const localReviewLabel = localReview
       toggle.addEventListener("click", () => {
         const expanded = section.classList.toggle("is-expanded");
         toggle.setAttribute("aria-expanded", String(expanded));
-        toggle.textContent = expanded ? "收起" : "查看全部";
+        const total = toggle.dataset.totalCount;
+        toggle.textContent = expanded ? "收起划线" : (total ? `查看全部 (${total} 条)` : "查看全部");
       });
     }
   }

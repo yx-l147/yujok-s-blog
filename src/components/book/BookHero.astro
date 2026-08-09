@@ -18,10 +18,30 @@ const years = stats.registTime
 	: null;
 
 const summary = [
-	{ num: profile.totalBooks, label: "本书在架" },
-	{ num: totalHours, label: "小时阅读" },
-	{ num: stats.readDays, label: "天有记录" },
-	{ num: stats.noteCount, label: "条笔记" },
+	{
+		num: profile.totalBooks,
+		label: "本书在架",
+		tone: "river",
+		icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+	},
+	{
+		num: totalHours,
+		label: "小时阅读",
+		tone: "comet",
+		icon: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+	},
+	{
+		num: stats.readDays,
+		label: "天有记录",
+		tone: "violet",
+		icon: '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+	},
+	{
+		num: stats.noteCount,
+		label: "条笔记",
+		tone: "gold",
+		icon: '<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
+	},
 ];
 ---
 
@@ -30,26 +50,32 @@ const summary = [
 
   <div class="hero-body">
     <div class="hero-main">
-      <p class="hero-eyebrow sk-script">my reading life</p>
+      <div class="hero-badge-pill">
+        <span class="pulse-dot"></span>
+        <span class="hero-eyebrow sk-script">my reading life</span>
+      </div>
       <h1 class="hero-title sk-han">我 的 书 架</h1>
       <p class="hero-sub">「{subtitle}」</p>
 
       {years && (
         <p class="hero-note">
-          自 {new Date((stats.registTime ?? 0) * 1000).getFullYear()} 年起 · 已读过 {stats.readBooks} 本 · 读完 {stats.finishedBooks} 本
+          自 {new Date((stats.registTime ?? 0) * 1000).getFullYear()} 年起 · 已读过 <strong class="hl">{stats.readBooks}</strong> 本 · 读完 <strong class="hl">{stats.finishedBooks}</strong> 本
         </p>
       )}
     </div>
 
     {profile.favBook && (
       <a
-        class="hero-fav"
+        class="hero-fav bk-press"
         href={`https://weread.qq.com/`}
         title={`最爱的书：${profile.favBook.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span class="fav-tag sk-script">my favourite</span>
         <div class="fav-cover">
           <img src={profile.favBook.cover} alt={profile.favBook.title} loading="lazy" />
+          <div class="fav-cover-sheen" aria-hidden="true"></div>
         </div>
         <div class="fav-meta">
           <p class="fav-title sk-han">{profile.favBook.title}</p>
@@ -60,10 +86,15 @@ const summary = [
   </div>
 
   <div class="hero-stats">
-    {summary.map((s) => (
-      <div class="hs" data-count={s.num}>
-        <span class="hs-num sk-display">0</span>
-        <span class="hs-label">{s.label}</span>
+    {summary.map((s, i) => (
+      <div class="hs" data-count={s.num} data-tone={s.tone} style={`--i:${i}`}>
+        <span class="hs-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={s.icon} />
+        </span>
+        <span class="hs-body">
+          <span class="hs-num sk-display">0</span>
+          <span class="hs-label">{s.label}</span>
+        </span>
       </div>
     ))}
   </div>
@@ -72,15 +103,21 @@ const summary = [
 <style>
   .hero {
     position: relative;
-    padding: 2.6rem 2.4rem 1.8rem;
+    padding: 2.8rem 2.6rem 2.2rem;
+    border-radius: 28px;
     overflow: hidden;
+    background: var(--bk-mat-thick-bg);
+    backdrop-filter: var(--bk-mat-thick-blur);
+    -webkit-backdrop-filter: var(--bk-mat-thick-blur);
+    border: 1px solid var(--bk-mat-thick-border);
+    box-shadow: var(--bk-mat-thick-shadow), var(--bk-mat-thick-highlight);
   }
   .hero-glow {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(60% 70% at 18% 10%, color-mix(in srgb, var(--sk-violet) 24%, transparent), transparent 70%),
-      radial-gradient(50% 60% at 90% 90%, color-mix(in srgb, var(--sk-comet) 16%, transparent), transparent 70%);
+      radial-gradient(55% 70% at 15% 10%, color-mix(in srgb, var(--sk-river) 22%, transparent), transparent 70%),
+      radial-gradient(50% 60% at 85% 90%, color-mix(in srgb, var(--sk-violet) 18%, transparent), transparent 70%);
     pointer-events: none;
     z-index: 0;
   }
@@ -95,120 +132,237 @@ const summary = [
     flex-wrap: wrap;
   }
 
+  .hero-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .28rem .78rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--sk-comet) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sk-comet) 25%, transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10);
+    margin-bottom: .6rem;
+  }
+  .pulse-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--sk-comet);
+    box-shadow: 0 0 8px var(--sk-comet);
+  }
   .hero-eyebrow {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
     color: var(--sk-comet);
-    margin: 0 0 .1rem;
-    text-shadow: 0 0 18px color-mix(in srgb, var(--sk-comet) 45%, transparent);
+    margin: 0;
+    line-height: 1;
+    letter-spacing: var(--bk-tracking-caption);
   }
   .hero-title {
-    font-size: clamp(2rem, 4.5vw, 3.1rem);
+    font-size: clamp(2.2rem, 4.8vw, 3.4rem);
     font-weight: 700;
     color: var(--sk-moon);
     margin: 0;
-    letter-spacing: .12em;
-    line-height: 1.05;
+    letter-spacing: var(--bk-tracking-display);
+    line-height: var(--bk-leading-display);
+    font-optical-sizing: auto;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
   }
   .hero-sub {
-    margin: .9rem 0 0;
+    margin: .8rem 0 0;
     font-family: var(--sk-font-han);
     font-size: 1.02rem;
-    color: color-mix(in srgb, var(--sk-moon) 68%, transparent);
-    letter-spacing: .03em;
+    line-height: var(--bk-leading-body);
+    color: color-mix(in srgb, var(--sk-moon) 78%, transparent);
+    letter-spacing: var(--bk-tracking-body);
   }
   .hero-note {
-    margin: .5rem 0 0;
-    font-size: .82rem;
-    color: color-mix(in srgb, var(--sk-moon) 52%, transparent);
-    letter-spacing: .02em;
+    margin: .55rem 0 0;
+    font-size: .85rem;
+    color: color-mix(in srgb, var(--sk-moon) 60%, transparent);
+    letter-spacing: var(--bk-tracking-caption);
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-note .hl {
+    color: var(--sk-moon);
+    font-weight: 600;
   }
 
-  /* 最爱的书 */
+  /* 最爱的书 — 薄材质 + press 反馈（WWDC18 §1）*/
   .hero-fav {
     display: flex;
     align-items: center;
-    gap: .9rem;
-    padding: .8rem 1rem .8rem .8rem;
-    border-radius: 16px;
-    background: color-mix(in srgb, var(--sk-moon) 6%, transparent);
-    border: 1px solid color-mix(in srgb, var(--sk-gold) 30%, transparent);
+    gap: 1rem;
+    padding: .9rem 1.2rem .9rem .9rem;
+    border-radius: 20px;
+    background: var(--bk-mat-thin-bg);
+    border: 1px solid color-mix(in srgb, var(--sk-gold) 35%, transparent);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
     position: relative;
-    transition: transform .4s var(--sk-ease-out), box-shadow .4s var(--sk-ease-out);
+    transition:
+      transform .45s var(--bk-spring),
+      border-color .3s var(--bk-ease-out-soft),
+      box-shadow .45s var(--bk-spring),
+      background .3s var(--bk-ease-out-soft);
     text-decoration: none;
+    box-shadow: var(--bk-shadow-2), var(--bk-mat-thin-highlight);
+    -webkit-tap-highlight-color: transparent;
   }
   .hero-fav:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 14px 30px rgba(20,40,80,.2);
+    transform: translateY(-4px);
+    background: var(--bk-mat-thin-bg-hover);
+    border-color: color-mix(in srgb, var(--sk-gold) 65%, transparent);
+    box-shadow:
+      0 18px 40px rgba(0, 0, 0, 0.3),
+      0 0 20px color-mix(in srgb, var(--sk-gold) 22%, transparent),
+      var(--bk-mat-thin-highlight);
+  }
+  .hero-fav:active {
+    transform: scale(var(--bk-press-scale));
+    transition-duration: var(--bk-press-duration);
   }
   .fav-tag {
     position: absolute;
     top: -.7rem;
-    left: 1rem;
-    font-size: 1rem;
+    left: 1.1rem;
+    font-size: .95rem;
     color: var(--sk-gold);
     background: var(--sk-glass-bg);
-    padding: 0 .4rem;
+    padding: .05rem .5rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--sk-gold) 30%, transparent);
+    letter-spacing: var(--bk-tracking-caption);
   }
   .fav-cover {
-    width: 52px;
+    width: 56px;
     aspect-ratio: 3/4.2;
-    border-radius: 6px;
+    border-radius: 8px;
     overflow: hidden;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(20,40,80,.28);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    position: relative;
+    transition: transform .45s var(--bk-spring);
   }
-  .fav-cover img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-fav:hover .fav-cover { transform: scale(1.04); }
+  .fav-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fav-cover-sheen {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, .2) 50%, transparent 60%);
+    pointer-events: none;
+  }
   .fav-title {
-    font-size: .92rem;
+    font-size: .95rem;
     font-weight: 600;
     color: var(--sk-moon);
     margin: 0;
-    max-width: 150px;
+    max-width: 160px;
+    line-height: var(--bk-leading-title);
+    letter-spacing: var(--bk-tracking-title);
   }
   .fav-author {
-    font-size: .74rem;
-    color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
-    margin: .15rem 0 0;
-    max-width: 150px;
+    font-size: .76rem;
+    color: color-mix(in srgb, var(--sk-moon) 62%, transparent);
+    margin: .2rem 0 0;
+    max-width: 160px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: var(--bk-tracking-caption);
   }
 
-  /* 数字摘要 */
+  /* 数字摘要 — Apple Stat Cards（薄材质，避免与 hero 厚材质叠层）*/
   .hero-stats {
     position: relative;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 1.8rem;
-    padding-top: 1.5rem;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    padding-top: 1.6rem;
     border-top: 1px solid color-mix(in srgb, var(--sk-moon) 12%, transparent);
   }
   .hs {
     display: flex;
-    flex-direction: column;
-    gap: .2rem;
+    align-items: center;
+    gap: .9rem;
+    padding: .9rem 1.1rem;
+    border-radius: 18px;
+    background: var(--bk-mat-thin-bg);
+    border: 1px solid var(--bk-mat-thin-border);
+    box-shadow: var(--bk-mat-thin-highlight);
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform .35s var(--bk-spring),
+      background .3s var(--bk-ease-out-soft),
+      border-color .3s var(--bk-ease-out-soft);
   }
+  /* 主题色顶部微光（Apple 卡片式精致感）*/
+  .hs::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--hs-accent, var(--sk-river)), transparent);
+    opacity: .55;
+  }
+  .hs:hover {
+    transform: translateY(-2px);
+    background: var(--bk-mat-thin-bg-hover);
+    border-color: color-mix(in srgb, var(--sk-moon) 16%, transparent);
+  }
+  /* 图标芯片：44px 圆角方块，图标 20px 居中，主题渐变 */
+  .hs-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--hs-accent, var(--sk-river)) 88%, #fff 0%),
+      color-mix(in srgb, var(--hs-accent, var(--sk-river)) 62%, transparent));
+    box-shadow:
+      0 4px 14px color-mix(in srgb, var(--hs-accent, var(--sk-river)) 42%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    transition: transform .35s var(--bk-spring);
+  }
+  .hs:hover .hs-icon { transform: scale(1.06); }
+  .hs-body {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+    min-width: 0;
+  }
+  /* 主题色调配 */
+  .hs[data-tone="river"]  { --hs-accent: var(--sk-river); }
+  .hs[data-tone="comet"]  { --hs-accent: var(--sk-comet); }
+  .hs[data-tone="violet"] { --hs-accent: var(--sk-violet); }
+  .hs[data-tone="gold"]   { --hs-accent: var(--sk-gold); }
   .hs-num {
-    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
-    font-weight: 600;
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 700;
     color: var(--sk-moon);
     line-height: 1;
+    letter-spacing: var(--bk-tracking-display);
+    font-variant-numeric: tabular-nums;
+    font-optical-sizing: auto;
   }
   .hs-label {
-    font-size: .76rem;
+    font-size: .78rem;
     font-family: var(--sk-font-han);
-    color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
-    letter-spacing: .04em;
+    color: color-mix(in srgb, var(--sk-moon) 62%, transparent);
+    letter-spacing: var(--bk-tracking-caption);
   }
 
   @media (max-width: 640px) {
-    .hero { padding: 2rem 1.4rem 1.5rem; }
+    .hero { padding: 2rem 1.4rem 1.6rem; }
     .hero-fav { width: 100%; }
     .fav-title, .fav-author { max-width: none; }
-    .hero-stats { gap: .8rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: .8rem; }
   }
 </style>
 

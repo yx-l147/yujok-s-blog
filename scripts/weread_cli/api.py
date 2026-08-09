@@ -8,7 +8,7 @@ import urllib.request
 import urllib.error
 
 GATEWAY_URL = "https://i.weread.qq.com/api/agent/gateway"
-SKILL_VERSION = "1.0.3"
+SKILL_VERSION = "1.0.4"
 
 
 class ApiError(Exception):
@@ -79,10 +79,11 @@ def call(api_name: str, **kwargs) -> dict:
             raise AuthError(errcode, errmsg, errlog)
         raise ApiError(errcode, errmsg, errlog)
 
-    # 检查升级
+    # 检查升级（提示但不阻断流程）
     if "upgrade_info" in result:
         info = result["upgrade_info"]
-        raise ApiError(0, f"需要升级: {info.get('message', '')}")
+        import sys
+        sys.stderr.write(f"⚠️ [weread-cli] {info.get('message', '')}\n")
 
     return result
 

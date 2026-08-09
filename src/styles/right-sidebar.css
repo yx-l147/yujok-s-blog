@@ -272,34 +272,89 @@
 }
 
 /* ============================================================
- * 5.  Calendar — generous, paper-like grid; live cell states
+ * 5.  Calendar — Apple clarity × Fluent squircle craft.
+ *     Directional month slides; dots whisper, today sings.
  * ============================================================ */
 .rs-cal-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 0.875rem;
+    margin: 0 0 0.75rem;
 }
+
+/* Apple-style title — big month, whispered year */
 .rs-cal-title {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-strong);
-    font-variant-numeric: tabular-nums;
-    letter-spacing: 0.01em;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.375rem;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.5rem;
-    transition:
-        background-color 220ms ease-out,
-        color 220ms ease-out;
+    margin-left: -0.5rem;
+    border-radius: var(--rs-radius-in);
+    transition: background-color 220ms ease-out;
 }
 .rs-cal-title:hover {
     background: var(--btn-plain-bg-hover);
+}
+.rs-cal-title-month {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-strong);
+    letter-spacing: 0.01em;
+    transition: color 220ms ease-out;
+}
+.rs-cal-title:hover .rs-cal-title-month {
     color: var(--primary);
+}
+.rs-cal-title-year {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    letter-spacing: 0.02em;
+}
+
+/* "back to today" pill — keeps its seat in flow (zero layout shift),
+   only fades in while browsing a different month */
+.rs-cal-today {
+    padding: 0.1875rem 0.625rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--primary);
+    background: color-mix(in srgb, var(--primary) 10%, transparent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 24%, transparent);
+    opacity: 0;
+    transform: scale(0.85);
+    pointer-events: none;
+    transition:
+        opacity 260ms var(--rs-ease),
+        transform 320ms var(--rs-spring),
+        background-color 220ms ease-out;
+}
+.rs-cal-today.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+.rs-cal-today:hover {
+    background: color-mix(in srgb, var(--primary) 16%, transparent);
+}
+.rs-cal-today:active {
+    transform: scale(0.94);
+    transition-duration: 100ms;
+}
+
+.rs-cal-navs {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
 }
 .rs-cal-nav {
     width: 1.75rem;
     height: 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 0.625rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -314,7 +369,10 @@
     color: var(--primary);
     transform: scale(1.08);
 }
-.rs-cal-nav:active { transform: scale(0.9); }
+.rs-cal-nav:active {
+    transform: scale(0.9);
+    transition-duration: 100ms;
+}
 
 .rs-cal-weekdays {
     display: grid;
@@ -324,11 +382,11 @@
 }
 .rs-cal-weekday {
     text-align: center;
-    font-size: 0.6875rem;
-    font-weight: 500;
+    font-size: 0.625rem;
+    font-weight: 600;
     color: var(--text-muted);
-    opacity: 0.65;
-    letter-spacing: 0.04em;
+    opacity: 0.6;
+    letter-spacing: 0.08em;
 }
 
 .rs-cal-grid {
@@ -336,18 +394,19 @@
     grid-template-columns: repeat(7, 1fr);
     gap: 0.125rem;
     transition:
-        opacity 260ms var(--rs-ease),
-        transform 260ms var(--rs-ease);
+        opacity 140ms ease-in,
+        transform 140ms ease-in;
 }
 .rs-cal-grid.is-swapping {
     opacity: 0;
-    transform: translateY(4px) scale(0.98);
+    transform: translateX(calc(-10px * var(--dir, 1)));
 }
 
-/* stagger each cell's entrance — uses inline --i index from Svelte */
+/* cells arrive staggered along the travel direction —
+   uses inline --i index and --dir from Svelte */
 @keyframes rs-cell-in {
-    0%   { opacity: 0; transform: translateY(6px) scale(0.85); }
-    100% { opacity: 1; transform: translateY(0)   scale(1); }
+    0%   { opacity: 0; transform: translateX(calc(6px * var(--dir, 1))) scale(0.9); }
+    100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 .rs-cal-cell {
     position: relative;
@@ -355,25 +414,51 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
     font-size: 0.75rem;
-    border-radius: 999px;
-    color: var(--text-muted);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    border-radius: 0.625rem;
+    color: color-mix(in srgb, var(--text-strong) 88%, transparent);
     transition:
         transform 320ms var(--rs-spring),
         background-color 240ms ease-out,
-        color 240ms ease-out;
-    animation: rs-cell-in 420ms var(--rs-spring) backwards;
-    animation-delay: calc(var(--i, 0) * 9ms);
+        color 240ms ease-out,
+        box-shadow 240ms ease-out;
+    animation: rs-cell-in 380ms var(--rs-spring) backwards;
+    animation-delay: calc(var(--i, 0) * 6ms);
 }
-.rs-cal-cell:not(.rs-cal-cell-pad):hover {
-    transform: scale(1.18);
+.rs-cal-cell:not(.rs-cal-cell-today):hover {
+    transform: scale(1.06);
     background: var(--btn-plain-bg-hover);
+    box-shadow: inset 0 0 0 1px var(--line-divider);
     color: var(--text-strong);
     z-index: 2;
 }
-.rs-cal-cell-pad { visibility: hidden; }
+.rs-cal-cell:active {
+    transform: scale(0.92);
+    transition-duration: 100ms;
+}
 
-/* post day — small marker, so it does not compete with today */
+/* adjacent-month days — dimmed; click jumps to that month (Fluent) */
+.rs-cal-cell-adjacent {
+    color: var(--text-muted);
+    opacity: 0.45;
+}
+.rs-cal-cell-adjacent:hover {
+    opacity: 0.85;
+}
+
+.rs-cal-cell:focus-visible,
+.rs-cal-nav:focus-visible,
+.rs-cal-title:focus-visible,
+.rs-cal-today:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 55%, transparent);
+}
+
+/* post day — quiet weight + a single glowing dot */
 .rs-cal-cell-post {
     font-weight: 600;
     color: var(--text-strong);
@@ -381,53 +466,85 @@
 .rs-cal-cell-post::before {
     content: "";
     position: absolute;
-    bottom: 0.18rem;
+    bottom: 0.2rem;
     left: 50%;
-    width: 0.25rem;
-    height: 0.25rem;
+    width: 3.5px;
+    height: 3.5px;
     border-radius: 999px;
     background: var(--primary);
     transform: translateX(-50%);
-    box-shadow: 0 0 8px color-mix(in srgb, var(--primary) 55%, transparent);
+    box-shadow: 0 0 6px color-mix(in srgb, var(--primary) 45%, transparent);
+    transition: transform 320ms var(--rs-spring);
 }
 .rs-cal-cell-post:not(.rs-cal-cell-today):hover {
+    background: color-mix(in srgb, var(--primary) 12%, transparent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 22%, transparent);
     color: var(--primary);
 }
 .rs-cal-cell-post:not(.rs-cal-cell-today):hover::before {
-    transform: translateX(-50%) scale(1.35);
+    transform: translateX(-50%) scale(1.3);
 }
 
-/* today — single filled disc */
+/* today — single filled squircle, ringed, gently breathing */
 .rs-cal-cell-today {
     background: var(--primary);
     color: #fff;
     font-weight: 700;
     box-shadow:
-        0 6px 16px -5px color-mix(in srgb, var(--primary) 70%, transparent),
-        0 0 0 1px color-mix(in srgb, #fff 42%, transparent);
+        0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent),
+        0 4px 12px -4px color-mix(in srgb, var(--primary) 50%, transparent);
+}
+:root.dark .rs-cal-cell-today {
+    color: oklch(0.22 0.02 var(--hue));
 }
 .rs-cal-cell-today:hover {
     background: var(--primary);
-    color: #fff;
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
 .rs-cal-cell-today.rs-cal-cell-post::before {
     background: #fff;
-    opacity: 0.92;
+    opacity: 0.95;
     box-shadow: none;
+}
+:root.dark .rs-cal-cell-today.rs-cal-cell-post::before {
+    background: oklch(0.22 0.02 var(--hue));
 }
 .rs-cal-cell-today::after {
     content: "";
     position: absolute;
     inset: -0.25rem;
-    border-radius: inherit;
-    border: 1px solid color-mix(in srgb, var(--primary) 55%, transparent);
-    animation: rs-today-pulse 2.6s ease-in-out infinite;
+    border-radius: 0.875rem;
+    border: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
+    animation: rs-today-pulse 3.2s ease-in-out infinite;
     pointer-events: none;
 }
 @keyframes rs-today-pulse {
-    0%, 100% { transform: scale(1);    opacity: 1; }
-    50%      { transform: scale(1.1); opacity: 0.35; }
+    0%, 100% { transform: scale(1);    opacity: 0.5; }
+    50%      { transform: scale(1.08); opacity: 0; }
+}
+
+/* reduced motion — cross-fade only: no slides, no stagger, no pulse */
+@media (prefers-reduced-motion: reduce) {
+    .rs-cal-cell { animation: none; }
+    .rs-cal-cell,
+    .rs-cal-cell:not(.rs-cal-cell-today):hover,
+    .rs-cal-cell:active,
+    .rs-cal-cell-today:hover {
+        transform: none;
+    }
+    .rs-cal-grid,
+    .rs-cal-grid.is-swapping {
+        transition: opacity 200ms ease-out;
+        transform: none;
+    }
+    .rs-cal-cell-today::after {
+        animation: none;
+        opacity: 0.4;
+    }
+    .rs-cal-today,
+    .rs-cal-today:active {
+        transform: none;
+    }
 }
 
 /* ============================================================

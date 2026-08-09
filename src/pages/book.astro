@@ -26,7 +26,7 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString(
 
     <BookShelf books={shelfData.books} />
 
-    <NoteWall notes={shelfData.notes} limit={6} />
+    <NoteWall notes={shelfData.notes} />
 
     <footer class="book-foot sk-rise" data-delay="7">
       <div class="sk-rule" style="width: 40%; margin: 0 auto 1.2rem;"></div>
@@ -43,10 +43,92 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString(
 </MainGridLayout>
 
 <style>
+  /* ────────────────────────────────────────────────────────────────
+     Apple Design Token Layer — 仅作用于 .book-page 子树，零全局泄漏
+     参考 WWDC18 Fluid Interfaces / WWDC20 UI Typography / HIG Materials
+  ──────────────────────────────────────────────────────────────── */
   .book-page {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    /* 排版：optical sizing、size-specific tracking、反比 line-height */
+    --bk-tracking-display: -0.022em;  /* 大标题收紧 */
+    --bk-tracking-title: -0.011em;    /* 中标题微收 */
+    --bk-tracking-body: 0em;
+    --bk-tracking-caption: 0.012em;   /* 小字拉开 */
+    --bk-leading-display: 1.06;
+    --bk-leading-title: 1.18;
+    --bk-leading-body: 1.55;
+    --bk-leading-caption: 1.4;
+
+    /* 弹簧曲线：默认临界阻尼（damping 1.0, response ~0.4s）*/
+    --bk-spring: cubic-bezier(0.22, 1, 0.36, 1);
+    --bk-spring-fast: cubic-bezier(0.22, 1, 0.36, 1);
+    /* 内容进入用，长度感知 */
+    --bk-ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* 按压反馈：pointer-down 即时响应（WWDC18 §1）*/
+    --bk-press-scale: 0.97;
+    --bk-press-duration: 100ms;
+
+    /* 材质层级：>1px 高光亮边 + 内阴影（HIG Materials）*/
+    --bk-mat-thick-bg: color-mix(in srgb, var(--sk-glass-bg) 88%, transparent);
+    --bk-mat-thick-blur: blur(28px) saturate(180%);
+    --bk-mat-thick-border: color-mix(in srgb, var(--sk-moon) 13%, transparent);
+    --bk-mat-thick-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    --bk-mat-thick-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.25),
+      0 4px 14px rgba(0, 0, 0, 0.10);
+
+    --bk-mat-thin-bg: color-mix(in srgb, var(--sk-moon) 5%, transparent);
+    --bk-mat-thin-bg-hover: color-mix(in srgb, var(--sk-moon) 9%, transparent);
+    --bk-mat-thin-border: color-mix(in srgb, var(--sk-moon) 10%, transparent);
+    --bk-mat-thin-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.10);
+
+    /* 阴影层级（材质厚度 → 阴影深度）*/
+    --bk-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+    --bk-shadow-2: 0 4px 14px rgba(0, 0, 0, 0.10), 0 12px 32px rgba(0, 0, 0, 0.12);
+    --bk-shadow-3: 0 12px 32px rgba(0, 0, 0, 0.20), 0 32px 64px rgba(0, 0, 0, 0.22);
+  }
+
+  /* 按压反馈基元：pointer-down 立刻响应（≤100ms ease-out）*/
+  .bk-press {
+    transition: transform var(--bk-press-duration) ease-out;
+    will-change: transform;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .bk-press:active {
+    transform: scale(var(--bk-press-scale));
+  }
+
+  /* 统一 backdrop-filter 的 -webkit- 前缀由组件各自补 */
+
+  /* ── Reduced Motion（WWDC §14）：cross-fade 替代位移/弹簧 ── */
+  @media (prefers-reduced-motion: reduce) {
+    .book-page *,
+    .book-page *::before,
+    .book-page *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.15s !important;
+      scroll-behavior: auto !important;
+    }
+    /* 仅保留 opacity 渐变，去掉 transform 位移 */
+    .book-page .sk-rise {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+
+  /* ── Reduced Transparency：材质退化为近乎不透明 ── */
+  @media (prefers-reduced-transparency: reduce) {
+    .book-page {
+      --bk-mat-thick-bg: color-mix(in srgb, var(--sk-glass-bg) 96%, transparent);
+      --bk-mat-thick-blur: blur(8px);
+      --bk-mat-thin-bg: color-mix(in srgb, var(--sk-moon) 10%, transparent);
+    }
   }
 
   .book-foot {
@@ -56,6 +138,7 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString(
   .foot-meta {
     color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
     font-size: .82rem;
+    letter-spacing: var(--bk-tracking-caption);
     margin: 0;
   }
   .foot-private { color: color-mix(in srgb, var(--sk-violet) 80%, var(--sk-moon)); }
@@ -63,6 +146,7 @@ const updatedLocal = new Date(shelfData.generatedAt).toLocaleDateString(
   .foot-quote {
     margin-top: 1rem;
     font-size: 1.5rem;
+    letter-spacing: var(--bk-tracking-caption);
     color: color-mix(in srgb, var(--sk-comet) 85%, var(--sk-moon));
     text-shadow: 0 0 16px color-mix(in srgb, var(--sk-comet) 30%, transparent);
   }
