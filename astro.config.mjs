@@ -29,6 +29,13 @@ export default defineConfig({
 	site: "https://www.yujok.com/",
 	base: "/",
 	trailingSlash: "always",
+	// Windows 上 4321 落在系统保留端口段(4299-4398)内会导致 EACCES，改用 5173
+	server: {
+		port: 5173,
+	},
+	preview: {
+		port: 5173,
+	},
 	integrations: [
 		tailwind({
 			nesting: true,
@@ -49,10 +56,10 @@ export default defineConfig({
 		}),
 		icon({
 			include: {
-				"preprocess: vitePreprocess(),": ["*"],
 				"fa6-brands": ["*"],
 				"fa6-regular": ["*"],
 				"fa6-solid": ["*"],
+				"material-symbols": ["*"],
 			},
 		}),
 		expressiveCode({
