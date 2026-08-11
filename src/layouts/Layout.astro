@@ -140,6 +140,10 @@ const bannerOffset =
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		/>
 		{favicons.map(favicon => (
 			<link rel="icon"
 				  href={favicon.src.startsWith('/') ? url(favicon.src) : favicon.src}
@@ -180,6 +184,12 @@ const bannerOffset =
 			const rsOpen = localStorage.getItem('right-sidebar-open');
 			if (rsOpen === 'false') {
 				document.documentElement.classList.add('right-sidebar-collapsed');
+			}
+
+			// Apply left-sidebar collapsed state early to avoid flash
+			const lsOpen = localStorage.getItem('left-sidebar-open');
+			if (lsOpen === 'false') {
+				document.documentElement.classList.add('left-sidebar-collapsed');
 			}
 		</script>
 		<style define:vars={{

@@ -4,6 +4,7 @@ import type {
 	NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
+	WalineConfig,
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
@@ -124,6 +125,14 @@ export const licenseConfig: LicenseConfig = {
 	enable: true,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+};
+
+export const walineConfig: WalineConfig = {
+	enable: true,
+	serverURL: "https://comment.yujok.com",
+	pageSize: 10,
+	requiredMeta: ["nick", "mail"],
+	commentSorting: "latest",
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {

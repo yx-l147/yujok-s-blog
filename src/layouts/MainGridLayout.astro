@@ -141,6 +141,14 @@ const mainPanelTop =
         @apply xl:col-span-2;
     }
 
+    :root.left-sidebar-collapsed #main-grid > .footer {
+        @apply xl:col-span-2;
+    }
+
+    :root.left-sidebar-collapsed.right-sidebar-collapsed #main-grid > .footer {
+        @apply xl:col-span-1;
+    }
+
     /* 全宽内容页 */
     #main-grid.content-fullwidth {
         grid-template-columns: 1fr !important;

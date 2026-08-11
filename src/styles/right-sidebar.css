@@ -35,6 +35,21 @@
     gap: 1rem;
 }
 
+#sidebar {
+    transition:
+        transform 580ms var(--rs-ease),
+        opacity 320ms ease-out,
+        filter 420ms ease-out;
+    transform-origin: top left;
+}
+
+:root.left-sidebar-collapsed #sidebar {
+    transform: translateX(-1.25rem) scale(0.97);
+    opacity: 0;
+    filter: blur(8px);
+    pointer-events: none;
+}
+
 :root.right-sidebar-collapsed #right-sidebar {
     transform: translateX(1.25rem) scale(0.97);
     opacity: 0;
@@ -43,9 +58,23 @@
 }
 
 @media (min-width: 1280px) {
+	:root.left-sidebar-collapsed #main-grid {
+		grid-template-columns: 0 minmax(0, 1fr) 17.5rem;
+	}
+
     :root.right-sidebar-collapsed #main-grid {
         grid-template-columns: 17.5rem minmax(0, 1fr) 0;
     }
+
+	:root.left-sidebar-collapsed.right-sidebar-collapsed #main-grid {
+		grid-template-columns: 0 minmax(0, 1fr) 0;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+	:root.left-sidebar-collapsed #main-grid {
+		grid-template-columns: 0 minmax(0, 1fr);
+	}
 }
 
 /* ============================================================
@@ -280,6 +309,14 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #main-grid,
+    #sidebar,
+    #right-sidebar {
+        transition-duration: 1ms;
+    }
 }
 
 /* Apple-style title — big month, whispered year */
@@ -776,5 +813,11 @@
     transition: transform 540ms var(--rs-spring);
 }
 :root.right-sidebar-collapsed #right-sidebar-switch [data-icon] {
+    transform: rotate(180deg);
+}
+#left-sidebar-switch [data-icon] {
+    transition: transform 540ms var(--rs-spring);
+}
+:root.left-sidebar-collapsed #left-sidebar-switch [data-icon] {
     transform: rotate(180deg);
 }

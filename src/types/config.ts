@@ -103,6 +103,16 @@ export type LicenseConfig = {
 	url: string;
 };
 
+export type WalineConfig = {
+	enable: boolean;
+	serverURL: string;
+	pageSize?: number;
+	wordLimit?: number | [number, number];
+	requiredMeta?: ("nick" | "mail" | "link")[];
+	reaction?: boolean | string[];
+	commentSorting?: "latest" | "oldest" | "hottest";
+};
+
 export type LIGHT_DARK_MODE =
 	| typeof LIGHT_MODE
 	| typeof DARK_MODE

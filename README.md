@@ -177,6 +177,7 @@ pnpm preview
 pnpm new-post <slug>
 pnpm fetch-weread
 pnpm draft-book-reviews
+pnpm new-thought -- "我的新想法"
 ```
 
 ## 微信读书书架

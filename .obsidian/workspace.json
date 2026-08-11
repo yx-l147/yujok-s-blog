@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "src/content/posts/倦怠.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "倦怠"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "src/content/posts/倦怠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "src/content/posts/倦怠.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "src/content/posts/倦怠.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,39 +190,42 @@
   },
   "active": "8a52aeea9a218299",
   "lastOpenFiles": [
-    "_tmp_52424_9147b42251edbe816da80240c4287fe0",
-    "_tmp_45744_99248717314b5e3cb1310773937bb5a6",
-    "dist/ufo-preview.jpg",
-    "src/components/misc/ImageWrapper.astro.tmp.73292.19855619d566",
-    "dist/pagefind/index/zh-cn_83f0ded.pf_index",
-    "dist/pagefind/fragment/zh-cn_bfd147a.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_b9cd4ce.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_58bfbd6.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_94b090f.pf_fragment",
-    "dist/pagefind/fragment/zh-cn_1842625.pf_fragment",
-    "dist/pagefind/wasm.unknown.pagefind",
-    "dist/pagefind/pagefind.zh-cn_61ef32c79b81e.pf_meta",
-    "dist/_astro/ChatGPT Image 2026年8月9日 23_28_55.CDqQrJAc_2d9U1c.webp",
-    "dist/_astro/head.Douy_nZt_ZqY3w6.webp",
+    "dist/book/3300189343/index.html",
+    "dist/book/3300189343",
+    "dist/book/38153663/index.html",
+    "dist/book/38153663",
+    "dist/book/42849694/index.html",
+    "dist/book/42849694",
+    "dist/book/40223839/index.html",
+    "dist/book/40223839",
+    "dist/book/3300174383/index.html",
+    "dist/book/3300174383",
+    "dist/book/510936/index.html",
     "dist/_astro/wallhaven-gwqq83.CvGk-h6V.jpg",
-    "dist/_astro/137882041_p0.B5rs5lLR.jpg",
-    "dist/_astro/141133240_p0.Cb7rM3IT.png",
-    "dist/_astro/125139872_p0.CmkUw-6y.jpg",
-    "dist/_astro/140571587_p0.BvQPTTn1.jpg",
-    "dist/_astro/112155320_p0.D6rWgF4s.png",
+    "dist/_astro/head.Douy_nZt.jpg",
+    "dist/_astro/demo-banner.WD4SMgz_.png",
+    "dist/_astro/demo-avatar.CxcI0ivM.png",
+    "dist/_astro/ChatGPT Image 2026年8月9日 23_28_55.CDqQrJAc.png",
     "dist/_astro/141106957_p0.DoswacqN.png",
-    "src/content/thoughts/reading-thoughts.md",
-    "src/content/posts/倦怠.md",
-    "src/content/thoughts/coding-and-writing.md",
+    "dist/_astro/141133240_p0.Cb7rM3IT.png",
+    "dist/_astro/141096207_p0.BS-8Jsas.jpg",
+    "dist/_astro/141095873_p0.CymphqzS.jpg",
+    "dist/_astro/141048638_p0.BX5MR4pg.jpg",
     "src/content/spec/Friends.md",
     "src/content/spec/about.md",
+    "src/content/book-reviews/变态心理学-第11版-3300199311.md",
+    "src/content/book-reviews/猜想与反驳-27094128.md",
+    "src/content/book-reviews/被讨厌的勇气-自我启发之父-阿德勒的哲学课-25615385.md",
+    "src/content/book-reviews/爱的艺术-36557865.md",
+    "src/content/book-reviews/柏拉图文艺对话集-37700254.md",
+    "src/content/posts/倦怠.md",
+    "src/content/thoughts/reading-thoughts.md",
+    "src/content/posts/test.md",
+    "src/content/thoughts/coding-and-writing.md",
+    "README.md",
     "src/content/book-reviews/费曼物理学讲义-套装共5册-新千年版-3300060686.md",
     "src/content/book-reviews/我身上有个不可战胜的夏天-果麦经典-3300151990.md",
     "src/content/book-reviews/李太白诗集-中华国学经典精粹-661252.md",
-    "src/content/book-reviews/猜想与反驳-27094128.md",
-    "src/content/book-reviews/爱的艺术-36557865.md",
-    "src/content/book-reviews/1984-758867.md",
-    "src/content/posts/test.md",
-    "README.md"
+    "src/content/book-reviews/1984-758867.md"
   ]
 }

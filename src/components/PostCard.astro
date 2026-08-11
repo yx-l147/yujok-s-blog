@@ -30,10 +30,12 @@ const {
 	published,
 	updated,
 	tags,
-	category,
-	image,
-	description,
-	style,
+    category,
+    image,
+    description,
+    words,
+    minutes,
+    style,
 } = Astro.props;
 const className = Astro.props.class;
 
@@ -59,6 +61,12 @@ const excerpt = description || (await getPostExcerpt(entry));
         <div class="transition text-75 mb-4 pr-4 line-clamp-2 md:line-clamp-2 leading-7">
             {excerpt}
         </div>
+
+        {words !== undefined && minutes !== undefined && <div class="post-card__stats text-50">
+            <span>{words} 字</span>
+            <span class="post-card__stats-divider" aria-hidden="true"></span>
+            <span>{minutes} 分钟</span>
+        </div>}
     </div>
 
     {hasCover && <a href={url} aria-label={title}

@@ -1,4 +1,16 @@
 .custom-md {
+    i.fa-solid,
+    i.fa-regular,
+    i.fa-brands,
+    i[class*="fa-"] {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 0.35rem;
+    }
+
     h1 {
         @apply text-3xl;
     }

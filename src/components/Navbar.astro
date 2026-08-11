@@ -115,8 +115,25 @@ const navIcon = (link: NavBarLink) => {
                     </button>
             )}
             <LightDarkSwitch client:only="svelte" />
+            <button
+                aria-controls="sidebar"
+                aria-label="收起左侧栏"
+                class="hidden lg:inline-flex btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90"
+                data-sidebar-toggle="left"
+                id="left-sidebar-switch"
+                title="收起左侧栏"
+            >
+                <Icon name="material-symbols:left-panel-open-outline-rounded" class="text-[1.25rem]" />
+            </button>
             {siteConfig.rightSidebar.enable && (
-                <button aria-label="Toggle Right Sidebar" class="hidden xl:inline-flex btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="right-sidebar-switch">
+                <button
+                    aria-controls="right-sidebar"
+                    aria-label="收起右侧栏"
+                    class="hidden xl:inline-flex btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90"
+                    data-sidebar-toggle="right"
+                    id="right-sidebar-switch"
+                    title="收起右侧栏"
+                >
                     <Icon name="material-symbols:right-panel-open-outline-rounded" class="text-[1.25rem]" />
                 </button>
             )}
@@ -168,13 +185,29 @@ function loadButtonScript() {
         };
     }
 
-    let rsBtn = document.getElementById("right-sidebar-switch");
-    if (rsBtn) {
-        rsBtn.onclick = function () {
-            const root = document.documentElement;
-            const willCollapse = !root.classList.contains("right-sidebar-collapsed");
-            root.classList.toggle("right-sidebar-collapsed", willCollapse);
-            localStorage.setItem("right-sidebar-open", String(!willCollapse));
+    const sidebarLabels = {
+        left: { open: "收起左侧栏", closed: "展开左侧栏" },
+        right: { open: "收起右侧栏", closed: "展开右侧栏" },
+    } as const;
+
+    for (const button of document.querySelectorAll<HTMLButtonElement>("[data-sidebar-toggle]")) {
+        const side = button.dataset.sidebarToggle as keyof typeof sidebarLabels;
+        const rootClass = `${side}-sidebar-collapsed`;
+        const storageKey = `${side}-sidebar-open`;
+        const syncState = () => {
+            const open = !document.documentElement.classList.contains(rootClass);
+            const label = sidebarLabels[side][open ? "open" : "closed"];
+            button.setAttribute("aria-expanded", String(open));
+            button.setAttribute("aria-label", label);
+            button.setAttribute("title", label);
+        };
+
+        syncState();
+        button.onclick = () => {
+            const open = document.documentElement.classList.contains(rootClass);
+            document.documentElement.classList.toggle(rootClass, !open);
+            localStorage.setItem(storageKey, String(open));
+            syncState();
         };
     }
 }

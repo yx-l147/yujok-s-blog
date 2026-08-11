@@ -7,27 +7,13 @@
         box-shadow:
             0 8px 18px var(--glass-shadow-color),
             inset 0 1px 0 var(--glass-inner-shadow-color);
-        background:
-            linear-gradient(180deg,
-                color-mix(in srgb, var(--glass-edge) 8%, transparent),
-                transparent 28%),
-            var(--card-bg);
+        background: var(--card-bg-solid);
         position: relative;
         isolation: isolate;
         background-clip: padding-box;
     }
     .glass-panel::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        background: linear-gradient(180deg, var(--glass-sheen), transparent 36%);
-        pointer-events: none;
-        opacity: 0.42;
-        z-index: 0;
-    }
-    :root.dark .glass-panel::before {
-        opacity: 0.58;
+        display: none;
     }
     .glass-panel > * {
         position: relative;
@@ -39,7 +25,7 @@
     }
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden transition;
-        background: var(--card-bg);
+        background: var(--card-bg-solid);
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         transition:
@@ -690,13 +676,7 @@
     }
 
     .post-card {
-        -webkit-backdrop-filter: blur(12px) saturate(138%) brightness(var(--glass-brightness));
-        backdrop-filter: blur(12px) saturate(138%) brightness(var(--glass-brightness));
-        background:
-            linear-gradient(180deg,
-                color-mix(in srgb, var(--glass-edge) 9%, transparent),
-                transparent 34%),
-            color-mix(in srgb, var(--card-bg) 88%, transparent);
+        background: var(--card-bg-solid);
         transition:
             transform 360ms var(--motion-standard),
             box-shadow 360ms var(--motion-standard),
@@ -707,19 +687,22 @@
         border-color: color-mix(in srgb, var(--primary) 28%, var(--glass-border));
     }
     .post-card::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        background: radial-gradient(420px circle at 16% 0%,
-            color-mix(in srgb, var(--accent-pink) 12%, transparent),
-            transparent 58%);
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity 360ms var(--motion-standard);
+        display: none;
     }
-    .post-card:hover::after {
-        opacity: 1;
+
+    .post-card__stats {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        min-height: 1.25rem;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+    .post-card__stats-divider {
+        width: 1px;
+        height: 0.85rem;
+        background: var(--meta-divider);
     }
 
     .profile-card {

@@ -1,0 +1,271 @@
+---
+interface WalineAttrs {
+	serverURL: string;
+	path?: string;
+	lang?: string;
+	locale?: Record<string, string>;
+	emoji?: (string | object)[] | false;
+	emojiCDN?: string;
+	emojiMaps?: Record<string, string>;
+	requiredMeta?: ("nick" | "mail" | "link")[];
+	login?: "enable" | "disable" | "force";
+	wordLimit?: number | [number, number];
+	pageSize?: number;
+	imageUploader?: boolean;
+	highlighter?: boolean;
+	texRenderer?: boolean;
+	search?: boolean | string;
+	recaptchaV3Key?: string;
+	reaction?: boolean | string[];
+	commentSorting?: "latest" | "oldest" | "hottest";
+}
+interface Props extends WalineAttrs {}
+const { serverURL, ...rest } = Astro.props;
+const W_CDN = "https://cdn.jsdelivr.net/npm/@waline/client@3";
+const UMD_CDN = `${W_CDN}/dist/waline.umd.min.js`;
+const UMD_FALLBACK =
+	"https://unpkg.com/@waline/client@3/dist/waline.umd.min.js";
+const CSS_HREF = `${W_CDN}/dist/waline.css`;
+const CSS_FALLBACK = "https://unpkg.com/@waline/client@3/dist/waline.css";
+const restJson = JSON.stringify(rest);
+---
+
+<link rel="stylesheet" href={CSS_HREF} slot="head" data-waline-css="1" />
+
+<section
+	class="relative z-10 w-full mb-6 px-6 md:px-9 wln-host"
+	data-srv={serverURL}
+	data-rest={restJson}
+	aria-label="评论"
+>
+	<div
+		class="wln-heading flex items-center gap-3 mb-5 text-sm font-semibold text-90"
+	>
+		<span
+			class="inline-block h-4 w-1 rounded-full bg-[var(--primary)]"
+			aria-hidden="true"
+		></span>
+		评论
+	</div>
+	<div class="wln-mount min-h-[160px]">
+		<div
+			class="wln-loading text-xs py-10 text-center text-black/40 dark:text-white/40"
+		>
+			评论加载中…如果长时间无响应请刷新页面。
+		</div>
+	</div>
+</section>
+
+<style is:global>
+	.wln-host {
+		--waline-color: var(--text-strong);
+		--waline-bg-color: transparent;
+		--waline-bg-color-light: color-mix(in srgb, var(--card-bg-solid) 42%, transparent);
+		--waline-border-color: var(--line-divider);
+		--waline-disable-bg-color: color-mix(in srgb, var(--card-bg-solid) 34%, transparent);
+		--waline-disable-color: var(--text-muted);
+		--waline-info-bg-color: color-mix(in srgb, var(--primary) 8%, transparent);
+		--waline-info-color: var(--text-muted);
+		--waline-theme-color: var(--primary);
+		--waline-active-color: var(--primary);
+	}
+
+	.wln-host .wl-panel,
+	.wln-host .wl-card,
+	.wln-host .wl-empty {
+		background: transparent;
+	}
+
+	.wln-host .wl-panel {
+		margin: 0;
+		padding: 0;
+	}
+
+	.wln-host .wl-header {
+		margin-bottom: 0.75rem;
+		padding: 0 0 0.75rem;
+		border-bottom: 1px dashed var(--line-divider);
+	}
+
+	/* The section heading above already names the feature; keep sorting controls only here. */
+	.wln-host .wl-count {
+		display: none;
+	}
+
+	.wln-host .wl-editor {
+		border-color: var(--line-divider);
+		border-radius: var(--radius-medium);
+		background: color-mix(in srgb, var(--card-bg-solid) 28%, transparent);
+		box-shadow: none;
+	}
+
+	.wln-host .wl-input,
+	.wln-host .wl-textarea {
+		color: var(--text-strong);
+		background: transparent;
+	}
+
+	.wln-host .wl-comment {
+		border-color: var(--line-divider);
+	}
+
+	.wln-host .wl-sort {
+		margin-left: auto;
+	}
+
+	.wln-host .wl-footer {
+		margin-top: 0.75rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid var(--line-divider);
+	}
+
+	@media (max-width: 640px) {
+		.wln-host {
+			padding-inline: 1.25rem;
+		}
+
+		.wln-host .wl-header {
+			padding-bottom: 0.625rem;
+		}
+	}
+</style>
+
+<script is:inline define:vars={{ UMD_CDN, UMD_FALLBACK, CSS_HREF, CSS_FALLBACK }}>
+	(function () {
+		var MOUNTED_KEY = "__wln_mounted__";
+		var THEME_KEY = "__wln_theme_bound__";
+
+		function ensureCss() {
+			if (document.getElementById("wln-css")) return;
+			var link = document.createElement("link");
+			link.id = "wln-css";
+			link.rel = "stylesheet";
+			link.onerror = function () {
+				var fb = document.createElement("link");
+				fb.rel = "stylesheet";
+				fb.href = CSS_FALLBACK;
+				document.head.appendChild(fb);
+			};
+			link.href = CSS_HREF;
+			document.head.appendChild(link);
+		}
+
+		function loadScript(src) {
+			return new Promise(function (resolve, reject) {
+				var w = window;
+				if (w.Waline) return resolve(w.Waline);
+				var s = document.createElement("script");
+				s.src = src;
+				s.async = true;
+				s.defer = true;
+				s.onload = function () {
+					if (w.Waline) resolve(w.Waline);
+					else reject(new Error("Waline not exposed"));
+				};
+				s.onerror = function () {
+					reject(new Error("failed: " + src));
+				};
+				document.body.appendChild(s);
+			});
+		}
+
+		function getWaline() {
+			var w = window;
+			if (w.Waline) return Promise.resolve(w.Waline);
+			if (w.__wlnPromise) return w.__wlnPromise;
+			w.__wlnPromise = loadScript(UMD_CDN)["catch"](function () {
+				return loadScript(UMD_FALLBACK);
+			});
+			return w.__wlnPromise;
+		}
+
+		function theme() {
+			var root = document.documentElement;
+			var hue = (root.style.getPropertyValue("--hue") || "").trim() || "220";
+			root.style.setProperty("--waline-theme-color", "oklch(0.6 0.2 " + hue + ")");
+			root.style.setProperty("--waline-active-color", "oklch(0.68 0.23 " + hue + ")");
+			root.style.setProperty("--waline-border-color", "var(--line-divider)");
+			root.style.setProperty("--waline-bg-color", "var(--card-bg)");
+		}
+
+		function bindTheme() {
+			var w = window;
+			if (w[THEME_KEY]) return;
+			w[THEME_KEY] = true;
+			theme();
+			new MutationObserver(theme).observe(document.documentElement, {
+				attributes: true,
+				attributeFilter: ["class", "style"],
+			});
+		}
+
+		function mountOne(host) {
+			var mount = host.querySelector(".wln-mount");
+			var loading = host.querySelector(".wln-loading");
+			if (!mount) return;
+			if (mount[MOUNTED_KEY]) return;
+
+			var srv = host.getAttribute("data-srv");
+			if (!srv) {
+				if (loading)
+					loading.textContent = "未配置评论服务地址（serverURL）。";
+				return;
+			}
+			var opts = {};
+			try {
+				opts = JSON.parse(host.getAttribute("data-rest") || "{}");
+			} catch (_) {
+				opts = {};
+			}
+
+			ensureCss();
+			bindTheme();
+
+			getWaline()
+				.then(function (Waline) {
+					var lang =
+						(document.documentElement.getAttribute("lang") || "zh-CN")
+							.replace("_", "-");
+					if (lang.toLowerCase().indexOf("zh") === 0) lang = "zh-CN";
+
+					// Waline v3 expects CSS selector or an element directly.
+					// We assign a unique id to be safe across Swup reloads.
+					var id = "wln-root-" + Math.random().toString(36).slice(2, 9);
+					mount.id = id;
+					Waline.init({
+						el: "#" + id,
+						serverURL: srv,
+						path: window.location.pathname,
+						lang: lang,
+						dark: "html.dark",
+						requiredMeta: ["nick", "mail"],
+						...opts,
+					});
+					mount[MOUNTED_KEY] = true;
+					if (loading) loading.setAttribute("hidden", "");
+				})
+				["catch"](function (err) {
+					console.error("[Waline] init failed:", err);
+					if (loading)
+						loading.textContent =
+							"评论加载失败，请检查网络或稍后再试。";
+				});
+		}
+
+		function run() {
+			var hosts = document.querySelectorAll(".wln-host");
+			if (!hosts.length) return;
+			hosts.forEach(mountOne);
+		}
+
+		if (document.readyState === "loading") {
+			document.addEventListener("DOMContentLoaded", run, { once: true });
+		} else {
+			run();
+		}
+
+		document.addEventListener("swup:page:view", run);
+		document.addEventListener("swup:content:replace", run);
+		document.addEventListener("astro:page-load", run);
+	})();
+</script>

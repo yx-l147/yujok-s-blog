@@ -3,13 +3,14 @@ import { render } from "astro:content";
 import path from "node:path";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
+import Waline from "@components/widget/Waline.astro";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getPostCover, getSortedPosts } from "@utils/content-utils";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
-import { licenseConfig } from "src/config";
+import { licenseConfig, walineConfig } from "src/config";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
@@ -112,6 +113,16 @@ const jsonLd = {
 
         </div>
     </div>
+
+    {walineConfig.enable && (
+        <Waline
+            serverURL={walineConfig.serverURL}
+            pageSize={walineConfig.pageSize}
+            requiredMeta={walineConfig.requiredMeta}
+            commentSorting={walineConfig.commentSorting}
+            wordLimit={walineConfig.wordLimit}
+        />
+    )}
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}
