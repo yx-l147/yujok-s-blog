@@ -1,6 +1,86 @@
 {
 	"books": [
 		{
+			"bookId": "3300130736",
+			"title": "沉思的生活，或无所事事",
+			"author": "[德]韩炳哲",
+			"cover": "https://cdn.weread.qq.com/weread/cover/23/cpplatform_xslxpytreegvdddh59wz5q/t6_cpplatform_xslxpytreegvdddh59wz5q1736753214.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1786682827,
+			"updateTime": 1737703693,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300120003",
+			"title": "我的重生日记：生死之外，皆是擦伤",
+			"author": "秋树",
+			"cover": "https://cdn.weread.qq.com/weread/cover/47/cpplatform_cdirvut91vrfuahh1yu2kw/t6_cpplatform_cdirvut91vrfuahh1yu2kw1731039765.jpg",
+			"category": "精品小说-纪实小说",
+			"finishReading": 0,
+			"readUpdateTime": 1786645268,
+			"updateTime": 1785752369,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300223025",
+			"title": "金瓶梅·钟书峰说经典（1）（精彩插图版）",
+			"author": "[明]兰陵笑笑生 著 钟书峰 编注",
+			"cover": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_aoqm4by4mrvbuujcofvh7r/t6_cpplatform_aoqm4by4mrvbuujcofvh7r1785911586.jpg",
+			"category": "文学-经典作品",
+			"finishReading": 0,
+			"readUpdateTime": 1786640452,
+			"updateTime": 1786546833,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "29636571",
+			"title": "思辨与立场：生活中无处不在的批判性思维工具（第2版）",
+			"author": "[美]理查德·保罗等",
+			"cover": "https://cdn.weread.qq.com/weread/cover/17/yuewen_29636571/t6_yuewen_296365711747637222.jpg",
+			"category": "哲学宗教-思维科学",
+			"finishReading": 0,
+			"readUpdateTime": 1786640176,
+			"updateTime": 1760174906,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "37724838",
+			"title": "一个无政府主义者的意外死亡",
+			"author": "达里奥·福",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/838/37724838/t6_37724838.jpg",
+			"category": "文学-戏剧文学",
+			"finishReading": 0,
+			"readUpdateTime": 1786640118,
+			"updateTime": 1703130811,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300146331",
 			"title": "5.5小时：中国网民的数字沉溺与脑腐危机（轻观察）",
 			"author": "晚点LatePost 曾梦龙",
@@ -179,7 +259,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3390,
+			"ratingCount": 3391,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -191,7 +271,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_6bspqcu7twqfqed1wx567s/t6_cpplatform_6bspqcu7twqfqed1wx567s1677032090.jpg",
 			"category": "教育学习-教育",
 			"finishReading": 0,
-			"readUpdateTime": 1776351558,
+			"readUpdateTime": 1786645215,
 			"updateTime": 1760172333,
 			"progress": 0,
 			"noteCount": 0,
@@ -283,7 +363,7 @@
 			"publisher": "",
 			"translator": "莫知",
 			"publicRating": 9.3,
-			"ratingCount": 1233,
+			"ratingCount": 1238,
 			"publishTime": "2026-04-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=af132a80813abb4a1g0103ed"
@@ -483,7 +563,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1473,
+			"ratingCount": 1472,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -722,8 +802,8 @@
 			"intro": "本书是关于如何从零开始构建大模型的指南，由畅销书作家塞巴斯蒂安·拉施卡撰写，通过清晰的文字、图表和实例，逐步指导读者创建自己的大模型。在本书中，读者将学习如何规划和编写大模型的各个组成部分、为大模型训练准备适当的数据集、进行通用语料库的预训练，以及定制特定任务的微调。此外，本书还将探讨如何利用人工反馈确保大模型遵循指令，以及如何将预训练权重加载到大模型中。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
-			"publicRating": 9.1,
-			"ratingCount": 316,
+			"publicRating": 9.2,
+			"ratingCount": 317,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -955,7 +1035,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1461,
+			"ratingCount": 1462,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -1037,6 +1117,22 @@
 			"noteCount": 25,
 			"reviewCount": 0,
 			"bookmarkCount": 1,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300213256",
+			"title": "卡拉马佐夫兄弟",
+			"author": "[俄]陀思妥耶夫斯基",
+			"cover": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_f6zlzl4wqexndqbbjzftwv/t6_cpplatform_f6zlzl4wqexndqbbjzftwv1784793824.jpg",
+			"category": "精品小说-社会小说",
+			"finishReading": 0,
+			"readUpdateTime": 1786645251,
+			"updateTime": 1784793825,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
 			"readTime": 0,
 			"tags": []
 		},
@@ -1542,7 +1638,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2649,
+			"ratingCount": 2648,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1614,7 +1710,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80974,
+			"ratingCount": 80984,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -1778,7 +1874,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1786201649,
+			"readUpdateTime": 1786682835,
 			"updateTime": 1724329124,
 			"progress": 13,
 			"noteCount": 6,
@@ -1838,7 +1934,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43550,
+			"ratingCount": 43576,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -1970,7 +2066,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/84/YueWen_36213096/t6_YueWen_36213096.jpg",
 			"category": "经济理财-商业",
 			"finishReading": 0,
-			"readUpdateTime": 1786196085,
+			"readUpdateTime": 1786631029,
 			"updateTime": 1765188129,
 			"progress": 0,
 			"noteCount": 1,
@@ -2030,7 +2126,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6236,
+			"ratingCount": 6237,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -2454,7 +2550,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2358,
+			"ratingCount": 2360,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -2478,7 +2574,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31082,
+			"ratingCount": 31102,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -2550,7 +2646,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6664,
+			"ratingCount": 6666,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -2574,7 +2670,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6820,
+			"ratingCount": 6821,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -2717,8 +2813,8 @@
 			"intro": "提到“正常”“常态”，你会想到什么？提到“异常”“变态”，你又会想到什么？生活在现代社会中的每个人可能都有一些异于常人的表现或行为，那么我们该如何划分正常行为与异常行为之间的界限呢？很多人都觉得自己“社恐”、有强迫症，或者感到抑郁，这些是心理障碍吗？还是说它们仅仅是一些适应不良的行为或表现？这些问题的答案，都可以在本书中找到。 本书的三位作者都是长期从事心理障碍与异常行为研究、教学和临床实践工作的临床心理学家，他们不仅学术造诣深厚，而且有丰富的临床和教学经验。他们基于最新版的《精神障碍诊断与统计手册》和前沿的研究成果对本版进行了调整。全书共15章，前三章和最后一章为总论，集中介绍了变态心理学的学科性质和研究方法，主要的理论观点及相关的法律问题；第4章至第14章着重介绍了临床上比较常见的心理障碍，包括它们的临床表现、诊断标准、成因及具体的治疗方法等。 本书既可作为心理学专业老师和学生的教材或参考书，又可供心理咨询师、心理治疗师及相关专业人士在实践中参考，同时本书也有助于普通读者了解和认识变态心理学及异常的行为和表现。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
-			"publicRating": 9.4,
-			"ratingCount": 700,
+			"publicRating": 9.3,
+			"ratingCount": 702,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -2858,7 +2954,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
 			"category": "心理-亲密关系",
 			"finishReading": 0,
-			"readUpdateTime": 1786473001,
+			"readUpdateTime": 1786641341,
 			"updateTime": 1768294169,
 			"progress": 0,
 			"noteCount": 0,
@@ -2918,7 +3014,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77277,
+			"ratingCount": 77296,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3038,7 +3134,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "冯玮",
 			"publicRating": 0,
-			"ratingCount": 12,
+			"ratingCount": 13,
 			"publishTime": "2025-01-01 00:00:00",
 			"isbn": "9787532791057",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=14e32f80813aba140g0178ec"
@@ -3078,7 +3174,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4753,
+			"ratingCount": 4757,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -3286,7 +3382,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 474,
+			"ratingCount": 476,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -3406,7 +3502,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.6,
-			"ratingCount": 2080,
+			"ratingCount": 2084,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -3462,7 +3558,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9693,
+			"ratingCount": 9698,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3590,7 +3686,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7343,
+			"ratingCount": 7344,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -3678,7 +3774,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3212,
+			"ratingCount": 3219,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -4318,7 +4414,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2850,
+			"ratingCount": 2851,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -4358,7 +4454,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1277,
+			"ratingCount": 1282,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -4430,7 +4526,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17026,
+			"ratingCount": 17027,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -4498,7 +4594,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
 			"category": "个人成长-人生哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1786472963,
+			"readUpdateTime": 1786641419,
 			"updateTime": 1760166861,
 			"progress": 0,
 			"noteCount": 0,
@@ -4547,7 +4643,7 @@
 			"category": "文学-外国文学",
 			"finishReading": 0,
 			"readUpdateTime": 1774421805,
-			"updateTime": 1784544605,
+			"updateTime": 1786690656,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4622,7 +4718,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2328,
+			"ratingCount": 2329,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -5166,7 +5262,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4834,
+			"ratingCount": 4836,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -5254,7 +5350,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4330,
+			"ratingCount": 4331,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -5318,7 +5414,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10069,
+			"ratingCount": 10074,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5342,7 +5438,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 507,
+			"ratingCount": 508,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -5366,7 +5462,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23263,
+			"ratingCount": 23266,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -5482,7 +5578,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/24/cpplatform_ohzxmvw3m6nbdtby284c2b/t6_cpplatform_ohzxmvw3m6nbdtby284c2b1740969872.jpg",
 			"category": "政治军事-政治",
 			"finishReading": 0,
-			"readUpdateTime": 1778745527,
+			"readUpdateTime": 1786640270,
 			"updateTime": 1760177852,
 			"progress": 48,
 			"noteCount": 6,
@@ -6062,7 +6158,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6580,
+			"ratingCount": 6583,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -6190,7 +6286,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 168958,
+			"ratingCount": 168984,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -46735,8 +46831,8 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 736874,
-		"readDays": 303,
+		"totalReadTime": 737335,
+		"readDays": 304,
 		"readBooks": 145,
 		"finishedBooks": 24,
 		"noteCount": 7489,
@@ -46746,7 +46842,7 @@
 			{
 				"title": "文学",
 				"count": 48,
-				"time": 229405
+				"time": 229534
 			},
 			{
 				"title": "心理",
@@ -46778,7 +46874,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 4,
-				"readTime": "15小时4分钟"
+				"readTime": "15小时6分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -48058,12 +48154,16 @@
 			},
 			{
 				"date": "2026-08-12",
-				"seconds": 338
+				"seconds": 428
+			},
+			{
+				"date": "2026-08-13",
+				"seconds": 371
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 357,
+		"totalBooks": 363,
 		"secretCount": 28,
 		"favBook": {
 			"title": "西西弗神话",
@@ -48071,6 +48171,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-13T09:35:20.263Z",
+	"generatedAt": "2026-08-14T09:22:38.975Z",
 	"isMock": false
 }
