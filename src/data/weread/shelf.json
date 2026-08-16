@@ -1,13 +1,29 @@
 {
 	"books": [
 		{
+			"bookId": "36846529",
+			"title": "摄影与心理学",
+			"author": "陈磊编著",
+			"cover": "https://cdn.weread.qq.com/weread/cover/33/YueWen_36846529/t6_YueWen_36846529.jpg",
+			"category": "艺术-摄影",
+			"finishReading": 0,
+			"readUpdateTime": 1786837539,
+			"updateTime": 1760170338,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300150166",
 			"title": "我独自游荡，像一朵孤云：华兹华斯诗选（原野诗丛）",
 			"author": "[英]威廉·华兹华斯",
 			"cover": "https://cdn.weread.qq.com/weread/cover/16/cpplatform_benox8osbmm7qviqra5qn6/t6_cpplatform_benox8osbmm7qviqra5qn61750759660.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1786770544,
+			"readUpdateTime": 1786866917,
 			"updateTime": 1760175974,
 			"progress": 0,
 			"noteCount": 0,
@@ -51,7 +67,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4757,
+			"ratingCount": 4758,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -91,7 +107,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77310,
+			"ratingCount": 77336,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -291,7 +307,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.3,
-			"ratingCount": 702,
+			"ratingCount": 704,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -347,7 +363,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1319,
+			"ratingCount": 1321,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -563,7 +579,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31119,
+			"ratingCount": 31131,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -679,7 +695,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_vxc2ntfnmv3ioqu19gsy6f/t6_cpplatform_vxc2ntfnmv3ioqu19gsy6f1755484808.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 1,
-			"readUpdateTime": 1786196079,
+			"readUpdateTime": 1786868293,
 			"updateTime": 1755485762,
 			"progress": 100,
 			"noteCount": 146,
@@ -931,7 +947,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6239,
+			"ratingCount": 6238,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -1123,7 +1139,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43605,
+			"ratingCount": 43618,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -1323,7 +1339,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 80988,
+			"ratingCount": 80998,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -1419,7 +1435,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6668,
+			"ratingCount": 6672,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -1459,7 +1475,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2650,
+			"ratingCount": 2651,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1675,7 +1691,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 578,
+			"ratingCount": 579,
 			"publishTime": "2026-04-07 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2cf32bf0813abb4beg0136c4"
@@ -2019,7 +2035,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1472,
+			"ratingCount": 1473,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -2323,7 +2339,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.1,
-			"ratingCount": 318,
+			"ratingCount": 319,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -2899,7 +2915,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1462,
+			"ratingCount": 1463,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -2923,7 +2939,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1880,
+			"ratingCount": 1882,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -2979,7 +2995,7 @@
 			"publisher": "九州出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 1164,
+			"ratingCount": 1163,
 			"publishTime": "2014-06-01 00:00:00",
 			"isbn": "9787510827495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=15132ab057c885151ad39bd"
@@ -3038,7 +3054,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 459,
+			"ratingCount": 461,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -3370,19 +3386,19 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
 			"category": "文学-外国文学",
 			"finishReading": 0,
-			"readUpdateTime": 1786778289,
+			"readUpdateTime": 1786869637,
 			"updateTime": 1716295882,
-			"progress": 78,
-			"noteCount": 100,
+			"progress": 83,
+			"noteCount": 108,
 			"reviewCount": 0,
-			"bookmarkCount": 40,
+			"bookmarkCount": 51,
 			"readTime": 0,
 			"tags": [],
 			"intro": "全书包含两个部分。《克林索尔的最后夏天》是黑塞创作于1919年的中篇小说。彼时一战刚刚结束，世界尚未从混乱中恢复，千万士兵、战俘和民众，从多年僵化统一的顺服中，回归既向往又恐惧的自由。有些年轻人在童年时被战争拖走，现在“回归”了，却必须面对一个完全陌生的现实世界。而对于黑塞这样的“老人”，那些曾被高度认同的世界观已成了可笑荒唐的明日黄花。一切都变得可疑，令人不安惶恐。在这样一个夏天，一个告别的夏天，充满力量与光芒、诱惑与魅力，弥漫南方阳光与葡萄酒香气的日子，画家克林索尔化身李太白，与他的好友杜甫、路易、亚美尼亚占星师，一同漫游，饮酒，辩论。最终在夏末，用尽生命所有的燃料，完成了最终的画作。第二部分《漫游》是黑塞创作的散文和诗歌集。",
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9702,
+			"ratingCount": 9705,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3606,7 +3622,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7347,
+			"ratingCount": 7351,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -3662,7 +3678,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 858,
+			"ratingCount": 859,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -3870,7 +3886,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23265,
+			"ratingCount": 23266,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -4086,7 +4102,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 801,
+			"ratingCount": 802,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a31321e0813abb40bg0199be"
@@ -4110,7 +4126,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169011,
+			"ratingCount": 169046,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -4286,7 +4302,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6586,
+			"ratingCount": 6587,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -4342,7 +4358,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15384,
+			"ratingCount": 15389,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -4414,7 +4430,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6318,
+			"ratingCount": 6319,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4508,6 +4524,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1786562480,
 			"updateTime": 1740469789,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "34363135",
+			"title": "拜伦经典诗选",
+			"author": "[英]拜伦",
+			"cover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_34363135/t6_YueWen_34363135.jpg",
+			"category": "文学-现代诗歌",
+			"finishReading": 0,
+			"readUpdateTime": 1786866713,
+			"updateTime": 1760177050,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4790,7 +4822,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 621,
+			"ratingCount": 623,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=5c832060813ab8c2dg018e58"
@@ -4814,7 +4846,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10076,
+			"ratingCount": 10082,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -4838,7 +4870,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1504,
+			"ratingCount": 1506,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5014,7 +5046,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2330,
+			"ratingCount": 2331,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -5134,7 +5166,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10713,
+			"ratingCount": 10715,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -5174,7 +5206,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1438,
+			"ratingCount": 1440,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5302,7 +5334,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1284,
+			"ratingCount": 1285,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -5498,18 +5530,18 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1786778370,
+			"readUpdateTime": 1786866914,
 			"updateTime": 1773996422,
 			"progress": 48,
-			"noteCount": 62,
+			"noteCount": 70,
 			"reviewCount": 0,
-			"bookmarkCount": 42,
+			"bookmarkCount": 51,
 			"readTime": 0,
 			"tags": [],
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.4,
+			"publicRating": 8.6,
 			"ratingCount": 26,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -5982,7 +6014,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3222,
+			"ratingCount": 3227,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -6006,7 +6038,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2666,
+			"ratingCount": 2667,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -6142,7 +6174,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.6,
-			"ratingCount": 2084,
+			"ratingCount": 2087,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -6262,7 +6294,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 477,
+			"ratingCount": 479,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -24372,6 +24404,70 @@
 			"chapter": "登金陵凤凰台",
 			"text": "凤凰台上凤凰游， 凤去台空江自流。",
 			"createTime": "2026-04-09T01:32:43"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "小教堂",
+			"text": "真诚的祷告者并不乞求什么，只是陈述他的状况和困境。他唱出苦难与感恩，像小孩们一样歌唱。",
+			"createTime": "2026-08-16T08:40:07"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "雨天",
+			"text": "我那可爱美妙的生活总要以这样的阴郁时日来偿还。这样的日夜迟早到来，这些恐惧、厌恶与绝望。但我会活下去，我还会热爱生活。",
+			"createTime": "2026-08-16T08:37:59"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "雨天",
+			"text": "期待死亡，恐惧死亡，呼唤神明。直至一切都过去，直至绝望已倦怠，直至类似睡意或抚慰的什么向我招手。",
+			"createTime": "2026-08-16T08:37:39"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "雨天",
+			"text": "那份恐惧又来了，源自童年梦境和童话，源自求学少年命运[插图]的恐惧，对于一成不变的封闭性的恐惧，那种忧郁，那种厌恶。",
+			"createTime": "2026-08-16T08:35:46"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "雨天",
+			"text": "雨滴噼啪打在浅滩上，一阵凉湿的风刮入潮湿林中，树像铅灰色的死鱼般闪烁泛光。魔鬼往汤里吐了口痰，什么都不对劲，什么都沉默了。没有什么是愉快温暖的，一切都无聊、荒凉、糟烂。所有琴弦都沉默，所有色彩都虚假。",
+			"createTime": "2026-08-16T08:33:27"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "画趣",
+			"text": "但我眼里住着万物的另一种秩序，紫色流散，艳红加冕，我唱着它们无邪的歌。黄色交叠，红黄相映，",
+			"createTime": "2026-08-16T08:00:12"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "树木",
+			"text": "一旦我们学会了聆听，我们短促、匆忙、愚妄的头脑就会获得无与伦比的快乐。学会聆听树语者，便不会再渴望变成一棵树，不再向外求：这就是故乡，这就是幸福。",
+			"createTime": "2026-08-16T07:59:17"
+		},
+		{
+			"bookId": "23976188",
+			"bookTitle": "克林索尔的最后夏天（果麦经典）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
+			"chapter": "雨",
+			"text": "心啊，你曾那样痛地被撕裂，现在，放空去探索有多喜悦，不必思考，不必知晓，只是呼吸，只是感受！",
+			"createTime": "2026-08-16T07:55:25"
 		},
 		{
 			"bookId": "23976188",
@@ -43689,6 +43785,70 @@
 			"bookId": "3300198969",
 			"bookTitle": "江枫译雪莱诗选",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "自由颂",
+			"text": "然而，自由，然而，你的旗帜，虽破碎，却依旧飘扬，似雷霆暴雨，迎风激荡。",
+			"createTime": "2026-08-16T07:50:54"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "致云雀",
+			"text": "教给我一半你的心必定熟知的欢欣，和谐、炽热的激情就会流出我的双唇，全世界就会像此刻的我——侧耳倾听。",
+			"createTime": "2026-08-16T07:48:48"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "致云雀",
+			"text": "我们最美的音乐是最能倾诉哀思的曲调。",
+			"createTime": "2026-08-16T07:48:10"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "致云雀",
+			"text": "你爱，却从不知晓过分充满爱的悲哀。[7",
+			"createTime": "2026-08-16T07:47:48"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "致云雀",
+			"text": "人们可以觉察，其中总有着贫乏。",
+			"createTime": "2026-08-16T07:47:31"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "云",
+			"text": "渴望爱和安谧的热情，在黄昏的上空绯红的帷幕也开始从天宇的至深处所降临，",
+			"createTime": "2026-08-16T07:43:05"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "云",
+			"text": "虽然他会在雨水中消溶，我却始终沐浴天庭蓝色的笑容。",
+			"createTime": "2026-08-16T07:42:25"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
+			"chapter": "海的幻景",
+			"text": "仍在笑、在玩、在咕哝；虚伪的海暴风雨前就是那样嬉笑。像姐和弟，海洋和孩子彼此相对依旧含着笑意，",
+			"createTime": "2026-08-16T07:28:48"
+		},
+		{
+			"bookId": "3300198969",
+			"bookTitle": "江枫译雪莱诗选",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
 			"chapter": "海的幻景",
 			"text": "投出毁灭的太阳在中午照不出阴影，月亮的光辉中却似乎有火在烧在焚，",
 			"createTime": "2026-06-10T03:35:07"
@@ -47583,18 +47743,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 746283,
-		"readDays": 305,
+		"totalReadTime": 748191,
+		"readDays": 306,
 		"readBooks": 148,
 		"finishedBooks": 24,
-		"noteCount": 7612,
+		"noteCount": 7648,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 232695
+				"time": 233154
 			},
 			{
 				"title": "心理",
@@ -47609,7 +47769,7 @@
 			{
 				"title": "社会小说",
 				"count": 14,
-				"time": 59557
+				"time": 59984
 			},
 			{
 				"title": "教育学习",
@@ -47636,7 +47796,7 @@
 			{
 				"name": "赫尔曼·黑塞",
 				"count": 3,
-				"readTime": "8小时24分钟"
+				"readTime": "8小时31分钟"
 			},
 			{
 				"name": "尼采",
@@ -48914,12 +49074,16 @@
 			},
 			{
 				"date": "2026-08-14",
-				"seconds": 728
+				"seconds": 730
+			},
+			{
+				"date": "2026-08-15",
+				"seconds": 1906
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 371,
+		"totalBooks": 373,
 		"secretCount": 28,
 		"favBook": {
 			"title": "西西弗神话",
@@ -48927,6 +49091,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-15T08:47:07.008Z",
+	"generatedAt": "2026-08-16T08:49:05.478Z",
 	"isMock": false
 }
