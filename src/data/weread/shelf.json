@@ -1,6 +1,70 @@
 {
 	"books": [
 		{
+			"bookId": "33211570",
+			"title": "世界观：现代人必须要懂的科学哲学和科学史（原书第3版）",
+			"author": "理查德·德威特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_33211570/t6_YueWen_33211570.jpg",
+			"category": "科学技术-自然科学",
+			"finishReading": 0,
+			"readUpdateTime": 1787127099,
+			"updateTime": 1760167614,
+			"progress": 55,
+			"noteCount": 2,
+			"reviewCount": 0,
+			"bookmarkCount": 1,
+			"readTime": 0,
+			"tags": [],
+			"intro": "本书是一本让人大开脑洞、训练思维、自我成长的人文通识读本。它介绍了科学史和科学哲学根本的问题，如什么是真理、哲学性/概念性事实等；涵盖了史上对科学世界观产生冲击的历史发展和哲学主题，如从亚里士多德世界观到牛顿世界观的变迁；探讨了近代科学发展，特别是相对论、量子力学和演化论等理论给世界观带来的挑战。学科学，不能不知科学从何而来，更不能忽视科学对世界观的影响。",
+			"publisher": "机械工业出版社",
+			"translator": "孙天",
+			"publicRating": 8.6,
+			"ratingCount": 1080,
+			"publishTime": "2020-07-01 00:00:00",
+			"isbn": "9787111659099",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=61f322a071fac4b261f20c8"
+		},
+		{
+			"bookId": "38151319",
+			"title": "科学：无尽的前沿",
+			"author": "范内瓦·布什 拉什·D.霍尔特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/63/YueWen_38151319/t6_YueWen_38151319.jpg",
+			"category": "科学技术-自然科学",
+			"finishReading": 0,
+			"readUpdateTime": 1787121804,
+			"updateTime": 1708525874,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300107168",
+			"title": "偶像的黄昏",
+			"author": "[德]尼采",
+			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1787125247,
+			"updateTime": 1721640802,
+			"progress": 17,
+			"noteCount": 22,
+			"reviewCount": 0,
+			"bookmarkCount": 13,
+			"readTime": 0,
+			"tags": [],
+			"intro": "《偶像的黄昏》写于1888年，是尼采晚年的一部著作。在这部充满毁灭意味的著作中，尼采对他那个时代的道德和信仰，特别是黑格尔、康德和叔本华的道德和信仰进行了持续且尖刻的攻击。\n尼采认为，从前的哲人似乎都过于软弱，不敢肯定狄奥尼索斯冲动乃是人类灵魂的真相，不敢根据这个真相为人类立法；现如今，一切价值亟待重估，唯有充满力量和傲慢的“拿着锤子”的哲学才能将时代偶像粉碎，将其逼入黄昏；虽然激情在原则上意味着危险，但它也可能是一件好事。因为，每一种健康的道德，都受到生命本能的支配，一切美好都是本能。",
+			"publisher": "",
+			"translator": "封诚诚",
+			"publicRating": 8.1,
+			"ratingCount": 524,
+			"publishTime": "2024-07-22 00:00:00",
+			"isbn": "",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3ee32870813ab905cg018b90"
+		},
+		{
 			"bookId": "36846529",
 			"title": "摄影与心理学",
 			"author": "陈磊编著",
@@ -67,7 +131,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4759,
+			"ratingCount": 4760,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -107,7 +171,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77374,
+			"ratingCount": 77404,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -307,7 +371,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.3,
-			"ratingCount": 704,
+			"ratingCount": 705,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -363,7 +427,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1322,
+			"ratingCount": 1324,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -579,7 +643,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31165,
+			"ratingCount": 31180,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -603,7 +667,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2361,
+			"ratingCount": 2362,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -774,15 +838,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
-			"tags": [],
-			"intro": "本书选取了尼采、叔本华、卢梭、爱默生、歌德、卡夫卡、司汤达等世界著名哲学家或文学家的作品，从亲情、友谊、爱情、故乡等几个方面，通过对孤独处境的细致描摹与精心刻画，表现了作者们对于自己内心世界的感悟、反思与探寻。对于读者来说，这不仅是一本疗愈寂寞之书，更是一本体悟生命之书，唤醒内在力量之书，能帮助读者走出孤独的低谷，找到真正的自己，重拾信心与勇气，体悟更加丰盈美好的生命状态。",
-			"publisher": "天津教育出版社 天津古籍出版社",
-			"translator": "琳中展羽",
-			"publicRating": 7.2,
-			"ratingCount": 2410,
-			"publishTime": "2020-01-01 00:00:00",
-			"isbn": "9787552809084",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c93329a071bfa32ec932b80"
+			"tags": []
 		},
 		{
 			"bookId": "3300171631",
@@ -1139,7 +1195,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43673,
+			"ratingCount": 43692,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -1167,12 +1223,12 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1786720806,
+			"readUpdateTime": 1787122474,
 			"updateTime": 1724329124,
-			"progress": 13,
-			"noteCount": 6,
+			"progress": 17,
+			"noteCount": 10,
 			"reviewCount": 0,
-			"bookmarkCount": 2,
+			"bookmarkCount": 3,
 			"readTime": 0,
 			"tags": []
 		},
@@ -1339,7 +1395,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81025,
+			"ratingCount": 81036,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -1411,7 +1467,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6824,
+			"ratingCount": 6828,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -1435,7 +1491,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6674,
+			"ratingCount": 6676,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -1475,7 +1531,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2654,
+			"ratingCount": 2655,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1583,7 +1639,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/68/YueWen_39980443/t6_YueWen_39980443.jpg",
 			"category": "个人成长-沟通表达",
 			"finishReading": 0,
-			"readUpdateTime": 1778573587,
+			"readUpdateTime": 1787126999,
 			"updateTime": 1760167681,
 			"progress": 0,
 			"noteCount": 2,
@@ -1979,7 +2035,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "冯玮",
 			"publicRating": 0,
-			"ratingCount": 13,
+			"ratingCount": 14,
 			"publishTime": "2025-01-01 00:00:00",
 			"isbn": "9787532791057",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=14e32f80813aba140g0178ec"
@@ -1993,6 +2049,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1778082623,
 			"updateTime": 1668615219,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300205035",
+			"title": "快乐的知识",
+			"author": "[德]弗里德里希·威廉·尼采",
+			"cover": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_vmpej7apgenaqhzxiibxkk/t6_cpplatform_vmpej7apgenaqhzxiibxkk1778576221.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1787122955,
+			"updateTime": 1778729093,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -2315,7 +2387,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 8.7,
-			"ratingCount": 122,
+			"ratingCount": 123,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532639823",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a6f324b0813ab7206g019cd6"
@@ -2338,8 +2410,8 @@
 			"intro": "本书是关于如何从零开始构建大模型的指南，由畅销书作家塞巴斯蒂安·拉施卡撰写，通过清晰的文字、图表和实例，逐步指导读者创建自己的大模型。在本书中，读者将学习如何规划和编写大模型的各个组成部分、为大模型训练准备适当的数据集、进行通用语料库的预训练，以及定制特定任务的微调。此外，本书还将探讨如何利用人工反馈确保大模型遵循指令，以及如何将预训练权重加载到大模型中。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
-			"publicRating": 9.1,
-			"ratingCount": 319,
+			"publicRating": 9.2,
+			"ratingCount": 321,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -2915,7 +2987,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1464,
+			"ratingCount": 1465,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -2939,7 +3011,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1884,
+			"ratingCount": 1885,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -2990,15 +3062,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 13,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《纪伯伦全集:沙与沫?散文集》是纪伯伦久负盛名的散文诗，那一串串珍珠一样的文字，多一颗嫌其多，少一颗不完整，犹如一件无缝天衣，若不是抵达智慧堂奥的心灵绝然写不出这样滴水见海的文字。《人子耶稣》是纪伯伦思想的另一高峰，成就绝不在《先知》之下，长期以来这部高峰之作被披上宗教的面纱，实际上在纪伯伦的笔下，耶稣早已不是十字架上熠熠生辉供信徒朝拜的基督。他只是一个平常的“人之子”，他痛苦又无奈，有悲欢有笑泪。他是一个顶天立地的大写的人，他的最大的神迹就是告诉人们：一个普通的人也能尊严地活在皇皇市井之中。纪伯伦写的耶稣，就像我们的邻居，绝不是教堂和圣经里的耶稣，这耶稣好亲切，就像是纪伯伦自己。",
-			"publisher": "九州出版社",
-			"translator": "",
-			"publicRating": 7.5,
-			"ratingCount": 1163,
-			"publishTime": "2014-06-01 00:00:00",
-			"isbn": "9787510827495",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=15132ab057c885151ad39bd"
+			"tags": []
 		},
 		{
 			"bookId": "912324",
@@ -3054,7 +3118,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 463,
+			"ratingCount": 464,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -3226,7 +3290,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/950/35991950/t6_35991950.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1776055502,
+			"readUpdateTime": 1787122927,
 			"updateTime": 1759219000,
 			"progress": 0,
 			"noteCount": 0,
@@ -3398,7 +3462,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9714,
+			"ratingCount": 9720,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3534,7 +3598,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4843,
+			"ratingCount": 4844,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -3654,7 +3718,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7359,
+			"ratingCount": 7361,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -3710,7 +3774,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 860,
+			"ratingCount": 863,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -3876,6 +3940,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300060219",
+			"title": "科学之死：20世纪科学哲学思想简史",
+			"author": "马建波",
+			"cover": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_erp1ewxuxmz1brvyyr8zec/t6_cpplatform_erp1ewxuxmz1brvyyr8zec1685444671.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1787125341,
+			"updateTime": 1760168322,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300140970",
 			"title": "优秀的绵羊",
 			"author": "[美]威廉·德雷谢维奇",
@@ -3894,7 +3974,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 509,
+			"ratingCount": 510,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -3918,7 +3998,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23270,
+			"ratingCount": 23275,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -4158,7 +4238,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169110,
+			"ratingCount": 169137,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -4390,7 +4470,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15392,
+			"ratingCount": 15396,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -4462,7 +4542,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6322,
+			"ratingCount": 6324,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4878,7 +4958,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10088,
+			"ratingCount": 10090,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -4902,7 +4982,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1510,
+			"ratingCount": 1511,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5078,7 +5158,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2332,
+			"ratingCount": 2333,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -5198,7 +5278,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10720,
+			"ratingCount": 10722,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -5238,7 +5318,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1441,
+			"ratingCount": 1445,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5262,7 +5342,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17037,
+			"ratingCount": 17039,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -5366,7 +5446,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1287,
+			"ratingCount": 1291,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -5394,19 +5474,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_omudsapjxhswl1qc65hyyg/t6_cpplatform_omudsapjxhswl1qc65hyyg1690356229.jpg",
 			"category": "心理-社会心理学",
 			"finishReading": 1,
-			"readUpdateTime": 1782819176,
+			"readUpdateTime": 1787060880,
 			"updateTime": 1724163779,
 			"progress": 99,
 			"noteCount": 401,
 			"reviewCount": 1,
 			"bookmarkCount": 9,
-			"readTime": 40002,
+			"readTime": 40022,
 			"tags": [],
 			"intro": "《逃避自由》是美国社会心理学家和哲学家、法兰克福学派重要成员艾里希·弗洛姆的著名作品，书中探讨了极权主义的社会心理根源，被誉为精神分析运用在社会学的不朽名著。\r\n\r\n弗洛姆认为，要战胜极权主义势力，必须首先弄清楚极权主义者竭力逃避自由的原因。他在书中探索了历史进程中“人性”和“自由”概念不定变化的关系，深入地解释了形成现代社会的力量，透彻地分析极权主义机制滋生的原因，热烈地谈论自由的价值、社会的塑造、民主政治的真义，以及个体发自内心的爱。他努力教导人如何自由而不致孤独、自爱而不自私、理智判断而不找合理化借口、拥有信仰而不迷信于神学。",
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2853,
+			"ratingCount": 2854,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -5573,7 +5653,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.6,
+			"publicRating": 8.3,
 			"ratingCount": 26,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -6046,7 +6126,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3235,
+			"ratingCount": 3240,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -6058,10 +6138,10 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1787042871,
+			"readUpdateTime": 1787060835,
 			"updateTime": 1705306736,
-			"progress": 76,
-			"noteCount": 62,
+			"progress": 84,
+			"noteCount": 64,
 			"reviewCount": 0,
 			"bookmarkCount": 33,
 			"readTime": 0,
@@ -6070,7 +6150,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2668,
+			"ratingCount": 2669,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -6206,7 +6286,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.6,
-			"ratingCount": 2095,
+			"ratingCount": 2100,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -6326,7 +6406,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 482,
+			"ratingCount": 484,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -6485,6 +6565,198 @@
 		}
 	],
 	"notes": [
+		{
+			"bookId": "33211570",
+			"bookTitle": "世界观：现代人必须要懂的科学哲学和科学史（原书第3版）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_33211570/t6_YueWen_33211570.jpg",
+			"chapter": "推荐序",
+			"text": "只有我们认识到，所谓的世界观，不可能真正真实，只是我们不断大胆假设、反复求证的规则的组合，才有可能用思维重构，更多、更深入地理解这个世界。",
+			"createTime": "2026-08-19T07:43:23"
+		},
+		{
+			"bookId": "33211570",
+			"bookTitle": "世界观：现代人必须要懂的科学哲学和科学史（原书第3版）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_33211570/t6_YueWen_33211570.jpg",
+			"chapter": "推荐序",
+			"text": "我们认为这个世界是怎样的，取决于我们观察和思考它的方式。",
+			"createTime": "2026-08-19T07:42:37"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "哲学中的“理性”",
+			"text": "做一个哲学家吧，做一个木乃伊吧，通过模仿掘墓人来体现单调的一神论吧！——特别是要摆脱肉体，这个可怜的感官固执己见！它饱含着所有存在的、被驳斥的，甚至是不可能的逻辑错误，尽管它总是厚颜无耻到表现得像真的一样！”……",
+			"createTime": "2026-08-19T07:32:28"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "哲学中的“理性”",
+			"text": "没有任何真实的有生命的东西出自他们之手。这些概念偶像的侍者先生们，当他们表现出崇拜的时候，他们是在杀戮，是在剥制标本——当他们表现出崇拜的时候，他们就成了威胁一切事物生命的存在。",
+			"createTime": "2026-08-19T07:30:57"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "哲学中的“理性”",
+			"text": "他们的埃及主义。他们以为，当他们在永恒的观点下把一件事物进行非历史化看待，把它变成一具木乃伊时，他们自以为是在向它表达敬意。",
+			"createTime": "2026-08-19T07:30:40"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "只要生命在上升，幸福就等于本能。",
+			"createTime": "2026-08-19T07:25:03"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "绝对理性，明亮的、冷酷的、谨慎的、自觉的、排斥本能的、抵御本能的生活本身只是一种疾病，另一种疾病罢了——而且绝不是通往“美德”、“健康”和幸福的归途…",
+			"createTime": "2026-08-19T07:24:49"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "一个人必须不惜一切代价做到聪明、清醒、明白，任何对本能、对无意识的屈服都会导致颓废……",
+			"createTime": "2026-08-19T07:24:09"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "整个希腊思想对理性的狂热追求，暴露出一种困境：人处于危险之中，他只有一个选择，要么毁灭，要么——荒谬地理性……",
+			"createTime": "2026-08-19T07:23:59"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "辩证法家让他的对手来证明自己不是一个白痴；他让人愤怒，同时又让人无可奈何。辩证法家剥夺了他对手的理智。——怎么？辩证法在苏格拉底那里只是一种复仇的形式？",
+			"createTime": "2026-08-19T07:22:05"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "我试图去理解，苏格拉底的“理性=美德=幸福”这个等式究竟源自哪种特异体质：那是世上最诡异的等式，尤其与古希腊人的所有本能均势不两立。",
+			"createTime": "2026-08-19T07:18:45"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "一个会相面的异邦人在路过雅典时当面对苏格拉底说，他是一个怪物，一个饱含了所有恶习和欲望的怪物。而苏格拉底仅仅回答说：“您了解我，我的主人！”",
+			"createTime": "2026-08-19T07:18:12"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "犯罪学家中的人类学家告诉我们，典型的罪犯是丑陋的：相貌丑陋，灵魂就丑陋",
+			"createTime": "2026-08-19T07:17:10"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "人们必须伸开双臂，尝试拥抱这个惊人的奥秘，即生命的价值无法估量。不是由活着的人来评判，因为这样的人是当事人，甚至只是争议的对象，而非法官；",
+			"createTime": "2026-08-19T07:10:39"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "它更多的是证明了，这些最聪明的人本身，在某种生理层面上达成了一致意见，以便以同样的方式否定生命——必须如此。",
+			"createTime": "2026-08-19T07:10:25"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "苏格拉底的问题",
+			"text": "苏格拉底和柏拉图是腐朽的症状，是希腊解体的工具，是伪希腊，是反希腊的",
+			"createTime": "2026-08-19T07:08:26"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "格言与箭",
+			"text": "你是一个旁观者吗？还是一个施以援手的人？——抑或那个视而不见，走向一边的人？……第三个良心问题。",
+			"createTime": "2026-08-19T07:00:15"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "格言与箭",
+			"text": "你是真实的吗？还是只是一个演员？是一个代表？还是被代表者本身？——最后，你甚至只是一个被伪造出来的演员……第二个良心问题。",
+			"createTime": "2026-08-19T06:59:53"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "格言与箭",
+			"text": "怎么？你们选择了美德和高尚的胸怀，却又用嫉妒的眼神盯着那无忧无虑者的好处？——但人们有了美德，就会放弃这“好处”……（写在一个反犹太主义者的房门上。）",
+			"createTime": "2026-08-19T00:34:38"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "格言与箭",
+			"text": "不合时宜的人——比如说我——比起合时宜的人，更不易被理解，但更易被倾听。严格来说：我们从未被理解——我们的权威即由此而来……",
+			"createTime": "2026-08-19T00:33:41"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "格言与箭",
+			"text": "懒惰是一切心理学的开端。怎么？难道心理学是一种——恶习？",
+			"createTime": "2026-08-18T22:37:07"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "前言",
+			"text": "精神借伤口而增长，力量因伤口而增强。[插图]",
+			"createTime": "2026-08-18T22:35:17"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "前言",
+			"text": "这样一种身负使命的命运迫使他每时每刻都要奔向阳光，去抖落他身上那沉重的、日渐沉重的严肃性。",
+			"createTime": "2026-08-18T22:34:56"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "前言",
+			"text": "在一个混沌不清、责任重大的事件中，保持自己的心情愉悦绝非一项简单的技能。然而，还有什么比心情愉悦更为重要的呢？任何事件的成功都离不开高涨的情绪。只有力量过剩才是强有力的证明。",
+			"createTime": "2026-08-18T22:34:36"
+		},
 		{
 			"bookId": "3300093582",
 			"bookTitle": "飞鸟集（中英对照版）",
@@ -10612,6 +10884,38 @@
 			"chapter": "第一章 积累财富",
 			"text": "赚钱跟工作的努力程度没什么必然联系。",
 			"createTime": "2026-05-07T03:04:31"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
+			"text": "自恋（Narzissmus）与自爱（Eigenliebe）不同。自爱的主体以自我为出发点，与他者明确划清界限；自恋的主体界限是模糊的，整个世界只是“自我”的一个倒影。",
+			"createTime": "2026-08-19T04:34:57"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
+			"text": "我们时刻把所有事物拿来比较、归类、标准化，为“异类”寻找“同类”，因为我们已经失去了体验“他者”的机会。",
+			"createTime": "2026-08-19T04:34:31"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
+			"text": "我所渴望的“他”，令我着迷的“他”，是无处可栖的。",
+			"createTime": "2026-08-19T04:34:04"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
+			"text": "近年来常有人宣告“爱情的终结”，称当今的爱情已死于无休止的选择自由和完美主义症结。在一个不设限的、充满可能性的世界，爱情变得不可能。遭受批评的还有日渐冷却的激情",
+			"createTime": "2026-08-19T04:33:43"
 		},
 		{
 			"bookId": "24987083",
@@ -46714,6 +47018,14 @@
 			"bookTitle": "存在主义是一种人道主义",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
 			"chapter": "二",
+			"text": "同时也意味着如果我陷于穷困，你给与我，如果你陷于穷困，我给与你。这是未来的道德。",
+			"createTime": "2026-08-18T09:09:29"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "二",
 			"text": "多少千年以前，第一次社会分裂是以图腾为特征的氏族。图腾是某种包容整个氏族的东西，它给予氏族全体成员的互相关系以一种深刻的现实，",
 			"createTime": "2026-08-18T08:54:28"
 		},
@@ -48303,11 +48615,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 753905,
-		"readDays": 308,
-		"readBooks": 149,
+		"totalReadTime": 756416,
+		"readDays": 309,
+		"readBooks": 151,
 		"finishedBooks": 24,
-		"noteCount": 7747,
+		"noteCount": 7792,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -48319,12 +48631,12 @@
 			{
 				"title": "心理",
 				"count": 13,
-				"time": 147206
+				"time": 147226
 			},
 			{
 				"title": "哲学宗教",
-				"count": 23,
-				"time": 93292
+				"count": 24,
+				"time": 96310
 			},
 			{
 				"title": "社会小说",
@@ -48351,7 +48663,7 @@
 			{
 				"name": "艾里希·弗洛姆",
 				"count": 3,
-				"readTime": "16小时17分钟"
+				"readTime": "16小时18分钟"
 			},
 			{
 				"name": "赫尔曼·黑塞",
@@ -49646,12 +49958,16 @@
 			},
 			{
 				"date": "2026-08-17",
-				"seconds": 2702
+				"seconds": 3077
+			},
+			{
+				"date": "2026-08-18",
+				"seconds": 2136
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 375,
+		"totalBooks": 380,
 		"secretCount": 28,
 		"favBook": {
 			"title": "西西弗神话",
@@ -49659,6 +49975,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-18T08:56:08.948Z",
+	"generatedAt": "2026-08-19T08:56:42.805Z",
 	"isMock": false
 }
