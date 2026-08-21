@@ -131,7 +131,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 485,
+			"ratingCount": 487,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -731,7 +731,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1295,
+			"ratingCount": 1299,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -819,7 +819,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3243,
+			"ratingCount": 3247,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -843,7 +843,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10723,
+			"ratingCount": 10727,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -1091,7 +1091,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10092,
+			"ratingCount": 10096,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -1419,7 +1419,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6327,
+			"ratingCount": 6328,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -1475,7 +1475,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15398,
+			"ratingCount": 15399,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -1515,7 +1515,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6594,
+			"ratingCount": 6595,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -1683,7 +1683,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169167,
+			"ratingCount": 169198,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -1907,7 +1907,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4336,
+			"ratingCount": 4337,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -1921,6 +1921,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1778296910,
 			"updateTime": 1770277364,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300141074",
+			"title": "阅读是安静的自我觉醒（果麦经典）",
+			"author": "[德]赫尔曼·黑塞",
+			"cover": "https://cdn.weread.qq.com/weread/cover/39/cpplatform_2tqwvc6pfyx5qahrsixezb/t6_cpplatform_2tqwvc6pfyx5qahrsixezb1744786437.jpg",
+			"category": "文学-散文杂著",
+			"finishReading": 0,
+			"readUpdateTime": 1787225960,
+			"updateTime": 1744787401,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1979,7 +1995,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 511,
+			"ratingCount": 512,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -2243,7 +2259,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7365,
+			"ratingCount": 7368,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -2315,7 +2331,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4847,
+			"ratingCount": 4848,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -2438,12 +2454,12 @@
 			"author": "[德]赫尔曼·黑塞",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/188/23976188/t6_23976188.jpg",
 			"category": "文学-外国文学",
-			"finishReading": 0,
-			"readUpdateTime": 1786890116,
+			"finishReading": 1,
+			"readUpdateTime": 1787226988,
 			"updateTime": 1716295882,
 			"progress": 100,
 			"noteCount": 124,
-			"reviewCount": 0,
+			"reviewCount": 1,
 			"bookmarkCount": 58,
 			"readTime": 0,
 			"tags": [],
@@ -2451,7 +2467,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9722,
+			"ratingCount": 9727,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -2555,7 +2571,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 864,
+			"ratingCount": 867,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -2862,7 +2878,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1887,
+			"ratingCount": 1888,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -3542,7 +3558,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3400,
+			"ratingCount": 3402,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -3806,7 +3822,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23279,
+			"ratingCount": 23280,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -3956,6 +3972,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300090972",
+			"title": "我走入宁静蔚蓝的日子",
+			"author": "[德]赫尔曼·黑塞",
+			"cover": "https://cdn.weread.qq.com/weread/cover/10/cpplatform_abm9umrq2okc9893no5hly/t6_cpplatform_abm9umrq2okc9893no5hly1710490217.jpg",
+			"category": "文学-散文杂著",
+			"finishReading": 0,
+			"readUpdateTime": 1787225850,
+			"updateTime": 1710491161,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300208280",
 			"title": "“有毒”的关系，“有毒”的人：如何与自恋型、反社会型、情绪不稳定型人格的人相处",
 			"author": "[德]丽莎·伊拉尼  [德]安娜·埃克特",
@@ -3990,7 +4022,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1475,
+			"ratingCount": 1477,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -4534,7 +4566,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2656,
+			"ratingCount": 2657,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -4574,7 +4606,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6681,
+			"ratingCount": 6682,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -4598,7 +4630,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6828,
+			"ratingCount": 6829,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -4670,7 +4702,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81052,
+			"ratingCount": 81067,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -4982,7 +5014,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43711,
+			"ratingCount": 43742,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -5166,7 +5198,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1513,
+			"ratingCount": 1514,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5678,7 +5710,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31202,
+			"ratingCount": 31222,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -5958,7 +5990,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1326,
+			"ratingCount": 1330,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -6262,7 +6294,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6243,
+			"ratingCount": 6244,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -6366,7 +6398,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77417,
+			"ratingCount": 77453,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -6406,7 +6438,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4759,
+			"ratingCount": 4760,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -6498,12 +6530,12 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1787214978,
+			"readUpdateTime": 1787232139,
 			"updateTime": 1721640802,
-			"progress": 59,
-			"noteCount": 58,
+			"progress": 62,
+			"noteCount": 61,
 			"reviewCount": 0,
-			"bookmarkCount": 26,
+			"bookmarkCount": 27,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《偶像的黄昏》写于1888年，是尼采晚年的一部著作。在这部充满毁灭意味的著作中，尼采对他那个时代的道德和信仰，特别是黑格尔、康德和叔本华的道德和信仰进行了持续且尖刻的攻击。\n尼采认为，从前的哲人似乎都过于软弱，不敢肯定狄奥尼索斯冲动乃是人类灵魂的真相，不敢根据这个真相为人类立法；现如今，一切价值亟待重估，唯有充满力量和傲慢的“拿着锤子”的哲学才能将时代偶像粉碎，将其逼入黄昏；虽然激情在原则上意味着危险，但它也可能是一件好事。因为，每一种健康的道德，都受到生命本能的支配，一切美好都是本能。",
@@ -6538,19 +6570,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1787060835,
+			"readUpdateTime": 1787224907,
 			"updateTime": 1705306736,
 			"progress": 84,
-			"noteCount": 64,
+			"noteCount": 67,
 			"reviewCount": 0,
-			"bookmarkCount": 33,
+			"bookmarkCount": 37,
 			"readTime": 0,
 			"tags": [],
 			"intro": "存在主义是现代西方哲学中影响极大、流行极广、风行一时的哲学流派。其主要代表人物就是法国哲学家萨特。本书由两篇构成：《存在主义是一种人道主义》和《今天的希望：与萨特的谈话》。前者发表于1946年，后一篇发表于1980年去世前不久，其中萨特一再强调，他的存在主义本质上是一种对人生充满希望的乐观主义哲学。",
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2670,
+			"ratingCount": 2671,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -47930,6 +47962,30 @@
 			"bookTitle": "偶像的黄昏",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
 			"chapter": "一个不合时宜者的漫游",
+			"text": "最富有精神的人，也会经历到目前为止最痛苦的悲剧，前提是他们是最勇敢的。但正是因为这个原因，他们尊重生命，因为生命正以最大的敌意与他们对抗。",
+			"createTime": "2026-08-20T12:04:33"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "一个不合时宜者的漫游",
+			"text": "然而我的谦虚使我不会逐一列举这些案例。",
+			"createTime": "2026-08-20T12:02:40"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "一个不合时宜者的漫游",
+			"text": "一次，他完成一场浪漫幽会，心满意足归来时充满感激地说道：“虽然雄风不再，享乐仍值得称赞。”",
+			"createTime": "2026-08-20T11:59:09"
+		},
+		{
+			"bookId": "3300107168",
+			"bookTitle": "偶像的黄昏",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
+			"chapter": "一个不合时宜者的漫游",
 			"text": "在我看来，“依照自然”进行研究是个坏兆头，它暴露出臣服、软弱、宿命论——对细枝末节般的小事顶礼膜拜，这完全有失于一个艺术家的身份。看看这是什么——这属于另一类人才的行为，即反艺术家、事实论者。一个人必须知道自己是谁……",
 			"createTime": "2026-08-20T07:28:38"
 		},
@@ -48388,6 +48444,30 @@
 			"chapter": "前言",
 			"text": "在一个混沌不清、责任重大的事件中，保持自己的心情愉悦绝非一项简单的技能。然而，还有什么比心情愉悦更为重要的呢？任何事件的成功都离不开高涨的情绪。只有力量过剩才是强有力的证明。",
 			"createTime": "2026-08-18T22:34:36"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "二",
+			"text": "可能首先发现了兄弟关系，接着在任何其他手段都无法逾越的障碍面前，他们没有别的选择只能诉诸暴力。",
+			"createTime": "2026-08-20T11:21:24"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "二",
+			"text": "暴力只是打破某种阻碍人成为一个人的奴役状态。一旦暴力消除了被殖民状态，也就是说奴役状态，",
+			"createTime": "2026-08-20T09:55:38"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "二",
+			"text": "首先我的观察结果是，除了用暴力解决以外，没有其他解决办法。殖民主义者从没有想象出一个能为阿尔及利亚人接受的解决办法。有两种绝对相反的观点，那只能引向暴力。",
+			"createTime": "2026-08-20T09:13:02"
 		},
 		{
 			"bookId": "23796502",
@@ -48919,18 +48999,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 760299,
+		"totalReadTime": 761057,
 		"readDays": 310,
 		"readBooks": 151,
-		"finishedBooks": 24,
-		"noteCount": 7841,
+		"finishedBooks": 25,
+		"noteCount": 7853,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 236595
+				"time": 236699
 			},
 			{
 				"title": "心理",
@@ -48940,12 +49020,12 @@
 			{
 				"title": "哲学宗教",
 				"count": 24,
-				"time": 98361
+				"time": 102356
 			},
 			{
 				"title": "社会小说",
 				"count": 14,
-				"time": 62248
+				"time": 62352
 			},
 			{
 				"title": "教育学习",
@@ -48967,7 +49047,7 @@
 			{
 				"name": "尼采",
 				"count": 4,
-				"readTime": "6小时12分钟"
+				"readTime": "7小时13分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -48977,7 +49057,7 @@
 			{
 				"name": "赫尔曼·黑塞",
 				"count": 3,
-				"readTime": "9小时9分钟"
+				"readTime": "9小时11分钟"
 			},
 			{
 				"name": "泰戈尔",
@@ -50270,12 +50350,12 @@
 			},
 			{
 				"date": "2026-08-19",
-				"seconds": 3412
+				"seconds": 4170
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 381,
+		"totalBooks": 383,
 		"secretCount": 28,
 		"favBook": {
 			"title": "西西弗神话",
@@ -50283,6 +50363,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-20T08:59:10.119Z",
+	"generatedAt": "2026-08-21T09:00:19.492Z",
 	"isMock": false
 }
