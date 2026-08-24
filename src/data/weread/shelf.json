@@ -1,13 +1,61 @@
 {
 	"books": [
 		{
+			"bookId": "3300202340",
+			"title": "人生中不可不想的事",
+			"author": "[印度]吉杜·克里希那穆提",
+			"cover": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_6fdnj5qwbscrvejcgzgzmr/t6_cpplatform_6fdnj5qwbscrvejcgzgzmr1776755007.jpg",
+			"category": "哲学宗教-哲学读物",
+			"finishReading": 0,
+			"readUpdateTime": 1787550195,
+			"updateTime": 1776755942,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300101818",
+			"title": "艺术与宇宙技术",
+			"author": "许煜  苏子滢",
+			"cover": "https://cdn.weread.qq.com/weread/cover/72/cpplatform_napksac2vghjjhwo26bwco/t6_cpplatform_napksac2vghjjhwo26bwco1717381930.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1787540483,
+			"updateTime": 1739861838,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300137386",
+			"title": "美国（修订译本）",
+			"author": "[法]让·鲍德里亚",
+			"cover": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_vtkwm5dg7cip4ook3dgbni/t6_cpplatform_vtkwm5dg7cip4ook3dgbni1741852019.jpg",
+			"category": "社会文化-文化",
+			"finishReading": 0,
+			"readUpdateTime": 1787540208,
+			"updateTime": 1759219013,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300112221",
 			"title": "性心理学：亲密关系",
 			"author": "[英]霭理士 著 潘光旦 译",
 			"cover": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_bmyrqgcb6qqbuhamhc8p5t/t6_cpplatform_bmyrqgcb6qqbuhamhc8p5t1724235505.jpg",
 			"category": "心理-社会心理学",
 			"finishReading": 0,
-			"readUpdateTime": 1787411760,
+			"readUpdateTime": 1787558030,
 			"updateTime": 1786347702,
 			"progress": 0,
 			"noteCount": 0,
@@ -147,7 +195,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4760,
+			"ratingCount": 4759,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -451,7 +499,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2105,
+			"ratingCount": 2108,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -859,7 +907,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15401,
+			"ratingCount": 15406,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -1002,8 +1050,8 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8.2,
-			"ratingCount": 28,
+			"publicRating": 8.5,
+			"ratingCount": 29,
 			"publishTime": "2025-08-01 00:00:00",
 			"isbn": "9787572622861",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=11f32410813abb140g018bfc"
@@ -1123,7 +1171,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6331,
+			"ratingCount": 6333,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -1235,7 +1283,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6598,
+			"ratingCount": 6599,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -1355,7 +1403,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7369,
+			"ratingCount": 7374,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -1367,7 +1415,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1787372822,
+			"readUpdateTime": 1787558162,
 			"updateTime": 1721640802,
 			"progress": 62,
 			"noteCount": 65,
@@ -1433,6 +1481,22 @@
 			"tags": []
 		},
 		{
+			"bookId": "3300222962",
+			"title": "在机器的边界思考",
+			"author": "许煜",
+			"cover": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_r3qvchtbrvxsgxs1eyd4ga/t6_cpplatform_r3qvchtbrvxsgxs1eyd4ga1785898395.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1787559011,
+			"updateTime": 1785899343,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300221270",
 			"title": "孤独、空虚与无聊：AI时代的人类意义危机",
 			"author": "徐贲",
@@ -1441,6 +1505,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1786472884,
 			"updateTime": 1785299162,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "25926819",
+			"title": "时代的精神状况（译文经典）",
+			"author": "卡尔·雅斯贝斯",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/819/25926819/t6_25926819.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1787532824,
+			"updateTime": 1711526250,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1579,7 +1659,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1888,
+			"ratingCount": 1889,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -1603,7 +1683,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1465,
+			"ratingCount": 1467,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -1775,12 +1855,12 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/850/41231850/t6_41231850.jpg",
 			"category": "科学技术-自然科学",
 			"finishReading": 0,
-			"readUpdateTime": 1787458501,
+			"readUpdateTime": 1787535316,
 			"updateTime": 1760169974,
 			"progress": 7,
 			"noteCount": 11,
 			"reviewCount": 0,
-			"bookmarkCount": 5,
+			"bookmarkCount": 6,
 			"readTime": 0,
 			"tags": []
 		},
@@ -1867,7 +1947,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4340,
+			"ratingCount": 4339,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -1911,7 +1991,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_sbfdf2jn9wphd5xut4msee/t6_cpplatform_sbfdf2jn9wphd5xut4msee1752043043.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 1,
-			"readUpdateTime": 1786550577,
+			"readUpdateTime": 1787494163,
 			"updateTime": 1752043982,
 			"progress": 99,
 			"noteCount": 157,
@@ -1923,7 +2003,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3254,
+			"ratingCount": 3258,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -1947,7 +2027,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10732,
+			"ratingCount": 10736,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -2099,7 +2179,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 515,
+			"ratingCount": 516,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -2334,20 +2414,20 @@
 			"author": "[法]让-保罗·萨特",
 			"cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
 			"category": "哲学宗教-西方哲学",
-			"finishReading": 0,
-			"readUpdateTime": 1787472359,
+			"finishReading": 1,
+			"readUpdateTime": 1787543881,
 			"updateTime": 1705306736,
-			"progress": 89,
-			"noteCount": 73,
-			"reviewCount": 0,
-			"bookmarkCount": 38,
+			"progress": 99,
+			"noteCount": 79,
+			"reviewCount": 1,
+			"bookmarkCount": 40,
 			"readTime": 0,
 			"tags": [],
 			"intro": "存在主义是现代西方哲学中影响极大、流行极广、风行一时的哲学流派。其主要代表人物就是法国哲学家萨特。本书由两篇构成：《存在主义是一种人道主义》和《今天的希望：与萨特的谈话》。前者发表于1946年，后一篇发表于1980年去世前不久，其中萨特一再强调，他的存在主义本质上是一种对人生充满希望的乐观主义哲学。",
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2673,
+			"ratingCount": 2674,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -2371,7 +2451,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "孙天",
 			"publicRating": 8.6,
-			"ratingCount": 1082,
+			"ratingCount": 1083,
 			"publishTime": "2020-07-01 00:00:00",
 			"isbn": "9787111659099",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=61f322a071fac4b261f20c8"
@@ -2507,7 +2587,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 868,
+			"ratingCount": 869,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -2627,7 +2707,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1302,
+			"ratingCount": 1304,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2870,7 +2950,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10095,
+			"ratingCount": 10098,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -3198,7 +3278,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9739,
+			"ratingCount": 9747,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3294,7 +3374,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4851,
+			"ratingCount": 4853,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -3334,7 +3414,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169260,
+			"ratingCount": 169298,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -3862,7 +3942,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3407,
+			"ratingCount": 3410,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -3949,8 +4029,8 @@
 			"intro": "本书是关于如何从零开始构建大模型的指南，由畅销书作家塞巴斯蒂安·拉施卡撰写，通过清晰的文字、图表和实例，逐步指导读者创建自己的大模型。在本书中，读者将学习如何规划和编写大模型的各个组成部分、为大模型训练准备适当的数据集、进行通用语料库的预训练，以及定制特定任务的微调。此外，本书还将探讨如何利用人工反馈确保大模型遵循指令，以及如何将预训练权重加载到大模型中。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
-			"publicRating": 9.2,
-			"ratingCount": 322,
+			"publicRating": 9.1,
+			"ratingCount": 323,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -4126,7 +4206,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23283,
+			"ratingCount": 23284,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -4314,7 +4394,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/10/cpplatform_abm9umrq2okc9893no5hly/t6_cpplatform_abm9umrq2okc9893no5hly1710490217.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1787225850,
+			"readUpdateTime": 1787491554,
 			"updateTime": 1710491161,
 			"progress": 0,
 			"noteCount": 0,
@@ -4358,7 +4438,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1478,
+			"ratingCount": 1476,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -4886,7 +4966,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2661,
+			"ratingCount": 2664,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -4942,7 +5022,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6686,
+			"ratingCount": 6688,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -4966,7 +5046,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6828,
+			"ratingCount": 6829,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -5038,7 +5118,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81083,
+			"ratingCount": 81091,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -5118,7 +5198,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 219,
+			"ratingCount": 220,
 			"publishTime": "2012-05-01 00:00:00",
 			"isbn": "9787532633500",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c7b325a071d512a7c7bf71d"
@@ -5178,7 +5258,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/37/26923037/t6_26923037.jpg",
 			"category": "哲学宗教-哲学著作",
 			"finishReading": 0,
-			"readUpdateTime": 1782885873,
+			"readUpdateTime": 1787558028,
 			"updateTime": 1760174694,
 			"progress": 0,
 			"noteCount": 1,
@@ -5350,7 +5430,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43789,
+			"ratingCount": 43818,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -5534,7 +5614,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1515,
+			"ratingCount": 1518,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5762,7 +5842,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_uphuc1vln1agaubkrbygmp/t6_cpplatform_uphuc1vln1agaubkrbygmp1761290345.jpg",
 			"category": "文学-外国文学",
 			"finishReading": 0,
-			"readUpdateTime": 1786719125,
+			"readUpdateTime": 1787494082,
 			"updateTime": 1778636785,
 			"progress": 8,
 			"noteCount": 15,
@@ -6046,7 +6126,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31265,
+			"ratingCount": 31289,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -6414,7 +6494,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.3,
-			"ratingCount": 707,
+			"ratingCount": 709,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -6630,7 +6710,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6245,
+			"ratingCount": 6246,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -6734,7 +6814,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77485,
+			"ratingCount": 77507,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -19476,6 +19556,54 @@
 			"chapter": "哀曼殊斐儿 ①",
 			"text": "我哀思焉能电花似的飞骋，感动你在天日遥远的灵魂？我洒泪向风中遥送，问何时能戡破生死之门？",
 			"createTime": "2026-03-24T08:04:36"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "就是，至少在许多政府，几乎是每个国家的政府中，右倾思想取得了一次胜利。莱维：您把苏联列入右派之中吗？萨特：当然。还有美国人，瑞典人……莱维：瑞典人？",
+			"createTime": "2026-08-24T01:38:15"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "犹太人的目标没有那种东西。可以这样说，它是人们为了彼此而存在的开始。那就是说，道德的目标。或者更恰切地说，它就是道德。犹太人认为今生的终极和来世的出现，意味着人的道德的存在就将来临。",
+			"createTime": "2026-08-24T01:37:15"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "本质的问题是犹太人活着并且他现在仍旧超自然地活着。",
+			"createTime": "2026-08-23T15:34:17"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "而这个真实的联合并不是由于在一个历史的故乡集合着犹太人，而是由于行为，由于文章，由于那些并非通过一个祖国的观念而产生的联系，或者是不多几年以来一向与一个故乡有关的联系。",
+			"createTime": "2026-08-23T15:18:17"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "在每一条大街的拐角，反犹太主义的思想都把他逮住，这种思想吞噬着他，想把他化成公式，在他最深邃的存在中捕获他。犹太人当然是反犹太主义的受害者。",
+			"createTime": "2026-08-23T15:01:29"
+		},
+		{
+			"bookId": "23796502",
+			"bookTitle": "存在主义是一种人道主义",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
+			"chapter": "三",
+			"text": "什么时候我们才会承认我们其实一无所知，认识到对我们来说懂得它是什么是一个至关重要的问题呢？",
+			"createTime": "2026-08-23T14:58:55"
 		},
 		{
 			"bookId": "23796502",
@@ -49295,18 +49423,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 765179,
-		"readDays": 313,
-		"readBooks": 152,
-		"finishedBooks": 25,
-		"noteCount": 7883,
+		"totalReadTime": 767338,
+		"readDays": 314,
+		"readBooks": 153,
+		"finishedBooks": 26,
+		"noteCount": 7893,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 236699
+				"time": 236761
 			},
 			{
 				"title": "心理",
@@ -49315,8 +49443,8 @@
 			},
 			{
 				"title": "哲学宗教",
-				"count": 24,
-				"time": 103545
+				"count": 25,
+				"time": 104461
 			},
 			{
 				"title": "社会小说",
@@ -49338,7 +49466,7 @@
 			{
 				"name": "阿尔贝·加缪",
 				"count": 5,
-				"readTime": "15小时24分钟"
+				"readTime": "15小时25分钟"
 			},
 			{
 				"name": "尼采",
@@ -50658,12 +50786,16 @@
 			},
 			{
 				"date": "2026-08-22",
-				"seconds": 2651
+				"seconds": 3304
+			},
+			{
+				"date": "2026-08-23",
+				"seconds": 1506
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 391,
+		"totalBooks": 396,
 		"secretCount": 28,
 		"favBook": {
 			"title": "西西弗神话",
@@ -50671,6 +50803,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-23T08:51:04.524Z",
+	"generatedAt": "2026-08-24T09:06:45.488Z",
 	"isMock": false
 }
