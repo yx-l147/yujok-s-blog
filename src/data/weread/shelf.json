@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "3300205275",
+			"title": "工作社会的终结",
+			"author": "[德]乌尔里希·贝克",
+			"cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_8r6rxtqatexbejjdgowhgr/t6_cpplatform_8r6rxtqatexbejjdgowhgr1778670149.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1787840515,
+			"updateTime": 1778671083,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "41588336",
 			"title": "事件",
 			"author": "斯拉沃热·齐泽克",
@@ -211,7 +227,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4762,
+			"ratingCount": 4761,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -530,8 +546,8 @@
 			"intro": "为什么在人群中我们总被人牵着鼻子走？\n《乌合之众》是法国社会心理学家古斯塔夫・勒庞的经典著作。书中深入剖析了群体心理的特征与行为逻辑。勒庞指出，当个体融入群体后，会丧失独立思考能力，变得盲目冲动、易于被煽动，智力水平也会下降，呈现出情绪化、低智商等特点。群体往往受无意识因素支配，具有强大的力量却缺乏理性判断。作者通过历史事件、社会现象等丰富实例，生动揭示了群体心理的奥秘，为理解大众行为、社会运动以及舆论传播等提供了独特而深刻的视角，是群体行为的研究者不可不读的经典读物。",
 			"publisher": "",
 			"translator": "张贝",
-			"publicRating": 7.6,
-			"ratingCount": 2116,
+			"publicRating": 7.7,
+			"ratingCount": 2117,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -715,7 +731,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2337,
+			"ratingCount": 2336,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -899,7 +915,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 491,
+			"ratingCount": 494,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -995,7 +1011,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 624,
+			"ratingCount": 625,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=5c832060813ab8c2dg018e58"
@@ -1107,7 +1123,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1452,
+			"ratingCount": 1457,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -1203,7 +1219,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6337,
+			"ratingCount": 6341,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -1315,7 +1331,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6606,
+			"ratingCount": 6611,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -1435,7 +1451,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7377,
+			"ratingCount": 7379,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -1535,7 +1551,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/1/cpplatform_atwsatirffrzly1f4ngv9u/t6_cpplatform_atwsatirffrzly1f4ngv9u1785298253.jpg",
 			"category": "哲学宗教-哲学读物",
 			"finishReading": 0,
-			"readUpdateTime": 1786472884,
+			"readUpdateTime": 1787840503,
 			"updateTime": 1785299162,
 			"progress": 0,
 			"noteCount": 0,
@@ -1691,7 +1707,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1890,
+			"ratingCount": 1892,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -1715,7 +1731,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1470,
+			"ratingCount": 1471,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -1979,7 +1995,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4341,
+			"ratingCount": 4342,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -2035,7 +2051,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3266,
+			"ratingCount": 3274,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -2059,7 +2075,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10740,
+			"ratingCount": 10745,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -2323,7 +2339,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17045,
+			"ratingCount": 17047,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2483,7 +2499,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "孙天",
 			"publicRating": 8.6,
-			"ratingCount": 1087,
+			"ratingCount": 1088,
 			"publishTime": "2020-07-01 00:00:00",
 			"isbn": "9787111659099",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=61f322a071fac4b261f20c8"
@@ -2739,7 +2755,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1307,
+			"ratingCount": 1308,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2798,7 +2814,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 465,
+			"ratingCount": 467,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -2982,7 +2998,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10099,
+			"ratingCount": 10101,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -3310,7 +3326,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9756,
+			"ratingCount": 9760,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3446,7 +3462,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169358,
+			"ratingCount": 169420,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -3810,7 +3826,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/4/cpplatform_c51jhaugkycsgy414tbhz2/t6_cpplatform_c51jhaugkycsgy414tbhz21755763748.jpg",
 			"category": "经济理财-财经",
 			"finishReading": 0,
-			"readUpdateTime": 1781781494,
+			"readUpdateTime": 1787822327,
 			"updateTime": 1785132810,
 			"progress": 11,
 			"noteCount": 16,
@@ -3870,7 +3886,7 @@
 			"publisher": "北方文艺出版社",
 			"translator": "",
 			"publicRating": 7.9,
-			"ratingCount": 176,
+			"ratingCount": 177,
 			"publishTime": "2024-03-01 00:00:00",
 			"isbn": "9787531760986",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=70932ef0813ab9e31g013ae2"
@@ -3974,7 +3990,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3415,
+			"ratingCount": 3416,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -4238,7 +4254,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23291,
+			"ratingCount": 23296,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -4257,15 +4273,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《经济学原理（微观经济学分册）考点归纳、习题详解、考研真题》的对应教材为[美]曼昆著梁小民等译的《经济学原理（微观经济学分册）》第7版。",
-			"publisher": "化学工业出版社",
-			"translator": "",
-			"publicRating": 8.5,
-			"ratingCount": 150,
-			"publishTime": "2017-09-01 00:00:00",
-			"isbn": "9787122300379",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=04732b6071593647047e657"
+			"tags": []
 		},
 		{
 			"bookId": "33642027",
@@ -4470,7 +4478,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1478,
+			"ratingCount": 1483,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -4483,7 +4491,7 @@
 			"category": "文学-经典作品",
 			"finishReading": 0,
 			"readUpdateTime": 1786640452,
-			"updateTime": 1786546833,
+			"updateTime": 1787802309,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4790,7 +4798,7 @@
 			"publisher": "文汇出版社",
 			"translator": "",
 			"publicRating": 8.3,
-			"ratingCount": 397,
+			"ratingCount": 398,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787549644834",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43a32aa0813aba117g0130e2"
@@ -4998,7 +5006,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2667,
+			"ratingCount": 2669,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -5150,7 +5158,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81120,
+			"ratingCount": 81135,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -5190,7 +5198,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2865,
+			"ratingCount": 2866,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -5418,14 +5426,22 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1787122474,
+			"readUpdateTime": 1787748244,
 			"updateTime": 1724329124,
-			"progress": 17,
-			"noteCount": 10,
+			"progress": 26,
+			"noteCount": 12,
 			"reviewCount": 0,
 			"bookmarkCount": 3,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "爱欲是勇于否定自我，肯定他者。爱欲与他者密切相关，是个体在自我的王国里无法征服的疆土。爱欲以超验性、彻底的独一无二性为前提。当今社会越来越像一个同质化的地狱，而爱欲的经验不在其中。个体的内在危机在于，一切事物均成为被消费的对象，从而毁掉了爱欲的渴望。吸引自我的、被自我所渴望的他者，无处可栖。这是一个没有了爱欲的社会。爱欲之死，是自我反思之死。",
+			"publisher": "中信出版集团",
+			"translator": "宋娀",
+			"publicRating": 7,
+			"ratingCount": 4146,
+			"publishTime": "2019-03-01 00:00:00",
+			"isbn": "9787508697086",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
 		},
 		{
 			"bookId": "3300118948",
@@ -5462,7 +5478,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43877,
+			"ratingCount": 43919,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -5635,7 +5651,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1787640554,
-			"updateTime": 1784172553,
+			"updateTime": 1787739890,
 			"progress": 53,
 			"noteCount": 227,
 			"reviewCount": 4,
@@ -5646,7 +5662,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1522,
+			"ratingCount": 1524,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -6134,7 +6150,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2368,
+			"ratingCount": 2369,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -6174,7 +6190,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31331,
+			"ratingCount": 31359,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -6454,7 +6470,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1345,
+			"ratingCount": 1346,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -6542,7 +6558,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.3,
-			"ratingCount": 711,
+			"ratingCount": 713,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -6758,7 +6774,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6249,
+			"ratingCount": 6250,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -6862,7 +6878,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77547,
+			"ratingCount": 77574,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -44274,6 +44290,22 @@
 			"bookTitle": "爱欲之死",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"chapter": "忧郁症",
+			"text": "客栈的招牌上写着“寻鹿”二字，上面画着一幅圣人的小像，那牌子斜挂在屋顶，摇摇欲坠——这个被寒冬笼罩的忧郁世界似乎被上帝遗忘了。",
+			"createTime": "2026-08-26T12:41:08"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
+			"text": "因此，“忧郁”之星是一个悖论式的存在，它一方面治疗忧郁，一方面引起特定形式的忧郁。",
+			"createTime": "2026-08-26T12:39:44"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "忧郁症",
 			"text": "自恋（Narzissmus）与自爱（Eigenliebe）不同。自爱的主体以自我为出发点，与他者明确划清界限；自恋的主体界限是模糊的，整个世界只是“自我”的一个倒影。",
 			"createTime": "2026-08-19T04:34:57"
 		},
@@ -49479,18 +49511,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 767464,
-		"readDays": 315,
+		"totalReadTime": 767986,
+		"readDays": 317,
 		"readBooks": 153,
 		"finishedBooks": 26,
-		"noteCount": 7895,
+		"noteCount": 7899,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 236776
+				"time": 236779
 			},
 			{
 				"title": "心理",
@@ -49505,7 +49537,7 @@
 			{
 				"title": "社会小说",
 				"count": 14,
-				"time": 62367
+				"time": 62370
 			},
 			{
 				"title": "教育学习",
@@ -50854,12 +50886,20 @@
 			},
 			{
 				"date": "2026-08-25",
-				"seconds": 3
+				"seconds": 404
+			},
+			{
+				"date": "2026-08-26",
+				"seconds": 114
+			},
+			{
+				"date": "2026-08-27",
+				"seconds": 7
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 399,
+		"totalBooks": 400,
 		"secretCount": 29,
 		"favBook": {
 			"title": "西西弗神话",
@@ -50867,6 +50907,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-26T09:04:55.288Z",
+	"generatedAt": "2026-08-27T19:06:41.399Z",
 	"isMock": false
 }
