@@ -1,6 +1,38 @@
 {
 	"books": [
 		{
+			"bookId": "3300079339",
+			"title": "爱的终结",
+			"author": "[法]伊娃·易洛思",
+			"cover": "https://cdn.weread.qq.com/weread/cover/16/cpplatform_f5p4xjphucq7b2kdjoxvlt/t6_cpplatform_f5p4xjphucq7b2kdjoxvlt1700729066.jpg",
+			"category": "心理-心理学研究",
+			"finishReading": 0,
+			"readUpdateTime": 1787947295,
+			"updateTime": 1708526770,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300155280",
+			"title": "The Denial of Death 死亡否认（英文版）",
+			"author": "[美]欧内斯特·贝克尔",
+			"cover": "https://cdn.weread.qq.com/weread/cover/13/cpplatform_35qxwkj9lchlupnd2sqwpo/t6_cpplatform_35qxwkj9lchlupnd2sqwpo1753868958.jpg",
+			"category": "教育学习-外语",
+			"finishReading": 0,
+			"readUpdateTime": 1787891736,
+			"updateTime": 1760177044,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300205275",
 			"title": "工作社会的终结",
 			"author": "[德]乌尔里希·贝克",
@@ -227,7 +259,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4761,
+			"ratingCount": 4763,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -547,7 +579,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2117,
+			"ratingCount": 2123,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -731,7 +763,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2336,
+			"ratingCount": 2339,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -915,7 +947,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 494,
+			"ratingCount": 496,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -955,7 +987,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15409,
+			"ratingCount": 15413,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -1123,7 +1155,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1457,
+			"ratingCount": 1458,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -1219,7 +1251,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6341,
+			"ratingCount": 6343,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -1331,7 +1363,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6611,
+			"ratingCount": 6615,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -1451,7 +1483,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7379,
+			"ratingCount": 7383,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -1463,19 +1495,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1787558162,
+			"readUpdateTime": 1787939587,
 			"updateTime": 1721640802,
 			"progress": 62,
 			"noteCount": 65,
 			"reviewCount": 0,
-			"bookmarkCount": 29,
+			"bookmarkCount": 30,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《偶像的黄昏》写于1888年，是尼采晚年的一部著作。在这部充满毁灭意味的著作中，尼采对他那个时代的道德和信仰，特别是黑格尔、康德和叔本华的道德和信仰进行了持续且尖刻的攻击。\n尼采认为，从前的哲人似乎都过于软弱，不敢肯定狄奥尼索斯冲动乃是人类灵魂的真相，不敢根据这个真相为人类立法；现如今，一切价值亟待重估，唯有充满力量和傲慢的“拿着锤子”的哲学才能将时代偶像粉碎，将其逼入黄昏；虽然激情在原则上意味着危险，但它也可能是一件好事。因为，每一种健康的道德，都受到生命本能的支配，一切美好都是本能。",
 			"publisher": "",
 			"translator": "封诚诚",
 			"publicRating": 8.1,
-			"ratingCount": 525,
+			"ratingCount": 526,
 			"publishTime": "2024-07-22 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3ee32870813ab905cg018b90"
@@ -1707,7 +1739,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1892,
+			"ratingCount": 1894,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -1995,7 +2027,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4342,
+			"ratingCount": 4344,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -2051,7 +2083,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3274,
+			"ratingCount": 3278,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -2075,7 +2107,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.9,
-			"ratingCount": 10745,
+			"ratingCount": 10749,
 			"publishTime": "2020-06-05 00:00:00",
 			"isbn": "9787111564522",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
@@ -2227,7 +2259,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 517,
+			"ratingCount": 518,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -2339,7 +2371,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17047,
+			"ratingCount": 17049,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2475,7 +2507,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2676,
+			"ratingCount": 2678,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -2570,13 +2602,13 @@
 		},
 		{
 			"bookId": "41147996",
-			"title": "福格行为模型",
+			"title": "福格行为模型：每天3分钟，你会越来越有能量",
 			"author": "B.J.福格",
 			"cover": "https://cdn.weread.qq.com/weread/cover/39/YueWen_41147996/t6_YueWen_41147996.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1776063592,
-			"updateTime": 1785401790,
+			"updateTime": 1787898397,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -2635,7 +2667,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 871,
+			"ratingCount": 872,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -2755,7 +2787,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1308,
+			"ratingCount": 1314,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2998,7 +3030,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10101,
+			"ratingCount": 10105,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -3326,7 +3358,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9760,
+			"ratingCount": 9771,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -3382,7 +3414,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 805,
+			"ratingCount": 806,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a31321e0813abb40bg0199be"
@@ -3422,7 +3454,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4857,
+			"ratingCount": 4859,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -3462,7 +3494,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169420,
+			"ratingCount": 169479,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -3990,7 +4022,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3416,
+			"ratingCount": 3424,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -4077,8 +4109,8 @@
 			"intro": "本书是关于如何从零开始构建大模型的指南，由畅销书作家塞巴斯蒂安·拉施卡撰写，通过清晰的文字、图表和实例，逐步指导读者创建自己的大模型。在本书中，读者将学习如何规划和编写大模型的各个组成部分、为大模型训练准备适当的数据集、进行通用语料库的预训练，以及定制特定任务的微调。此外，本书还将探讨如何利用人工反馈确保大模型遵循指令，以及如何将预训练权重加载到大模型中。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
-			"publicRating": 9.1,
-			"ratingCount": 323,
+			"publicRating": 9.2,
+			"ratingCount": 324,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -4254,7 +4286,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23296,
+			"ratingCount": 23298,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -4478,7 +4510,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.6,
-			"ratingCount": 1483,
+			"ratingCount": 1485,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -4798,7 +4830,7 @@
 			"publisher": "文汇出版社",
 			"translator": "",
 			"publicRating": 8.3,
-			"ratingCount": 398,
+			"ratingCount": 399,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787549644834",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43a32aa0813aba117g0130e2"
@@ -5006,7 +5038,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2669,
+			"ratingCount": 2671,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -5050,19 +5082,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/77/cpplatform_n2fsmg7bc2bnzhmkfxqq6q/t6_cpplatform_n2fsmg7bc2bnzhmkfxqq6q1686541831.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1781508947,
+			"readUpdateTime": 1787945654,
 			"updateTime": 1723792295,
 			"progress": 27,
 			"noteCount": 25,
 			"reviewCount": 0,
-			"bookmarkCount": 2,
+			"bookmarkCount": 4,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《瓦尔登湖》是美国作家梭罗独居瓦尔登湖畔的记录，描绘了他两年多时间里的所见、所闻和所思。\r\n1845年3月，梭罗来到瓦尔登湖，动手搭建一座十英尺宽、十五英尺长的小木屋；7月4日，也就是美国的独立纪念日，终于如愿以偿地开始了那段在后世成为传奇的独居生活。两年后，他带着在湖边生活时完成的书稿，永远地离开了那座亲手所建的木屋。之后七年间七易其稿，直到1854年8月9日才正式出版。",
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6689,
+			"ratingCount": 6693,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -5158,7 +5190,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81135,
+			"ratingCount": 81154,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -5198,7 +5230,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2866,
+			"ratingCount": 2868,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -5346,7 +5378,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1787575761,
+			"readUpdateTime": 1787922462,
 			"updateTime": 1784010940,
 			"progress": 0,
 			"noteCount": 0,
@@ -5426,19 +5458,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1787748244,
+			"readUpdateTime": 1788003776,
 			"updateTime": 1724329124,
 			"progress": 26,
-			"noteCount": 12,
+			"noteCount": 21,
 			"reviewCount": 0,
-			"bookmarkCount": 3,
+			"bookmarkCount": 8,
 			"readTime": 0,
 			"tags": [],
 			"intro": "爱欲是勇于否定自我，肯定他者。爱欲与他者密切相关，是个体在自我的王国里无法征服的疆土。爱欲以超验性、彻底的独一无二性为前提。当今社会越来越像一个同质化的地狱，而爱欲的经验不在其中。个体的内在危机在于，一切事物均成为被消费的对象，从而毁掉了爱欲的渴望。吸引自我的、被自我所渴望的他者，无处可栖。这是一个没有了爱欲的社会。爱欲之死，是自我反思之死。",
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4146,
+			"ratingCount": 4147,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -5478,7 +5510,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 43919,
+			"ratingCount": 43955,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -5662,7 +5694,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1524,
+			"ratingCount": 1526,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -6150,7 +6182,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2369,
+			"ratingCount": 2370,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -6190,7 +6222,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31359,
+			"ratingCount": 31377,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -6218,7 +6250,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/0/cpplatform_8cl3hrdyvuwl6ky3kan6ad/t6_cpplatform_8cl3hrdyvuwl6ky3kan6ad1764043552.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1786457466,
+			"readUpdateTime": 1787919295,
 			"updateTime": 1764554837,
 			"progress": 0,
 			"noteCount": 0,
@@ -6470,7 +6502,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1346,
+			"ratingCount": 1353,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -6558,7 +6590,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.3,
-			"ratingCount": 713,
+			"ratingCount": 714,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -6878,7 +6910,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77574,
+			"ratingCount": 77613,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -44289,6 +44321,78 @@
 			"bookId": "24987083",
 			"bookTitle": "爱欲之死",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "今天，爱被简化成了性，完全屈服于强制的绩效与产出。性是绩效。性感是可以持续增加的资本。具有展示价值的身体等同于一件商品。他者则是性唤起的对象。不具备“异质性”的他者，不能为人所爱，只能供人消费。",
+			"createTime": "2026-08-29T09:25:33"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "关于爱情体验的一个建构性条件就是一个人在“他者”面前承认自己的“无能为力”。",
+			"createTime": "2026-08-29T09:18:23"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "个体不再将自己视为言听计从的主体（Subjekt，subject to），而是视为可以面向未来规划的项目。",
+			"createTime": "2026-08-29T09:17:19"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "“你能够”甚至比“你应当”更具强迫性，自我强迫比强迫他人能带来更明显的效果，因为自己不可能反抗自己的意志。",
+			"createTime": "2026-08-28T20:23:13"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "“你能”二字带来的强大压力，通常可以毁灭一个劳动主体。",
+			"createTime": "2026-08-28T20:21:51"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "对自由的新自由主义定义如同那个悖论式的祈使句“请自由吧！”，使劳动主体陷入压抑，精疲力竭。",
+			"createTime": "2026-08-28T20:20:57"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "自由仅仅存在于臆测之中，事实上人们是在剥削自己。福柯对新自由主义的立场是绝对肯定的、毫无批判的。他认为，一个新自由主义的政权，是一个“最小的国家系统”[插图]，是“自由的管家”[插图]，使得自由得以存在于市民社会中。",
+			"createTime": "2026-08-28T13:10:42"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "自我剥削比剥削他人的效率更高，因为前者带来一种类似自由的感觉，或因这种剥削可以脱离被统治的前提而实现。",
+			"createTime": "2026-08-28T13:09:30"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
+			"chapter": "承认“无能为力”",
+			"text": "对于一个创业者来说，他无须臣服于一个剥削和约束自己的“他者”，因而是自由的劳动主体，但这并非真正的自由，因为他将自己分解为无数自由的零部件，然后向内剥削自己。",
+			"createTime": "2026-08-28T13:09:24"
+		},
+		{
+			"bookId": "24987083",
+			"bookTitle": "爱欲之死",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/41/YueWen_24987083/t6_YueWen_24987083.jpg",
 			"chapter": "忧郁症",
 			"text": "客栈的招牌上写着“寻鹿”二字，上面画着一幅圣人的小像，那牌子斜挂在屋顶，摇摇欲坠——这个被寒冬笼罩的忧郁世界似乎被上帝遗忘了。",
 			"createTime": "2026-08-26T12:41:08"
@@ -49511,18 +49615,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 767986,
-		"readDays": 317,
+		"totalReadTime": 769216,
+		"readDays": 319,
 		"readBooks": 153,
 		"finishedBooks": 26,
-		"noteCount": 7899,
+		"noteCount": 7918,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 236779
+				"time": 236890
 			},
 			{
 				"title": "心理",
@@ -49532,7 +49636,7 @@
 			{
 				"title": "哲学宗教",
 				"count": 25,
-				"time": 105965
+				"time": 106096
 			},
 			{
 				"title": "社会小说",
@@ -49559,7 +49663,7 @@
 			{
 				"name": "尼采",
 				"count": 4,
-				"readTime": "7小时24分钟"
+				"readTime": "7小时26分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -50894,12 +50998,16 @@
 			},
 			{
 				"date": "2026-08-27",
-				"seconds": 7
+				"seconds": 630
+			},
+			{
+				"date": "2026-08-28",
+				"seconds": 607
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 400,
+		"totalBooks": 402,
 		"secretCount": 29,
 		"favBook": {
 			"title": "西西弗神话",
@@ -50907,6 +51015,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-27T19:06:41.399Z",
+	"generatedAt": "2026-08-29T13:52:45.946Z",
 	"isMock": false
 }
