@@ -1,20 +1,76 @@
 {
 	"books": [
 		{
-			"bookId": "3300221008",
-			"title": "粉红噪声",
-			"author": "[美]托马斯·内尔",
-			"cover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
-			"category": "科学技术-科学科普",
+			"bookId": "22369480",
+			"title": "规模",
+			"author": "杰弗里·韦斯特",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/480/22369480/t6_22369480.jpg",
+			"category": "科学技术-自然科学",
 			"finishReading": 0,
-			"readUpdateTime": 1788180161,
-			"updateTime": 1785223682,
+			"readUpdateTime": 1788263538,
+			"updateTime": 1708525739,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
 			"readTime": 0,
 			"tags": []
+		},
+		{
+			"bookId": "566431",
+			"title": "从0到1：开启商业与未来的秘密",
+			"author": "彼得·蒂尔 布莱克·马斯特斯",
+			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/431/566431/t6_566431.jpg",
+			"category": "经济理财-管理",
+			"finishReading": 0,
+			"readUpdateTime": 1788255300,
+			"updateTime": 1708525941,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300224146",
+			"title": "意识的起源",
+			"author": "[美]安东尼奥·达马西奥",
+			"cover": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_wnnfofmjbsznu2hnhbxa14/t6_cpplatform_wnnfofmjbsznu2hnhbxa141786354916.jpg",
+			"category": "心理-认知与行为",
+			"finishReading": 0,
+			"readUpdateTime": 1788263635,
+			"updateTime": 1786357365,
+			"progress": 10,
+			"noteCount": 1,
+			"reviewCount": 0,
+			"bookmarkCount": 2,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300221008",
+			"title": "粉红噪声",
+			"author": "[美]托马斯·内尔",
+			"cover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1788265420,
+			"updateTime": 1785223682,
+			"progress": 97,
+			"noteCount": 25,
+			"reviewCount": 1,
+			"bookmarkCount": 14,
+			"readTime": 0,
+			"tags": [],
+			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
+			"publisher": "中信出版集团",
+			"translator": "刘培源",
+			"publicRating": 8.3,
+			"ratingCount": 27,
+			"publishTime": "2026-06-01 00:00:00",
+			"isbn": "9787521776546",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4de32f70813abbcd4g018e82"
 		},
 		{
 			"bookId": "24987079",
@@ -104,7 +160,7 @@
 			"category": "哲学宗教-逻辑学",
 			"finishReading": 0,
 			"readUpdateTime": 1781624440,
-			"updateTime": 1738837758,
+			"updateTime": 1788228725,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -307,7 +363,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31409,
+			"ratingCount": 31419,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -347,7 +403,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2369,
+			"ratingCount": 2370,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -483,7 +539,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1355,
+			"ratingCount": 1358,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1119,12 +1175,12 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wnv5uaieh1tdfstl8tdv9v/t6_cpplatform_wnv5uaieh1tdfstl8tdv9v1773995479.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1786866914,
+			"readUpdateTime": 1788268868,
 			"updateTime": 1773996422,
 			"progress": 48,
 			"noteCount": 70,
 			"reviewCount": 0,
-			"bookmarkCount": 51,
+			"bookmarkCount": 52,
 			"readTime": 0,
 			"tags": [],
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
@@ -1271,6 +1327,22 @@
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
+		},
+		{
+			"bookId": "3300014442",
+			"title": "旅行之木",
+			"author": "星野道夫",
+			"cover": "https://cdn.weread.qq.com/weread/cover/42/3300014442/t6_3300014442.jpg",
+			"category": "艺术-摄影",
+			"finishReading": 0,
+			"readUpdateTime": 1788269014,
+			"updateTime": 1762247551,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "23348432",
@@ -1736,7 +1808,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1781409439,
-			"updateTime": 1786443413,
+			"updateTime": 1788235335,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1899,7 +1971,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1320,
+			"ratingCount": 1322,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -1955,7 +2027,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77663,
+			"ratingCount": 77678,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -2331,7 +2403,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6618,
+			"ratingCount": 6617,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -2451,7 +2523,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2681,
+			"ratingCount": 2682,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -2702,15 +2774,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 1,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《幸福的勇气》是“勇气两部曲”的下卷、完结篇。同样以百年前心理学者阿德勒思想为核心，以“青年和哲人的对话”故事形式展现。在上次谈话的3年之后，青年已经辞去图书管理员工作，成为了一名小学老师。但是再次出现在哲人面前的他，经历了许多现实（在工作当中）的摧残，对于当初的理想已经感到绝望了：“阿德勒的思想，在外面的世界没有意义。”“猛药”级的哲学对谈，再度开始……如果说《被讨厌的勇气》是地图，《幸福的勇气》就是行动指南。《被讨厌的勇气》探究「该怎么做，人才能获得自由？」《幸福的勇气》探究「该怎么做，人才能变得幸福？」在上次谈话的3年之后，青年已经辞去图书管理员工作，成为了一名小学老师。但是再次出现在哲人面前的他，经历了许多现实（在教育工作当中）的摧残，对于当初的理想已经感到绝望了。“阿德勒的思想，在外面的世界没有意义。”“你对阿德勒的思想存在误解”“猛药”级的哲学对谈，再度开始……",
-			"publisher": "机械工业出版社",
-			"translator": "渠海霞",
-			"publicRating": 8.9,
-			"ratingCount": 10754,
-			"publishTime": "2020-06-05 00:00:00",
-			"isbn": "9787111564522",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e0a32f4071efb4f7e0a2725"
+			"tags": []
 		},
 		{
 			"bookId": "31533613",
@@ -3163,7 +3227,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6251,
+			"ratingCount": 6253,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -3494,7 +3558,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 872,
+			"ratingCount": 873,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -3566,7 +3630,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1475,
+			"ratingCount": 1474,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -3606,7 +3670,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1896,
+			"ratingCount": 1897,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -3854,7 +3918,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15416,
+			"ratingCount": 15420,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -3926,7 +3990,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10109,
+			"ratingCount": 10111,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -4038,7 +4102,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1459,
+			"ratingCount": 1460,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -4106,9 +4170,9 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_pbxb1qoph57dee69qdwv7o/t6_cpplatform_pbxb1qoph57dee69qdwv7o1721630529.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1788103448,
+			"readUpdateTime": 1788269390,
 			"updateTime": 1721640802,
-			"progress": 62,
+			"progress": 70,
 			"noteCount": 65,
 			"reviewCount": 0,
 			"bookmarkCount": 30,
@@ -4118,7 +4182,7 @@
 			"publisher": "",
 			"translator": "封诚诚",
 			"publicRating": 8.1,
-			"ratingCount": 526,
+			"ratingCount": 527,
 			"publishTime": "2024-07-22 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3ee32870813ab905cg018b90"
@@ -4323,7 +4387,7 @@
 			"category": "经济理财-财经",
 			"finishReading": 0,
 			"readUpdateTime": 1775462500,
-			"updateTime": 1764316604,
+			"updateTime": 1788228725,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4382,7 +4446,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9780,
+			"ratingCount": 9785,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -4478,7 +4542,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4862,
+			"ratingCount": 4863,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -4518,7 +4582,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169539,
+			"ratingCount": 169562,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -5030,7 +5094,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3425,
+			"ratingCount": 3424,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -5186,7 +5250,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_6bspqcu7twqfqed1wx567s/t6_cpplatform_6bspqcu7twqfqed1wx567s1677032090.jpg",
 			"category": "教育学习-教育",
 			"finishReading": 0,
-			"readUpdateTime": 1788080902,
+			"readUpdateTime": 1788268772,
 			"updateTime": 1760172333,
 			"progress": 0,
 			"noteCount": 0,
@@ -5278,7 +5342,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23303,
+			"ratingCount": 23306,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -5337,20 +5401,20 @@
 			"author": "[唐]李白著 潘美晨注",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
 			"category": "文学-古代诗词",
-			"finishReading": 0,
-			"readUpdateTime": 1784293914,
+			"finishReading": 1,
+			"readUpdateTime": 1788268746,
 			"updateTime": 1746516833,
 			"progress": 88,
-			"noteCount": 97,
-			"reviewCount": 0,
-			"bookmarkCount": 46,
+			"noteCount": 108,
+			"reviewCount": 1,
+			"bookmarkCount": 57,
 			"readTime": 0,
 			"tags": [],
 			"intro": "《李太白诗集》从李白现存的近千首诗作中，以思想性与艺术性为准，精选三百余首，辅以必要的注释，并撷取历代名家点评。李白的诗歌内容广博，想象奇绝而又不事雕琢，将中国古典诗歌推向了最高峰，影响了后世一代代中外优秀文人。",
 			"publisher": "北京联合出版公司",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 74,
+			"ratingCount": 75,
 			"publishTime": "2016-09-01 00:00:00",
 			"isbn": "9787550287723",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c75328f05a1704c7560b8f6"
@@ -5829,7 +5893,7 @@
 			"intro": "它是泰戈尔诗歌精神的当代回响，以泥土为纸、草木为墨，写就一部扎根大地的哲理短章。百余首小诗如田野间的风，将炊烟、麦浪、老树与童谣轻轻拾起，在质朴的语言中流淌着对生命最深的眷恋。\r\n在远离自然的喧嚣里，它用最素朴的文字唤醒沉睡的感官，让读者在一捧土、一粒种、一声蝉鸣中，找回被遗忘的温暖与踏实。既是献给乡愁的温柔手札，也是一本常读常新的生活之书。",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.3,
+			"publicRating": 9.4,
 			"ratingCount": 578,
 			"publishTime": "2026-04-07 00:00:00",
 			"isbn": "",
@@ -6166,7 +6230,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81170,
+			"ratingCount": 81180,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -6206,7 +6270,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2868,
+			"ratingCount": 2869,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -6486,7 +6550,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44006,
+			"ratingCount": 44020,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -6670,7 +6734,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1528,
+			"ratingCount": 1531,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -6974,7 +7038,7 @@
 			"publisher": "上海人民出版社",
 			"translator": "褚炫初",
 			"publicRating": 7.7,
-			"ratingCount": 165,
+			"ratingCount": 166,
 			"publishTime": "2024-09-01 00:00:00",
 			"isbn": "9787208189669",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8132fd0813aba46fg0137e5"
@@ -7029,6 +7093,214 @@
 		}
 	],
 	"notes": [
+		{
+			"bookId": "3300224146",
+			"bookTitle": "意识的起源",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_wnnfofmjbsznu2hnhbxa14/t6_cpplatform_wnnfofmjbsznu2hnhbxa141786354916.jpg",
+			"chapter": "推荐序 意识是生命的温度",
+			"text": "意识之所以成为意识，或许恰恰在于它始终携带着生命留下的印记——那些关于生存与死亡、趋近与逃离、痛苦与愉悦的原初感受。",
+			"createTime": "2026-09-01T09:26:19"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "第九章 健康的“粉红”模式",
+			"text": "散步之所以有效，是因为它将我们的心跳、呼吸、步态、眼动以及大脑的分形节律，与周围世界的粉红噪声同步了起来。",
+			"createTime": "2026-09-01T12:21:35"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "文化之脑",
+			"text": "在某些情况下，“高度现代化”与“低度现代化”人群间的1/f大脑活动差异达到20%~30%。[插图]因此，当代农村的贫困状况被证实对大脑的粉红噪声具有负面影响。",
+			"createTime": "2026-09-01T12:19:25"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "“粉红”波动与自由选择：解读自由的神经学机制",
+			"text": "我们对自由的感受是真实的，只不过我们误将自由理解为完全独立且自发的状态。",
+			"createTime": "2026-09-01T12:10:16"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "“粉红”波动与自由选择：解读自由的神经学机制",
+			"text": "实验角度来看，我们所能确定的只有一点：世界似乎以我们无法完全预测的方式运动与变化，其原因我们也无法完全理解。尽管如此，某些普遍的模式仍然浮现出来，以至于我们的最佳推测往往（尽管并非总是）已经“足够好”。",
+			"createTime": "2026-09-01T12:09:45"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "血肉中的泛灵：“粉红”心灵，“粉红”身躯",
+			"text": "。研究表明，我们在知觉上对事物越熟悉，我们的大脑就越倾向于将它们视为带来新奇的关系性主体。",
+			"createTime": "2026-09-01T11:55:02"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "突触与知觉",
+			"text": "视网膜上一个称为“中央凹”的小凹陷拥有远比眼睛其他区域更多的神经元。",
+			"createTime": "2026-09-01T11:50:18"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "达尔文的树突",
+			"text": "脑电波倾向于通过少数几段较长时间的同步、更多中等时长的同步和许多更短时间的同步，交替进入和退出同步状态。[插图]如果脑电波长期无法达到足够的同步，就会出现诸如精神分裂症之类的状况[插图]；而当同步持续过久或程度过强时，则可能引发癫痫[插图]。",
+			"createTime": "2026-09-01T11:46:45"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "出错亦非凡：失败，再失败，更精进地失败",
+			"text": "通过过滤噪声与误差，转而关注信号和任务活动，科学家和哲学家反而遮蔽了大脑和意识的本质。",
+			"createTime": "2026-09-01T11:28:43"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "发现“默认模式”",
+			"text": "如果大脑功能的根本目的是完成各项任务，那么为何它在静息时消耗的能量几乎和工作时一样多？换句话说，为什么我们的大脑在静息态下，实际上并未真正在休息？",
+			"createTime": "2026-09-01T11:23:22"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "发现“默认模式”",
+			"text": "任务导向型大脑活动的重要性是明确的、可测量的：",
+			"createTime": "2026-09-01T11:23:11"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "发现“默认模式”",
+			"text": "当我们无所事事地坐着或做白日梦时，大脑似乎变得越来越难以预测、灵活多变，我们的认知波动也随之增强。[插图]",
+			"createTime": "2026-09-01T11:22:50"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "通往自发波动的坎坷之路",
+			"text": "在一个不可预测的世界中，也许最佳的演化策略不是一味对已知量做重复反应，而是保持在相对混沌的状态中，随时准备以多种不同的，甚至出人意料的方式对现象做出反应。",
+			"createTime": "2026-09-01T11:18:08"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "通往自发波动的坎坷之路",
+			"text": "“随机共振”的基本原理是：给信号加入噪声，会反直觉地使信号得到增强",
+			"createTime": "2026-09-01T11:17:40"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "关于本书",
+			"text": "与其追求绝对真理，我更倾向于把各类知识结构视为一个家族树的各个分支，进而去探究各分支之间有可能共通的概念关联、问题与潜能，然后尝试指出哪些地方或许可以因修改而获益。",
+			"createTime": "2026-09-01T11:01:28"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "探寻粉红噪声的奥秘",
+			"text": "粉红噪声是一种由高强度低频、中等强度中频和低强度高频的波，按反比例关系混合而成的声音。",
+			"createTime": "2026-09-01T10:58:03"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "引言 来吧，感受脑海喧嚣",
+			"text": "大脑活动中有95%是无意识的，而剩下5%的活动中，只有大约一半是由我们主动控制的。",
+			"createTime": "2026-09-01T09:42:52"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序二 放弃对“纯粹信号”的执念，学会欣赏“噪声”的创造力",
+			"text": "它既非完全随机的白噪声，也非僵硬的周期性振荡，而是介于两者之间，呈现出一种自组织临界状态的微妙平衡。",
+			"createTime": "2026-09-01T09:38:50"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序二 放弃对“纯粹信号”的执念，学会欣赏“噪声”的创造力",
+			"text": "人与人之间的不同才是世界本来的面目：物种繁多，个体互异。我们虽难预测每个个体的走向，但当无数微观的不确定性汇聚成整体，便形成了宏观上特定的随机分布。",
+			"createTime": "2026-09-01T09:35:14"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序二 放弃对“纯粹信号”的执念，学会欣赏“噪声”的创造力",
+			"text": "信息被定义为“不确定性的度量”。信息并非“你知道了什么”，而是“你排除了多少未知”。",
+			"createTime": "2026-09-01T09:33:31"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "这一视角固然能解释意识的整合性与信息的丰富性等特征，却无法回应临床神经病学中一个尖锐的事实：皮质大面积损伤未必导致意识丧失，而脑干上微小的局灶性损伤却可能引发意识障碍。",
+			"createTime": "2026-09-01T08:50:30"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "物质世界并非一片死寂，不是充满惰性且缺乏内在节律的“死物之海”，相反，它充斥着创造性的自组织动力学机制，而意识正是这种宇宙性创造力的巅峰体现。",
+			"createTime": "2026-09-01T08:44:05"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "而是物质世界在特定复杂性条件下展现出的一种普遍的、连续的动力学模式。",
+			"createTime": "2026-09-01T07:46:03"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "在这一框架下，意识的产生并不依赖某个“中央指挥中心”，只要系统的动力学达到这种临界状态，便已具备产生意识的物理条件。",
+			"createTime": "2026-09-01T07:44:46"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "在他看来，演化历程并不青睐那些只会对已知信号做刻板反应的动物。相较之下，寿命更长的恰恰是那些能在混沌边缘保持敏感性、以多样方式应对世界的物种。意",
+			"createTime": "2026-09-01T07:44:03"
+		},
+		{
+			"bookId": "3300221008",
+			"bookTitle": "粉红噪声",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_3it3ceftm7rdogrngsnzkm/t6_cpplatform_3it3ceftm7rdogrngsnzkm1785222723.jpg",
+			"chapter": "推荐序一 意识之结：在“过程”与“生命”之间",
+			"text": "。粉红噪声本质上是系统处于“自组织临界态”的动力学标志——在这种状态下，系统对内外环境变化具有最高的敏感性、最快的响应速度、最佳的适应性与最强的韧性。",
+			"createTime": "2026-09-01T07:43:42"
+		},
 		{
 			"bookId": "3300148226",
 			"bookTitle": "赡养人类（轻经典）",
@@ -36041,6 +36313,94 @@
 			"bookId": "661252",
 			"bookTitle": "李太白诗集（中华国学经典精粹）",
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "学古思边",
+			"text": "离群心断绝，十见花成雪。胡地无春晖，征人行不归。",
+			"createTime": "2026-09-01T12:53:14"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "寄远十二首",
+			"text": "寒灯厌梦魂欲绝，觉来相思生白发。盈盈汉水若可越，可惜凌波步罗袜。",
+			"createTime": "2026-09-01T12:51:56"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "寄远十二首",
+			"text": "两不见，但相思，空留锦字表心素，至今缄愁不忍窥。",
+			"createTime": "2026-09-01T12:50:35"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "寄远十二首",
+			"text": "忆昨东园桃李红碧枝，与君此时初别离。金瓶落井无消息，令人行叹复坐思。坐思行叹成楚、越，春风玉颜畏销歇。",
+			"createTime": "2026-09-01T12:50:20"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "寄远十二首",
+			"text": "秋草秋蛾飞，相思愁落晖。何由一相见，灭烛解罗衣。",
+			"createTime": "2026-09-01T12:49:45"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "三五七言",
+			"text": "秋风清，秋月明。落叶聚还散，寒鸦栖复惊。相思相见知何日，此时此夜难为情。",
+			"createTime": "2026-09-01T12:46:45"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "春夜洛城闻笛",
+			"text": "谁家玉笛暗飞声，散入春风满洛城。此夜曲中闻《折柳》，何人不起故园情。",
+			"createTime": "2026-09-01T12:46:19"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "万愤词投魏郎中",
+			"text": "海水渤潏[1]，人罗鲸鲵。蓊胡沙而四塞，始滔天于燕、齐。",
+			"createTime": "2026-09-01T12:39:59"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "万愤词投魏郎中",
+			"text": "一门骨肉散百草，遇难不复相提携。",
+			"createTime": "2026-09-01T12:34:29"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "万愤词投魏郎中",
+			"text": "南冠君子[2]，呼天而啼。恋高堂而掩泣，泪血地而成泥。",
+			"createTime": "2026-09-01T12:33:58"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
+			"chapter": "拟古十二首",
+			"text": "瓶冰知冬寒，霜露欺远客。客似秋叶飞，飘飖不言归。",
+			"createTime": "2026-09-01T12:31:20"
+		},
+		{
+			"bookId": "661252",
+			"bookTitle": "李太白诗集（中华国学经典精粹）",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/252/661252/t6_661252.jpg",
 			"chapter": "访戴天山道士不遇",
 			"text": "无人知所去，愁倚两三松。",
 			"createTime": "2026-07-05T10:55:26"
@@ -49799,11 +50159,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 770241,
-		"readDays": 321,
-		"readBooks": 153,
-		"finishedBooks": 26,
-		"noteCount": 7933,
+		"totalReadTime": 777629,
+		"readDays": 322,
+		"readBooks": 155,
+		"finishedBooks": 27,
+		"noteCount": 8000,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -49814,8 +50174,8 @@
 			},
 			{
 				"title": "心理",
-				"count": 13,
-				"time": 147228
+				"count": 14,
+				"time": 147334
 			},
 			{
 				"title": "哲学宗教",
@@ -49852,7 +50212,7 @@
 			{
 				"name": "艾里希·弗洛姆",
 				"count": 3,
-				"readTime": "16小时18分钟"
+				"readTime": "16小时19分钟"
 			},
 			{
 				"name": "赫尔曼·黑塞",
@@ -49872,126 +50232,6 @@
 		],
 		"registTime": 1657349563,
 		"heatmap": [
-			{
-				"date": "2025-07-31",
-				"seconds": 738
-			},
-			{
-				"date": "2025-08-01",
-				"seconds": 1120
-			},
-			{
-				"date": "2025-08-02",
-				"seconds": 93
-			},
-			{
-				"date": "2025-08-03",
-				"seconds": 1891
-			},
-			{
-				"date": "2025-08-04",
-				"seconds": 6
-			},
-			{
-				"date": "2025-08-05",
-				"seconds": 2513
-			},
-			{
-				"date": "2025-08-06",
-				"seconds": 2478
-			},
-			{
-				"date": "2025-08-07",
-				"seconds": 2032
-			},
-			{
-				"date": "2025-08-08",
-				"seconds": 1386
-			},
-			{
-				"date": "2025-08-09",
-				"seconds": 1030
-			},
-			{
-				"date": "2025-08-10",
-				"seconds": 134
-			},
-			{
-				"date": "2025-08-11",
-				"seconds": 214
-			},
-			{
-				"date": "2025-08-12",
-				"seconds": 67
-			},
-			{
-				"date": "2025-08-13",
-				"seconds": 505
-			},
-			{
-				"date": "2025-08-14",
-				"seconds": 4387
-			},
-			{
-				"date": "2025-08-15",
-				"seconds": 6426
-			},
-			{
-				"date": "2025-08-16",
-				"seconds": 7125
-			},
-			{
-				"date": "2025-08-17",
-				"seconds": 8022
-			},
-			{
-				"date": "2025-08-18",
-				"seconds": 112
-			},
-			{
-				"date": "2025-08-19",
-				"seconds": 336
-			},
-			{
-				"date": "2025-08-20",
-				"seconds": 193
-			},
-			{
-				"date": "2025-08-21",
-				"seconds": 1203
-			},
-			{
-				"date": "2025-08-22",
-				"seconds": 1978
-			},
-			{
-				"date": "2025-08-23",
-				"seconds": 2172
-			},
-			{
-				"date": "2025-08-24",
-				"seconds": 1852
-			},
-			{
-				"date": "2025-08-25",
-				"seconds": 3140
-			},
-			{
-				"date": "2025-08-26",
-				"seconds": 8
-			},
-			{
-				"date": "2025-08-27",
-				"seconds": 355
-			},
-			{
-				"date": "2025-08-28",
-				"seconds": 8
-			},
-			{
-				"date": "2025-08-30",
-				"seconds": 68
-			},
 			{
 				"date": "2025-08-31",
 				"seconds": 12
@@ -51195,18 +51435,22 @@
 			{
 				"date": "2026-08-30",
 				"seconds": 193
+			},
+			{
+				"date": "2026-08-31",
+				"seconds": 7388
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 409,
-		"secretCount": 29,
+		"totalBooks": 413,
+		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
 			"author": "[法]阿尔贝·加缪",
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-08-31T16:11:58.115Z",
+	"generatedAt": "2026-09-01T13:32:41.826Z",
 	"isMock": false
 }
