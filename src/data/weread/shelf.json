@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "3300196086",
+			"title": "略萨作品：酒吧长谈（纪念版）",
+			"author": "[秘]马里奥·巴尔加斯·略萨",
+			"cover": "https://cdn.weread.qq.com/weread/cover/16/cpplatform_bu1xuaskuc8faqqd3bpbit/t6_cpplatform_bu1xuaskuc8faqqd3bpbit1770954487.jpg",
+			"category": "文学-外国文学",
+			"finishReading": 0,
+			"readUpdateTime": 1788495420,
+			"updateTime": 1788422355,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "851459",
 			"title": "论语",
 			"author": "[春秋]孔丘著 陈典译注",
@@ -379,7 +395,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31446,
+			"ratingCount": 31460,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -419,7 +435,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2371,
+			"ratingCount": 2372,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -803,7 +819,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 501,
+			"ratingCount": 504,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1227,7 +1243,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2139,
+			"ratingCount": 2141,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -1251,7 +1267,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4767,
+			"ratingCount": 4770,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -1443,7 +1459,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6353,
+			"ratingCount": 6356,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -1986,8 +2002,8 @@
 			"intro": "《要么孤独要么庸俗》是德国哲学家叔本华一部兼具思想深度的常识读本，集中体现了他对人生意义、幸福本质与孤独命运的深刻洞察。书中通过“叔本华”这一哲人视角，揭示大众趋于庸俗是出于对痛苦的逃避，而真正独立思考者则注定与孤独为伴。他剖析人与人之间的表面关系，指出只有少数灵魂能在孤独中保持精神的高贵。全书语言犀利，富于警句，是一部引导人正视自身处境、思考个体价值的重要哲学读本。",
 			"publisher": "",
 			"translator": "陈曌",
-			"publicRating": 7.7,
-			"ratingCount": 1328,
+			"publicRating": 7.8,
+			"ratingCount": 1330,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2043,7 +2059,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77721,
+			"ratingCount": 77742,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -2419,7 +2435,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6619,
+			"ratingCount": 6622,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -2475,7 +2491,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17056,
+			"ratingCount": 17062,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2515,7 +2531,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "孙天",
 			"publicRating": 8.6,
-			"ratingCount": 1088,
+			"ratingCount": 1089,
 			"publishTime": "2020-07-01 00:00:00",
 			"isbn": "9787111659099",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=61f322a071fac4b261f20c8"
@@ -2539,7 +2555,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2684,
+			"ratingCount": 2685,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -2771,7 +2787,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3297,
+			"ratingCount": 3307,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -2922,8 +2938,8 @@
 			"intro": "提到“正常”“常态”，你会想到什么？提到“异常”“变态”，你又会想到什么？生活在现代社会中的每个人可能都有一些异于常人的表现或行为，那么我们该如何划分正常行为与异常行为之间的界限呢？很多人都觉得自己“社恐”、有强迫症，或者感到抑郁，这些是心理障碍吗？还是说它们仅仅是一些适应不良的行为或表现？这些问题的答案，都可以在本书中找到。 本书的三位作者都是长期从事心理障碍与异常行为研究、教学和临床实践工作的临床心理学家，他们不仅学术造诣深厚，而且有丰富的临床和教学经验。他们基于最新版的《精神障碍诊断与统计手册》和前沿的研究成果对本版进行了调整。全书共15章，前三章和最后一章为总论，集中介绍了变态心理学的学科性质和研究方法，主要的理论观点及相关的法律问题；第4章至第14章着重介绍了临床上比较常见的心理障碍，包括它们的临床表现、诊断标准、成因及具体的治疗方法等。 本书既可作为心理学专业老师和学生的教材或参考书，又可供心理咨询师、心理治疗师及相关专业人士在实践中参考，同时本书也有助于普通读者了解和认识变态心理学及异常的行为和表现。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
-			"publicRating": 9.3,
-			"ratingCount": 716,
+			"publicRating": 9.4,
+			"ratingCount": 717,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -3243,7 +3259,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6256,
+			"ratingCount": 6257,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -3315,7 +3331,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4346,
+			"ratingCount": 4347,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -3422,7 +3438,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 468,
+			"ratingCount": 470,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -3686,7 +3702,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1897,
+			"ratingCount": 1899,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -3934,7 +3950,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15425,
+			"ratingCount": 15426,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -4478,7 +4494,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9793,
+			"ratingCount": 9800,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -4533,8 +4549,8 @@
 			"intro": "它是诺贝尔文学奖得主泰戈尔的哲理短诗集，以轻盈笔触叩问天地与人心。三百余首小诗如飞鸟掠空，将自然草木、日月星辰与生命哲思熔于一炉，语言清丽、意境悠远。\r\n在快节奏的日常里，它以极简文字照见内心，让读者在一花一草、一鸟一云间读懂生命的本真与温柔。既是口袋里的心灵慰藉，也是可反复品读的灵感之书。",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.4,
-			"ratingCount": 806,
+			"publicRating": 9.2,
+			"ratingCount": 807,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a31321e0813abb40bg0199be"
@@ -4614,7 +4630,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169607,
+			"ratingCount": 169643,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -5126,7 +5142,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3429,
+			"ratingCount": 3432,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -5582,7 +5598,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.5,
-			"ratingCount": 1487,
+			"ratingCount": 1488,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -6098,19 +6114,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1788423471,
+			"readUpdateTime": 1788496837,
 			"updateTime": 1765788388,
 			"progress": 57,
-			"noteCount": 159,
+			"noteCount": 161,
 			"reviewCount": 9,
-			"bookmarkCount": 29,
-			"readTime": 28417,
+			"bookmarkCount": 31,
+			"readTime": 28548,
 			"tags": [],
 			"intro": "存在主义治疗并非一个独立的治疗流派，而是每一个心理治疗师在其临床工作和个人生活中都可能会采用到的一种精神取向，或者说是生活哲学。存在主义治疗所基于的假设是：我们是自由的，并且要为自己的选择及行动负责任。 长期以来，存在主义治疗被广泛地应用在世界各地的临床实践工作中，但它缺乏一致性的结构、对其原则的分析以及对其有效性的评估。欧文•亚隆教授自1970年以来就已经在团体治疗的理论和实践中实施了存在主义的原则，并在大量的理论研究和临床实践中逐渐为存在主义心理治疗构建出一个较为系统的框架。 在本书中，亚隆教授从临床经验、实证性研究、哲学文献以及其他大量资料出发，围绕着四个“生命的终极关怀”——死亡、自由、存在的孤独和无意义——逐一进行深入探讨，阐述每一个存在性关怀的意义，并论述治疗师应该如何通过对它们的理解来进行有效的临床工作。心理治疗的根本问题与人类存在的核心问题在这里相遇，不仅为那些存在主义取向的心理治疗师提供了一部经典的教科书，同时也为所有流派的治疗师以及所有思考过人生意义的人提供了一个对生命和存在进行反思的空间。",
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2677,
+			"ratingCount": 2681,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -6166,7 +6182,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6702,
+			"ratingCount": 6705,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -6262,7 +6278,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81204,
+			"ratingCount": 81217,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -6302,7 +6318,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2872,
+			"ratingCount": 2873,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -6542,7 +6558,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4154,
+			"ratingCount": 4155,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -6582,7 +6598,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44063,
+			"ratingCount": 44085,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -6766,7 +6782,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1532,
+			"ratingCount": 1535,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -7070,7 +7086,7 @@
 			"publisher": "上海人民出版社",
 			"translator": "褚炫初",
 			"publicRating": 7.7,
-			"ratingCount": 166,
+			"ratingCount": 167,
 			"publishTime": "2024-09-01 00:00:00",
 			"isbn": "9787208189669",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8132fd0813aba46fg0137e5"
@@ -39202,6 +39218,22 @@
 			"bookTitle": "存在主义心理治疗",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"chapter": "第六章 责任",
+			"text": "他们对待她的方式正是她要求被对待的方式（她的哭诉，她软弱的借口，她无助的抑郁状态，都无言地传递了这样的信息）。",
+			"createTime": "2026-09-04T04:18:55"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "我揣摩自己对她的感觉，发现她的语气中有着小孩子哭诉的意味，让我很难严肃对待她，总想把她看作孩子。",
+			"createTime": "2026-09-04T04:18:32"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
 			"text": "人们先是预期某件事情会发生，然后依照预期行事使得预期实现，最后将对行为的觉察掩盖在潜意识中。",
 			"createTime": "2026-09-03T07:47:06"
 		},
@@ -50351,11 +50383,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 780904,
-		"readDays": 324,
+		"totalReadTime": 781122,
+		"readDays": 325,
 		"readBooks": 155,
 		"finishedBooks": 27,
-		"noteCount": 8032,
+		"noteCount": 8036,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -50367,12 +50399,12 @@
 			{
 				"title": "心理",
 				"count": 14,
-				"time": 150471
+				"time": 150602
 			},
 			{
 				"title": "哲学宗教",
 				"count": 25,
-				"time": 106844
+				"time": 107161
 			},
 			{
 				"title": "社会小说",
@@ -50399,7 +50431,7 @@
 			{
 				"name": "尼采",
 				"count": 4,
-				"readTime": "7小时38分钟"
+				"readTime": "7小时43分钟"
 			},
 			{
 				"name": "艾里希·弗洛姆",
@@ -51639,11 +51671,15 @@
 			{
 				"date": "2026-09-02",
 				"seconds": 2850
+			},
+			{
+				"date": "2026-09-03",
+				"seconds": 218
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 415,
+		"totalBooks": 416,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -51651,6 +51687,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-03T12:52:19.799Z",
+	"generatedAt": "2026-09-04T12:46:07.828Z",
 	"isMock": false
 }
