@@ -38,15 +38,16 @@ onMount(() => {
 	reduced =
 		window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 
-	const ctx = canvas.getContext("2d", { alpha: true })!;
+	const ctx = canvas.getContext("2d", { alpha: true }) ?? null;
+	if (!ctx) return;
 	const dpr = Math.min(window.devicePixelRatio || 1, 2);
-	let w = 0,
-		h = 0;
+	let w = 0;
+	let h = 0;
 	let stars: Star[] = [];
 	let mts: Meteor[] = [];
 	let lastT = 0;
-	let mouseX = 0.5,
-		mouseY = 0.5;
+	let mouseX = 0.5;
+	let mouseY = 0.5;
 
 	const resize = () => {
 		const rect = canvas.getBoundingClientRect();

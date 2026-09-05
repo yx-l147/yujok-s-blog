@@ -13,7 +13,6 @@
 
 ### 🚀 快速开始
 
-```
 ### 环境要求
 
 - Node.js 18+
@@ -159,7 +158,6 @@ pnpm draft-book-reviews -- --dry-run
 ├── astro.config.mjs                # Astro 配置
 ├── package.json                    # 项目配置和命令
 └── pnpm-lock.yaml                  # 依赖版本锁定文件
-``` 
 ```
 
 ## 常用命令

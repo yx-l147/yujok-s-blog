@@ -1,0 +1,442 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "yujok Blog" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Primary navigation" [ref=e10]:
+      - link "主页" [ref=e11] [cursor=pointer]:
+        - /url: /
+      - link "归档" [ref=e15] [cursor=pointer]:
+        - /url: /archive/
+      - link "书架" [ref=e19] [cursor=pointer]:
+        - /url: /book/
+      - link "课程表" [ref=e23] [cursor=pointer]:
+        - /url: /schedule/
+      - link "关于" [ref=e27] [cursor=pointer]:
+        - /url: /about/
+      - link "偶得" [ref=e31] [cursor=pointer]:
+        - /url: /thoughts/
+    - group [ref=e35]:
+      - generic "更多" [ref=e36] [cursor=pointer]
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - button "Search Panel" [ref=e44] [cursor=pointer]
+        - generic:
+          - generic:
+            - button "标题/摘要"
+            - button "全文"
+          - generic:
+            - textbox "Search"
+      - button "Display Settings" [ref=e45] [cursor=pointer]
+      - menu [ref=e49]:
+        - menuitem "Light/Dark Mode" [ref=e50] [cursor=pointer]
+        - generic:
+          - generic:
+            - button "亮色"
+            - button "暗色"
+            - button "跟随系统"
+      - button "收起左侧栏" [expanded] [ref=e51] [cursor=pointer]
+      - button "收起右侧栏" [expanded] [ref=e54] [cursor=pointer]
+    - generic:
+      - link "主页":
+        - /url: /
+      - link "分类":
+        - /url: /categories/
+      - link "标签":
+        - /url: /tags/
+      - link "归档":
+        - /url: /archive/
+      - link "书架":
+        - /url: /book/
+      - link "课程表":
+        - /url: /schedule/
+      - link "关于":
+        - /url: /about/
+      - link "偶得":
+        - /url: /thoughts/
+      - link "Bangumi":
+        - /url: /bangumi/
+      - link "GitHub":
+        - /url: https://github.com/yx-l147
+    - generic [ref=e57]:
+      - generic:
+        - generic:
+          - generic:
+            - text: 主题色
+            - button "Reset to Default"
+          - generic: "220"
+        - generic:
+          - slider "主题色": "220"
+  - generic [ref=e58]:
+    - generic [ref=e59]:
+      - complementary [ref=e60]:
+        - generic [ref=e62]:
+          - link "Go to About Page" [ref=e63] [cursor=pointer]:
+            - /url: /about/
+            - img "Profile Image of the Author" [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]: yujok
+            - generic [ref=e69]: 自由之风永远吹拂
+            - generic [ref=e70]:
+              - link "Twitter" [ref=e71] [cursor=pointer]:
+                - /url: https://x.com/yxl147
+              - link "Steam" [ref=e74] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561199175076036/
+              - link "GitHub" [ref=e77] [cursor=pointer]:
+                - /url: https://github.com/yx-l147
+              - link "Tiktok" [ref=e80] [cursor=pointer]:
+                - /url: https://www.douyin.com/user/self?from_tab_name=main&showTab=post
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: 分类
+            - generic [ref=e87]:
+              - link "View all posts in the 随笔 category" [ref=e88] [cursor=pointer]:
+                - /url: /categories/%E9%9A%8F%E7%AC%94/
+                - button "随笔 1" [ref=e89]:
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: 随笔
+                    - generic [ref=e92]: "1"
+              - link "View all posts in the 想法 category" [ref=e93] [cursor=pointer]:
+                - /url: /categories/%E6%83%B3%E6%B3%95/
+                - button "想法 1" [ref=e94]:
+                  - generic [ref=e95]:
+                    - generic [ref=e96]: 想法
+                    - generic [ref=e97]: "1"
+          - generic [ref=e98]:
+            - generic [ref=e99]: 标签
+            - generic [ref=e102]:
+              - link "View all posts with the 思考 tag" [ref=e103] [cursor=pointer]:
+                - /url: /tags/%E6%80%9D%E8%80%83/
+                - text: 思考
+              - link "View all posts with the 随笔 tag" [ref=e104] [cursor=pointer]:
+                - /url: /tags/%E9%9A%8F%E7%AC%94/
+                - text: 随笔
+              - link "View all posts with the 阅读 tag" [ref=e105] [cursor=pointer]:
+                - /url: /tags/%E9%98%85%E8%AF%BB/
+                - text: 阅读
+          - generic [ref=e106]:
+            - generic [ref=e107]: 偶得速览
+            - generic [ref=e110]:
+              - list [ref=e111]:
+                - listitem [ref=e112]:
+                  - link "9/2 世上总有蝇营狗苟者，因循苟且、麻木冷漠者。面对他人珍视之物，或破坏，或偷窃，将其践踏，视若草芥。" [ref=e113] [cursor=pointer]:
+                    - /url: /thoughts/路旁/
+                    - generic [ref=e114]: 9/2
+                    - generic [ref=e115]: 世上总有蝇营狗苟者，因循苟且、麻木冷漠者。面对他人珍视之物，或破坏，或偷窃，将其践踏，视若草芥。
+                - listitem [ref=e116]:
+                  - link "6/1 最近在写一个比较复杂的项目时有意识到：写代码和写文章的过程是相当相似的。" [ref=e117] [cursor=pointer]:
+                    - /url: /thoughts/coding-and-writing/
+                    - generic [ref=e118]: 6/1
+                    - generic [ref=e119]: 最近在写一个比较复杂的项目时有意识到：写代码和写文章的过程是相当相似的。
+                - listitem [ref=e120]:
+                  - link "5/20 最近在重新思考阅读的意义。" [ref=e121] [cursor=pointer]:
+                    - /url: /thoughts/reading-thoughts/
+                    - generic [ref=e122]: 5/20
+                    - generic [ref=e123]: 最近在重新思考阅读的意义。
+              - link "查看更多 →" [ref=e124] [cursor=pointer]:
+                - /url: /thoughts/
+      - main [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - article [ref=e128]:
+              - generic [ref=e129]:
+                - link "雨夜-流星" [ref=e130] [cursor=pointer]:
+                  - /url: /posts/雨夜-流星/
+                - generic [ref=e133]:
+                  - generic [ref=e134]: 2026-08-13
+                  - link "View all posts in the 随笔 category" [ref=e144] [cursor=pointer]:
+                    - /url: /categories/%E9%9A%8F%E7%AC%94/
+                    - text: 随笔
+                  - link "View all posts with the 随笔 tag" [ref=e150] [cursor=pointer]:
+                    - /url: /tags/%E9%9A%8F%E7%AC%94/
+                    - text: 随笔
+                - generic [ref=e151]: 雨夜的触景生情
+                - generic [ref=e152]:
+                  - generic [ref=e153]: 866 字
+                  - generic [ref=e155]: 4 分钟
+              - link "雨夜-流星" [ref=e156] [cursor=pointer]:
+                - /url: /posts/雨夜-流星/
+                - img "Cover Image of the Post" [ref=e158]
+            - article [ref=e159]:
+              - generic [ref=e160]:
+                - link "倦怠" [ref=e161] [cursor=pointer]:
+                  - /url: /posts/倦怠/
+                - generic [ref=e164]:
+                  - generic [ref=e165]: 2026-08-09
+                  - link "View all posts in the 想法 category" [ref=e175] [cursor=pointer]:
+                    - /url: /categories/%E6%83%B3%E6%B3%95/
+                    - text: 想法
+                  - generic [ref=e180]:
+                    - link "View all posts with the 思考 tag" [ref=e181] [cursor=pointer]:
+                      - /url: /tags/%E6%80%9D%E8%80%83/
+                      - text: 思考
+                    - generic [ref=e182]: /
+                    - link "View all posts with the 阅读 tag" [ref=e183] [cursor=pointer]:
+                      - /url: /tags/%E9%98%85%E8%AF%BB/
+                      - text: 阅读
+                - generic [ref=e184]: 关于一些对现代社会的思考，也是阅读之后的感想
+                - generic [ref=e185]:
+                  - generic [ref=e186]: 704 字
+                  - generic [ref=e188]: 4 分钟
+              - link "倦怠" [ref=e189] [cursor=pointer]:
+                - /url: /posts/倦怠/
+                - img "Cover Image of the Post" [ref=e191]
+          - generic [ref=e192]:
+            - link:
+              - /url: ""
+            - generic [ref=e193]: "1"
+            - link:
+              - /url: ""
+          - generic [ref=e198]:
+            - text: © 2026 yujok.
+            - link "RSS" [ref=e199] [cursor=pointer]:
+              - /url: /rss.xml
+            - text: /
+            - link "Sitemap" [ref=e200] [cursor=pointer]:
+              - /url: /sitemap-index.xml
+            - text: Powered by
+            - link "Astro" [ref=e201] [cursor=pointer]:
+              - /url: https://astro.build
+            - text: /
+            - link "Fuwari" [ref=e202] [cursor=pointer]:
+              - /url: https://github.com/saicaca/fuwari
+      - complementary [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - generic [ref=e206]: 站点统计
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - generic [ref=e211]: 文章
+                - generic [ref=e215]: "0"
+              - generic [ref=e216]:
+                - generic [ref=e217]: 分类
+                - generic [ref=e221]: "0"
+              - generic [ref=e222]:
+                - generic [ref=e223]: 标签
+                - generic [ref=e227]: "0"
+              - generic [ref=e228]:
+                - generic [ref=e229]: 总字数
+                - generic [ref=e233]: "0"
+              - generic [ref=e234]:
+                - generic [ref=e235]: 运行天数
+                - generic [ref=e239]: 0 天
+              - generic [ref=e240]:
+                - generic [ref=e241]: 最后活动
+                - generic [ref=e245]: 0 天前
+          - generic [ref=e246]:
+            - generic [ref=e247]: 日历
+            - generic [ref=e251]:
+              - generic [ref=e252]:
+                - button "回到本月" [ref=e253] [cursor=pointer]:
+                  - generic [ref=e254]: 2026年
+                  - generic [ref=e255]:
+                    - text: "09"
+                    - emphasis [ref=e256]: 月
+                - generic "月份切换" [ref=e258]:
+                  - button "上一个月" [ref=e259] [cursor=pointer]
+                  - button "下一个月" [ref=e260] [cursor=pointer]
+              - generic [aria-hidden] [ref=e261]:
+                - generic [ref=e262]: 一
+                - generic [ref=e263]: 二
+                - generic [ref=e264]: 三
+                - generic [ref=e265]: 四
+                - generic [ref=e266]: 五
+                - generic [ref=e267]: 六
+                - generic [ref=e268]: 日
+              - generic "2026年9月" [ref=e269]:
+                - generic [ref=e270]:
+                  - generic [aria-hidden] [ref=e271]:
+                    - button [ref=e272] [cursor=pointer]:
+                      - generic [ref=e273]: "27"
+                    - button [ref=e274] [cursor=pointer]:
+                      - generic [ref=e275]: "28"
+                    - button [ref=e276] [cursor=pointer]:
+                      - generic [ref=e277]: "29"
+                    - button [ref=e278] [cursor=pointer]:
+                      - generic [ref=e279]: "30"
+                    - button [ref=e280] [cursor=pointer]:
+                      - generic [ref=e281]: "31"
+                    - generic [ref=e282]: "1"
+                    - generic [ref=e284]: "2"
+                    - generic [ref=e286]: "3"
+                    - generic [ref=e288]: "4"
+                    - generic [ref=e290]: "5"
+                    - generic [ref=e292]: "6"
+                    - generic [ref=e294]: "7"
+                    - generic [ref=e296]: "8"
+                    - link [ref=e298] [cursor=pointer]:
+                      - /url: /archive/?date=2026-08-09
+                      - generic [ref=e299]: "9"
+                    - generic [ref=e300]: "10"
+                    - generic [ref=e302]: "11"
+                    - generic [ref=e304]: "12"
+                    - link [ref=e306] [cursor=pointer]:
+                      - /url: /archive/?date=2026-08-13
+                      - generic [ref=e307]: "13"
+                    - generic [ref=e308]: "14"
+                    - generic [ref=e310]: "15"
+                    - generic [ref=e312]: "16"
+                    - generic [ref=e314]: "17"
+                    - generic [ref=e316]: "18"
+                    - generic [ref=e318]: "19"
+                    - generic [ref=e320]: "20"
+                    - generic [ref=e322]: "21"
+                    - generic [ref=e324]: "22"
+                    - generic [ref=e326]: "23"
+                    - generic [ref=e328]: "24"
+                    - generic [ref=e330]: "25"
+                    - generic [ref=e332]: "26"
+                    - generic [ref=e334]: "27"
+                    - generic [ref=e336]: "28"
+                    - generic [ref=e338]: "29"
+                    - generic [ref=e340]: "30"
+                    - generic [ref=e342]: "31"
+                    - button [ref=e344] [cursor=pointer]:
+                      - generic [ref=e345]: "1"
+                    - button [ref=e346] [cursor=pointer]:
+                      - generic [ref=e347]: "2"
+                    - button [ref=e348] [cursor=pointer]:
+                      - generic [ref=e349]: "3"
+                    - button [ref=e350] [cursor=pointer]:
+                      - generic [ref=e351]: "4"
+                    - button [ref=e352] [cursor=pointer]:
+                      - generic [ref=e353]: "5"
+                    - button [ref=e354] [cursor=pointer]:
+                      - generic [ref=e355]: "6"
+                  - generic [ref=e356]:
+                    - button "前往 2026年8月" [ref=e357] [cursor=pointer]:
+                      - generic [ref=e358]: "31"
+                    - generic [ref=e359]: "1"
+                    - generic [ref=e361]: "2"
+                    - generic [ref=e363]: "3"
+                    - generic [ref=e365]: "4"
+                    - generic [ref=e367]: "5"
+                    - generic [ref=e369]: "6"
+                    - generic [ref=e371]: "7"
+                    - generic [ref=e373]: "8"
+                    - generic [ref=e375]: "9"
+                    - generic [ref=e377]: "10"
+                    - generic [ref=e379]: "11"
+                    - generic [ref=e381]: "12"
+                    - generic [ref=e383]: "13"
+                    - generic [ref=e385]: "14"
+                    - generic [ref=e387]: "15"
+                    - generic [ref=e389]: "16"
+                    - generic [ref=e391]: "17"
+                    - generic [ref=e393]: "18"
+                    - generic [ref=e395]: "19"
+                    - generic [ref=e397]: "20"
+                    - generic [ref=e399]: "21"
+                    - generic [ref=e401]: "22"
+                    - generic [ref=e403]: "23"
+                    - generic [ref=e405]: "24"
+                    - generic [ref=e407]: "25"
+                    - generic [ref=e409]: "26"
+                    - generic [ref=e411]: "27"
+                    - generic [ref=e413]: "28"
+                    - generic [ref=e415]: "29"
+                    - generic [ref=e417]: "30"
+                    - button "前往 2026年10月" [ref=e419] [cursor=pointer]:
+                      - generic [ref=e420]: "1"
+                    - button "前往 2026年10月" [ref=e421] [cursor=pointer]:
+                      - generic [ref=e422]: "2"
+                    - button "前往 2026年10月" [ref=e423] [cursor=pointer]:
+                      - generic [ref=e424]: "3"
+                    - button "前往 2026年10月" [ref=e425] [cursor=pointer]:
+                      - generic [ref=e426]: "4"
+                    - button "前往 2026年10月" [ref=e427] [cursor=pointer]:
+                      - generic [ref=e428]: "5"
+                    - button "前往 2026年10月" [ref=e429] [cursor=pointer]:
+                      - generic [ref=e430]: "6"
+                    - button "前往 2026年10月" [ref=e431] [cursor=pointer]:
+                      - generic [ref=e432]: "7"
+                    - button "前往 2026年10月" [ref=e433] [cursor=pointer]:
+                      - generic [ref=e434]: "8"
+                    - button "前往 2026年10月" [ref=e435] [cursor=pointer]:
+                      - generic [ref=e436]: "9"
+                    - button "前往 2026年10月" [ref=e437] [cursor=pointer]:
+                      - generic [ref=e438]: "10"
+                    - button "前往 2026年10月" [ref=e439] [cursor=pointer]:
+                      - generic [ref=e440]: "11"
+                  - generic [aria-hidden] [ref=e441]:
+                    - button [ref=e442] [cursor=pointer]:
+                      - generic [ref=e443]: "28"
+                    - button [ref=e444] [cursor=pointer]:
+                      - generic [ref=e445]: "29"
+                    - button [ref=e446] [cursor=pointer]:
+                      - generic [ref=e447]: "30"
+                    - generic [ref=e448]: "1"
+                    - generic [ref=e450]: "2"
+                    - generic [ref=e452]: "3"
+                    - generic [ref=e454]: "4"
+                    - generic [ref=e456]: "5"
+                    - generic [ref=e458]: "6"
+                    - generic [ref=e460]: "7"
+                    - generic [ref=e462]: "8"
+                    - generic [ref=e464]: "9"
+                    - generic [ref=e466]: "10"
+                    - generic [ref=e468]: "11"
+                    - generic [ref=e470]: "12"
+                    - generic [ref=e472]: "13"
+                    - generic [ref=e474]: "14"
+                    - generic [ref=e476]: "15"
+                    - generic [ref=e478]: "16"
+                    - generic [ref=e480]: "17"
+                    - generic [ref=e482]: "18"
+                    - generic [ref=e484]: "19"
+                    - generic [ref=e486]: "20"
+                    - generic [ref=e488]: "21"
+                    - generic [ref=e490]: "22"
+                    - generic [ref=e492]: "23"
+                    - generic [ref=e494]: "24"
+                    - generic [ref=e496]: "25"
+                    - generic [ref=e498]: "26"
+                    - generic [ref=e500]: "27"
+                    - generic [ref=e502]: "28"
+                    - generic [ref=e504]: "29"
+                    - generic [ref=e506]: "30"
+                    - generic [ref=e508]: "31"
+                    - button [ref=e510] [cursor=pointer]:
+                      - generic [ref=e511]: "1"
+                    - button [ref=e512] [cursor=pointer]:
+                      - generic [ref=e513]: "2"
+                    - button [ref=e514] [cursor=pointer]:
+                      - generic [ref=e515]: "3"
+                    - button [ref=e516] [cursor=pointer]:
+                      - generic [ref=e517]: "4"
+                    - button [ref=e518] [cursor=pointer]:
+                      - generic [ref=e519]: "5"
+                    - button [ref=e520] [cursor=pointer]:
+                      - generic [ref=e521]: "6"
+                    - button [ref=e522] [cursor=pointer]:
+                      - generic [ref=e523]: "7"
+                    - button [ref=e524] [cursor=pointer]:
+                      - generic [ref=e525]: "8"
+              - generic [ref=e526]:
+                - generic [ref=e527]: 有文章
+                - generic [ref=e529]: 本月 0 个写作日
+          - generic [ref=e530]:
+            - generic [ref=e531]: 音乐播放器
+            - generic [ref=e535]:
+              - generic [ref=e538]:
+                - status [ref=e539]: 随时聆听
+                - button "播放列表" [ref=e541] [cursor=pointer]:
+                  - generic [ref=e542]: 71 首
+              - generic [ref=e545]:
+                - strong [ref=e546]: 东风破
+                - generic "周杰伦" [ref=e547]
+              - generic [ref=e548]:
+                - slider "播放进度" [disabled] [ref=e549]: "0"
+                - generic [ref=e550]:
+                  - generic [ref=e551]: 0:00
+                  - generic [ref=e552]: "-0:00"
+              - generic "播放控制" [ref=e553]:
+                - button "上一首" [ref=e554] [cursor=pointer]
+                - button "播放" [ref=e555] [cursor=pointer]
+                - button "下一首" [ref=e556] [cursor=pointer]
+              - generic [ref=e557]:
+                - button "静音" [ref=e558] [cursor=pointer]
+                - slider "音量" [ref=e559] [cursor=pointer]: "72"
+                - generic [ref=e560]: "72"
+    - generic:
+      - generic:
+        - button "Back to Top"

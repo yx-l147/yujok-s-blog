@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8a52aeea9a218299",
+            "id": "a555407912be79fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/倦怠.md",
+                "file": "src/content/thoughts/路旁.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "倦怠"
+              "title": "路旁"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/posts/倦怠.md",
+                "file": "src/content/posts/雨夜-流星.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/posts/倦怠.md",
+                "file": "src/content/posts/雨夜-流星.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/posts/倦怠.md",
+                "file": "src/content/posts/雨夜-流星.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,29 +188,37 @@
       "bases:新建数据库": false
     }
   },
-  "active": "8a52aeea9a218299",
+  "active": "a555407912be79fa",
   "lastOpenFiles": [
-    "dist/book/3300189343/index.html",
-    "dist/book/3300189343",
-    "dist/book/38153663/index.html",
-    "dist/book/38153663",
-    "dist/book/42849694/index.html",
-    "dist/book/42849694",
-    "dist/book/40223839/index.html",
-    "dist/book/40223839",
-    "dist/book/3300174383/index.html",
-    "dist/book/3300174383",
-    "dist/book/510936/index.html",
+    "2983f18be5bb478a7d243d6399888d75.jpg",
+    "351377be484682079f3498b49fd7f089.jpg",
+    "src/content/thoughts/reading-thoughts.md",
+    "src/content/thoughts/coding-and-writing.md",
+    "src/content/thoughts/路旁.md",
+    "src/content/posts/由多智能体系统引发的思考.md",
+    "src/content/thoughts/A thought about before people.md",
+    "src/content/posts/倦怠.md",
+    "src/content/posts/雨夜-流星.md",
+    "9dc6d5855b29107da250aefe56585dd2df4a2cd7-2000x1120.webp",
+    "34ffa8cc39ef8e749c5a371b5cb2c8df2dbd3e8f-1999x707.webp",
+    "5a5c187a6c2b5ccb492bcb7883df2066d49625de-2000x1200.webp",
+    "src/content/posts/流星配图.png",
+    "README.md",
+    "src/content/posts/ChatGPT Image 2026年8月13日 02_14_10.png",
+    "dist/pagefind/index/zh-cn_307df95.pf_index",
+    "dist/pagefind/fragment/zh-cn_e043ca3.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_c1b0d54.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_db2abd2.pf_fragment",
+    "dist/pagefind/fragment/zh-cn_bfd147a.pf_fragment",
+    "dist/pagefind/wasm.unknown.pagefind",
+    "dist/pagefind/pagefind.zh-cn_9ab469703ca19.pf_meta",
+    "dist/pagefind/pagefind-modular-ui.css",
+    "dist/pagefind/pagefind.js",
+    "dist/pagefind/pagefind-ui.css",
+    "dist/_astro/head.Douy_nZt_ZqY3w6.webp",
+    "dist/_astro/ChatGPT Image 2026年8月9日 23_28_55.CDqQrJAc_2d9U1c.webp",
     "dist/_astro/wallhaven-gwqq83.CvGk-h6V.jpg",
     "dist/_astro/head.Douy_nZt.jpg",
-    "dist/_astro/demo-banner.WD4SMgz_.png",
-    "dist/_astro/demo-avatar.CxcI0ivM.png",
-    "dist/_astro/ChatGPT Image 2026年8月9日 23_28_55.CDqQrJAc.png",
-    "dist/_astro/141106957_p0.DoswacqN.png",
-    "dist/_astro/141133240_p0.Cb7rM3IT.png",
-    "dist/_astro/141096207_p0.BS-8Jsas.jpg",
-    "dist/_astro/141095873_p0.CymphqzS.jpg",
-    "dist/_astro/141048638_p0.BX5MR4pg.jpg",
     "src/content/spec/Friends.md",
     "src/content/spec/about.md",
     "src/content/book-reviews/变态心理学-第11版-3300199311.md",
@@ -218,11 +226,7 @@
     "src/content/book-reviews/被讨厌的勇气-自我启发之父-阿德勒的哲学课-25615385.md",
     "src/content/book-reviews/爱的艺术-36557865.md",
     "src/content/book-reviews/柏拉图文艺对话集-37700254.md",
-    "src/content/posts/倦怠.md",
-    "src/content/thoughts/reading-thoughts.md",
     "src/content/posts/test.md",
-    "src/content/thoughts/coding-and-writing.md",
-    "README.md",
     "src/content/book-reviews/费曼物理学讲义-套装共5册-新千年版-3300060686.md",
     "src/content/book-reviews/我身上有个不可战胜的夏天-果麦经典-3300151990.md",
     "src/content/book-reviews/李太白诗集-中华国学经典精粹-661252.md",

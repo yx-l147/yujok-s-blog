@@ -157,7 +157,7 @@ function setWeek(week: number) {
 function weekLabel(week: number) {
 	const meta = term.weeks.find((item) => item.week === week);
 	if (!meta) return `第 ${week} 周`;
-	return `${meta.start.replace("2026-", "")} - ${meta.end.replace("2026-", "")}`;
+	return `${meta.start.slice(5)} - ${meta.end.slice(5)}`;
 }
 
 function formatWeekList(weeks: number[]) {
@@ -217,7 +217,7 @@ $: overviewGroups = summarizeCourses(term.courses);
 		<div class="hero-glow" aria-hidden="true"></div>
 		<div class="hero-main">
 			<div class="hero-copy">
-				<p class="eyebrow">2025-2026-2</p>
+				<p class="eyebrow">{term.semester}</p>
 				<h1 class="hero-title">课程表</h1>
 				<p class="hero-subtitle">
 					第 {selectedWeek} 周 · {weekMeta ? weekLabel(selectedWeek) : "教务门户数据"}
@@ -301,6 +301,14 @@ $: overviewGroups = summarizeCourses(term.courses);
 			<p class="range-note">
 				当前日期不在已导入课表范围内，已显示最接近的第 {selectedWeek} 周。
 			</p>
+		{/if}
+
+		{#if term.notes?.length}
+			<div class="term-notes" aria-label="课程备注">
+				{#each term.notes as note}
+					<p>{note}</p>
+				{/each}
+			</div>
 		{/if}
 	</div>
 
@@ -460,7 +468,10 @@ $: overviewGroups = summarizeCourses(term.courses);
 	.schedule-page {
 		display: flex;
 		flex-direction: column;
-		gap: 1.25rem;
+		gap: 1.5rem;
+		width: 100%;
+		min-width: 0;
+		overflow: hidden;
 		color: var(--sk-moon);
 	}
 
@@ -471,12 +482,19 @@ $: overviewGroups = summarizeCourses(term.courses);
 	.empty-state,
 	.overview-card {
 		border-radius: 28px;
+		min-width: 0;
 	}
 
 	.schedule-hero {
 		position: relative;
-		padding: 2rem;
+		padding: 2.15rem;
 		overflow: hidden;
+		background:
+			radial-gradient(740px circle at 4% -18%, color-mix(in srgb, var(--sk-river) 34%, transparent), transparent 53%),
+			radial-gradient(460px circle at 102% 108%, color-mix(in srgb, var(--sk-sakura) 20%, transparent), transparent 61%),
+			linear-gradient(135deg, color-mix(in srgb, #142842 92%, transparent), color-mix(in srgb, #0a1528 88%, transparent));
+		border: 1px solid color-mix(in srgb, var(--sk-river) 28%, var(--sk-glass-border));
+		box-shadow: 0 24px 60px color-mix(in srgb, #020814 54%, transparent);
 	}
 
 	.hero-glow {
@@ -502,7 +520,7 @@ $: overviewGroups = summarizeCourses(term.courses);
 
 	.hero-main {
 		display: flex;
-		align-items: flex-start;
+		align-items: stretch;
 		justify-content: space-between;
 		gap: 1.5rem;
 	}
@@ -511,58 +529,62 @@ $: overviewGroups = summarizeCourses(term.courses);
 	.section-head p {
 		margin: 0 0 0.35rem;
 		font-family: var(--sk-font-display);
-		font-size: 1rem;
+		font-size: 0.9rem;
 		color: var(--sk-comet);
-		letter-spacing: 0;
+		letter-spacing: 0.04em;
 	}
 
 	.hero-title {
 		margin: 0;
 		font-family: var(--sk-font-han);
-		font-size: 2.8rem;
+		font-size: clamp(2.45rem, 4vw, 3.35rem);
 		line-height: 1.05;
 		color: var(--sk-moon);
 		letter-spacing: 0;
 	}
 
 	.hero-subtitle {
-		margin: 0.8rem 0 0;
-		color: color-mix(in srgb, var(--sk-moon) 62%, transparent);
+		margin: 0.7rem 0 0;
+		color: color-mix(in srgb, var(--sk-moon) 66%, transparent);
+		font-size: 0.95rem;
 	}
 
 	.hero-stats {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(5.5rem, 1fr));
-		gap: 0.8rem;
-		min-width: 20rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.65rem;
+		min-width: 21rem;
+		width: 100%;
 	}
 
 	.stat {
-		padding: 1rem;
-		border-radius: 18px;
-		background: color-mix(in srgb, var(--sk-moon) 6%, transparent);
-		border: 1px solid color-mix(in srgb, var(--sk-river) 20%, transparent);
+		min-width: 0;
+		padding: 1.1rem 1rem 0.95rem;
+		border-radius: 16px;
+		background: linear-gradient(145deg, color-mix(in srgb, #2c4564 62%, transparent), color-mix(in srgb, #14243c 88%, transparent));
+		border: 1px solid color-mix(in srgb, var(--sk-river) 24%, transparent);
+		box-shadow: inset 0 1px 0 color-mix(in srgb, white 12%, transparent);
 	}
 
 	.stat span {
 		display: block;
 		font-family: var(--sk-font-display);
-		font-size: 2rem;
+		font-size: 2.15rem;
 		line-height: 1;
 		color: var(--sk-moon);
 	}
 
 	.stat p {
-		margin: 0.35rem 0 0;
+		margin: 0.4rem 0 0;
 		font-size: 0.78rem;
-		color: color-mix(in srgb, var(--sk-moon) 55%, transparent);
+		color: color-mix(in srgb, var(--sk-moon) 62%, transparent);
 	}
 
 	.hero-bottom {
 		display: grid;
 		grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr);
 		gap: 1rem;
-		margin-top: 1.6rem;
+		margin-top: 1.35rem;
 	}
 
 	.next-panel,
@@ -570,10 +592,11 @@ $: overviewGroups = summarizeCourses(term.courses);
 		display: flex;
 		align-items: center;
 		gap: 0.95rem;
-		padding: 1rem;
-		border-radius: 20px;
-		background: color-mix(in srgb, white 28%, transparent);
-		border: 1px solid color-mix(in srgb, var(--sk-glass-border) 88%, transparent);
+		padding: 1rem 1.1rem;
+		border-radius: 16px;
+		background: color-mix(in srgb, #0b1a30 72%, transparent);
+		border: 1px solid color-mix(in srgb, var(--sk-river) 20%, transparent);
+		box-shadow: inset 0 1px 0 color-mix(in srgb, white 8%, transparent);
 	}
 
 	.next-panel :global(svg) {
@@ -595,11 +618,11 @@ $: overviewGroups = summarizeCourses(term.courses);
 	.next-panel p {
 		margin: 0 0 0.15rem;
 		font-size: 0.75rem;
-		color: color-mix(in srgb, var(--sk-moon) 50%, transparent);
+		color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
 	}
 
 	.next-panel strong {
-		font-size: 1rem;
+		font-size: 1.06rem;
 		color: var(--sk-moon);
 	}
 
@@ -637,7 +660,10 @@ $: overviewGroups = summarizeCourses(term.courses);
 	}
 
 	.schedule-toolbar {
-		padding: 1rem;
+		padding: 0.9rem;
+		background: linear-gradient(145deg, color-mix(in srgb, #172a46 90%, transparent), color-mix(in srgb, #0d1c32 92%, transparent));
+		border: 1px solid color-mix(in srgb, var(--sk-river) 22%, var(--sk-glass-border));
+		box-shadow: 0 18px 46px color-mix(in srgb, #020814 35%, transparent);
 	}
 
 	.toolbar-row {
@@ -652,9 +678,11 @@ $: overviewGroups = summarizeCourses(term.courses);
 		display: inline-flex;
 		align-items: center;
 		gap: 0.35rem;
-		padding: 0.35rem;
-		border-radius: 16px;
-		background: color-mix(in srgb, var(--sk-moon) 7%, transparent);
+		padding: 0.3rem;
+		border-radius: 14px;
+		background: color-mix(in srgb, #071426 56%, transparent);
+		border: 1px solid color-mix(in srgb, white 8%, transparent);
+		min-width: 0;
 	}
 
 	button {
@@ -674,10 +702,11 @@ $: overviewGroups = summarizeCourses(term.courses);
 	}
 
 	.segmented button {
+		min-width: 0;
 		gap: 0.35rem;
 		min-height: 2.35rem;
 		padding: 0 0.85rem;
-		border-radius: 12px;
+		border-radius: 10px;
 		background: transparent;
 		color: color-mix(in srgb, var(--sk-moon) 62%, transparent);
 		font-weight: 700;
@@ -685,9 +714,9 @@ $: overviewGroups = summarizeCourses(term.courses);
 
 	.segmented button.active,
 	.week-arrows .this-week {
-		background: color-mix(in srgb, var(--sk-river) 18%, white 16%);
+		background: linear-gradient(135deg, color-mix(in srgb, var(--sk-river) 76%, #5f7c9e), color-mix(in srgb, var(--sk-violet) 52%, var(--sk-river)));
 		color: var(--sk-moon);
-		box-shadow: inset 0 1px 0 color-mix(in srgb, white 45%, transparent);
+		box-shadow: inset 0 1px 0 color-mix(in srgb, white 36%, transparent), 0 8px 18px color-mix(in srgb, var(--sk-river) 18%, transparent);
 	}
 
 	.segmented button:hover,
@@ -716,26 +745,35 @@ $: overviewGroups = summarizeCourses(term.courses);
 	}
 
 	.week-strip {
-		display: grid;
-		grid-template-columns: repeat(6, minmax(0, 1fr));
+		display: flex;
+		overflow-x: auto;
+		scrollbar-width: none;
 		gap: 0.65rem;
 		margin-top: 0.85rem;
+		padding: 0.1rem;
+		mask-image: linear-gradient(90deg, black 0%, black 93%, transparent 100%);
+	}
+
+	.week-strip::-webkit-scrollbar {
+		display: none;
 	}
 
 	.week-strip button {
+		flex: 0 0 8.15rem;
 		flex-direction: column;
 		gap: 0.15rem;
 		min-height: 3.6rem;
 		padding: 0.55rem 0.7rem;
-		border-radius: 16px;
-		background: color-mix(in srgb, var(--sk-moon) 5%, transparent);
-		color: color-mix(in srgb, var(--sk-moon) 65%, transparent);
+		border-radius: 13px;
+		background: color-mix(in srgb, #09182d 56%, transparent);
+		color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+		border: 1px solid color-mix(in srgb, white 5%, transparent);
 	}
 
 	.week-strip button.active {
 		color: white;
-		background: linear-gradient(135deg, color-mix(in srgb, var(--sk-river) 78%, transparent), color-mix(in srgb, var(--sk-violet) 70%, transparent));
-		box-shadow: 0 12px 28px color-mix(in srgb, var(--sk-river) 24%, transparent);
+		background: linear-gradient(135deg, color-mix(in srgb, var(--sk-river) 82%, #5276a2), color-mix(in srgb, var(--sk-violet) 68%, var(--sk-river)));
+		box-shadow: 0 10px 22px color-mix(in srgb, var(--sk-river) 24%, transparent);
 	}
 
 	.week-strip span {
@@ -748,9 +786,25 @@ $: overviewGroups = summarizeCourses(term.courses);
 	}
 
 	.range-note {
-		margin: 0.8rem 0 0;
+		margin: 0.75rem 0 0;
+		padding-left: 0.7rem;
+		border-left: 2px solid color-mix(in srgb, var(--sk-sunset) 70%, transparent);
 		font-size: 0.82rem;
-		color: color-mix(in srgb, var(--sk-sunset) 78%, var(--sk-moon));
+		color: color-mix(in srgb, var(--sk-sunset) 64%, var(--sk-moon));
+	}
+
+	.term-notes {
+		margin: 0.8rem 0 0;
+		padding: 0.7rem 0.85rem;
+		border-radius: 10px;
+		background: color-mix(in srgb, #07162a 45%, transparent);
+		border: 1px solid color-mix(in srgb, white 6%, transparent);
+		color: color-mix(in srgb, var(--sk-moon) 70%, transparent);
+		font-size: 0.82rem;
+	}
+
+	.term-notes p {
+		margin: 0;
 	}
 
 	.section-head {
@@ -758,13 +812,13 @@ $: overviewGroups = summarizeCourses(term.courses);
 		align-items: flex-end;
 		justify-content: space-between;
 		gap: 1rem;
-		margin: 0.4rem 0 1rem;
+		margin: 0.55rem 0 1.1rem;
 	}
 
 	.section-head h2 {
 		margin: 0;
 		font-family: var(--sk-font-han);
-		font-size: 1.45rem;
+		font-size: 1.6rem;
 		color: var(--sk-moon);
 		letter-spacing: 0;
 	}
@@ -898,22 +952,28 @@ $: overviewGroups = summarizeCourses(term.courses);
 
 	.empty-state {
 		display: grid;
-		place-items: center;
-		padding: 3rem 1.5rem;
-		text-align: center;
+		grid-template-columns: auto minmax(0, 1fr);
+		align-items: center;
+		column-gap: 1rem;
+		padding: 1.3rem 1.5rem;
+		min-height: 8.5rem;
+		text-align: left;
+		background: linear-gradient(135deg, color-mix(in srgb, #142a47 78%, transparent), color-mix(in srgb, #09172a 86%, transparent));
+		border: 1px solid color-mix(in srgb, var(--sk-river) 22%, transparent);
 	}
 
 	.empty-state :global(svg) {
-		font-size: 2.2rem;
+		grid-row: span 2;
+		font-size: 2.5rem;
 		color: var(--sk-comet);
 	}
 
 	.empty-state h3 {
-		margin: 0.8rem 0 0.3rem;
+		margin: 0;
 	}
 
 	.empty-state p {
-		margin: 0;
+		margin: 0.25rem 0 0;
 		color: color-mix(in srgb, var(--sk-moon) 58%, transparent);
 	}
 
@@ -1149,7 +1209,6 @@ $: overviewGroups = summarizeCourses(term.courses);
 			min-width: 0;
 		}
 
-		.week-strip,
 		.overview-grid {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
@@ -1193,20 +1252,6 @@ $: overviewGroups = summarizeCourses(term.courses);
 			justify-content: space-between;
 		}
 
-		.week-strip {
-			display: flex;
-			overflow-x: auto;
-			scrollbar-width: none;
-		}
-
-		.week-strip::-webkit-scrollbar {
-			display: none;
-		}
-
-		.week-strip button {
-			min-width: 8rem;
-		}
-
 		.desktop-grid {
 			display: none;
 		}
@@ -1233,6 +1278,20 @@ $: overviewGroups = summarizeCourses(term.courses);
 			align-items: flex-start;
 			flex-direction: column;
 			gap: 0.35rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.segmented button,
+		.week-arrows button,
+		.week-strip button,
+		.course-card,
+		.overview-card {
+			transition: none;
+		}
+
+		.course-card.current {
+			animation: none;
 		}
 	}
 </style>

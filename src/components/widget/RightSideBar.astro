@@ -13,6 +13,37 @@ interface Props {
 const className = Astro.props.class;
 const cfg = siteConfig.rightSidebar;
 
+const localMusicFiles = import.meta.glob("./music/*.mp3", {
+	eager: true,
+	query: "?url",
+	import: "default",
+}) as Record<string, string>;
+
+function trackFromFile(path: string, src: string) {
+	const fileName = path.split("/").pop()?.replace(/\.mp3$/i, "") ?? "未命名";
+	const cleaned = fileName.replace(/^\d{2,3}[.\s\u00a0]*/, "").trim();
+	const parenthetical = cleaned.match(/^(.+?)[（(]([^（）()]+)[）)]$/);
+	if (parenthetical) {
+		return { title: parenthetical[1].trim(), artist: parenthetical[2].trim(), src };
+	}
+
+	const parts = cleaned.split(/\s+-\s+/);
+	if (parts.length > 1) {
+		return {
+			title: parts.slice(1).join(" - ").trim(),
+			artist: parts[0].trim(),
+			src,
+		};
+	}
+
+	return { title: cleaned, artist: "本地收藏", src };
+}
+
+const localTracks = Object.entries(localMusicFiles)
+	.sort(([left], [right]) => left.localeCompare(right, "zh-CN"))
+	.map(([path, src]) => trackFromFile(path, src));
+const playerTracks = localTracks.length ? localTracks : cfg.musicPlayer.tracks;
+
 let postDates: string[] = [];
 if (cfg.calendar.enable) {
 	const posts = await getSortedPostsList();
@@ -34,7 +65,7 @@ if (cfg.calendar.enable) {
         )}
         {cfg.musicPlayer.enable && (
             <WidgetLayout name="音乐播放器" id="music-widget" class="onload-animation" style="animation-delay: 200ms">
-                <MusicPlayer client:only="svelte" tracks={cfg.musicPlayer.tracks} />
+                <MusicPlayer client:only="svelte" tracks={playerTracks} />
             </WidgetLayout>
         )}
     </div>

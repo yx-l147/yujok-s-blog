@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import { url } from "../../utils/url-utils";
 
 const className = Astro.props.class;
@@ -23,13 +23,13 @@ function formatDate(d: Date) {
 	return `${month}/${day}`;
 }
 
-async function getExcerpt(thought: any) {
+async function getExcerpt(thought: CollectionEntry<"thoughts">) {
 	const { remarkPluginFrontmatter } = await import("astro:content").then((m) =>
 		m.render(thought),
 	);
 	const excerpt = String(remarkPluginFrontmatter.excerpt || "");
 	return excerpt.length > 60
-		? excerpt.slice(0, 60) + "…"
+		? `${excerpt.slice(0, 60)}…`
 		: excerpt || thought.data.title;
 }
 ---

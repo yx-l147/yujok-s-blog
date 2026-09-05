@@ -40,6 +40,9 @@ jh-*.png
 # 开发服务器等运行日志
 *.log
 
+# oh-my-posh 终端缓存（误提交，与项目无关）
+omp.cache
+
 # macOS-specific files
 .DS_Store
 

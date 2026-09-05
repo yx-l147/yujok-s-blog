@@ -11,10 +11,10 @@ onMount(() => {
 		window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 	if (reduced) return;
 
-	let x = window.innerWidth / 2,
-		y = window.innerHeight / 2;
-	let tx = x,
-		ty = y;
+	let x = window.innerWidth / 2;
+	let y = window.innerHeight / 2;
+	let tx = x;
+	let ty = y;
 	let visible = false;
 	let hideTimer = 0;
 

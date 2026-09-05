@@ -25,21 +25,22 @@ const validNotes = notes
 const PAGE_SIZE = 9;
 
 // 洗牌算法
-const shuffleArray = <T,>(arr: T[]): T[] => {
+function shuffleArray<T>(arr: T[]): T[] {
 	const a = [...arr];
 	for (let i = a.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 		[a[i], a[j]] = [a[j], a[i]];
 	}
 	return a;
-};
+}
 
 // 构建单页尽可能来自不同书本的高多度数据池 (Maximal Book Diversity Sampling)
 const buildDiverseBookPool = (all: typeof validNotes) => {
 	const bookMap = new Map<string, typeof validNotes>();
 	all.forEach((n) => {
-		if (!bookMap.has(n.bookId)) bookMap.set(n.bookId, []);
-		bookMap.get(n.bookId)!.push(n);
+		const list = bookMap.get(n.bookId) ?? [];
+		list.push(n);
+		bookMap.set(n.bookId, list);
 	});
 
 	// 对每本书内的划线进行随机打乱
@@ -57,7 +58,8 @@ const buildDiverseBookPool = (all: typeof validNotes) => {
 			if (usedInBatch.size >= PAGE_SIZE) break;
 			const list = bookMap.get(bKey);
 			if (list && list.length > 0) {
-				pool.push(list.pop()!);
+				const item = list.pop();
+				if (item) pool.push(item);
 				usedInBatch.add(bKey);
 				if (list.length === 0) bookMap.delete(bKey);
 			}
@@ -70,7 +72,8 @@ const buildDiverseBookPool = (all: typeof validNotes) => {
 				if (pool.length % PAGE_SIZE === 0) break;
 				const list = bookMap.get(bKey);
 				if (list && list.length > 0) {
-					pool.push(list.pop()!);
+					const item = list.pop();
+					if (item) pool.push(item);
 					if (list.length === 0) bookMap.delete(bKey);
 				}
 			}

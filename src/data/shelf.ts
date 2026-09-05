@@ -152,7 +152,9 @@ export async function getEnrichedShelfData(): Promise<BookShelfData> {
 					bookCover: book.cover,
 					chapter: quote.chapter || "本地精选",
 					text: quote.text,
-					createTime: new Date(review.published.getTime() + index).toISOString(),
+					createTime: new Date(
+						review.published.getTime() + index,
+					).toISOString(),
 				}));
 		},
 	);

@@ -277,6 +277,7 @@ import {
 	// ClickScrollPlugin
 } from 'overlayscrollbars';
 import {getHue, getStoredTheme, setHue, setTheme} from "../utils/setting-utils";
+import { preserveRuntimeStyles } from "../utils/swup-runtime-styles";
 import {pathsEqual, url} from "../utils/url-utils";
 import {
 	BANNER_HEIGHT,
@@ -449,6 +450,8 @@ function init() {
 init();
 
 const setup = () => {
+	// Retain runtime CSS belonging to islands outside Swup's replaced containers.
+	preserveRuntimeStyles(window.swup);
 	// TODO: temp solution to change the height of the banner
 /*
 	window.swup.hooks.on('animation:out:start', () => {

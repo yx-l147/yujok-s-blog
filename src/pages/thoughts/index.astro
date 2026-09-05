@@ -16,8 +16,12 @@ const thoughts = allThoughts.sort(
 const byYear = new Map<number, typeof thoughts>();
 for (const t of thoughts) {
 	const y = t.data.published.getFullYear();
-	if (!byYear.has(y)) byYear.set(y, []);
-	byYear.get(y)!.push(t);
+	const list = byYear.get(y);
+	if (list) {
+		list.push(t);
+	} else {
+		byYear.set(y, [t]);
+	}
 }
 
 function fmtDate(d: Date) {

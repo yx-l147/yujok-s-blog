@@ -18,7 +18,7 @@ export function getWeReadVid(bookId: string): string {
 	}
 
 	for (let i = 0; i < fa.length; i++) {
-		const hex = parseInt(fa[i], 10).toString(16);
+		const hex = Number.parseInt(fa[i], 10).toString(16);
 		const code = i === 0 ? "3" : "2";
 		result += code + hex;
 	}
@@ -67,7 +67,7 @@ export function getDoubanUrl(
 	if (book.localReview?.doubanId) {
 		return `https://book.douban.com/subject/${book.localReview.doubanId}/`;
 	}
-	if (book.isbn && book.isbn.trim()) {
+	if (book.isbn?.trim()) {
 		return `https://www.douban.com/search?cat=1001&q=${encodeURIComponent(
 			book.isbn.trim(),
 		)}`;

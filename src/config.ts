@@ -56,7 +56,19 @@ export const siteConfig: SiteConfig = {
 			//     src:    "https://example.com/lit.mp3",
 			//   },
 			// ],
-			tracks: [],
+			tracks: [
+  {
+    title: "Avid",
+    artist: "SawanoHiroyuki[nZk]:mizuki",
+    src: "/audio/avid.mp3",
+    cover: "/images/avid-cover.jpg"
+  },
+  {
+    title: "リテラチュア",
+    artist: "上田丽奈",
+    src: "https://example.com/lit.mp3"
+  }
+]
 		},
 	},
 	favicon: [],
