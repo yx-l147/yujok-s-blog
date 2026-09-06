@@ -1,6 +1,38 @@
 {
 	"books": [
 		{
+			"bookId": "3300209916",
+			"title": "人的境况The Human Condition（英文原版）",
+			"author": "[美] 汉娜·阿伦特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_hraovuradhuus3ivhz76jv/t6_cpplatform_hraovuradhuus3ivhz76jv1780898598.jpg",
+			"category": "教育学习-外语",
+			"finishReading": 0,
+			"readUpdateTime": 1788683785,
+			"updateTime": 1780912501,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "32282893",
+			"title": "人的境况",
+			"author": "汉娜·阿伦特",
+			"cover": "https://cdn.weread.qq.com/weread/cover/25/YueWen_32282893/t6_YueWen_32282893.jpg",
+			"category": "哲学宗教-哲学著作",
+			"finishReading": 0,
+			"readUpdateTime": 1788684225,
+			"updateTime": 1719565007,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300196086",
 			"title": "略萨作品：酒吧长谈（纪念版）",
 			"author": "[秘]马里奥·巴尔加斯·略萨",
@@ -99,7 +131,7 @@
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
 			"publicRating": 8.3,
-			"ratingCount": 27,
+			"ratingCount": 28,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4de32f70813abbcd4g018e82"
@@ -395,7 +427,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31475,
+			"ratingCount": 31490,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -571,7 +603,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1362,
+			"ratingCount": 1365,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -819,7 +851,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 504,
+			"ratingCount": 507,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1218,7 +1250,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 7.9,
+			"publicRating": 8,
 			"ratingCount": 27,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -1243,7 +1275,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2141,
+			"ratingCount": 2145,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -1267,7 +1299,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4771,
+			"ratingCount": 4772,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -1942,15 +1974,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 7,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《徐志摩诗全集》是中国现代诗人徐志摩的诗歌作品全集，内容囊括了徐志摩的所有诗歌作品，包括《志摩的诗》《猛虎集》《翡冷翠的一夜》《云游》和“集外集”五个部分。其中前四个部分是徐志摩诗集的单行本，最后的“集外集”部分，则是编者从报刊、徐志摩日记等处辑录的徐志摩未收入诗集的作品。本书收录了徐志摩已刊发和发现的全部诗歌作品，能让读者更为全面地了解、品读徐志摩的诗作。",
-			"publisher": "新世界出版社",
-			"translator": "",
-			"publicRating": 7.6,
-			"ratingCount": 644,
-			"publishTime": "2014-10-01 00:00:00",
-			"isbn": "9787510434983",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e4e323905caaafe4e5541bd"
+			"tags": []
 		},
 		{
 			"bookId": "29629921",
@@ -2002,8 +2026,8 @@
 			"intro": "《要么孤独要么庸俗》是德国哲学家叔本华一部兼具思想深度的常识读本，集中体现了他对人生意义、幸福本质与孤独命运的深刻洞察。书中通过“叔本华”这一哲人视角，揭示大众趋于庸俗是出于对痛苦的逃避，而真正独立思考者则注定与孤独为伴。他剖析人与人之间的表面关系，指出只有少数灵魂能在孤独中保持精神的高贵。全书语言犀利，富于警句，是一部引导人正视自身处境、思考个体价值的重要哲学读本。",
 			"publisher": "",
 			"translator": "陈曌",
-			"publicRating": 7.7,
-			"ratingCount": 1333,
+			"publicRating": 7.8,
+			"ratingCount": 1334,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2059,7 +2083,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77754,
+			"ratingCount": 77772,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -2103,7 +2127,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/91/cpplatform_jsnnbp9ffxw1qszwqgwrwk/t6_cpplatform_jsnnbp9ffxw1qszwqgwrwk1776160717.jpg",
 			"category": "心理-心理学应用",
 			"finishReading": 0,
-			"readUpdateTime": 1784824414,
+			"readUpdateTime": 1788669317,
 			"updateTime": 1776164621,
 			"progress": 0,
 			"noteCount": 4,
@@ -2435,7 +2459,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6622,
+			"ratingCount": 6626,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -2491,7 +2515,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17065,
+			"ratingCount": 17067,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2787,7 +2811,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3314,
+			"ratingCount": 3319,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -3043,7 +3067,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 520,
+			"ratingCount": 522,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -3259,7 +3283,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6258,
+			"ratingCount": 6259,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -3331,7 +3355,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4348,
+			"ratingCount": 4349,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -3438,7 +3462,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.5,
-			"ratingCount": 470,
+			"ratingCount": 471,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -3662,7 +3686,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1476,
+			"ratingCount": 1477,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -3702,7 +3726,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1902,
+			"ratingCount": 1903,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -3950,7 +3974,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15428,
+			"ratingCount": 15433,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -4134,7 +4158,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1464,
+			"ratingCount": 1465,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -4190,7 +4214,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7393,
+			"ratingCount": 7394,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -4494,7 +4518,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9805,
+			"ratingCount": 9809,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -4630,7 +4654,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169667,
+			"ratingCount": 169693,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -4698,6 +4722,30 @@
 			"bookmarkCount": 0,
 			"readTime": 0,
 			"tags": []
+		},
+		{
+			"bookId": "3300210710",
+			"title": "低生育社会，谁来接住每一代人的不安？",
+			"author": "费雯",
+			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 1,
+			"readUpdateTime": 1788685819,
+			"updateTime": 1780916284,
+			"progress": 98,
+			"noteCount": 42,
+			"reviewCount": 1,
+			"bookmarkCount": 20,
+			"readTime": 0,
+			"tags": [],
+			"intro": "一句“过去那么穷都能养几个”，掩盖了多少被忽略的童年和女性牺牲？本书从人口焦虑出发，直面代际观念的碰撞：长辈记得的是热闹大家庭，年轻人看到的是房贷、失业风险、教育竞争、养老压力和不平等的育儿分工。它拆解高生育年代的运行逻辑，也解释今天的年轻人为何对生育如此谨慎。我们将重新思考：一个孩子，究竟应该在怎样的条件下被迎接。",
+			"publisher": "",
+			"translator": "",
+			"publicRating": 8.1,
+			"ratingCount": 198,
+			"publishTime": "2026-05-18 00:00:00",
+			"isbn": "",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
 		},
 		{
 			"bookId": "3300063647",
@@ -5142,7 +5190,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3434,
+			"ratingCount": 3437,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -5390,7 +5438,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23309,
+			"ratingCount": 23312,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -5598,7 +5646,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.5,
-			"ratingCount": 1488,
+			"ratingCount": 1489,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -6114,19 +6162,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
 			"category": "心理-心理学研究",
 			"finishReading": 0,
-			"readUpdateTime": 1788605122,
+			"readUpdateTime": 1788687913,
 			"updateTime": 1765788388,
 			"progress": 57,
-			"noteCount": 166,
+			"noteCount": 179,
 			"reviewCount": 9,
-			"bookmarkCount": 33,
-			"readTime": 28916,
+			"bookmarkCount": 34,
+			"readTime": 29560,
 			"tags": [],
 			"intro": "存在主义治疗并非一个独立的治疗流派，而是每一个心理治疗师在其临床工作和个人生活中都可能会采用到的一种精神取向，或者说是生活哲学。存在主义治疗所基于的假设是：我们是自由的，并且要为自己的选择及行动负责任。 长期以来，存在主义治疗被广泛地应用在世界各地的临床实践工作中，但它缺乏一致性的结构、对其原则的分析以及对其有效性的评估。欧文•亚隆教授自1970年以来就已经在团体治疗的理论和实践中实施了存在主义的原则，并在大量的理论研究和临床实践中逐渐为存在主义心理治疗构建出一个较为系统的框架。 在本书中，亚隆教授从临床经验、实证性研究、哲学文献以及其他大量资料出发，围绕着四个“生命的终极关怀”——死亡、自由、存在的孤独和无意义——逐一进行深入探讨，阐述每一个存在性关怀的意义，并论述治疗师应该如何通过对它们的理解来进行有效的临床工作。心理治疗的根本问题与人类存在的核心问题在这里相遇，不仅为那些存在主义取向的心理治疗师提供了一部经典的教科书，同时也为所有流派的治疗师以及所有思考过人生意义的人提供了一个对生命和存在进行反思的空间。",
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2682,
+			"ratingCount": 2683,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -6182,7 +6230,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "李继宏",
 			"publicRating": 8.3,
-			"ratingCount": 6707,
+			"ratingCount": 6709,
 			"publishTime": "2013-07-01 00:00:00",
 			"isbn": "9787201082134",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
@@ -6206,7 +6254,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6829,
+			"ratingCount": 6828,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -6278,7 +6326,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81231,
+			"ratingCount": 81248,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -6318,7 +6366,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2874,
+			"ratingCount": 2876,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -6358,7 +6406,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 222,
+			"ratingCount": 223,
 			"publishTime": "2012-05-01 00:00:00",
 			"isbn": "9787532633500",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c7b325a071d512a7c7bf71d"
@@ -6558,7 +6606,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4155,
+			"ratingCount": 4158,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -6598,7 +6646,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44103,
+			"ratingCount": 44121,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -6782,7 +6830,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1535,
+			"ratingCount": 1536,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -34430,6 +34478,342 @@
 			"createTime": "2026-03-23T06:36:20"
 		},
 		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "年轻人活得越清醒，旧的那套制度就越难转得动；而新制度如果迟迟不建立，年轻人就越是不敢生。解决问题的起点，是社会得承认，年轻人的这份谨慎其实是合理的，它反而也是让生育重新获得尊严的起点。",
+			"createTime": "2026-09-06T08:48:36"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "供新的支持。真正让人揪心的，正是这两者之间的断裂。",
+			"createTime": "2026-09-06T08:48:32"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "同时揭示了两件事：个体开始拒绝盲目地承担责任，而社会还没能及时提",
+			"createTime": "2026-09-06T08:48:28"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "如果把提高生育率当成唯一目标，就很容易忽视孩子出生后的真实处境。我们更该问的是：什么样的社会，才能让人愿意生，也能让孩子好好长大？",
+			"createTime": "2026-09-06T08:48:18"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "如果孩子们出生后，依然要面对高压的教育环境、不平等的性别分工和动荡的家庭关系，那么即便出生人数增加了，也并不代表这个社会变好了。反过来说，就算出生率在短期内没法回升，只要我们能改善劳动制度、养老服务、教育公平和性别平等，也能实实在在地减轻少子化带来的阵痛。",
+			"createTime": "2026-09-06T08:47:59"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "7. 低生育社会真正该担心什么",
+			"text": "当一个社会进入“少子高龄化”状态，照护工作量会呈指数级增长。到时候，谁来照顾老人？谁来支付高昂的护理费？谁来维持公共财政的运转？这些都是避不开的现实难题。",
+			"createTime": "2026-09-06T08:46:36"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "从一些社会的经验来看，性别平等做得越好的地方，女性就越敢考虑生育。",
+			"createTime": "2026-09-06T08:46:17"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "爹的能不能分担足够的照护责任？企业能不能少点看不见的歧视？公共托育服务能不能覆盖到年幼的孩子？产假和育儿假能不能让夫妻俩一起休？还有家庭财产和家务活儿能不能分得公平点？生孩子从来不是女性一个人的任务，",
+			"createTime": "2026-09-06T08:46:09"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "拒绝没有保障的自我牺牲，其实是社会进步中再正常不过的变化。现在不少催生的话语，其实还停留在老掉牙的观念里。动不动就赞美女性伟大，把母爱说成天生的本能，催着女性趁年轻赶紧生，甚至反过来指责女性太挑剔、太独立。这种话听着是在捧高母亲，实际上是把她们钉在了“自我牺牲”的架子上。如果一个社会只知道在口头上歌颂母亲，却不愿实实在在地减少“母亲惩罚”​，那结果显而易",
+			"createTime": "2026-09-06T08:45:57"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "家庭内部的分工，也直接决定了女性想不想生。即便夫妻俩都上班，可孩子发烧了谁请假？幼儿园群里的消息谁回复，疫苗谁去预约，换季衣物谁整理，辅食谁来做，作业谁来盯着检查，兴趣班谁负责接送？这些琐事往往有一个默认的答案。很多当父亲的确实愿意表达爱，周末也愿意陪孩子疯玩，可日常那些细碎、磨人的管理工作，大头还是落在母亲肩上。长此以往，母亲不仅付出了大量时间，还承担了维持家庭运转的全部组织责任。",
+			"createTime": "2026-09-06T08:45:13"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "如果政策只是单纯延长产假，而没有建立起合理的成本分担机制，企业反而可能更想避开育龄女性。这种保护要是设计得不周全，在执行过程中反而会变成一种新的排斥理由。",
+			"createTime": "2026-09-06T08:45:00"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "6. 女性承担的长期成本",
+			"text": "聊起生育率，有个谁也绕不开的真相：怀孕、分娩到产后恢复，全得靠女性的身体去硬扛，这事却长期被社会轻描淡写地带",
+			"createTime": "2026-09-06T08:43:24"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "更关键的一点是，现在的生育决定已经变得高度个体化了。以前养孩子，家庭、单位、村庄甚至宗族都会搭把手，起码能提供某种监督或支持，可现在的年轻夫妻往往是独自面对高昂的市场价格和制度上的缺口。托育机构收费贵，质量还参差不齐；教育竞争又太激烈，家庭投入被无限放大；再加上医疗、养老、住房，样样都得自己提前攒钱。当家庭被要求“自负盈亏”时，生育率下降几乎是必然的。",
+			"createTime": "2026-09-06T08:43:10"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "其实很多年轻人过得并不轻松，他们只是在高压工作之余，用有限的消费来维持一点生活的尊严。他们不敢把自己的人生全部押在房贷、养娃和职场的各种惩罚性规则上。",
+			"createTime": "2026-09-06T08:42:58"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "还有一个常被大家忽略的因素，就是社会评价变了。过去一个人到了岁数不结婚生子，会面临巨大的舆论压力。虽然今天这种压力还在，但已经没法完全左右个人的生活了。城市生活给了年轻人更多自由呼吸的空间，女性在经济上更加独立，单身生活的可行性也变高了，朋友的陪伴和个",
+			"createTime": "2026-09-06T08:42:47"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "婚姻状况本身也在左右着生育。现在大家结婚越来越晚，不婚的人也多了，离婚的风险更是被很多人提前算进了账里。",
+			"createTime": "2026-09-06T07:10:39"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "通勤路又远，家里就只能花钱买服务，或者牺牲掉一个人的职业前途。而在现实里，被牺牲掉的往往是女性的工作机会。",
+			"createTime": "2026-09-06T07:10:33"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "社会总要求年轻人做出长远承诺，可劳动力市场给的却是短期安全感。这种错位让生育决定变得像是一场冒险。如果一个人连两年后自己还在不在岗都心里没底，又怎么敢去规划十八年后的教育开销呢？",
+			"createTime": "2026-09-06T07:10:15"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "5. 年轻人为什么不敢轻易点头",
+			"text": "这样的家庭并不算困难群体。恰恰是因为他们受过教育，有稳定的工作和基本的收入，才更清楚这笔账根本算不到底。收入看着还行，可经不起长期停工、生病、裁员或者照护人手的短缺。住房几乎掏空了家里大部分的现金流，而激烈的教育竞争又让未来的成本一涨再涨。一个孩子的到来，增加的不只是当月的账单，它会彻底改变一个家庭未来至少二十年的生活轨迹。",
+			"createTime": "2026-09-06T07:09:18"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "这其实是在提醒我们，所谓负责任的生育，核心不在于抹平生活里所有的风险，而是在于你明知道风险就在那儿，却依然愿意为了孩子去长期承担。",
+			"createTime": "2026-09-06T07:08:40"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "老一辈总爱说：“哪有准备好了才生的？孩子来了自然就能养活。”可这话背后，其实是旧时代对风险的一种习惯性忍受。",
+			"createTime": "2026-09-06T07:08:23"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "父母不再只是管吃管住的供养者，还得学会尊重边界，提供稳定的照护。你不能随便翻看孩子的隐私，不能把暴力美化成“为你好”，不能逼孩子去实现你当年的升学梦，更不能把孩子当成修补夫妻关系的工具。这些要求确实提升了文明程度，但也让准父母感到了前所未有的压力。",
+			"createTime": "2026-09-06T07:06:04"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "教育的普及让大家更看重个体权利，城市化让年轻人脱离了宗族和邻里的束缚，互联网也让无数家庭琐事被摆到台面上公开讨论。儿童保护、心理健康、反家暴、性别平等等词汇，逐渐成了日常语言。很多人第一次意识到，过去那些所谓的“管教”其实是伤害，所谓的“懂事”其实是过度的自我牺牲，而那些所谓的“孝顺”安排，往往压缩了个人选择的空间。",
+			"createTime": "2026-09-06T07:04:41"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "孩子没法选择要不要出生，可一旦落地，就背上了沉重的还债义务。父母付出得越多，要求就越多；孩子对家庭越依赖，就越难拒绝。父母把付出当成了控制的筹码，孩子则把成长当成了一个漫长的还债过程。",
+			"createTime": "2026-09-06T07:04:03"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "一个还没出生的人，竟然被提前纳入了道德考量的范畴。这种心态确实会冲淡生育的冲动，但它也让生育变成了一个更负责任的决定。",
+			"createTime": "2026-09-06T07:03:44"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "4. 当孩子终于被当成独立的人",
+			"text": "现在很多年轻人聊起孩子，头一个问题早就不再是“我想不想要”，而是“这孩子来到世上，到底能得到什么”。它背后的意义非同寻常。",
+			"createTime": "2026-09-06T06:59:31"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "一个社会如果只顾着歌颂父母的辛苦，却不肯承认孩子付出的代价，这种讨论本身就是失衡的。",
+			"createTime": "2026-09-06T06:58:22"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "今天很多成年人提起童年，倒不见得有多怨恨父母，他们心里明白父母不容易，也知道那个时代艰难，但他们同样很清楚，自己从小得到的养育确实是不充分的。",
+			"createTime": "2026-09-06T06:58:07"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "大孩子总被要求要“懂事”，而所谓的懂事，往往意味着少要东西、少提要求、多替爹妈分担。",
+			"createTime": "2026-09-06T06:57:57"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "至于孩子成年后带着多少心理缺憾，很少有人去追问。在多子女家庭里，资源的分配往往有一套清晰的潜规则。男孩通常优先，成绩好的优先，排行靠前或者最受父母器重的也优先。",
+			"createTime": "2026-09-06T06:57:03"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "一个孩子如果长期缺少照料，生了病没法及时治疗，被迫辍学，或者被要求为了弟妹牺牲自己的前途，这些伤害都是实实在在的。",
+			"createTime": "2026-09-06T06:56:50"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "3. 多生多养的低标准童年",
+			"text": "现在很多人回忆往事，常把这种低成本的抚养方式说成朴素、坚韧、好养活。但这也意味着孩子的需求被压缩到了生存的最低限度。",
+			"createTime": "2026-09-06T06:56:29"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "2. 养儿防老曾经怎样运行",
+			"text": "父母说：“我养你小，你得养我老。”子女说：“我想照顾你，但我自己活着都已经拼尽全力了。”",
+			"createTime": "2026-09-06T06:55:35"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "2. 养儿防老曾经怎样运行",
+			"text": "但现在的养老底座已经变了样。养老金、医保、商业保险，还有社区服务、养老院，这些东西正一点点渗进普通人的生活。",
+			"createTime": "2026-09-06T06:55:06"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "2. 养儿防老曾经怎样运行",
+			"text": "所以，重男轻女并不单纯是因为偏见，它和财产分配、养老安排、居住习惯以及宗族权力是紧紧捆绑在一起的。正是因为有了这些现实利益的支撑，这种偏见才变得如此顽固，难以被打破。",
+			"createTime": "2026-09-06T06:53:50"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "孩子不是家庭的资产，更不是父母为晚年准备的预备方案。一个孩子来到这个世界，他需要的不仅仅是食物、衣服和一张床位，更需要一份长期且稳定的责任。",
+			"createTime": "2026-09-06T06:52:52"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "到底是谁牺牲了上学的机会？谁被要求无条件让步？谁小小年纪就承担起照护全家的重担？谁在成年后还在不停地偿还家庭债务？又有谁仅仅因为性别或排行，就失去了改变命运的机会？",
+			"createTime": "2026-09-06T06:52:36"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "一个人在有限的条件下拼命生活，并不能抵消制度本身存在的问题。",
+			"createTime": "2026-09-06T06:52:13"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "但与此同时，旧式家庭制度把孩子“工具化”的一面，也确实需要被正视。",
+			"createTime": "2026-09-06T06:52:08"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "以前的“负责”，主要是让孩子活下来，成个家，能挣钱糊口。而现在的“负责”，包含了身体健康、教育机会、稳定的照料，还有基本的尊重和未来的选择权。",
+			"createTime": "2026-09-06T06:50:40"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "这种成长经历在当年太普遍了，普遍到大家很难把它看作一种伤害。可普遍并不代表它就一定合理，常见也不代表我们不需要去反思。",
+			"createTime": "2026-09-06T06:34:20"
+		},
+		{
+			"bookId": "3300210710",
+			"bookTitle": "低生育社会，谁来接住每一代人的不安？",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_vq25jw3kphadz45vvq3cru/t6_cpplatform_vq25jw3kphadz45vvq3cru1780915348.jpg",
+			"chapter": "1. 高生育率里被忽略的孩子",
+			"text": "父母不太会去想，家里是否有稳定的资源，能不能提供好的教育，能不能保护孩子不受暴力伤害，或者以后能不能尊重孩子的选择。",
+			"createTime": "2026-09-06T06:19:18"
+		},
+		{
 			"bookId": "3300200010",
 			"bookTitle": "我所相信的生活",
 			"bookCover": "https://cdn.weread.qq.com/weread/cover/35/cpplatform_ktuh3psntnqnhbidddyvb5/t6_cpplatform_ktuh3psntnqnhbidddyvb51775111929.jpg",
@@ -39276,6 +39660,110 @@
 			"chapter": "一",
 			"text": "多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。",
 			"createTime": "2026-05-09T02:13:43"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "如果没有听到任何警告，也没有得到对可能后果的说明，病人得出一个他无法帮助自己的结论难道不是合理的吗？特别是这种结论会允许他满足内心的驱力！",
+			"createTime": "2026-09-06T09:44:44"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "主动与被动。促进责任的承担常常给治疗师造成两难情况。过于主动的治疗师会接管病人的责任，而过于被动的治疗师又向病人传递一种无力感。",
+			"createTime": "2026-09-06T09:44:34"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "大型团体治疗。同样的技术可以应用于大型治疗团体中。促使病人承担个人责任是创造治疗共同体的重要动力。被拘于精神病院一直是种剥夺自主的体验：病人没有权力，没有决策权，没有自由，没有隐私，没有尊严。迈克斯韦尔·琼斯设计了一种治疗环境，使得医院能够强化而不是削弱病人的自主性。他重新设计了病房，让病人对自己的治疗和环境拥有更广泛的责任。",
+			"createTime": "2026-09-06T09:24:18"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "如果领导者觉得每一件事都要依赖他，如果他不出力，团体中就不会发生什么事情，如果团体成员就像每周来看戏一样，就表示团体成员已经成功地将治疗责任转移到治疗师身上。",
+			"createTime": "2026-09-06T09:23:45"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "对于团体领导者来说，重要的是要知道自己的任务是建立一个社会系统，在其中团体和团体成员是改变的动力。",
+			"createTime": "2026-09-06T09:23:35"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "以领导者为中心的团体常常认为所有的希望和帮助都来自领导者，因此不能推动这个过程的产生（在我看来，像格式塔团体治疗以及交互分析团体治疗这种以领导者为中心的团体，其失败之处在于不能充分利用团体模式下的治疗潜力）​。",
+			"createTime": "2026-09-06T09:23:21"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "这个过程最终让团体成员认识到他对其他人如何看待自己、对待自己和评价自己负有责任",
+			"createTime": "2026-09-06T09:22:53"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "3.病人了解到自己的行为让他人对自己产生怎样的看法。病人了解到自己的行为可以让其他成员肯定他、不喜欢他、感到不愉快、尊重他、避开他、利用他、害怕他等。",
+			"createTime": "2026-09-06T09:22:47"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "4.病人了解到自己的行为如何影响到自我评价。根据以上三个步骤积累的信息，病人进行自我评估，他们判断自我价值和爱的能力，并学习认识自己的行为如何影响判断依据。",
+			"createTime": "2026-09-06T09:22:43"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "团体治疗中最令人兴奋的一面就是成员以相同的地位开始团体治疗，因此可以说所有成员是同时“诞生”的。每个成员逐渐在团体中塑造出独特的生活空间",
+			"createTime": "2026-09-06T09:21:28"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "而在团体治疗中，病人会遇到很多人，从而激发出不同的人际问题（兄弟姐妹之间的竞争、异性恋、同性恋、同侪的竞争、亲密关系、自我坦露、宽容、给予和接纳等等）​。有鉴于此，我们可以把治疗团体看作是每位成员社交世界的缩影。",
+			"createTime": "2026-09-06T09:21:17"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "事物的多样性和事物的个体性都仅仅是表象，是一层清漆。这层清漆已经融化了，只剩下无规则的、软绵绵的一堆丑陋，而且裸露着——令人恐惧地、猥亵地裸露着……另一方面，这树根以一种我无法解释的方式存在着。它有许多根结，它一动不动，没有名称，它让我如醉如痴，占据了我的视线，不断地将我引向它的存在。我不断地重复着“这是一个树根”​，但是没有任何作用。[插图][插图]",
+			"createTime": "2026-09-06T09:20:03"
+		},
+		{
+			"bookId": "3300075248",
+			"bookTitle": "存在主义心理治疗",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_9rufaccz9buidx8zqvwxgf/t6_cpplatform_9rufaccz9buidx8zqvwxgf1698128783.jpg",
+			"chapter": "第六章 责任",
+			"text": "海是绿色的，天空中那个白色的点是海鸥。​”但我并没有感觉到它的存在，并没有觉得那只海鸥是“存在的海鸥”​。",
+			"createTime": "2026-09-06T09:19:53"
 		},
 		{
 			"bookId": "3300075248",
@@ -50487,11 +50975,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 782227,
-		"readDays": 326,
-		"readBooks": 156,
-		"finishedBooks": 27,
-		"noteCount": 8056,
+		"totalReadTime": 784333,
+		"readDays": 327,
+		"readBooks": 157,
+		"finishedBooks": 28,
+		"noteCount": 8133,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -50503,7 +50991,7 @@
 			{
 				"title": "心理",
 				"count": 15,
-				"time": 150973
+				"time": 152341
 			},
 			{
 				"title": "哲学宗教",
@@ -51783,11 +52271,15 @@
 			{
 				"date": "2026-09-04",
 				"seconds": 1105
+			},
+			{
+				"date": "2026-09-05",
+				"seconds": 2106
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 416,
+		"totalBooks": 419,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -51795,6 +52287,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-05T11:52:49.425Z",
+	"generatedAt": "2026-09-06T12:11:20.113Z",
 	"isMock": false
 }
