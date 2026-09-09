@@ -155,7 +155,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2879,
+			"ratingCount": 2878,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -195,7 +195,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81272,
+			"ratingCount": 81284,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -286,15 +286,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 4,
 			"readTime": 0,
-			"tags": [],
-			"intro": "《瓦尔登湖》是美国作家梭罗独居瓦尔登湖畔的记录，描绘了他两年多时间里的所见、所闻和所思。\r\n1845年3月，梭罗来到瓦尔登湖，动手搭建一座十英尺宽、十五英尺长的小木屋；7月4日，也就是美国的独立纪念日，终于如愿以偿地开始了那段在后世成为传奇的独居生活。两年后，他带着在湖边生活时完成的书稿，永远地离开了那座亲手所建的木屋。之后七年间七易其稿，直到1854年8月9日才正式出版。",
-			"publisher": "天津人民出版社",
-			"translator": "李继宏",
-			"publicRating": 8.3,
-			"ratingCount": 6712,
-			"publishTime": "2013-07-01 00:00:00",
-			"isbn": "9787201082134",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=0af32e00813ab77f7g0103c3"
+			"tags": []
 		},
 		{
 			"bookId": "3300120802",
@@ -347,7 +339,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2685,
+			"ratingCount": 2686,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1043,7 +1035,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 626,
+			"ratingCount": 627,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=5c832060813ab8c2dg018e58"
@@ -1443,7 +1435,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1372,
+			"ratingCount": 1373,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -2003,7 +1995,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17074,
+			"ratingCount": 17075,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2027,7 +2019,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.7,
-			"ratingCount": 1340,
+			"ratingCount": 1342,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2203,7 +2195,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44167,
+			"ratingCount": 44186,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -2327,14 +2319,22 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1788829140,
+			"readUpdateTime": 1788926388,
 			"updateTime": 1784010940,
-			"progress": 12,
-			"noteCount": 26,
-			"reviewCount": 1,
-			"bookmarkCount": 14,
+			"progress": 19,
+			"noteCount": 63,
+			"reviewCount": 3,
+			"bookmarkCount": 33,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "在生产者和普遍就业的社会中，贫穷是一回事。在消费者社会中，穷人是另一回事。在后者社会中，生活项目围绕消费者的选择而建立，而不是围绕工作、专业技能而建立。“贫穷”曾经与失业联系在一起，如今，它主要指向有缺陷消费者的困境。这种差异改变了贫穷的体验方式，对于拯救苦难产生重大影响。著名社会学家和思想家鲍曼的这部作品，对于消费者社会及其影响进行了反思和论述。在本书中，鲍曼书追溯现代历史上发生的这种变化，对其社会后果进行盘点，并考虑了与贫困作斗争和减轻困苦的各种方式的有效性。",
+			"publisher": "上海社会科学院出版社有限公司",
+			"translator": "郭楠",
+			"publicRating": 7.8,
+			"ratingCount": 8754,
+			"publishTime": "2021-09-10 00:00:00",
+			"isbn": "9787552036107",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
 		},
 		{
 			"bookId": "3300136405",
@@ -2451,7 +2451,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 8.6,
-			"ratingCount": 124,
+			"ratingCount": 125,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532639823",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a6f324b0813ab7206g019cd6"
@@ -2635,7 +2635,7 @@
 			"publisher": "上海人民出版社",
 			"translator": "褚炫初",
 			"publicRating": 7.7,
-			"ratingCount": 167,
+			"ratingCount": 168,
 			"publishTime": "2024-09-01 00:00:00",
 			"isbn": "9787208189669",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8132fd0813aba46fg0137e5"
@@ -2707,7 +2707,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2373,
+			"ratingCount": 2374,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -3027,7 +3027,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31517,
+			"ratingCount": 31537,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -3045,6 +3045,22 @@
 			"noteCount": 0,
 			"reviewCount": 0,
 			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300033249",
+			"title": "共产党宣言：纪念版",
+			"author": "马克思恩格斯",
+			"cover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"category": "政治军事-政治",
+			"finishReading": 0,
+			"readUpdateTime": 1788941744,
+			"updateTime": 1715879104,
+			"progress": 25,
+			"noteCount": 9,
+			"reviewCount": 0,
+			"bookmarkCount": 6,
 			"readTime": 0,
 			"tags": []
 		},
@@ -3283,7 +3299,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77820,
+			"ratingCount": 77847,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3323,7 +3339,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1536,
+			"ratingCount": 1537,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -3427,7 +3443,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2687,
+			"ratingCount": 2688,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -3491,7 +3507,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6632,
+			"ratingCount": 6635,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -3563,7 +3579,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3329,
+			"ratingCount": 3334,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -4091,7 +4107,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 877,
+			"ratingCount": 876,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -4163,7 +4179,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2345,
+			"ratingCount": 2344,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -4219,7 +4235,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6365,
+			"ratingCount": 6368,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4475,7 +4491,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2149,
+			"ratingCount": 2151,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4578,7 +4594,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8,
+			"publicRating": 7.9,
 			"ratingCount": 27,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -4827,7 +4843,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6258,
+			"ratingCount": 6261,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -5005,8 +5021,8 @@
 			"intro": "在这个AI颠覆认知、信息爆炸冲击理性的时代，我们比任何时候都更需要回答：当“确定性”成为稀缺品，如何在混沌中锚定方向？如何用理性思维突破认知局限，做出理性的决策？英国物理学会会士、南方科技大学教授马兆远，以“科学+哲学”的跨界视野，交出了一份破局之作。他不仅是25岁获牛津物理学博士、30岁领军中国空间站冷原子实验的知名科学家，更因“一座难求”的逻辑课被学生称为“宝藏教授”——其MBA精品课“马导的逻辑课”，用鲜活案例拆解抽象思维，早已成为职场人、创业者的“思维健身房”。\n本书以“如何用理性应对不确定性”为核心，贯穿古希腊哲学到量子力学的前沿探索，打破学科壁垒：从亚里士多德逻辑的诞生到哥德尔不完备定理对“完美真理”的终结，从量子力学颠覆“确定因果”到混沌理论揭示“预测极限”，从贝叶斯统计改写“认知逻辑”到熵增定律破解“躺平陷阱”——马兆远用“科学史+思维进化”的双重视角，还原理性与科学的本质：它们不是“终极答案”，而是人类应对未知的“思维工具”。",
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
-			"publicRating": 7.5,
-			"ratingCount": 471,
+			"publicRating": 7.6,
+			"ratingCount": 474,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -5158,7 +5174,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1480,
+			"ratingCount": 1482,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -5339,7 +5355,7 @@
 			"category": "经济理财-财经",
 			"finishReading": 0,
 			"readUpdateTime": 1788318524,
-			"updateTime": 1788862508,
+			"updateTime": 1788920507,
 			"progress": 11,
 			"noteCount": 16,
 			"reviewCount": 0,
@@ -5478,7 +5494,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15435,
+			"ratingCount": 15437,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5534,7 +5550,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10112,
+			"ratingCount": 10111,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5606,7 +5622,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.1,
-			"ratingCount": 325,
+			"ratingCount": 326,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -5702,7 +5718,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1468,
+			"ratingCount": 1470,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5758,7 +5774,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7400,
+			"ratingCount": 7403,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -6015,11 +6031,11 @@
 			"bookId": "3300228917",
 			"title": "我们会在无数个夏天重逢",
 			"author": "[德]赫尔曼·黑塞",
-			"cover": "https://cdn.weread.qq.com/weread/cover/40/cpplatform_akutjkaqzqqdryzn6fpu4e/t6_cpplatform_akutjkaqzqqdryzn6fpu4e1788338300.jpg",
+			"cover": "https://cdn.weread.qq.com/weread/cover/40/cpplatform_akutjkaqzqqdryzn6fpu4e/t6_cpplatform_akutjkaqzqqdryzn6fpu4e1788923011.jpg",
 			"category": "文学-外国文学",
 			"finishReading": 0,
 			"readUpdateTime": 1788391030,
-			"updateTime": 1788339241,
+			"updateTime": 1788923011,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -6046,7 +6062,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9815,
+			"ratingCount": 9818,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -6102,7 +6118,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.2,
-			"ratingCount": 808,
+			"ratingCount": 809,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a31321e0813abb40bg0199be"
@@ -6142,7 +6158,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4868,
+			"ratingCount": 4869,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -6198,7 +6214,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169759,
+			"ratingCount": 169790,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -6270,7 +6286,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 200,
+			"ratingCount": 203,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -6822,7 +6838,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23313,
+			"ratingCount": 23316,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -7045,8 +7061,8 @@
 			"intro": "《小王子》，是写给小孩的童话，是写给大人的寓言，是销量仅次于《圣经》的名著，是享有“二十世纪最佳图书”盛誉的小说。那看日落的小王子，那独一无二的玫瑰花，那带来灾难的猴面包树，那奇怪的国王，那爱虚荣的人，那羞愧的酒鬼，那拥有星星的商人，那越来越忙的点灯人，那不出门的地理学家，那会揭谜底的蛇，那驯养的狐狸，让读者明白：真正重要的东西，眼睛是看不见的……",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.5,
-			"ratingCount": 1491,
+			"publicRating": 9.4,
+			"ratingCount": 1492,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -18842,6 +18858,302 @@
 			"bookTitle": "工作、消费主义和新穷人",
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
 			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "。现在，衡量人们声望和社会地位的是工资的差别，而不是勤于工作的道德或惰于工作的罪恶。",
+			"createTime": "2026-09-09T03:51:10"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "与其宣扬努力工作通向道德高尚的生活，不如告诉大家这是赚取更多金钱的手段。不要在意“更好”，“更多”才是最重要的。",
+			"createTime": "2026-09-09T02:33:25"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "美国梦劝告人们，所有工厂里遭受的苦难只是暂时的烦恼，屈从老板的虚妄只是成为老板的必经之路。",
+			"createTime": "2026-09-09T02:32:52"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工作不需要被热爱，也不需要被认为是道德的象征，人们可以公开反感工作，这不会招致纪律的崩坏，因为他们相信当下的忍耐（哪怕是最恶劣的境况）是为了并不遥远的自由而暂时付出的代价。",
+			"createTime": "2026-09-09T02:30:44"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "大多数美国社会历史学家都认为，推动美国工业前进的是企业精神和跻身上层阶级的愿望，而非工作伦理。",
+			"createTime": "2026-09-09T02:29:47"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "就包括现代工厂在内的现代组织而言，它们的趋势是使人类行动者的道德情感与他们的行为无关，以便这些行为达到一定程度的规律性和可预测性——完成永远不能指望非理性的道德冲动完成的任务。",
+			"createTime": "2026-09-09T02:29:26"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "会同时采用更可靠的压力手段，如强制封闭、法律约束、除救济院外拒绝一切救济，乃至体罚威胁。",
+			"createTime": "2026-09-09T02:19:55"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "不能依靠道德情感，不能依靠对道德责任的呼吁（因此最终也不能选择这种手段）来确保工人持续地倾尽全力工作，以及对工作制度的无条件服从。",
+			"createTime": "2026-09-09T02:19:37"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工作伦理，或更广义的，对当前和未来的工厂工人情操和良知的呼吁，只是推动工业体系前进的可选手段之一。它未必是最有效的方法，肯定不是唯一能想到的，也不是最可靠的。",
+			"createTime": "2026-09-09T02:19:23"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工作伦理是一种工具，目的是使工人们丧失独立性，服从于工厂制度。",
+			"createTime": "2026-09-09T01:36:56"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "在工作场所，工人的自治权是不被容忍的。工作伦理要求人们选择一种献身于劳动的生活，但这也就意味着没有选择、无法选择和禁止选择。",
+			"createTime": "2026-09-09T01:36:07"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "现代工业社会的实质是借助自然的可用能源对（同样是自然的）资源进行再加工，最后产出“财富”的过程。",
+			"createTime": "2026-09-09T01:34:50"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "家庭的父权将秩序生产与服务网络的规训压力传导到圆形监狱无法触及的人群。",
+			"createTime": "2026-09-09T01:34:34"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "如果让大部分男性进入工厂工作是生产和维持社会秩序的主要手段，那么以（“养家糊口”的）男性为绝对权威建立强大、稳定的父权制家庭，就成为一个必要的补充。",
+			"createTime": "2026-09-09T01:31:48"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "。失业的人变成了无根浮萍，无人控制，无人监督，不受任何惩罚性规制约束。难怪在19世纪，具有社会意识的医疗科学定义的健康典范，是够胜任工厂工作和兵役的男性形象。",
+			"createTime": "2026-09-09T01:31:36"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工厂生产花样繁多的商品，除此之外，它们也生产顺从于现代国家的公民。",
+			"createTime": "2026-09-09T01:28:04"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工作场所承载了最主要的社交融合。在这里，人们接受训练，培养服从规范、遵守纪律的行为习惯，形成自己的“社会性格”，至少是那些有利于社会秩序的社会性格。除去现代另一项伟大发明——大规模征兵，工厂是现代社会最主要的“圆形监狱”。",
+			"createTime": "2026-09-09T01:28:00"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "工作类型影响着人们的全部生活，它不仅决定了与工作过程直接相关的权利和义务，",
+			"createTime": "2026-09-09T01:26:15"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "职业生涯标记了人生的旅程，是回溯人生成败最重要的记录，是自信与彷徨、自满与自责、骄傲与耻辱的主要源头。",
+			"createTime": "2026-09-09T01:25:11"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "“你是谁”这个问题的答案通常指向人们所在的公司以及该公司的能力。在一个擅长分类且喜欢分类的社会里，工作类型是一种关键的、决定性的分类，是所有其他社会生活的锚点。",
+			"createTime": "2026-09-09T01:24:36"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "在经典的现代工业社会时代，工作同时是个人生活、社会秩序和社会生存能力（系统化再生产）的枢纽。",
+			"createTime": "2026-09-09T01:23:52"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "有一种信念是“工业社会”与生俱来的：参与工业生产的工人将不可阻挡地增长，工业社会的最终形态是一个巨大的工厂，每个健全的男性都在其中被生产性雇用。全民就业虽然尚未实现，但它代表着未来的形态。依据这种规范，没有工作即是失业，是不正常的，违反了规范。“来工作”和“去工作”是双生的劝语/魔咒，希望同时解决个体问题和社会弊病。",
+			"createTime": "2026-09-09T01:22:54"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "给予所有人工作，让所有人都去工作，通常被视为治愈因社会（暂时）的不完美、不成熟导致的一切弊病和麻烦的良方。",
+			"createTime": "2026-09-09T00:50:28"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "许多人认为体力劳动是必要的，是一种责任和义务，但也值得称颂”[插图]，因为它将为国家带来荣誉和财富，为工人带来道德上的提升。",
+			"createTime": "2026-09-09T00:50:09"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "如果人们勤奋工作并持之以恒需要承受痛苦的折磨，那也是为了未来的收益，尤其是道德收益，付出的必要代价。",
+			"createTime": "2026-09-09T00:48:32"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "这种表里不一未必是有意为之，甚至可能从未被意识到。没有理由认为工作伦理的倡导者对其行动的道德后果漠不关心，更没有理由认为他们本身就是不道德的。",
+			"createTime": "2026-09-09T00:47:06"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "事实上，若真的希望工人道德完善，就必须扩大其自由的边界——这才是道德能够生长并最终开花结果的唯一土壤。",
+			"createTime": "2026-09-09T00:40:07"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "对肉体的胁迫或许是最佳选择。体罚、削减工资和粮食至低于生存水平，尤其是每时每刻、没有死角地监督所有违反规则",
+			"createTime": "2026-09-09T00:39:10"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "思想是一把双刃剑，或者说，是原本严密的墙体中留下的一道危险缝隙，通过这道缝隙，麻烦的、难以预料的、无法估量的因素（如人们对有尊严的生活的热情或自主的冲动）会从之前的放逐中回归。",
+			"createTime": "2026-09-09T00:38:59"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "这样一来，除了继续辛苦工作，他们“别无选择”。",
+			"createTime": "2026-09-09T00:38:31"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "当下以及未来，工厂工人的选择大幅减少了。",
+			"createTime": "2026-09-09T00:34:49"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "边沁完全没有把希望寄托在劳工美德的培养上，而是希望给他们最简单的选择，或者压根不给他们选择",
+			"createTime": "2026-09-09T00:33:23"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "他无暇顾及精神上的启蒙或思想上的改造，不指望这些圆形监狱（panoptical institution）的囚徒爱上他们的工作（他认为他们对工作无可救药的厌恶理所当然），也懒得去讴歌工作的高尚道德意义。",
+			"createTime": "2026-09-09T00:32:00"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "约翰·斯图尔特·密尔不久后写到，政治经济学对人的情感和动机不感兴趣，“除非是被认为与财富欲望永恒对立的原则，即对工作的厌恶，以及‘满足于当下’这种昂贵放纵的欲望”。",
+			"createTime": "2026-09-09T00:31:16"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "毕竟，边沁策略的核心是消除这种差别与所论目标之间的关联，这种关联需要足够弱化，以免干扰结果。",
+			"createTime": "2026-09-09T00:30:57"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "他坚持认为，无论这些机构表面上的目的是什么，它们都面对相同的问题，具有相同的关注：必须强制执行统一的、规范性的、可预测的行为模式，以约束五花八门、本质上不守规矩的囚犯。简而言之，所有这些人都必须被剪除各种各样的习惯和爱好，以适应相同的行为标准。",
+			"createTime": "2026-09-09T00:30:39"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
+			"text": "诚然，给依靠救济度日（或如改革者所言，“选择了”贫穷）的人建立的骇人听闻、令人厌恶的生存环境，使得穷人更容易接受雇佣并避开懒惰的恶习，但这仍然把他们拖入贫穷",
+			"createTime": "2026-09-09T00:28:42"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第一章 工作的意义：创造工作伦理",
 			"text": "一旦有了比较，工厂中微薄的工资和无趣繁重的苦役，似乎也没那么不能接受，甚至令人向往。",
 			"createTime": "2026-09-08T00:28:51"
 		},
@@ -21012,6 +21324,78 @@
 			"chapter": "第12章 人格障碍和冲动控制障碍",
 			"text": "当行为模式变得僵化、不适应，并导致显著的个人痛苦或社会、职业功能受损时，这种情况就可被归类为人格障碍。",
 			"createTime": "2026-05-08T08:32:46"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "各自独立的、几乎只有同盟关系的、各有不同利益、不同法律、不同政府、不同关税的各个地区，现在已经结合为一个拥有统一的政府、统一的法律、统一的民族阶级利益和统一的关税的统一的民族。",
+			"createTime": "2026-09-09T07:01:35"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "资产阶级使农村屈服于城市的统治。它创立了巨大的城市，使城市人口比农村人口大大增加起来，因而使很大一部分居民脱离了农村生活的愚昧状态。正像它使农村从属于城市一样，它使未开化和半开化的国家从属于文明的国家，使农民的民族从属于资产阶级的民族，使东方从属于西方。",
+			"createTime": "2026-09-09T07:01:16"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "一切等级的和固定的东西都烟消云散了，一切神圣的东西都被亵渎了。人们终于不得不用冷静的眼光来看他们的生活地位、他们的相互关系。",
+			"createTime": "2026-09-09T07:00:17"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "资产阶级除非对生产工具，从而对生产关系，从而对全部社会关系不断地进行革命，否则就不能生存下去。",
+			"createTime": "2026-09-09T06:59:53"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "资产阶级抹去了一切向来受人尊崇和令人敬畏的职业的神圣光环。它把医生、律师、教士、诗人和学者变成了它出钱招雇的雇佣劳动者。",
+			"createTime": "2026-09-09T06:59:24"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "它把人的尊严变成了交换价值，用一种没有良心的贸易自由代替了无数特许的和自力挣得的自由。总而言之，它用公开的、无耻的、直接的、露骨的剥削代替了由宗教幻想和政治幻想掩盖着的剥削。",
+			"createTime": "2026-09-09T06:59:11"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "但是，我们的时代，资产阶级时代，却有一个特点：它使阶级对立简单化了。整个社会日益分裂为两大敌对的阵营，分裂为两大相互直接对立的阶级：资产阶级和无产阶级。",
+			"createTime": "2026-09-09T06:57:42"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "至今一切社会的历史[插图]都是阶级斗争的历史。",
+			"createTime": "2026-09-09T04:02:42"
+		},
+		{
+			"bookId": "3300033249",
+			"bookTitle": "共产党宣言：纪念版",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/86/cpPlatform_anYtZZ1e1njGEScqDyAUoG/t6_cpPlatform_anYtZZ1e1njGEScqDyAUoG.jpg",
+			"chapter": "共产党宣言",
+			"text": "一个幽灵，共产主义的幽灵，在欧洲游荡。为了对这个幽灵进行神圣的围剿，旧欧洲的一切势力，教皇和沙皇、梅特涅和基佐、法国的激进派和德国的警察，都联合起来了。",
+			"createTime": "2026-09-09T04:02:08"
 		},
 		{
 			"bookId": "3300159920",
@@ -51351,11 +51735,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 787546,
-		"readDays": 329,
-		"readBooks": 158,
+		"totalReadTime": 791166,
+		"readDays": 330,
+		"readBooks": 159,
 		"finishedBooks": 28,
-		"noteCount": 8209,
+		"noteCount": 8282,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -52659,11 +53043,15 @@
 			{
 				"date": "2026-09-07",
 				"seconds": 885
+			},
+			{
+				"date": "2026-09-08",
+				"seconds": 3620
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 420,
+		"totalBooks": 421,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -52671,6 +53059,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-08T12:55:17.632Z",
+	"generatedAt": "2026-09-09T13:01:04.105Z",
 	"isMock": false
 }
