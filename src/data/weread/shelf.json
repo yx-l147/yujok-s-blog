@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "25803785",
+			"title": "万物生而有翼",
+			"author": "[波斯]鲁米",
+			"cover": "https://cdn.weread.qq.com/weread/cover/36/YueWen_25803785/t6_YueWen_25803785.jpg",
+			"category": "文学-现代诗歌",
+			"finishReading": 0,
+			"readUpdateTime": 1789208212,
+			"updateTime": 1780575596,
+			"progress": 0,
+			"noteCount": 3,
+			"reviewCount": 0,
+			"bookmarkCount": 4,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "26542331",
 			"title": "经典哲学名著：论自由",
 			"author": "约翰·密尔",
@@ -115,7 +131,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 224,
+			"ratingCount": 225,
 			"publishTime": "2012-05-01 00:00:00",
 			"isbn": "9787532633500",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c7b325a071d512a7c7bf71d"
@@ -155,7 +171,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2881,
+			"ratingCount": 2882,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -195,7 +211,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81304,
+			"ratingCount": 81316,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -267,7 +283,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6828,
+			"ratingCount": 6827,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -339,7 +355,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2688,
+			"ratingCount": 2690,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1395,7 +1411,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 513,
+			"ratingCount": 514,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1435,7 +1451,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1377,
+			"ratingCount": 1379,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1570,7 +1586,7 @@
 			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
-			"publicRating": 8,
+			"publicRating": 7.9,
 			"ratingCount": 31,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
@@ -1995,7 +2011,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17071,
+			"ratingCount": 17073,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2019,7 +2035,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.7,
-			"ratingCount": 1343,
+			"ratingCount": 1346,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2195,7 +2211,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44219,
+			"ratingCount": 44229,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -2331,7 +2347,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 8791,
+			"ratingCount": 8804,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2707,7 +2723,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2375,
+			"ratingCount": 2377,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -3027,7 +3043,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31549,
+			"ratingCount": 31565,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -3299,7 +3315,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77884,
+			"ratingCount": 77901,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3339,7 +3355,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1539,
+			"ratingCount": 1542,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -3431,7 +3447,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_23796502/t6_YueWen_23796502.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 1,
-			"readUpdateTime": 1787543881,
+			"readUpdateTime": 1789206312,
 			"updateTime": 1705306736,
 			"progress": 99,
 			"noteCount": 79,
@@ -3443,7 +3459,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2690,
+			"ratingCount": 2691,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -3579,7 +3595,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3341,
+			"ratingCount": 3344,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -4235,7 +4251,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6378,
+			"ratingCount": 6380,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4323,7 +4339,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4775,
+			"ratingCount": 4776,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -4491,7 +4507,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2155,
+			"ratingCount": 2158,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4594,7 +4610,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.1,
+			"publicRating": 8.2,
 			"ratingCount": 27,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -4915,7 +4931,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4350,
+			"ratingCount": 4351,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -5022,7 +5038,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 475,
+			"ratingCount": 476,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -5494,7 +5510,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15445,
+			"ratingCount": 15446,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5550,7 +5566,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10116,
+			"ratingCount": 10117,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5594,7 +5610,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/85/510085/t6_510085.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1786243747,
+			"readUpdateTime": 1789209483,
 			"updateTime": 1721311221,
 			"progress": 10,
 			"noteCount": 32,
@@ -5622,7 +5638,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.1,
-			"ratingCount": 328,
+			"ratingCount": 329,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -5718,7 +5734,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1471,
+			"ratingCount": 1472,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5774,7 +5790,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7406,
+			"ratingCount": 7407,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -6062,7 +6078,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9829,
+			"ratingCount": 9833,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -6118,7 +6134,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.2,
-			"ratingCount": 809,
+			"ratingCount": 810,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a31321e0813abb40bg0199be"
@@ -6214,7 +6230,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169852,
+			"ratingCount": 169880,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -6838,7 +6854,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23321,
+			"ratingCount": 23322,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -7061,7 +7077,7 @@
 			"intro": "《小王子》，是写给小孩的童话，是写给大人的寓言，是销量仅次于《圣经》的名著，是享有“二十世纪最佳图书”盛誉的小说。那看日落的小王子，那独一无二的玫瑰花，那带来灾难的猴面包树，那奇怪的国王，那爱虚荣的人，那羞愧的酒鬼，那拥有星星的商人，那越来越忙的点灯人，那不出门的地理学家，那会揭谜底的蛇，那驯养的狐狸，让读者明白：真正重要的东西，眼睛是看不见的……",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.5,
+			"publicRating": 9.4,
 			"ratingCount": 1493,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
@@ -7221,6 +7237,30 @@
 		}
 	],
 	"notes": [
+		{
+			"bookId": "25803785",
+			"bookTitle": "万物生而有翼",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/36/YueWen_25803785/t6_YueWen_25803785.jpg",
+			"chapter": "五件事",
+			"text": "我认识这些舞者。在这幻象的牢笼，我日夜唱着他们的歌。",
+			"createTime": "2026-09-12T10:14:31"
+		},
+		{
+			"bookId": "25803785",
+			"bookTitle": "万物生而有翼",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/36/YueWen_25803785/t6_YueWen_25803785.jpg",
+			"chapter": "沾满泥巴的双脚",
+			"text": "伴着鹧鸪和乌鸦唱出的曲调。有时，计划和计算，会变得荒谬。",
+			"createTime": "2026-09-12T10:14:16"
+		},
+		{
+			"bookId": "25803785",
+			"bookTitle": "万物生而有翼",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/36/YueWen_25803785/t6_YueWen_25803785.jpg",
+			"chapter": "纳苏赫的变化",
+			"text": "如果你爱上爱情，那就寻找你自己。",
+			"createTime": "2026-09-12T10:10:33"
+		},
 		{
 			"bookId": "26542331",
 			"bookTitle": "经典哲学名著：论自由",
@@ -51847,11 +51887,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 792353,
-		"readDays": 331,
+		"totalReadTime": 792818,
+		"readDays": 332,
 		"readBooks": 159,
 		"finishedBooks": 28,
-		"noteCount": 8306,
+		"noteCount": 8313,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -53167,11 +53207,15 @@
 			{
 				"date": "2026-09-10",
 				"seconds": 4
+			},
+			{
+				"date": "2026-09-11",
+				"seconds": 465
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 421,
+		"totalBooks": 422,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -53179,6 +53223,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-11T12:52:26.050Z",
+	"generatedAt": "2026-09-12T12:12:44.309Z",
 	"isMock": false
 }
