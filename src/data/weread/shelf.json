@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "32510980",
+			"title": "吉尔·德勒兹",
+			"author": "芙丽达·贝克曼",
+			"cover": "https://cdn.weread.qq.com/weread/cover/32/YueWen_32510980/t6_YueWen_32510980.jpg",
+			"category": "哲学宗教-西方哲学",
+			"finishReading": 0,
+			"readUpdateTime": 1789235945,
+			"updateTime": 1693492444,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "25803785",
 			"title": "万物生而有翼",
 			"author": "[波斯]鲁米",
@@ -211,7 +227,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81316,
+			"ratingCount": 81328,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -563,7 +579,7 @@
 			"publisher": "文汇出版社",
 			"translator": "",
 			"publicRating": 8.3,
-			"ratingCount": 400,
+			"ratingCount": 402,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787549644834",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43a32aa0813aba117g0130e2"
@@ -1411,7 +1427,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 514,
+			"ratingCount": 516,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1451,7 +1467,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1379,
+			"ratingCount": 1382,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1586,8 +1602,8 @@
 			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
-			"publicRating": 7.9,
-			"ratingCount": 31,
+			"publicRating": 8,
+			"ratingCount": 32,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4de32f70813abbcd4g018e82"
@@ -2011,7 +2027,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17073,
+			"ratingCount": 17075,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2035,7 +2051,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.7,
-			"ratingCount": 1346,
+			"ratingCount": 1350,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2171,7 +2187,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4163,
+			"ratingCount": 4166,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -2211,7 +2227,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44229,
+			"ratingCount": 44248,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -2335,19 +2351,19 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
 			"category": "社会文化-社科",
 			"finishReading": 0,
-			"readUpdateTime": 1789042553,
+			"readUpdateTime": 1789304815,
 			"updateTime": 1784010940,
-			"progress": 19,
-			"noteCount": 77,
+			"progress": 22,
+			"noteCount": 87,
 			"reviewCount": 3,
-			"bookmarkCount": 42,
+			"bookmarkCount": 49,
 			"readTime": 0,
 			"tags": [],
 			"intro": "在生产者和普遍就业的社会中，贫穷是一回事。在消费者社会中，穷人是另一回事。在后者社会中，生活项目围绕消费者的选择而建立，而不是围绕工作、专业技能而建立。“贫穷”曾经与失业联系在一起，如今，它主要指向有缺陷消费者的困境。这种差异改变了贫穷的体验方式，对于拯救苦难产生重大影响。著名社会学家和思想家鲍曼的这部作品，对于消费者社会及其影响进行了反思和论述。在本书中，鲍曼书追溯现代历史上发生的这种变化，对其社会后果进行盘点，并考虑了与贫困作斗争和减轻困苦的各种方式的有效性。",
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 8804,
+			"ratingCount": 8818,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2651,7 +2667,7 @@
 			"publisher": "上海人民出版社",
 			"translator": "褚炫初",
 			"publicRating": 7.7,
-			"ratingCount": 167,
+			"ratingCount": 168,
 			"publishTime": "2024-09-01 00:00:00",
 			"isbn": "9787208189669",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8132fd0813aba46fg0137e5"
@@ -2723,7 +2739,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2377,
+			"ratingCount": 2376,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -3002,8 +3018,8 @@
 			"intro": "提到“正常”“常态”，你会想到什么？提到“异常”“变态”，你又会想到什么？生活在现代社会中的每个人可能都有一些异于常人的表现或行为，那么我们该如何划分正常行为与异常行为之间的界限呢？很多人都觉得自己“社恐”、有强迫症，或者感到抑郁，这些是心理障碍吗？还是说它们仅仅是一些适应不良的行为或表现？这些问题的答案，都可以在本书中找到。 本书的三位作者都是长期从事心理障碍与异常行为研究、教学和临床实践工作的临床心理学家，他们不仅学术造诣深厚，而且有丰富的临床和教学经验。他们基于最新版的《精神障碍诊断与统计手册》和前沿的研究成果对本版进行了调整。全书共15章，前三章和最后一章为总论，集中介绍了变态心理学的学科性质和研究方法，主要的理论观点及相关的法律问题；第4章至第14章着重介绍了临床上比较常见的心理障碍，包括它们的临床表现、诊断标准、成因及具体的治疗方法等。 本书既可作为心理学专业老师和学生的教材或参考书，又可供心理咨询师、心理治疗师及相关专业人士在实践中参考，同时本书也有助于普通读者了解和认识变态心理学及异常的行为和表现。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
-			"publicRating": 9.1,
-			"ratingCount": 717,
+			"publicRating": 9,
+			"ratingCount": 718,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -3043,7 +3059,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31565,
+			"ratingCount": 31576,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -3315,7 +3331,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77901,
+			"ratingCount": 77914,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3459,7 +3475,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2691,
+			"ratingCount": 2692,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -3523,7 +3539,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6640,
+			"ratingCount": 6643,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -3595,7 +3611,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3344,
+			"ratingCount": 3350,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -4251,7 +4267,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6380,
+			"ratingCount": 6382,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4339,7 +4355,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4776,
+			"ratingCount": 4777,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -4379,7 +4395,7 @@
 			"publisher": "湖南科学技术出版社",
 			"translator": "吴忠超",
 			"publicRating": 7.5,
-			"ratingCount": 1109,
+			"ratingCount": 1108,
 			"publishTime": "2011-01-01 00:00:00",
 			"isbn": "9787535765444",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=64132f605b9076641f8f710"
@@ -4507,7 +4523,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2158,
+			"ratingCount": 2160,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4859,7 +4875,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6264,
+			"ratingCount": 6267,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -5038,7 +5054,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 476,
+			"ratingCount": 477,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -5510,7 +5526,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15446,
+			"ratingCount": 15447,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5566,7 +5582,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10117,
+			"ratingCount": 10119,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5610,7 +5626,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/85/510085/t6_510085.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1789209483,
+			"readUpdateTime": 1789223409,
 			"updateTime": 1721311221,
 			"progress": 10,
 			"noteCount": 32,
@@ -5734,7 +5750,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1472,
+			"ratingCount": 1473,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5790,7 +5806,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7407,
+			"ratingCount": 7410,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -6078,7 +6094,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9833,
+			"ratingCount": 9838,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -6174,7 +6190,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4873,
+			"ratingCount": 4872,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -6230,7 +6246,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169880,
+			"ratingCount": 169911,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -6302,7 +6318,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 205,
+			"ratingCount": 211,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -6718,7 +6734,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3443,
+			"ratingCount": 3445,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -7078,7 +7094,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 1493,
+			"ratingCount": 1495,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -18892,6 +18908,86 @@
 			"chapter": "第一章 星海之滨",
 			"text": "已知有涯，而未知无涯；我们如同立于荒岛之上，被苍茫大海所困。每一代人的任务，都是填出一小块新的陆地。——T.H.赫胥黎，1887年",
 			"createTime": "2026-08-04T08:47:35"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "然而，这个意义重大的新转折，并没有被看作一场大地震或一个生存威胁。因为对身份的社会认同也发生了变化，老式的职业生涯变得不再合时宜，且与新身份的任务和要求完全脱节。",
+			"createTime": "2026-09-13T13:06:48"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "沙滩上无法建立牢固的城堡。简而言之，在工作的基础上构建终身身份，对绝大多数人来说（至少在目前，除了少数高技能、高特许职业的从业者外）是死路一条。",
+			"createTime": "2026-09-13T12:23:47"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "长期的、有保障的、确定性的工作已经很少见。那种古老的、“终身制”的，甚至是世袭的工作岗位，只限于少数古老的行业或职业，数量也正迅速萎缩。新的工作机会设置了期限，到期后的安排另行通知，或者干脆是兼职。它们经常和其他岗位合并，没有任何持续性保障，更不用说永久就业。",
+			"createTime": "2026-09-13T12:15:07"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "现在，人们需要选择自己的社会定位，并使这个定位得到社会的认同。",
+			"createTime": "2026-09-13T12:09:58"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "在消费者社会中，与其说经济增长取决于“国家生产力”（即健康充裕的劳动力、充实的财政收入、勇往直前具有企业家精神的资本所有者和经营者），不如说取决于消费者的热情和活力。",
+			"createTime": "2026-09-13T11:27:22"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "（消费者信心意味着消费者通过信贷消费的欲望强烈到足以压倒对破产的恐惧）。",
+			"createTime": "2026-09-13T02:47:00"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "在现代性的工业阶段，一个事实不容置疑，那就是每个人在拥有其他身份之前，首先必须是一个生产者。在现代性的第二阶段，即消费者的时代，这个不容置疑的事实变成了：人首先要成为消费者，才能再拥有其他特别的身份。",
+			"createTime": "2026-09-12T18:01:05"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "本来是市场选择了他们，并把他们培养成消费者，剥夺了他们不受诱惑的自由，但每次来到市场，消费者都觉得自己在掌控一切。",
+			"createTime": "2026-09-12T18:00:46"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "在正常运转的消费者社会中，消费者会主动寻求被诱惑。他们的生活从吸引到吸引，从诱惑到诱惑，从吞下一个诱饵到寻找另一个诱饵，每一个新的吸引、诱惑和诱饵都不尽相同，似乎比之前的更加诱人。他们生活于这种轮回，就像他们的先辈，那些生产者，生活于一个传送带和下一个传送带之间。",
+			"createTime": "2026-09-12T18:00:34"
+		},
+		{
+			"bookId": "41598972",
+			"bookTitle": "工作、消费主义和新穷人",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/41598972/t6_41598972.jpg",
+			"chapter": "第二章 从工作伦理到消费美学",
+			"text": "想要提高消费者的消费能力就不能让他们休息。他们需要不断地接受新的诱惑，持续处于永不枯竭的兴奋之中，持续处于怀疑和不满之中。",
+			"createTime": "2026-09-12T18:00:13"
 		},
 		{
 			"bookId": "41598972",
@@ -51887,18 +51983,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 792818,
-		"readDays": 332,
+		"totalReadTime": 794060,
+		"readDays": 333,
 		"readBooks": 159,
 		"finishedBooks": 28,
-		"noteCount": 8313,
+		"noteCount": 8330,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 49,
-				"time": 238372
+				"time": 238581
 			},
 			{
 				"title": "心理",
@@ -51908,7 +52004,7 @@
 			{
 				"title": "哲学宗教",
 				"count": 25,
-				"time": 107163
+				"time": 107233
 			},
 			{
 				"title": "社会小说",
@@ -51921,9 +52017,9 @@
 				"time": 55415
 			},
 			{
-				"title": "个人成长",
-				"count": 4,
-				"time": 45319
+				"title": "社会文化",
+				"count": 10,
+				"time": 47361
 			}
 		],
 		"preferAuthor": [
@@ -53210,12 +53306,16 @@
 			},
 			{
 				"date": "2026-09-11",
-				"seconds": 465
+				"seconds": 519
+			},
+			{
+				"date": "2026-09-12",
+				"seconds": 1188
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 422,
+		"totalBooks": 423,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -53223,6 +53323,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-12T12:12:44.309Z",
+	"generatedAt": "2026-09-13T13:20:56.316Z",
 	"isMock": false
 }
