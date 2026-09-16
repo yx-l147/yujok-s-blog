@@ -103,14 +103,22 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1783577465,
+			"readUpdateTime": 1789556268,
 			"updateTime": 1711526258,
-			"progress": 8,
-			"noteCount": 33,
+			"progress": 17,
+			"noteCount": 92,
 			"reviewCount": 1,
-			"bookmarkCount": 2,
+			"bookmarkCount": 25,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "卡尔波普尔（1902-1994）是当代西方最著名的科学哲学家和社会哲学家之一。他的批判理性主义哲学在各国哲学界、自然科学界和社会科学界受到广泛注意，并引起热烈讨论。《猜想与反驳》是作者的重要论著之一。全书围绕着知识通过猜想与反驳、不断清除错误而增长这一主题展开论述，广泛涉猎知识论、科学论、真理论以及自然科学史和社会科学史等领域，包含着许多值得探讨的见解。",
+			"publisher": "上海译文出版社",
+			"translator": "傅季重,纪树立,周昌忠,蒋弋为",
+			"publicRating": 8.5,
+			"ratingCount": 307,
+			"publishTime": "2015-02-01 00:00:00",
+			"isbn": "9787532768486",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=72732d70719d6c707276cd3"
 		},
 		{
 			"bookId": "846501",
@@ -147,7 +155,7 @@
 			"publisher": "上海辞书出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 225,
+			"ratingCount": 226,
 			"publishTime": "2012-05-01 00:00:00",
 			"isbn": "9787532633500",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c7b325a071d512a7c7bf71d"
@@ -200,7 +208,7 @@
 			"category": "科学技术-科学科普",
 			"finishReading": 0,
 			"readUpdateTime": 1784188342,
-			"updateTime": 1789463733,
+			"updateTime": 1789530265,
 			"progress": 3,
 			"noteCount": 7,
 			"reviewCount": 0,
@@ -227,7 +235,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81360,
+			"ratingCount": 81369,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -299,7 +307,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6828,
+			"ratingCount": 6829,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -371,7 +379,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2695,
+			"ratingCount": 2696,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -574,15 +582,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 18,
 			"readTime": 0,
-			"tags": [],
-			"intro": "不满足就痛苦，满足后又虚无？齐泽克带你走出享乐与虚无的怪圈！\n当代最重要的哲学家齐泽克晚年力作！！\n沉迷享乐为什么必然导致虚无？自由选择只是一种虚假幻觉？我们为什么会进行自我剥削？丧失欲望该怎么办？\n在本书中，齐泽克详细考察了后疫情时代，人们如何从灾难、对抗、混乱中获得享乐而丧失革命性的欲望。\n他从《索拉里斯星》的本我机器写到《小丑》的积极虚无主义；他通过现象级爆剧《使女的故事》和《鱿鱼游戏》，深刻洞悉对厌女和资本主义的批判的背后，其实是更隐晦的对虐女和资本获利的享乐……\n齐泽克认为“我们必须苟活下去，直至一命归西”，而存活的姿态则是：抱着一种激烈而冷漠的求生精神，这就是无数普通人所采取的立场。",
-			"publisher": "文汇出版社",
-			"translator": "",
-			"publicRating": 8.3,
-			"ratingCount": 402,
-			"publishTime": "2025-05-01 00:00:00",
-			"isbn": "9787549644834",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43a32aa0813aba117g0130e2"
+			"tags": []
 		},
 		{
 			"bookId": "3300153888",
@@ -1427,7 +1427,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.7,
-			"ratingCount": 520,
+			"ratingCount": 521,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1467,7 +1467,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1388,
+			"ratingCount": 1390,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1759,19 +1759,19 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
 			"category": "教育学习-育儿",
 			"finishReading": 0,
-			"readUpdateTime": 1789466530,
+			"readUpdateTime": 1789549819,
 			"updateTime": 1768547953,
-			"progress": 25,
-			"noteCount": 84,
+			"progress": 34,
+			"noteCount": 128,
 			"reviewCount": 0,
-			"bookmarkCount": 43,
+			"bookmarkCount": 61,
 			"readTime": 0,
 			"tags": [],
 			"intro": "95后是第一代进入青春期时不断接触互联网的人群，即Z世代。“手机式童年”取代了“玩\n耍式童年”，构成了这一代孩子的“新童年”：一方面，父母在现实生活中的过度保护，这让孩子无法在成长中获得足够的挑战。另一方面，社会对孩子在网络上的保护不足。这对孩子产生了4大伤害：社会剥夺、成瘾、注意力碎片化、睡眠剥夺。\nZ世代数字原住民在虚拟世界遭遇成长危机：对女孩来说，社交媒体让女孩重度焦虑：①滤\n镜、美颜、社交媒体经过美化的生活会让女孩产生外貌焦虑，加剧青春期女孩的不安全感。②女孩更容易分享情绪，让焦虑情绪传播。对男孩来说，游戏和视频让男孩深陷孤独：网络游戏和智能手机让男孩有更多途径逃避现实，沉浸在虚拟世界中。\n高度依赖手机和社交媒体会导致人类的精神退化，已经成为一代人的危机。作者呼吁要全社\n会共同行动来结束这场手机带来的精神疾病的流行，并给出了四大行动方向：①社会：通过互联网立法，鼓励孩子多在现实中自由玩耍；②技术：互联网科技公司用技术手段保护孩子；③学校：为孩子提供远离智能手机、社交媒体和网络游戏的环境；④父母：做好虚拟世界的园丁。",
 			"publisher": "中国纺织出版社",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 602,
+			"ratingCount": 604,
 			"publishTime": "2025-03-21 00:00:00",
 			"isbn": "9787522925271",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=33132870813ab9fd0g016372"
@@ -1848,7 +1848,7 @@
 			"category": "心理-心理学研究",
 			"finishReading": 0,
 			"readUpdateTime": 1776063592,
-			"updateTime": 1789463733,
+			"updateTime": 1789530163,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -2051,7 +2051,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17076,
+			"ratingCount": 17077,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2074,8 +2074,8 @@
 			"intro": "《要么孤独要么庸俗》是德国哲学家叔本华一部兼具思想深度的常识读本，集中体现了他对人生意义、幸福本质与孤独命运的深刻洞察。书中通过“叔本华”这一哲人视角，揭示大众趋于庸俗是出于对痛苦的逃避，而真正独立思考者则注定与孤独为伴。他剖析人与人之间的表面关系，指出只有少数灵魂能在孤独中保持精神的高贵。全书语言犀利，富于警句，是一部引导人正视自身处境、思考个体价值的重要哲学读本。",
 			"publisher": "",
 			"translator": "陈曌",
-			"publicRating": 7.7,
-			"ratingCount": 1352,
+			"publicRating": 7.8,
+			"ratingCount": 1357,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2211,7 +2211,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4169,
+			"ratingCount": 4170,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -2251,7 +2251,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44287,
+			"ratingCount": 44314,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -2291,7 +2291,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "王伟平",
 			"publicRating": 8.6,
-			"ratingCount": 2623,
+			"ratingCount": 2625,
 			"publishTime": "2024-01-01 00:00:00",
 			"isbn": "9787115630216",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=16832420813ab90f3g019f92"
@@ -2395,7 +2395,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 8851,
+			"ratingCount": 8868,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2771,7 +2771,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2375,
+			"ratingCount": 2374,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -2976,7 +2976,7 @@
 			"category": "经济理财-商业",
 			"finishReading": 0,
 			"readUpdateTime": 1786631029,
-			"updateTime": 1789463733,
+			"updateTime": 1789530134,
 			"progress": 0,
 			"noteCount": 1,
 			"reviewCount": 0,
@@ -3051,7 +3051,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9,
-			"ratingCount": 720,
+			"ratingCount": 722,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -3091,7 +3091,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31614,
+			"ratingCount": 31627,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -3363,7 +3363,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77949,
+			"ratingCount": 77963,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3375,7 +3375,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/88/3300008888/t6_3300008888.jpg",
 			"category": "经济理财-财经",
 			"finishReading": 0,
-			"readUpdateTime": 1789434377,
+			"readUpdateTime": 1789527794,
 			"updateTime": 1760172672,
 			"progress": 0,
 			"noteCount": 0,
@@ -3419,7 +3419,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1543,
+			"ratingCount": 1544,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -3587,7 +3587,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6647,
+			"ratingCount": 6649,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -3659,7 +3659,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3355,
+			"ratingCount": 3358,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -3736,7 +3736,7 @@
 			"category": "经济理财-财经",
 			"finishReading": 0,
 			"readUpdateTime": 1779012131,
-			"updateTime": 1789466390,
+			"updateTime": 1789530251,
 			"progress": 11,
 			"noteCount": 25,
 			"reviewCount": 0,
@@ -3752,7 +3752,7 @@
 			"category": "文学-语言文字",
 			"finishReading": 0,
 			"readUpdateTime": 1780981431,
-			"updateTime": 1789116461,
+			"updateTime": 1789530145,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -4051,7 +4051,7 @@
 			"publisher": "中信出版集团",
 			"translator": "[美]林杰",
 			"publicRating": 7.8,
-			"ratingCount": 523,
+			"ratingCount": 524,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787521772432",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1c0324c0813ab9d91g010aba"
@@ -4303,10 +4303,10 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/374/934374/t6_934374.jpg",
 			"category": "文学-外国文学",
 			"finishReading": 0,
-			"readUpdateTime": 1786770519,
+			"readUpdateTime": 1789559165,
 			"updateTime": 1770277971,
-			"progress": 66,
-			"noteCount": 1,
+			"progress": 69,
+			"noteCount": 4,
 			"reviewCount": 0,
 			"bookmarkCount": 1,
 			"readTime": 0,
@@ -4315,7 +4315,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6384,
+			"ratingCount": 6385,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4403,7 +4403,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4780,
+			"ratingCount": 4781,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -4555,7 +4555,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2165,
+			"ratingCount": 2167,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4658,7 +4658,7 @@
 			"intro": "雪莱是英国文学史上最有才华的抒情诗人之一，创作的诗歌节奏明快，洋溢着积极的乐观主义精神，表达了对美好生活的向往和追求。他的诗歌意境优美，激情洋溢，描写精微，而且充满了音乐感。本书收录了雪莱最杰出和最具代表性的诗歌作品，包括《颂歌》《西风颂》《致云雀》《爱的哲学》等。《雪莱诗选》也是著名翻译家江枫的代表译作，首版在1980年出版之初，就在广大诗歌读者中引发热烈反响，受到艾青、臧克家、卞之琳等著名诗人的喜爱。江枫译《雪莱诗选》是目前收录最全面、内容最丰富的雪莱诗歌选集，本书是人民文学出版社独家译本。",
 			"publisher": "人民文学出版社",
 			"translator": "江枫",
-			"publicRating": 8.2,
+			"publicRating": 8.3,
 			"ratingCount": 27,
 			"publishTime": "2026-01-21 00:00:00",
 			"isbn": "9787020197668",
@@ -4907,7 +4907,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6271,
+			"ratingCount": 6272,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -5098,7 +5098,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/33/cpplatform_8rthznqfhsjuz5fswwn6kx/t6_cpplatform_8rthznqfhsjuz5fswwn6kx1675928213.jpg",
 			"category": "计算机-人工智能",
 			"finishReading": 0,
-			"readUpdateTime": 1789466564,
+			"readUpdateTime": 1789521606,
 			"updateTime": 1760169519,
 			"progress": 23,
 			"noteCount": 5,
@@ -5238,7 +5238,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1483,
+			"ratingCount": 1486,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -5278,7 +5278,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1910,
+			"ratingCount": 1969,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -5451,7 +5451,7 @@
 			"category": "经济理财-理财",
 			"finishReading": 0,
 			"readUpdateTime": 1774916032,
-			"updateTime": 1789116528,
+			"updateTime": 1789530212,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -5558,7 +5558,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15451,
+			"ratingCount": 15454,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5614,7 +5614,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10123,
+			"ratingCount": 10125,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5782,7 +5782,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1477,
+			"ratingCount": 1479,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -6126,7 +6126,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9849,
+			"ratingCount": 9854,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -6222,7 +6222,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4876,
+			"ratingCount": 4877,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -6278,7 +6278,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 169978,
+			"ratingCount": 170003,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -6350,7 +6350,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 216,
+			"ratingCount": 217,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -6475,7 +6475,7 @@
 			"category": "心理-认知与行为",
 			"finishReading": 0,
 			"readUpdateTime": 1785241022,
-			"updateTime": 1789463733,
+			"updateTime": 1789530156,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -6766,7 +6766,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3448,
+			"ratingCount": 3450,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -6902,7 +6902,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23331,
+			"ratingCount": 23336,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -7316,6 +7316,478 @@
 			"chapter": "CHAPTER I.INTRODUCTORY.",
 			"text": "By liberty, was meant protection against the tyranny of the political rulers.",
 			"createTime": "2026-04-15T06:26:51"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "只有认定我们面前有一种不会改变的规则性时，我们才谈得到“自然规律”；如果我们发现它变了，我们就不会再叫它是“自然规律”了。",
+			"createTime": "2026-09-16T03:59:47"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "因为虚假理论往往也作用得很好：工程或航海中所应用的公式大都已知是虚假的，尽管它们可能非常近似于真的，同时易于使用；而人们明知其虚假却仍在充满信心地加以使用。",
+			"createTime": "2026-09-16T03:48:03"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "如果不说是禁忌的话；他们对断言任何哲学问题都有简洁明了的解决办法的主张感到惊讶和厌恶。",
+			"createTime": "2026-09-16T03:46:42"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "因为一个理论被接受还是被拒斥，它的命运决定于观察和实验，也即决定于检验结果。",
+			"createTime": "2026-09-16T03:46:16"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "从这里提出的观点看来，一切定律和理论本质上都是试探性、猜测性或假说性的，即使我们感到再也不能怀疑它们时，也仍如此。在一个理论被驳倒之前，我们怎么也无法知道必须以哪种方式修正它。",
+			"createTime": "2026-09-16T03:39:24"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "如果我们的批判努力失败了，那就试探地加以接受。",
+			"createTime": "2026-09-16T03:39:15"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "如果我们以此为我们的任务，那么，就没有比试探和除错——猜想和反驳的方法更加理性的程序。",
+			"createTime": "2026-09-16T03:39:08"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "科学要求理性证明，就表明未能坚持区分合理性的广阔领域同理性确定性的狭窄领域：这是一种站不住脚的不合理要求。",
+			"createTime": "2026-09-16T03:37:09"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "这些理论不是作为教条传下去，而是敦促对它们进行讨论和改善",
+			"createTime": "2026-09-16T03:36:49"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "，科学必然开始于神话和对神话的批判；既不是开始于观察的集合，也不是开始于发明实验，而是开始于对神话、对巫术技巧和实践的批判讨论。",
+			"createTime": "2026-09-16T03:35:10"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "批判态度与其说同教条态度相对立，不如说叠加于后者之上：",
+			"createTime": "2026-09-16T03:35:04"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我们可以把批判态度看做是科学态度，把教条态度看做是我们所说的伪科学态度。",
+			"createTime": "2026-09-16T03:34:49"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "教条态度显然关系到这样的倾向：通过试图应用和确证我们的规律和图式来证实它们，甚至达到漠视反驳的程度，而批判态度则是准备改变它们——检验它们，反驳它们，证伪它们（如果可能的话）。",
+			"createTime": "2026-09-16T03:33:54"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我倾向于认为，大多数精神病可能是由于这种批判态度的发展受到一定程度抑制；是由于受抑制的而不是自然状态的教条主义；是由于对某些按图式进行的解释和反应加以修改和调整的要求受到阻遏。",
+			"createTime": "2026-09-16T03:30:44"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "人生很早就采取的一种模式或图式往往保持终生，每个新的经验都用它来解释；可以说，每个新经验都证实它，增加它的坚固性。这正是对我所称的不同于批判态度的教条态度的描述。",
+			"createTime": "2026-09-16T03:30:13"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "信念应当总是与经验俱增，越开化的人信念总是越强。但是，教条的思维、毫无节制地要求给以规则性以及沉溺于习惯和重复等如此这般的东西，都是原始人和儿童的特征；",
+			"createTime": "2026-09-16T03:29:52"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "判的态度，随时准备修改其信条，允许怀疑并要求检验，则表示一种不太坚定的信念。",
+			"createTime": "2026-09-16T03:29:40"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我们动辄寻找规则性，把规律强加于自然。这种倾向导致教条思维的心理现象，或者更一般地导致教条的行为：我们期望规则性无所不在，试图甚至在子虚乌有的地方也找到它们；不服从这些企图的事件，我们很容易看做一种“背景噪声”；我们墨守自己的期望，甚至在这些期望并不恰当、我们应当承认失败的时候也是这样。",
+			"createTime": "2026-09-16T03:29:27"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "康德相信“因果律”是我们精神素质的一部分而且是先天正确的",
+			"createTime": "2026-09-16T03:28:34"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我觉得先天观念的理论是荒唐的；但是任何生物都有天生的反应；而且在这些反应里面，有些反应适应于即将到来的事件。我们可以把这类反应描述为“期望”，但并不意味着这些“期望”是有意识的。",
+			"createTime": "2026-09-16T03:28:13"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "观察总是有选择的。它需要选定的对象、确定的任务、兴趣、观点和问题。它的描述必须有一种拥有专门语词的描述语言；它还需要以相似和分类为前提，分类又以兴趣、观点和问题为前提。",
+			"createTime": "2026-09-16T03:27:42"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "科学是从观察到理论，这仍旧是人们的一个广泛而坚定的信念，因而我对这种信念的否定常常被认为是不可思议的事。",
+			"createTime": "2026-09-16T03:27:17"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "因此一切表面的知识都只是一种信念——根据习惯的信念。这个回答意味着，即使科学知识也是非理性的，因而理性主义是荒谬的，必须放弃掉。",
+			"createTime": "2026-09-16T03:25:35"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "如休谟所承认的，甚至一次给人留下深刻印象的观察，可能已足以造成一种信仰或期望。",
+			"createTime": "2026-09-16T03:02:51"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "这种思想被维特根斯坦用来作为与哲学相对立的科学的特点。我们读到（如4.11里，他把自然科学看作是和哲学对立的）：“全部的真命题就是整个的自然科学（或全部自然科学）。”这就是说，凡属于科学的命题都是那些可从真观察陈述引申出来的命题；它们是那些可用真观察陈述予以肯定的命题。如果我们能知道所有的真观察陈述，我们也将知道所有可用自然科学肯定的东西。",
+			"createTime": "2026-09-16T02:45:23"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "可证伪性的标准就是解决这个分界问题的一种办法，因为它说那些陈述或者陈述系统要够得上科学，就必须能同可能的观察或想象得到的观察发生矛盾才行。",
+			"createTime": "2026-09-16T02:40:23"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "这些理论描述了某些事实，然而是以神话的形式描述的。它们含有十分有趣的心理学启示，但是不具有可检验的形式。",
+			"createTime": "2026-09-16T02:39:57"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "为了逃避证伪，他们破坏了自己理论的可检验性。把预言讲得非常含糊，使预言简直不会失败，这是典型的占卜者伎俩；使预言变得无从反驳。",
+			"createTime": "2026-09-16T02:39:28"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "占星术士对他们所相信的确实证据极端重视和极端迷信，以致他们对任何不利的证据都完全无动于衷。",
+			"createTime": "2026-09-16T02:39:21"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "爱因斯坦的引力理论显然满足可证伪性的标准。即使我们当时的测量仪器不容许我们十分有把握地对检验的结果下断语，但是驳倒这种理论的可能性显然是存在的。",
+			"createTime": "2026-09-16T02:39:14"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "对一种理论的任何真正的检验，都是企图否证它或驳倒它。可检验性就是可证伪性；但是可检验性有程度上的不同：有些理论比别的理论容易检验，容易反驳；它们就像担当了更大的风险似的。",
+			"createTime": "2026-09-16T02:39:00"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "一种不能用任何想象得到的事件反驳掉的理论是不科学的。不可反驳性不是（如人们时常设想的）一个理论的长处，而是它的短处。",
+			"createTime": "2026-09-16T02:38:02"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "差不多任何理论我们都很容易为它找到确证或证实——如果我们寻找确证的话。",
+			"createTime": "2026-09-16T02:37:36"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "正是这个事实——它们总是适用，总是得到证实——构成了支持它们的最有力的论据。我开始明白，事实上，这个表面上的长处正是它们的短处。",
+			"createTime": "2026-09-16T02:37:04"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "按照弗洛伊德，第一个人受到了压抑（比如他的恋母情结的某种成分），而第二个人则已达到升华。按照阿德勒，第一个人具有自卑感（因而可能产生了自我证明自己敢于犯罪的要求），第二个人也是这样（他的要求是自我证明敢于救这个孩子）。我不能设想，有什么人类行为不能用这两种理论来解释的。",
+			"createTime": "2026-09-16T02:37:00"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我问自己，它确证了什么呢？无非是可以用这理论解释一个病例而已。但是我想这没有什么意义，因为每个可以想到的病例都能用阿德勒理论或者同样用弗洛伊德理论加以解释。",
+			"createTime": "2026-09-16T02:36:39"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我略感吃惊，问他怎么会这样有把握。他回答说：“因为我有上千次的经验”；因此我不得不说：“我料想，由于这个新病例，你现在有了一千零一次经验。”",
+			"createTime": "2026-09-16T02:36:29"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "在那些使我感觉兴趣的理论中，爱因斯坦的相对论当然最为重要。另外还有三个，即马克思的历史学说，弗洛伊德的精神分析学和阿德勒的“个体心理学”。",
+			"createTime": "2026-09-16T02:35:16"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "一、科学：猜想和反驳(1)",
+			"text": "我想要区别科学和伪科学；虽然很清楚科学时常弄错，而伪科学可以碰巧触及真理。",
+			"createTime": "2026-09-16T02:34:50"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "猜想",
+			"text": "任何……理论最好不过的命运是，指明通往一个更加广包的理论的途径，而它则作为一个极限情形在后一理论中继续存在下去",
+			"createTime": "2026-09-16T02:33:45"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "我认为，我们应当做的是放弃终极知识源泉的观念，承认一切知识都是人的知识；承认知识同我们的错误、偏见、梦想和希望混在一起，我们所能做的一切就是探索真理，尽管它是不可企及的。",
+			"createTime": "2026-09-16T02:31:57"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "第二个观念（罗素强调过它的极关重要）是，人不具有用律令确立真理的那种权威；我们应当服从真理；真理超越人的权威。",
+			"createTime": "2026-09-16T02:31:39"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "当我们沉思天空的广阔无垠时，对我们的无知之无边无际可见一斑：虽然单纯的宇宙大小不是我们无知的最深刻的原因，但它是其原因之一。",
+			"createTime": "2026-09-16T02:30:50"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "事实上我们的知识只能是有限的，而我们的无知必定是无限的。",
+			"createTime": "2026-09-16T02:30:45"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "观察和理性都不是权威。理智的直觉和想象极端重要，但它们并不可靠：它们可能非常清晰地向我们显示事物，但他们也可能把我们引向错误。",
+			"createTime": "2026-09-16T02:30:31"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "同样，连贯性不能确立真理，但是不连贯性和不一致性却能确立谬误。",
+			"createTime": "2026-09-16T02:30:23"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "悲观主义的和乐观主义的认识论差不多同样错误。柏拉图的悲观主义的洞穴说是真实的，而他的乐观主义的回想说则不然（虽然我们应当承认，像一切其他动物乃至一切植物一样，一切人都具有先天知识）。",
+			"createTime": "2026-09-16T02:30:04"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "不存在终极的知识源泉。每个源泉、每个提示都是值得欢迎的；每个源泉、每个提示都有待于批判考察",
+			"createTime": "2026-09-16T02:27:27"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "如果你能设计出某种你认为能反驳我的断定的实验检验，那我将高兴地、竭尽全力地帮助你反驳它。",
+			"createTime": "2026-09-16T02:27:21"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "是爱因斯坦使我作的这种润色成为可能，他教导我们，牛顿理论很可能是错误的，尽管它取得了压倒一切的成功。",
+			"createTime": "2026-09-16T02:25:57"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "因为如果我们未能批判我们自己的理论，那也会有别人来替我们这样做。）这个回答概述了我打算称为“批判理性主义”的立场。",
+			"createTime": "2026-09-16T02:23:46"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "本着这样的信仰即知识可以其谱系证明为合理的。",
+			"createTime": "2026-09-16T02:19:44"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "可是，我认为这种理想的源泉同理想的统治者一样根本不存在，",
+			"createTime": "2026-09-16T02:19:39"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "我们一般不通过追溯一个断定或信息的源泉或由来去检验它的正确性；而是通过批判考察所断定的东西也即被断定的事实本身直接地检验它的正确性。",
+			"createTime": "2026-09-16T02:17:23"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "这源泉很可能是发现另一篇论文中的一个漏洞，或者是发现另一篇论文中提出的一个假说可用某个实验加以检验；所有这些非观察的发现全都增加我们的知识，就此而言，它们都是“源泉”。",
+			"createTime": "2026-09-16T02:05:20"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "我以为，答案是这样的：我们的知识有各种各样的源泉；但没有一种源泉有权威性。",
+			"createTime": "2026-09-16T02:04:55"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "可能为一个报道的可靠性操心，但他不大会为一个文件的作家是不是该事件的目击者操心，更不可能去假定这事件本质上是一个可观察事件。如果一封信上说“我昨天在这个问题上改变了主意”，它可能是最有价值的历史证据，哪怕主意的改变是不可观察的（哪怕我们鉴于别的证据，可以猜想这作家在撒谎）。",
+			"createTime": "2026-09-16T02:03:07"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "如果我们对一个断定发生怀疑，那么，正常的程序是检验它，而不是探询它的源泉；如果我们找到独立的确证，那么，我们往往会接受这个断定，丝毫不为源泉操心。",
+			"createTime": "2026-09-16T02:02:55"
+		},
+		{
+			"bookId": "27094128",
+			"bookTitle": "猜想与反驳",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/1/YueWen_27094128/t6_YueWen_27094128.jpg",
+			"chapter": "论知识和无知的来源(1)",
+			"text": "换言之，只要可能的话，这位调查者总是试图去核对或考察这被断定的事实本身，而不是追溯这信息的来源。",
+			"createTime": "2026-09-16T02:02:33"
 		},
 		{
 			"bookId": "27094128",
@@ -15988,6 +16460,358 @@
 			"chapter": "节奏与技术：论海德格尔对兰波的评论",
 			"text": "西蒙东提出他的这一理论，是因为他更关注当代量子力学研究，而海德格尔只是把当代物理学当作纯粹客观主义、还原唯物主义的思想而已。",
 			"createTime": "2026-09-14T02:32:35"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第5章 孩子面临的4大伤害：社会剥夺、睡眠剥夺、注意力碎片化和成瘾",
+			"text": "一种“可变比率强化程序”(variable-ratio reinforcement schedule)控制，这是游戏设计师刻意设置的机制。这种机制是控制动物行为有力的方式，仅次于直接在大脑里植入电极。",
+			"createTime": "2026-09-16T02:10:34"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "作为生日礼物，可以送给他们一部功能简单的手机或类似的移动设备。设备里的应用程序不能太多，也不要联网。",
+			"createTime": "2026-09-16T02:09:01"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "我们都希望自己的孩子长大后有优秀的社交能力、健全的心智，能独当一面，成家立业。",
+			"createTime": "2026-09-16T02:08:03"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "网络的信息洪流冲击着孩子们的感官，哄着他们不停地浏览内容、观看广告，长时间待在自己房间里。新冠疫情时期，因为要“保持社交距离”，远程处理一切，情况进一步恶化了。",
+			"createTime": "2026-09-16T02:07:47"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "在虚拟世界的新天地里，用户几乎做一切事情都不用再考虑自己的年龄。但凡孩子能够使用网页浏览器，就能在互联网的信息宝库里畅通无阻。",
+			"createTime": "2026-09-16T02:07:26"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "孩子们接触现实世界的机会越来越少，与此同时，虚拟世界却越来越容易进入且充满诱惑。",
+			"createTime": "2026-09-16T02:07:15"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "这些夸张的仪式充满了神圣感。边缘仪式完成后，女孩就被正式认定为女人，会受到大家的热烈欢迎。她的家人将举办宴会庆贺礼成，并与族群里的其他人互换贺礼。",
+			"createTime": "2026-09-16T01:56:05"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "过渡仪式往往反映了一个社会中成年人的阶层架构与价值观。",
+			"createTime": "2026-09-16T01:55:43"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "大多数部落、社群也会为青春期的到来举行纪念仪式。",
+			"createTime": "2026-09-16T01:49:49"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "在手机上跟人交流，我们用的是文字和表情包，无法充分激发大脑在面对面交流中，通过观察面部表情、语调变化、直接的眼神交流和肢体动作来调整的部分。",
+			"createTime": "2026-09-16T01:48:39"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "与此类似，当一个智能设备进入孩子的生活时，就会把其他活动推出孩子的视野，力求独占孩子的注意力。",
+			"createTime": "2026-09-16T01:48:30"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "确实，智能手机和其他数字设备为儿童及青少年提供了极为丰富的体验，但这也引发了一个不容忽视的问题：它们削弱了孩子对线下世界体验的兴趣。",
+			"createTime": "2026-09-16T01:48:21"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "青春期不见得伴随着特别大的压力，只是这个时期的大脑对持续的压力感知更加敏锐，所以才容易让青少年产生健康问题，如广泛性焦虑症、抑郁、进食障碍等。",
+			"createTime": "2026-09-16T01:44:52"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "尤其是那些带来成就感的活动，都会使大脑的结构产生持久性的改变。",
+			"createTime": "2026-09-16T01:44:14"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第4章 成长的阻碍：缺失的成人礼对青少年心理影响重大",
+			"text": "人类从儿童到成人的转变部分取决于在对的时间经历对的体验，以成全大脑在青少年时期的急速重塑。",
+			"createTime": "2026-09-16T01:43:58"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "• 将安全置于一切之上，这被称为安全主义。它反而是一种很危险的思想，因为它削弱了孩子们学习自我保护以及应对风险、冲突和挫折的能力。",
+			"createTime": "2026-09-16T01:43:35"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "孩子天生具有反脆弱性，冒险式玩耍有利于他们的成长，与此同时，孩子也需要一个安全基地，这在必要时提供援助，帮他们切换回发现模式。",
+			"createTime": "2026-09-16T01:42:26"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "随着年龄增长，孩子渐渐能够将安全基地的角色内化，自己就能给自己安全感，无须大人在身旁守护。",
+			"createTime": "2026-09-16T01:41:50"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "通常，一个建立了安全型依恋的儿童能在几秒或几分钟内恢复平静，切换回发现模式，继续他们的学习和发现之旅。",
+			"createTime": "2026-09-16T01:41:41"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "跟紧和离开妈妈，这是看似矛盾的两大需求。调节这些相互冲突的需求的心理机制就是依恋系统。",
+			"createTime": "2026-09-16T01:41:18"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "受访者中不乏X世代和婴儿潮时期的人，他们一边给出这些数字，一边感叹，自己当年才6岁或者8岁就能自由出门了。",
+			"createTime": "2026-09-16T01:40:54"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "孩子们本来可以通过这些冲突，学习掌控局面，解决纷争，为将来在民主社会的生活做好准备，但现在是无望了。",
+			"createTime": "2026-09-16T01:38:29"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "加利福尼亚州伯克利的一个朋友给我发来的这张照片。这所小学竟然不允许孩子们自由地玩捉人游戏，想玩必须在成人的监管下玩，否则后果“不堪设想”——万一发生矛盾怎么办？万一有孩子被排挤怎么办？",
+			"createTime": "2026-09-16T01:38:04"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "我们用“安全主义”这个术语来描述“一种文化或信仰体系，其中安全已经成为一种神圣的价值观，人们不愿意为了其他实际和道德考量所要求的权衡而做出妥协。‘安全’超越了一切，无论潜在的危险多么的微不足道”。",
+			"createTime": "2026-09-16T01:36:59"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "在这样的环境中，人们反而可以彼此批评，在相互尊重的基础上提出不同意见。大家畅所欲言，才能真正考察创意和观点的可行性。",
+			"createTime": "2026-09-16T01:36:42"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "以至于邻居看到后都要打电话报警，找来警察、儿童保护机构来跟父母沟通。在美国，父母甚至可能因此入狱，原因就是给了孩子“过多”自由。",
+			"createTime": "2026-09-16T01:35:57"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "“持续监督孩子被认为是负责任的育儿方式，这是非常典型的英美思维。”",
+			"createTime": "2026-09-16T01:35:22"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "所有人都独善其身，不再帮着别人照顾孩子，每个家庭都只能孤军奋战。养育孩子的难度陡增，恐慌牵扯着父母的情绪。父母们需要花更多时间陪伴孩子，特别是妈妈，",
+			"createTime": "2026-09-16T01:35:03"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "有些托儿所的工作人员极其无辜，被无端指控对儿童进行变态性骚扰和实施恐怖仪式等。这些指控来自非常年幼的孩子。后来人们才知道，原来孩子们做证时受到了成人的恶意诱导，所以才编造出这些荒诞的情节。[插图]",
+			"createTime": "2026-09-16T01:33:02"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "成年人之间的关系淡漠了。这是当时养育理念转变的主要原因。",
+			"createTime": "2026-09-16T01:32:24"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "在富裕家庭中是主流。父母们认为，孩子的成长需要一个家庭付出大量的心血，给予到位的关照和培养。父母必须给孩子看《小小爱因斯坦》(Baby Einstein )节目，以提高孩子的智商。不过后来有研究表明，这类节目没什么效果，看或不看都没区别。",
+			"createTime": "2026-09-16T01:30:08"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "1981—1997年，美国孩子的自由玩耍时间明显缩水。[插图]孩子们投入了更多时间去参加由学校或成人组织的活动，玩耍或看电视的时间则下降了。",
+			"createTime": "2026-09-16T01:29:43"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "孩子们在网上学社交，学到的不是经验，而是无力感、无能感、空虚感，以及对未来社交生活的焦虑。",
+			"createTime": "2026-09-16T01:28:37"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "因为在互联网上，信息是可以永久存在的，谁都看得到。生活中没有半点交集的网友们会肆意地展开尖锐的批评，孩子即使道歉，也可能被“群嘲”。",
+			"createTime": "2026-09-16T01:28:29"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "社交技能的培养上，他们需要学习如何建立和维护友谊，这需要具身的互动，比如一起玩耍、拥抱和肢体接触。",
+			"createTime": "2026-09-16T01:28:08"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "人类的进化塑造了现在的童年模式，孩子的大脑期待着现实世界的挑战与刺激。他们需要的互动是面对面的，双方能同步行动的，形式是一对一或者一对少数几人的，",
+			"createTime": "2026-09-16T01:27:58"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "这些游乐设施给孩子们提供了不同程度的惊恐和兴奋，同时受伤的风险几乎为零。",
+			"createTime": "2026-09-16T01:27:31"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "我们是有血有肉的生物，孩子们得先学会在现实世界中掌控自己的身体，再去虚拟世界里遨游。顺序不可颠倒。",
+			"createTime": "2026-09-16T01:26:29"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "成人的恐惧症很少与童年的悲惨经历相关。[插图]那些从树上摔下来过的孩子，长大后反而最不怕爬树。",
+			"createTime": "2026-09-16T01:24:43"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "刺激的经历会让人学会战胜恐惧。[插图]",
+			"createTime": "2026-09-16T01:24:26"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "孩子们天生具备反脆弱性，所以被保护过度的孩子很容易在青春期陷入防御模式。在这种模式下，他们难以去学习新知识和新技能，很难交到朋友，会更加焦虑，动辄便会被日常生活中的冲突击倒。",
+			"createTime": "2026-09-16T01:24:12"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "书中的观点认为，父母要时不时地给孩子“制造”点麻烦和挫折，让孩子明白人生充满了不确定性，有些事情是说发生就会发生的。",
+			"createTime": "2026-09-16T01:23:48"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "幸福来自内心的清醒与笃定，人要学会不以身外之物来定悲喜，不让外界的噪声牵着自己的情绪走。",
+			"createTime": "2026-09-16T01:23:35"
+		},
+		{
+			"bookId": "3300146726",
+			"bookTitle": "焦虑的一代",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_rfhqwskonwptt8bkgvgurn/t6_cpplatform_rfhqwskonwptt8bkgvgurn1748574814.jpg",
+			"chapter": "第3章 成长的动力：冒险式玩耍对儿童发展意义深远",
+			"text": "孩子不能一触即溃，动辄“内耗”几小时甚至好几天。与人相处，纷争和委屈在所难免。",
+			"createTime": "2026-09-16T01:23:25"
 		},
 		{
 			"bookId": "3300146726",
@@ -31052,6 +31876,30 @@
 			"chapter": "先知",
 			"text": "你在我们生命的苍茫暮色中，曾像丽日一样悬挂中天。",
 			"createTime": "2026-05-22T03:40:12"
+		},
+		{
+			"bookId": "934374",
+			"bookTitle": "小径分岔的花园",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/374/934374/t6_934374.jpg",
+			"chapter": "通天塔图书馆",
+			"text": "无数荒唐的同音重复、杂乱和不连贯的文字里只有一行看得懂或者直截了当的信息。",
+			"createTime": "2026-09-16T10:58:47"
+		},
+		{
+			"bookId": "934374",
+			"bookTitle": "小径分岔的花园",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/374/934374/t6_934374.jpg",
+			"chapter": "通天塔图书馆",
+			"text": "其次，书写符号的数目是二十五[插图]。",
+			"createTime": "2026-09-16T10:58:27"
+		},
+		{
+			"bookId": "934374",
+			"bookTitle": "小径分岔的花园",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/374/934374/t6_934374.jpg",
+			"chapter": "通天塔图书馆",
+			"text": "自从开天辟地以来，图书馆就已存在。任何头脑清醒的人都不会怀疑这一事实以及它所引出的必然结论，即世界将来也永远存在。",
+			"createTime": "2026-09-16T10:58:07"
 		},
 		{
 			"bookId": "934374",
@@ -53375,18 +54223,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 805043,
-		"readDays": 335,
-		"readBooks": 163,
+		"totalReadTime": 809603,
+		"readDays": 336,
+		"readBooks": 164,
 		"finishedBooks": 28,
-		"noteCount": 8590,
+		"noteCount": 8737,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
-				"count": 50,
-				"time": 239029
+				"count": 51,
+				"time": 239264
 			},
 			{
 				"title": "心理",
@@ -53406,12 +54254,12 @@
 			{
 				"title": "教育学习",
 				"count": 5,
-				"time": 55415
+				"time": 59001
 			},
 			{
 				"title": "社会文化",
 				"count": 10,
-				"time": 51342
+				"time": 51346
 			}
 		],
 		"preferAuthor": [
@@ -54710,7 +55558,11 @@
 			},
 			{
 				"date": "2026-09-14",
-				"seconds": 3711
+				"seconds": 3714
+			},
+			{
+				"date": "2026-09-15",
+				"seconds": 4557
 			}
 		]
 	},
@@ -54723,6 +55575,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-15T13:36:06.658Z",
+	"generatedAt": "2026-09-16T13:33:00.220Z",
 	"isMock": false
 }
