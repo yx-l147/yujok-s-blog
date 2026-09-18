@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "934903",
+			"title": "复杂（第一推动丛书·综合系列）",
+			"author": "梅拉妮·米歇尔",
+			"cover": "https://cdn.weread.qq.com/weread/cover/70/YueWen_934903/t6_YueWen_934903.jpg",
+			"category": "科学技术-科学科普",
+			"finishReading": 0,
+			"readUpdateTime": 1789711542,
+			"updateTime": 1760175845,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "32510980",
 			"title": "吉尔·德勒兹",
 			"author": "芙丽达·贝克曼",
@@ -235,7 +251,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81378,
+			"ratingCount": 81383,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -379,7 +395,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2697,
+			"ratingCount": 2698,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -1067,7 +1083,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.4,
-			"ratingCount": 629,
+			"ratingCount": 628,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=5c832060813ab8c2dg018e58"
@@ -1080,7 +1096,7 @@
 			"category": "哲学宗教-哲学著作",
 			"finishReading": 0,
 			"readUpdateTime": 1787640599,
-			"updateTime": 1784893707,
+			"updateTime": 1789715867,
 			"progress": 10,
 			"noteCount": 18,
 			"reviewCount": 0,
@@ -1427,7 +1443,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.8,
-			"ratingCount": 524,
+			"ratingCount": 527,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1467,7 +1483,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1391,
+			"ratingCount": 1394,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1602,8 +1618,8 @@
 			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
-			"publicRating": 7.8,
-			"ratingCount": 33,
+			"publicRating": 7.7,
+			"ratingCount": 34,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4de32f70813abbcd4g018e82"
@@ -1771,7 +1787,7 @@
 			"publisher": "中国纺织出版社",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 606,
+			"ratingCount": 608,
 			"publishTime": "2025-03-21 00:00:00",
 			"isbn": "9787522925271",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=33132870813ab9fd0g016372"
@@ -2051,7 +2067,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17079,
+			"ratingCount": 17080,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2075,7 +2091,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1360,
+			"ratingCount": 1361,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2251,7 +2267,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44334,
+			"ratingCount": 44354,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -2291,7 +2307,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "王伟平",
 			"publicRating": 8.6,
-			"ratingCount": 2629,
+			"ratingCount": 2631,
 			"publishTime": "2024-01-01 00:00:00",
 			"isbn": "9787115630216",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=16832420813ab90f3g019f92"
@@ -2395,7 +2411,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 8877,
+			"ratingCount": 8892,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2699,7 +2715,7 @@
 			"publisher": "上海人民出版社",
 			"translator": "褚炫初",
 			"publicRating": 7.7,
-			"ratingCount": 169,
+			"ratingCount": 170,
 			"publishTime": "2024-09-01 00:00:00",
 			"isbn": "9787208189669",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8132fd0813aba46fg0137e5"
@@ -3091,7 +3107,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31637,
+			"ratingCount": 31646,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -3363,7 +3379,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 77980,
+			"ratingCount": 78001,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -3419,7 +3435,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1545,
+			"ratingCount": 1548,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -3523,7 +3539,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2690,
+			"ratingCount": 2693,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -3547,7 +3563,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "孙天",
 			"publicRating": 8.6,
-			"ratingCount": 1090,
+			"ratingCount": 1091,
 			"publishTime": "2020-07-01 00:00:00",
 			"isbn": "9787111659099",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=61f322a071fac4b261f20c8"
@@ -3587,7 +3603,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6651,
+			"ratingCount": 6656,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -3659,7 +3675,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3361,
+			"ratingCount": 3362,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -4187,7 +4203,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "程雪芳",
 			"publicRating": 8.7,
-			"ratingCount": 880,
+			"ratingCount": 881,
 			"publishTime": "2021-11-01 00:00:00",
 			"isbn": "9787532787081",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=99e32ed07270fbe299ed9aa"
@@ -4315,7 +4331,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6386,
+			"ratingCount": 6389,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -4555,7 +4571,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2170,
+			"ratingCount": 2172,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4907,7 +4923,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 9,
-			"ratingCount": 6273,
+			"ratingCount": 6274,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -5086,7 +5102,7 @@
 			"publisher": "浙江科学技术出版社",
 			"translator": "",
 			"publicRating": 7.6,
-			"ratingCount": 478,
+			"ratingCount": 479,
 			"publishTime": "2025-09-11 00:00:00",
 			"isbn": "9787573918949",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=ef832f90813aba7f9g010253"
@@ -5238,7 +5254,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1487,
+			"ratingCount": 1488,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -5278,7 +5294,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 1994,
+			"ratingCount": 2002,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -5558,7 +5574,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15453,
+			"ratingCount": 15455,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5614,7 +5630,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10125,
+			"ratingCount": 10124,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5741,7 +5757,7 @@
 			"intro": "诺奖得主加谬历时十年构思创作的经典名著，写给青年人的反抗之书！\n世界是荒诞的，在荒诞中反抗，在反抗中找寻生存的意义。\n本书为《西西弗神话》的续篇，从另一个角度回答生命的意义。\n法语口碑译本，加缪的知名译者严慧莹倾心之作！\n《我反抗，故我们存在》是加缪自己zui为钟爱的作品之一。自出版以来，影响了数代青年人，成为理解我们时代与人的政治学经典。\n自《西西弗神话》后，加缪重新审视生命的意义，从“荒谬”中推导出“反抗”，认为人是唯一懂得说“不”的生物，正是在对一切荒诞、不合理的拒绝中，人才找到了活下去的理由。\n加谬重新审视了人类历史的反抗者及其思想，如萨德、波德莱尔、圣如斯特、卢梭、尼采、陀思妥耶夫斯基、黑格尔、巴枯宁等；回顾了法国大革命和俄国革命，探讨了反抗是如何走向革命的，并由此造成了怎样的灾难性后果。最终，他指向所有人的内心：什么是自我存在的意义，自我的价值与尊严？\n本书是加缪对世界的反抗宣言，也是他对所有既成答案的挑战。",
 			"publisher": "湖南文艺出版社",
 			"translator": "严慧莹",
-			"publicRating": 8.4,
+			"publicRating": 8.5,
 			"ratingCount": 30,
 			"publishTime": "2025-08-01 00:00:00",
 			"isbn": "9787572622861",
@@ -5838,7 +5854,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7418,
+			"ratingCount": 7419,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -6126,7 +6142,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9854,
+			"ratingCount": 9857,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -6222,7 +6238,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4877,
+			"ratingCount": 4879,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -6278,7 +6294,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 170026,
+			"ratingCount": 170052,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -6766,7 +6782,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3452,
+			"ratingCount": 3453,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -6902,7 +6918,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23337,
+			"ratingCount": 23342,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -7125,7 +7141,7 @@
 			"intro": "《小王子》，是写给小孩的童话，是写给大人的寓言，是销量仅次于《圣经》的名著，是享有“二十世纪最佳图书”盛誉的小说。那看日落的小王子，那独一无二的玫瑰花，那带来灾难的猴面包树，那奇怪的国王，那爱虚荣的人，那羞愧的酒鬼，那拥有星星的商人，那越来越忙的点灯人，那不出门的地理学家，那会揭谜底的蛇，那驯养的狐狸，让读者明白：真正重要的东西，眼睛是看不见的……",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.4,
+			"publicRating": 9.5,
 			"ratingCount": 1497,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
@@ -55567,7 +55583,7 @@
 		]
 	},
 	"profile": {
-		"totalBooks": 425,
+		"totalBooks": 426,
 		"secretCount": 30,
 		"favBook": {
 			"title": "西西弗神话",
@@ -55575,6 +55591,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-17T13:32:40.929Z",
+	"generatedAt": "2026-09-18T13:01:20.146Z",
 	"isMock": false
 }
