@@ -1,6 +1,22 @@
 {
 	"books": [
 		{
+			"bookId": "3300152509",
+			"title": "失控的孤独：秋叶原无差别杀人事件",
+			"author": "[日]中岛岳志",
+			"cover": "https://cdn.weread.qq.com/weread/cover/15/cpplatform_576tnedhfbb6g6wm83ubc3/t6_cpplatform_576tnedhfbb6g6wm83ubc31752139451.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1790134935,
+			"updateTime": 1753683849,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300160634",
 			"title": "恶之花（插图珍藏版）",
 			"author": "[法]夏尔·波德莱尔",
@@ -39,7 +55,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/90/YueWen_932167/t6_YueWen_932167.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1789983708,
+			"readUpdateTime": 1790151324,
 			"updateTime": 1703130813,
 			"progress": 0,
 			"noteCount": 0,
@@ -131,7 +147,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 170151,
+			"ratingCount": 170179,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -187,7 +203,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4881,
+			"ratingCount": 4882,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -226,7 +242,7 @@
 			"intro": "它是诺贝尔文学奖得主泰戈尔的哲理短诗集，以轻盈笔触叩问天地与人心。三百余首小诗如飞鸟掠空，将自然草木、日月星辰与生命哲思熔于一炉，语言清丽、意境悠远。\r\n在快节奏的日常里，它以极简文字照见内心，让读者在一花一草、一鸟一云间读懂生命的本真与温柔。既是口袋里的心灵慰藉，也是可反复品读的灵感之书。",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.2,
+			"publicRating": 9.1,
 			"ratingCount": 811,
 			"publishTime": "2026-03-17 00:00:00",
 			"isbn": "",
@@ -283,7 +299,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9875,
+			"ratingCount": 9878,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -571,7 +587,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7426,
+			"ratingCount": 7427,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -723,7 +739,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "覃立波  冯骁骋  刘乾",
 			"publicRating": 9.1,
-			"ratingCount": 331,
+			"ratingCount": 333,
 			"publishTime": "2025-04-01 00:00:00",
 			"isbn": "9787115666000",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=52e320c0813ab9edeg01750f"
@@ -751,7 +767,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/3/cpplatform_gu93elysjqtkycqpaggcoa/t6_cpplatform_gu93elysjqtkycqpaggcoa1761560780.jpg",
 			"category": "文学-经典作品",
 			"finishReading": 0,
-			"readUpdateTime": 1789986135,
+			"readUpdateTime": 1790134886,
 			"updateTime": 1761561723,
 			"progress": 0,
 			"noteCount": 7,
@@ -795,7 +811,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10129,
+			"ratingCount": 10132,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -1087,14 +1103,22 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_wcriojxczfnq9zmhza1xzt/t6_cpplatform_wcriojxczfnq9zmhza1xzt1761814384.jpg",
 			"category": "文学-经典作品",
 			"finishReading": 0,
-			"readUpdateTime": 1790050389,
+			"readUpdateTime": 1790151782,
 			"updateTime": 1761815342,
-			"progress": 21,
-			"noteCount": 13,
+			"progress": 60,
+			"noteCount": 16,
 			"reviewCount": 0,
-			"bookmarkCount": 14,
+			"bookmarkCount": 23,
 			"readTime": 0,
-			"tags": []
+			"tags": [],
+			"intro": "嵇康 嵇康（224－263，一说223－262），字叔夜，汉族，三国时期魏国谯郡铚县（今安徽省宿州市西）人。著名思想家、音乐家、文学家。正始末年与阮籍等竹林名士共倡玄学新风，主张“越名教而任自然”、“审贵贱而通物情”，为“竹林七贤”的精神领袖。曾娶曹操曾孙女，官曹魏中散大夫，世称嵇中散。后因得罪钟会，为其构陷，而被司马昭处死。",
+			"publisher": "",
+			"translator": "",
+			"publicRating": 0,
+			"ratingCount": 8,
+			"publishTime": "2025-06-01 00:00:00",
+			"isbn": "",
+			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fd532660813abaa0fg0126ae"
 		},
 		{
 			"bookId": "3300019336",
@@ -1323,7 +1347,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.8,
-			"ratingCount": 536,
+			"ratingCount": 542,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1363,7 +1387,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1405,
+			"ratingCount": 1409,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1451,7 +1475,7 @@
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
 			"publicRating": 7.8,
-			"ratingCount": 37,
+			"ratingCount": 38,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4de32f70813abbcd4g018e82"
@@ -1555,7 +1579,7 @@
 			"publisher": "上海三联书店",
 			"translator": "",
 			"publicRating": 8.8,
-			"ratingCount": 6831,
+			"ratingCount": 6832,
 			"publishTime": "2023-01-30 00:00:00",
 			"isbn": "9787542677815",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f0032f50813ab7e04g012a8d"
@@ -2123,7 +2147,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1372,
+			"ratingCount": 1376,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2403,7 +2427,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3460,
+			"ratingCount": 3461,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -2731,7 +2755,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 8953,
+			"ratingCount": 8972,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2899,7 +2923,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "王伟平",
 			"publicRating": 8.6,
-			"ratingCount": 2642,
+			"ratingCount": 2646,
 			"publishTime": "2024-01-01 00:00:00",
 			"isbn": "9787115630216",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=16832420813ab90f3g019f92"
@@ -2971,7 +2995,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23356,
+			"ratingCount": 23359,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -3283,7 +3307,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.5,
-			"ratingCount": 1503,
+			"ratingCount": 1504,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -3471,7 +3495,7 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/396/934396/t6_934396.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1789983655,
+			"readUpdateTime": 1790151335,
 			"updateTime": 1770277982,
 			"progress": 0,
 			"noteCount": 0,
@@ -3563,7 +3587,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44429,
+			"ratingCount": 44445,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -3587,7 +3611,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2351,
+			"ratingCount": 2353,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -3767,7 +3791,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/27/cpplatform_qr7qf7tgxaxezuyccprhkv/t6_cpplatform_qr7qf7tgxaxezuyccprhkv1768205105.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1789983688,
+			"readUpdateTime": 1790151328,
 			"updateTime": 1768295163,
 			"progress": 2,
 			"noteCount": 0,
@@ -3907,7 +3931,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 224,
+			"ratingCount": 226,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -3983,7 +4007,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/21/cpplatform_p3tqekejp7ywp7luu1cqoc/t6_cpplatform_p3tqekejp7ywp7luu1cqoc1756449875.jpg",
 			"category": "社会文化-文化",
 			"finishReading": 0,
-			"readUpdateTime": 1787568699,
+			"readUpdateTime": 1790144469,
 			"updateTime": 1765788287,
 			"progress": 0,
 			"noteCount": 0,
@@ -4355,7 +4379,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4174,
+			"ratingCount": 4176,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -4427,7 +4451,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2891,
+			"ratingCount": 2893,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -4499,10 +4523,26 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81446,
+			"ratingCount": 81460,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
+		},
+		{
+			"bookId": "3300158542",
+			"title": "变成怪物的年轻一代：“我们赞成被差别对待”",
+			"author": "[韩]吴赞镐",
+			"cover": "https://cdn.weread.qq.com/weread/cover/35/cpplatform_3k2upb3qqytjdtqlxskger/t6_cpplatform_3k2upb3qqytjdtqlxskger1755254145.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1790139520,
+			"updateTime": 1761904217,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
 		},
 		{
 			"bookId": "3300101818",
@@ -4635,7 +4675,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2702,
+			"ratingCount": 2703,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -4887,7 +4927,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/52/YueWen_33601975/t6_YueWen_33601975.jpg",
 			"category": "文学-古代诗词",
 			"finishReading": 0,
-			"readUpdateTime": 1789984043,
+			"readUpdateTime": 1790151321,
 			"updateTime": 1762500843,
 			"progress": 0,
 			"noteCount": 0,
@@ -5211,7 +5251,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2378,
+			"ratingCount": 2379,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -5307,7 +5347,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31709,
+			"ratingCount": 31731,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -5427,7 +5467,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "欧阳瑾,戴花",
 			"publicRating": 8.4,
-			"ratingCount": 236,
+			"ratingCount": 237,
 			"publishTime": "2020-05-01 00:00:00",
 			"isbn": "9787553519609",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8cb32d9071e3bcd78cb9368"
@@ -5579,7 +5619,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 78092,
+			"ratingCount": 78100,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -5635,7 +5675,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1554,
+			"ratingCount": 1556,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5723,7 +5763,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "周煦良;汤永宽",
 			"publicRating": 7.4,
-			"ratingCount": 2697,
+			"ratingCount": 2699,
 			"publishTime": "2012-06-01 00:00:00",
 			"isbn": "9787532758012",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e7432500716b1b16e74bad2"
@@ -5787,7 +5827,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6665,
+			"ratingCount": 6667,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -5859,7 +5899,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3372,
+			"ratingCount": 3375,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -6467,7 +6507,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6401,
+			"ratingCount": 6408,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -6555,7 +6595,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4788,
+			"ratingCount": 4789,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -6654,15 +6694,7 @@
 			"reviewCount": 0,
 			"bookmarkCount": 21,
 			"readTime": 0,
-			"tags": [],
-			"intro": "本书自1957年问世以来，迭经重版，蜚声海内外。邓广铭先生先后对全书的笺注与编年作了大幅度的修改调整，补充了大量颇具价值的文献资料。此“简体版”在保持繁体版的各项笺注释读内容、专名线标点等基础上，寄望于以较易进入阅读的简体横排形式，使更多的读者接触到传统文化的正统解读，领略其中的优质精髓所在。",
-			"publisher": "上海古籍出版社",
-			"translator": "",
-			"publicRating": 9.3,
-			"ratingCount": 177,
-			"publishTime": "2018-07-01 00:00:00",
-			"isbn": "9787532585540",
-			"deepLink": "https://weread.qq.com/book-detail?type=1&v=b0b32dd072576d39b0b13f3"
+			"tags": []
 		},
 		{
 			"bookId": "26318970",
@@ -6715,7 +6747,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2181,
+			"ratingCount": 2182,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -7002,8 +7034,8 @@
 			"intro": "“黑塞精选集”收入1946年诺贝尔文学奖得主赫尔曼•黑塞不同时期的五部代表作：《在轮下》《德米安：彷徨少年时》《悉达多》《荒原狼》《纳尔奇思与歌尔得蒙》。\r\n《德米安：彷徨少年时》的故事始于辛克莱尔的少年时代。从家庭的“光明世界”进入学校后，辛克莱尔发现自己面对的是令他备感不安和困惑的“另一个世界”。德米安的适时出现，拯救了辛克莱尔，并在以后的成长中，引领他走过世上最为艰难的路——自我实现之路。",
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
-			"publicRating": 9,
-			"ratingCount": 6280,
+			"publicRating": 8.9,
+			"ratingCount": 6282,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -7075,7 +7107,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4358,
+			"ratingCount": 4359,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -7338,10 +7370,10 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/358/933358/t6_933358.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1790005073,
+			"readUpdateTime": 1790170342,
 			"updateTime": 1726642040,
 			"progress": 48,
-			"noteCount": 64,
+			"noteCount": 65,
 			"reviewCount": 0,
 			"bookmarkCount": 5,
 			"readTime": 0,
@@ -7350,7 +7382,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1495,
+			"ratingCount": 1496,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -7390,7 +7422,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 2009,
+			"ratingCount": 2011,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -15900,6 +15932,30 @@
 			"chapter": "CHAPTER I.INTRODUCTORY.",
 			"text": "By liberty, was meant protection against the tyranny of the political rulers.",
 			"createTime": "2026-04-15T06:26:51"
+		},
+		{
+			"bookId": "3300172952",
+			"bookTitle": "嵇康文集",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_wcriojxczfnq9zmhza1xzt/t6_cpplatform_wcriojxczfnq9zmhza1xzt1761814384.jpg",
+			"chapter": "琴赋",
+			"text": "含天地之醇和兮，吸日月之休光。郁纷纭以独茂兮。飞英蕤于昊苍。夕纳景于虞渊兮，旦晞干于九阳。经千载以待价兮，寂神跱而永康",
+			"createTime": "2026-09-23T08:17:50"
+		},
+		{
+			"bookId": "3300172952",
+			"bookTitle": "嵇康文集",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_wcriojxczfnq9zmhza1xzt/t6_cpplatform_wcriojxczfnq9zmhza1xzt1761814384.jpg",
+			"chapter": "赠秀才入军",
+			"text": "目送归鸿，手挥五弦。俯仰自得，游心太玄。",
+			"createTime": "2026-09-23T02:20:49"
+		},
+		{
+			"bookId": "3300172952",
+			"bookTitle": "嵇康文集",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_wcriojxczfnq9zmhza1xzt/t6_cpplatform_wcriojxczfnq9zmhza1xzt1761814384.jpg",
+			"chapter": "赠秀才入军",
+			"text": "习习谷风，吹我素琴。交交黄鸟，顾俦弄音。",
+			"createTime": "2026-09-23T02:20:15"
 		},
 		{
 			"bookId": "3300172952",
@@ -53089,6 +53145,14 @@
 			"bookId": "933358",
 			"bookTitle": "龙与少年游：江南随笔精选",
 			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/358/933358/t6_933358.jpg",
+			"chapter": "序",
+			"text": "在得意的时候写，在卑微的时候也写，汉唐的武夫中有文采的总是动不动就拔剑击柱而歌，以前我也是这样，只恨手中无剑。",
+			"createTime": "2026-09-23T13:32:04"
+		},
+		{
+			"bookId": "933358",
+			"bookTitle": "龙与少年游：江南随笔精选",
+			"bookCover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/358/933358/t6_933358.jpg",
 			"chapter": "浮屠",
 			"text": "沧月对于我要去做商务无限哀愁，说哥你写书不错这样真是浪费了，那遗憾的样子令我觉得我要是在她面前她一定拉住我的袖子阻止我走上这条贼船。",
 			"createTime": "2026-04-30T03:46:46"
@@ -54839,18 +54903,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 822661,
-		"readDays": 340,
+		"totalReadTime": 824276,
+		"readDays": 341,
 		"readBooks": 168,
 		"finishedBooks": 28,
-		"noteCount": 8939,
+		"noteCount": 8952,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
 				"count": 53,
-				"time": 243649
+				"time": 245627
 			},
 			{
 				"title": "心理",
@@ -54863,14 +54927,14 @@
 				"time": 110350
 			},
 			{
-				"title": "教育学习",
-				"count": 5,
-				"time": 61121
-			},
-			{
 				"title": "社会小说",
 				"count": 14,
 				"time": 62370
+			},
+			{
+				"title": "教育学习",
+				"count": 5,
+				"time": 61121
 			},
 			{
 				"title": "社会文化",
@@ -56194,12 +56258,16 @@
 			},
 			{
 				"date": "2026-09-21",
-				"seconds": 1995
+				"seconds": 2009
+			},
+			{
+				"date": "2026-09-22",
+				"seconds": 1601
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 441,
+		"totalBooks": 443,
 		"secretCount": 32,
 		"favBook": {
 			"title": "西西弗神话",
@@ -56207,6 +56275,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-22T13:27:51.536Z",
+	"generatedAt": "2026-09-23T13:41:18.384Z",
 	"isMock": false
 }
