@@ -163,7 +163,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 170216,
+			"ratingCount": 170244,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -219,7 +219,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.5,
-			"ratingCount": 4882,
+			"ratingCount": 4883,
 			"publishTime": "2018-01-01 00:00:00",
 			"isbn": "9787508081656",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f9b32d30813ab82d5g015c99"
@@ -315,7 +315,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9879,
+			"ratingCount": 9883,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -603,7 +603,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7433,
+			"ratingCount": 7432,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -659,7 +659,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1484,
+			"ratingCount": 1485,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -827,7 +827,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10134,
+			"ratingCount": 10135,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -883,7 +883,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15468,
+			"ratingCount": 15471,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -1041,6 +1041,22 @@
 			"finishReading": 0,
 			"readUpdateTime": 1788495420,
 			"updateTime": 1788422355,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300219842",
+			"title": "人工智能中的数学之美",
+			"author": "[美]阿尼尔·阿南塔斯瓦米",
+			"cover": "https://cdn.weread.qq.com/weread/cover/70/cpplatform_hf5yaytmxaly2hhgqripjw/t6_cpplatform_hf5yaytmxaly2hhgqripjw1784624072.jpg",
+			"category": "科学技术-自然科学",
+			"finishReading": 0,
+			"readUpdateTime": 1790408960,
+			"updateTime": 1784625062,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
@@ -1362,8 +1378,8 @@
 			"intro": "《会饮篇》是柏拉图最精彩、最耐读的对话之一，故事发生在一场古希腊名流的豪华宴会上。诗人阿伽松刚赢得戏剧大奖，宾客们兴致正浓，决定依次为“爱神”献上一段赞美。于是，不同性格与身份的人轮番登场——有人讲述人类原本圆满、因挑战神而被劈成两半，从此终生寻找另一半的动人神话；有人用医学和音乐的比喻说明爱如何维系人与世界的和谐；有人强调爱应当指向灵魂与美德，而非肉体的欲望。\n高潮来自苏格拉底，他转述女祭司狄奥提玛的教诲，把爱揭示为对“永恒之善”的追求，描绘出一条从肉体之美、灵魂之美、制度与学问之美，直至“绝对之美”的攀登之路，气势恢宏。就在哲思正浓时，醉醺醺的阿尔西比亚德闯入，把话题转向苏格拉底本人——一个外貌粗陋、言辞朴素，却蕴藏着令人无法抗拒的智慧与力量的人。\n《会饮篇》融合了哲学、神话、幽默与人情，不仅探讨“爱”的多重含义，也展现了古希腊思想的魅力，让人仿佛身临其境，置身一场机锋与智慧交织的盛宴。",
 			"publisher": "",
 			"translator": "程德",
-			"publicRating": 8.8,
-			"ratingCount": 545,
+			"publicRating": 8.7,
+			"ratingCount": 547,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -1403,7 +1419,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1411,
+			"ratingCount": 1412,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -1490,7 +1506,7 @@
 			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
-			"publicRating": 7.8,
+			"publicRating": 8,
 			"ratingCount": 38,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
@@ -1655,12 +1671,12 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_r3qvchtbrvxsgxs1eyd4ga/t6_cpplatform_r3qvchtbrvxsgxs1eyd4ga1785898395.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1790181406,
+			"readUpdateTime": 1790355162,
 			"updateTime": 1785899343,
 			"progress": 4,
 			"noteCount": 2,
 			"reviewCount": 0,
-			"bookmarkCount": 4,
+			"bookmarkCount": 5,
 			"readTime": 0,
 			"tags": []
 		},
@@ -2123,7 +2139,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17087,
+			"ratingCount": 17086,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -2163,7 +2179,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.7,
-			"ratingCount": 1383,
+			"ratingCount": 1386,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2443,7 +2459,7 @@
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
 			"publicRating": 8.4,
-			"ratingCount": 3468,
+			"ratingCount": 3469,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -2698,7 +2714,7 @@
 			"intro": "它是泰戈尔诗歌精神的当代回响，以泥土为纸、草木为墨，写就一部扎根大地的哲理短章。百余首小诗如田野间的风，将炊烟、麦浪、老树与童谣轻轻拾起，在质朴的语言中流淌着对生命最深的眷恋。\r\n在远离自然的喧嚣里，它用最素朴的文字唤醒沉睡的感官，让读者在一捧土、一粒种、一声蝉鸣中，找回被遗忘的温暖与踏实。既是献给乡愁的温柔手札，也是一本常读常新的生活之书。",
 			"publisher": "",
 			"translator": "钟书峰",
-			"publicRating": 9.1,
+			"publicRating": 9,
 			"ratingCount": 581,
 			"publishTime": "2026-04-07 00:00:00",
 			"isbn": "",
@@ -2771,7 +2787,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 9009,
+			"ratingCount": 9019,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2939,7 +2955,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "王伟平",
 			"publicRating": 8.6,
-			"ratingCount": 2651,
+			"ratingCount": 2653,
 			"publishTime": "2024-01-01 00:00:00",
 			"isbn": "9787115630216",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=16832420813ab90f3g019f92"
@@ -3011,7 +3027,7 @@
 			"publisher": "中信出版集团",
 			"translator": "章艳",
 			"publicRating": 7.7,
-			"ratingCount": 23361,
+			"ratingCount": 23365,
 			"publishTime": "2015-05-01 00:00:00",
 			"isbn": "9787508648286",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=aef326f05d0f19aef085d2b"
@@ -3323,7 +3339,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.5,
-			"ratingCount": 1504,
+			"ratingCount": 1506,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -3619,7 +3635,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44482,
+			"ratingCount": 44497,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -3643,7 +3659,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2355,
+			"ratingCount": 2356,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -3963,7 +3979,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 230,
+			"ratingCount": 233,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -4355,7 +4371,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "傅季重,纪树立,周昌忠,蒋弋为",
 			"publicRating": 8.5,
-			"ratingCount": 308,
+			"ratingCount": 310,
 			"publishTime": "2015-02-01 00:00:00",
 			"isbn": "9787532768486",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=72732d70719d6c707276cd3"
@@ -4411,7 +4427,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4178,
+			"ratingCount": 4179,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -4483,7 +4499,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2894,
+			"ratingCount": 2896,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -4555,7 +4571,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81492,
+			"ratingCount": 81500,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -4583,12 +4599,12 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/72/cpplatform_napksac2vghjjhwo26bwco/t6_cpplatform_napksac2vghjjhwo26bwco1717381930.jpg",
 			"category": "哲学宗教-西方哲学",
 			"finishReading": 0,
-			"readUpdateTime": 1789353286,
+			"readUpdateTime": 1790353595,
 			"updateTime": 1739861838,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
-			"bookmarkCount": 0,
+			"bookmarkCount": 1,
 			"readTime": 0,
 			"tags": []
 		},
@@ -5339,7 +5355,7 @@
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "林颖  盛文哲  韦炜",
 			"publicRating": 9.1,
-			"ratingCount": 724,
+			"ratingCount": 723,
 			"publishTime": "2025-05-01 00:00:00",
 			"isbn": "9787115657510",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=37632940813abb45bg011fbe"
@@ -5379,7 +5395,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31783,
+			"ratingCount": 31793,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -5651,7 +5667,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 78133,
+			"ratingCount": 78146,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -5707,7 +5723,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1559,
+			"ratingCount": 1561,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -5859,7 +5875,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6668,
+			"ratingCount": 6669,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -5931,7 +5947,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3379,
+			"ratingCount": 3382,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -5975,7 +5991,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/8/cpplatform_jvxuap9pljubvkrbrhs6py/t6_cpplatform_jvxuap9pljubvkrbrhs6py1695622493.jpg",
 			"category": "心理-心理学应用",
 			"finishReading": 0,
-			"readUpdateTime": 1786457451,
+			"readUpdateTime": 1790352619,
 			"updateTime": 1781059458,
 			"progress": 0,
 			"noteCount": 0,
@@ -6539,7 +6555,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6411,
+			"ratingCount": 6412,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -6779,7 +6795,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2185,
+			"ratingCount": 2190,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -7067,7 +7083,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 8.9,
-			"ratingCount": 6284,
+			"ratingCount": 6283,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -7414,7 +7430,7 @@
 			"publisher": "长江出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 1499,
+			"ratingCount": 1500,
 			"publishTime": "2014-04-01 00:00:00",
 			"isbn": "9787549225422",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=f2532a305e3deef25dae350"
@@ -7454,7 +7470,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "傅小兰 等",
 			"publicRating": 9,
-			"ratingCount": 2012,
+			"ratingCount": 2015,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787115581495",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=631324c0813ab735bg01382c"
@@ -54935,11 +54951,11 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 824404,
-		"readDays": 342,
+		"totalReadTime": 824497,
+		"readDays": 343,
 		"readBooks": 168,
 		"finishedBooks": 28,
-		"noteCount": 8953,
+		"noteCount": 8955,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
@@ -56299,11 +56315,19 @@
 			{
 				"date": "2026-09-23",
 				"seconds": 128
+			},
+			{
+				"date": "2026-09-24",
+				"seconds": 0
+			},
+			{
+				"date": "2026-09-25",
+				"seconds": 93
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 445,
+		"totalBooks": 446,
 		"secretCount": 32,
 		"favBook": {
 			"title": "西西弗神话",
@@ -56311,6 +56335,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-09-25T13:50:12.412Z",
+	"generatedAt": "2026-09-26T13:08:33.433Z",
 	"isMock": false
 }
