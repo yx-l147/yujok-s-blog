@@ -1,6 +1,38 @@
 {
 	"books": [
 		{
+			"bookId": "3300125777",
+			"title": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"author": "[美]卡尔·戴瑟罗思",
+			"cover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"category": "文学-纪实文学",
+			"finishReading": 0,
+			"readUpdateTime": 1791629353,
+			"updateTime": 1791446775,
+			"progress": 10,
+			"noteCount": 36,
+			"reviewCount": 2,
+			"bookmarkCount": 14,
+			"readTime": 0,
+			"tags": []
+		},
+		{
+			"bookId": "3300048555",
+			"title": "过劳悲歌：996正在毁掉美国梦",
+			"author": "[美]杰米·K.麦卡伦",
+			"cover": "https://cdn.weread.qq.com/weread/cover/99/cpplatform_fmua58nccnarqitmnwfnf9/t6_cpplatform_fmua58nccnarqitmnwfnf91676293511.jpg",
+			"category": "社会文化-社科",
+			"finishReading": 0,
+			"readUpdateTime": 1791602216,
+			"updateTime": 1760177539,
+			"progress": 0,
+			"noteCount": 0,
+			"reviewCount": 0,
+			"bookmarkCount": 0,
+			"readTime": 0,
+			"tags": []
+		},
+		{
 			"bookId": "3300217240",
 			"title": "韩国人为什么又愿意生孩子了？（轻心理）",
 			"author": "品成心理",
@@ -571,7 +603,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "黄可以",
 			"publicRating": 8.1,
-			"ratingCount": 3412,
+			"ratingCount": 3413,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "9787201213095",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=160321a0813aba1dfg0109cf"
@@ -643,7 +675,7 @@
 			"publisher": "中信出版集团",
 			"translator": "王一力",
 			"publicRating": 7.5,
-			"ratingCount": 6705,
+			"ratingCount": 6708,
 			"publishTime": "2019-06-01 00:00:00",
 			"isbn": "9787521704693",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=62a32c7071889fee62ad6ac"
@@ -779,7 +811,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "姜乙",
 			"publicRating": 9,
-			"ratingCount": 78401,
+			"ratingCount": 78425,
 			"publishTime": "2017-01-01 00:00:00",
 			"isbn": "9787201112695",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3a832f705d0d1f3a8ec72ff"
@@ -987,7 +1019,7 @@
 			"publisher": "",
 			"translator": "马晓娜",
 			"publicRating": 7.5,
-			"ratingCount": 1568,
+			"ratingCount": 1569,
 			"publishTime": "2025-01-09 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=be932230813ab9941g010d2f"
@@ -1107,7 +1139,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "柳鸣九",
 			"publicRating": 8.8,
-			"ratingCount": 31999,
+			"ratingCount": 32012,
 			"publishTime": "2013-08-01 00:00:00",
 			"isbn": "9787532761760",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7bd329e05debc57bdc79852"
@@ -1203,7 +1235,7 @@
 			"publisher": "上海文化出版社",
 			"translator": "钱春绮",
 			"publicRating": 8.3,
-			"ratingCount": 2384,
+			"ratingCount": 2385,
 			"publishTime": "2020-01-01 00:00:00",
 			"isbn": "9787553518329",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5632b5071a6840bd56401b"
@@ -1439,7 +1471,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/24/YueWen_23791361/t6_YueWen_23791361.jpg",
 			"category": "文学-散文杂著",
 			"finishReading": 0,
-			"readUpdateTime": 1784191187,
+			"readUpdateTime": 1791604027,
 			"updateTime": 1770277940,
 			"progress": 0,
 			"noteCount": 0,
@@ -1555,7 +1587,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "董乐山",
 			"publicRating": 9.2,
-			"ratingCount": 7455,
+			"ratingCount": 7457,
 			"publishTime": "2009-06-01 00:00:00",
 			"isbn": "9787532747993",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=dde328c071860af6dde328f"
@@ -1722,7 +1754,7 @@
 			"intro": "人类的大脑始终处于活跃状态。即使我们躺在床上一动不动、什么都不想，我们大脑中的数十亿个神经元也在燃烧，神经科学家称之为大脑的“自发波动”。自20世纪30年代发现这种现象，研究人员往往将其归结为大脑的“背景噪声”，并且告诉我们这种噪声是随机的、不重要的。但如今越来越多的科学证据表明，自发波动并不是随机的，而是有着固定的模式，包含几个大的频率、更多中等的频率，以及许多小的频率。科学家称这种频率分布为“粉红噪声”，我们在风吹过树叶、海浪拍打沙滩、雨滴落在地上的声音中也能感受到这种波动模式。在本书作者看来，这种模式正是将人的大脑、身体与世界连接在一起的秘密语言，是革新当前有关意识、创造力和人工智能研究理论的关键。 这是全球首 部面向大众介绍人脑“自发波动”的书，汇集了有关粉红噪声的前沿科学研究。在作者看来，粉红噪声更像是一种范式转变，它要求我们从不同的视角思考世界的诸多方面：如果大脑并非充斥着随机噪声，那么它就不仅仅是被动地被世界塑造；我们不需要基于物质的意识理论来对抗大脑内在的随机性，而是需要基于过程的理论，这些理论建立在粉红噪声的有趣模式之上；我们的演化理论也必须适应粉红噪声。最终，理解粉红噪声可能会改变一切，并帮助我们恢复人类意识与自然界之间的关系。",
 			"publisher": "中信出版集团",
 			"translator": "刘培源",
-			"publicRating": 7.6,
+			"publicRating": 7.5,
 			"ratingCount": 40,
 			"publishTime": "2026-06-01 00:00:00",
 			"isbn": "9787521776546",
@@ -1939,7 +1971,7 @@
 			"publisher": "上海社会科学院出版社有限公司",
 			"translator": "郭楠",
 			"publicRating": 7.8,
-			"ratingCount": 9188,
+			"ratingCount": 9203,
 			"publishTime": "2021-09-10 00:00:00",
 			"isbn": "9787552036107",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c9d327e0727abffcc9d74ab"
@@ -2000,7 +2032,7 @@
 			"category": "文学-散文杂著",
 			"finishReading": 0,
 			"readUpdateTime": 1786550121,
-			"updateTime": 1771898756,
+			"updateTime": 1791622922,
 			"progress": 0,
 			"noteCount": 1,
 			"reviewCount": 0,
@@ -2251,7 +2283,7 @@
 			"publisher": "中国纺织出版社",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 614,
+			"ratingCount": 615,
 			"publishTime": "2025-03-21 00:00:00",
 			"isbn": "9787522925271",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=33132870813ab9fd0g016372"
@@ -2427,7 +2459,7 @@
 			"publisher": "",
 			"translator": "陈曌",
 			"publicRating": 7.8,
-			"ratingCount": 1417,
+			"ratingCount": 1418,
 			"publishTime": "2025-07-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=83b327d0813aba1a2g0147f6"
@@ -2643,7 +2675,7 @@
 			"publisher": "中信出版集团",
 			"translator": "宋娀",
 			"publicRating": 7,
-			"ratingCount": 4203,
+			"ratingCount": 4206,
 			"publishTime": "2019-03-01 00:00:00",
 			"isbn": "9787508697086",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=bd532c60717d45cbbd5f214"
@@ -2714,8 +2746,8 @@
 			"intro": "亲密关系与泛泛之交有什么区别？吸引力的秘密是什么？什么是爱情？爱能长久吗？男人真的来自火星、女人真的来自金星吗？同性恋是由基因决定的吗？女人比男人更容易妒忌吗？为什么结婚的人越来越少，离婚的人越来越多？亲密关系美满的秘诀是什么，如何维系持续一生的幸福婚姻？如何防止恋爱脑，科学理性地谈论爱？......诸如此类的亲密关系问题，你都可以从米勒的《亲密关系》(第8版)中找到答案。  《亲密关系》一书汲取了社会心理学、沟通研究、家庭研究、社会学、 临床心理学、演化心理学、神经科学、人口统计学等诸多学科的研究成果，遵循由浅入深、由一般到特殊的认知规律，论述了亲密关系的基础、活动形态、类型、矛盾和修复等内容。本书理论和实践并重，学术标准与大众兴趣兼备。读完本书，你将对人际吸引、爱情、婚姻、承诺、友谊、 激情、沟通、性爱、依恋、择偶、妒忌、出轨、冲突、暴力等亲密关系的主题形成全新的认识。  《亲密关系》（第 8 版）新增了近几年来发表的数百项新研究，增加了低头症、虚拟现实等与时俱进的主题，大幅拓展了对先前版本已有主题的讨论，全面呈现了关系科学领域所取得的卓越进展。它既能为该领域的专业人士带来启发与灵感，又能为每位渴望爱情甜蜜、婚姻长久、 人生幸福的普通读者提供指导。科学地认识亲密关系，寻求理性与情感的平衡，攸关我们的幸福，每个人都应该读读这本书。",
 			"publisher": "人民邮电出版社有限公司",
 			"translator": "王伟平",
-			"publicRating": 8.6,
-			"ratingCount": 2683,
+			"publicRating": 8.7,
+			"ratingCount": 2688,
 			"publishTime": "2024-01-01 00:00:00",
 			"isbn": "9787115630216",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=16832420813ab90f3g019f92"
@@ -3131,7 +3163,7 @@
 			"publisher": "上海译文出版社",
 			"translator": "王永年",
 			"publicRating": 8.1,
-			"ratingCount": 6431,
+			"ratingCount": 6435,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787532762897",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c3b32c805e41e6c3b9eb04f"
@@ -3154,8 +3186,8 @@
 			"intro": "《西西弗神话》法国作者加缪的哲学论著，是其“荒诞哲学“思想的集中体现。在加缪的全部文学作品和哲学随笔当中，“荒诞”是他强调的最重要的一个概念。加缪认为，荒诞诞生于“人类的呼唤与世界非理性的沉默之间的对峙”。在这本书中，他分析和探问了许多哲学家的思想，比如雅斯贝尔斯、克尔凯郭尔、胡塞尔、海德格尔、舍斯托夫，也对陀思妥耶夫斯基等人的文学巨著加以评述，目的都是为了阐发他的“荒诞”概念，并进而指出：“活着，就是经历荒诞。而经历荒诞，首先就是直视它。”他指引我们像西西弗一样认识自己的命运，反抗自己的命运，义无反顾地生活。",
 			"publisher": "湖南人民出版社",
 			"translator": "袁筱一",
-			"publicRating": 8.4,
-			"ratingCount": 3487,
+			"publicRating": 8.3,
+			"ratingCount": 3489,
 			"publishTime": "2021-02-01 00:00:00",
 			"isbn": "9787556125913",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=c51324f0722dd399c51f4c8"
@@ -3619,7 +3651,7 @@
 			"publisher": "人民邮电出版社",
 			"translator": "",
 			"publicRating": 9.1,
-			"ratingCount": 4367,
+			"ratingCount": 4368,
 			"publishTime": "2021-06-01 00:00:00",
 			"isbn": "9787115564481",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=3d4322207265c45f3d40a55"
@@ -3898,7 +3930,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_ph7i4hk6jxuhb3kgqi2s1d/t6_cpplatform_ph7i4hk6jxuhb3kgqi2s1d1756885030.jpg",
 			"category": "文学-经典作品",
 			"finishReading": 0,
-			"readUpdateTime": 1791549725,
+			"readUpdateTime": 1791602047,
 			"updateTime": 1760174104,
 			"progress": 11,
 			"noteCount": 17,
@@ -3958,7 +3990,7 @@
 			"publisher": "",
 			"translator": "张贝",
 			"publicRating": 7.7,
-			"ratingCount": 2208,
+			"ratingCount": 2209,
 			"publishTime": "2024-12-26 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d1732010813ab983cg012120"
@@ -4094,7 +4126,7 @@
 			"publisher": "",
 			"translator": "张佩芬 王奕鑫",
 			"publicRating": 7.8,
-			"ratingCount": 2367,
+			"ratingCount": 2368,
 			"publishTime": "2025-06-19 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=2eb32580813aba09dg01940c"
@@ -4214,7 +4246,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.1,
-			"ratingCount": 4804,
+			"ratingCount": 4806,
 			"publishTime": "2024-04-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d8832880813ab8b0eg012786"
@@ -4238,7 +4270,7 @@
 			"publisher": "译林出版社",
 			"translator": "孙仲旭",
 			"publicRating": 9,
-			"ratingCount": 17107,
+			"ratingCount": 17110,
 			"publishTime": "2013-10-01 00:00:00",
 			"isbn": "9787544741835",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=4be320905b94534becfd24b"
@@ -4438,7 +4470,7 @@
 			"publisher": "译林出版社",
 			"translator": "李贻琼",
 			"publicRating": 8.9,
-			"ratingCount": 6298,
+			"ratingCount": 6299,
 			"publishTime": "2022-08-01 00:00:00",
 			"isbn": "9787544791083",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=fde32160813ab70e3g011eee"
@@ -4966,7 +4998,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.2,
-			"ratingCount": 1494,
+			"ratingCount": 1496,
 			"publishTime": "2025-06-10 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=78d326c0813aba045g0112b8"
@@ -5102,7 +5134,7 @@
 			"publisher": "北京出版集团北京十月文艺出版社",
 			"translator": "",
 			"publicRating": 7.8,
-			"ratingCount": 15500,
+			"ratingCount": 15499,
 			"publishTime": "2017-04-01 00:00:00",
 			"isbn": "9787530220368",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=7ec327605dedb97ec29ed8f"
@@ -5142,7 +5174,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8.9,
-			"ratingCount": 1432,
+			"ratingCount": 1433,
 			"publishTime": "2025-06-12 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=719321d0813aba066g016eeb"
@@ -5326,7 +5358,7 @@
 			"publisher": "机械工业出版社",
 			"translator": "渠海霞",
 			"publicRating": 8.7,
-			"ratingCount": 170568,
+			"ratingCount": 170586,
 			"publishTime": "2017-05-01 00:00:00",
 			"isbn": "9787111495482",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=8b9329607186dc198b9bdab"
@@ -5670,7 +5702,7 @@
 			"publisher": "天津人民出版社",
 			"translator": "易海舟",
 			"publicRating": 7.9,
-			"ratingCount": 9928,
+			"ratingCount": 9934,
 			"publishTime": "2018-12-01 00:00:00",
 			"isbn": "9787201142708",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=a2f32870716dd8fca2f03e8"
@@ -5766,7 +5798,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘福堂",
 			"publicRating": 7.8,
-			"ratingCount": 10147,
+			"ratingCount": 10150,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145348",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d7d32d70722dd429d7d723d"
@@ -5806,7 +5838,7 @@
 			"publisher": "",
 			"translator": "程德",
 			"publicRating": 8.8,
-			"ratingCount": 559,
+			"ratingCount": 560,
 			"publishTime": "2025-09-01 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=d5532920813aba58fg0163a2"
@@ -6070,7 +6102,7 @@
 			"publisher": "",
 			"translator": "钟书峰",
 			"publicRating": 9.5,
-			"ratingCount": 1517,
+			"ratingCount": 1518,
 			"publishTime": "2026-06-02 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=6d732670813abb509g016cff"
@@ -6290,12 +6322,12 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/396/934396/t6_934396.jpg",
 			"category": "文学-现代诗歌",
 			"finishReading": 0,
-			"readUpdateTime": 1790151335,
+			"readUpdateTime": 1791604044,
 			"updateTime": 1770277982,
 			"progress": 0,
 			"noteCount": 0,
 			"reviewCount": 0,
-			"bookmarkCount": 0,
+			"bookmarkCount": 1,
 			"readTime": 0,
 			"tags": []
 		},
@@ -6366,7 +6398,7 @@
 			"publisher": "中信出版集团",
 			"translator": "赵灿",
 			"publicRating": 8.7,
-			"ratingCount": 44715,
+			"ratingCount": 44743,
 			"publishTime": "2022-05-01 00:00:00",
 			"isbn": "9787521741124",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=e1e32b00729fc94fe1e824d"
@@ -6654,7 +6686,7 @@
 			"publisher": "",
 			"translator": "",
 			"publicRating": 8,
-			"ratingCount": 251,
+			"ratingCount": 253,
 			"publishTime": "2026-05-18 00:00:00",
 			"isbn": "",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=1ec323c0813abb8cfg010e30"
@@ -7062,7 +7094,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "刘林海",
 			"publicRating": 8.9,
-			"ratingCount": 2913,
+			"ratingCount": 2912,
 			"publishTime": "2018-11-01 00:00:00",
 			"isbn": "9787020145072",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=679328a0813ab8004g01640f"
@@ -7134,7 +7166,7 @@
 			"publisher": "人民文学出版社",
 			"translator": "",
 			"publicRating": 9.2,
-			"ratingCount": 81678,
+			"ratingCount": 81690,
 			"publishTime": "2011-04-01 00:00:00",
 			"isbn": "9787020083442",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=43f327705a48fc43feb9160"
@@ -7270,7 +7302,7 @@
 			"publisher": "商务印书馆",
 			"translator": "",
 			"publicRating": 9,
-			"ratingCount": 2725,
+			"ratingCount": 2726,
 			"publishTime": "2015-06-01 00:00:00",
 			"isbn": "9787100110457",
 			"deepLink": "https://weread.qq.com/book-detail?type=1&v=538320a0813ab83e4g01836b"
@@ -7394,7 +7426,7 @@
 			"cover": "https://cdn.weread.qq.com/weread/cover/51/YueWen_26211919/t6_YueWen_26211919.jpg",
 			"category": "科学技术-自然科学",
 			"finishReading": 0,
-			"readUpdateTime": 1749743368,
+			"readUpdateTime": 0,
 			"updateTime": 1767690215,
 			"progress": 0,
 			"noteCount": 0,
@@ -7797,6 +7829,294 @@
 		}
 	],
 	"notes": [
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "来自意外的想法和影响不但重要，而且是必需的，无论对医学领域、科学领域，还是对身处在世界上，试图追寻各自方向的人们而言。",
+			"createTime": "2026-10-10T06:11:39"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "科学不应该过度以转化为目标，甚至不应该过度地以探索疾病相关的问题为目的。",
+			"createTime": "2026-10-10T06:11:03"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "我们今天能利用光遗传学技术去阐述情感和精神障碍，前人所做的关于藻类和细菌的研究至关重要，这些研究都是一个多世纪以前就开始的，而那时它们不可能被预料到今天会有这样的发展和应用。",
+			"createTime": "2026-10-10T06:10:56"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "我们必须和人直接接触，才能真正找到任何近乎人性的东西。",
+			"createTime": "2026-10-10T06:10:42"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "个人的领悟可能来自任何意想不到的事，科学上的发现也是一样。",
+			"createTime": "2026-10-10T06:10:30"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "，我有时会问自己，如果那时的我在某种机缘巧合下已经准备好，并且积极而正向地面对那次意外，那么那次事件不过就是一场让人不舒服的遭遇而已。",
+			"createTime": "2026-10-10T06:10:26"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "以解决人类所承受的病痛与苦难为志向的精神医学，与基于小鼠和鱼大脑的神经科学理论，竟然相辅相成地发展。神经科学与精神医学彼此帮助，利用彼此所拥有的资源共同发展，在更深的层面上彼此联结着。",
+			"createTime": "2026-10-10T06:10:10"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "。科学的进步为临床判断提供了重要的思考方向，这是基础科学研究的价值，但这不是什么新观念。",
+			"createTime": "2026-10-10T06:09:58"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "：从通过大脑环路上新发现的因果关系知识，以及背后的细胞机理，指导人们利用大脑刺激疗法来治疗疾病，",
+			"createTime": "2026-10-10T06:09:51"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "所以我们和我们祖先的感受可能十分相似，这绝非偶然，因为这些感受在某些时刻、某些环境下，曾经对我们的祖先具有至关重要的意义。",
+			"createTime": "2026-10-10T06:09:40"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "这个通向过去的联结并不是什么魔法，这与卡尔·荣格所说的跨越时间和遥远先祖产生神秘联结的“集体无意识”交流完全不同。",
+			"createTime": "2026-10-10T05:59:37"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "这两项技术以及从中衍生出的其他众多方法，帮助全世界对大脑神经回路有了更全面的认识，带来的惊奇和影响远远超过科学领域。",
+			"createTime": "2026-10-10T05:58:53"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "这种物理性质的变化可以让完整的组织器官，比如原本稠密不透光的大脑，变成透明状态，",
+			"createTime": "2026-10-10T05:58:37"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "此刻只有这些被基因修改过的神经细胞能对光做出反应，而这就是运用光遗传学技术的结果。",
+			"createTime": "2026-10-10T05:57:53"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "正常情况下，这些蛋白被它们的原始微生物宿主用来将阳光转换为电信号或者电能，从而指导水里的藻类细胞游向阳光最适宜生存的地方，或者在某些古老的细菌里，它们能创造环境将光转换为能量。",
+			"createTime": "2026-10-10T05:57:39"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "没有人能从生理学角度来回答这个疾病的本质究竟是什么，或者为什么这个人会得这个病，又或者为什么人类必须经历如此怪异又可怕的状态。",
+			"createTime": "2026-10-10T04:54:55"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "之后我得知他患有一种叫作“分裂情感障碍”的精神疾病，一种同时具有抑郁症、躁狂症和精神分裂症主要症状的可怕疾病。我同时也学到：这个疾病的定义其实一点也不重要，因为疾病分类对治疗几乎没有影响，临床上只能对症下药，而且缺乏背后的科学根据。",
+			"createTime": "2026-10-10T04:54:49"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "科学和艺术在我内心同时激荡着，而且它们并非两个并行独立的个体，而是融合为一的东西：稳定又必然，如朝日光辉不可控。",
+			"createTime": "2026-10-10T04:54:33"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "在那之前，我对精神科完全不感兴趣；事实上，我觉得精神科甚至令我感觉不快。或许是因为精神科相对主观的诊断工具和方法，又或者是我内心深处隐藏着某个我尚未发现和面对的问题。",
+			"createTime": "2026-10-10T04:53:34"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "大量的小东西彼此联结，似乎可以完成任何事情，只要它们之间的联结是正确的。",
+			"createTime": "2026-10-10T04:52:51"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "在与大学室友（他们无一例外全都是理论物理学家）交流的过程中，我发现天文学家在研究宏观 宇宙的时间和空间现象时，也有同样的感受。他们最初着眼于物质的最微观基础层面和物质在最小距离间相互作用的基础力学，研究的过程既宏伟如宇宙，又渺小如个人，而且同样是理论融汇与检验并行。",
+			"createTime": "2026-10-10T04:51:58"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "这些问题长久以来都被认为是难以攻克的。例如，一个细胞如何成长为一个完整的身体？",
+			"createTime": "2026-10-10T04:51:31"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "我上大学的时候，第一个选的课程就是“创意写作”​，",
+			"createTime": "2026-10-10T04:51:27"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "我，如同所有人一样，是一个主观多于客观的人，而这只是人类视角的小小缺陷之一。",
+			"createTime": "2026-10-10T04:51:01"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "然而无论是史前故事还是现代正在发生的事，​“感觉”这东西不会变成化石供我们研究，我们无从得知以前的“感觉”是什么样子（而我也无意成为演化心理学家）​，我们也无法直接观察另一个人的“内在感觉”​。",
+			"createTime": "2026-10-10T04:50:36"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "无论心智状态健康与否，我们都是透过同样一层古老的胚胎结构，与他人、外界形成生理和心理上的交流联系",
+			"createTime": "2026-10-10T04:50:09"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "写作是我一辈子热爱的事，有机会时，我总想回到写作上，只是多年来它一直被掩盖在科学和医学之下。",
+			"createTime": "2026-10-10T04:48:57"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "在这种时候，比起利用显微镜观察等科学方法，文学带给我的某些想法更能帮助我认识我的病人",
+			"createTime": "2026-10-10T04:48:52"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "但无论如何，那些被埋在心灵最深处的秘密声音，永远只属于那也许已经逝去的，也许永远保持沉默的，在其中饱受痛苦煎熬的和迷失的主人。",
+			"createTime": "2026-10-10T04:48:31"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "但即便是医学和科学加起来，也不足以完整地讲述人类复杂的内心世界。因此其中一部分故事不是从医生或者科学家的角度，而是从患者的角度，以第一或第三人称叙述，其间夹杂混乱的语言，反映混乱的精神状态",
+			"createTime": "2026-10-10T04:48:21"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "而赋予了这些织线形状，让每一个人能成为独立个体的，是他的内在心灵。每一个人的特质，如同织布的质感和颜色，来自他生命中经历的种种，与那烦琐又可爱的大小事。",
+			"createTime": "2026-10-10T04:47:59"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "在编织艺术里，经线是整体结构的锚定点，为其他穿梭来回的织线提供强而有力的结构支撑。它向四方空间投射而去，联结着那已编织的过去、正编织的现在和尚未编织的未来。",
+			"createTime": "2026-10-10T03:57:43"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "前言",
+			"text": "声音、光与热之后，是回忆、意志和领悟。",
+			"createTime": "2026-10-10T03:57:28"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "推荐序 光辉的道路",
+			"text": "光遗传学技术可以抑制或激活神经细胞功能，从而在更精细的层面更巧妙地操纵神经元活性，从而了解神经细胞、神经环路参与的功能。",
+			"createTime": "2026-10-10T03:57:03"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "文前",
+			"text": "我为你献上多年前你出生时，日落时分一朵黄玫瑰的回忆。我为你献上关于你自己的诠释",
+			"createTime": "2026-10-10T03:56:11"
+		},
+		{
+			"bookId": "3300125777",
+			"bookTitle": "照亮破碎之心（2026年诺贝尔生理学或医学奖得主）",
+			"bookCover": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_1xathmdx6myhmiw4eydifr/t6_cpplatform_1xathmdx6myhmiw4eydifr1734316911.jpg",
+			"chapter": "文前",
+			"text": "而我可以给你：我的寂寞，我的黑暗，我内心的饥渴；我会试着用未知、危险和失败来收买你。",
+			"createTime": "2026-10-10T03:47:41"
+		},
 		{
 			"bookId": "3300136800",
 			"bookTitle": "叙事的危机（韩炳哲作品系列）",
@@ -55287,18 +55607,18 @@
 		}
 	],
 	"stats": {
-		"totalReadTime": 827696,
-		"readDays": 349,
-		"readBooks": 169,
+		"totalReadTime": 829023,
+		"readDays": 350,
+		"readBooks": 170,
 		"finishedBooks": 28,
-		"noteCount": 8995,
+		"noteCount": 9048,
 		"preferTimeWord": "偏好下午阅读",
 		"preferCategoryWord": "偏好阅读文学",
 		"preferCategory": [
 			{
 				"title": "文学",
-				"count": 54,
-				"time": 249418
+				"count": 55,
+				"time": 249878
 			},
 			{
 				"title": "心理",
@@ -55311,14 +55631,14 @@
 				"time": 110452
 			},
 			{
-				"title": "社会小说",
-				"count": 14,
-				"time": 62370
-			},
-			{
 				"title": "教育学习",
 				"count": 5,
 				"time": 61121
+			},
+			{
+				"title": "社会小说",
+				"count": 14,
+				"time": 62370
 			},
 			{
 				"title": "社会文化",
@@ -56591,11 +56911,15 @@
 			{
 				"date": "2026-10-08",
 				"seconds": 460
+			},
+			{
+				"date": "2026-10-09",
+				"seconds": 1327
 			}
 		]
 	},
 	"profile": {
-		"totalBooks": 457,
+		"totalBooks": 459,
 		"secretCount": 32,
 		"favBook": {
 			"title": "西西弗神话",
@@ -56603,6 +56927,6 @@
 			"cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/721/36557721/s_36557721.jpg"
 		}
 	},
-	"generatedAt": "2026-10-09T15:20:58.908Z",
+	"generatedAt": "2026-10-10T14:30:42.675Z",
 	"isMock": false
 }
